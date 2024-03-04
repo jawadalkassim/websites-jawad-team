@@ -64,7 +64,7 @@
                             <p class="text-gray-700 text-xl text-center font-bold">What is the aim of your project?</p>
                         </div>
                         <div class="pt-4 select">
-                            <select class="w-full py-2 rounded-lg text-primaryColor font-semibold pl-2">
+                            <select id="work-type" class="w-full py-2 rounded-lg text-primaryColor font-semibold pl-2">
                                 <option>Window Repair</option>
                                 <option>Window Repair Frame & Glass</option>
                                 <option>Windows Install Multiple</option>
@@ -74,7 +74,7 @@
                             </select>
                         </div>
                         <div class="pt-5 select">
-                            <select class="w-full py-2 rounded-lg text-primaryColor font-semibold pl-2">
+                            <select id="windows-num" class="w-full py-2 rounded-lg text-primaryColor font-semibold pl-2">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3-5</option>
@@ -83,7 +83,7 @@
                             </select>
                         </div>
                         <div class="pt-5 select">
-                            <select class="w-full py-2 rounded-lg text-primaryColor font-semibold pl-2">
+                            <select id="duration" class="w-full py-2 rounded-lg text-primaryColor font-semibold pl-2" >
                                 <option>Immediately</option>
                                 <option>Within 1 Months</option>
                                 <option>1-3 Months</option>
@@ -108,13 +108,13 @@
                                 <p class="text-gray-700 text-xl text-center font-bold">Where will this project take place?</p>
                             </div>
                             <div class="pt-4 flex justify-center">
-                                <input type="text" class="w-full py-3 rounded-lg text-primaryColor font-medium pl-2" placeholder="Address. Ex:123 Main Street" required />
+                                <input id="address" type="text" class="w-full py-3 rounded-lg text-primaryColor font-medium pl-2" placeholder="Address. Ex:123 Main Street" required />
                             </div>
                             <div class="pt-4 flex justify-center">
-                                <input type="text" class="w-full py-3 rounded-lg text-primaryColor font-medium pl-2" placeholder="City. Ex:Austin" required />
+                                <input id="city" type="text" class="w-full py-3 rounded-lg text-primaryColor font-medium pl-2" placeholder="City. Ex:Austin" required />
                             </div>
-                            <div class="pt-4 flex justify-center">
-                                <input type="text" class="w-full py-3 rounded-lg text-primaryColor font-medium pl-2" placeholder="State. Ex:TX" required />
+                            <div  class="pt-4 flex justify-center">
+                                <input id="state" type="text" class="w-full py-3 rounded-lg text-primaryColor font-medium pl-2" placeholder="State. Ex:TX" required />
                             </div>
 
                             <div class="grid grid-cols-2 pt-8 pb-4 w-full">
@@ -135,10 +135,10 @@
                                 <p class="text-gray-700 text-xl text-center font-bold">Mention your first and last name</p>
                             </div>
                             <div class="pt-4 flex justify-center">
-                                <input type="text" class="w-full py-3 rounded-lg text-primaryColor font-medium pl-2" placeholder="First Name. Ex:John" required />
+                                <input id="first-name" type="text" class="w-full py-3 rounded-lg text-primaryColor font-medium pl-2" placeholder="First Name. Ex:John" required />
                             </div>
                             <div class="pt-4 flex justify-center">
-                                <input type="text" class="w-full py-3 rounded-lg text-primaryColor font-medium pl-2" placeholder="Last Name. Ex:Smith" required />
+                                <input id="last-name" type="text" class="w-full py-3 rounded-lg text-primaryColor font-medium pl-2" placeholder="Last Name. Ex:Smith" required />
                             </div>
 
                             <div class="grid grid-cols-2 pt-8 pb-4 w-full">
@@ -159,7 +159,7 @@
                                 <p class="text-gray-700 text-xl text-center font-bold">Enter your email for better communication</p>
                             </div>
                             <div class="pt-4 flex justify-center">
-                                <input type="text" class="w-full py-3 rounded-lg text-primaryColor font-medium pl-2" placeholder="Email. Ex:johnsmith@gmail.com" required />
+                                <input id="email" type="text" class="w-full py-3 rounded-lg text-primaryColor font-medium pl-2" placeholder="Email. Ex:johnsmith@gmail.com" required />
                             </div>
                             <div id="email-error" style="color: red;font-weight: 500;padding-top: 10px"></div>
                             <div class="grid grid-cols-2 pt-8 pb-4 w-full">
@@ -261,14 +261,14 @@
                                 <p class="text-gray-700 text-xl text-center font-bold">Preferred contact method and best time to reach you?</p>
                             </div>
                             <div class="pt-5 select">
-                                <select class="w-full py-2 rounded-lg text-primaryColor font-semibold pl-2">
+                                <select id="contact-to" class="w-full py-2 rounded-lg text-primaryColor font-semibold pl-2">
                                     <option>Phone</option>
                                     <option>Email</option>
                                     <option>Phone or Email</option>
                                 </select>
                             </div>
                             <div class="pt-5 select">
-                                <select class="w-full py-2 rounded-lg text-primaryColor font-semibold pl-2">
+                                <select id="contact-time" class="w-full py-2 rounded-lg text-primaryColor font-semibold pl-2">
                                     <option>Any time</option>
                                     <option>Morning</option>
                                     <option>Afternoon</option>
@@ -278,10 +278,10 @@
                             <div class="pt-6 flex justify-center comment">
                                 <textarea id="message" rows="4" class=" block bg-white w-full text-sm font-semibold text-primaryColor rounded-lg pl-2 pt-3 " placeholder="Comments"></textarea>
                             </div>
-                            <p class="text-gray-700 text-sm pt-4 font-semibold text-start px-4">We respect your data and privacy. By clicking Get Your Instant Quote, you agree to the Terms of Service and Privacy Policy and you authorize Home Improvements, and its partners to call the phone number provided, using automated phone technology and text messaging to contact you. By giving your authorization you are not obligated to purchase products or services, and you understand that you may revoke your consent at any time.</p>
+                            <p class="text-gray-700 text-sm pt-4 font-semibold text-start px-4">We respect your data and privacy. By clicking Get Your Instant Quote, you agree to the Terms of Service and Privacy Policy and you authorize home-improvements.space, and its partners to call the phone number provided, using automated phone technology and text messaging to contact you. By giving your authorization you are not obligated to purchase products or services, and you understand that you may revoke your consent at any time.</p>
 
                                 <div class="flex justify-center pt-4">
-                                    <button  type="button" onclick="nextPrev(1)" class="text-white text-xl bg-secondaryColor hover:bg-gray-400 font-semibold py-2 px-12 rounded-lg">
+                                    <button  type="button" onclick="nextPrev(1)" class="last-btn text-white text-xl bg-secondaryColor hover:bg-gray-400 font-semibold py-2 lg:px-12 rounded-lg">
                                         GET YOUR INSTANT QUOTE
                                     </button>
                                 </div>

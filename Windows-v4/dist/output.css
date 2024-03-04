@@ -931,9 +931,6 @@ body, html {
   height: 100%;
 }
 
-@media (min-width: 1220px) {
-}
-
 @media (max-width: 1200px) {
   .progress-bar{
     margin: 0px 22px;
@@ -949,6 +946,11 @@ body, html {
 
   .brand{
     width: 40%;
+  }
+
+  .last-btn{
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -989,6 +991,11 @@ body, html {
 
   .lg\:max-w-lg {
     max-width: 32rem;
+  }
+
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 

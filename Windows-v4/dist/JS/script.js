@@ -3,6 +3,20 @@ $.getJSON('http://ipinfo.io', function(data){
     $('#location').text(data['city']+" ")
 });
 var currentTab = 0;
+var zipCode="";
+var workType ="";
+var windowsNum ="";
+var duration ="";
+var address ="";
+var city ="";
+var state ="";
+var firstName ="";
+var lastName ="";
+var email ="";
+var phone ="";
+var contactTo ="";
+var contactTime ="";
+var comment ="";
 showTab(currentTab);
 
 function showTab(n) {
@@ -23,11 +37,39 @@ function showTab(n) {
 
 function nextPrev(n) {
     var x = document.getElementsByClassName("tab");
+    let zip = document.getElementById('zip')
+    let selectWork = document.getElementById('work-type')
+    let selectNum = document.getElementById('windows-num')
+    let selectDuration = document.getElementById('duration')
+    let selectAddress = document.getElementById('address')
+    let selectCity = document.getElementById('city')
+    let selectState = document.getElementById('state')
+    let fName = document.getElementById('first-name')
+    let lName = document.getElementById('last-name')
+    let e = document.getElementById('email')
+    let p = document.getElementById('phone-input')
+    let contact = document.getElementById('contact-to')
+    let time = document.getElementById('contact-time')
+    let message = document.getElementById('message')
     if (n === 1&&!validateForm()) return false;
     x[currentTab].style.display = "none";
 
     currentTab = currentTab + n;
     if (currentTab >= x.length) {
+        zipCode =zip.value
+        address = selectAddress.value
+        city = selectCity.value
+        state = selectState.value
+        workType = selectWork.value
+        windowsNum = selectNum.value
+        duration = selectDuration.value
+        firstName = fName.value
+        lastName = lName.value
+        email = e.value
+        phone = p.value
+        contactTo = contact.value
+        contactTime = time.value
+        comment = message.value
         document.getElementById("regForm").submit();
         return false;
     }
@@ -52,14 +94,15 @@ function validateForm() {
             valid = false;
         }
         if(currentTab===0){
+            let zipError = document.getElementById('zip-error')
             if(y[i].value.match(numbers)&&y[i].value.length===5)
             {
                 return true;
             }
             else
             {
-                document.getElementById('zip-error').innerText="Enter a valid zip code"
-                document.getElementById('zip-error').style.color="red"
+                zipError.innerText="Enter a valid zip code"
+                zipError.style.color="red"
                 y[i].focus();
                 valid= false;
             }
