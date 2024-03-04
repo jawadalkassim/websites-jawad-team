@@ -1,0 +1,123 @@
+
+/*------------------------------------------
+Responsive Grid Media Queries - 1280, 1024, 768, 480
+1280-1024   - desktop (default grid)
+1024-768    - tablet landscape
+768-480     - tablet 
+480-less    - phone landscape & smaller
+-----------------------------------------*/
+
+@media (max-width: 992px) {
+	header {
+        padding: 0px 0px 10px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+.free-quotes {
+	color: #33cc33;
+	font-size: 22px;
+}
+.top-banner {
+	height: auto;
+	background-size: cover;
+}
+.solar-power-option-content {
+	position: relative;
+	padding: 24px 20px;
+}
+.solar-power-option-content h2 {
+	font-size: 24px;
+}
+footer p {
+	text-align: center;
+}
+.footer-menu ul {
+	text-align: center;
+}
+.free-quotes h4 {
+	font-size: 18px;
+	text-align: center;
+}
+.heading-survey {
+	padding-top: 10px;
+}
+.banner-form-wrap {
+	margin: 26px 0;
+	padding: 20px 14px;
+}
+.heading-survey h2 {
+	font-size: 20px;
+}
+.banner-form-wrap h3 {
+	font-size: 17px;
+	margin: 10px 0;
+}
+.heading-survey h4 {
+	line-height: 20px;
+}
+.btn-next {
+	margin: 0px 0;
+}
+.terms_txt {
+	margin-top: 15px;
+}
+}
+
+@media only screen and (max-width: 450px) {
+.bill_bar .box_range {
+	width: 100%;
+}
+.form-group {
+	margin-bottom: 5px;
+}
+.v2-page .progress {
+    height: 8px;
+}
+.banner-form-wrap {
+    margin: 15px 0;
+    padding: 5px 14px;
+}
+.heading-survey h3 {
+    font-size: 19px;
+}
+.terms_txt {
+	text-align: center;
+	margin-top: 15px;
+}
+.v2-page .form fieldset {
+	padding: 15px 10px 20px;
+}
+.radio-btn label {
+    margin-bottom: 5px;
+    min-height: 30px;
+    margin-top: 0px;
+}
+}
+
+@media only screen and (max-width: 380px) {
+.free-quotes {
+	font-size: 18px;
+}
+.solar-power-option-content h2 {
+	font-size: 18px;
+}
+}
+
+@media only screen and (max-width: 330px) {
+.bill_bar .box_range {
+	width: 100%;
+}
+}
+
+@media only screen and (max-width: 400px) {
+.banner-form-wrap {
+	margin: 0px 0;
+}
+.banner-form-wrap {
+	padding: 7px 4px;
+}
+.v2-page .form fieldset {
+	padding: 15px 10px 20px;
+}
+}

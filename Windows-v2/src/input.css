@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-links li {
+    display: inline-block;
+    padding-left: 40px;
+}
+.nav-links li a{
+    text-align: end !important;
+    color: #545965;
+    font-weight: 600;
+}
+@media (max-width: 1000px) {
+
+}
+h1 {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+button {
+    background-color: #04AA6D;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
+}
+
+
+.card {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.65rem;
+}
+
+hr.style-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.07);
+}
+
+.fw-500 {
+    font-weight: 400;
+}
+
+.fw-600 {
+    font-weight: 500;
+}
+
+.mt_2 {
+    margin-top: 2rem !important;
+}
+
+/*Simple radio btn input CSS*/
+.custom-control-label {
+    cursor: pointer;
+}
+
+.cap-opt-1 {
+    display: inline-block;
+    min-width: 50px;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: #59a9f7;
+    background-color: #59a9f7;
+}
+
+
+.card-radio-btn .content_head {
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.card-radio-btn .content_sub {
+    color: #9e9e9e;
+    font-size: 14px;
+}
+
+.card-input-element + .card {
+    opacity: 90%;
+    background: #fff;
+    width: 300px;
+    padding: 40px;
+    margin: 10px;
+    justify-content: center;
+    color: #077017;
+    border: 2px solid transparent;
+    text-align: center;
+    -webkit-box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 9.5px 0.5px rgba(0,0,0,.1);
+    border-radius: 2px;
+}
+
+.card-input-element + .card:hover {
+    cursor: pointer;
+}
+
+.card-input-element:checked + .card {
+    border: 2px solid #719eca;
+    -webkit-transition: border 0.3s;
+    -o-transition: border 0.3s;
+    transition: border 0.3s;
+}
+
+.card-input-element:checked {
+    content: "\f058";
+    color: rgba(113, 158, 201, 0.6);
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-animation-name: fadeInCheckbox;
+    animation-name: fadeInCheckbox;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@-webkit-keyframes fadeInCheckbox {
+    from {
+        opacity: 0;
+        -webkit-transform: rotateZ(-20deg);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: rotateZ(0deg);
+    }
+}
+
+@keyframes fadeInCheckbox {
+    from {
+        opacity: 0;
+        transform: rotateZ(-20deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateZ(0deg);
+    }
+}
+
+.ribbon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: #ffcc00;
+    padding :3px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    width: 90px;
+}
+@media (min-width: 1200px) {
+    .rate{
+        text-align: start !important;
+    }
+}
+@media (max-width: 768px) {
+    .rate{
+        text-align: center !important;
+    }
+    input{
+        margin: 0px 20px;
+    }
+}

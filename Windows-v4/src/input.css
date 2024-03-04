@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.progress{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-content{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.progress-title {
+    font-size: 26px;
+    font-weight: 300;
+}
+.progress-bar{
+    display: flex;
+    justify-content: center;
+    margin: 0px 10px;
+}
+#myProgress{
+    height: 15px;
+    width: 90%;
+    border-radius:5px;
+    background: #dddede;
+}
+.tab{
+    display: none;
+}
+#myBar {
+    height: 15px !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+    width: 30%;
+    background: linear-gradient(90deg, rgba(6,119,204,1) 5%,rgba(6,119,204,0) 100%);
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+    color: white;
+}
+
+body, html {
+    overflow-y: hidden;
+    height: 100%;
+}
+@media (min-width: 1220px) {
+
+}
+@media (max-width: 1200px) {
+    .progress-bar{
+        margin: 0px 22px;
+    }
+    .t1{
+      padding: 5px 20px;
+    }
+    option{
+        padding: 10px 10px;
+    }
+    .brand{
+        width: 40%;
+    }
+}
