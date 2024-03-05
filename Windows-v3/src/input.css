@@ -204,7 +204,7 @@ hr.style-1 {
         background-position: center !important;
     }
     .brand{
-   padding-bottom: 30px !important;
+        padding-bottom: 30px !important;
     }
     .cost{
         text-align: center;
@@ -217,6 +217,6 @@ hr.style-1 {
         padding-bottom: 20px;
     }
     .s{
-        padding: 10px 70px ;
+        width: 100%;
     }
 }

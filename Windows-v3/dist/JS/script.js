@@ -1,5 +1,21 @@
 
+$.getJSON('http://ipinfo.io', function(data){
+    $('#location').text(data['city'] +" Contractor-Matching"+ " ")
+}).done(function() {})
+    .fail(function() { $('#location').text("Contractor-Matching" + " ")  })
 var currentTab = 0;
+var zipCode =""
+var oneToTwo =""
+var threeToFive =""
+var sixToNine =""
+var TenOrAbove =""
+var windowReplacement = ""
+var windowRepair = ""
+var windowInstallation = ""
+var firstName=""
+var lastName=""
+var email =""
+var phone =""
 showTab(currentTab);
 
 function showTab(n) {
@@ -16,15 +32,56 @@ function showTab(n) {
 
 function nextPrev(n) {
     var x = document.getElementsByClassName("tab");
+    let zip = document.getElementById('zip')
+    let fName = document.getElementById('fName')
+    let lName = document.getElementById('lName')
+    let emailAddress = document.getElementById('email')
+    let phoneNumber = document.getElementById('phone')
     if (n === 1&&!validateForm()) return false;
     x[currentTab].style.display = "none";
 
     currentTab = currentTab + n;
     if (currentTab >= x.length) {
+        zipCode = zip.value
+        firstName = fName.value
+        lastName = lName.value
+        email = emailAddress.value
+        phone = phoneNumber.value
         document.getElementById("regForm").submit();
         return false;
     }
     showTab(currentTab);
+}
+function radioClick(index){
+    let one_Two = document.getElementById('1-2')
+    let three_five = document.getElementById('3-5')
+    let six_nine = document.getElementById('6-9')
+    let ten_above = document.getElementById('10+')
+    let replacement = document.getElementById('replacement')
+    let repair = document.getElementById('repair')
+    let installation = document.getElementById('installation')
+    if(index===0){
+        windowReplacement = replacement.innerText
+    }
+    else if(index===1){
+        windowRepair = repair.innerText
+    }
+    else if(index===2){
+        windowInstallation = installation.innerText
+    }
+    else if(index===3){
+        oneToTwo = one_Two.innerText
+    }
+    else if(index===4){
+        threeToFive = three_five.innerText
+    }
+    else if(index===5){
+        sixToNine = six_nine.innerText
+    }
+    else if(index===6){
+        TenOrAbove = ten_above.innerText
+    }
+    nextPrev(1)
 }
 
 function validateForm() {
