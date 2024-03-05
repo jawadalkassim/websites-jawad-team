@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
     <title>Windows 2024</title>
 
     <link href="./output.css" rel="stylesheet">
@@ -27,10 +29,10 @@
 <div style="background-image: radial-gradient(ellipse at center,#1e5799 0,#013652 63%,#002031 100%)">
     <div class="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 justify-center items-center">
      <div class="lg:p-10 md:p-10 sm:p-0  pt-5 flex justify-center lg:col-span-2 sm:col-span-1">
-         <form class="bg-white lg:p-10 md:p-0 sm:p-0 w-10/12 rounded " id="regForm" action="./submit-page.php">
+         <form class="bg-white lg:p-10 md:p-0 sm:p-0 w-10/12 rounded " id="regForm" action="./submit-page.html">
              <div class="tab">
                  <div class="text- text-3xl font-semibold pt-16 text-center p-5">
-                     <h1 class="pb-3 text-2xl text-gray-600">Contractor-Matching Service Pairs You with Expert Window Contractors in Your Area for Free</h1>
+                     <h1 class="pb-3 text-2xl text-gray-600"><span id="location"></span> Service Pairs You with Expert Window Contractors in Your Area for Free</h1>
                  </div>
                  <div class="text-lg text-gray-700 font-medium text-center pt-4 p-3">
                      Contribute to the Success of Your Window Replacement Project
@@ -39,7 +41,7 @@
                      <input type="text" id="zip" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-1/2 md:w-full sm:w-1/2 p-3.5" placeholder="ZIP Code" required />
                  </div>
                  <div id="zip-error" class="text-center text-red-600"></div>
-                 <div class="flex justify-center pt-5 items-center">
+                 <div class="l flex justify-center pt-5 items-center ">
                      <button type="button" onclick="nextPrev(1)" class=" bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/2 md:w-full sm:w-full py-3 mb-2  text-center items-center">
                          GET QUOTES
                      </button>
@@ -52,24 +54,24 @@
                  <p class="text-lg text-gray-700 font-medium text-center pt-4">We use this information to determine the scope of the project</p>
                  <div class="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 flex mx-0 justify-evenly mt-5">
                      <label class="card-radio-btn flex justify-center">
-                         <input onclick="nextPrev(1)" type="radio" class="card-input-element hidden" id="demo1">
+                         <input onclick="radioClick(0)" type="radio" class="card-input-element hidden" id="demo1">
                          <div class="card card-body mx-0">
                              <div class="content_head flex justify-center"><img src="./img/replace.png"></div>
-                             <div class="content_sub font-bold text-2xl" style="color: #444 !important;">Window Replacement</div>
+                             <div id="replacement" class="content_sub font-bold text-2xl" style="color: #444 !important;">Window Replacement</div>
                          </div>
                      </label>
                      <label class="card-radio-btn flex justify-center">
-                         <input onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                         <input onclick="radioClick(1)" type="radio" class="card-input-element hidden">
                          <div class="card card-body mx-0">
                              <div class="content_head flex justify-center"><img src="./img/repair.png"></div>
-                             <div class="content_sub font-bold text-2xl" style="color: #444 !important;">Window Repair</div>
+                             <div id="repair" class="content_sub font-bold text-2xl" style="color: #444 !important;">Window Repair</div>
                          </div>
                      </label>
                      <label class="card-radio-btn flex justify-center">
-                         <input onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                         <input onclick="radioClick(2)" type="radio" class="card-input-element hidden">
                          <div class="card card-body mx-0">
                              <div class="content_head flex justify-center"><img src="./img/installation.png"></div>
-                             <div class="content_sub font-bold text-2xl" style="color: #444 !important;">Window Installation</div>
+                             <div id="installation" class="content_sub font-bold text-2xl" style="color: #444 !important;">Window Installation</div>
                          </div>
                      </label>
                  </div>
@@ -80,26 +82,26 @@
                  </div>
                  <p class="text-lg text-gray-700 font-medium text-center pt-4">We use this information to determine the scope of the project</p>
                  <label class="flex justify-center items-center pt-8">
-                     <input onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
-                     <button type="button" onclick="nextPrev(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/2 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                     <input onclick="radioClick(3)" type="radio" class="card-input-element hidden">
+                     <button id="1-2" type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/2 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
                          1-2 windows
                      </button>
                  </label>
                  <label class="flex justify-center items-center">
-                     <input onclick="nextPrev(1)" type="radio" class="card-input-element hidden" >
-                     <button type="button" onclick="nextPrev(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/2 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                     <input onclick="radioClick(4)" type="radio" class="card-input-element hidden" >
+                     <button id="3-5" type="button" onclick="radioClick(4)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/2 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
                          3-5 windows
                      </button>
                  </label>
                  <label class="flex justify-center items-center">
-                     <input onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
-                     <button type="button" onclick="nextPrev(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/2 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                     <input onclick="radioClick(5)" type="radio" class="card-input-element hidden">
+                     <button id="6-9" type="button" onclick="radioClick(5)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/2 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
                          6-9 windows
                      </button>
                  </label>
                  <label class="flex justify-center items-center">
-                     <input onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
-                     <button type="button"  onclick="nextPrev(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/2 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                     <input onclick="radioClick(6)" type="radio" class="card-input-element hidden">
+                     <button id="10+" type="button"  onclick="radioClick(6)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/2 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
                          10+ windows
                      </button>
                  </label>
@@ -130,7 +132,7 @@
                      <input type="text" id="name" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-1/2 md:w-full sm:w-full p-3.5" placeholder="Enter first Name" required />
                  </div>
                  <div class="pt-5 flex justify-center">
-                     <input type="text" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-1/2 md:w-full sm:w-2/3 p-3.5 " placeholder="Enter last Name" required />
+                     <input id="lname" type="text" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-1/2 md:w-full sm:w-2/3 p-3.5 " placeholder="Enter last Name" required />
                  </div>
                  <div id="name-error" class="text-center" style="font-size: 14px">
 

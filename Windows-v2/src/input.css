@@ -215,4 +215,9 @@ hr.style-1 {
     input{
         margin: 0px 20px;
     }
+    .s{
+        width: 100%;
+        display: block;
+        margin: 5px 20px;
+    }
 }
