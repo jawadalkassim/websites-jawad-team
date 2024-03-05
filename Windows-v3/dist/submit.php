@@ -8,17 +8,17 @@
 
     <link href="./output.css" rel="stylesheet">
 </head>
-<body>
+<body style="overflow-y: hidden">
 <div class="hero bg-hero bg-no-repeat bg-cover bg-center bg-opacity-90" style="font-family: 'Ubuntu';">
     <div style="background-color: rgb(18,25,28,0.6);
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 30px;
     display: grid;
     grid-gap: 50px;
     grid-auto-rows: min-content;
     justify-content: center;
-">
+}">
 <section>
     <div class="pt-8 grid lg:grid-cols-3 md:grid-cols-1 flex justify-center">
         <div class="flex justify-center">
@@ -42,7 +42,7 @@
         </div>
     </div>
 </section>
-            <div class="text-center text-white text-4xl font-bold py-36">Thank you for taking the time to complete our survey.</div>
+            <div class="text-center text-white text-4xl font-bold pt-40 pb-80">Thank you for taking the time to complete our survey.</div>
     </div>
 </div>
 </body>
