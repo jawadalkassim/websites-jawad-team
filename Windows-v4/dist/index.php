@@ -278,7 +278,7 @@
                             <div class="pt-6 flex justify-center comment">
                                 <textarea id="message" rows="4" class=" block bg-white w-full text-sm font-semibold text-primaryColor rounded-lg pl-2 pt-3 " placeholder="Comments"></textarea>
                             </div>
-                            <p class="text-gray-700 text-sm pt-4 font-semibold text-start px-4">We respect your data and privacy. By clicking Get Your Instant Quote, you agree to the Terms of Service and Privacy Policy and you authorize home-improvements.space, and its partners to call the phone number provided, using automated phone technology and text messaging to contact you. By giving your authorization you are not obligated to purchase products or services, and you understand that you may revoke your consent at any time.</p>
+                            <p class="text-gray-700 text-sm pt-4 font-semibold text-start px-4">We respect your data and privacy. By clicking Get Your Instant Quote, you agree to the Terms of Service and Privacy Policy and you authorize Window, and its partners to call the phone number provided, using automated phone technology and text messaging to contact you. By giving your authorization you are not obligated to purchase products or services, and you understand that you may revoke your consent at any time.</p>
 
                                 <div class="flex justify-center pt-4">
                                     <button  type="button" onclick="nextPrev(1)" class="last-btn text-white text-xl bg-secondaryColor hover:bg-gray-400 font-semibold py-2 lg:px-12 rounded-lg">
