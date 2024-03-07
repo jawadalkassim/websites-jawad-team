@@ -780,7 +780,7 @@ input.invalid {
   display: none;
 }
 
-body {
+.bg-S {
   margin: auto;
   padding-top: 200px;
   font-family: 'Lexend Deca', sans-serif;
@@ -1046,5 +1046,9 @@ input[type="range"]::-moz-range-thumb {
 @media (min-width: 1024px){
   .lg\:w-1\/2{
     width: 50%;
+  }
+
+  .lg\:pt-20{
+    padding-top: 5rem;
   }
 }

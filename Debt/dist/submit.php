@@ -8,7 +8,7 @@
 
     <link href="/Debt/dist/output.css" rel="stylesheet">
 </head>
-<body style="overflow-y: hidden" class="bg-gray-200 font-bodyFont m-5">
+<body style="overflow-y: hidden" class="bg-S bg-gray-200 font-bodyFont m-5">
  <div class="r"></div>
             <div class="text-primary text-center text-4xl font-bold thank">Thank you for taking the time to complete our survey.</div>
 </body>

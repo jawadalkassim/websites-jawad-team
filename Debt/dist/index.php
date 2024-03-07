@@ -14,7 +14,7 @@
 <body class="bg-gray-200 font-bodyFont m-5">
 
 
-<h1 class="text-primary text-center text-5xl font-bold pt-20">
+<h1 class="text-primary text-center text-5xl font-bold lg:pt-20">
     Free Debt Relief Savings Estimate!
 </h1>
 <p class="text-center text-gray-600 text-xl pt-8">See how much you can save</p>
@@ -122,10 +122,19 @@
     </div>
 </form>
 
-<script src="/Debt/dist/script.js">
+</div>
+<div class="text-center pt-3 text-gray-500 font-bold font-bodyFont">
+    Pay Up To 30% Less Than You Owe
+</div>
+<div class="text-center text-gray-500 font-bold font-bodyFont">
+    Debt Free In As Little As 24-48 Months
+</div>
+<div class="text-center text-gray-500 font-bold font-bodyFont">
+    Free Consultation And Zero Up-Front-Fees
+</div>
+<script src="/Debt/dist/JS/script.js">
 
 </script>
-</div>
 </body>
 
 </html>
