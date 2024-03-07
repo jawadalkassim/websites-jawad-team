@@ -7,7 +7,8 @@ module.exports = {
         bodyFont:['Ubuntu']
       },
       colors:{
-        primary:"#24624b"
+        primary:"#881a1a",
+        secondary:"#2746a6"
       }
     },
   },

@@ -5,25 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Debt</title>
 
     <link href="/Debt/dist/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-200 font-bodyFont m-5">
+<body class="bg-gray-200 font-bodyFont">
 
+<nav class="flex justify-around bg-white shadow-lg">
+    <div class="pl-5">
+        <img src="./img/logo.png" class="w-2/12">
+    </div>
+    <div>
 
-<h1 class="text-primary text-center text-5xl font-bold lg:pt-20">
+    </div>
+</nav>
+<h1 class="text-primary text-center text-5xl font-bold lg:pt-10 m-5">
     Free Debt Relief Savings Estimate!
 </h1>
 <p class="text-center text-gray-600 text-xl pt-8">See how much you can save</p>
 <div class="flex justify-center">
-<form class="bg-white lg:w-1/2 mt-8 shadow-lg rounded-lg" id="regForm" action="/Debt/dist/submit.html">
+<form class="bg-white lg:w-1/2 mt-8 shadow-lg rounded-lg m-8" id="regForm" action="/Debt/dist/submit.html">
     <div class="tab">
         <div class="flex justify-center">
             <div class="pt-8">
-                <h2 class="text-blue-600 text-3xl font-semibold text-center px-8 ">How much debt do you have?</h2>
+                <h2 class="text-secondary text-3xl font-semibold text-center px-8 ">How much debt do you have?</h2>
             </div>
         </div>
         <div class="flex justify-center pt-8 ">
@@ -43,6 +51,15 @@
         <p class="text-gray-500 text-sm text-center">Drag the slider handler left or right.</p>
         <div class="flex justify-center py-10 items-center ">
             <button class="font-bodyFont bg-primary px-20 text-xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
+        </div>
+        <div class="text-center pt-3 text-gray-500 font-bold font-bodyFont">
+            <span><i class="fa fa-check" aria-hidden="true"></i></span> Pay Up To 30% Less Than You Owe
+        </div>
+        <div class="text-center text-gray-500 font-bold font-bodyFont">
+            <span><i class="fa fa-check" aria-hidden="true"></i></span> Debt Free In As Little As 24-48 Months
+        </div>
+        <div class="text-center text-gray-500 font-bold font-bodyFont">
+            <span><i class="fa fa-check" aria-hidden="true"></i></span> Free Consultation And Zero Up-Front-Fees
         </div>
 
     </div>
@@ -68,7 +85,7 @@
     <div class="tab">
         <div class="flex justify-center pt-2">
             <div>
-                <div><h1 class="pt-10 mb-2 text-blue-600 text-4xl font-semibold ">Contact Information</h1></div>
+                <div><h1 class="pt-10 mb-2 text-blue-600 text-4xl font-semibold title ">Contact Information</h1></div>
             </div>
         </div>
         <div class="flex justify-center">
@@ -92,7 +109,7 @@
     <div class="tab">
         <div class="flex justify-center pt-2">
             <div>
-                <div><h1 class="pt-10 mb-2 text-blue-600 text-4xl font-semibold ">Customer Information</h1></div>
+                <div><h1 class="pt-10 mb-2 text-blue-600 text-4xl font-semibold title">Contact Information</h1></div>
             </div>
         </div>
         <div class="flex justify-center pt-4">
@@ -121,17 +138,20 @@
         </div>
     </div>
 </form>
-
 </div>
-<div class="text-center pt-3 text-gray-500 font-bold font-bodyFont">
-    Pay Up To 30% Less Than You Owe
-</div>
-<div class="text-center text-gray-500 font-bold font-bodyFont">
-    Debt Free In As Little As 24-48 Months
-</div>
-<div class="text-center text-gray-500 font-bold font-bodyFont">
-    Free Consultation And Zero Up-Front-Fees
-</div>
+<footer class="bg-secondary pt-5 pb-20 mt-10">
+            <ul class="flex justify-evenly text-white">
+                <li>
+                    <a href="">Licensing and Disclosures</a>
+                </li>
+                <li>
+                    <a href="">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="">Terms of Use</a>
+                </li>
+            </ul>
+</footer>
 <script src="/Debt/dist/JS/script.js">
 
 </script>
