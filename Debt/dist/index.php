@@ -31,7 +31,7 @@
     <div class="tab">
         <div class="flex justify-center">
             <div class="pt-8">
-                <h2 class="text-secondary text-3xl font-semibold text-center px-8 ">How much debt do you have?</h2>
+                <h2 class="text-secondary text-3xl font-semibold text-center px-8 ">How Much Debt Do You Have?</h2>
             </div>
         </div>
         <div class="flex justify-center pt-8 ">
