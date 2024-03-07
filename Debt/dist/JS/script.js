@@ -77,7 +77,7 @@ function validateForm() {
                 valid= false;
             }
         }
-        if(currentTab===6){
+        if(currentTab===3){
             if(y[i].value.match(phoneno))
             {
                 return true;

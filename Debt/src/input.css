@@ -24,6 +24,12 @@ input.invalid {
 .tab {
     display: none;
 }
+body {
+    margin: auto;
+    padding-top: 200px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #2E475D;
+}
 
 button {
     background-color: #04AA6D;
@@ -206,7 +212,6 @@ hr.style-1 {
 }
 .wrapper {
     color: white;
-    max-width: 400px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -217,11 +222,9 @@ hr.style-1 {
 .range {
     display: flex;
     align-items: center;
-    max-width: 500px;
     height: 4rem;
-    width: 80%;
+    width: 100%;
     background: #fff;
-    padding: 0px 10px;
 }
 input[type="range"] {
     /* removing default appearance */
@@ -238,14 +241,14 @@ input[type="range"] {
 
 /* Track: webkit browsers */
 input[type="range"]::-webkit-slider-runnable-track {
-    height: 15px;
+    height: 10px;
     background: white;
     border-radius: 100px;
 }
 
 /* Track: Mozilla Firefox */
 input[type="range"]::-moz-range-track {
-    height: 15px;
+    height: 40px;
     background: white;
     border-radius: 16px;
 }
@@ -256,11 +259,12 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     /* creating a custom design */
-    height: 15px;
-    width: 15px;
+    height: 40px;
+    width: 40px;
     background-color: #fff;
     border-radius: 50%;
-    border: 2px solid rgb(37 99 235 );
+    margin-top: -15px;
+    border: 2px solid rgb(174,174,174);
     /*  slider progress trick  */
     box-shadow: -407px 0 0 400px rgb(37 99 235 );
 }
@@ -268,11 +272,19 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* Thumb: Firefox */
 input[type="range"]::-moz-range-thumb {
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 20px;
     background-color: #fff;
     border-radius: 50%;
     border: 1px solid rgb(37 99 235 );
     /*  slider progress trick  */
     box-shadow: -407px 0 0 400px rgb(37 99 235 );
+}
+@media (max-width: 1200px) {
+    .input-range{
+        width: 80% !important;
+    }
+}
+.thank{
+    text-align: center;
 }

@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         bodyFont:['Ubuntu']
       },
+      colors:{
+        primary:"#24624b"
+      }
     },
   },
   plugins: [],
