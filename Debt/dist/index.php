@@ -15,8 +15,8 @@
 <body class="bg-gray-200 font-bodyFont">
 
 <nav class="flex justify-around bg-white shadow-lg">
-    <div class="pl-5">
-        <img src="./img/logo.png" class="w-2/12">
+    <div class="pl-5 py-2">
+        <img src="/Debt/dist/img/logo.png" class="w-2/12">
     </div>
     <div>
 
@@ -27,7 +27,7 @@
 </h1>
 <p class="text-center text-gray-600 text-xl pt-8">See how much you can save</p>
 <div class="flex justify-center">
-<form class="bg-white lg:w-1/2 mt-8 shadow-lg rounded-lg m-8" id="regForm" action="/Debt/dist/submit.html">
+<form class="bg-white lg:w-1/2 mt-8 shadow-lg rounded-lg m-8" id="regForm" action="/Debt/dist/submit.php">
     <div class="tab">
         <div class="flex justify-center">
             <div class="pt-8">
@@ -58,7 +58,7 @@
         <div class="text-center text-gray-500 font-bold font-bodyFont">
             <span><i class="fa fa-check" aria-hidden="true"></i></span> Debt Free In As Little As 24-48 Months
         </div>
-        <div class="text-center text-gray-500 font-bold font-bodyFont">
+        <div class="text-center text-gray-500 font-bold font-bodyFont mb-10">
             <span><i class="fa fa-check" aria-hidden="true"></i></span> Free Consultation And Zero Up-Front-Fees
         </div>
 
@@ -66,7 +66,7 @@
     <div class="tab">
         <div class="flex justify-center pt-2">
         <div>
-        <div><h1 class="pt-10 text-blue-600 text-4xl font-semibold ">Where Are You Located?</h1></div>
+        <div><h1 class="pt-10 text-secondary text-4xl font-semibold ">Where Are You Located?</h1></div>
         <div> <p class="text-gray-500 text-xl pt-10 text-center mb-4">Enter your Zip Code</p></div>
         </div>
         </div>
@@ -85,7 +85,7 @@
     <div class="tab">
         <div class="flex justify-center pt-2">
             <div>
-                <div><h1 class="pt-10 mb-2 text-blue-600 text-4xl font-semibold title ">Contact Information</h1></div>
+                <div><h1 class="pt-10 mb-2 text-secondary text-4xl font-semibold title ">Contact Information</h1></div>
             </div>
         </div>
         <div class="flex justify-center">
@@ -109,7 +109,7 @@
     <div class="tab">
         <div class="flex justify-center pt-2">
             <div>
-                <div><h1 class="pt-10 mb-2 text-blue-600 text-4xl font-semibold title">Contact Information</h1></div>
+                <div><h1 class="pt-10 mb-2 text-secondary text-4xl font-semibold title">Contact Information</h1></div>
             </div>
         </div>
         <div class="flex justify-center pt-4">
@@ -140,17 +140,17 @@
 </form>
 </div>
 <footer class="bg-secondary pt-5 pb-20 mt-10">
-            <ul class="flex justify-evenly text-white">
-                <li>
+            <div class="grid lg:grid-cols-3 text-white">
+                <div class="flex justify-center">
                     <a href="">Licensing and Disclosures</a>
-                </li>
-                <li>
+                </div>
+                <div class="flex justify-center">
                     <a href="">Privacy Policy</a>
-                </li>
-                <li>
+                </div>
+                <div class="flex justify-center">
                     <a href="">Terms of Use</a>
-                </li>
-            </ul>
+                </div>
+            </div>
 </footer>
 <script src="/Debt/dist/JS/script.js">
 
