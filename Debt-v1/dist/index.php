@@ -30,7 +30,7 @@
     </div>
 </nav>
 
-<h1 class="text-primary text-center text-6xl font-bold lg:pt-7 m-5 title">
+<h1 class="text-primary text-center text-6xl font-bold lg:pt-8 m-5 title">
     Free Debt Relief Savings Estimate!
 </h1>
 <p class="text-center text-gray-600 text-xl pt-4">See how much you can save</p>
@@ -79,7 +79,7 @@
         <div class="flex justify-center pt-2">
         <div>
         <div><h1 class="pt-10 text-secondary text-4xl font-semibold ">Where Are You Located?</h1></div>
-        <div> <p class="text-gray-500 text-xl pt-10 text-center mb-4">Enter your Zip Code</p></div>
+        <div> <p class="text-gray-500 text-xl pt-10 text-center mb-4 q-title">Enter your Zip Code</p></div>
         </div>
         </div>
         <div>
@@ -97,19 +97,19 @@
     <div class="tab">
         <div class="flex justify-center pt-2">
             <div>
-                <div><h1 class="pt-10 mb-2 text-secondary text-4xl font-semibold title ">Contact Information</h1></div>
+                <div><h1 class="pt-10 mb-2 text-secondary text-4xl font-semibold title q-title ">Contact Information</h1></div>
             </div>
         </div>
         <div class="flex justify-center">
             <div class="lg:w-1/2 input-range">
                 <div class="w-full pt-3">
-                    <input type="text" id="first" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 " placeholder="Enter your full name" required />
+                    <label for="first"></label><input type="text" id="first" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 " placeholder="Enter your full name" required />
                 </div>
                 <div class="w-full pt-3">
-                    <input type="text" id="last" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 " placeholder="Enter your last name" required />
+                    <label for="last"></label><input type="text" id="last" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 " placeholder="Enter your last name" required />
                 </div>
                 <div class="w-full pt-3">
-                    <input type="email" id="email" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 " placeholder="Enter your email" required />
+                    <label for="email"></label><input type="email" id="email" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 " placeholder="Enter your email" required />
                 </div>
             </div>
         </div>
@@ -121,19 +121,19 @@
     <div class="tab">
         <div class="flex justify-center pt-2">
             <div>
-                <div><h1 class="pt-10 mb-2 text-secondary text-4xl font-semibold title">Contact Information</h1></div>
+                <div><h1 class="pt-10 mb-2 text-secondary text-4xl font-semibold title q-title">Contact Information</h1></div>
             </div>
         </div>
         <div class="flex justify-center pt-4">
             <div class="lg:w-1/2 input-range">
                 <div class="w-full pt-3">
-                    <input type="text" id="address" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 " placeholder="Enter your address" required />
+                    <label for="address"></label><input type="text" id="address" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 " placeholder="Enter your address" required />
                 </div>
                 <div class="w-full pt-3">
-                    <input type="tel" id="phone" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 " placeholder="Enter your phone number" required />
+                    <label for="phone"></label><input type="tel" id="phone" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 " placeholder="Enter your phone number" required />
                 </div>
                 <div class="flex justify-center py-10 items-center ">
-                    <button class="font-bodyFont bg-primary px-20 text-xl font-bold rounded-full" onclick="nextPrev(1)">Submit</button>
+                    <button class="font-bodyFont bg-primary px-20 text-xl font-bold rounded-full q-title q-button" onclick="nextPrev(1)">Submit</button>
                 </div>
             </div>
         </div>
