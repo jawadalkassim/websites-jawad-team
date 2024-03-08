@@ -13,18 +13,27 @@
 </head>
 
 <body class="bg-gray-200 font-bodyFont">
-<nav class="flex lg:justify-around bg-white shadow-lg">
-    <div class="pl-5 py-2 brand">
-        <img src="/Debt-v1/dist/img/logo.png" class="w-2/12">
+<nav class="bg-white shadow-lg">
+    <div class="block">
+    <div class="flex justify-center">
+    <div class="py-1 brand flex justify-center">
+        <img src="/Debt-v1/dist/img/logo.png" style="width: 15%">
     </div>
-    <div>
-
+    </div>
+    </div>
+    <div class="block pb-2">
+        <div class="flex justify-center">
+            <div class="text-center block text-xl text-secondary font-semibold">
+                Debt Relief Savings
+            </div>
+        </div>
     </div>
 </nav>
-<h1 class="text-primary text-center text-5xl font-bold lg:pt-10 m-5">
+
+<h1 class="text-primary text-center text-5xl font-bold lg:pt-6 m-5">
     Free Debt Relief Savings Estimate!
 </h1>
-<p class="text-center text-gray-600 text-xl pt-8">See how much you can save</p>
+<p class="text-center text-gray-600 text-xl pt-4">See how much you can save</p>
 <div class="flex justify-center">
 <form class="bg-white lg:w-1/2 mt-8 shadow-lg rounded-lg m-8" id="regForm" action="/Debt-v1/dist/submit.php">
     <div class="tab">
@@ -133,7 +142,7 @@
     </div>
     <div style="overflow:auto" class="flex justify-center" >
         <div style="float:right;">
-            <button type="button" class="text-xl font-bold" id="prevBtn" onclick="nextPrev(-1)">← Back</button>
+            <button type="button" class="text-xl font-bold text-gray-500 font-bodyFont" id="prevBtn" onclick="nextPrev(-1)">← Back</button>
         </div>
     </div>
 </form>

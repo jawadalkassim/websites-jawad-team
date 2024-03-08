@@ -26,7 +26,7 @@ input.invalid {
 }
 .bg-S {
     margin: auto;
-    padding-top: 200px;
+    padding-top: 100px;
     font-family: 'Lexend Deca', sans-serif;
     color: #2E475D;
 }
@@ -277,6 +277,9 @@ input[type="range"]::-moz-range-thumb {
 
     box-shadow: -407px 0 0 400px #4b75ff;
 }
+.brand img{
+    width: 20%;
+}
 @media (max-width: 1200px) {
     .input-range{
         width: 80% !important;
@@ -285,12 +288,8 @@ input[type="range"]::-moz-range-thumb {
         display: flex;
         justify-content: center;
     }
-    nav{
-        display: flex;
-        justify-content: center !important;
-    }
-    .brand img{
-        width: 20%;
+    footer a{
+        padding-top: 20px;
     }
 }
 .thank{
@@ -299,5 +298,11 @@ input[type="range"]::-moz-range-thumb {
 @media (max-width: 480px) {
     #regForm{
         padding: 10px;
+    }
+}
+@media (max-width: 900px) {
+    footer{
+        padding-top: 20px;
+        padding-bottom: 150px;
     }
 }
