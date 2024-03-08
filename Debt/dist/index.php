@@ -13,9 +13,8 @@
 </head>
 
 <body class="bg-gray-200 font-bodyFont">
-
-<nav class="flex justify-around bg-white shadow-lg">
-    <div class="pl-5 py-2">
+<nav class="flex lg:justify-around bg-white shadow-lg">
+    <div class="pl-5 py-2 brand">
         <img src="/Debt/dist/img/logo.png" class="w-2/12">
     </div>
     <div>

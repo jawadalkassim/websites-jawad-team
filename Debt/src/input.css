@@ -281,6 +281,17 @@ input[type="range"]::-moz-range-thumb {
     .input-range{
         width: 80% !important;
     }
+    .brand{
+        display: flex;
+        justify-content: center;
+    }
+    nav{
+        display: flex;
+        justify-content: center !important;
+    }
+    .brand img{
+        width: 20%;
+    }
 }
 .thank{
     text-align: center;
