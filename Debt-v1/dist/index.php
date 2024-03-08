@@ -26,7 +26,7 @@
 </h1>
 <p class="text-center text-gray-600 text-xl pt-8">See how much you can save</p>
 <div class="flex justify-center">
-<form class="bg-white lg:w-1/2 mt-8 shadow-lg rounded-lg m-8" id="regForm" action="/Debt/dist/submit.php">
+<form class="bg-white lg:w-1/2 mt-8 shadow-lg rounded-lg m-8" id="regForm" action="/Debt-v1/dist/submit.php">
     <div class="tab">
         <div class="flex justify-center">
             <div class="pt-8">
