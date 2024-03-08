@@ -12,12 +12,12 @@
     <link href="/Debt-v1/dist/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-200 font-bodyFont">
+<body class="bg-gray-100 font-bodyFont">
 <nav class="bg-white shadow-lg">
     <div class="block">
     <div class="flex justify-center">
     <div class="py-1 brand flex justify-center">
-        <img src="/Debt-v1/dist/img/logo.png" style="width: 15%">
+        <img src="/Debt-v1/dist/img/logo2.png">
     </div>
     </div>
     </div>
@@ -30,27 +30,27 @@
     </div>
 </nav>
 
-<h1 class="text-primary text-center text-5xl font-bold lg:pt-6 m-5">
+<h1 class="text-primary text-center text-6xl font-bold lg:pt-7 m-5 title">
     Free Debt Relief Savings Estimate!
 </h1>
 <p class="text-center text-gray-600 text-xl pt-4">See how much you can save</p>
 <div class="flex justify-center">
-<form class="bg-white lg:w-1/2 mt-8 shadow-lg rounded-lg m-8" id="regForm" action="/Debt-v1/dist/submit.php">
+<form class="bg-white lg:w-8/12 mt-8 shadow-lg rounded-lg m-8" id="regForm" action="/Debt-v1/dist/submit.php">
     <div class="tab">
         <div class="flex justify-center">
-            <div class="pt-8">
-                <h2 class="text-secondary text-3xl font-semibold text-center px-8 ">How Much Debt Do You Have?</h2>
+            <div class="pt-16">
+                <h2 class="text-secondary text-4xl font-semibold text-center px-8 ">How Much Debt Do You Have?</h2>
             </div>
         </div>
         <div class="flex justify-center pt-8 ">
             <h5 class="text-gray-500 text-lg font-bold">Estimated Debt</h5>
         </div>
         <div class="flex justify-center">
-        <div class="flex justify-center text-2xl" style="color:  #0045c2;">$</div>
-        <div id="output" class=" text-primary text-center"></div>
+        <div class="flex justify-center text-2xl dol" style="color:  #0045c2;">$</div>
+        <div id="output" class=" text-3xl text-primary text-center font-bodyFont"></div>
         </div>
         <div class="flex justify-center">
-        <div class="w-7/12 input-range">
+        <div class="w-8/12 input-range">
                         <div class="range flex justify-center px-4">
                             <input type="range" value="20000" min="0" max="100000" id="slider" step="1000"/>
                         </div>
@@ -60,14 +60,18 @@
         <div class="flex justify-center py-10 items-center ">
             <button class="font-bodyFont bg-primary px-20 text-xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
         </div>
-        <div class="text-center pt-3 text-gray-500 font-bold font-bodyFont">
-            <span><i class="fa fa-check" aria-hidden="true"></i></span> Pay Up To 30% Less Than You Owe
+        <div class="grid lg:grid-cols-2 pt-8">
+            <div><div class="text-center text-gray-500 font-bold font-bodyFont">
+                <span><i class="fa fa-check text-primary" aria-hidden="true"></i></span> Pay Up To 30% Less Than You Owe
+            </div>
+            </div>
+        <div><div class="features text-center text-gray-500 font-bold font-bodyFont">
+            <span><i class="fa fa-check text-primary" aria-hidden="true"></i></span> Debt Free In As Little As 24-48 Months
         </div>
-        <div class="text-center text-gray-500 font-bold font-bodyFont">
-            <span><i class="fa fa-check" aria-hidden="true"></i></span> Debt Free In As Little As 24-48 Months
         </div>
-        <div class="text-center text-gray-500 font-bold font-bodyFont mb-10">
-            <span><i class="fa fa-check" aria-hidden="true"></i></span> Free Consultation And Zero Up-Front-Fees
+        </div>
+        <div class="text-center pt-8 text-gray-500 font-bold font-bodyFont mb-10">
+            <span><i class="fa fa-check text-primary" aria-hidden="true"></i></span> Free Consultation And Zero Up-Front-Fees
         </div>
 
     </div>

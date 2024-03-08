@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        bodyFont:['Ubuntu']
+        bodyFont:['Poppins']
       },
       colors:{
-        primary:"#881a1a",
-        secondary:"#2746a6"
+        primary:"#176B87",
+        secondary:"#3D3B40"
       }
     },
   },

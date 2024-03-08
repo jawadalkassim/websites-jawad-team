@@ -12,13 +12,13 @@
 <body class="bg-gray-200 font-bodyFont ">
 <nav class="bg-white shadow-lg">
     <div class="block">
-        <div class="flex justify-center">
-            <div class="py-1 brand flex justify-center">
-                <img src="/Debt-v1/dist/img/logo.png" style="width: 15%">
-            </div>
-        </div>
+    <div class="flex justify-center">
+    <div class="py-1 brand flex justify-center">
+        <img src="/Debt-v1/dist/img/logo2.png">
     </div>
-    <div class="block pb-2 ">
+    </div>
+    </div>
+    <div class="block pb-2">
         <div class="flex justify-center">
             <div class="text-center block text-xl text-secondary font-semibold">
                 Debt Relief Savings
@@ -26,7 +26,6 @@
         </div>
     </div>
 </nav>
-
  <div class="r bg-S"></div>
             <div class="text-secondary text-center text-4xl font-bold thank  px-5">Thank you for taking the time to complete our survey.</div>
 <footer class="bg-secondary lg:pb-80 pt-5 mt-80 ">
