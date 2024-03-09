@@ -574,6 +574,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-80{
+  margin-top: 20rem;
+}
+
 .block{
   display: block;
 }
@@ -647,6 +651,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
@@ -682,6 +691,10 @@ video {
 
 .pt-10{
   padding-top: 2.5rem;
+}
+
+.pt-14{
+  padding-top: 3.5rem;
 }
 
 .pt-2{
@@ -725,6 +738,11 @@ video {
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-6xl{
@@ -788,6 +806,12 @@ video {
 .shadow-lg{
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1090,11 +1114,11 @@ input[type="range"] {
   outline: none;
   padding: 15px 10px;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 25px;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
-  height: 5px;
+  height: 15px;
   background: white;
   border-radius: 100px;
 }
@@ -1102,7 +1126,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 input[type="range"]::-moz-range-track {
   height: 40px;
   background: white;
-  border-radius: 16px;
+  border-radius: 25px;
 }
 
 /* Thumb: webkit */
@@ -1110,10 +1134,10 @@ input[type="range"]::-moz-range-track {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  height: 35px;
-  width: 35px;
+  height: 45px;
+  width: 45px;
   background-color: #176B87;
-  border-radius: 50%;
+  border-radius: 75%;
   margin-top: -15px;
   padding-right: -20px !important;
   border: 2px solid #dadada;
@@ -1125,12 +1149,48 @@ input[type="range"]::-moz-range-thumb {
   height: 5px;
   width: 20px;
   background-color: #176B87;
-  border-radius: 50%;
+  border-radius: 75%;
   border: 1px solid #176B87;
 }
 
 .brand img{
   width: 5% !important;
+}
+
+@media (min-width:842px) and (max-width:1199px) {
+  .brand img {
+    width: 5% !important;
+  }
+
+  button{
+    padding: 1.25rem 5rem !important;
+  }
+}
+
+@media (min-width: 1023px) {
+  #formResp{
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  #regForm{
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+  }
+
+  button{
+    padding: 1.25rem 5rem;
+  }
+}
+
+@media (min-width:250px) and (max-width:841px) {
+  .brand img {
+    width: 10% !important;
+  }
+
+  #regForm{
+    margin: 1rem !important;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1139,7 +1199,7 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .brand img {
-    width: 20% !important;
+    width: 20% ;
   }
 
   .title {
@@ -1223,9 +1283,13 @@ input[type="range"]::-moz-range-thumb {
     padding-right: 10rem;
   }
 
-  .lg\:py-4{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  .lg\:py-5{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .lg\:pb-80{
+    padding-bottom: 20rem;
   }
 
   .lg\:pt-8{

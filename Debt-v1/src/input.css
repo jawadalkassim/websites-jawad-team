@@ -307,17 +307,16 @@ input[type="range"] {
 
     -webkit-appearance: none;
     appearance: none;
-
     width: 100%;
     cursor: pointer;
     outline: none;
     padding: 15px 10px;
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: 25px;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
-    height: 5px;
+    height: 15px;
     background: white;
     border-radius: 100px;
 }
@@ -326,17 +325,17 @@ input[type="range"]::-webkit-slider-runnable-track {
 input[type="range"]::-moz-range-track {
     height: 40px;
     background: white;
-    border-radius: 16px;
+    border-radius: 25px;
 }
 
 /* Thumb: webkit */
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    height: 35px;
-    width: 35px;
+    height: 45px;
+    width: 45px;
     background-color: #176B87;
-    border-radius: 50%;
+    border-radius: 75%;
     margin-top: -15px;
     padding-right: -20px !important;
     border: 2px solid #dadada;
@@ -350,12 +349,41 @@ input[type="range"]::-moz-range-thumb {
     height: 5px;
     width: 20px;
     background-color: #176B87;
-    border-radius: 50%;
+    border-radius: 75%;
     border: 1px solid #176B87;
 
 }
 .brand img{
     width: 5% !important;
+}
+@media (min-width:842px) and (max-width:1199px) {
+    .brand img {
+        width: 5% !important;
+    }
+    button{
+        padding: 1.25rem 5rem !important;
+    }
+}
+@media (min-width: 1023px) {
+    #formResp{
+        display: flex !important;
+        justify-content: center !important;
+    }
+    #regForm{
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+    }
+    button{
+        padding: 1.25rem 5rem;
+    }
+}
+@media (min-width:250px) and (max-width:841px) {
+    .brand img {
+        width: 10% !important;
+    }
+    #regForm{
+        margin: 1rem !important;
+    }
 }
 @media (max-width: 1200px) {
     .input-range {
@@ -363,7 +391,7 @@ input[type="range"]::-moz-range-thumb {
     }
 
     .brand img {
-        width: 20% !important;
+        width: 20% ;
     }
 
     .title {

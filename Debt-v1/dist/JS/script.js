@@ -9,6 +9,12 @@ output.innerHTML = slider.value;
 
 slider.oninput = function() {
     output.innerHTML = this.value;
+    if(output.innerHTML==="100000"){
+      slider.style.background="#176B87"
+    }
+    else{
+        slider.style.background="white"
+    }
 }
 function showTab(n) {
     var tab = document.getElementsByClassName("tab");

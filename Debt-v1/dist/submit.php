@@ -9,7 +9,7 @@
     <link href="/Debt-v1/dist/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-200 font-bodyFont ">
+<body class="font-bodyFont " style="background: linear-gradient(90deg, rgba(6,119,204,0.08698091052827384) 0%, rgba(6,119,204,0) 100%);">
 <nav class="bg-white shadow-lg">
     <div class="block">
     <div class="flex justify-center">
@@ -27,7 +27,7 @@
     </div>
 </nav>
  <div class="r bg-S"></div>
-            <div class="text-secondary text-center text-5xl font-bold thank  px-5">Thank you for taking the time to complete our survey.</div>
+            <div class="text-primary pt-14 text-center text-5xl font-bold thank  px-5 font-bodyFont">Thank you for taking the time to complete our survey.</div>
 <footer class="bg-secondary lg:pb-80 pt-5 mt-80 ">
     <div class="grid lg:grid-cols-3 text-white">
         <div class="flex justify-center">

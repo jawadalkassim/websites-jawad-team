@@ -34,12 +34,9 @@
     Free Debt Relief Savings Estimate!
 </h1>
 <p class="text-center text-gray-600 text-xl pt-4">See how much you can save</p>
-<div class="flex justify-center">
-    <form class="bg-white lg:w-8/12 mt-8 shadow-lg rounded-lg m-8" id="regForm" action="/Debt-v1/dist/submit.php">
+<div id="formResp">
+    <form class="bg-white lg:w-8/12 mt-8 shadow-xl rounded-lg m-8" id="regForm" action="/Debt-v1/dist/submit.php">
         <div class="stepper-wrapper py-5 lg:px-40">
-            <div class="stepper-item">
-                <div class="step-counter"></div>
-            </div>
             <div class="stepper-item">
                 <div class="step-counter"></div>
             </div>
@@ -75,7 +72,7 @@
         </div>
         <p class="text-gray-500 text-sm text-center">Drag the slider handler left or right.</p>
         <div class="flex justify-center py-12 items-center ">
-            <button class="font-bodyFont bg-primary lg:px-20 lg:py-4 text-xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
+            <button class="font-bodyFont bg-primary lg:px-20 lg:py-5 text-2xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
         </div>
         <div class="grid lg:grid-cols-2 pt-8">
             <div><div class="text-center text-gray-500 font-bold font-bodyFont">
@@ -107,7 +104,7 @@
         </div>
             <div id="zip-error" style="text-align: center;padding-top: 5px"></div>
             <div class="flex justify-center py-10 items-center ">
-                <button class="font-bodyFont bg-primary lg:px-20 lg:py-4 text-xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
+                <button class="font-bodyFont bg-primary lg:px-20 lg:py-5 text-2xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
             </div>
         </div>
     </div>
@@ -132,7 +129,7 @@
         </div>
         <div id="email-error" style="text-align: center;padding-top: 5px"></div>
         <div class="flex justify-center py-10 items-center ">
-            <button class="font-bodyFont bg-primary lg:px-20 lg:py-4 text-xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
+            <button class="font-bodyFont bg-primary lg:px-20 lg:py-5 text-2xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
         </div>
     </div>
     <div class="tab">
@@ -150,7 +147,7 @@
                     <label for="phone"></label><input type="tel" id="phone" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-4 " placeholder="Enter your phone number" required />
                 </div>
                 <div class="flex justify-center py-10 items-center ">
-                    <button class="font-bodyFont bg-primary lg:py-4 lg:px-20 text-xl font-bold rounded-full q-title q-button" onclick="nextPrev(1)">Submit</button>
+                    <button class="font-bodyFont bg-primary lg:px-20 lg:py-5 text-2xl font-bold rounded-full q-title q-button" onclick="nextPrev(1)">Submit</button>
                 </div>
             </div>
         </div>
