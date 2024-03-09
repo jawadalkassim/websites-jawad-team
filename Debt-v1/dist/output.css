@@ -574,10 +574,6 @@ video {
   margin-top: 2rem;
 }
 
-.mt-80{
-  margin-top: 20rem;
-}
-
 .block{
   display: block;
 }
@@ -627,16 +623,6 @@ video {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
-.bg-gray-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
-.bg-gray-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
 .bg-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(23 107 135 / var(--tw-bg-opacity));
@@ -660,19 +646,21 @@ video {
   padding: 0.625rem;
 }
 
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
+.p-3{
+  padding: 0.75rem;
+}
+
+.p-3\.5{
+  padding: 0.875rem;
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .px-8{
@@ -690,6 +678,21 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pb-2{
   padding-bottom: 0.5rem;
 }
@@ -700,10 +703,6 @@ video {
 
 .pt-10{
   padding-top: 2.5rem;
-}
-
-.pt-16{
-  padding-top: 4rem;
 }
 
 .pt-2{
@@ -747,11 +746,6 @@ video {
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-6xl{
@@ -826,7 +820,6 @@ input {
   padding: 10px;
   width: 100%;
   font-size: 17px;
-  font-family: Raleway;
   border: 1px solid #aaaaaa;
 }
 
@@ -855,7 +848,6 @@ button {
   border: none;
   padding: 10px 20px;
   font-size: 17px;
-  font-family: Raleway;
   cursor: pointer;
 }
 
@@ -937,6 +929,82 @@ hr.style-1 {
   font-size: 14px;
 }
 
+.stepper-wrapper {
+  padding-top: 40px !important;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stepper-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.stepper-item::before {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  top: 10px;
+  left: -50%;
+  z-index: 2;
+}
+
+.stepper-item::after {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #ccc;
+  width: 50%;
+  top: 10px;
+  left: 50%;
+  z-index: 2;
+}
+
+.stepper-item .step-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ccc;
+  margin-bottom: 6px;
+}
+
+.stepper-item.active {
+  font-weight: bold;
+}
+
+.stepper-item.completed .step-counter {
+  background-color: #176B87;
+}
+
+.stepper-item.completed::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #176B87;
+  width: 100%;
+  top: 10px;
+  left: 50%;
+  z-index: 3;
+}
+
+.stepper-item:first-child::before {
+  content: none;
+}
+
+.stepper-item:last-child::after {
+  content: none;
+}
+
 .card-input-element + .card {
   opacity: 90%;
   background: rgb(255,255,255,0.9);
@@ -1009,7 +1077,6 @@ hr.style-1 {
 
 #output {
   color:  #176B87;
-  font-family: 'Roboto', sans-serif;
   letter-spacing: 1.5px;
   font-size: 35px;
   padding-top: 10px;
@@ -1167,8 +1234,19 @@ input[type="range"]::-moz-range-thumb {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:pb-80{
-    padding-bottom: 20rem;
+  .lg\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:px-40{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .lg\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .lg\:pt-8{

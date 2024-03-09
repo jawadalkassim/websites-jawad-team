@@ -93,18 +93,17 @@ function validateForm() {
     }
 
     if (valid) {
-        document.getElementsByClassName("step")[currentTab].className += " finish";
+        document.getElementsByClassName("stepper-item")[currentTab].className += " finish";
     }
     return valid;
 }
 
 function fixStepIndicator(n) {
 
-    var i, x = document.getElementsByClassName("step");
+    var i, x = document.getElementsByClassName("stepper-item");
     for (i = 0; i < x.length; i++) {
-        x[i].className = x[i].className.replace(" active", "");
-        x[i].style.display="none"
+        x[i].className = x[i].className.replace("stepper-item", "stepper-item active");
+        x[i].style.display="flex"
     }
-
-    x[n].className += " active";
+    x[n].className += "active completed";
 }

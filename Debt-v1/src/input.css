@@ -10,7 +10,6 @@ input {
     padding: 10px;
     width: 100%;
     font-size: 17px;
-    font-family: Raleway;
     border: 1px solid #aaaaaa;
 }
 
@@ -36,7 +35,6 @@ button {
     border: none;
     padding: 10px 20px;
     font-size: 17px;
-    font-family: Raleway;
     cursor: pointer;
 }
 
@@ -117,6 +115,80 @@ hr.style-1 {
 .card-radio-btn .content_sub {
     color: #9e9e9e;
     font-size: 14px;
+}
+.stepper-wrapper {
+    padding-top: 40px !important;
+    display: flex;
+    justify-content: space-around;
+}
+.stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+.stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    top: 10px;
+    left: -50%;
+    z-index: 2;
+}
+
+.stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #ccc;
+    width: 50%;
+    top: 10px;
+    left: 50%;
+    z-index: 2;
+}
+
+.stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-bottom: 6px;
+}
+
+.stepper-item.active {
+    font-weight: bold;
+}
+
+.stepper-item.completed .step-counter {
+    background-color: #176B87;
+}
+
+.stepper-item.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #176B87;
+    width: 100%;
+    top: 10px;
+    left: 50%;
+    z-index: 3;
+}
+
+.stepper-item:first-child::before {
+    content: none;
+}
+.stepper-item:last-child::after {
+    content: none;
 }
 
 .card-input-element + .card {
@@ -208,7 +280,6 @@ hr.style-1 {
 }
 #output {
     color:  #176B87;
-    font-family: 'Roboto', sans-serif;
     letter-spacing: 1.5px;
     font-size: 35px;
     padding-top: 10px;
