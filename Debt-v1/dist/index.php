@@ -12,7 +12,7 @@
     <link href="/Debt-v1/dist/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-100 font-bodyFont">
+<body class=" font-bodyFont" style="background: linear-gradient(90deg, rgba(6,119,204,0.08698091052827384) 0%, rgba(6,119,204,0) 100%);">
 <nav class="bg-white shadow-lg">
     <div class="block">
     <div class="flex justify-center">
@@ -35,10 +35,27 @@
 </h1>
 <p class="text-center text-gray-600 text-xl pt-4">See how much you can save</p>
 <div class="flex justify-center">
-<form class="bg-white lg:w-8/12 mt-8 shadow-lg rounded-lg m-8" id="regForm" action="/Debt-v1/dist/submit.php">
+    <form class="bg-white lg:w-8/12 mt-8 shadow-lg rounded-lg m-8" id="regForm" action="/Debt-v1/dist/submit.php">
+        <div class="stepper-wrapper py-5 lg:px-40">
+            <div class="stepper-item">
+                <div class="step-counter"></div>
+            </div>
+            <div class="stepper-item">
+                <div class="step-counter"></div>
+            </div>
+            <div class="stepper-item">
+                <div class="step-counter"></div>
+            </div>
+            <div class="stepper-item">
+                <div class="step-counter"></div>
+            </div>
+            <div class="stepper-item">
+                <div class="step-counter"></div>
+            </div>
+        </div>
     <div class="tab">
         <div class="flex justify-center">
-            <div class="pt-16">
+            <div class="pt-5">
                 <h2 class="text-secondary text-4xl font-semibold text-center px-8 ">How Much Debt Do You Have?</h2>
             </div>
         </div>
@@ -57,8 +74,8 @@
         </div>
         </div>
         <p class="text-gray-500 text-sm text-center">Drag the slider handler left or right.</p>
-        <div class="flex justify-center py-10 items-center ">
-            <button class="font-bodyFont bg-primary px-20 text-xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
+        <div class="flex justify-center py-12 items-center ">
+            <button class="font-bodyFont bg-primary lg:px-20 lg:py-4 text-xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
         </div>
         <div class="grid lg:grid-cols-2 pt-8">
             <div><div class="text-center text-gray-500 font-bold font-bodyFont">
@@ -78,44 +95,44 @@
     <div class="tab">
         <div class="flex justify-center pt-2">
         <div>
-        <div><h1 class="pt-10 text-secondary text-4xl font-semibold ">Where Are You Located?</h1></div>
+        <div><h1 class="pt-5 text-secondary text-4xl font-semibold ">Where Are You Located?</h1></div>
         <div> <p class="text-gray-500 text-xl pt-10 text-center mb-4 q-title">Enter your Zip Code</p></div>
         </div>
         </div>
         <div>
             <div class="flex justify-center">
         <div class="lg:w-1/2 input-range">
-                <input type="text" id="zip" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 " placeholder="12345" required />
+                <input type="text" id="zip" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-4 " placeholder="12345" required />
             </div>
         </div>
             <div id="zip-error" style="text-align: center;padding-top: 5px"></div>
             <div class="flex justify-center py-10 items-center ">
-                <button class="font-bodyFont bg-primary px-20 text-xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
+                <button class="font-bodyFont bg-primary lg:px-20 lg:py-4 text-xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
             </div>
         </div>
     </div>
     <div class="tab">
         <div class="flex justify-center pt-2">
             <div>
-                <div><h1 class="pt-10 mb-2 text-secondary text-4xl font-semibold title q-title ">Contact Information</h1></div>
+                <div><h1 class="pt-5 mb-2 text-secondary text-4xl font-semibold title q-title ">Contact Information</h1></div>
             </div>
         </div>
         <div class="flex justify-center">
             <div class="lg:w-1/2 input-range">
                 <div class="w-full pt-3">
-                    <label for="first"></label><input type="text" id="first" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 " placeholder="Enter your full name" required />
+                    <label for="first"></label><input type="text" id="first" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-4 " placeholder="Enter your full name" required />
                 </div>
                 <div class="w-full pt-3">
-                    <label for="last"></label><input type="text" id="last" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 " placeholder="Enter your last name" required />
+                    <label for="last"></label><input type="text" id="last" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-4 " placeholder="Enter your last name" required />
                 </div>
                 <div class="w-full pt-3">
-                    <label for="email"></label><input type="email" id="email" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 " placeholder="Enter your email" required />
+                    <label for="email"></label><input type="email" id="email" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-4 " placeholder="Enter your email" required />
                 </div>
             </div>
         </div>
         <div id="email-error" style="text-align: center;padding-top: 5px"></div>
         <div class="flex justify-center py-10 items-center ">
-            <button class="font-bodyFont bg-primary px-20 text-xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
+            <button class="font-bodyFont bg-primary lg:px-20 lg:py-4 text-xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
         </div>
     </div>
     <div class="tab">
@@ -124,25 +141,19 @@
                 <div><h1 class="pt-10 mb-2 text-secondary text-4xl font-semibold title q-title">Contact Information</h1></div>
             </div>
         </div>
-        <div class="flex justify-center pt-4">
+        <div class="flex justify-center pt-5">
             <div class="lg:w-1/2 input-range">
                 <div class="w-full pt-3">
-                    <label for="address"></label><input type="text" id="address" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 " placeholder="Enter your address" required />
+                    <label for="address"></label><input type="text" id="address" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-4 " placeholder="Enter your address" required />
                 </div>
                 <div class="w-full pt-3">
-                    <label for="phone"></label><input type="tel" id="phone" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 " placeholder="Enter your phone number" required />
+                    <label for="phone"></label><input type="tel" id="phone" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-4 " placeholder="Enter your phone number" required />
                 </div>
                 <div class="flex justify-center py-10 items-center ">
-                    <button class="font-bodyFont bg-primary px-20 text-xl font-bold rounded-full q-title q-button" onclick="nextPrev(1)">Submit</button>
+                    <button class="font-bodyFont bg-primary lg:py-4 lg:px-20 text-xl font-bold rounded-full q-title q-button" onclick="nextPrev(1)">Submit</button>
                 </div>
             </div>
         </div>
-    </div>
-    <div style="text-align:center;">
-        <span class="step"></span>
-        <span class="step"></span>
-        <span class="step"></span>
-        <span class="step"></span>
     </div>
     <div style="overflow:auto" class="flex justify-center" >
         <div style="float:right;">
