@@ -1142,7 +1142,7 @@ input[type="range"]::-webkit-slider-thumb {
   padding-right: -20px !important;
   border: 2px solid #dadada;
   /*  slider progress trick  */
-  box-shadow: -407px 0 0 390px #176B87;
+  box-shadow: -407px 0 0 390px  #176B87;
 }
 
 input[type="range"]::-moz-range-thumb {
@@ -1184,6 +1184,26 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:250px) and (max-width:841px) {
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 5px;
+    background: white;
+    border-radius: 100px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    background-color: #176B87;
+    border-radius: 50%;
+    margin-top: -12px;
+    padding-right: -20px !important;
+    border: 2px solid #dadada;
+    /*  slider progress trick  */
+    box-shadow: -407px 0 0 390px #176B87;
+  }
+
   .brand img {
     width: 10% !important;
   }
@@ -1194,6 +1214,10 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (max-width: 1200px) {
+  button{
+    padding:20px 40px !important;
+  }
+
   .input-range {
     width: 80% !important;
   }
@@ -1212,7 +1236,7 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .q-button{
-    padding: 10px 20px;
+    padding: 15px 30px;
   }
 
   .brand {
