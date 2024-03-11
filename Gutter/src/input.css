@@ -212,7 +212,7 @@ hr.style-1 {
     }
     .brand{
         padding-top: 10px;
-        width: 30%;
+        width: 50%;
     }
     .ins_img{
         width:25%;
@@ -233,8 +233,8 @@ hr.style-1 {
         width: 50%;
     }
 .brand{
-    width:25%;
-    max-width: 120px;
+    width:40% !important;
+    max-width: 180px;
 }
     .tab{
         padding: 40px 110px;

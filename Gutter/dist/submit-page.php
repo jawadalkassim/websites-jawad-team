@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit</title>
-    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/Gutter/dist/output.css">
 </head>
 <body style="overflow-y: hidden">
 
 <nav class="text-center " style="background: white">
     <div class="grid lg:grid-cols-2 md:grid-cols-1 items-center ">
-        <div class="flex justify-center items-center p-3 ">
-            <img src="/Gutter/dist/img/logo.png" class="w-2/12 brand">
+        <div class="flex justify-center items-center p-2 ">
+            <img src="/Gutter/dist/img/logo.png" class="w-3/12 brand">
         </div>
-        <a href="" class="pt-2 text-primaryColor decoration-primaryColor font-bold text-xl block lg:text-end sm:text-center md:text-center lg:mx-40 md:mx-0 sm:mx-0 pb-3 lg:w-1/2 sm:w-full">Get Free Quotes</a>
+        <a href="" class="pt-3 text-primaryColor decoration-primaryColor font-bold text-3xl block lg:text-end sm:text-center md:text-center lg:mx-40 md:mx-0 sm:mx-0 pb-3 lg:w-1/2 sm:w-full">Get Free Quotes</a>
     </div>
 </nav>
 <div class=" w-full grid grid-cols-3 p-3 justify-center shadow k" style="background: #065c8b">
