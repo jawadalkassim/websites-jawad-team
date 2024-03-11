@@ -51,7 +51,7 @@
                          </div>
                      </label>
                      <label class="card-radio-btn flex justify-center">
-                         <input onclick="radioClick(2)" type="radio" class="card-input-element hidden">
+                         <input onclick="radioClick(2)" type="radio" class="card-input-element hidden k">
                          <div class="card card-body mx-0">
                              <div class="content_head flex justify-center"><img src="/Gutter/dist/img/guard3.png" class="r-image w-6/12" style="margin-top: -12px"></div>
                              <div id="guard" class="content_sub font-bold text-4xl pt-3" style="color: #444 !important;font-size: 1.5rem">Gutter Guard</div>
