@@ -1,7 +1,4 @@
-$.getJSON('http://ipinfo.io', function(data){
-    $('#location').text(data['city'] +" Contractor-Matching"+ " ")
-}).done(function() {})
-    .fail(function() { $('#location').text("Contractor-Matching" + " ")  })
+
 var currentTab = 0;
 var gutterGrand = ""
 var gutterRepair = ""
@@ -98,7 +95,7 @@ function validateForm() {
     return valid;
 }
 function radioClick(index){
-    let grand = document.getElementById('grand')
+    let grand = document.getElementById('guard')
     let repair = document.getElementById('repair')
     let installation = document.getElementById('installation')
     if(index===0){

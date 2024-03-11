@@ -203,12 +203,55 @@ hr.style-1 {
     font-size: 0.8rem;
     width: 90px;
 }
+@media (max-width: 1199px) {
+    .thank{
+        padding: 180px 20px;
+    }
+    .border{
+        margin: 20px;
+    }
+    .brand{
+        padding-top: 10px;
+        width: 30%;
+    }
+    .ins_img{
+        width:25%;
+    }
+    .r-image{
+        margin-top: -15px !important;
+        width: 35%;
+    }
+}
+@media (min-width:630px) and (max-width:1023px) {
+    .ins_img{
+        width:50%;
+    }
+    .thank{
+        padding: 250px 20px;
+    }
+    .r-image{
+        width: 50%;
+    }
+.brand{
+    width:25%;
+    max-width: 120px;
+}
+    .tab{
+        padding: 40px 110px;
+    }
+}
 @media (min-width: 1200px) {
     .rate{
         text-align: start !important;
     }
 }
 @media (max-width: 768px) {
+    .thank{
+        padding: 280px 20px;
+    }
+    .ins_img{
+        width:35%;
+    }
     .rate{
         text-align: center !important;
     }
