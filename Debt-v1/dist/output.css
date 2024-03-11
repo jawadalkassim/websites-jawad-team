@@ -651,11 +651,6 @@ video {
   padding-right: 1rem;
 }
 
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
@@ -681,6 +676,11 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pb-2{
   padding-bottom: 0.5rem;
 }
@@ -691,10 +691,6 @@ video {
 
 .pt-10{
   padding-top: 2.5rem;
-}
-
-.pt-14{
-  padding-top: 3.5rem;
 }
 
 .pt-2{
@@ -715,6 +711,10 @@ video {
 
 .pt-8{
   padding-top: 2rem;
+}
+
+.pt-14{
+  padding-top: 3.5rem;
 }
 
 .text-center{
@@ -740,11 +740,6 @@ video {
   line-height: 2.5rem;
 }
 
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
@@ -763,6 +758,11 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold{
@@ -1215,11 +1215,11 @@ input[type="range"]::-moz-range-thumb {
 
 @media (max-width: 1200px) {
   button{
-    padding:20px 40px !important;
+    padding:15px 30px !important;
   }
 
   .input-range {
-    width: 80% !important;
+    width: 90% !important;
   }
 
   .brand img {
@@ -1312,11 +1312,11 @@ input[type="range"]::-moz-range-thumb {
     padding-bottom: 1.25rem;
   }
 
-  .lg\:pb-80{
-    padding-bottom: 20rem;
-  }
-
   .lg\:pt-8{
     padding-top: 2rem;
+  }
+
+  .lg\:pb-80{
+    padding-bottom: 20rem;
   }
 }

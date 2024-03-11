@@ -405,10 +405,10 @@ input[type="range"]::-moz-range-thumb {
 }
 @media (max-width: 1200px) {
     button{
-        padding:20px 40px !important;
+        padding:15px 30px !important;
     }
     .input-range {
-        width: 80% !important;
+        width: 90% !important;
     }
 
     .brand img {
