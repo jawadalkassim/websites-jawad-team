@@ -27,9 +27,9 @@
     <div class="text-center text-white font-bold"><span class="pr-2"><svg style="display: inline ;width: 5%" class="svg-inline--fa fa-check-square" aria-hidden="true" focusable="false" data-prefix="far" data-icon="check-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zm0 400H48V80h352v352zm-35.864-241.724L191.547 361.48c-4.705 4.667-12.303 4.637-16.97-.068l-90.781-91.516c-4.667-4.705-4.637-12.303.069-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l59.792 60.277 141.352-140.216c4.705-4.667 12.303-4.637 16.97.068l22.536 22.718c4.667 4.706 4.637 12.304-.068 16.971z"></path></svg></span>Gas Safe registered engineers</div>
 </div>
 <div style="background-image: radial-gradient(ellipse at center,#1e5799 0,#013652 63%,#002031 100%)">
-    <div class="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 justify-center items-center " style="padding-bottom: 100px;padding-top: 20px">
-     <div class="pt-10 pb-10  pt-5 flex justify-center lg:col-span-2 sm:col-span-1 border" style="border: none;">
-         <form class="bg-white lg:p-10 md:p-0 sm:p-0 lg:w-10/12 rounded shadow-lg " id="regForm" action="/Gutter/dist/submit-page.php">
+    <div class="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 justify-center items-center " id="row">
+     <div class="lg:pt-10 pb-10  flex justify-center lg:col-span-2 sm:col-span-1 border" style="border: none;">
+         <form class="bg-white lg:p-10 md:p-0 sm:p-0 lg:w-10/12 rounded shadow-lg pt-5" id="regForm" action="/Gutter/dist/submit-page.php">
              <div class="tab text-3xl">
                  <div class="text- text-3xl font-semibold pt-16 text-center p-5">
                      <h1 class="pb-3 text-4xl text-gray-600">What is the aim of your
@@ -145,9 +145,9 @@
              </div>
          </form>
      </div>
-    <div class="lg:text-start sm:text-center p-9" >
+    <div class="lg:text-start sm:text-center pl-9 pr-9" >
         <div class="rate">
-        <div class="pt-10 ">
+        <div class="description">
             <h2 class="text-5xl text-white font-bold">
                 Get your best deal
             </h2>

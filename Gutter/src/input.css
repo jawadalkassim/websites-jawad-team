@@ -192,7 +192,9 @@ hr.style-1 {
         transform: rotateZ(0deg);
     }
 }
-
+.description{
+    line-height: 2.9;
+}
 .ribbon {
     position: absolute;
     top: 5px;
@@ -203,7 +205,17 @@ hr.style-1 {
     font-size: 0.8rem;
     width: 90px;
 }
+#row{
+    padding-bottom: 100px;
+    padding-top: 50px!important;
+}
 @media (max-width: 1199px) {
+    .description{
+        line-height: 2;
+    }
+    #row{
+        padding-top: 0px;
+    }
     .thank{
         padding: 180px 20px;
     }
