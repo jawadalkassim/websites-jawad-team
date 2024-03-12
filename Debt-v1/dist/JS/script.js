@@ -10,7 +10,7 @@ output.innerHTML = slider.value;
 slider.oninput = function() {
     output.innerHTML = this.value;
     if(output.innerHTML==="100000"){
-      slider.style.background="#176B87"
+      slider.style.background=" rgb(185 28 28 )"
     }
     else{
         slider.style.background="white"
@@ -102,6 +102,16 @@ function validateForm() {
         document.getElementsByClassName("stepper-item")[currentTab].className += " finish";
     }
     return valid;
+}
+function backPrev(n){
+    var i, x = document.getElementsByClassName("stepper-item");
+    for (i = 0; i < x.length; i++) {
+        if(i>=1 && i<x.length){
+            x[currentTab-1].className = x[currentTab-1].className.replace("stepper-item", "stepper-item active");
+            x[currentTab].className = x[currentTab].className.replace("active completed", "stepper-item");
+        }
+    }
+    nextPrev(n)
 }
 
 function fixStepIndicator(n) {
