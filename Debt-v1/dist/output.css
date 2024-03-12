@@ -627,14 +627,9 @@ video {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
-.bg-primary{
+.bg-red-600{
   --tw-bg-opacity: 1;
-  background-color: rgb(23 107 135 / var(--tw-bg-opacity));
-}
-
-.bg-red-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .bg-secondary{
@@ -647,11 +642,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
 .p-4{
   padding: 1rem;
 }
@@ -659,6 +649,11 @@ video {
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .px-8{
@@ -686,11 +681,6 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .pb-2{
   padding-bottom: 0.5rem;
 }
@@ -701,6 +691,10 @@ video {
 
 .pt-10{
   padding-top: 2.5rem;
+}
+
+.pt-14{
+  padding-top: 3.5rem;
 }
 
 .pt-2{
@@ -721,10 +715,6 @@ video {
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pt-14{
-  padding-top: 3.5rem;
 }
 
 .text-center{
@@ -750,6 +740,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
@@ -768,11 +763,6 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .font-bold{
@@ -1164,12 +1154,12 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .brand img{
-  width: 5% !important;
+  width:35% !important;
 }
 
 @media (min-width:842px) and (max-width:1199px) {
   .brand img {
-    width: 5% !important;
+    width: 35% !important;
   }
 
   button{
@@ -1215,7 +1205,7 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .brand img {
-    width: 10% !important;
+    width: 40% !important;
   }
 
   #regForm{
@@ -1233,7 +1223,7 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .brand img {
-    width: 20% ;
+    width: 50% ;
   }
 
   .title {
@@ -1322,11 +1312,11 @@ input[type="range"]::-moz-range-thumb {
     padding-bottom: 1.25rem;
   }
 
-  .lg\:pt-8{
-    padding-top: 2rem;
-  }
-
   .lg\:pb-80{
     padding-bottom: 20rem;
+  }
+
+  .lg\:pt-8{
+    padding-top: 2rem;
   }
 }

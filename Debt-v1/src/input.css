@@ -354,11 +354,11 @@ input[type="range"]::-moz-range-thumb {
 
 }
 .brand img{
-    width: 5% !important;
+    width:35% !important;
 }
 @media (min-width:842px) and (max-width:1199px) {
     .brand img {
-        width: 5% !important;
+        width: 35% !important;
     }
     button{
         padding: 1.25rem 5rem !important;
@@ -397,7 +397,7 @@ input[type="range"]::-moz-range-thumb {
         box-shadow: -407px 0 0 390px  rgb(185 28 28 );
     }
     .brand img {
-        width: 10% !important;
+        width: 40% !important;
     }
     #regForm{
         margin: 1rem !important;
@@ -412,7 +412,7 @@ input[type="range"]::-moz-range-thumb {
     }
 
     .brand img {
-        width: 20% ;
+        width: 50% ;
     }
 
     .title {

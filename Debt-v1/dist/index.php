@@ -17,7 +17,7 @@
     <div class="block">
     <div class="flex justify-center">
     <div class="py-1 brand flex justify-center">
-        <img src="/Debt-v1/dist/img/logo2.png">
+        <img src="/Debt-v1/dist/img/logo.png">
     </div>
     </div>
     </div>
