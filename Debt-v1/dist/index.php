@@ -164,7 +164,7 @@
             </div>
         </div>
     </div>
-    <div style="overflow:auto" class="flex justify-center" >
+    <div style="overflow:auto" class="flex justify-center " >
         <div style="float:right;">
             <button type="button" class="text-xl font-bold text-gray-500 font-bodyFont" id="prevBtn" onclick="backPrev(-1)">← Back</button>
         </div>
