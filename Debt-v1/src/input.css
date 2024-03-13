@@ -342,7 +342,41 @@ input[type="range"]::-webkit-slider-thumb {
     /*  slider progress trick  */
     box-shadow: -407px 0 0 390px   rgb(185 28 28 );
 }
-
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+.responsive-table th,
+.responsive-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    vertical-align: top;
+}
+.responsive-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+}
+@media screen and (max-width: 200px) {
+    .responsive-table thead {
+        display: none;
+    }
+    .responsive-table tr {
+        display: block;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+    }
+    .responsive-table td {
+        display: block;
+        text-align: left;
+    }
+    .responsive-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 10px;
+    }
+}
 
 
 input[type="range"]::-moz-range-thumb {

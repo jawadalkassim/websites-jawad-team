@@ -17,8 +17,8 @@
         </div>
     </div>
 </nav>
-<h1 class="bg-primary text-white text-3xl py-8">Privacy Policy</h1>
-<div class="font-bodyFont px-20 pt-4">
+<h1 class="bg-primary text-white text-3xl lg:py-8">Privacy Policy</h1>
+<div class="font-bodyFont lg:px-20 pt-4">
 <h1 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;font-size:21px;font-family:"Calibri Light",sans-serif;color:#2F5496;font-weight:normal;'><span style="color:#C00000;">INTRODUCTION</span></h1>
 <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;text-align:justify;background:white;'><span style="font-size:15px;color:black;">We take user privacy seriously and want you to be informed.&nbsp;</span><span style="font-size:15px;color:#0E1111;">This Privacy Policy, which is incorporated into our&nbsp;</span><span style="color:black;"><a href="https://start.jugglingdebt.com/terms-of-use/"><span style="font-size:15px;">Terms of Service</span></a></span><span style="font-size:15px;color:#0E1111;">, outlines the privacy practices of Loanz USA Inc.&nbsp;</span><span style="font-size:15px;color:black;">(&ldquo;Company,&rdquo; &ldquo;us,&rdquo; &ldquo;we,&rdquo; or &ldquo;our&rdquo;)</span><span style="font-size:15px;color:#0E1111;">&nbsp;in connection with your (&ldquo;you&rdquo; or&nbsp;</span><span style="font-size:15px;color:black;">&ldquo;your&rdquo;) access to or use of our Website JugglingDebt.com, and related services (collectively with the Website, the &ldquo;Service&rdquo;).&nbsp;</span><span style="font-size:15px;color:black;">By accessing or using our Service, you acknowledge that you have read, understood, and agree to be bound by our terms, including this Privacy Policy.</span></p>
 <h1 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;font-size:21px;font-family:"Calibri Light",sans-serif;color:#2F5496;font-weight:normal;'><span style="color:#C00000;">WHO ARE WE?</span></h1>
@@ -59,10 +59,10 @@
 <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;text-align:justify;'><span style="font-size:15px;color:#222A35;background:yellow;">&nbsp;</span></p>
 <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;text-align:justify;'><span style="font-size:15px;color:#222A35;">More specifically, we collect the following information for the referenced purposes.&nbsp;</span></p>
 <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
-<table style="width:472.25pt;border-collapse:collapse;border:none;">
+    <table class="responsive-table">
     <tbody>
     <tr>
-        <td style="width: 78.7pt;border: 1pt solid windowtext;background: rgb(242, 242, 242);padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border: 1pt solid windowtext;background: rgb(242, 242, 242);padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><strong><span style="font-size:15px;color:#222A35;">Category</span></strong></p>
         </td>
         <td style="width: 160.65pt;border-top: 1pt solid windowtext;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;background: rgb(242, 242, 242);padding: 0cm 5.4pt;vertical-align: top;">
@@ -78,23 +78,23 @@
         </td>
     </tr>
     <tr>
-        <td style="width: 78.7pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><strong><em><span style='font-size:15px;font-family:"Calibri",sans-serif;color:#222A35;'>Identifiers</span></em></strong></p>
             <p style='margin-right:0cm;margin-left:12.0pt;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;margin-top:0cm;margin-bottom:0cm;background:white;vertical-align:baseline;'><strong><em><span style='font-size:15px;font-family:"Calibri",sans-serif;color:#222A35;'>&nbsp;</span></em></strong></p>
         </td>
-        <td style="width: 160.65pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><strong><span style="font-size:15px;color:#222A35;">Contact Information</span></strong><span style="font-size:15px;color:#222A35;">, such as name, telephone number, street address, and email address.&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
         </td>
-        <td style="width: 112.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">We collect this information when you provide it, such as when you complete a form on the Website.&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">We may also collect data from third parties, such as lead generation companies who have provided your information to us as a small business that may be interested in our Services.&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
         </td>
-        <td style="width: 120.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">We collect and use data for all business purposes, such as providing and improving our Services, your information to Debt Relief Services Providers, responding to communications, and for security and auditing purposes.&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">We may also collect and use your contact information to market our offerings to you, such as through emails.&nbsp;</span></p>
@@ -102,23 +102,23 @@
         </td>
     </tr>
     <tr>
-        <td style="width: 78.7pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><strong><em><span style='font-size:15px;font-family:"Calibri",sans-serif;color:#222A35;'>Commercial Data</span></em></strong></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><strong><em><span style='font-size:15px;font-family:"Calibri",sans-serif;color:#222A35;'>&nbsp;</span></em></strong></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><strong><em><span style='font-size:15px;font-family:"Calibri",sans-serif;color:#222A35;'>&nbsp;</span></em></strong></p>
         </td>
-        <td style="width: 160.65pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><strong><span style="font-size:15px;color:#222A35;">Financial</span></strong><span style="font-size:15px;color:#222A35;">, such as <span style="background:white;">name, information about your creditors and debt, and so forth.&nbsp;</span></span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><span style='font-size:15px;font-family:  "Calibri",sans-serif;color:#222A35;'>&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><strong><span style='font-size:15px;font-family:"Calibri",sans-serif;color:#222A35;'>Inferences</span></strong><span style='font-size:15px;font-family:"Calibri",sans-serif;color:#222A35;'>, such as creating a profile relating to consumer preferences and trends.</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
         </td>
-        <td style="width: 112.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">We collect this information when you provide it, such as when you submit a Request.&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">We may also collect information from third parties to help with responding to your requests, processing transactions, and improving offerings.</span></p>
         </td>
-        <td style="width: 120.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">We collect and use data for all business purposes, such as providing and improving our services, connecting you with Debt Relief Services Providers, responding to communications, and for security and auditing purposes.&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">We may also use inference information to market offerings of interest to you. &nbsp;</span></p>
@@ -126,37 +126,37 @@
         </td>
     </tr>
     <tr>
-        <td style="width: 78.7pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><strong><em><span style='font-size:15px;font-family:"Calibri",sans-serif;color:#222A35;'>Personal Background&nbsp;</span></em></strong></p>
         </td>
-        <td style="width: 160.65pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><strong><span style="font-size:15px;color:#222A35;">Protected Class</span></strong><span style="font-size:15px;color:#222A35;">, such as <span style="background:white;">sex or age.</span><strong>&nbsp;</strong></span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><strong><span style="font-size:15px;color:#222A35;">&nbsp;</span></strong></p>
         </td>
-        <td style="width: 112.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">We collect this information when you provide it, such as when you submit a Request.&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
         </td>
-        <td style="width: 120.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">We collect and use data for all business purposes, such as to connect you with Debt Relief Services Providers, respond to communications, and for security and auditing purposes.&nbsp;</span></p>
         </td>
     </tr>
     <tr>
-        <td style="width: 78.7pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><strong><em><span style='font-size:15px;font-family:"Calibri",sans-serif;color:#222A35;'>Device Data</span></em></strong></p>
         </td>
-        <td style="width: 160.65pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><strong><span style="font-size:15px;color:#222A35;">Internet and Network Data</span></strong><span style="font-size:15px;color:#222A35;">, such as browsing history, search history, and information regarding a consumer&rsquo;s interaction with an internet website, application, or advertisement. See below for more information about cookies and other tracking technologies.</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><strong><span style="font-size:15px;color:#222A35;">Geolocation</span></strong><span style="font-size:15px;color:#222A35;">, such as general location from an IP address.&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
         </td>
-        <td style="width: 112.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">We collect this data through cookies and other automated technologies. For example, like many companies, we automatically gather information about your device, such as your IP address, browser type, and operating system. For more information on these practices, see below.&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
         </td>
-        <td style="width: 120.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">We collect and use data for all business purposes, such as providing and improving our services and for security and auditing purposes.&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">We may also use device data to market offerings of interest to you. &nbsp;</span></p>
@@ -165,48 +165,48 @@
         </td>
     </tr>
     <tr>
-        <td style="width: 78.7pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><strong><em><span style='font-size:15px;font-family:"Calibri",sans-serif;color:#222A35;'>Sensitive Data</span></em></strong></p>
         </td>
-        <td style="width: 160.65pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><span style='font-size:15px;font-family:  "Calibri",sans-serif;color:#222A35;'>In addition to categories described above, we may collect the following:</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><strong><span style='font-size:15px;font-family:"Calibri",sans-serif;color:#222A35;'>&nbsp;</span></strong></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><strong><span style='font-size:15px;font-family:"Calibri",sans-serif;color:#222A35;'>Identification Information</span></strong><span style='font-size:15px;font-family:  "Calibri",sans-serif;color:#222A35;'>, such as your Social Security Number, business EIN, driver&rsquo;s license information, date of birth, other tax information, employee information, and financial information necessary to assess your debt.</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><span style='font-size:15px;font-family:  "Calibri",sans-serif;color:#222A35;'>&nbsp;</span></p>
         </td>
-        <td style="width: 112.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><span style='font-size:15px;font-family:  "Calibri",sans-serif;color:#222A35;'>We collect sensitive information <u>only</u> when you expressly provide it to us. &nbsp;For more information on these practices, see below.</span></p>
         </td>
-        <td style="width: 120.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">We <u>only</u> collect and use sensitive data for the business purposes outlined, such as to connect you with Debt Relief Services Providers.&nbsp;</span></p>
         </td>
     </tr>
     <tr>
-        <td style="width: 78.7pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><strong><em><span style='font-size:15px;font-family:"Calibri",sans-serif;color:#222A35;'>Other Personalized Data</span></em></strong></p>
         </td>
-        <td style="width: 160.65pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><strong><span style='font-size:15px;font-family:"Calibri",sans-serif;color:#222A35;'>Employment</span></strong><span style='font-size:15px;font-family:"Calibri",sans-serif;color:#222A35;'>, such as employee data necessary to connect you with Debt Relief Services Providers.</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><strong><span style='font-size:15px;font-family:"Calibri",sans-serif;color:#222A35;'>Other Information</span></strong><span style='font-size:15px;font-family:  "Calibri",sans-serif;color:#222A35;'>, such as communications to us.</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><span style='font-size:15px;font-family:  "Calibri",sans-serif;color:#222A35;background:yellow;'>&nbsp;</span></p>
         </td>
-        <td style="width: 112.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><span style='font-size:15px;font-family:  "Calibri",sans-serif;color:#222A35;'>We may collect this information if you provide it, such as if you apply for a job or send us a message or documents.</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><span style='font-size:15px;font-family:  "Calibri",sans-serif;color:#222A35;background:yellow;'>&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><span style='font-size:15px;font-family:  "Calibri",sans-serif;color:#222A35;background:yellow;'>&nbsp;</span></p>
         </td>
-        <td style="width: 120.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">We collect and use data for business purposes, such as reviewing and preparing forms and providing and improving the Service.&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><span style='font-size:15px;font-family:  "Calibri",sans-serif;color:#222A35;'>&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;background:white;vertical-align:baseline;'><span style='font-size:15px;font-family:  "Calibri",sans-serif;color:#222A35;background:yellow;'>&nbsp;</span></p>
         </td>
     </tr>
     <tr>
-        <td style="width: 78.7pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><strong><em><span style="font-size:15px;color:#222A35;">Other Non-Personalized Data</span></em></strong></p>
         </td>
-        <td style="width: 160.65pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><strong><span style="font-size:15px;color:#222A35;">Public information</span></strong></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><strong><span style="font-size:15px;color:#222A35;background:  yellow;">&nbsp;</span></strong></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><strong><span style="font-size:15px;color:#222A35;">Aggregate information</span></strong></p>
@@ -216,17 +216,18 @@
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><strong><span style="font-size:15px;color:#222A35;">Pseudonymized data</span></strong></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
         </td>
-        <td style="width: 112.05pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">We may collect this information at any time, from public, third party, and other sources.</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">For example, we may share a public review that you posted about us or use aggregate data for our analytics.</span></p>
         </td>
-        <td style="width: 120.85pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+        <td style="border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
             <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">We may collect and use this data for any business or commercial purposes. The information will either be public data or not identify individual users. &nbsp;</span></p>
         </td>
     </tr>
     </tbody>
 </table>
+</div>
 <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;">&nbsp;</span></p>
 <h1 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;font-size:21px;font-family:"Calibri Light",sans-serif;color:#2F5496;font-weight:normal;'><span style="color:#C00000;">WHEN DO WE DISCLOSE INFORMATION?&nbsp;</span></h1>
 <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;text-align:justify;'><span style="font-size:15px;color:#222A35;">As part of our business, we disclose information as follows and for the outlined purposes, which include business purposes to provide and improve the Service and comply with legal and contractual obligations, as well as commercial purposes, such as to market our business.&nbsp;</span></p>
