@@ -184,7 +184,7 @@
             </div>
             <div class="divTableRow">
                 <div class="divTableCell">
-                    <p><strong><em>Other Personalized Data</em></strong></p>
+                    <p><strong><em >Other Personalized Data</em></strong></p>
                 </div>
                 <div class="divTableCell">
                     <p><strong>Employment</strong>, such as employee data necessary to connect you with Debt Relief Services Providers.</p>
