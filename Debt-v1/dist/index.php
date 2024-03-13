@@ -145,7 +145,7 @@
                         <div class=" pt-1">
                     <input type="checkbox" id="checkbox1" class="w-3" required />
                         </div>
-                        <span class="pl-2">By checking this box, I agree to the <span class="font-bold text-primary"><a href="Debt-v1/dist/Terms.php">Terms of Use</a></span>  and <span class="font-bold text-primary "><a href="Debt-v1/dist/privacy_policy.php"> Privacy Policy.</a></span></span>
+                        <span class="pl-2">By checking this box, I agree to the <span class="font-bold text-primary"><a href="/Debt-v1/dist/Terms.php">Terms of Use</a></span>  and <span class="font-bold text-primary "><a href="/Debt-v1/dist/privacy_policy.php"> Privacy Policy.</a></span></span>
                     </div>
                 </div>
                 <div class="w-full pt-3">
@@ -180,10 +180,10 @@
                     <a href="">Do Not Sell My Information</a>
                 </div>
                 <div class="flex justify-center">
-                    <a href="Debt-v1/dist/privacy_policy.php">Privacy Policy</a>
+                    <a href="/Debt-v1/dist/privacy_policy.php">Privacy Policy</a>
                 </div>
                 <div class="flex justify-center">
-                    <a href="Debt-v1/dist/Terms.php">Terms of Use</a>
+                    <a href="/Debt-v1/dist/Terms.php">Terms of Use</a>
                 </div>
             </div>
     <div class="pt-8 text-center text-white lg:px-24" style="font-size: 13px">
