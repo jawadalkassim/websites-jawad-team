@@ -59,7 +59,35 @@
 <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;text-align:justify;'><span style="font-size:15px;color:#222A35;background:yellow;">&nbsp;</span></p>
 <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;text-align:justify;'><span style="font-size:15px;color:#222A35;">More specifically, we collect the following information for the referenced purposes.&nbsp;</span></p>
 <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'><span style="font-size:15px;color:#222A35;">&nbsp;</span></p>
-    <p>&nbsp;</p>
+    <div class="table2">
+        <strong>Category: Identifiers</strong><br>
+        Examples of Data Collected: Contact Information, such as name, telephone number, street address, and email address.<br>
+        Collection Point: We collect this information when you provide it, such as when you complete a form on the Website. We may also collect data from third parties, such as lead generation companies who have provided your information to us as a small business that may be interested in our Services.<br>
+        Purpose for Collection and Use: We collect and use data for all business purposes, such as providing and improving our Services, your information to Debt Relief Services Providers, responding to communications, and for security and auditing purposes. We may also collect and use your contact information to market our offerings to you, such as through emails.<br>
+        <strong>Category: Commercial Data</strong><br>
+        Examples of Data Collected: Financial information, such as names, information about your creditors and debt, and so forth. Inferences, such as creating a profile relating to consumer preferences and trends.<br>
+        Collection Point: We collect this information when you provide it, such as when you submit a Request. We may also collect information from third parties to help with responding to your requests, processing transactions, and improving offerings.<br>
+        Purpose for Collection and Use: We collect and use data for all business purposes, such as providing and improving our services, connecting you with Debt Relief Services Providers, responding to communications, and for security and auditing purposes. We may also use inference information to market offerings of interest to you.<br>
+        <strong>Category: Personal Background</strong><br>
+        Examples of Data Collected: Protected Class, such as sex or age.<br>
+        Collection Point: We collect this information when you provide it, such as when you submit a Request.<br>
+        Purpose for Collection and Use: We collect and use data for all business purposes, such as to connect you with Debt Relief Services Providers, respond to communications, and for security and auditing purposes.<br>
+        <strong>Category: Device Data</strong><br>
+        Examples of Data Collected: Internet and Network Data, such as browsing history, search history, and information regarding a consumer’s interaction with an internet website, application, or advertisement. Geolocation, such as general location from an IP address.<br>
+        Collection Point: We collect this data through cookies and other automated technologies. For example, like many companies, we automatically gather information about your device, such as your IP address, browser type, and operating system.<br>
+        Purpose for Collection and Use: We collect and use data for all business purposes, such as providing and improving our services and for security and auditing purposes. We may also use device data to market offerings of interest to you.<br>
+        <strong>Category: Sensitive Data</strong><br>
+        Examples of Data Collected: Identification Information, such as your Social Security Number, business EIN, driver’s license information, date of birth, other tax information, employee information, and financial information necessary to assess your debt.<br>
+        Collection Point: We collect sensitive information only when you expressly provide it to us.<br>
+        Purpose for Collection and Use: We only collect and use sensitive data for the business purposes outlined, such as to connect you with Debt Relief Services Providers.<br>
+        <strong>Category: Other Personalized Data</strong><br>
+        Examples of Data Collected: Employment, such as employee data necessary to connect you with Debt Relief Services Providers. Other Information, such as communications to us.<br>
+        Collection Point: We may collect this information if you provide it, such as if you apply for a job or send us a message or documents.<br>
+        Purpose for Collection and Use: We collect and use data for business purposes, such as reviewing and preparing forms and providing and improving the Service.<br>
+        <strong>Category: Other Non-Personalized Data</strong><br>
+        Examples of Data Collected: Public information, Aggregate information, De-identified data, Pseudonymized data.<br>
+        Collection Point: We may collect this information at any time, from public, third-party, and other sources.
+        Purpose for Collection and Use: We may collect and use this data for any business or commercial purposes. The information will either be public data or not identify individual users.</div>
     <div class="divTable" id="table">
         <div class="divTableBody">
             <div class="divTableRow">
@@ -397,214 +425,5 @@
 
     </div>
 </footer>
-<script>
-    let myMediaQuery = window.matchMedia('(max-width: 500px)');
-    function widthChangeCallback(myMediaQuery) {
-        if(myMediaQuery.matches) {
-            document.getElementById("table").innerHTML =
-                `<div>
-    <strong>Category: Identifiers</strong><br>
-    Examples of Data Collected: Contact Information, such as name, telephone number, street address, and email address.<br>
-    Collection Point: We collect this information when you provide it, such as when you complete a form on the Website. We may also collect data from third parties, such as lead generation companies who have provided your information to us as a small business that may be interested in our Services.<br>
-    Purpose for Collection and Use: We collect and use data for all business purposes, such as providing and improving our Services, your information to Debt Relief Services Providers, responding to communications, and for security and auditing purposes. We may also collect and use your contact information to market our offerings to you, such as through emails.<br>
-    <strong>Category: Commercial Data</strong><br>
-    Examples of Data Collected: Financial information, such as names, information about your creditors and debt, and so forth. Inferences, such as creating a profile relating to consumer preferences and trends.<br>
-   Collection Point: We collect this information when you provide it, such as when you submit a Request. We may also collect information from third parties to help with responding to your requests, processing transactions, and improving offerings.<br>
-    Purpose for Collection and Use: We collect and use data for all business purposes, such as providing and improving our services, connecting you with Debt Relief Services Providers, responding to communications, and for security and auditing purposes. We may also use inference information to market offerings of interest to you.<br>
-    <strong>Category: Personal Background</strong><br>
-    Examples of Data Collected: Protected Class, such as sex or age.<br>
-    Collection Point: We collect this information when you provide it, such as when you submit a Request.<br>
-    Purpose for Collection and Use: We collect and use data for all business purposes, such as to connect you with Debt Relief Services Providers, respond to communications, and for security and auditing purposes.<br>
-    <strong>Category: Device Data</strong><br>
-    Examples of Data Collected: Internet and Network Data, such as browsing history, search history, and information regarding a consumer’s interaction with an internet website, application, or advertisement. Geolocation, such as general location from an IP address.<br>
-    Collection Point: We collect this data through cookies and other automated technologies. For example, like many companies, we automatically gather information about your device, such as your IP address, browser type, and operating system.<br>
-    Purpose for Collection and Use: We collect and use data for all business purposes, such as providing and improving our services and for security and auditing purposes. We may also use device data to market offerings of interest to you.<br>
-    <strong>Category: Sensitive Data</strong><br>
-    Examples of Data Collected: Identification Information, such as your Social Security Number, business EIN, driver’s license information, date of birth, other tax information, employee information, and financial information necessary to assess your debt.<br>
-    Collection Point: We collect sensitive information only when you expressly provide it to us.<br>
-        Purpose for Collection and Use: We only collect and use sensitive data for the business purposes outlined, such as to connect you with Debt Relief Services Providers.<br>
-    <strong>Category: Other Personalized Data</strong><br>
-    Examples of Data Collected: Employment, such as employee data necessary to connect you with Debt Relief Services Providers. Other Information, such as communications to us.<br>
-    Collection Point: We may collect this information if you provide it, such as if you apply for a job or send us a message or documents.<br>
-    Purpose for Collection and Use: We collect and use data for business purposes, such as reviewing and preparing forms and providing and improving the Service.<br>
-    <strong>Category: Other Non-Personalized Data</strong><br>
-    Examples of Data Collected: Public information, Aggregate information, De-identified data, Pseudonymized data.<br>
-    Collection Point: We may collect this information at any time, from public, third-party, and other sources.
-    Purpose for Collection and Use: We may collect and use this data for any business or commercial purposes. The information will either be public data or not identify individual users.</div>`;
-        }
-        else {
-            document.getElementById("table").innerHTML = "<div class=\"divTable\" id=\"table\">\n"
-                "        <div class=\"divTableBody\">\n"
-                "            <div class=\"divTableRow\">\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p><strong>Category</strong></p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p><strong>Examples of Data Collected</strong></p>\n" +
-                "                    <p><strong>&nbsp;</strong></p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p><strong>Collection Point</strong></p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p><strong>Purpose for Collection and Use</strong></p>\n" +
-                "                    <p><strong>&nbsp;</strong></p>\n" +
-                "                </div>\n" +
-                "            </div>\n" +
-                "            <div class=\"divTableRow\">\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p><strong><em>Identifiers</em></strong></p>\n" +
-                "                    <p><strong><em>&nbsp;</em></strong></p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p><strong>Contact Information</strong>, such as name, telephone number, street address, and email address.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p>We collect this information when you provide it, such as when you complete a form on the Website.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                    <p>We may also collect data from third parties, such as lead generation companies who have provided your information to us as a small business that may be interested in our Services.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p>We collect and use data for all business purposes, such as providing and improving our Services, your information to Debt Relief Services Providers, responding to communications, and for security and auditing purposes.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                    <p>We may also collect and use your contact information to market our offerings to you, such as through emails.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                </div>\n" +
-                "            </div>\n" +
-                "            <div class=\"divTableRow\">\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p><strong><em>Commercial Data</em></strong></p>\n" +
-                "                    <p><strong><em>&nbsp;</em></strong></p>\n" +
-                "                    <p><strong><em>&nbsp;</em></strong></p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p><strong>Financial</strong>, such as name, information about your creditors and debt, and so forth.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                    <p><strong>Inferences</strong>, such as creating a profile relating to consumer preferences and trends.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p>We collect this information when you provide it, such as when you submit a Request.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                    <p>We may also collect information from third parties to help with responding to your requests, processing transactions, and improving offerings.</p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p>We collect and use data for all business purposes, such as providing and improving our services, connecting you with Debt Relief Services Providers, responding to communications, and for security and auditing purposes.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                    <p>We may also use inference information to market offerings of interest to you.&nbsp;</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                </div>\n" +
-                "            </div>\n" +
-                "            <div class=\"divTableRow\">\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p><strong><em>Personal Background </em></strong></p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p><strong>Protected Class</strong>, such as sex or age.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                    <p><strong>&nbsp;</strong></p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p>We collect this information when you provide it, such as when you submit a Request.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p>We collect and use data for all business purposes, such as to connect you with Debt Relief Services Providers, respond to communications, and for security and auditing purposes.</p>\n" +
-                "                </div>\n" +
-                "            </div>\n" +
-                "            <div class=\"divTableRow\">\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p><strong><em>Device Data</em></strong></p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p><strong>Internet and Network Data</strong>, such as browsing history, search history, and information regarding a consumer&rsquo;s interaction with an internet website, application, or advertisement. See below for more information about cookies and other tracking technologies.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                    <p><strong>Geolocation</strong>, such as general location from an IP address.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p>We collect this data through cookies and other automated technologies. For example, like many companies, we automatically gather information about your device, such as your IP address, browser type, and operating system. For more information on these practices, see below.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p>We collect and use data for all business purposes, such as providing and improving our services and for security and auditing purposes.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                    <p>We may also use device data to market offerings of interest to you.&nbsp;</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                </div>\n" +
-                "            </div>\n" +
-                "            <div class=\"divTableRow\">\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p><strong><em>Sensitive Data</em></strong></p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p>In addition to categories described above, we may collect the following:</p>\n" +
-                "                    <p><strong>&nbsp;</strong></p>\n" +
-                "                    <p><strong>Identification Information</strong>, such as your Social Security Number, business EIN, driver&rsquo;s license information, date of birth, other tax information, employee information, and financial information necessary to assess your debt.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p>We collect sensitive information <u>only</u> when you expressly provide it to us. &nbsp;For more information on these practices, see below.</p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p>We <u>only</u> collect and use sensitive data for the business purposes outlined, such as to connect you with Debt Relief Services Providers.</p>\n" +
-                "                </div>\n" +
-                "            </div>\n" +
-                "            <div class=\"divTableRow\">\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p><strong><em>Other Personalized Data</em></strong></p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p><strong>Employment</strong>, such as employee data necessary to connect you with Debt Relief Services Providers.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                    <p><strong>Other Information</strong>, such as communications to us.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p>We may collect this information if you provide it, such as if you apply for a job or send us a message or documents.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p>We collect and use data for business purposes, such as reviewing and preparing forms and providing and improving the Service.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                </div>\n" +
-                "            </div>\n" +
-                "            <div class=\"divTableRow\" >\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p><strong><em>Other Non-Personalized Data</em></strong></p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p><strong>Public information</strong></p>\n" +
-                "                    <p><strong>&nbsp;</strong></p>\n" +
-                "                    <p><strong>Aggregate information</strong></p>\n" +
-                "                    <p><strong>&nbsp;</strong></p>\n" +
-                "                    <p><strong>De-identified data </strong></p>\n" +
-                "                    <p><strong>&nbsp;</strong></p>\n" +
-                "                    <p><strong>Pseudonymized data</strong></p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p>We may collect this information at any time, from public, third party, and other sources.</p>\n" +
-                "                    <p>&nbsp;</p>\n" +
-                "                    <p>For example, we may share a public review that you posted about us or use aggregate data for our analytics.</p>\n" +
-                "                </div>\n" +
-                "                <div class=\"divTableCell\">\n" +
-                "                    <p>We may collect and use this data for any business or commercial purposes. The information will either be public data or not identify individual users.&nbsp;</p>\n" +
-                "                </div>\n" +
-                "            </div>\n" +
-                "        </div>\n" +
-                "    </div>"
-        }
-    }
-    myMediaQuery.addEventListener('change', widthChangeCallback);
-    widthChangeCallback(myMediaQuery);
-</script>
 </body>
 </html>

@@ -1285,6 +1285,10 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
+.table2{
+  display: none;
+}
+
 @media (max-width: 1200px) {
   button{
     padding:15px 30px !important;
@@ -1332,6 +1336,14 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (max-width: 900px) {
+  .divTable{
+    display: none;
+  }
+
+  .table2{
+    display: inline-block;
+  }
+
   footer{
     padding-top: 20px;
     padding-bottom: 150px;

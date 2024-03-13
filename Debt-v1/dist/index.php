@@ -118,7 +118,7 @@
                 <div class="w-full pt-3">
                     <label for="email"></label><input type="email" id="email" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-4 " placeholder="Enter your email" required />
                 </div>
-            </div>
+            </div >
         </div >
         <div id="email-error" style="text-align: center;padding-top: 5px"></div>
         <div class="flex justify-center py-10 items-center ">
