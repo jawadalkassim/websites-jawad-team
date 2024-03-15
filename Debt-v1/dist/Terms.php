@@ -18,7 +18,7 @@
     </div>
 </nav>
 <h1 class="bg-primary text-white text-3xl py-8">Terms</h1>
-<div class="font-bodyFont px-20 pt-4">
+<div class="font-bodyFont lg:px-20 px-10  pt-4">
 <h1 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:0cm;font-size:21px;font-family:"Calibri Light",sans-serif;color:#2F5496;font-weight:normal;text-align:center;'><span style="color:#C00000;">INTRODUCTION</span></h1>
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;text-align:justify;'>Welcome to JugglingDebt.com! These Terms of Service are a written contract (the &ldquo;Terms&rdquo;) between you and/or your company (collectively, &ldquo;you&rdquo;) and Consumer Genius Inc. as the owner and operator of JugglingDebt.com (&ldquo;Company,&rdquo; &ldquo;we&rdquo; or &ldquo;us&rdquo;) and apply to your use of our website (the &ldquo;Website&rdquo;).</p>
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;text-align:justify;'>If you don&rsquo;t agree to this Agreement, then you must stop using the Website.</p>
@@ -144,7 +144,7 @@
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;text-align:justify;'>&nbsp;</p>
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;text-align:justify;'>&nbsp;</p>
 </div>
-<footer class="bg-secondary pt-5 pb-20 mt-10">
+<footer class="bg-primary pt-5 pb-20 mt-10">
     <div class="grid lg:grid-cols-4 text-white">
         <div class="flex justify-center">
             <a href="">Unsubscribe</a>

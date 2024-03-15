@@ -397,7 +397,7 @@
 <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Calibri",sans-serif;margin:0cm;'>&nbsp;</p>
 </div>
 
-<footer class="bg-secondary pt-5 pb-20 mt-10">
+<footer class="bg-primary pt-5 pb-20 mt-10">
     <div class="grid lg:grid-cols-4 text-white">
         <div class="flex justify-center">
             <a href="">Unsubscribe</a>

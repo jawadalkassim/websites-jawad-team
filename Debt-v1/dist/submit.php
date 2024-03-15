@@ -20,14 +20,14 @@
     </div>
 </nav>
  <div class="r bg-S"></div>
-            <div class="text-primary pt-14 text-center text-5xl font-bold thank  px-5 font-bodyFont" style="line-height: 1.4;">Thank you for taking the time to complete our survey.</div>
-<footer class="bg-secondary pt-5 pb-20 mt-10">
+            <div class="text-primary pt-14  pb-60 text-center text-5xl font-bold thank  px-5 font-bodyFont" style="line-height: 1.4;">Thank you for taking the time to complete our survey.</div>
+<footer class="bg-primary pt-5 pb-20 mt-10">
     <div class="grid lg:grid-cols-4 text-white">
         <div class="flex justify-center">
             <a href="">Unsubscribe</a>
         </div>
         <div class="flex justify-center">
-            <a href="">/Do Not Sell My Information</a>
+            <a href="">Do Not Sell My Information</a>
         </div>
         <div class="flex justify-center">
             <a href="/Debt-v1/dist/privacy_policy.php">Privacy Policy</a>

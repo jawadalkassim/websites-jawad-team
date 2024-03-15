@@ -16,28 +16,29 @@ switch ($method) {
 		$fields = array(
 			'lp_campaign_id' => $campaign_data['lp_campaign_id']
 			, 'lp_campaign_key' => $campaign_data['lp_campaign_key']
-			, 'lp_request_id' => $_POST['lp_request_id']
 			, 'first_name' => $_POST['firstName']
 			, 'last_name' => $_POST['lastName']
 			, 'phone_home' => preg_replace('/\D/', '', $_POST['homePhone'])
-			, 'phone_cell' => preg_replace('/\D/', '', $_POST['homePhone'])
 			, 'email_address' => $_POST['email']
 			, 'address' => $_POST['address']
-			, 'city' => $_POST['city']
-			, 'state' => $_POST['state']
 			, 'zip_code' => strtoupper($_POST['zip'])
 			, 'country' => 'CA'
-			//
-			, 'lp_s1' => $_POST['lp_s1']
-			, 'lp_s2' => $_POST['lp_s2']
-			, 'lp_s3' => $_POST['lp_s3']
-			, 'lp_s4' => $_POST['lp_s4']
-			, 'lp_s5' => $_POST['lp_s5']
-			//
+			, 'cc_debt_amount' => $_POST['estimated_debt']
+			, 'ip_address' => $_POST['ip_address']
+			, 'city' => $_POST['city']
+			, 'state' => $_POST['state']
+
+			// //
+			// , 'lp_s1' => $_POST['lp_s1']
+			// , 'lp_s2' => $_POST['lp_s2']
+			// , 'lp_s3' => $_POST['lp_s3']
+			// , 'lp_s4' => $_POST['lp_s4']
+			// , 'lp_s5' => $_POST['lp_s5']
+			// //
 			, 'jornaya_lead_id' => $_POST['universal_leadid']
 			, 'trusted_form_cert_id' => $_POST['xxTrustedFormToken']
 			//
-			, 'lp_test' => $campaign_data['lp_test']
+			//, 'lp_test' => $campaign_data['lp_test']
 		);
 
 		//print_r($fields);
@@ -98,11 +99,11 @@ switch ($method) {
 		if($result == 'success'){
 
 			$_SESSION['redirect_url'] = $redirectUrl;
-			$response = array('status_text' => 'sold', 'redirect_url' => '/thank-you/?match=true&lead_id='.$leadId);
+			$response = array('status_text' => 'sold', 'redirect_url' => '/Debt-v1/dist/submit.php/?match=true&lead_id='.$leadId);
 
 		} else if($result == 'failed'){
 
-			$response = array('status_text' => 'failed', 'redirect_url' => '/thank-you/?match=false&lead_id='.$leadId);
+			$response = array('status_text' => 'failed', 'redirect_url' => '/Debt-v1/dist/submit.php/?match=false&lead_id='.$leadId);
 
 		} else {
 
