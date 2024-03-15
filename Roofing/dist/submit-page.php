@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<nav class="text-center " style="background: white">
+<nav class="text-center  " style="background: white">
     <div class="grid lg:grid-cols-2 md:grid-cols-1 items-center ">
         <div class="flex justify-center items-center p-2 ">
             <img src="/Roofing/dist/img/logo.png" class="w-3/12 brand">
