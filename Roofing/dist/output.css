@@ -1267,6 +1267,10 @@ hr.style-1 {
     padding-top: 2.5rem;
   }
 
+  .lg\:pb-40{
+    padding-bottom: 10rem;
+  }
+
   .lg\:text-start{
     text-align: start;
   }
