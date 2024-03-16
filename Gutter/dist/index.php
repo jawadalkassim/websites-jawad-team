@@ -26,8 +26,8 @@
     <div class="text-center text-white font-bold"><span class="pr-2"><svg style="display: inline ;width: 5%" class=" w-1/12 svg-inline--fa fa-map-marker-alt" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg></span>Over 5,000 engineers across the UK</div>
     <div class="text-center text-white font-bold"><span class="pr-2"><svg style="display: inline ;width: 5%" class="svg-inline--fa fa-check-square" aria-hidden="true" focusable="false" data-prefix="far" data-icon="check-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zm0 400H48V80h352v352zm-35.864-241.724L191.547 361.48c-4.705 4.667-12.303 4.637-16.97-.068l-90.781-91.516c-4.667-4.705-4.637-12.303.069-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l59.792 60.277 141.352-140.216c4.705-4.667 12.303-4.637 16.97.068l22.536 22.718c4.667 4.706 4.637 12.304-.068 16.971z"></path></svg></span>Gas Safe registered engineers</div>
 </div>
-<div style="background-image: radial-gradient(ellipse at center,#1e5799 0,#013652 63%,#002031 100%)">
-    <div class="grid lg:grid-cols-12 md:grid-cols-1 sm:grid-cols-1 justify-center items-center lg:pb-44" id="row ">
+<div style="background-image: radial-gradient(ellipse at center,#1e5799 0,#013652 63%,#002031 100%);padding-top: 40px">
+    <div class="grid lg:grid-cols-12 md:grid-cols-1  sm:grid-cols-1 justify-center items-center lg:pb-44" id="row ">
         <div class="lg:pt-10 pb-10  flex justify-center lg:col-span-7 sm:col-span-1 border lg:pl-20 lg:pr-5" style="border: none;">
             <form class="bg-white lg:p-10 md:p-0 sm:p-0 lg:w-10/12 rounded shadow-2xl pt-5" id="regForm" action="/Gutter/dist/submit-page.html">
                 <div class="tab text-white text-3xl font-bodyFont">
@@ -145,14 +145,14 @@
                         <h1 class="pb-3 text-4xl text-gray-600">What type is your property?</h1>
                     </div>
                     <label class="flex justify-center items-center pt-8">
-                        <input onclick="radioClick(0)" type="radio" class="card-input-element hidden">
+                        <input onclick="radioClick(1)" type="radio" class="card-input-element hidden">
                         <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Residential
                         </button>
                     </label>
                     <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(2)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <input onclick="radioClick(1)" type="radio" class="card-input-element hidden" >
+                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Business
                         </button>
                     </label>
@@ -162,14 +162,14 @@
                         <h1 class="pb-3 text-4xl text-gray-600">Do you own or rent the property?</h1>
                     </div>
                     <label class="flex justify-center items-center pt-8">
-                        <input onclick="radioClick(0)" type="radio" class="card-input-element hidden">
+                        <input onclick="radioClick(1)" type="radio" class="card-input-element hidden">
                         <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
                             I own
                         </button>
                     </label>
                     <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(2)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <input onclick="radioClick(1)" type="radio" class="card-input-element hidden" >
+                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
                             I rent
                         </button>
                     </label>
