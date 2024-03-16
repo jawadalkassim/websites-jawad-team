@@ -1,8 +1,5 @@
 
 var currentTab = 0;
-var gutterGrand = ""
-var gutterRepair = ""
-var gutterInstallation = ""
 var firstName=""
 var lastName=""
 var address =""
@@ -45,6 +42,23 @@ function nextPrev(n) {
     }
     showTab(currentTab);
 }
+function back(){
+    if(currentTab===1){
+        nextPrev(-1)
+    }
+    else if(currentTab===2){
+        nextPrev(-2)
+    }
+    else if(currentTab===3){
+        nextPrev(-3)
+    }
+    else if(currentTab===4){
+        nextPrev(-4)
+    }
+    else {
+        nextPrev(-1)
+    }
+}
 
 function validateForm() {
     var x, y, i, valid = true;
@@ -54,14 +68,13 @@ function validateForm() {
     y = x[currentTab].getElementsByTagName("input");
 
     for (i = 0; i < y.length; i++) {
-
         if (y[i].value === "") {
 
             y[i].className += " invalid";
 
             valid = false;
         }
-        if(currentTab===3){
+        if(currentTab===8){
             if(y[i].value.match(email))
             {
                 return true;
@@ -74,7 +87,20 @@ function validateForm() {
                 valid= false;
             }
         }
-        if(currentTab===4){
+        if(currentTab===7){
+            if(y[i].value.length===5)
+            {
+                return true;
+            }
+            else
+            {
+                document.getElementById('zip-error').innerText="Enter a valid zip code"
+                document.getElementById('zip-error').style.color="red"
+                y[i].focus();
+                valid= false;
+            }
+        }
+        if(currentTab===10){
             if(y[i].value.match(phoneno))
             {
                 return true;
@@ -95,19 +121,7 @@ function validateForm() {
     return valid;
 }
 function radioClick(index){
-    let grand = document.getElementById('guard')
-    let repair = document.getElementById('repair')
-    let installation = document.getElementById('installation')
-    if(index===0){
-        gutterGrand = grand.innerText
-    }
-    else if(index===1){
-        gutterRepair = repair.innerText
-    }
-    else if(index===2){
-        gutterInstallation = installation.innerText
-    }
-    nextPrev(1)
+    nextPrev(index)
 }
 function fixStepIndicator(n) {
 
