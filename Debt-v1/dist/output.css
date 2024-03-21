@@ -649,11 +649,6 @@ video {
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
-.bg-secondary{
-  --tw-bg-opacity: 1;
-  background-color: rgb(61 59 64 / var(--tw-bg-opacity));
-}
-
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -676,11 +671,6 @@ video {
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .py-10{
@@ -1281,6 +1271,7 @@ input[type="range"]::-moz-range-thumb {
 
   #regForm{
     margin: 1rem !important;
+    padding-bottom: 150px !important;
   }
 }
 
@@ -1289,6 +1280,10 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (max-width: 1200px) {
+  .stepper-wrapper{
+    display: none;
+  }
+
   button{
     padding:15px 30px !important;
   }
@@ -1299,11 +1294,6 @@ input[type="range"]::-moz-range-thumb {
 
   .brand img {
     width: 50% ;
-  }
-
-  .title {
-    padding-top: 20px;
-    font-size: 2.5rem !important;
   }
 
   .q-title {
@@ -1335,6 +1325,33 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (max-width: 900px) {
+  .title {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem !important;
+  }
+
+  .sub-title{
+    display: none;
+  }
+
+  input[type="text"]{
+    padding: 30px !important;
+  }
+
+  input[type="email"]{
+    padding: 30px !important;
+  }
+
+  input[type="tel"]{
+    padding: 30px !important;
+  }
+
+  button{
+    border-radius: 14px !important;
+  }
+
   .divTable{
     display: none;
   }

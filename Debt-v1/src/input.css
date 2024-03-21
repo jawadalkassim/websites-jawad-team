@@ -430,12 +430,16 @@ input[type="range"]::-moz-range-thumb {
     }
     #regForm{
         margin: 1rem !important;
+        padding-bottom: 150px !important;
     }
 }
 .table2{
     display: none;
 }
 @media (max-width: 1200px) {
+    .stepper-wrapper{
+        display: none;
+    }
     button{
         padding:15px 30px !important;
     }
@@ -447,10 +451,6 @@ input[type="range"]::-moz-range-thumb {
         width: 50% ;
     }
 
-    .title {
-        padding-top: 20px;
-        font-size: 2.5rem !important;
-    }
 
     .q-title {
         font-size: 1.5rem !important;
@@ -478,6 +478,27 @@ input[type="range"]::-moz-range-thumb {
     }
 }
 @media (max-width: 900px) {
+    .title {
+        padding-top: 20px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 2rem !important;
+    }
+    .sub-title{
+        display: none;
+    }
+    input[type="text"]{
+        padding: 30px !important;
+    }
+    input[type="email"]{
+        padding: 30px !important;
+    }
+    input[type="tel"]{
+        padding: 30px !important;
+    }
+    button{
+        border-radius: 14px !important;
+    }
     .divTable{
         display: none;
     }
