@@ -10,7 +10,7 @@ output.innerHTML = slider.value;
 slider.oninput = function() {
     output.innerHTML = this.value;
     if(output.innerHTML==="100000"){
-      slider.style.background=" rgb(185 28 28 )"
+      slider.style.background=" rgb(185 28 28  )"
     }
     else{
         slider.style.background="white"
