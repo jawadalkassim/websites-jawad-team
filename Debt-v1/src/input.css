@@ -441,7 +441,7 @@ input[type="range"]::-moz-range-thumb {
         display: none;
     }
     button{
-        padding:15px 30px !important;
+        padding: 22px 50px !important;
     }
     .input-range {
         width: 90% !important;
@@ -456,7 +456,7 @@ input[type="range"]::-moz-range-thumb {
         font-size: 1.5rem !important;
     }
     .q-button{
-        padding: 15px 30px;
+        padding: 25px 40px;
     }
 
     .brand {
@@ -497,7 +497,7 @@ input[type="range"]::-moz-range-thumb {
         padding: 30px !important;
     }
     button{
-        border-radius: 14px !important;
+        border-radius: 10px !important;
     }
     .divTable{
         display: none;

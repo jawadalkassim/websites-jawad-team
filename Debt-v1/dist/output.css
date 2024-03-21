@@ -570,8 +570,8 @@ video {
   margin-top: 2.5rem;
 }
 
-.mt-8{
-  margin-top: 2rem;
+.mt-3{
+  margin-top: 0.75rem;
 }
 
 .block{
@@ -767,11 +767,6 @@ video {
 
 .text-5xl{
   font-size: 3rem;
-  line-height: 1;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
   line-height: 1;
 }
 
@@ -1285,7 +1280,7 @@ input[type="range"]::-moz-range-thumb {
   }
 
   button{
-    padding:15px 30px !important;
+    padding: 22px 50px !important;
   }
 
   .input-range {
@@ -1301,7 +1296,7 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .q-button{
-    padding: 15px 30px;
+    padding: 25px 40px;
   }
 
   .brand {
@@ -1349,7 +1344,7 @@ input[type="range"]::-moz-range-thumb {
   }
 
   button{
-    border-radius: 14px !important;
+    border-radius: 10px !important;
   }
 
   .divTable{

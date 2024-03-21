@@ -8,7 +8,7 @@ session_start();
 require_once('config.php');
 
 $method = (isset($_POST['method'])) ? $_POST['method'] : $_GET['method'];
-
+$rid =  (isset($_POST['lp_request_id'])) ? $_POST['lp_request_id'] : $_GET['lp_request_id'];
 switch ($method) {
 		
 	case "Lead":{
@@ -27,6 +27,7 @@ switch ($method) {
 			, 'ip_address' => $_POST['ip_address']
 			, 'city' => $_POST['city']
 			, 'state' => $_POST['state']
+			, 'lp_request_id' => $rid
 
 			// //
 			// , 'lp_s1' => $_POST['lp_s1']

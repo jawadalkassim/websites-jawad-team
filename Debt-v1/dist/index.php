@@ -31,11 +31,11 @@
     </div>
 </nav>
 
-<h1 class="text-primary text-center text-6xl font-bold lg:pt-8 m-5 title" id="title">
+<h1 class="text-primary text-center text-4xl font-bold lg:pt-8 m-5 title" id="title">
     See If You Are Eligible To Reduce Your Credit Card Payments And Get Relief</h1>
-<p class="text-center text-gray-600 text-xl pt-4 sub-title">See how much you can save</p>
+<p class="text-center text-gray-600 text-xl pt-2 sub-title">See how much you can save</p>
 <div id="formResp">
-    <form class="bg-white lg:w-8/12 mt-8 shadow-xl rounded-lg m-8" id="regForm" action="/Debt-v1/dist/submit.php">
+    <form class="bg-white lg:w-8/12 mt-3 shadow-xl rounded-lg m-8" id="regForm" action="/Debt-v1/dist/submit.php">
         <div class="stepper-wrapper py-5 lg:px-40">
             <div class="stepper-item">
                 <div class="step-counter"></div>
@@ -270,18 +270,17 @@
 <script src="/Debt-v1/dist/JS/script.js">
 </script>
 <script id="LeadiDscript" type="text/javascript">
-    (function() {
-        var s = document.createElement('script');
-        s.id = 'LeadiDscript_campaign';
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = '//create.lidstatic.com/campaign/35ea2c34-6f28-eb71-7d7d-35b2628c673d.js?snippet_version=2';
-        var LeadiDscript = document.getElementById('LeadiDscript');
-        LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
-    })();
+(function() {
+var s = document.createElement('script');
+s.id = 'LeadiDscript_campaign';
+s.type = 'text/javascript';
+s.async = true;
+s.src = '//create.lidstatic.com/campaign/35ea2c34-6f28-eb71-7d7d-35b2628c673d.js?snippet_version=2';
+var LeadiDscript = document.getElementById('LeadiDscript');
+LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
+})();
 </script>
 <noscript><img src='//create.leadid.com/noscript.gif?lac=F1D6E1C4-3226-ADC7-A00E-77613EBAD162&lck=35ea2c34-6f28-eb71-7d7d-35b2628c673d&snippet_version=2' /></noscript>
-
 
 <!-- TrustedForm -->
 <script type="text/javascript">
