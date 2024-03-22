@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="facebook-domain-verification" content="pf1qrsxxk91mcux9x5hj3qto1iiuax" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <title>Debt</title>
@@ -18,9 +19,24 @@
 
 
     </script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NSQHFXX');</script>
+<!-- End Google Tag Manager -->
+
 </head>
 
 <body class=" font-bodyFont" style="background: linear-gradient(90deg, rgba(6,119,204,0.08698091052827384) 0%, rgba(6,119,204,0) 100%);">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSQHFXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <nav class="bg-white shadow-lg">
     <div class="block">
         <div class="flex justify-center">
@@ -32,7 +48,7 @@
 </nav>
 
 <h1 class="text-primary text-center text-4xl font-bold lg:pt-8 m-5 title" id="title">
-    See If You Are Eligible To Reduce Your Credit Card Payments And Get Relief</h1>
+See if you are eligible to reduce your credit card payments and get relief</h1>
 <p class="text-center text-gray-600 text-xl pt-2 sub-title">See how much you can save</p>
 <div id="formResp">
     <form class="bg-white lg:w-8/12 mt-3 shadow-xl rounded-lg m-8" id="regForm" action="/Debt-v1/dist/submit.php">
