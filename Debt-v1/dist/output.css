@@ -698,6 +698,16 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-14{
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+.px-28{
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
 .pb-20{
   padding-bottom: 5rem;
 }
@@ -1390,6 +1400,14 @@ input[type="range"]::-moz-range-thumb {
 
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-5{
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .lg\:px-20{
