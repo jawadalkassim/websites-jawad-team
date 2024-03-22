@@ -168,7 +168,7 @@
 automatic telephone dialing system and an artificial or prerecorded voice to
 the phone number I entered above from JugglingDebt.com as well as from debt
 relief solution companies, loan providers, debt consolidation service providers
-and Partners, for debt relief or debt consolidation service offers even if I am
+and <span class="font-bold text-primary"><a href="/Debt-v1/dist/partners.php">Partners</a></span>, for debt relief or debt consolidation service offers even if I am
 on a national, state, or entity-specific Do-Not-Call list. I understand that consent
 is not required to receive a quotation or make a purchase.  Message and
 data rates may apply. For more information, please review our <span class="font-bold text-primary"><a href="/Debt-v1/dist/TCPA.php">TCPA Disclosure. </a></span>
