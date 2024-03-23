@@ -47,29 +47,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </nav>
 
-<h1 class="text-primary text-center text-4xl font-bold lg:pt-8 m-5 title" id="title">
+<h1 class="text-primary text-center text-4xl font-bold lg:pt-4 m-5 title" id="title">
 See if you are eligible to reduce your credit card payments and get relief</h1>
-<p class="text-center text-gray-600 text-xl pt-2 sub-title">See how much you can save</p>
+<p class="text-center text-gray-600 text-xl pt-2 sub-title" id="sub-title">See how much you can save</p>
 <div id="formResp">
-    <form class="bg-white lg:w-8/12 mt-3 shadow-xl rounded-lg m-8" id="regForm" action="/Debt-v1/dist/submit.php">
-        <div class="stepper-wrapper py-5 lg:px-40">
+    <form class=" lg:w-8/12 mt-3 rounded-lg m-8" id="regForm" action="/Debt-v1/dist/submit.php">
+        <div class="flex justify-center">
+            <div class="flex justify-end">
+            <button type="button" class="text-xl font-bold text-gray-500 font-bodyFont w-full" id="prevBtn" onclick="backPrev(-1)">← Back</button>
+            </div>
+        <div class="stepper-wrapper w-full">
             <div class="stepper-item">
-                <div class="step-counter"></div>
+                <div class="step-counter" style="color: white;padding: 10px">1</div>
             </div>
             <div class="stepper-item">
-                <div class="step-counter"></div>
+                <div class="step-counter" style="color: white;padding: 10px">2</div>
             </div>
             <div class="stepper-item">
-                <div class="step-counter"></div>
+                <div class="step-counter" style="color: white;padding: 10px">3</div>
             </div>
             <div class="stepper-item">
-                <div class="step-counter"></div>
+                <div class="step-counter" style="color: white;padding: 10px">4</div>
             </div>
+        </div>
         </div>
         <div class="tab">
             <div class="flex justify-center">
                 <div class="pt-5">
-                    <h2 class="text-gray-500 text-xl pt-1 text-center mb-4 q-title">How much credit card debt do you have?</h2>
+                    <h2 class="text-secondary text-3xl pt-1 text-center mb-4 q-title">How much credit card debt do you have?</h2>
                 </div>
             </div>
             <div class="flex justify-center pt-8 ">
@@ -108,7 +113,7 @@ See if you are eligible to reduce your credit card payments and get relief</h1>
         <div class="tab">
             <div class="flex justify-center pt-2">
                 <div>
-                    <div><h1 class="pt-5 text-secondary text-4xl font-semibold ">Where Are You Located?</h1></div>
+                    <div><h1 class="pt-10 text-secondary text-6xl font-semibold q-title">Where Are You Located?</h1></div>
                     <div> <p class="text-gray-500 text-xl pt-10 text-center mb-4 q-title">Enter your Zip Code</p></div>
                 </div>
             </div>
@@ -127,12 +132,12 @@ See if you are eligible to reduce your credit card payments and get relief</h1>
         <div class="tab">
             <div class="flex justify-center pt-2">
                 <div>
-                    <div><h1 class="pt-5 mb-2 text-secondary text-4xl font-semibold title q-title ">Contact Information</h1></div>
+                    <div><h1 class="pt-5 mb-2 text-secondary text-6xl font-semibold title q-title ">Contact Information</h1></div>
                 </div>
             </div>
-            <div class="flex justify-center">
+            <div class="flex justify-center pt-10">
                 <div class="lg:w-1/2 input-range">
-                    <div class="w-full pt-3">
+                    <div class="w-full pt-5">
                         <label for="first"></label><input type="text" id="first" name="firstName" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-4 " placeholder="Enter your full name" required />
                     </div>
                     <div class="w-full pt-3">
@@ -151,7 +156,7 @@ See if you are eligible to reduce your credit card payments and get relief</h1>
         <div class="tab">
             <div class="flex justify-center pt-2">
                 <div>
-                    <div><h1 class="pt-10 mb-2 text-secondary text-4xl font-semibold title q-title">Contact Information</h1></div>
+                    <div><h1 class="pt-10 mb-2 text-secondary text-6xl font-semibold title q-title">Contact Information</h1></div>
                 </div>
             </div>
             <div class="flex justify-center pt-5">
@@ -199,11 +204,6 @@ data rates may apply. For more information, please review our <span class="font-
                     <input id="city" name="city" type="hidden" value=""/>
                     <input id="state" name="state" type="hidden" value=""/>
                 </div>
-            </div>
-        </div>
-        <div style="overflow:auto" class="flex justify-center " >
-            <div style="float:right;">
-                <button type="button" class="text-xl font-bold text-gray-500 font-bodyFont" id="prevBtn" onclick="backPrev(-1)">← Back</button>
             </div>
         </div>
 

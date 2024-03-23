@@ -159,8 +159,8 @@ hr.style-1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background: #ccc;
     margin-bottom: 6px;
@@ -301,7 +301,6 @@ hr.style-1 {
     align-items: center;
     height: 4rem;
     width: 100%;
-    background: #fff;
 }
 input[type="range"] {
 
