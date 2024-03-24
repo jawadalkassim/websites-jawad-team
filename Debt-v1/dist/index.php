@@ -84,8 +84,10 @@ See if you are eligible to reduce your credit card payments and get relief</h1>
                 <div id="output" class=" text-3xl text-primary text-center font-bodyFont"></div>
             </div>
             <div class="flex justify-center">
+                
                 <div class="w-8/12 input-range">
                     <div class="range flex justify-center px-4">
+                        
                         <input type="range" value="20000" min="0" max="100000" name="estimated_debt" id="slider" step="1000"/>
                     </div>
                 </div>
@@ -182,7 +184,7 @@ See if you are eligible to reduce your credit card payments and get relief</h1>
                         <label for="checkbox2"></label>
                         <div class="flex justify-center items-start">
                             <div class="pt-1">
-                                <input type="checkbox" id="checkbox2" class="w-3" required />
+                                <input type="checkbox" id="checkbox2" class="w-3" />
                             </div>
                             <span class="pl-2"><input type="hidden" id="leadid_tcpa_disclosure"/>By checking this box I consent to receive text messages and calls via
 automatic telephone dialing system and an artificial or prerecorded voice to

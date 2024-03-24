@@ -2,6 +2,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#regForm > div:nth-child(2) > div:nth-child(1) > div > h2{
+    font-size: 2rem;
+}
 h1 {
     text-align: center;
 }
@@ -301,6 +305,7 @@ hr.style-1 {
     align-items: center;
     height: 4rem;
     width: 100%;
+    padding: 0px !important;
 }
 input[type="range"] {
 
@@ -489,13 +494,37 @@ input[type="range"]::-moz-range-thumb {
     #back-slider{
         display: none;
     }
+    #regForm > div:nth-child(2) > div:nth-child(1) > div > h2{
+        display: none;
+    }
+    #regForm > div:nth-child(4) > div.flex.justify-center.pt-2 > div > div > h1{
+        font-size: 2.5rem !important;
+    }
+    button {
+        padding: 22px 80px !important;
+    }
+    .m-5{
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 20px !important;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: #1B6C89;
+        color: white
+        
+    }
     .title {
         text-align: center;
         font-weight: 600;
         font-size: 1.5rem !important;
-        line-height: 1;
+        line-height: 1.5;
         padding-bottom: 5px;
     }
+    h1.pt-10.mb-2.text-secondary.text-6xl.font-semibold.title.q-title{
+        font-size: 2.5rem !important;
+
+    }
+
     .sub-title{
         display: none !important;
     }
