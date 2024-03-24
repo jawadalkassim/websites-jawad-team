@@ -22,11 +22,9 @@ function showTab(n) {
     if (n === 0) {
         document.getElementById("prevBtn").style.display = "none";
         document.getElementById('title').style.display="block"
-        document.getElementById('sub-title').style.display="block"
     } else {
         document.getElementById("prevBtn").style.display = "inline";
         document.getElementById('title').style.display="none"
-        document.getElementById('sub-title').style.display="none"
     }
 
     fixStepIndicator(n)

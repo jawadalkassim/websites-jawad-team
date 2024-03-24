@@ -436,6 +436,9 @@ input[type="range"]::-moz-range-thumb {
     display: none;
 }
 @media (max-width: 1200px) {
+    .sub-title{
+        display: none !important;
+    }
     .stepper-wrapper{
         display: none;
     }
@@ -452,7 +455,7 @@ input[type="range"]::-moz-range-thumb {
 
 
     .q-title {
-        font-size: 1.5rem !important;
+        font-size: 2rem !important;
     }
     .q-button{
         padding: 25px 40px;
@@ -476,15 +479,25 @@ input[type="range"]::-moz-range-thumb {
         padding: 10px;
     }
 }
+#back-bottom{
+    display: none ;
+}
 @media (max-width: 900px) {
+    #back-bottom{
+        display: inline !important;
+    }
+    #back-slider{
+        display: none;
+    }
     .title {
-        padding-top: 20px;
         text-align: center;
-        font-weight: 500;
-        font-size: 2rem !important;
+        font-weight: 600;
+        font-size: 1.5rem !important;
+        line-height: 1;
+        padding-bottom: 5px;
     }
     .sub-title{
-        display: none;
+        display: none !important;
     }
     input[type="text"]{
         padding: 30px !important;
