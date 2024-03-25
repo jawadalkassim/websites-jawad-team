@@ -1159,8 +1159,114 @@ input[type="range"]::-webkit-slider-thumb {
   margin-top: -15px;
   padding-right: -20px !important;
   border: 2px solid #dadada;
-  /*  slider progress trick  */
   box-shadow: -407px 0 0 390px   rgb(185 28 28 );
+}
+
+.wrapper {
+  text-align:center;
+}
+
+.selectstyle {
+  --selectsize:4rem;
+  --uibordercolor:#bbb;
+  --uibackground:#f8f8f8;
+  --uiborderradiusfactor:0;
+  --uihovercolor:#363636;
+  --uireversecolor:#000000;
+  --unicodepointer:"\25bc";
+}
+
+.selectstyle--style1 {
+  --uibordercolor:#ace;
+  --uibackground:#000;
+  --uiborderradiusfactor:0.167;
+  --uihovercolor:#fff;
+  --uireversecolor:#000;
+}
+
+.selectstyle--style2 {
+  --unicodepointer:"\2630";
+}
+
+.selectstyle__box {
+  margin:0 auto;
+  width:auto;
+  height:auto;
+  text-align:center;
+  overflow:visible;
+  position: relative;
+  display:inline-block;
+  font-size:25px;
+  padding-right: 20px;
+}
+
+.selectstyle__label {
+  font-size:calc(var(--selectsize) * 0.5);
+  position: relative;
+  display: inline-block;
+  margin:0 calc(var(--selectsize) * 0.5) 0 0;
+  white-space:nowrap;
+}
+
+.selectstyle__box__select {
+  position:relative;
+  display: inline-block;
+  border: 2px solid var(--uibordercolor);
+  padding: 0 calc(var(--selectsize) * 0.09) 0 calc(var(--selectsize) * 0.15);
+  margin: 0;
+  font: inherit;
+  height:var(--selectsize);
+  line-height: calc(var(--selectsize) * 0.92);
+  background: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: calc(var(--selectsize) * var(--uiborderradiusfactor));
+  cursor:pointer;
+}
+
+.selectstyle__box__select optgroup, .selectstyle__box__select optgroup option {
+  /* This helps the appearance of select dropdowns in Firefox to be more like other browsers.
+    Chrome and Safari ignore these rules */
+  color:black !important;
+  background:white;
+  font-size:inherit;
+}
+
+/* for Webkit's CSS-only solution */
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .selectstyle__box__select {
+    padding-right: calc(var(--selectsize) * 0.835);
+  }
+}
+
+/* Select arrow styling using unicode symbol */
+
+.selectstyle__box::after {
+  width:var(--selectsize);
+  height:var(--selectsize);
+  content: var(--unicodepointer);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 60%;
+  line-height: var(--selectsize);
+  padding: 0 7px;
+  background: #176B87;
+  color: white;
+  pointer-events: none;
+  border-radius: 0 calc(var(--selectsize) * var(--uiborderradiusfactor)) calc(var(--selectsize) * var(--uiborderradiusfactor)) 0;
+  border: 2px solid var(--uibordercolor);
+}
+
+.selectstyle__box:hover::after, .selectstyle__box__select:hover {
+  background:var(--uihovercolor);
+  color:black;
+}
+
+.no-pointer-events .selectstyle__box__select:after {
+  content: none;
 }
 
 input[type="range"]::-moz-range-thumb {

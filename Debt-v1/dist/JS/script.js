@@ -31,7 +31,17 @@ function showTab(n) {
 }
 
 function nextPrev(n) {
+    var k = document.getElementById('amount')
     var x = document.getElementsByClassName("tab");
+    if(currentTab===0) {
+        console.log(k.value)
+        if (k.value==="0") {
+            document.getElementById('amount-error').innerText = "Enter a value"
+            document.getElementById('amount-error').style.color = "red"
+            showTab(0)
+            return false
+        }
+    }
     if (n === 1&&!validateForm()) return false;
     x[currentTab].style.display = "none";
 
@@ -51,7 +61,6 @@ function validateForm() {
     var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
     x = document.getElementsByClassName("tab");
     y = x[currentTab].getElementsByTagName("input");
-
     for (i = 0; i < y.length; i++) {
 
         if (y[i].value === "") {
@@ -119,7 +128,6 @@ function backPrev(n){
     y[0].value =""
     nextPrev(n)
 }
-
 function fixStepIndicator(n) {
 
     var i, x = document.getElementsByClassName("stepper-item");
