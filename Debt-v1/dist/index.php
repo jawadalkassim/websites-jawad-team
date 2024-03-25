@@ -123,7 +123,7 @@ See if you are eligible to reduce your credit card payments and get relief</h1>
                 </div>
                 <div id="zip-error" style="text-align: center;padding-top: 5px"></div>
                 <div class="flex justify-center pt-5 items-center ">
-                    <button class="font-bodyFont bg-red-600 lg:px-20 text-2xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
+                    <button type="button" class="font-bodyFont bg-red-600 lg:px-20 text-2xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
                 </div>
             </div>
         </div>
