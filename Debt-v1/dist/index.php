@@ -51,10 +51,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 See if you are eligible to reduce your credit card payments and get relief</h1>
 <div id="formResp">
     <form class=" lg:w-8/12 mt-3 rounded-lg m-8" id="regForm" action="/Debt-v1/dist/submit.php">
-        <div class="flex justify-center">
-            <div class="flex justify-end" id="back-slider">
-            <button type="button" class="text-xl font-bold text-gray-500 font-bodyFont w-full" id="prevBtn" onclick="backPrev(-1)">← Back</button>
-            </div>
+        <div class="f">
         <div class="stepper-wrapper w-full">
             <div class="stepper-item">
                 <div class="step-counter" style="color: white;padding: 10px">1</div>

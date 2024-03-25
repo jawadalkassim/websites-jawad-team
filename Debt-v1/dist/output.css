@@ -618,10 +618,6 @@ video {
   align-items: center;
 }
 
-.justify-end{
-  justify-content: flex-end;
-}
-
 .justify-center{
   justify-content: center;
 }
@@ -1325,19 +1321,7 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-#back-bottom{
-  display: none ;
-}
-
 @media (max-width: 900px) {
-  #back-bottom{
-    display: inline !important;
-  }
-
-  #back-slider{
-    display: none;
-  }
-
   #regForm > div:nth-child(2) > div:nth-child(1) > div > h2{
     display: none;
   }
