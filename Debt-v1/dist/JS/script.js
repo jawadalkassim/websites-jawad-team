@@ -34,7 +34,6 @@ function nextPrev(n) {
     var k = document.getElementById('amount')
     var x = document.getElementsByClassName("tab");
     if(currentTab===0) {
-        console.log(k.value)
         if (k.value==="0") {
             document.getElementById('amount-error').innerText = "Enter a value"
             document.getElementById('amount-error').style.color = "red"
@@ -50,7 +49,6 @@ function nextPrev(n) {
         document.getElementById("regForm").submit();
         return false;
     }
-    console.log(currentTab)
     showTab(currentTab);
 }
 

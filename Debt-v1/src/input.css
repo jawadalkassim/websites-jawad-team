@@ -412,7 +412,7 @@ input[type="range"]::-webkit-slider-thumb {
 /* for Webkit's CSS-only solution */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     .selectstyle__box__select {
-        padding-right: calc(var(--selectsize) * 0.835);
+        padding-right: 200px;
     }
 }
 /* Select arrow styling using unicode symbol */
@@ -577,6 +577,9 @@ input[type="range"]::-moz-range-thumb {
     }
 }
 @media (max-width: 900px) {
+    .selectstyle__box__select {
+        padding-right: calc(var(--selectsize) * 0.835);
+    }
     #regForm > div:nth-child(2) > div:nth-child(1) > div > h2{
         display: none;
     }

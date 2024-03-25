@@ -76,7 +76,7 @@
 
                 <div class="wrapper pt-8">
                     <p class="selectstyle selectstyle--style1">
-                        <span class="selectstyle__box " style="color: black!important;">
+                        <span class="selectstyle__box " id="arrow" style="color: black!important;">
       <select id="amount" name="amount" class="selectstyle__box__select">
         <option value="0" selected="selected">Select Debt Amount</option>
           <option value="1">$0 - $4,999</option>
@@ -99,7 +99,7 @@
             </div>
             <div id="amount-error" style="text-align: center;padding-top: 5px"></div>
             <div class="flex justify-center py-12 items-center ">
-                <button class="font-bodyFont bg-red-600 lg:px-20 lg:py-5 text-2xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
+                <button type="button" class="font-bodyFont bg-red-600 lg:px-20 lg:py-5 text-2xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
             </div>
             <div class="grid lg:grid-cols-2 pt-8">
                 <div><div class="text-center text-gray-500 font-bold font-bodyFont">
@@ -131,7 +131,7 @@
                 </div>
                 <div id="zip-error" style="text-align: center;padding-top: 5px"></div>
                 <div class="flex justify-center pt-5 items-center ">
-                    <button class="font-bodyFont bg-red-600 lg:px-20 text-2xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
+                    <button type="button" class="font-bodyFont bg-red-600 lg:px-20 text-2xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
                 </div>
             </div>
         </div>
@@ -156,7 +156,7 @@
             </div >
             <div id="email-error" style="text-align: center;padding-top: 5px"></div>
             <div class="flex justify-center pt-10 items-center ">
-                <button class="font-bodyFont bg-red-600 lg:px-20 lg:pt-5 text-2xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
+                <button type="button" class="font-bodyFont bg-red-600 lg:px-20 lg:pt-5 text-2xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
             </div>
         </div>
         <div class="tab">
@@ -203,7 +203,7 @@ data rates may apply. For more information, please review our <span class="font-
                         </div>
                     </div>
                     <div class="flex justify-center py-10 items-center ">
-                        <button class="font-bodyFont bg-red-600 lg:px-20 lg:py-5 text-2xl font-bold rounded-full q-title q-button" onclick="nextPrev(1)">Submit</button>
+                        <button type="button" class="font-bodyFont bg-red-600 lg:px-20 lg:py-5 text-2xl font-bold rounded-full q-title q-button" onclick="nextPrev(1)">Submit</button>
                     </div>
 
 
@@ -374,7 +374,12 @@ data rates may apply. For more information, please review our <span class="font-
 
     });</script>
 <script>
-
+    document.getElementById('arrow').addEventListener("mousedown",function(){
+        var evt = event
+        setTimeout(function(){
+            document.getElementById('amount').dispatchEvent(evt)
+        })
+    })
 </script>
 </body>
 
