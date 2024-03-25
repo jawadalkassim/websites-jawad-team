@@ -1,21 +1,7 @@
 
 var currentTab = 0;
 
-var slider = document.getElementById("slider");
-var output = document.getElementById("output");
 showTab(currentTab);
-
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-    output.innerHTML = this.value;
-    if(output.innerHTML==="100000"){
-      slider.style.background=" rgb(185 28 28  )"
-    }
-    else{
-        slider.style.background="white"
-    }
-}
 function showTab(n) {
     var tab = document.getElementsByClassName("tab");
     tab[n].style.display = "block";
@@ -31,7 +17,16 @@ function showTab(n) {
 }
 
 function nextPrev(n) {
+    var k = document.getElementById('amount')
     var x = document.getElementsByClassName("tab");
+    if(currentTab===0) {
+        if (k.value==="0") {
+            document.getElementById('amount-error').innerText = "Enter a value"
+            document.getElementById('amount-error').style.color = "red"
+            showTab(0)
+            return false
+        }
+    }
     if (n === 1&&!validateForm()) return false;
     x[currentTab].style.display = "none";
 
@@ -106,7 +101,7 @@ function validateForm() {
 }
 function backPrev(n){
     var i, x = document.getElementsByClassName("stepper-item");
-   var t = document.getElementsByClassName("tab");
+    var t = document.getElementsByClassName("tab");
     var y = t[currentTab].getElementsByTagName("input");
     for (i = 0; i < x.length; i++) {
         if(i>=1 && i<x.length){

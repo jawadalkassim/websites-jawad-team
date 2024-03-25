@@ -301,7 +301,7 @@ data rates may apply. For more information, please review our <span class="font-
 
 
 </script>
-<script src="/Debt-v1/dist/JS/script.js">
+<script src="/Debt-v1/dist/JS/script2.js">
 </script>
 <script id="LeadiDscript" type="text/javascript">
     (function() {
