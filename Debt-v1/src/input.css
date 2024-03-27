@@ -299,7 +299,9 @@ hr.style-1 {
     align-items: center;
     margin: 0 auto;
 }
-
+.c1{
+    margin-left: 35px;
+}
 .range {
     display: flex;
     align-items: center;
@@ -533,6 +535,9 @@ input[type="range"]::-moz-range-thumb {
     display: none;
 }
 @media (max-width: 1200px) {
+    .symple{
+        width: 40%;
+    }
     .sub-title{
         display: none !important;
     }
@@ -571,12 +576,27 @@ input[type="range"]::-moz-range-thumb {
         text-align: center;
     }
 }
+
 @media (max-width: 480px) {
     #regForm{
         padding: 10px;
     }
+    .res{
+        margin: 0px 0px;
+    }
+}
+@media (max-width: 768px) {
+    .res{
+        margin: 0px 0px !important;
+    }
 }
 @media (max-width: 900px) {
+    .c1{
+        margin-left: 0px;
+    }
+    .res{
+        margin: 0px 170px;
+    }
     .selectstyle__box__select {
         padding-right: calc(var(--selectsize) * 0.835);
     }

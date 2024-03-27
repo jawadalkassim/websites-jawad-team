@@ -126,7 +126,7 @@
             <div>
                 <div class="flex justify-center">
                     <div class="lg:w-1/2 input-range">
-                        <input type="text" id="zip" name="zip" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-4 " placeholder="12345" required />
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" id="zip" name="zip" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-4 " placeholder="12345" required />
                     </div>
                 </div>
                 <div id="zip-error" style="text-align: center;padding-top: 5px"></div>

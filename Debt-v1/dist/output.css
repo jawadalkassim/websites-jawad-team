@@ -554,6 +554,11 @@ video {
   margin: 2rem;
 }
 
+.mx-5{
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -572,6 +577,10 @@ video {
 
 .mt-3{
   margin-top: 0.75rem;
+}
+
+.mt-32{
+  margin-top: 8rem;
 }
 
 .block{
@@ -598,8 +607,16 @@ video {
   display: none;
 }
 
+.w-2\/12{
+  width: 16.666667%;
+}
+
 .w-3{
   width: 0.75rem;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .w-8\/12{
@@ -639,6 +656,11 @@ video {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+.border-red-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
+}
+
 .bg-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(23 107 135 / var(--tw-bg-opacity));
@@ -656,6 +678,10 @@ video {
 
 .p-4{
   padding: 1rem;
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .px-10{
@@ -676,6 +702,11 @@ video {
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-10{
@@ -710,6 +741,10 @@ video {
   padding-left: 0.5rem;
 }
 
+.pr-2{
+  padding-right: 0.5rem;
+}
+
 .pt-1{
   padding-top: 0.25rem;
 }
@@ -720,6 +755,10 @@ video {
 
 .pt-14{
   padding-top: 3.5rem;
+}
+
+.pt-16{
+  padding-top: 4rem;
 }
 
 .pt-2{
@@ -1115,6 +1154,10 @@ hr.style-1 {
   margin: 0 auto;
 }
 
+.c1{
+  margin-left: 35px;
+}
+
 .range {
   display: flex;
   align-items: center;
@@ -1379,6 +1422,10 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (max-width: 1200px) {
+  .symple{
+    width: 40%;
+  }
+
   .sub-title{
     display: none !important;
   }
@@ -1425,9 +1472,27 @@ input[type="range"]::-moz-range-thumb {
   #regForm{
     padding: 10px;
   }
+
+  .res{
+    margin: 0px 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .res{
+    margin: 0px 0px !important;
+  }
 }
 
 @media (max-width: 900px) {
+  .c1{
+    margin-left: 0px;
+  }
+
+  .res{
+    margin: 0px 170px;
+  }
+
   .selectstyle__box__select {
     padding-right: calc(var(--selectsize) * 0.835);
   }
@@ -1519,6 +1584,10 @@ input[type="range"]::-moz-range-thumb {
     width: 50%;
   }
 
+  .lg\:w-8{
+    width: 2rem;
+  }
+
   .lg\:w-8\/12{
     width: 66.666667%;
   }
@@ -1529,6 +1598,10 @@ input[type="range"]::-moz-range-thumb {
 
   .lg\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .lg\:border-2{
+    border-width: 2px;
   }
 
   .lg\:px-20{
@@ -1549,6 +1622,18 @@ input[type="range"]::-moz-range-thumb {
   .lg\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .lg\:pl-14{
+    padding-left: 3.5rem;
+  }
+
+  .lg\:pl-80{
+    padding-left: 20rem;
+  }
+
+  .lg\:pr-16{
+    padding-right: 4rem;
   }
 
   .lg\:pt-10{
