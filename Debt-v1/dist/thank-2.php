@@ -21,13 +21,14 @@
 </nav>
 <main>
     <div class="flex justify-center pt-16"><img src="/Debt-v1/dist/img/logo-symple.svg" class="w-2/12 symple"></div>
+    <div class="flex justify-center pt-4"><a href="tel:+0000000000"><button class="font-bodyFont bg-green lg:px-24 lg:py-5 text-2xl font-bold rounded-full q-title q-button">Call Us</button></a></div>
     <div class="pt-16 text-primary text-center text-4xl font-bold">
         We've Found Your Match!
     </div>
     <div>
         <div class="flex justify-center pt-5 lg:pr-16 c1">
             <div class="flex justify-center p-5 border-red-600 lg:border-2 rounded-full">
-                <div><a href="tel:+0000000000"><img src="/Debt-v1/dist/img/call.png" class="w-8"></a></div>
+                <div><img src="/Debt-v1/dist/img/call.png" class="w-8"></div>
             </div>
             <div class="px-5 pt-2 mx-5">
                 <h3 class="text-secondary text-2xl font-semibold">Wait For A Call</h3>

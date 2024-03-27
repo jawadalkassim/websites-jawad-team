@@ -536,7 +536,7 @@ input[type="range"]::-moz-range-thumb {
 }
 @media (max-width: 1200px) {
     .symple{
-        width: 40%;
+        width: 60%;
     }
     .sub-title{
         display: none !important;

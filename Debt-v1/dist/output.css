@@ -1423,7 +1423,7 @@ input[type="range"]::-moz-range-thumb {
 
 @media (max-width: 1200px) {
   .symple{
-    width: 40%;
+    width: 60%;
   }
 
   .sub-title{
@@ -1622,6 +1622,11 @@ input[type="range"]::-moz-range-thumb {
   .lg\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .lg\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .lg\:pl-14{
