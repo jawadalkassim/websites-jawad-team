@@ -203,7 +203,7 @@ data rates may apply. For more information, please review our <span class="font-
                         </div>
                     </div>
                     <div class="flex justify-center py-10 items-center ">
-                        <button type="submit" class="font-bodyFont bg-red-600 lg:px-20 lg:py-5 text-2xl font-bold rounded-full q-title q-button">Submit</button>
+                        <button id="submitButton" type="submit" class="font-bodyFont bg-red-600 lg:px-20 lg:py-5 text-2xl font-bold rounded-full q-title q-button">Submit</button>
                     </div>
 
 
@@ -255,7 +255,13 @@ data rates may apply. For more information, please review our <span class="font-
 
 
 
-
+<script>
+    document.getElementById("submitButton").addEventListener("click", function() {
+        var submitButton = document.getElementById("submitButton");
+        submitButton.disabled = true;
+        submitButton.textContent = "Submitting..."; // Change text if needed
+    });
+</script>
 <script>
     function initAutocomplete() {
         // Get the input element for the autocomplete search box.

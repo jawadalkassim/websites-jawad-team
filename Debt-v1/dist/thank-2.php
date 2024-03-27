@@ -27,7 +27,7 @@
     <div>
         <div class="flex justify-center pt-5 lg:pr-16 c1">
             <div class="flex justify-center p-5 border-red-600 lg:border-2 rounded-full">
-                <div><img src="/Debt-v1/dist/img/call.png" class="w-8"></div>
+                <div><a href="tel:+0000000000"><img src="/Debt-v1/dist/img/call.png" class="w-8"></a></div>
             </div>
             <div class="px-5 pt-2 mx-5">
                 <h3 class="text-secondary text-2xl font-semibold">Wait For A Call</h3>
