@@ -50,7 +50,7 @@
 <h1 class="text-primary text-center text-4xl font-bold m-5 title" id="title">
     See if you are eligible to reduce your credit card payments and get relief</h1>
 <div id="formResp">
-    <form class=" lg:w-8/12 mt-3 rounded-lg m-8" id="regForm" action="/Debt-v1/dist/submit.php">
+    <form class=" lg:w-8/12 mt-3 rounded-lg m-8" id="regForm" action="javascript:void(0);">
         <div class="f">
             <div class="stepper-wrapper w-full">
                 <div class="stepper-item">
@@ -203,7 +203,7 @@ data rates may apply. For more information, please review our <span class="font-
                         </div>
                     </div>
                     <div class="flex justify-center py-10 items-center ">
-                        <button type="button" class="font-bodyFont bg-red-600 lg:px-20 lg:py-5 text-2xl font-bold rounded-full q-title q-button" onclick="nextPrev(1)">Submit</button>
+                        <button type="submit" class="font-bodyFont bg-red-600 lg:px-20 lg:py-5 text-2xl font-bold rounded-full q-title q-button">Submit</button>
                     </div>
 
 
@@ -251,6 +251,7 @@ data rates may apply. For more information, please review our <span class="font-
         The company and its affiliates are not lenders, creditors, or debt collectors. This is not a loan. Our representatives have helped thousands of consumers throughout their careers.
     </div>
 </footer>
+
 
 
 
@@ -373,10 +374,11 @@ data rates may apply. For more information, please review our <span class="font-
         .catch(error => console.error('Error fetching IP address:', error));
 </script>
 <script>
-    $('#regForm').submit(function(event) {
+    $('#regForm').on('submit', function(e){
 
-        event.preventDefault();
-
+        e.preventDefault();
+    
+        console.log("Submitted");
 
         //$('#loadingModal').fadeIn(500);
 
