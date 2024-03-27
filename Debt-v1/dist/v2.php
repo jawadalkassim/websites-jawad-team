@@ -275,7 +275,11 @@ data rates may apply. For more information, please review our <span class="font-
             }
 
             // Update the input box with the full address
-            input.value = place.formatted_address;
+            const streetAddress = extractStreetAddress(place.address_components);
+            input.value = streetAddress;
+
+            console.log(place)
+           // input.value = place.formatted_address;
             // Use the formatted address here
             const addressComponents = place.address_components;
 
@@ -296,6 +300,33 @@ data rates may apply. For more information, please review our <span class="font-
 
 
         });
+        function extractStreetAddress(addressComponents) {
+    let streetNumber = '';
+    let streetName = '';
+    let address2 = '';
+
+    for (const component of addressComponents) {
+        switch (component.types[0]) {
+            case "street_number":
+                streetNumber = component.short_name;
+                break;
+            case "route":
+                streetName = component.short_name;
+                break;
+            case "subpremise": // Address line 2
+                address2 = component.short_name;
+                break;
+        }
+    }
+
+    // Combine street number, street name, and address line 2
+    let streetAddress = streetNumber + ' ' + streetName;
+    if (address2) {
+        streetAddress += ', ' + address2;
+    }
+
+    return streetAddress.trim(); // Trim to remove leading/trailing spaces
+}
     }
 
 

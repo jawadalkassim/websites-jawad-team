@@ -50,7 +50,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <h1 class="text-primary text-center text-4xl font-bold m-5 title" id="title">
 See if you are eligible to reduce your credit card payments and get relief</h1>
 <div id="formResp">
-    <form class=" lg:w-8/12 mt-3 rounded-lg m-8" id="regForm" action="/Debt-v1/dist/submit.php">
+    <form class=" lg:w-8/12 mt-3 rounded-lg m-8" id="regForm" action="javascript:void(0);">
         <div class="f">
         <div class="stepper-wrapper w-full">
             <div class="stepper-item">
@@ -195,7 +195,7 @@ data rates may apply. For more information, please review our <span class="font-
                         </div>
                     </div>
                     <div class="flex justify-center py-10 items-center ">
-                        <button type="button" class="font-bodyFont bg-red-600 lg:px-20 lg:py-5 text-2xl font-bold rounded-full q-title q-button" onclick="nextPrev(1)">Submit</button>
+                        <button type="submit" class="font-bodyFont bg-red-600 lg:px-20 lg:py-5 text-2xl font-bold rounded-full q-title q-button">Submit</button>
                     </div>
 
 
@@ -246,7 +246,6 @@ data rates may apply. For more information, please review our <span class="font-
 
 
 
-
 <script>
     function initAutocomplete() {
         // Get the input element for the autocomplete search box.
@@ -267,7 +266,11 @@ data rates may apply. For more information, please review our <span class="font-
             }
 
             // Update the input box with the full address
-            input.value = place.formatted_address;
+            const streetAddress = extractStreetAddress(place.address_components);
+            input.value = streetAddress;
+
+            console.log(place)
+           // input.value = place.formatted_address;
             // Use the formatted address here
             const addressComponents = place.address_components;
 
@@ -288,6 +291,33 @@ data rates may apply. For more information, please review our <span class="font-
 
 
         });
+        function extractStreetAddress(addressComponents) {
+    let streetNumber = '';
+    let streetName = '';
+    let address2 = '';
+
+    for (const component of addressComponents) {
+        switch (component.types[0]) {
+            case "street_number":
+                streetNumber = component.short_name;
+                break;
+            case "route":
+                streetName = component.short_name;
+                break;
+            case "subpremise": // Address line 2
+                address2 = component.short_name;
+                break;
+        }
+    }
+
+    // Combine street number, street name, and address line 2
+    let streetAddress = streetNumber + ' ' + streetName;
+    if (address2) {
+        streetAddress += ', ' + address2;
+    }
+
+    return streetAddress.trim(); // Trim to remove leading/trailing spaces
+}
     }
 
 
@@ -334,10 +364,11 @@ LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
         .catch(error => console.error('Error fetching IP address:', error));
 </script>
 <script>
-    $('#regForm').submit(function(event) {
+    $('#regForm').on('submit', function(e){
 
-        event.preventDefault();
-
+        e.preventDefault();
+    
+        console.log("Submitted");
 
         //$('#loadingModal').fadeIn(500);
 

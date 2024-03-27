@@ -16,6 +16,7 @@ switch ($method) {
 		$fields = array(
 			'lp_campaign_id' => $campaign_data['lp_campaign_id']
 			, 'lp_campaign_key' => $campaign_data['lp_campaign_key']
+			, 'lp_response' => 'JSON'
 			, 'first_name' => $_POST['firstName']
 			, 'last_name' => $_POST['lastName']
 			, 'phone_home' => preg_replace('/\D/', '', $_POST['homePhone'])
@@ -46,9 +47,10 @@ switch ($method) {
 		//die();
 
 		//create string from array
-		foreach($fields as $key=>$value) { $fields_string .= $key.'='.urlencode($value).'&'; }
-		//remove trailing '&'
-		$fields_string = rtrim($fields_string, '&');
+		$fields_string = http_build_query($fields);
+		//foreach($fields as $key=>$value) { $fields_string .= $key.'='.urlencode($value).'&'; }
+		// //remove trailing '&'
+		// $fields_string = rtrim($fields_string, '&');
 
 		$output = array();
 		$url = 'https://lendingarch.leadspediatrack.com/post.do';
@@ -62,40 +64,19 @@ switch ($method) {
 		curl_setopt($curlSession, CURLOPT_RETURNTRANSFER,1);
 		curl_setopt($curlSession, CURLOPT_TIMEOUT,5000);
 		curl_setopt($curlSession, CURLOPT_SSL_VERIFYPEER, FALSE);
-		curl_setopt($curlSession, CURLOPT_SSL_VERIFYHOST, 1);
+		curl_setopt($curlSession, CURLOPT_SSL_VERIFYHOST, 2);
 
-		$rawresponse = curl_exec($curlSession);
-
-		if (strpos($rawresponse, '&'))
-		{
-		  $response = explode('&', $rawresponse);
-		  $output = array();
-		  $count = count($response);
-		  for ($i=0; $i < $count; $i++)
-		  {
-			 $splitAt = strpos($response[$i], "=");
-			 $output[trim(substr($response[$i], 0, $splitAt))] = trim(substr(urldecode($response[$i]), ($splitAt+1)));
-		  }
-		}
-		else
-		{
-		  $output = $rawresponse;
-		}
-
-		$data = json_decode($output);
-		$result = $data->result;
-
+		$result = curl_exec($curlSession);
+		
+     	$leadResponse = json_decode($result, true);
+        $result = $leadResponse['result'];
+        $leadId = $leadResponse['lead_id'];
+        $redirectUrl = $leadResponse['redirect_url'];
+        $msg = $leadResponse['msg'];
+        $price = $leadResponse['price'];
+		
 		//print_r($output);
 		//die();
-
-		// Assuming $xmlResponse contains the XML response string
-		$xmlResponse = simplexml_load_string($output);
-
-		$result = (string) $xmlResponse->result;
-		$leadId = (string) $xmlResponse->lead_id;
-		$price = (float) $xmlResponse->price;
-		$redirectUrl = (string) $xmlResponse->redirect_url;
-		$msg = (string) $xmlResponse->msg;
 
 		if($result == 'success'){
 
