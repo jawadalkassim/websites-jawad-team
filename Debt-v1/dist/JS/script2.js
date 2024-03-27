@@ -5,6 +5,7 @@ showTab(currentTab);
 function showTab(n) {
     var tab = document.getElementsByClassName("tab");
     tab[n].style.display = "block";
+    window.scrollTo(0, 0);
     if (n === 0) {
         document.getElementById("prevBtn").style.display = "none";
         document.getElementById('title').style.display="block"
