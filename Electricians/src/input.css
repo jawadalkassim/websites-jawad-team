@@ -169,12 +169,6 @@ hr.style-1 {
     -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-#bu{
-    display: none;
-}
-#more{
-    display: grid;
-}
 
 @-webkit-keyframes fadeInCheckbox {
     from {
@@ -205,22 +199,21 @@ hr.style-1 {
 .title{
     width: 75%
 }
-
+.ribbon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: #ffcc00;
+    padding :3px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    width: 90px;
+}
 #row{
     padding-bottom: 100px;
     padding-top: 50px!important;
 }
-.card{
-    width: 200px;
-    height: 140px;
-    margin: 20px;
-}
 @media (max-width: 1199px) {
-    .card{
-        width: 150px;
-        height: 140px;
-        margin: 20px;
-    }
     .type{
         display: flex;
         justify-content: center;
@@ -258,10 +251,6 @@ hr.style-1 {
     }
 }
 @media (min-width:630px) and (max-width:1023px) {
-    .card{
-        width: 75%;
-        margin: 20px 60px;
-    }
     #regForm{
         width: 90% !important;
     }
@@ -316,21 +305,5 @@ hr.style-1 {
     }
     .card-input-element + .card{
         padding: 10px 0px;
-    }
-}
-@media (max-width: 768px){
-    .card{
-        width: 100%;
-        margin: 0px;
-        margin-top: 10px;
-    }
-    #bu{
-        display: flex;
-    }
-    img {
-        max-width: 20%!important;
-    }
-    #more{
-        display: none;
     }
 }
