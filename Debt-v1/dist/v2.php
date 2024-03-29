@@ -162,6 +162,17 @@
         <div class="tab">
             <div class="flex justify-center pt-2">
                 <div>
+                    <div><h1 class="pt-5 mb-2 text-secondary text-6xl font-semibold title q-title ">Are you currently employed?</h1></div>
+                </div>
+            </div>
+            <div class="flex justify-center py-24 items-center ">
+                <button type="button" style="border: 1px solid black;padding: 20px 50px;margin-right: 20px" class="font-bodyFont border-border-black border lg:px-10 lg:pt-5 text-2xl text-secondary font-bold rounded-lg " onclick="nextPrev(1)">Yes</button>
+                <button type="button" style="border: 1px solid black;padding: 20px 50px" class="font-bodyFont border-border-black border lg:px-10 lg:pt-5 text-2xl text-secondary font-bold rounded-lg" onclick="nextPrev(1)">No</button>
+            </div>
+        </div>
+        <div class="tab">
+            <div class="flex justify-center pt-2">
+                <div>
                     <div><h1 class="pt-10 mb-2 text-secondary text-6xl font-semibold title q-title">Contact Information</h1></div>
                 </div>
             </div>
