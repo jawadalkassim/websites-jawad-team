@@ -77,22 +77,22 @@
                 <div class="wrapper pt-8">
                     <p class="selectstyle selectstyle--style1">
                         <span class="selectstyle__box " id="arrow" style="color: black!important;">
-      <select id="amount" name="amount" class="selectstyle__box__select">
+      <select id="amount" name="estimated_debt" class="selectstyle__box__select">
         <option value="0" selected="selected">Select Debt Amount</option>
-          <option value="1">$0 - $4,999</option>
-          <option value="2">$5,000 - $7,499</option>
-          <option value="3">$7,500 - $9,999</option>
-          <option value="4">$10,000 - $14,999</option>
-          <option value="5">$15,000 - $19,999</option>
-          <option value="6">$20,000 - $29,999</option>
-          <option value="7">$30,000 - $39,999</option>
-          <option value="8">$40,000 - $49,999</option>
-          <option value="9">$50,000 - $59,999</option>
-          <option value="10">$60,000 - $69,999</option>
-          <option value="11">$70,000 - $79,999</option>
-          <option value="12">$80,000 - $89,999</option>
-          <option value="13">$90,000 - $99,999</option>
-          <option value="14">$100,000+</option>
+          <option value="4999">$0 - $4,999</option>
+          <option value="7499">$5,000 - $7,499</option>
+          <option value="9999">$7,500 - $9,999</option>
+          <option value="14999">$10,000 - $14,999</option>
+          <option value="19999">$15,000 - $19,999</option>
+          <option value="29999">$20,000 - $29,999</option>
+          <option value="39999">$30,000 - $39,999</option>
+          <option value="49999">$40,000 - $49,999</option>
+          <option value="59999">$50,000 - $59,999</option>
+          <option value="69999">$60,000 - $69,999</option>
+          <option value="79999">$70,000 - $79,999</option>
+          <option value="89999">$80,000 - $89,999</option>
+          <option value="99999">$90,000 - $99,999</option>
+          <option value="100000">$100,000+</option>
       </select>
     </span>
                     </p>
@@ -256,13 +256,6 @@ data rates may apply. For more information, please review our <span class="font-
 
 
 <script>
-    document.getElementById("submitButton").addEventListener("click", function() {
-        var submitButton = document.getElementById("submitButton");
-        submitButton.disabled = true;
-        submitButton.textContent = "Submitting..."; // Change text if needed
-    });
-</script>
-<script>
     function initAutocomplete() {
         // Get the input element for the autocomplete search box.
         var input = document.getElementById('address');
@@ -420,6 +413,15 @@ data rates may apply. For more information, please review our <span class="font-
         })
     })
 </script>
+
+
+<!-- <script>
+    document.getElementById("submitButton").addEventListener("click", function() {
+        var submitButton = document.getElementById("submitButton");
+        submitButton.disabled = true;
+        submitButton.textContent = "Submitting..."; // Change text if needed
+    });
+</script> -->
 </body>
 
 </html>
