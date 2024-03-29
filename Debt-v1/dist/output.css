@@ -1489,7 +1489,15 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
+.select_button{
+  padding: 20px 50px!important;
+}
+
 @media (max-width: 900px) {
+  .select_button{
+    padding: 20px 40px !important;
+  }
+
   .c1{
     margin-left: 0px;
   }

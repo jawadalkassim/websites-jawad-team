@@ -166,8 +166,8 @@
                 </div>
             </div>
             <div class="flex justify-center py-24 items-center ">
-                <button type="button" style="border: 1px solid black;padding: 20px 50px;margin-right: 20px" class="font-bodyFont border-border-black border lg:px-10 lg:pt-5 text-2xl text-secondary font-bold rounded-lg " onclick="nextPrev(1)">Yes</button>
-                <button type="button" style="border: 1px solid black;padding: 20px 50px" class="font-bodyFont border-border-black border lg:px-10 lg:pt-5 text-2xl text-secondary font-bold rounded-lg" onclick="nextPrev(1)">No</button>
+                <button type="button" style="border: 1px solid black;margin-right: 20px" class="select_button font-bodyFont border-border-black border lg:px-10 lg:pt-5 text-2xl text-secondary font-bold rounded-lg " onclick="nextPrev(1)">Yes</button>
+                <button type="button" style="border: 1px solid black;padding: 20px 50px" class="select_button font-bodyFont border-border-black border lg:px-10 lg:pt-5 text-2xl text-secondary font-bold rounded-lg" onclick="nextPrev(1)">No</button>
             </div>
         </div>
         <div class="tab">
