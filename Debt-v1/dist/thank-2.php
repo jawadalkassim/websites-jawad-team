@@ -21,7 +21,10 @@
 </nav>
 <main>
     <div class="flex justify-center pt-16"><img src="/Debt-v1/dist/img/logo-symple.svg" class="w-2/12 symple"></div>
-    <div class="flex justify-center pt-4"><a href="tel:+0000000000"><button class="font-bodyFont bg-primary lg:px-24 lg:py-5 text-2xl font-bold rounded-full q-title q-button">Call Us</button></a></div>
+    <div class="flex justify-center pt-4"><h4>We have agents available to help you right now:</h4></div>
+    <div class="flex justify-center pt-4">
+        <a href="tel:+18588384227"><button class="font-bodyFont bg-primary lg:px-24 lg:py-5 text-2xl font-bold rounded-full q-title q-button">Call Us</button></a>
+        </div>
     <div class="pt-16 text-primary text-center text-4xl font-bold">
         We've Found Your Match!
     </div>
@@ -32,7 +35,7 @@
             </div>
             <div class="px-5 pt-2 mx-5">
                 <h3 class="text-secondary text-2xl font-semibold">Wait For A Call</h3>
-                <p>Receive a call within 1 business day</p>
+                <p>You can call us NOW agents are available IF we don't hear from you our next available agent will call you right away</p>
             </div>
         </div>
         <div class="flex justify-center pt-8 lg:pl-80 lg:pr-16 res">
