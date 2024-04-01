@@ -165,20 +165,20 @@ See if you are eligible to reduce your credit card payments and get relief</h1>
             </div>
             <div class="flex justify-center py-24 items-center " style="flex-wrap: wrap;gap: 30px">
                 <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;border-radius: 10px">
-                    <input value="yes" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <input name="employed" value="yes" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
                     <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
                         Yes
                     </button>
                 </label>
                 <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;border-radius: 10px">
-                    <input value="no" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <input name="employed" value="no" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
                     <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
                         No
                     </button>
                 </label>
             </div>
         </div>
-        <div class="tab" name="employment_status">
+        <div class="tab">
             <div class="flex justify-center pt-2">
                 <div>
                     <div><h1 class="pt-5 mb-2 text-secondary text-5xl font-semibold title q-title ">What's your employment status ?</h1></div>
@@ -186,19 +186,19 @@ See if you are eligible to reduce your credit card payments and get relief</h1>
             </div>
             <div class="flex justify-evenly pt-10 items-center " style="flex-wrap: wrap;gap: 30px">
                 <label class="flex justify-center items-center select_button  " style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
-                    <input value="Contract" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <input name="employment_status" value="Contract" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
                     <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
                         Contract
                     </button>
                 </label>
                 <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
-                    <input value="Disability" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <input name="employment_status" value="Disability" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
                     <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
                         Disability
                     </button>
                 </label>
                 <label class="flex justify-center items-center select_button " style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
-                    <input value="Employed" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <input name="employment_status" value="Employed" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
                     <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
                         Employed
                     </button>
@@ -206,19 +206,19 @@ See if you are eligible to reduce your credit card payments and get relief</h1>
             </div>
             <div class="flex justify-evenly pt-8 items-center " style="flex-wrap: wrap;gap: 30px">
                 <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
-                    <input value="Full Time" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <input name="employment_status" value="Full Time" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
                     <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
                         Full Time
                     </button>
                 </label>
                 <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
-                    <input value="Part Time" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <input name="employment_status" value="Part Time" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
                     <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
                         Part Time
                     </button>
                 </label>
                 <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
-                    <input value="Retired" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <input name="employment_status" value="Retired" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
                     <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
                         Retired
                     </button>
@@ -226,19 +226,19 @@ See if you are eligible to reduce your credit card payments and get relief</h1>
             </div>
             <div class="flex justify-evenly py-8 items-center " style="flex-wrap: wrap;gap: 30px">
                 <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
-                    <input value="Seasonal" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <input name="employment_status" value="Seasonal" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
                     <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
                         Seasonal
                     </button>
                 </label>
                 <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
-                    <input value="Self Employed" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <input name="employment_status" value="Self Employed" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
                     <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
                         Self Employed
                     </button>
                 </label>
                 <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
-                    <input value="Unemployed" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <input name="employment_status" value="Unemployed" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
                     <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
                         Unemployed
                     </button>
