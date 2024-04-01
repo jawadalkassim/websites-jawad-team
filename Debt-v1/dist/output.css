@@ -627,6 +627,10 @@ video {
   width: 100%;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .items-start{
   align-items: flex-start;
 }
@@ -637,6 +641,10 @@ video {
 
 .justify-center{
   justify-content: center;
+}
+
+.justify-evenly{
+  justify-content: space-evenly;
 }
 
 .rounded-full{
@@ -727,6 +735,11 @@ video {
 .py-24{
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .py-8{
