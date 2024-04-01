@@ -20,13 +20,13 @@
 
     </script>
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NSQHFXX');</script>
-    <!-- End Google Tag Manager -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NSQHFXX');</script>
+<!-- End Google Tag Manager -->
 
 </head>
 
@@ -34,7 +34,7 @@
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSQHFXX"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <nav class="bg-white shadow-lg">
@@ -48,7 +48,7 @@
 </nav>
 
 <h1 class="text-primary text-center text-4xl font-bold m-5 title" id="title">
-    See if you are eligible to reduce your credit card payments and get relief</h1>
+See if you are eligible to reduce your credit card payments and get relief</h1>
 <div id="formResp">
     <form class=" lg:w-8/12 mt-3 rounded-lg m-8" id="regForm" action="javascript:void(0);">
         <div class="f">
@@ -64,6 +64,12 @@
                 </div>
                 <div class="stepper-item">
                     <div class="step-counter" style="color: white;padding: 10px">4</div>
+                </div>
+                <div class="stepper-item">
+                    <div class="step-counter" style="color: white;padding: 10px">5</div>
+                </div>
+                <div class="stepper-item">
+                    <div class="step-counter" style="color: white;padding: 10px">6</div>
                 </div>
             </div>
         </div>
@@ -118,7 +124,7 @@
             <div>
                 <div class="flex justify-center">
                     <div class="lg:w-1/2 input-range">
-                        <input type="text" id="zip" name="zip" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-4 " placeholder="12345" required />
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" id="zip" name="zip" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-4 " placeholder="12345" required />
                     </div>
                 </div>
                 <div id="zip-error" style="text-align: center;padding-top: 5px"></div>
@@ -149,6 +155,94 @@
             <div id="email-error" style="text-align: center;padding-top: 5px"></div>
             <div class="flex justify-center pt-10 items-center ">
                 <button type="button" class="font-bodyFont bg-red-600 lg:px-20 lg:pt-5 text-2xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
+            </div>
+        </div>
+        <div class="tab">
+            <div class="flex justify-center pt-2">
+                <div>
+                    <div><h1 class="pt-5 mb-2 text-secondary text-6xl font-semibold title q-title ">Are you currently employed?</h1></div>
+                </div>
+            </div>
+            <div class="flex justify-center py-24 items-center " style="flex-wrap: wrap;gap: 30px">
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;border-radius: 10px">
+                    <input name="employed" value="yes" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Yes
+                    </button>
+                </label>
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;border-radius: 10px">
+                    <input name="employed" value="no" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        No
+                    </button>
+                </label>
+            </div>
+        </div>
+        <div class="tab">
+            <div class="flex justify-center pt-2">
+                <div>
+                    <div><h1 class="pt-5 mb-2 text-secondary text-5xl font-semibold title q-title ">What's your employment status ?</h1></div>
+                </div>
+            </div>
+            <div class="flex justify-evenly pt-10 items-center " style="flex-wrap: wrap;gap: 30px">
+                <label class="flex justify-center items-center select_button  " style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
+                    <input name="employment_status" value="Contract" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Contract
+                    </button>
+                </label>
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
+                    <input name="employment_status" value="Disability" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Disability
+                    </button>
+                </label>
+                <label class="flex justify-center items-center select_button " style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
+                    <input name="employment_status" value="Employed" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Employed
+                    </button>
+                </label>
+            </div>
+            <div class="flex justify-evenly pt-8 items-center " style="flex-wrap: wrap;gap: 30px">
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
+                    <input name="employment_status" value="Full Time" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Full Time
+                    </button>
+                </label>
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
+                    <input name="employment_status" value="Part Time" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Part Time
+                    </button>
+                </label>
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
+                    <input name="employment_status" value="Retired" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Retired
+                    </button>
+                </label>
+            </div>
+            <div class="flex justify-evenly py-8 items-center " style="flex-wrap: wrap;gap: 30px">
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
+                    <input name="employment_status" value="Seasonal" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Seasonal
+                    </button>
+                </label>
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
+                    <input name="employment_status" value="Self Employed" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Self Employed
+                    </button>
+                </label>
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
+                    <input name="employment_status" value="Unemployed" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Unemployed
+                    </button>
+                </label>
             </div>
         </div>
         <div class="tab">
@@ -270,7 +364,7 @@ data rates may apply. For more information, please review our <span class="font-
             input.value = streetAddress;
 
             console.log(place)
-            // input.value = place.formatted_address;
+           // input.value = place.formatted_address;
             // Use the formatted address here
             const addressComponents = place.address_components;
 
@@ -292,32 +386,32 @@ data rates may apply. For more information, please review our <span class="font-
 
         });
         function extractStreetAddress(addressComponents) {
-            let streetNumber = '';
-            let streetName = '';
-            let address2 = '';
+    let streetNumber = '';
+    let streetName = '';
+    let address2 = '';
 
-            for (const component of addressComponents) {
-                switch (component.types[0]) {
-                    case "street_number":
-                        streetNumber = component.short_name;
-                        break;
-                    case "route":
-                        streetName = component.short_name;
-                        break;
-                    case "subpremise": // Address line 2
-                        address2 = component.short_name;
-                        break;
-                }
-            }
-
-            // Combine street number, street name, and address line 2
-            let streetAddress = streetNumber + ' ' + streetName;
-            if (address2) {
-                streetAddress += ', ' + address2;
-            }
-
-            return streetAddress.trim(); // Trim to remove leading/trailing spaces
+    for (const component of addressComponents) {
+        switch (component.types[0]) {
+            case "street_number":
+                streetNumber = component.short_name;
+                break;
+            case "route":
+                streetName = component.short_name;
+                break;
+            case "subpremise": // Address line 2
+                address2 = component.short_name;
+                break;
         }
+    }
+
+    // Combine street number, street name, and address line 2
+    let streetAddress = streetNumber + ' ' + streetName;
+    if (address2) {
+        streetAddress += ', ' + address2;
+    }
+
+    return streetAddress.trim(); // Trim to remove leading/trailing spaces
+}
     }
 
 
@@ -326,15 +420,15 @@ data rates may apply. For more information, please review our <span class="font-
 <script src="/Debt-v1/dist/JS/script.js">
 </script>
 <script id="LeadiDscript" type="text/javascript">
-    (function() {
-        var s = document.createElement('script');
-        s.id = 'LeadiDscript_campaign';
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = '//create.lidstatic.com/campaign/35ea2c34-6f28-eb71-7d7d-35b2628c673d.js?snippet_version=2';
-        var LeadiDscript = document.getElementById('LeadiDscript');
-        LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
-    })();
+(function() {
+var s = document.createElement('script');
+s.id = 'LeadiDscript_campaign';
+s.type = 'text/javascript';
+s.async = true;
+s.src = '//create.lidstatic.com/campaign/35ea2c34-6f28-eb71-7d7d-35b2628c673d.js?snippet_version=2';
+var LeadiDscript = document.getElementById('LeadiDscript');
+LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
+})();
 </script>
 <noscript><img src='//create.leadid.com/noscript.gif?lac=F1D6E1C4-3226-ADC7-A00E-77613EBAD162&lck=35ea2c34-6f28-eb71-7d7d-35b2628c673d&snippet_version=2' /></noscript>
 
