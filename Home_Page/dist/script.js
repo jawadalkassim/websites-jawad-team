@@ -4,7 +4,8 @@ let c1 = document.getElementById('c1')
 let c2 = document.getElementById('c2')
 let c3 = document.getElementById('more')
 y.onclick=function(){
-    cards.style.display="grid"
+    cards.style.display="flex"
+    cards.style.justifyContent="center"
     y.style.display="none"
 }
 function myFunction(x) {
@@ -41,19 +42,32 @@ function search() {
         let title = card.querySelector('.card-title').textContent.toLowerCase();
         if (title.includes(input) && !addedCards.has(title)) {
             let cloneCard = card.cloneNode(true);
-            cloneCard.classList.add('col-span-2');
-            cloneCard.style.display = 'grid';
-            searchGrid.appendChild(cloneCard);
+            let cardLink = card.querySelector('a').getAttribute('href');
+            let linkElement = document.createElement('a');
+            linkElement.setAttribute('href', cardLink);
+            linkElement.classList.add('col-span-3');
+            linkElement.style.display = 'grid';
+            linkElement.appendChild(cloneCard);
+            searchGrid.appendChild(linkElement);
             addedCards.add(title);
-            c1.style.display= "none"
-            c2.style.display= "none"
-            c3.style.display= "none"
-            c3.style.display= "none"
-            y.style.display="none"
+            c1.style.display = "none";
+            c2.style.display = "none";
+            c3.style.display = "none";
+            y.style.display = "none";
         }
-    });
+    })
 
-    if (searchGrid.innerHTML === '') {
+
+        if (searchGrid.innerHTML === '') {
+        searchGrid.style.display="flex"
+        searchGrid.innerHTML="<h1 class='text-4xl text-center flex justify-center text-white'>No Result To Show </h1>"
+    }
+    if(input===''){
+        searchGrid.style.display="none"
+        c1.style.display="grid"
+        c2.style.display="grid"
+        y.style.display="flex"
+        y.style.justifyContent="center"
     }
 }
 

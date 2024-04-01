@@ -316,6 +316,9 @@ hr.style-1 {
     }
 }
 @media (max-width: 768px) {
+    .icon{
+        display: none;
+    }
     .thank{
         padding-top: 100px;
         padding-bottom: 500px;
