@@ -1490,7 +1490,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .select_button{
-  padding: 20px 50px!important;
+  padding: 30px 70px!important;
 }
 
 @media (max-width: 900px) {
@@ -1615,11 +1615,6 @@ input[type="range"]::-moz-range-thumb {
 
   .lg\:border-2{
     border-width: 2px;
-  }
-
-  .lg\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .lg\:px-20{
