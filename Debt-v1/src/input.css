@@ -451,6 +451,28 @@ input[type="range"]::-moz-range-thumb {
     border: 1px solid  rgb(185 28 28 );
 
 }
+.select_button:hover{
+    background: #1C6C89;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.15s;
+}
+.select_button:hover button {
+    color: white;
+}
+
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .brand img{
     width:35% !important;
 }
@@ -590,13 +612,7 @@ input[type="range"]::-moz-range-thumb {
         margin: 0px 0px !important;
     }
 }
-.select_button{
-    padding: 30px 70px!important;
-}
 @media (max-width: 900px) {
-    .select_button{
-        padding: 20px 40px !important;
-    }
     .c1{
         margin-left: 0px;
     }
