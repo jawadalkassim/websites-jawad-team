@@ -19,6 +19,7 @@ slider.oninput = function() {
 function showTab(n) {
     var tab = document.getElementsByClassName("tab");
     tab[n].style.display = "block";
+    window.scrollTo(0, 0);
     if (n === 0) {
         document.getElementById("prevBtn").style.display = "none";
         document.getElementById('title').style.display="block"
@@ -84,7 +85,7 @@ function validateForm() {
                 valid= false;
             }
         }
-        if(currentTab===3){
+        if(currentTab===5){
             if(y[i].value.match(phoneno))
             {
                 return true;
@@ -106,15 +107,13 @@ function validateForm() {
 }
 function backPrev(n){
     var i, x = document.getElementsByClassName("stepper-item");
-   var t = document.getElementsByClassName("tab");
-    var y = t[currentTab].getElementsByTagName("input");
+    var t = document.getElementsByClassName("tab");
     for (i = 0; i < x.length; i++) {
         if(i>=1 && i<x.length){
             x[currentTab-1].className = x[currentTab-1].className.replace("stepper-item", "stepper-item active");
             x[currentTab].className = x[currentTab].className.replace("active completed", "stepper-item");
         }
     }
-    y[0].value =""
     nextPrev(n)
 }
 function fixStepIndicator(n) {

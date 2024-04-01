@@ -52,20 +52,26 @@ See if you are eligible to reduce your credit card payments and get relief</h1>
 <div id="formResp">
     <form class=" lg:w-8/12 mt-3 rounded-lg m-8" id="regForm" action="javascript:void(0);">
         <div class="f">
-        <div class="stepper-wrapper w-full">
-            <div class="stepper-item">
-                <div class="step-counter" style="color: white;padding: 10px">1</div>
+            <div class="stepper-wrapper w-full">
+                <div class="stepper-item">
+                    <div class="step-counter" style="color: white;padding: 10px">1</div>
+                </div>
+                <div class="stepper-item">
+                    <div class="step-counter" style="color: white;padding: 10px">2</div>
+                </div>
+                <div class="stepper-item">
+                    <div class="step-counter" style="color: white;padding: 10px">3</div>
+                </div>
+                <div class="stepper-item">
+                    <div class="step-counter" style="color: white;padding: 10px">4</div>
+                </div>
+                <div class="stepper-item">
+                    <div class="step-counter" style="color: white;padding: 10px">5</div>
+                </div>
+                <div class="stepper-item">
+                    <div class="step-counter" style="color: white;padding: 10px">6</div>
+                </div>
             </div>
-            <div class="stepper-item">
-                <div class="step-counter" style="color: white;padding: 10px">2</div>
-            </div>
-            <div class="stepper-item">
-                <div class="step-counter" style="color: white;padding: 10px">3</div>
-            </div>
-            <div class="stepper-item">
-                <div class="step-counter" style="color: white;padding: 10px">4</div>
-            </div>
-        </div>
         </div>
         <div class="tab">
             <div class="flex justify-center">
@@ -118,7 +124,7 @@ See if you are eligible to reduce your credit card payments and get relief</h1>
             <div>
                 <div class="flex justify-center">
                     <div class="lg:w-1/2 input-range">
-                        <input type="text" id="zip" name="zip" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-4 " placeholder="12345" required />
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" id="zip" name="zip" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-4 " placeholder="12345" required />
                     </div>
                 </div>
                 <div id="zip-error" style="text-align: center;padding-top: 5px"></div>
@@ -149,6 +155,94 @@ See if you are eligible to reduce your credit card payments and get relief</h1>
             <div id="email-error" style="text-align: center;padding-top: 5px"></div>
             <div class="flex justify-center pt-10 items-center ">
                 <button type="button" class="font-bodyFont bg-red-600 lg:px-20 lg:pt-5 text-2xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
+            </div>
+        </div>
+        <div class="tab">
+            <div class="flex justify-center pt-2">
+                <div>
+                    <div><h1 class="pt-5 mb-2 text-secondary text-6xl font-semibold title q-title ">Are you currently employed?</h1></div>
+                </div>
+            </div>
+            <div class="flex justify-center py-24 items-center " style="flex-wrap: wrap;gap: 30px">
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;border-radius: 10px">
+                    <input value="yes" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Yes
+                    </button>
+                </label>
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;border-radius: 10px">
+                    <input value="no" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        No
+                    </button>
+                </label>
+            </div>
+        </div>
+        <div class="tab" name="employment_status">
+            <div class="flex justify-center pt-2">
+                <div>
+                    <div><h1 class="pt-5 mb-2 text-secondary text-5xl font-semibold title q-title ">What's your employment status ?</h1></div>
+                </div>
+            </div>
+            <div class="flex justify-evenly pt-10 items-center " style="flex-wrap: wrap;gap: 30px">
+                <label class="flex justify-center items-center select_button  " style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
+                    <input value="Contract" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Contract
+                    </button>
+                </label>
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
+                    <input value="Disability" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Disability
+                    </button>
+                </label>
+                <label class="flex justify-center items-center select_button " style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
+                    <input value="Employed" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Employed
+                    </button>
+                </label>
+            </div>
+            <div class="flex justify-evenly pt-8 items-center " style="flex-wrap: wrap;gap: 30px">
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
+                    <input value="Full Time" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Full Time
+                    </button>
+                </label>
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
+                    <input value="Part Time" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Part Time
+                    </button>
+                </label>
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
+                    <input value="Retired" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Retired
+                    </button>
+                </label>
+            </div>
+            <div class="flex justify-evenly py-8 items-center " style="flex-wrap: wrap;gap: 30px">
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
+                    <input value="Seasonal" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Seasonal
+                    </button>
+                </label>
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
+                    <input value="Self Employed" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Self Employed
+                    </button>
+                </label>
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
+                    <input value="Unemployed" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Unemployed
+                    </button>
+                </label>
             </div>
         </div>
         <div class="tab">
