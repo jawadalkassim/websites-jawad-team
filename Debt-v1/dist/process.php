@@ -8,7 +8,7 @@ session_start();
 require_once('config.php');
 
 $method = (isset($_POST['method'])) ? $_POST['method'] : $_GET['method'];
-$rid =  (isset($_POST['lp_request_id'])) ? $_POST['lp_request_id'] : $_GET['lp_request_id'];
+//$rid =  (isset($_POST['lp_request_id'])) ? $_POST['lp_request_id'] : $_GET['lp_request_id'];
 switch ($method) {
 		
 	case "Lead":{
@@ -28,7 +28,8 @@ switch ($method) {
 			, 'ip_address' => $_POST['ip_address']
 			, 'city' => $_POST['city']
 			, 'state' => $_POST['state']
-			, 'lp_request_id' => $rid
+			, 'lp_request_id' => $_POST['rid']
+            , 'employed' => $_POST['employed_field']
 
 			// //
 			// , 'lp_s1' => $_POST['lp_s1']
@@ -67,13 +68,17 @@ switch ($method) {
 		curl_setopt($curlSession, CURLOPT_SSL_VERIFYHOST, 2);
 
 		$result = curl_exec($curlSession);
-		
+
      	$leadResponse = json_decode($result, true);
         $result = $leadResponse['result'];
         $leadId = $leadResponse['lead_id'];
-        $redirectUrl = $leadResponse['redirect_url'];
+        $redirectUrl = $leadResponse['redirect_url'] ?? '';
         $msg = $leadResponse['msg'];
         $price = $leadResponse['price'];
+
+		if ($result == "success") {
+			$buyerID = $leadResponse['clients'][0]['client']['advertiserID'];
+		}
 		
 		//print_r($output);
 		//die();
@@ -81,7 +86,13 @@ switch ($method) {
 		if($result == 'success'){
 
 			$_SESSION['redirect_url'] = $redirectUrl;
-			$response = array('status_text' => 'sold', 'redirect_url' => '/Debt-v1/dist/submit.php/?match=true&lead_id='.$leadId);
+			// $response = array('status_text' => 'sold', 'redirect_url' => '/Debt-v1/dist/submit.php/?match=true&lead_id='.$leadId);
+			if (strlen($buyerID) !== 0){
+				$thankYou = '/thank-you/' . $buyerID;
+			} else {
+				$thankYou = '/thank-you';
+			}
+			$response = array('status_text' => 'sold', 'redirect_url' => $thankYou . '?match=true&lead_id='.$leadId);
 
 		} else if($result == 'failed'){
 

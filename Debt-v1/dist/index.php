@@ -13,20 +13,18 @@
     <link href="/Debt-v1/dist/output.css" rel="stylesheet">
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAjEO6yBCt-92pdvIXaE17GczvHFTPySM&libraries=places&callback=initAutocomplete" async></script>
 
-    <script>
+    <!-- <script>
         var urlParams = new URLSearchParams(window.location.search);
         var rid = urlParams.get('rid');
+    </script> -->
 
-
-    </script>
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NSQHFXX');</script>
-<!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NSQHFXX');</script>
+    <!-- End Google Tag Manager -->
 
 </head>
 
@@ -34,7 +32,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSQHFXX"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <nav class="bg-white shadow-lg">
@@ -48,9 +46,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 
 <h1 class="text-primary text-center text-4xl font-bold m-5 title" id="title">
-See if you are eligible to reduce your credit card payments and get relief</h1>
+    See if you are eligible to reduce your credit card payments and get relief</h1>
 <div id="formResp">
     <form class=" lg:w-8/12 mt-3 rounded-lg m-8" id="regForm" action="javascript:void(0);">
+        <input type="hidden" name="rid" value="<?php echo $_GET['rid'] ?? '';?>">
         <div class="f">
             <div class="stepper-wrapper w-full">
                 <div class="stepper-item">
@@ -68,9 +67,7 @@ See if you are eligible to reduce your credit card payments and get relief</h1>
                 <div class="stepper-item">
                     <div class="step-counter" style="color: white;padding: 10px">5</div>
                 </div>
-                <div class="stepper-item">
-                    <div class="step-counter" style="color: white;padding: 10px">6</div>
-                </div>
+               
             </div>
         </div>
         <div class="tab">
@@ -79,23 +76,31 @@ See if you are eligible to reduce your credit card payments and get relief</h1>
                     <h2 class="pt-1 mb-2 text-secondary text-6xl text-center font-semibold title q-title">How much credit card debt do you have?</h2>
                 </div>
             </div>
-            <div class="flex justify-center lg:pt-8 ">
-                <h5 class="text-gray-500 text-lg font-bold">Estimated Debt</h5>
-            </div>
-            <div class="flex justify-center">
-                <div class="flex justify-center text-2xl dol" style="color:  #0045c2;">$</div>
-                <div id="output" class=" text-3xl text-primary text-center font-bodyFont"></div>
-            </div>
-            <div class="flex justify-center">
 
-                <div class="w-8/12 input-range">
-                    <div class="range flex justify-center px-4">
-
-                        <input type="range" value="20000" min="0" max="100000" name="estimated_debt" id="slider" step="1000"/>
-                    </div>
-                </div>
+                <div class="wrapper pt-8">
+                    <p class="selectstyle selectstyle--style1">
+                        <span class="selectstyle__box " id="arrow" style="color: black!important;">
+      <select id="amount" name="estimated_debt" class="selectstyle__box__select">
+        <option value="0" selected="selected">Select Debt Amount</option>
+          <option value="4999">$0 - $4,999</option>
+          <option value="7499">$5,000 - $7,499</option>
+          <option value="9999">$7,500 - $9,999</option>
+          <option value="14999">$10,000 - $14,999</option>
+          <option value="19999">$15,000 - $19,999</option>
+          <option value="29999">$20,000 - $29,999</option>
+          <option value="39999">$30,000 - $39,999</option>
+          <option value="49999">$40,000 - $49,999</option>
+          <option value="59999">$50,000 - $59,999</option>
+          <option value="69999">$60,000 - $69,999</option>
+          <option value="79999">$70,000 - $79,999</option>
+          <option value="89999">$80,000 - $89,999</option>
+          <option value="99999">$90,000 - $99,999</option>
+          <option value="100000">$100,000+</option>
+      </select>
+    </span>
+                    </p>
             </div>
-            <p class="text-gray-500 text-sm text-center">Drag the slider handler left or right.</p>
+            <div id="amount-error" style="text-align: center;padding-top: 5px"></div>
             <div class="flex justify-center py-12 items-center ">
                 <button type="button" class="font-bodyFont bg-red-600 lg:px-20 lg:py-5 text-2xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
             </div>
@@ -164,83 +169,18 @@ See if you are eligible to reduce your credit card payments and get relief</h1>
                 </div>
             </div>
             <div class="flex justify-center py-24 items-center " style="flex-wrap: wrap;gap: 30px">
+            <input id="employed_field" name="employed_field" value="yes"  class="card-input-element hidden">
+
                 <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;border-radius: 10px">
-                    <input name="employed" value="yes" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
-                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                 
+                    <button type="button" onclick="updateHiddenInput('Yes')" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
                         Yes
                     </button>
                 </label>
                 <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;border-radius: 10px">
-                    <input name="employed" value="no" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
-                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                    
+                    <button type="button" onclick="updateHiddenInput('No')" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
                         No
-                    </button>
-                </label>
-            </div>
-        </div>
-        <div class="tab">
-            <div class="flex justify-center pt-2">
-                <div>
-                    <div><h1 class="pt-5 mb-2 text-secondary text-5xl font-semibold title q-title ">What's your employment status ?</h1></div>
-                </div>
-            </div>
-            <div class="flex justify-evenly pt-10 items-center " style="flex-wrap: wrap;gap: 30px">
-                <label class="flex justify-center items-center select_button  " style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
-                    <input name="employment_status" value="Contract" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
-                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
-                        Contract
-                    </button>
-                </label>
-                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
-                    <input name="employment_status" value="Disability" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
-                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
-                        Disability
-                    </button>
-                </label>
-                <label class="flex justify-center items-center select_button " style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
-                    <input name="employment_status" value="Employed" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
-                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
-                        Employed
-                    </button>
-                </label>
-            </div>
-            <div class="flex justify-evenly pt-8 items-center " style="flex-wrap: wrap;gap: 30px">
-                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
-                    <input name="employment_status" value="Full Time" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
-                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
-                        Full Time
-                    </button>
-                </label>
-                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
-                    <input name="employment_status" value="Part Time" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
-                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
-                        Part Time
-                    </button>
-                </label>
-                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
-                    <input name="employment_status" value="Retired" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
-                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
-                        Retired
-                    </button>
-                </label>
-            </div>
-            <div class="flex justify-evenly py-8 items-center " style="flex-wrap: wrap;gap: 30px">
-                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
-                    <input name="employment_status" value="Seasonal" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
-                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
-                        Seasonal
-                    </button>
-                </label>
-                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
-                    <input name="employment_status" value="Self Employed" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
-                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
-                        Self Employed
-                    </button>
-                </label>
-                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;height: 130px;border-radius: 10px">
-                    <input name="employment_status" value="Unemployed" onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
-                    <button type="button" onclick="nextPrev(1)" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
-                        Unemployed
                     </button>
                 </label>
             </div>
@@ -289,7 +229,7 @@ data rates may apply. For more information, please review our <span class="font-
                         </div>
                     </div>
                     <div class="flex justify-center py-10 items-center ">
-                        <button type="submit" class="font-bodyFont bg-red-600 lg:px-20 lg:py-5 text-2xl font-bold rounded-full q-title q-button">Submit</button>
+                        <button id="submitButton" type="submit" class="font-bodyFont bg-red-600 lg:px-20 lg:py-5 text-2xl font-bold rounded-full q-title q-button">Submit</button>
                     </div>
 
 
@@ -339,6 +279,14 @@ data rates may apply. For more information, please review our <span class="font-
 </footer>
 
 
+<script>
+    function updateHiddenInput(value) {
+
+    document.getElementById("employed_field").value = value;
+    nextPrev(1);
+}
+
+</script>
 
 <script>
     function initAutocomplete() {
@@ -348,6 +296,7 @@ data rates may apply. For more information, please review our <span class="font-
         let state = document.getElementById('state');
         // Create the autocomplete object, restricting the search to geographical location types.
         var autocomplete = new google.maps.places.Autocomplete(input, {types: ['geocode']});
+        autocomplete.setComponentRestrictions({'country': ['us']});
 
         // When the user selects an address from the dropdown, update the input value with the full address.
         autocomplete.addListener('place_changed', function() {
@@ -417,18 +366,18 @@ data rates may apply. For more information, please review our <span class="font-
 
 
 </script>
-<script src="/Debt-v1/dist/JS/script.js">
+<script src="/Debt-v1/dist/JS/script2.js">
 </script>
 <script id="LeadiDscript" type="text/javascript">
-(function() {
-var s = document.createElement('script');
-s.id = 'LeadiDscript_campaign';
-s.type = 'text/javascript';
-s.async = true;
-s.src = '//create.lidstatic.com/campaign/35ea2c34-6f28-eb71-7d7d-35b2628c673d.js?snippet_version=2';
-var LeadiDscript = document.getElementById('LeadiDscript');
-LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
-})();
+    (function() {
+        var s = document.createElement('script');
+        s.id = 'LeadiDscript_campaign';
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = '//create.lidstatic.com/campaign/35ea2c34-6f28-eb71-7d7d-35b2628c673d.js?snippet_version=2';
+        var LeadiDscript = document.getElementById('LeadiDscript');
+        LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
+    })();
 </script>
 <noscript><img src='//create.leadid.com/noscript.gif?lac=F1D6E1C4-3226-ADC7-A00E-77613EBAD162&lck=35ea2c34-6f28-eb71-7d7d-35b2628c673d&snippet_version=2' /></noscript>
 
@@ -458,38 +407,49 @@ LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
         .catch(error => console.error('Error fetching IP address:', error));
 </script>
 <script>
-    $('#regForm').on('submit', function(e){
+  $('#regForm').on('submit', function(e) {
+    e.preventDefault();
+    console.log("Submitted");
 
-        e.preventDefault();
 
-        console.log("Submitted");
+    // Append the selected value to the form data
+    var formData = $(this).serialize();
 
-        //$('#loadingModal').fadeIn(500);
-
-        var values = $(this).serialize();
-
-        $.ajax({
-            url: `/Debt-v1/dist/process.php?method=Lead&lp_request_id=${rid}`,
-            type: "post",
-            data: values,
-            dataType: "json",
-            success: function(data) {
-                if((data.status_text) && (data.redirect_url)){
-                    window.location = data.redirect_url;
-                } else {
-                    alert(data.response_text);
-                }
-                //$('#loadingModal').fadeOut(500);
-            },
-            error:function(data){
-                alert('Oops, we have encountered an error processing your application. We are working on resolving this issue. Sorry, for any inconvenience.');
-                //$('#loadingModal').fadeOut(500);
+    $.ajax({
+        url: '/Debt-v1/dist/process.php?method=Lead',
+        type: "post",
+        data: formData,
+        dataType: "json",
+        success: function(data) {
+            if (data.status_text && data.redirect_url) {
+                window.location = data.redirect_url;
+            } else {
+                alert(data.response_text);
             }
-        });
+        },
+        error: function(data) {
+            alert('Oops, we have encountered an error processing your application. We are working on resolving this issue. Sorry for any inconvenience.');
+        }
+    });
+});
+</script>
+<script>
+    document.getElementById('arrow').addEventListener("mousedown",function(){
+        var evt = event
+        setTimeout(function(){
+            document.getElementById('amount').dispatchEvent(evt)
+        })
+    })
+</script>
 
 
-
-    });</script>
+<!-- <script>
+    document.getElementById("submitButton").addEventListener("click", function() {
+        var submitButton = document.getElementById("submitButton");
+        submitButton.disabled = true;
+        submitButton.textContent = "Submitting..."; // Change text if needed
+    });
+</script> -->
 </body>
 
 </html>

@@ -8,6 +8,13 @@
     <link rel="shortcut icon" href="/Debt-v1/dist/img/favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="/Debt-v1/dist/output.css" rel="stylesheet">
+    <style>
+        @media (max-width: 1024px) {
+            .s2{
+display: none;
+            }
+        }
+    </style>
 </head>
 <body class="font-bodyFont">
 <nav class="bg-white shadow-lg">
@@ -29,31 +36,31 @@
         We've Found Your Match!
     </div>
     <div>
-        <div class="flex justify-center pt-5 lg:pr-16 c1">
-            <div class="flex justify-center p-5 border-red-600 lg:border-2 rounded-full">
-                <div><img src="/Debt-v1/dist/img/call.png" class="w-8"></div>
-            </div>
-            <div class="px-5 pt-2 mx-5">
-                <h3 class="text-secondary text-2xl font-semibold">Wait For A Call</h3>
-                <p>You can call us NOW agents are available IF we don't hear from you our next available agent will call you right away</p>
-            </div>
-        </div>
-        <div class="flex justify-center pt-8 lg:pl-80 lg:pr-16 res">
-            <div class="flex justify-center p-5 border-red-600 lg:border-2 rounded-full">
-                <div><img src="/Debt-v1/dist/img/list.png" class="lg:w-8"></div>
-            </div>
-            <div class="px-6 pt-2">
-                <h3 class="text-secondary text-2xl font-semibold">Solutions That Are Tailored To You</h3>
-                <p>Have a credit specialist assess and evaluate your situation over the phone</p>
+        <div class="lg:flex justify-center px-3 items-center pt-16">
+            <div class="grid lg:grid-cols-6 lg:w-6/12">
+                <div class="text-start col-span-4">
+                    <h3 class="text-2xl font-bold">Wait For A Call</h3>
+                    <p class="pt-3 text-secondary text-lg font-semibold">You can call us NOW agents are available IF we don't hear from you our next available agent will call you right away</p>
+                </div>
+                <div class="flex justify-center items-start col-span-2"><img src="/Debt-v1/dist/img/call.png" class="w-1/6 s2"></div>
             </div>
         </div>
-        <div class="flex justify-center pt-8 lg:pl-14 lg:pr-16">
-            <div class="flex justify-center p-5 border-red-600 lg:border-2 rounded-full">
-                <div><img src="/Debt-v1/dist/img/percent.png" class="w-8"></div>
+        <div class="lg:flex justify-center px-3 items-center pt-16">
+            <div class="grid lg:grid-cols-6  lg:w-6/12">
+                <div class="text-start col-span-4">
+                    <h3 class="text-2xl font-bold">Solutions That Are Tailored To You</h3>
+                    <p class="pt-3 text-secondary text-lg font-semibold">Have a credit specialist assess and evaluate your situation over the phone</p>
+                </div>
+                <div class="flex justify-center items-start col-span-2"><img src="/Debt-v1/dist/img/call.png" class="w-1/6 s2"></div>
             </div>
-            <div class="px-6 pt-2">
-                <h3 class="text-secondary text-2xl font-semibold">We'll Handle The Work</h3>
-                <p>See a total reduction in debt by up to 75%</p>
+        </div>
+        <div class="lg:flex justify-center px-3 items-center py-16">
+            <div class="grid lg:grid-cols-6 lg:w-6/12">
+                <div class=" col-span-4">
+                    <h3 class="text-2xl font-bold">We'll Handle The Work</h3>
+                    <p class="pt-3 text-secondary text-lg font-semibold">Our team will connect you with a number of local professionals so you can compare and hire the one that best suits your needs. No obligations and Risk-Free.</p>
+                </div>
+                <div class="flex justify-center items-start col-span-2"><img src="/Debt-v1/dist/img/percent.png" class="w-1/6 s2"></div>
             </div>
         </div>
     </div>
