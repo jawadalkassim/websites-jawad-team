@@ -590,6 +590,10 @@ video {
   width: 8.333333%;
 }
 
+.w-16{
+  width: 4rem;
+}
+
 .w-full{
   width: 100%;
 }
