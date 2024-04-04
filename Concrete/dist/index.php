@@ -8,14 +8,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     </script>
     <title>Concrete Contractors</title>
-    <link href="/‏‏Concrete-contractors/dist/output.css" rel="stylesheet">
+    <link href="/Concrete/dist/output.css" rel="stylesheet">
 </head>
 
 <body class="font-bodyFont">
 <nav class="text-center " style="background: white">
     <div class="grid lg:grid-cols-2 md:grid-cols-1 items-center ">
         <div class="flex justify-center items-center p-2 ">
-            <img src="/‏‏Concrete-contractors/dist/img/logo.png" class="w-1/12 brand">
+            <img src="/Concrete/dist/img/logo.png" class="w-1/12 brand">
         </div>
         <a href="" class="pt-3 text-primaryColor decoration-primaryColor font-bold text-xl block lg:text-end sm:text-center md:text-center lg:mx-40 md:mx-0 sm:mx-0 pb-3 lg:w-1/2 sm:w-full">Get Free Quotes</a>
     </div>
@@ -28,7 +28,7 @@
 <div style="background-image: radial-gradient(ellipse at center,#1e5799 0,#013652 63%,#002031 100%);padding-top: 40px">
     <div class="grid lg:grid-cols-12 md:grid-cols-1  sm:grid-cols-1 justify-center items-center lg:pb-44" id="row ">
         <div class="lg:pt-10 pb-10  flex justify-center lg:col-span-7 sm:col-span-1 border lg:pl-20 lg:pr-5" style="border: none;">
-            <form class="bg-white lg:p-10 md:p-0 sm:p-0 lg:w-10/12 rounded shadow-2xl pt-5" id="regForm" action="/‏‏Concrete-contractors/dist/submit-page.php">
+            <form class="bg-white lg:p-10 md:p-0 sm:p-0 lg:w-10/12 rounded shadow-2xl pt-5" id="regForm" action="/Concrete/dist/submit-page.php">
                 <div class="tab text-white text-3xl font-bodyFont">
                     <div class="text- text-3xl font-semibold pt-16 text-center p-5">
                         <h1 class="pb-3 text-4xl text-gray-600">What service do you need?</h1>
@@ -310,7 +310,7 @@
         </div>
     </div>
 </div>
-<script src="/‏‏Concrete-contractors/dist/script.js"></script>
+<script src="/Concrete/dist/script.js"></script>
 </body>
 
 </html>
