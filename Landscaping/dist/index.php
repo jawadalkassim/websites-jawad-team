@@ -321,8 +321,8 @@
                 </div>
             </form>
         </div>
-        <div class="lg:text-start sm:text-center pt-10 lg:col-span-5"  style="height: 920px;">
-            <div class="rate">
+        <div class="lg:text-start sm:text-center pt-10 lg:col-span-5 s2" style="height: -webkit-fill-available" >
+            <div class="rate w-full">
                 <div class="description pb-14">
                     <h2 class="text-5xl text-white font-bold bg-secondaryColor title"  style="line-height: 1.2" >
                         Get your best deal

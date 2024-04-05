@@ -209,11 +209,17 @@ hr.style-1 {
     font-size: 0.8rem;
     width: 90px;
 }
+.s2{
+    margin-top: 40px
+}
 #row{
     padding-bottom: 100px;
     padding-top: 50px!important;
 }
 @media (max-width: 1199px) {
+    .s2{
+    margin-top: 0px
+    }
     .type{
         display: flex;
         justify-content: center;
@@ -232,6 +238,9 @@ hr.style-1 {
     #regForm{
         width: 90% !important;
     }
+    .tab{
+        margin: 20px;
+    }
     .description{
         line-height: 2;
         margin: 0px 20px;
@@ -248,9 +257,6 @@ hr.style-1 {
     }
 }
 @media (min-width:630px) and (max-width:1200px) {
-    #regForm{
-        height: 920px;
-    }
     .ins_img{
         width:50%;
     }
@@ -269,9 +275,6 @@ hr.style-1 {
     }
 }
 @media (min-width: 1200px) {
-    #regForm{
-        height: 920px;
-    }
     .rate{
         text-align: start !important;
     }
