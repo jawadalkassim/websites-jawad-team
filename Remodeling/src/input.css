@@ -212,7 +212,9 @@ hr.style-1 {
 }
 .title{
     margin-top: 25px;
-    width: 90%
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px !important;
 }
 .ribbon {
     position: absolute;
@@ -331,7 +333,7 @@ hr.style-1 {
         text-align: left;
     }
     .list-bar-mobile h1{
-       width: 270px;
+       width: 280px;
     }
     .s{
         width: 314px;

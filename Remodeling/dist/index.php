@@ -36,7 +36,7 @@
         <div class="lg:text-start sm:text-center pt-2 lg:col-span-5 mobile-d" style="height: -webkit-fill-available">
             <div class="rate">
                 <div class="description flex justify-center">
-                    <h2 class="text-5xl text-white font-bold bg-secondaryColor title"  style="line-height: 1.2;padding: 9px;font-size: 25px; border-radius: 6px;" >
+                    <h2 class="text-5xl text-white font-bold bg-secondaryColor title"  style="line-height: 1.2;padding: 10px;font-size: 25px; border-radius: 10px;" >
                         Get your remodeling deal
                     </h2>
                 </div>
