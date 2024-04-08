@@ -49,7 +49,7 @@
     See if you are eligible to reduce your credit card payments and get relief</h1>
 <div id="formResp">
     <form class=" lg:w-8/12 mt-3 rounded-lg m-8" id="regForm" action="javascript:void(0);">
-        <input type="hidden" name="rid" value="<?php echo $_GET['rid'] ?? ''; ?>">
+        <input type="hidden" name="rid" value="<?php echo $_GET['rid'] ?? '';?>">
         <div class="f">
             <div class="stepper-wrapper w-full">
                 <div class="stepper-item">
@@ -64,6 +64,10 @@
                 <div class="stepper-item">
                     <div class="step-counter" style="color: white;padding: 10px">4</div>
                 </div>
+                <div class="stepper-item">
+                    <div class="step-counter" style="color: white;padding: 10px">5</div>
+                </div>
+               
             </div>
         </div>
         <div class="tab">
@@ -72,23 +76,31 @@
                     <h2 class="pt-1 mb-2 text-secondary text-6xl text-center font-semibold title q-title">How much credit card debt do you have?</h2>
                 </div>
             </div>
-            <div class="flex justify-center lg:pt-8 ">
-                <h5 class="text-gray-500 text-lg font-bold">Estimated Debt</h5>
-            </div>
-            <div class="flex justify-center">
-                <div class="flex justify-center text-2xl dol" style="color:  #0045c2;">$</div>
-                <div id="output" class=" text-3xl text-primary text-center font-bodyFont"></div>
-            </div>
-            <div class="flex justify-center">
 
-                <div class="w-8/12 input-range">
-                    <div class="range flex justify-center px-4">
-
-                        <input type="range" value="20000" min="0" max="100000" name="estimated_debt" id="slider" step="1000"/>
-                    </div>
-                </div>
+                <div class="wrapper pt-8">
+                    <p class="selectstyle selectstyle--style1">
+                        <span class="selectstyle__box " id="arrow" style="color: black!important;">
+      <select id="amount" name="estimated_debt" class="selectstyle__box__select">
+        <option value="0" selected="selected">Select Debt Amount</option>
+          <option value="4999">$0 - $4,999</option>
+          <option value="7499">$5,000 - $7,499</option>
+          <option value="9999">$7,500 - $9,999</option>
+          <option value="14999">$10,000 - $14,999</option>
+          <option value="19999">$15,000 - $19,999</option>
+          <option value="29999">$20,000 - $29,999</option>
+          <option value="39999">$30,000 - $39,999</option>
+          <option value="49999">$40,000 - $49,999</option>
+          <option value="59999">$50,000 - $59,999</option>
+          <option value="69999">$60,000 - $69,999</option>
+          <option value="79999">$70,000 - $79,999</option>
+          <option value="89999">$80,000 - $89,999</option>
+          <option value="99999">$90,000 - $99,999</option>
+          <option value="100000">$100,000+</option>
+      </select>
+    </span>
+                    </p>
             </div>
-            <p class="text-gray-500 text-sm text-center">Drag the slider handler left or right.</p>
+            <div id="amount-error" style="text-align: center;padding-top: 5px"></div>
             <div class="flex justify-center py-12 items-center ">
                 <button type="button" class="font-bodyFont bg-red-600 lg:px-20 lg:py-5 text-2xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
             </div>
@@ -117,7 +129,7 @@
             <div>
                 <div class="flex justify-center">
                     <div class="lg:w-1/2 input-range">
-                        <input type="text" id="zip" name="zip" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-4 " placeholder="12345" required />
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" id="zip" name="zip" class=" font-bodyFont bg-white border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-4 " placeholder="12345" required />
                     </div>
                 </div>
                 <div id="zip-error" style="text-align: center;padding-top: 5px"></div>
@@ -148,6 +160,29 @@
             <div id="email-error" style="text-align: center;padding-top: 5px"></div>
             <div class="flex justify-center pt-10 items-center ">
                 <button type="button" class="font-bodyFont bg-red-600 lg:px-20 lg:pt-5 text-2xl font-bold rounded-full" onclick="nextPrev(1)">Continue <span class="pt-4"> ➙ </span></button>
+            </div>
+        </div>
+        <div class="tab">
+            <div class="flex justify-center pt-2">
+                <div>
+                    <div><h1 class="pt-5 mb-2 text-secondary text-6xl font-semibold title q-title ">Are you currently employed?</h1></div>
+                </div>
+            </div>
+            <div class="flex justify-center py-24 items-center " style="flex-wrap: wrap;gap: 30px">
+            <input id="employed_field" name="employed_field" value="yes"  class="card-input-element hidden">
+
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;border-radius: 10px">
+                 
+                    <button type="button" onclick="updateHiddenInput('Yes')" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        Yes
+                    </button>
+                </label>
+                <label class="flex justify-center items-center select_button" style="border: 1px solid black;width: 200px;border-radius: 10px">
+                    
+                    <button type="button" onclick="updateHiddenInput('No')" class=" font-bodyFont border-border-black border lg:px-20 lg:pt-5 text-2xl text-secondary font-bold rounded-lg ">
+                        No
+                    </button>
+                </label>
             </div>
         </div>
         <div class="tab">
@@ -194,7 +229,7 @@ data rates may apply. For more information, please review our <span class="font-
                         </div>
                     </div>
                     <div class="flex justify-center py-10 items-center ">
-                        <button type="submit" class="font-bodyFont bg-red-600 lg:px-20 lg:py-5 text-2xl font-bold rounded-full q-title q-button">Submit</button>
+                        <button id="submitButton" type="submit" class="font-bodyFont bg-red-600 lg:px-20 lg:py-5 text-2xl font-bold rounded-full q-title q-button">Submit</button>
                     </div>
 
 
@@ -244,6 +279,14 @@ data rates may apply. For more information, please review our <span class="font-
 </footer>
 
 
+<script>
+    function updateHiddenInput(value) {
+
+    document.getElementById("employed_field").value = value;
+    nextPrev(1);
+}
+
+</script>
 
 <script>
     function initAutocomplete() {
@@ -270,7 +313,7 @@ data rates may apply. For more information, please review our <span class="font-
             input.value = streetAddress;
 
             console.log(place)
-            // input.value = place.formatted_address;
+           // input.value = place.formatted_address;
             // Use the formatted address here
             const addressComponents = place.address_components;
 
@@ -292,38 +335,38 @@ data rates may apply. For more information, please review our <span class="font-
 
         });
         function extractStreetAddress(addressComponents) {
-            let streetNumber = '';
-            let streetName = '';
-            let address2 = '';
+    let streetNumber = '';
+    let streetName = '';
+    let address2 = '';
 
-            for (const component of addressComponents) {
-                switch (component.types[0]) {
-                    case "street_number":
-                        streetNumber = component.short_name;
-                        break;
-                    case "route":
-                        streetName = component.short_name;
-                        break;
-                    case "subpremise": // Address line 2
-                        address2 = component.short_name;
-                        break;
-                }
-            }
-
-            // Combine street number, street name, and address line 2
-            let streetAddress = streetNumber + ' ' + streetName;
-            if (address2) {
-                streetAddress += ', ' + address2;
-            }
-
-            return streetAddress.trim(); // Trim to remove leading/trailing spaces
+    for (const component of addressComponents) {
+        switch (component.types[0]) {
+            case "street_number":
+                streetNumber = component.short_name;
+                break;
+            case "route":
+                streetName = component.short_name;
+                break;
+            case "subpremise": // Address line 2
+                address2 = component.short_name;
+                break;
         }
+    }
+
+    // Combine street number, street name, and address line 2
+    let streetAddress = streetNumber + ' ' + streetName;
+    if (address2) {
+        streetAddress += ', ' + address2;
+    }
+
+    return streetAddress.trim(); // Trim to remove leading/trailing spaces
+}
     }
 
 
 
 </script>
-<script src="/Debt-v1/dist/JS/script.js">
+<script src="/Debt-v1/dist/JS/script2.js">
 </script>
 <script id="LeadiDscript" type="text/javascript">
     (function() {
@@ -364,38 +407,49 @@ data rates may apply. For more information, please review our <span class="font-
         .catch(error => console.error('Error fetching IP address:', error));
 </script>
 <script>
-    $('#regForm').on('submit', function(e){
+  $('#regForm').on('submit', function(e) {
+    e.preventDefault();
+    console.log("Submitted");
 
-        e.preventDefault();
 
-        console.log("Submitted");
+    // Append the selected value to the form data
+    var formData = $(this).serialize();
 
-        //$('#loadingModal').fadeIn(500);
-
-        var values = $(this).serialize();
-
-        $.ajax({
-            url: '/Debt-v1/dist/process.php?method=Lead',
-            type: "post",
-            data: values,
-            dataType: "json",
-            success: function(data) {
-                if((data.status_text) && (data.redirect_url)){
-                    window.location = data.redirect_url;
-                } else {
-                    alert(data.response_text);
-                }
-                //$('#loadingModal').fadeOut(500);
-            },
-            error:function(data){
-                alert('Oops, we have encountered an error processing your application. We are working on resolving this issue. Sorry, for any inconvenience.');
-                //$('#loadingModal').fadeOut(500);
+    $.ajax({
+        url: '/Debt-v1/dist/process.php?method=Lead',
+        type: "post",
+        data: formData,
+        dataType: "json",
+        success: function(data) {
+            if (data.status_text && data.redirect_url) {
+                window.location = data.redirect_url;
+            } else {
+                alert(data.response_text);
             }
-        });
+        },
+        error: function(data) {
+            alert('Oops, we have encountered an error processing your application. We are working on resolving this issue. Sorry for any inconvenience.');
+        }
+    });
+});
+</script>
+<script>
+    document.getElementById('arrow').addEventListener("mousedown",function(){
+        var evt = event
+        setTimeout(function(){
+            document.getElementById('amount').dispatchEvent(evt)
+        })
+    })
+</script>
 
 
-
-    });</script>
+<!-- <script>
+    document.getElementById("submitButton").addEventListener("click", function() {
+        var submitButton = document.getElementById("submitButton");
+        submitButton.disabled = true;
+        submitButton.textContent = "Submitting..."; // Change text if needed
+    });
+</script> -->
 </body>
 
 </html>

@@ -9,6 +9,17 @@ require_once('config.php');
 
 $method = (isset($_POST['method'])) ? $_POST['method'] : $_GET['method'];
 //$rid =  (isset($_POST['lp_request_id'])) ? $_POST['lp_request_id'] : $_GET['lp_request_id'];
+$ip_address = getUserIP();
+
+// If lead posted already
+if (isset($_SESSION['ip_address'])) {
+	if ($_SESSION['ip_address'] == $ip_address) {
+		$response = array('status_text' => 'failed', 'redirect_url' => '/submit?match=false');
+		print json_encode($response);
+		exit;
+	}
+}
+
 switch ($method) {
 		
 	case "Lead":{
@@ -25,7 +36,7 @@ switch ($method) {
 			, 'zip_code' => strtoupper($_POST['zip'])
 			, 'country' => 'CA'
 			, 'cc_debt_amount' => $_POST['estimated_debt']
-			, 'ip_address' => $_POST['ip_address']
+			, 'ip_address' => $ip_address
 			, 'city' => $_POST['city']
 			, 'state' => $_POST['state']
 			, 'lp_request_id' => $_POST['rid']
@@ -77,17 +88,20 @@ switch ($method) {
         $price = $leadResponse['price'];
 
 		if ($result == "success") {
-			$buyerID = $leadResponse['clients'][0]['client']['advertiserID'];
+			if (array_key_exists('clients',$leadResponse))
+				$buyerID = $leadResponse['clients'][0]['client']['advertiserID'];
 		}
 		
 		//print_r($output);
 		//die();
 
+		$_SESSION['ip_address'] = $ip_address;
+
 		if($result == 'success'){
 
 			$_SESSION['redirect_url'] = $redirectUrl;
 			// $response = array('status_text' => 'sold', 'redirect_url' => '/Debt-v1/dist/submit.php/?match=true&lead_id='.$leadId);
-			if (strlen($buyerID) !== 0){
+			if (isset($buyerID)){
 				$thankYou = '/thank-you/' . $buyerID;
 			} else {
 				$thankYou = '/thank-you';
@@ -96,7 +110,7 @@ switch ($method) {
 
 		} else if($result == 'failed'){
 
-			$response = array('status_text' => 'failed', 'redirect_url' => '/Debt-v1/dist/submit.php/?match=false&lead_id='.$leadId);
+			$response = array('status_text' => 'failed', 'redirect_url' => '/submit?match=false&lead_id='.$leadId);
 
 		} else {
 
@@ -117,5 +131,26 @@ switch ($method) {
 function stripSpecialCharacters($input){
 	return preg_replace('/[^0-9]/', '', $input);
 }
+
+function getUserIP() {
+	if (isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+			$_SERVER['REMOTE_ADDR'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
+			$_SERVER['HTTP_CLIENT_IP'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
+	}
+	$client  = @$_SERVER['HTTP_CLIENT_IP'];
+	$forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
+	$remote  = $_SERVER['REMOTE_ADDR'];
+	if(filter_var($client, FILTER_VALIDATE_IP)) {
+		$ip = $client;
+	}
+	elseif(filter_var($forward, FILTER_VALIDATE_IP)) {
+		$ip = $forward;
+	}
+	else {
+		$ip = $remote;
+	}
+	return $ip;
+}
+
 
 ?>
