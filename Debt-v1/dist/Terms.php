@@ -6,8 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms</title>
     <link href="/Debt-v1/dist/output.css" rel="stylesheet">
+    <style>
+        h1{
+            font-family: Poppins;
+            font-size: 2.25rem !important;
+            font-weight: 700 !important;
+        }
+        h2{
+            font-family: Poppins;
+            font-size: 2rem !important;
+            font-weight: 600 !important;
+        }
+        div{
+            font-family: Poppins;
+            font-size: 15px !important;
+        }
+        p{
+            color: rgb(107 114 128 / var(--tw-text-opacity)) !important;
+            font-size: 0.875rem !important;
+            line-height: 1.25rem !important;
+            font-family: Poppins !important;
+        }
+        span{
+            font-family: Poppins;
+        }
+        li{
+            font-family: Poppins;
+        }
+    </style>
 </head>
-<body>
+<body class="font-bodyFont">
 <nav class="bg-white shadow-lg">
     <div class="block">
         <div class="flex justify-center">

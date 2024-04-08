@@ -7,6 +7,38 @@
     <title>Privacy Policy</title>
     <link rel="shortcut icon" href="/Debt-v1/dist/img/favicon.png" type="image/x-icon"/>
     <link href="/Debt-v1/dist/output.css" rel="stylesheet">
+    <style>
+        h1{
+            font-family: Poppins;
+            font-size: 2.25rem !important;
+            font-weight: 700 !important;
+        }
+        h2{
+            font-family: Poppins;
+            font-size: 2rem !important;
+            font-weight: 600 !important;
+        }
+        div{
+            font-family: Poppins;
+            font-size: 15px !important;
+        }
+        p{
+            color: rgb(107 114 128 / var(--tw-text-opacity)) !important;
+            font-size: 0.875rem !important;
+            line-height: 1.25rem !important;
+            font-family: Poppins !important;
+        }
+        span{
+            font-family: Poppins !important;
+        }
+        li{
+            font-family: Poppins !important;
+        }
+        strong{
+            font-size: 0.875rem !important;
+            font-family: Poppins;
+        }
+    </style>
 </head>
 <body>
 <nav class="bg-white shadow-lg">
