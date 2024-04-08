@@ -17,6 +17,7 @@
             font-family: Poppins;
             font-size: 2rem !important;
             font-weight: 600 !important;
+
         }
         div{
             font-family: Poppins;
@@ -29,6 +30,8 @@
             font-family: Poppins !important;
         }
         span{
+            color: black !important;
+            font-size: 15px !important;
             font-family: Poppins !important;
         }
         li{

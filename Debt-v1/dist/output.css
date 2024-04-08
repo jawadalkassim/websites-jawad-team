@@ -615,16 +615,16 @@ video {
   display: none;
 }
 
+.w-1\/6{
+  width: 16.666667%;
+}
+
 .w-2\/12{
   width: 16.666667%;
 }
 
 .w-3{
   width: 0.75rem;
-}
-
-.w-8{
-  width: 2rem;
 }
 
 .w-8\/12{
@@ -635,8 +635,12 @@ video {
   width: 100%;
 }
 
-.w-1\/6{
-  width: 16.666667%;
+.flex-grow{
+  flex-grow: 1;
+}
+
+.grow{
+  flex-grow: 1;
 }
 
 .flex-wrap{
@@ -672,11 +676,6 @@ video {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
-.border-red-600{
-  --tw-border-opacity: 1;
-  border-color: rgb(220 38 38 / var(--tw-border-opacity));
-}
-
 .bg-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(23 107 135 / var(--tw-bg-opacity));
@@ -696,10 +695,6 @@ video {
   padding: 1rem;
 }
 
-.p-5{
-  padding: 1.25rem;
-}
-
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -708,6 +703,11 @@ video {
 .px-28{
   padding-left: 7rem;
   padding-right: 7rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-4{
@@ -720,11 +720,6 @@ video {
   padding-right: 1.25rem;
 }
 
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -733,6 +728,11 @@ video {
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .py-2{
@@ -748,16 +748,6 @@ video {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .pb-20{
@@ -1646,16 +1636,12 @@ input[type="range"]::-moz-range-thumb {
     width: 50%;
   }
 
-  .lg\:w-8{
-    width: 2rem;
+  .lg\:w-6\/12{
+    width: 50%;
   }
 
   .lg\:w-8\/12{
     width: 66.666667%;
-  }
-
-  .lg\:w-6\/12{
-    width: 50%;
   }
 
   .lg\:grid-cols-2{
@@ -1664,10 +1650,6 @@ input[type="range"]::-moz-range-thumb {
 
   .lg\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-
-  .lg\:border-2{
-    border-width: 2px;
   }
 
   .lg\:px-20{
@@ -1688,18 +1670,6 @@ input[type="range"]::-moz-range-thumb {
   .lg\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .lg\:pl-14{
-    padding-left: 3.5rem;
-  }
-
-  .lg\:pl-80{
-    padding-left: 20rem;
-  }
-
-  .lg\:pr-16{
-    padding-right: 4rem;
   }
 
   .lg\:pt-10{

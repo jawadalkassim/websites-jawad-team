@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms</title>
+    <link rel="shortcut icon" href="/Debt-v1/dist/img/favicon.png" type="image/x-icon"/>
     <link href="/Debt-v1/dist/output.css" rel="stylesheet">
     <style>
         h1{
@@ -16,6 +17,7 @@
             font-family: Poppins;
             font-size: 2rem !important;
             font-weight: 600 !important;
+
         }
         div{
             font-family: Poppins;
@@ -28,9 +30,17 @@
             font-family: Poppins !important;
         }
         span{
-            font-family: Poppins;
+            color: black !important;
+            font-size: 15px !important;
+            font-family: Poppins !important;
+            font-weight: 700 !important;
         }
         li{
+            font-family: Poppins !important;
+        }
+        strong{
+            font-size: 0.875rem !important;
+            font-weight: normal !important;
             font-family: Poppins;
         }
     </style>
