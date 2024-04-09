@@ -113,3 +113,6 @@ function fixStepIndicator(n) {
 
     x[n].className += " active";
 }
+function back(){
+        nextPrev(-1)
+}
