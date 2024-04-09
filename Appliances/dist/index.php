@@ -44,7 +44,7 @@
                     </div>
                 </div>
             </div>
-            <div class="lg:pt-10 pt-10 pb-10  flex justify-center lg:col-span-7 sm:col-span-1 border lg:pl-20 lg:pr-5 f-form" style="border: none;">
+            <div class="lg:pt-10 pt-10 lg:pb-10  flex justify-center lg:col-span-7 sm:col-span-1 border lg:pl-20 lg:pr-5 f-form" style="border: none;">
                 <form class="bg-white lg:p-10 md:p-0 sm:p-0 lg:w-10/12 rounded shadow-2xl pt-5" id="regForm" action="/Appliances/dist/submit-page.php">
                 <div class="tab text-white text-3xl font-bodyFont">
                     <div class="text- text-3xl font-semibold pt-16 text-center p-5">
@@ -204,7 +204,7 @@
                 </div>
             </form>
         </div>
-            <div class="lg:text-start sm:text-center pt-10 lg:col-span-5 s2" style="height: -webkit-fill-available">
+            <div class="lg:text-start sm:text-center lg:pt-10 lg:col-span-5 s2" style="height: -webkit-fill-available">
                 <div class="rate">
                     <div class="description pb-14">
                         <h2 class="text-5xl text-white font-bold bg-secondaryColor title"  style="line-height: 1.2;padding: 5px" >
@@ -220,11 +220,11 @@
                             <li>1.9 million quotes in 10 years</li>
                             <li>Save up to £500 on installation</li>
                         </ul>
-                        <div class="mt-10 lg:w-9/12 sm:w-full flex justify-center py-5 " style="background: #005a87;border-radius: 10px">
+                        <div class="lg:mt-10 lg:w-9/12 sm:w-full flex justify-center py-5 eng-div" style="background: #005a87;border-radius: 10px">
                             <div>
-                                <h4 class="text-white font-semibold ">
+                                <h1 class="text-white font-semibold ">
                                     The smarter way to find approved heating engineers
-                                </h4>
+                                </h1>
                                 <h4 class="text-white font-semibold">
                                     Excellent 4.8 out of 5
                                 </h4>

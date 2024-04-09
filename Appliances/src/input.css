@@ -288,7 +288,7 @@ hr.style-1 {
     }
     .brand{
         width:40% !important;
-        max-width: 164px;
+        max-width: 167px;
     }
 
 }
@@ -344,9 +344,27 @@ hr.style-1 {
         text-overflow: ellipsis;
         white-space: nowrap;
     }
-    .s2{
+    .s2 h3{
         display: none;
     }
+    .s2 h2{
+        display: none;
+    }
+    .s2 h4{
+        display: none;
+    }
+    .s2 ul {
+        padding-left: 10px;
+        text-align: left;
+    }
+    .s2 h1 {
+        padding-left: 17px;
+        text-align: left;
+    }
+    .eng-div{
+        margin-top: 25px;
+    }
+
     .mobile-d{
         display: grid !important;
     }
