@@ -211,9 +211,10 @@ hr.style-1 {
     display: none !important;
 }
 .title{
-    font-size: 39px;
     margin-top: 25px;
-    width: 80%
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px !important;
 }
 .ribbon {
     position: absolute;
@@ -332,7 +333,7 @@ hr.style-1 {
         text-align: left;
     }
     .list-bar-mobile h1{
-       width: 270px;
+        width: 280px;
     }
     .s{
         width: 314px;
@@ -343,9 +344,27 @@ hr.style-1 {
         text-overflow: ellipsis;
         white-space: nowrap;
     }
-    .s2{
+    .s2 h3{
         display: none;
     }
+    .s2 h2{
+        display: none;
+    }
+    .s2 h4{
+        display: none;
+    }
+    .s2 ul {
+        padding-left: 10px;
+        text-align: left;
+    }
+    .s2 h1 {
+        padding-left: 17px;
+        text-align: left;
+    }
+    .eng-div{
+        margin-top: 25px;
+    }
+
     .mobile-d{
         display: grid !important;
     }

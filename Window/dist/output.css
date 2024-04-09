@@ -554,10 +554,6 @@ video {
   margin-inline-end: 0.5rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
-}
-
 .mt-3{
   margin-top: 0.75rem;
 }
@@ -681,10 +677,6 @@ video {
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
 }
 
 .pb-14{
@@ -1003,9 +995,10 @@ hr.style-1 {
 }
 
 .title{
-  font-size: 39px;
   margin-top: 25px;
-  width: 80%
+  width: 80%;
+  border-radius: 10px;
+  padding: 10px !important;
 }
 
 .ribbon {
@@ -1152,7 +1145,7 @@ hr.style-1 {
   }
 
   .list-bar-mobile h1{
-    width: 270px;
+    width: 280px;
   }
 
   .s{
@@ -1165,8 +1158,30 @@ hr.style-1 {
     white-space: nowrap;
   }
 
-  .s2{
+  .s2 h3{
     display: none;
+  }
+
+  .s2 h2{
+    display: none;
+  }
+
+  .s2 h4{
+    display: none;
+  }
+
+  .s2 ul {
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  .s2 h1 {
+    padding-left: 17px;
+    text-align: left;
+  }
+
+  .eng-div{
+    margin-top: 25px;
   }
 
   .mobile-d{
@@ -1288,6 +1303,10 @@ hr.style-1 {
     margin-right: 10rem;
   }
 
+  .lg\:mt-10{
+    margin-top: 2.5rem;
+  }
+
   .lg\:w-1\/2{
     width: 50%;
   }
@@ -1332,6 +1351,10 @@ hr.style-1 {
   .lg\:py-72{
     padding-top: 18rem;
     padding-bottom: 18rem;
+  }
+
+  .lg\:pb-10{
+    padding-bottom: 2.5rem;
   }
 
   .lg\:pb-44{
