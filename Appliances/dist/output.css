@@ -590,8 +590,16 @@ video {
   width: 8.333333%;
 }
 
+.w-1\/4{
+  width: 25%;
+}
+
 .w-3\/12{
   width: 25%;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .w-full{
@@ -604,6 +612,10 @@ video {
 
 .items-center{
   align-items: center;
+}
+
+.justify-start{
+  justify-content: flex-start;
 }
 
 .justify-center{
@@ -972,12 +984,33 @@ hr.style-1 {
   }
 }
 
+#regForm{
+  margin-top: 25px;
+  border-radius: 15px;
+}
+
+.list-bar-mobile{
+  display: none;
+}
+
 .description{
   line-height: 1.8;
 }
 
+.s2{
+  margin-top: 40px;
+  display: grid;
+}
+
+.mobile-d{
+  display: none !important;
+}
+
 .title{
-  width: 75%
+  margin-top: 25px;
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px !important;
 }
 
 .ribbon {
@@ -997,6 +1030,10 @@ hr.style-1 {
 }
 
 @media (max-width: 1199px) {
+  .s2{
+    margin-top: 0px;
+  }
+
   .type{
     display: flex;
     justify-content: center;
@@ -1032,19 +1069,19 @@ hr.style-1 {
     padding: 180px 20px;
   }
 
-  .border{
-    margin: 20px;
-  }
-
   .brand{
     padding-top: 10px;
     width: 45%;
   }
+
+  .s{
+    font-size: 28px!important;
+  }
 }
 
-@media (min-width:630px) and (max-width:1023px) {
-  #regForm{
-    width: 90% !important;
+@media (min-width:630px) and (max-width:1200px) {
+  .tab{
+    margin: 20px;
   }
 
   .ins_img{
@@ -1063,12 +1100,8 @@ hr.style-1 {
   }
 
   .brand{
-    width:30% !important;
-    max-width: 130px;
-  }
-
-  .tab{
-    padding: 40px 110px;
+    width:40% !important;
+    max-width: 164px;
   }
 }
 
@@ -1078,7 +1111,77 @@ hr.style-1 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 650px) {
+  input{
+    margin: 10px 20px;
+  }
+
+  .nav-link{
+    display: none;
+  }
+
+  .title{
+    font-size: 24px !important;
+    width: 90%;
+  }
+
+  .tab div{
+    padding: 0px 10px;
+  }
+
+  .description{
+    margin: 0px;
+  }
+
+  #regForm{
+    width: 347px !important;
+  }
+
+  .f-form{
+    padding-top: 10px;
+  }
+
+  .list-bar{
+    display: none;
+  }
+
+  .list-bar-mobile{
+    display: block;
+  }
+
+  .list-bar-mobile div{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .list-bar-mobile h1{
+    width: 280px;
+  }
+
+  .s{
+    width: 314px;
+    height: 52px;
+    font-weight: 649;
+    font-size: 16px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .s2{
+    display: none;
+  }
+
+  .mobile-d{
+    display: grid !important;
+  }
+
+  .tab h1{
+    font-size: 1.5rem;
+  }
+
   .thank{
     padding-top: 100px;
     padding-bottom: 500px;
@@ -1091,21 +1194,20 @@ hr.style-1 {
   }
 
   .rate{
+    width: 347px !important;
     text-align: center !important;
   }
 
   input{
-    margin: 0px 20px;
+    margin: 10px 20px;
   }
 
-  .s{
-    width: 100%;
-    display: block;
-    margin: 5px 20px;
+  label{
+    padding-top: 5px !important;
   }
 
   img{
-    max-width: 50% !important;
+    max-width: 80% !important;
   }
 
   .card-input-element + .card{
