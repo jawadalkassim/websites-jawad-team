@@ -324,10 +324,10 @@
 
                     </div>
                     <div style="overflow:auto" class="flex justify-center" >
-                        <div style="float:right;">
-                            <button class="text-xl text-gray-600 font-bold" type="button" id="prevBtn" onclick="back()">← Back</button>
-                        </div>
-                    </div>
+                                        <div style="float:right;">
+                                            <button class="text-xl text-gray-600 font-bold" type="button" id="prevBtn" onclick="back()">← Back</button>
+                                        </div>
+                                    </div>
                 </form>
             </div>
             <div class="lg:text-start sm:text-center lg:pt-10 lg:col-span-5 s2" style="height: -webkit-fill-available">
