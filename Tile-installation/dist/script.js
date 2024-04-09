@@ -43,7 +43,10 @@ function nextPrev(n) {
     showTab(currentTab);
 }
 function back(){
-    if(currentTab===3){
+    if(currentTab===2){
+        nextPrev(-2)
+    }
+    else if(currentTab===3){
         nextPrev(-3)
     }
     else {
