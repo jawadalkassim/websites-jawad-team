@@ -52,6 +52,9 @@ function back(){
     else if(currentTab===3){
         nextPrev(-3)
     }
+    else if(currentTab===4){
+        nextPrev(-4)
+    }
   
    
 
