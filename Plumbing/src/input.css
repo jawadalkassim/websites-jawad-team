@@ -193,11 +193,28 @@ hr.style-1 {
         transform: rotateZ(0deg);
     }
 }
+#regForm{
+    margin-top: 25px;
+    border-radius: 15px;
+}
+.list-bar-mobile{
+    display: none;
+}
 .description{
     line-height: 1.8;
 }
+.s2{
+    margin-top: 40px;
+    display: grid;
+}
+.mobile-d{
+    display: none !important;
+}
 .title{
-    width: 75%
+    margin-top: 25px;
+    width: 85%;
+    border-radius: 10px;
+    padding: 10px !important;
 }
 .ribbon {
     position: absolute;
@@ -214,6 +231,9 @@ hr.style-1 {
     padding-top: 50px!important;
 }
 @media (max-width: 1199px) {
+    .s2{
+        margin-top: 0px;
+    }
     .type{
         display: flex;
         justify-content: center;
@@ -242,17 +262,17 @@ hr.style-1 {
     .thank{
         padding: 180px 20px;
     }
-    .border{
-        margin: 20px;
-    }
     .brand{
         padding-top: 10px;
-        width: 30%;
+        width: 40%;
+    }
+    .s{
+        font-size: 28px!important;
     }
 }
-@media (min-width:630px) and (max-width:1023px) {
-    #regForm{
-        width: 90% !important;
+@media (min-width:630px) and (max-width:1200px) {
+    .tab{
+        margin: 20px;
     }
     .ins_img{
         width:50%;
@@ -267,19 +287,91 @@ hr.style-1 {
         width: 50%;
     }
     .brand{
-        width:40% !important;
-        max-width: 180px;
+        width:30% !important;
+        max-width: 150px;
     }
-    .tab{
-        padding: 40px 110px;
-    }
+
 }
 @media (min-width: 1200px) {
     .rate{
         text-align: start !important;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 650px) {
+    input{
+        margin: 10px 20px;
+    }
+    .nav-link{
+        display: none;
+    }
+    .title{
+        font-size: 24px !important;
+        width: 90%;
+    }
+    .tab div{
+        padding: 0px 10px;
+    }
+    .description{
+        margin: 0px;
+    }
+    #regForm{
+        width: 347px !important;
+    }
+    .f-form{
+        padding-top: 10px;
+    }
+    .list-bar{
+        display: none;
+    }
+    .list-bar-mobile{
+        display: block;
+    }
+    .list-bar-mobile div{
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+    .list-bar-mobile h1{
+        width: 280px;
+    }
+    .s{
+        width: 314px;
+        height: 52px;
+        font-weight: 649;
+        font-size: 16px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .s2 h3{
+        display: none;
+    }
+    .s2 h2{
+        display: none;
+    }
+    .s2 h4{
+        display: none;
+    }
+    .s2 ul {
+        padding-left: 10px;
+        text-align: left;
+    }
+    .s2 h1 {
+        padding-left: 17px;
+        text-align: left;
+    }
+    .eng-div{
+        margin-top: 25px;
+    }
+
+    .mobile-d{
+        display: grid !important;
+    }
+
+    .tab h1{
+        font-size: 1.5rem;
+    }
     .thank{
         padding-top: 100px;
         padding-bottom: 500px;
@@ -290,18 +382,17 @@ hr.style-1 {
         width:35%;
     }
     .rate{
+        width: 347px !important;
         text-align: center !important;
     }
     input{
-        margin: 0px 20px;
+        margin: 10px 20px;
     }
-    .s{
-        width: 100%;
-        display: block;
-        margin: 5px 20px;
+    label{
+        padding-top: 5px !important;
     }
     img{
-        max-width: 50% !important;
+        max-width: 80% !important;
     }
     .card-input-element + .card{
         padding: 10px 0px;
