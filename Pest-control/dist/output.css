@@ -554,10 +554,6 @@ video {
   margin-inline-end: 0.5rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
-}
-
 .mt-3{
   margin-top: 0.75rem;
 }
@@ -590,8 +586,16 @@ video {
   width: 8.333333%;
 }
 
+.w-12{
+  width: 3rem;
+}
+
 .w-16{
   width: 4rem;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .w-full{
@@ -602,8 +606,16 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .items-center{
   align-items: center;
+}
+
+.justify-start{
+  justify-content: flex-start;
 }
 
 .justify-center{
@@ -673,10 +685,6 @@ video {
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
 }
 
 .pb-14{
@@ -972,12 +980,33 @@ hr.style-1 {
   }
 }
 
+#regForm{
+  margin-top: 25px;
+  border-radius: 15px;
+}
+
+.list-bar-mobile{
+  display: none;
+}
+
 .description{
   line-height: 1.8;
 }
 
+.s2{
+  margin-top: 40px;
+  display: grid;
+}
+
+.mobile-d{
+  display: none !important;
+}
+
 .title{
-  width: 75%
+  margin-top: 25px;
+  width: 93%;
+  border-radius: 10px;
+  padding: 10px !important;
 }
 
 .ribbon {
@@ -997,6 +1026,10 @@ hr.style-1 {
 }
 
 @media (max-width: 1199px) {
+  .s2{
+    margin-top: 0px;
+  }
+
   .type{
     display: flex;
     justify-content: center;
@@ -1032,19 +1065,19 @@ hr.style-1 {
     padding: 180px 20px;
   }
 
-  .border{
-    margin: 20px;
-  }
-
   .brand{
     padding-top: 10px;
-    width: 30%;
+    width: 20%;
+  }
+
+  .s{
+    font-size: 28px!important;
   }
 }
 
-@media (min-width:630px) and (max-width:1023px) {
-  #regForm{
-    width: 90% !important;
+@media (min-width:630px) and (max-width:1200px) {
+  .tab{
+    margin: 20px;
   }
 
   .ins_img{
@@ -1063,12 +1096,8 @@ hr.style-1 {
   }
 
   .brand{
-    width:40% !important;
-    max-width: 180px;
-  }
-
-  .tab{
-    padding: 40px 110px;
+    width:10% !important;
+    max-width: 100px;
   }
 }
 
@@ -1078,7 +1107,99 @@ hr.style-1 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 650px) {
+  input{
+    margin: 10px 20px;
+  }
+
+  .nav-link{
+    display: none;
+  }
+
+  .title{
+    font-size: 24px !important;
+    width: 95%;
+  }
+
+  .tab div{
+    padding: 0px 10px;
+  }
+
+  .description{
+    margin: 0px;
+  }
+
+  #regForm{
+    width: 347px !important;
+  }
+
+  .f-form{
+    padding-top: 10px;
+  }
+
+  .list-bar{
+    display: none;
+  }
+
+  .list-bar-mobile{
+    display: block;
+  }
+
+  .list-bar-mobile div{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .list-bar-mobile h1{
+    width: 280px;
+  }
+
+  .s{
+    width: 314px;
+    height: 52px;
+    font-weight: 649;
+    font-size: 16px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .s2 h3{
+    display: none;
+  }
+
+  .s2 h2{
+    display: none;
+  }
+
+  .s2 h4{
+    display: none;
+  }
+
+  .s2 ul {
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  .s2 h1 {
+    padding-left: 17px;
+    text-align: left;
+  }
+
+  .eng-div{
+    margin-top: 25px;
+  }
+
+  .mobile-d{
+    display: grid !important;
+  }
+
+  .tab h1{
+    font-size: 1.5rem;
+  }
+
   .thank{
     padding-top: 100px;
     padding-bottom: 500px;
@@ -1091,21 +1212,20 @@ hr.style-1 {
   }
 
   .rate{
+    width: 347px !important;
     text-align: center !important;
   }
 
   input{
-    margin: 0px 20px;
+    margin: 10px 20px;
   }
 
-  .s{
-    width: 100%;
-    display: block;
-    margin: 5px 20px;
+  label{
+    padding-top: 5px !important;
   }
 
   img{
-    max-width: 50% !important;
+    max-width: 80% !important;
   }
 
   .card-input-element + .card{
@@ -1191,6 +1311,10 @@ hr.style-1 {
     margin-right: 10rem;
   }
 
+  .lg\:mt-10{
+    margin-top: 2.5rem;
+  }
+
   .lg\:w-1\/2{
     width: 50%;
   }
@@ -1209,6 +1333,10 @@ hr.style-1 {
 
   .lg\:w-9\/12{
     width: 75%;
+  }
+
+  .lg\:w-full{
+    width: 100%;
   }
 
   .lg\:grid-cols-12{
@@ -1231,6 +1359,10 @@ hr.style-1 {
   .lg\:py-72{
     padding-top: 18rem;
     padding-bottom: 18rem;
+  }
+
+  .lg\:pb-10{
+    padding-bottom: 2.5rem;
   }
 
   .lg\:pb-44{
