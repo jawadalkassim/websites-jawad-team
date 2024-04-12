@@ -84,7 +84,7 @@ function validateForm() {
             }
             else
             {
-                document.getElementById('email-error').innerText="Enter a valid zip code"
+                document.getElementById('email-error').innerText="Enter a valid email"
                 document.getElementById('email-error').style.color="red"
                 y[i].focus();
                 valid= false;
@@ -97,7 +97,7 @@ function validateForm() {
             }
             else
             {
-                document.getElementById('zip-error').innerText="Enter a valid email"
+                document.getElementById('zip-error').innerText="Enter a valid zip code"
                 document.getElementById('zip-error').style.color="red"
                 y[i].focus();
                 valid= false;
