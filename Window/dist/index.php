@@ -234,15 +234,14 @@
                         </div>
                     </div>
                     <div class="tab text-white text-3xl font-bodyFont">
-                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                        <div class=" text-3xl font-semibold pt-16 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600">Can you add your Zip code, please?
                             </h1>
                         </div>
                         <div class="pt-10 flex justify-center">
-                            <input type="text" id="zip" class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="e.g. 12345" required />
+                            <input type="number" pattern="[0-9]*" inputmode="numeric" id="zip" class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="e.g. 12345" required />
                         </div>
                         <div id="zip-error" class="text-center" style="font-size: 14px">
-
                         </div>
                         <div class="flex justify-center pt-5 items-center text-center">
                             <button type="button" style="margin-top: 20px;" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-full sm:w-full py-3 mb-2 mt-3  text-center items-center">
