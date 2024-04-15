@@ -603,26 +603,6 @@ video {
   width: 100%;
 }
 
-.w-2\/12{
-  width: 16.666667%;
-}
-
-.w-14{
-  width: 3.5rem;
-}
-
-.w-1{
-  width: 0.25rem;
-}
-
-.w-16{
-  width: 4rem;
-}
-
-.w-2{
-  width: 0.5rem;
-}
-
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -1025,7 +1005,7 @@ hr.style-1 {
 
 .title{
   margin-top: 25px;
-  width: 85%;
+  width: 75%;
   border-radius: 10px;
   padding: 10px !important;
 }
@@ -1359,6 +1339,10 @@ hr.style-1 {
 
   .md\:flex{
     display: flex;
+  }
+
+  .md\:w-7\/12{
+    width: 58.333333%;
   }
 
   .md\:w-9\/12{
