@@ -116,3 +116,13 @@ function fixStepIndicator(n) {
 
     x[n].className += " active";
 }
+function back(){
+    if(currentTab===1){
+        nextPrev(-1)
+
+    }
+    else {
+        nextPrev(-1)
+    }
+}
+
