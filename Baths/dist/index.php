@@ -15,7 +15,7 @@
 <nav class="text-center " style="background: white">
     <div class="grid lg:grid-cols-2 md:grid-cols-1 items-center ">
         <div class="flex justify-center items-center p-2 ">
-            <img src="/Baths/dist/img/logo.png" class="w-3/12 brand">
+            <img src="/Baths/dist/img/logo.png" class="w-1/12 brand">
         </div>
         <a href="" class="nav-link pt-3 text-primaryColor decoration-primaryColor font-bold text-xl block lg:text-end sm:text-center md:text-center lg:mx-40 md:mx-0 sm:mx-0 pb-3 lg:w-1/2 sm:w-full">Get Free Quotes</a>
     </div>
@@ -42,7 +42,7 @@
                     </div>
                 </div>
             </div>
-            <div class="lg:pt-10 pt-10 lg:pb-10  flex justify-center lg:col-span-7 sm:col-span-1 border lg:pl-20 lg:pr-5 f-form" style="border: none;">
+            <div class="lg:pt-10 lg:pt-10 lg:pb-10  flex justify-center lg:col-span-7 sm:col-span-1 border lg:pl-20 lg:pr-5 f-form" style="border: none;">
                 <form class="bg-white lg:p-10 md:p-0 sm:p-0 lg:w-10/12 rounded shadow-2xl pt-5" id="regForm" action="/Baths/dist/submit-page.php">
                 <div class="tab text-white text-3xl font-bodyFont">
                     <div class="text- text-3xl font-semibold pt-16 text-center p-5">
@@ -50,7 +50,7 @@
                         </h1>
                     </div>
                     <div class="pt-10 flex justify-center">
-                        <input type="text" id="zip" class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="e.g. 12345" required />
+                        <input type="number" pattern="[0-9]*" id="zip" class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="e.g. 12345" required />
                     </div>
                     <div id="zip-error" class="text-center" style="font-size: 14px">
 
@@ -67,32 +67,32 @@
                     </div>
                     <div class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 flex mx-0 justify-evenly mt-2">
                         <label class="card-radio-btn flex justify-center">
-                            <input onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                            <input type="radio" class="card-input-element hidden">
                             <div class="card card-body mx-0">
-                                <div class="content_head flex justify-center"><img src="./img/tubToshowe.png"></div>
+                                <div type="button" onclick="nextPrev(1)" class="content_head flex justify-center"><img src="/Baths/dist/img/tubToshowe.png"></div>
                                 <div id="replacement" class="content_sub font-bold text-4xl" style="color: #444 !important;">Tub to Shower Conversion</div>
                             </div>
                         </label>
                         <label class="card-radio-btn flex justify-center">
-                            <input onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                            <input  type="radio" class="card-input-element hidden">
                             <div class="card card-body mx-0">
-                                <div class="content_head flex justify-center"><img src="./img/shower_installation.png"></div>
+                                <div type="button" onclick="nextPrev(1)" class="content_head flex justify-center"><img src="/Baths/dist/img/shower_installation.png"></div>
                                 <div id="repair" class="content_sub font-bold text-4xl" style="color: #444 !important;">Shower Installation</div>
                             </div>
                         </label>
                     </div>
                     <div class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 flex mx-0 justify-evenly mt-1">
                         <label class="card-radio-btn flex justify-center">
-                            <input onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                            <input type="radio" class="card-input-element hidden">
                             <div class="card card-body mx-0">
-                                <div class="content_head flex justify-center"><img src="./img/bathroom_remodeling.png"></div>
+                                <div type="button" onclick="nextPrev(1)" class="content_head flex justify-center"><img src="/Baths/dist/img/bathroom_remodeling.png"></div>
                                 <div id="j" class="content_sub font-bold text-4xl" style="color: #444 !important;">Bathroom Remodeling</div>
                             </div>
                         </label>
                         <label class="card-radio-btn flex justify-center">
-                            <input onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
+                            <input  type="radio" class="card-input-element hidden">
                             <div class="card card-body mx-0">
-                                <div class="content_head flex justify-center"><img src="./img/fixtures_upgrades.png"></div>
+                                <div type="button" onclick="nextPrev(1)" class="content_head flex justify-center"><img src="/Baths/dist/img/fixtures_upgrades.png"></div>
                                 <div id="installation" class="content_sub font-bold text-4xl" style="color: #444 !important;">Fixtures Upgrades</div>
                             </div>
                         </label>
@@ -130,7 +130,7 @@
 
                     </div>
                     <div class="pt-10 flex justify-center items-center">
-                        <button type="button" style="margin-top: 20px" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-full sm:w-full py-3 mb-2  text-center items-center">
+                     <button style="margin-top: 20px;" type="button" style="margin-top: 20px" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-full sm:w-full py-3 mb-2  text-center items-center">
                             Next
                         </button>
                     </div>
@@ -187,38 +187,40 @@
                 </div>
             </form>
         </div>
-        <div class="lg:text-start sm:text-center lg:pt-10 lg:col-span-5 s2" style="height: -webkit-fill-available">
-            <div class="rate">
-                <div class="description pb-14">
-                    <h2 class="text-5xl text-white font-bold bg-secondaryColor title"  style="line-height: 1.2;padding: 5px" >
-                        Get your baths deal
-                    </h2>
+           <div class="lg:text-start sm:text-center lg:pt-10 lg:col-span-5 s2" style="height: -webkit-fill-available">
+               <div class="rate">
+                   <div class="description pb-14">
+                       <h2 class="text-5xl text-white font-bold bg-secondaryColor title"  style="line-height: 1.2;padding: 5px" >
+                           Get your baths deal
+                       </h2>
 
-                    <h3 class="text-xl text-white font-bold pb-3 pt-1">
-                        by quickly comparing 3 FREE quotes
-                    </h3>
-                    <ul class="mt-8 text-white text-xl font-semibold" style="list-style: circle;list-style-position: inside">
-                        <li>Next day installation</li>
-                        <li>Quotes from local engineers</li>
-                        <li>1.9 million quotes in 10 years</li>
-                        <li>Save up to £500 on installation</li>
-                    </ul>
-                    <div class="lg:mt-10 lg:w-9/12 sm:w-full flex justify-center py-5 eng-div" style="background: #005a87;border-radius: 10px">
-                        <div>
-                            <h1 class="text-white font-semibold ">
-                                The smarter way to find approved heating engineers
-                            </h1>
-                            <h4 class="text-white font-semibold">
-                                Excellent 4.8 out of 5
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                       <h3 class="text-xl text-white font-bold pb-3 pt-1">
+                           by quickly comparing 3 FREE quotes
+                       </h3>
+                       <ul class="mt-8 text-white text-xl font-semibold" style="list-style: circle;list-style-position: inside">
+                           <li>Next day installation</li>
+                           <li>Quotes from local engineers</li>
+                           <li>1.9 million quotes in 10 years</li>
+                           <li>Save up to £500 on installation</li>
+                       </ul>
+                       <div class="lg:mt-10 lg:w-9/12 md:w-full sm:w-full flex justify-center py-5 eng-div">
+                           <div class="lg:w-full md:w-9/12 py-3" style="background: #005a87;border-radius: 10px;">
+                               <div class="md:flex justify-center ">
+                               <h1 class="text-white font-semibold ">
+                                   The smarter way to find approved heating engineers
+                               </h1>
+                               </div>
+                               <h4 class="text-center text-white font-semibold">
+                                   Excellent 4.8 out of 5
+                               </h4>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
     </div>
-</div>
-<script src="/Baths/dist/script.js"></script>
-</body>
+   <script src="/Baths/dist/script.js"></script>
+   </body>
 
-</html>
+   </html>
