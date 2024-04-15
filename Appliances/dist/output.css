@@ -992,7 +992,7 @@ hr.style-1 {
 
 .title{
   margin-top: 25px;
-  width: 80%;
+  width: 90%;
   border-radius: 10px;
   padding: 10px !important;
 }
@@ -1326,6 +1326,10 @@ hr.style-1 {
 
   .md\:flex{
     display: flex;
+  }
+
+  .md\:w-7\/12{
+    width: 58.333333%;
   }
 
   .md\:w-9\/12{
