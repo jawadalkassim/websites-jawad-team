@@ -50,19 +50,19 @@
                     </div>
                     <label class="flex justify-center items-center pt-8">
                         <input  type="radio" class="card-input-element hidden">
-                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Cabinets
                         </button>
                     </label>
                     <label class="flex justify-center items-center pt-2">
                         <input  type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(2)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(2)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Carpentry
                         </button>
                     </label>
                     <label class="flex justify-center items-center pt-2">
                         <input type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Decks & Sheds
                         </button>
                     </label>
@@ -73,25 +73,25 @@
                     </div>
                     <label class="flex justify-center items-center pt-8">
                         <input  type="radio" class="card-input-element hidden">
-                        <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Cabinets Reface Existing Cabinets
                         </button>
                     </label>
                     <label class="flex justify-center items-center pt-2">
                         <input  type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Cabinets Repair
                         </button>
                     </label>
                     <label class="flex justify-center items-center pt-2">
                         <input  type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Cabinets Custom Install
                         </button>
                     </label>
                     <label class="flex justify-center items-center pt-2">
                         <input  type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Cabinets Pre Made Install
                         </button>
                     </label>
@@ -103,13 +103,13 @@
                     <div class="grid lg:grid-cols-2">
                     <label class="flex justify-center items-center pt-2">
                         <input  type="radio" class="card-input-element hidden">
-                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Closets Built In Furniture
                         </button>
                     </label>
                     <label class="flex justify-center items-center pt-2">
                         <input  type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Door Window Install
                         </button>
                     </label>
@@ -117,13 +117,13 @@
                     <div class="grid lg:grid-cols-2">
                     <label class="flex justify-center items-center pt-2">
                         <input  type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Door Window Repair
                         </button>
                     </label>
                     <label class="flex justify-center items-center pt-2">
                         <input  type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Finish Carpentry Trim & Molding
                         </button>
                     </label>
@@ -131,13 +131,13 @@
                     <div class="grid lg:grid-cols-2">
                     <label class="flex justify-center items-center pt-2">
                         <input type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Framing
                         </button>
                     </label>
                     <label class="flex justify-center items-center pt-2">
                         <input  type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Wood Stairs & Railings Install
                         </button>
                     </label>
@@ -149,31 +149,31 @@
                     </div>
                     <label class="flex justify-center items-center pt-8">
                         <input  type="radio" class="card-input-element hidden">
-                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Decks Porchs Ramps Install
                         </button>
                     </label>
                     <label class="flex justify-center items-center pt-2">
                         <input  type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Decks Porchs Ramps Repair
                         </button>
                     </label>
                     <label class="flex justify-center items-center pt-2">
                         <input  type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Pergola Arbor Or Trellis Build
                         </button>
                     </label>
                     <label class="flex justify-center items-center pt-2">
                         <input  type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Shed Barn Or Gazebo Build
                         </button>
                     </label>
                     <label class="flex justify-center items-center pt-2">
                         <input  type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Shed Barn Or Gazebo Repair
                         </button>
                     </label>
@@ -184,13 +184,13 @@
                     </div>
                     <label class="flex justify-center items-center pt-8">
                         <input  type="radio" class="card-input-element hidden">
-                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Home
                         </button>
                     </label>
                     <label class="flex justify-center items-center pt-2">
                         <input type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             Business
                         </button>
                     </label>
@@ -201,13 +201,13 @@
                     </div>
                     <label class="flex justify-center items-center pt-8">
                         <input  type="radio" class="card-input-element hidden">
-                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             I own
                         </button>
                     </label>
                     <label class="flex justify-center items-center pt-2">
                         <input  type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                             I rent
                         </button>
                     </label>
@@ -218,13 +218,13 @@
                         </h1>
                     </div>
                     <div class="pt-10 flex justify-center">
-                        <input type="text" id="address" class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="e.g. 123 West Main Road" required />
+                        <input type="text" id="address" class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white  rounded-full block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="e.g. 123 West Main Road" required />
                     </div>
                     <div id="address-error" class="text-center" style="font-size: 14px">
 
                     </div>
                     <div class="flex justify-center pt-5 items-center text-center">
-                        <button type="button" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-full sm:w-full py-3 mb-2 mt-3  text-center items-center">
+                        <button type="button" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 mt-3  text-center items-center">
                             Next
                         </button>
                     </div>
@@ -235,13 +235,13 @@
                         </h1>
                     </div>
                     <div class="pt-10 flex justify-center">
-                        <input type="number" pattern="[0-9]*" id="zip" class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="e.g. 12345" required />
+                        <input type="number" pattern="[0-9]*" id="zip" class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white  rounded-full block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="e.g. 12345" required />
                     </div>
                     <div id="zip-error" class="text-center" style="font-size: 14px">
 
                     </div>
                     <div class="flex justify-center pt-5 items-center text-center">
-                        <button type="button" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-full sm:w-full py-3 mb-2 mt-3  text-center items-center">
+                        <button type="button" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 mt-3  text-center items-center">
                             Next
                         </button>
                     </div>
@@ -251,13 +251,13 @@
                         <h1 class="pb-3 text-4xl text-gray-600 ">Great! What is your email?</h1>
                     </div>
                     <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
-                        <input type="tel" id="email" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="Enter email address" required />
+                        <input type="tel" id="email" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter email address" required />
                     </div>
                     <div id="email-error" class="text-center" style="font-size: 14px">
 
                     </div>
                     <div class="flex justify-center pt-5 items-center">
-                        <button type="button" onclick="nextPrev(1)" class="  bg s text-xl mt-3 gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-full sm:w-full py-3 mb-2  text-center items-center">
+                        <button type="button" onclick="nextPrev(1)" class="  bg s text-xl mt-3 gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2  text-center items-center">
                             Next
                         </button>
                     </div>
@@ -267,16 +267,16 @@
                         <h1 class="pb-3 text-4xl text-gray-600">How would you like the pros to refer to you?</h1>
                     </div>
                     <div class="pt-10 flex justify-center ">
-                        <input type="text" id="name" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="Enter first Name" required />
+                        <input type="text" id="name" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter first Name" required />
                     </div>
                     <div class="pt-5 flex justify-center">
-                        <input id="lname" type="text" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5 " placeholder="Enter last Name" required />
+                        <input id="lname" type="text" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-7/12 sm:w-full p-3.5 " placeholder="Enter last Name" required />
                     </div>
                     <div id="name-error" class="text-center" style="font-size: 14px">
 
                     </div>
                     <div class="pt-10 flex justify-center items-center">
-                        <button  style="margin-top: 20px;" type="button" style="margin-top: 20px" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-full sm:w-full py-3 mb-2  text-center items-center">
+                        <button  style="margin-top: 20px;" type="button" style="margin-top: 20px" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2  text-center items-center">
                             Next
                         </button>
                     </div>
@@ -287,13 +287,13 @@
                             Please enter your phone number</h1>
                     </div>
                     <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
-                        <input type="tel" id="phone" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="Enter phone number" required />
+                        <input type="tel" id="phone" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter phone number" required />
                     </div>
                     <div id="phone-error" class="text-center" style="font-size: 14px">
 
                     </div>
                     <div class="flex justify-center pt-5 items-center">
-                        <button type="button" onclick="nextPrev(1)" class=" mt-3 bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-full sm:w-full py-3 mb-2  text-center items-center">
+                        <button type="button" onclick="nextPrev(1)" class=" mt-3 bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2  text-center items-center">
                             Submit
                         </button>
                     </div>
@@ -334,7 +334,7 @@
                            <li>1.9 million quotes in 10 years</li>
                            <li>Save up to £500 on installation</li>
                        </ul>
-                       <div class="lg:mt-10 lg:w-9/12 md:w-full sm:w-full flex justify-center py-5 eng-div">
+                       <div class="lg:mt-10 lg:w-9/12 md:w-7/12 sm:w-full flex justify-center py-5 eng-div">
                            <div class="lg:w-full md:w-9/12 py-3" style="background: #005a87;border-radius: 10px;">
                                <div class="md:flex justify-center ">
                                <h1 class="text-white font-semibold ">
