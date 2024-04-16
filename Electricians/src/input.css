@@ -267,7 +267,13 @@ hr.style-1 {
         width: 13%;
     }
 }
-@media (min-width:630px) and (max-width:1024px) {
+@media (min-width:1020px) and (max-width:1025px) {
+    .title{
+        font-size: 2.5rem;
+        width: 100% !important;
+    }
+}
+@media (min-width:630px) and (max-width:1020px) {
     .description{
         text-align: center;
     }
