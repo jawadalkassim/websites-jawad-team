@@ -211,7 +211,7 @@
                         </h1>
                     </div>
                     <div class="pt-10 flex justify-center">
-                        <input type="text" id="zip" class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="e.g. 12345" required />
+                        <input type="number" pattern="[0-9]*" id="zip" class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="e.g. 12345" required />
                     </div>
                     <div id="zip-error" class="text-center" style="font-size: 14px">
 
