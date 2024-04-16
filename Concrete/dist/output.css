@@ -582,8 +582,8 @@ video {
   display: none;
 }
 
-.w-1\/12{
-  width: 8.333333%;
+.w-14{
+  width: 3.5rem;
 }
 
 .w-8{
@@ -592,10 +592,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-14{
-  width: 3.5rem;
 }
 
 .grid-cols-3{
@@ -1059,11 +1055,17 @@ hr.style-1 {
 
   .brand{
     padding-top: 10px;
-    width: 20%;
+    width: 10%;
   }
 }
 
-@media (min-width:630px) and (max-width:1024px) {
+@media (min-width:1020px) and (max-width:1025px) {
+  .title{
+    width: 100% !important;
+  }
+}
+
+@media (min-width:630px) and (max-width:1020px) {
   .description{
     text-align: center;
   }
@@ -1415,11 +1417,6 @@ hr.style-1 {
   .lg\:px-0{
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  .lg\:py-72{
-    padding-top: 18rem;
-    padding-bottom: 18rem;
   }
 
   .lg\:py-80{
