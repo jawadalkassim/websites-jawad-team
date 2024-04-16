@@ -1064,7 +1064,13 @@ hr.style-1 {
   }
 }
 
-@media (min-width:630px) and (max-width:1024px) {
+@media (min-width:1020px) and (max-width:1025px) {
+  .title{
+    width: 100% !important;
+  }
+}
+
+@media (min-width:630px) and (max-width:1020px) {
   .description{
     text-align: center;
   }
@@ -1333,16 +1339,16 @@ hr.style-1 {
     display: flex;
   }
 
+  .md\:w-7\/12{
+    width: 58.333333%;
+  }
+
   .md\:w-9\/12{
     width: 75%;
   }
 
   .md\:w-full{
     width: 100%;
-  }
-
-  .md\:w-7\/12{
-    width: 58.333333%;
   }
 
   .md\:grid-cols-1{

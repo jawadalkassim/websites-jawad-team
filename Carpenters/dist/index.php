@@ -311,44 +311,44 @@
                     <span class="step"></span>
                     <span class="step"></span>
                 </div>
-                <div style="overflow:auto" class="flex justify-center" >
-                    <div style="float:right;">
-                        <button class="text-xl text-gray-600 font-bold" type="button" id="prevBtn" onclick="back()">← Back</button>
+                    <div style="overflow:auto" class="flex justify-center" >
+                        <div style="float:right;">
+                            <button class="text-xl text-gray-600 font-bold" type="button" id="prevBtn" onclick="back()">← Back</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="lg:text-start sm:text-center lg:pt-10 lg:col-span-5 s2" style="height: -webkit-fill-available">
+                <div class="rate">
+                    <div class="description pb-14">
+                        <h2 class="text-5xl text-white font-bold bg-secondaryColor title"  style="line-height: 1.2;padding: 5px" >
+                            Get your appliances deal
+                        </h2>
+
+                        <h3 class="text-xl text-white font-bold pb-3 pt-1">
+                            by quickly comparing 3 FREE quotes
+                        </h3>
+                        <ul class="mt-8 text-white text-xl font-semibold" style="list-style: circle;list-style-position: inside">
+                            <li>Next day installation</li>
+                            <li>Quotes from local engineers</li>
+                            <li>1.9 million quotes in 10 years</li>
+                            <li>Save up to £500 on installation</li>
+                        </ul>
+                        <div class="lg:mt-10 lg:w-9/12 md:w-full sm:w-full flex justify-center py-5 eng-div">
+                            <div class="lg:w-full md:w-9/12 py-3" style="background: #005a87;border-radius: 10px;">
+                                <div class="md:flex justify-center ">
+                                    <h1 class="text-white font-semibold ">
+                                        The smarter way to find approved heating engineers
+                                    </h1>
+                                </div>
+                                <h4 class="text-center text-white font-semibold">
+                                    Excellent 4.8 out of 5
+                                </h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </form>
-        </div>
-           <div class="lg:text-start sm:text-center lg:pt-10 lg:col-span-5 s2" style="height: -webkit-fill-available">
-               <div class="rate">
-                   <div class="description pb-14">
-                       <h2 class="text-4xl text-white font-bold bg-secondaryColor title"  style="line-height: 1.2;padding: 5px" >
-                           Get your carpenters deal
-                       </h2>
-
-                       <h3 class="text-xl text-white font-bold pb-3 pt-1">
-                           by quickly comparing 3 FREE quotes
-                       </h3>
-                       <ul class="mt-8 text-white text-xl font-semibold" style="list-style: circle;list-style-position: inside">
-                           <li>Next day installation</li>
-                           <li>Quotes from local engineers</li>
-                           <li>1.9 million quotes in 10 years</li>
-                           <li>Save up to £500 on installation</li>
-                       </ul>
-                       <div class="lg:mt-10 lg:w-9/12 md:w-7/12 sm:w-full flex justify-center py-5 eng-div">
-                           <div class="lg:w-full md:w-9/12 py-3" style="background: #005a87;border-radius: 10px;">
-                               <div class="md:flex justify-center ">
-                               <h1 class="text-white font-semibold ">
-                                   The smarter way to find approved heating engineers
-                               </h1>
-                               </div>
-                               <h4 class="text-center text-white font-semibold">
-                                   Excellent 4.8 out of 5
-                               </h4>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
+            </div>
        </div>
     </div>
    <script src="/Carpenters/dist/script.js"></script>
