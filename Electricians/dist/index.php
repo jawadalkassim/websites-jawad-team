@@ -32,7 +32,7 @@
         <div class="text-center text-white font-bold flex justify-center items-center gap-2" style="padding-bottom: 0px"><span class=" icon w-8 flex justify-center items-center"><img src="/Electricians/dist/img/check.png" style="display: inline"></span><h1 class="flex justify-start items-center">Gas Safe registered engineers</h1></div>
     </div>
     <div style="background-image: radial-gradient(ellipse at center,#1e5799 0,#013652 63%,#002031 100%);padding-bottom: 400px">
-        <div  class="grid lg:grid-cols-12 md:grid-cols-1  sm:grid-cols-1 justify-center items-center lg:pb-44">
+        <div  class="grid lg:grid-cols-12 md:grid-cols-1  sm:grid-cols-1 justify-center items-center lg:pb-44" id="grid">
             <div class="lg:text-start sm:text-center pt-2 lg:col-span-5 mobile-d" style="height: -webkit-fill-available">
                 <div class="rate">
                     <div class="description flex justify-center">
