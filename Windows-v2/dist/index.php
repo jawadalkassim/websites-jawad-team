@@ -9,14 +9,14 @@
     </script>
     <title>Windows 2024</title>
 
-    <link href="./output.css" rel="stylesheet">
+    <link href="/Windows-v2/dist/output.css" rel="stylesheet">
 </head>
 
 <body>
 <nav class="mt-5 text-center">
     <div class="grid lg:grid-cols-2 md:grid-cols-1 items-center ">
         <div class="flex justify-center lg:w-5/12 md:w-6/12 pb-2">
-            <img src="./img/logo.png" class="w-1/2">
+            <img src="/Windows-v2/dist/img/logo.png" class="w-1/2">
         </div>
         <a href="" class="text-primaryColor underline decoration-primaryColor font-bold text-xl block lg:text-end sm:text-center md:text-center lg:mx-40 md:mx-0 sm:mx-0 pb-3 lg:w-1/2 sm:w-full">Get Free Quotes</a>
     </div>
@@ -29,7 +29,7 @@
 <div style="background-image: radial-gradient(ellipse at center,#1e5799 0,#013652 63%,#002031 100%)">
     <div class="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 justify-center items-center">
      <div class="lg:p-10 md:p-10 sm:p-0  pt-5 flex justify-center lg:col-span-2 sm:col-span-1">
-         <form class="bg-white lg:p-10 md:p-0 sm:p-0 w-10/12 rounded " id="regForm" action="./submit-page.html">
+         <form class="bg-white lg:p-10 md:p-0 sm:p-0 w-10/12 rounded " id="regForm" action="/Windows-v2/dist/submit-page.html">
              <div class="tab">
                  <div class="text- text-3xl font-semibold pt-16 text-center p-5">
                      <h1 class="pb-3 text-2xl text-gray-600"><span id="location"></span> Service Pairs You with Expert Window Contractors in Your Area for Free</h1>
@@ -56,21 +56,21 @@
                      <label class="card-radio-btn flex justify-center">
                          <input onclick="radioClick(0)" type="radio" class="card-input-element hidden" id="demo1">
                          <div class="card card-body mx-0">
-                             <div class="content_head flex justify-center"><img src="./img/replace.png"></div>
+                             <div class="content_head flex justify-center"><img src="/Windows-v2/dist/img/replace.png"></div>
                              <div id="replacement" class="content_sub font-bold text-2xl" style="color: #444 !important;">Window Replacement</div>
                          </div>
                      </label>
                      <label class="card-radio-btn flex justify-center">
                          <input onclick="radioClick(1)" type="radio" class="card-input-element hidden">
                          <div class="card card-body mx-0">
-                             <div class="content_head flex justify-center"><img src="./img/repair.png"></div>
+                             <div class="content_head flex justify-center"><img src="/Windows-v2/dist/img/repair.png"></div>
                              <div id="repair" class="content_sub font-bold text-2xl" style="color: #444 !important;">Window Repair</div>
                          </div>
                      </label>
                      <label class="card-radio-btn flex justify-center">
                          <input onclick="radioClick(2)" type="radio" class="card-input-element hidden">
                          <div class="card card-body mx-0">
-                             <div class="content_head flex justify-center"><img src="./img/installation.png"></div>
+                             <div class="content_head flex justify-center"><img src="/Windows-v2/dist/img/installation.png"></div>
                              <div id="installation" class="content_sub font-bold text-2xl" style="color: #444 !important;">Window Installation</div>
                          </div>
                      </label>
@@ -207,7 +207,7 @@
     </div>
     </div>
  </div>
-<script src="./script.js"></script>
+<script src="/Windows-v2/dist/script.js"></script>
 </body>
 
 </html>

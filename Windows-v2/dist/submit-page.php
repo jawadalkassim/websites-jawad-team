@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit</title>
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="/Windows-v2/dist/output.css">
 </head>
 <body style="overflow-y: hidden">
 <nav class="mt-5">
     <div class="grid lg:grid-cols-2 md:grid-cols-1 items-center ">
         <div class="flex justify-center lg:w-5/12 md:w-6/12 pb-2">
-            <img src="./img/logo.png" class="w-1/2">
+            <img src="/Windows-v2/dist/img/logo.png" class="w-1/2">
         </div>
         <a href="" class="text-primaryColor underline decoration-primaryColor font-bold text-xl block lg:text-end sm:text-start md:text-center mx-40 pb-3">Get Free Quotes</a>
     </div>
