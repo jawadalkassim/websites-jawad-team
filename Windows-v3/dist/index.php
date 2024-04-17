@@ -8,11 +8,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Window</title>
 
-    <link href="./output.css" rel="stylesheet">
+    <link href="/Windows-v3/dist/output.css" rel="stylesheet">
 </head>
 
 <body >
-<form  class="font-bodyFont hero bg-hero bg-no-repeat bg-cover bg-center bg-opacity-90" id="regForm" action="./submit.php">
+<form  class="font-bodyFont hero bg-hero bg-no-repeat bg-cover bg-center bg-opacity-90" id="regForm" action="/Windows-v3/dist/submit.php">
     <div style="background-color: rgb(18,25,28,0.6);
     font-family: 'Ubuntu';
     width: 100%;
@@ -71,21 +71,21 @@
                             <label class="card-radio-btn flex justify-center">
                                 <input onclick="radioClick(0)" type="radio" class="card-input-element hidden" >
                                 <div class="card card-body mx-0">
-                                    <div class="content_head flex justify-center"><img src="./img/replace2.png" width="25%"></div>
+                                    <div class="content_head flex justify-center"><img src="/Windows-v3/dist/img/replace2.png" width="25%"></div>
                                     <div id="replacement" class="content_sub font-bold text-2xl" style="color: #444 !important;">Window Replacement</div>
                                 </div>
                             </label>
             <label class="card-radio-btn flex justify-center">
                 <input onclick="radioClick(1)" type="radio" class="card-input-element hidden">
                 <div class="card card-body mx-0">
-                    <div class="content_head flex justify-center"><img src="./img/repair2.png" style="width: 25%"></div>
+                    <div class="content_head flex justify-center"><img src="/Windows-v3/dist/img/repair2.png" style="width: 25%"></div>
                     <div id="repair" class="content_sub font-bold text-2xl"  style="color: #444 !important;">Window Repair</div>
                 </div>
             </label>
             <label class="card-radio-btn flex justify-center">
                 <input onclick="radioClick(2)" type="radio" class="card-input-element hidden" >
                 <div class="card card-body mx-0">
-                    <div class="content_head flex justify-center"><img src="./img/installation2.png"></div>
+                    <div class="content_head flex justify-center"><img src="/Windows-v3/dist/img/installation2.png"></div>
                     <div id="installation" class="content_sub font-bold text-2xl" style="color: #444 !important;">Window Installation</div>
                 </div>
             </label>
@@ -276,11 +276,11 @@
         </div>
         </div>
         <div class="pt-5 lg:w-full sm:mx-0 md:mx-0">
-            <img src="./img/repair.jpg" class="object-contain" style="height: 100%">
+            <img src="/Windows-v3/dist/img/repair.jpg" class="object-contain" style="height: 100%">
         </div>
         </div>
 </section>
-<script src="./JS/script.js">
+<script src="/Windows-v3/dist/JS/script.js">
 
 </script>
 </body>

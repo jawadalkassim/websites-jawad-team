@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit</title>
 
-    <link href="./output.css" rel="stylesheet">
+    <link href="/Windows-v3/dist/output.css" rel="stylesheet">
 </head>
 <body style="overflow-y: hidden">
 <div class="hero bg-hero bg-no-repeat bg-cover bg-center bg-opacity-90" style="font-family: 'Ubuntu';">
