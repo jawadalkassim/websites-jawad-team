@@ -8,7 +8,7 @@
     <title>Home</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     </script>
-    <link href="./output.css" rel="stylesheet">
+    <link href="/Windows-v4/dist/output.css" rel="stylesheet">
 </head>
 
 <body class="bg-hero bg-center bg-cover bg-no-repeat">
@@ -24,7 +24,7 @@
         <section class="flex justify-center">
             <div>
     <div class=" flex justify-center">
-        <img src="./img/logo.png" class="lg:w-1/6 brand" id="brand">
+        <img src="/Windows-v4/dist/img/logo.png" class="lg:w-1/6 brand" id="brand">
     </div>
                 <div class="pt-5">
                     <h1 class="text-center text-white font-bold text-4xl">Your #1 Window Company Serving Homeowners in <span id="location"></span>Since 2017!</h1>
@@ -32,7 +32,7 @@
                 <div class="pt-3">
                     <p class="text-center text-sm italic font-semibold text-secondaryColor">Fill out the survey below, it only takes 30 seconds.</p>
                 </div>
-                <form class="flex justify-center items-center pt-5" id="regForm" action="./submit-page.php">
+                <form class="flex justify-center items-center pt-5" id="regForm" action="/Windows-v4/dist/submit-page.php">
                     <div class="bg-white bg-opacity-60 lg:w-1/2 sm:w-full rounded-xl text-center">
                         <div class="progress pt-5">
                             <div class="progress-content">
@@ -307,6 +307,6 @@
     </div>
 
 </div>
-<script src="./JS/script.js"></script>
+<script src="/Windows-v4/dist/JS/script.js"></script>
 </body>
 </html>

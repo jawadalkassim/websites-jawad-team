@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit</title>
-    <link href="./output.css" rel="stylesheet">
+    <link href="/Windows-v4/dist/output.css" rel="stylesheet">
 </head>
 
 <body class="bg-hero bg-center bg-cover bg-no-repeat">
@@ -21,7 +21,7 @@
         <section class="flex justify-center">
             <div>
                 <div class=" flex justify-center">
-                    <img src="./img/logo.png" class="w-1/3 brand">
+                    <img src="/Windows-v4/dist/img/logo.png" class="w-1/3 brand">
                 </div>
             </div>
         </section>
