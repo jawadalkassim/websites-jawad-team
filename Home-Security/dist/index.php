@@ -217,7 +217,7 @@
                             Get your security deal
                         </h2>
 
-                        <h3 class="text-xl text-white font-bold pb-3 pt-1">
+                        <h3 class=" text-xl text-white font-bold pb-3 pt-1">
                             by quickly comparing 3 FREE quotes
                         </h3>
                         <ul class="mt-8 text-white text-xl font-semibold" style="list-style: circle;list-style-position: inside">
