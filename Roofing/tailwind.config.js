@@ -7,9 +7,6 @@ module.exports = {
         primaryColor:'#01314A',
         secondaryColor:'rgb(232 95 60)'
       },
-      fontFamily: {
-        bodyFont:['Poppins']
-      },
     },
   },
   plugins: [],

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     </script>
-    <title>Roofing Pro</title>
+    <title>Roofing</title>
     <link href="/Roofing/dist/output.css" rel="stylesheet">
 </head>
 
@@ -32,12 +32,12 @@
         <div class="text-center text-white font-bold flex justify-center items-center gap-2" style="padding-bottom: 0px"><span class=" icon w-8 flex justify-center items-center"><img src="/Roofing/dist/img/check.png" style="display: inline"></span><h1 class="flex justify-start items-center">Gas Safe registered engineers</h1></div>
     </div>
     <div style="background-image: radial-gradient(ellipse at center,#1e5799 0,#013652 63%,#002031 100%);padding-bottom: 400px">
-        <div  class="grid lg:grid-cols-12 md:grid-cols-1  sm:grid-cols-1 justify-center items-center lg:pb-44">
+        <div  class="grid lg:grid-cols-12 md:grid-cols-1  sm:grid-cols-1 justify-center items-center lg:pb-44" id="grid">
             <div class="lg:text-start sm:text-center pt-2 lg:col-span-5 mobile-d" style="height: -webkit-fill-available">
                 <div class="rate">
                     <div class="description flex justify-center">
                         <h2 class="text-5xl text-white font-bold bg-secondaryColor title"  style="line-height: 1.2;padding: 10px;font-size: 25px; border-radius: 10px;" >
-                            Get your roofing deal
+                            Get your roofing pros deal
                         </h2>
                     </div>
                 </div>
@@ -330,44 +330,44 @@
                  <span class="step"></span>
                  <span class="step"></span>
              </div>
-             <div style="overflow:auto" class="flex justify-center" >
-                 <div style="float:right;">
-                     <button class="text-xl text-gray-600 font-bold" type="button" id="prevBtn" onclick="back()">← Back</button>
-                 </div>
-             </div>
-         </form>
-     </div>
-        <div class="lg:text-start sm:text-center lg:pt-10 lg:col-span-5 s2" style="height: -webkit-fill-available">
-            <div class="rate">
-                <div class="description pb-14">
-                    <h2 class="text-5xl text-white font-bold bg-secondaryColor title"  style="line-height: 1.2;padding: 5px" >
-                        Get your roofing deal
-                    </h2>
+                    <div style="overflow:auto" class="flex justify-center" >
+                        <div style="float:right;">
+                            <button class="text-xl text-gray-600 font-bold" type="button" id="prevBtn" onclick="back()">← Back</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="lg:text-start sm:text-center lg:pt-10 lg:col-span-5 s2" style="height: -webkit-fill-available">
+                <div class="rate">
+                    <div class="description pb-14">
+                        <h2 class="text-5xl text-white font-bold bg-secondaryColor title"  style="line-height: 1.2;padding: 5px" >
+                            Get your roofing deal
+                        </h2>
 
-                    <h3 class="text-xl text-white font-bold pb-3 pt-1">
-                        by quickly comparing 3 FREE quotes
-                    </h3>
-                    <ul class="mt-8 text-white text-xl font-semibold" style="list-style: circle;list-style-position: inside">
-                        <li>Next day installation</li>
-                        <li>Quotes from local engineers</li>
-                        <li>1.9 million quotes in 10 years</li>
-                        <li>Save up to £500 on installation</li>
-                    </ul>
-                    <div class="lg:mt-10 lg:w-9/12 md:w-full sm:w-full flex justify-center py-5 eng-div">
-                        <div class="lg:w-full md:w-9/12 py-3" style="background: #005a87;border-radius: 10px;">
-                            <div class="md:flex justify-center ">
-                            <h1 class="text-white font-semibold ">
-                                The smarter way to find approved heating engineers
-                            </h1>
+                        <h3 class="text-xl text-white font-bold pb-3 pt-1">
+                            by quickly comparing 3 FREE quotes
+                        </h3>
+                        <ul class="mt-8 text-white text-xl font-semibold" style="list-style: circle;list-style-position: inside">
+                            <li>Next day installation</li>
+                            <li>Quotes from local engineers</li>
+                            <li>1.9 million quotes in 10 years</li>
+                            <li>Save up to £500 on installation</li>
+                        </ul>
+                        <div class="lg:mt-10 lg:w-9/12 md:w-full sm:w-full flex justify-center py-5 eng-div">
+                            <div class="lg:w-full md:w-9/12 py-3" style="background: #005a87;border-radius: 10px;">
+                                <div class="md:flex justify-center ">
+                                    <h1 class="text-white font-semibold ">
+                                        The smarter way to find approved heating engineers
+                                    </h1>
+                                </div>
+                                <h4 class="text-center text-white font-semibold">
+                                    Excellent 4.8 out of 5
+                                </h4>
                             </div>
-                            <h4 class="text-center text-white font-semibold">
-                                Excellent 4.8 out of 5
-                            </h4>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
  </div>
 <script src="/Roofing/dist/script.js"></script>
