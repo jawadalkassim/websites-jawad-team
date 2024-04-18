@@ -212,7 +212,7 @@ hr.style-1 {
 }
 .title{
     margin-top: 25px;
-    width: 93%;
+    width: 85%;
     border-radius: 10px;
     padding: 10px !important;
 }
@@ -246,7 +246,7 @@ hr.style-1 {
         display: contents;
     }
     .title{
-        width: 100%;
+        width: 80%;
 
     }
     #regForm{
@@ -266,11 +266,126 @@ hr.style-1 {
         padding-top: 10px;
         width: 20%;
     }
+}
+@media (min-width:1020px) and (max-width:1025px) {
+    .eng-div div{
+        width: 70%;
+    }
+    .title{
+        width: 50% !important;
+        text-align: center;
+    }
+    #grid{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    ul li{
+        text-align: left;
+        padding-left: 27%;
+    }
+    .list-bar{
+        display: none;
+    }
+    .list-bar-mobile{
+        display: block;
+    }
+    .list-bar-mobile div{
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+    .list-bar-mobile h1{
+        width: 290px;
+    }
     .s{
-        font-size: 28px!important;
+        width: 314px;
+        height: 52px;
+        font-size: 16px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .s2 h3{
+        display: none;
+    }
+    .s2 h2{
+        display: none;
+    }
+    .s2 h4{
+        display: none;
+    }
+    .s2 ul {
+        padding-left: 10px;
+        text-align: left;
+    }
+    .s2 h1 {
+        padding-left: 17px;
+        text-align: left;
+    }
+    .eng-div{
+        margin-top: 25px;
+        width: 100%!important;
+    }
+
+    .mobile-d{
+        display: grid !important;
     }
 }
-@media (min-width:630px) and (max-width:1200px) {
+@media (min-width:630px) and (max-width:1020px) {
+    .description{
+        text-align: center;
+    }
+    ul li{
+        text-align: left;
+        padding-left: 27%;
+    }
+    .list-bar{
+        display: none;
+    }
+    .list-bar-mobile{
+        display: block;
+    }
+    .list-bar-mobile div{
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+    .list-bar-mobile h1{
+        width: 290px;
+    }
+    .s{
+        width: 314px;
+        height: 52px;
+        font-size: 16px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .s2 h3{
+        display: none;
+    }
+    .s2 h2{
+        display: none;
+    }
+    .s2 h4{
+        display: none;
+    }
+    .s2 ul {
+        padding-left: 10px;
+        text-align: left;
+    }
+    .s2 h1 {
+        padding-left: 17px;
+        text-align: left;
+    }
+    .eng-div{
+        margin-top: 25px;
+    }
+
+    .mobile-d{
+        display: grid !important;
+    }
     .tab{
         margin: 20px;
     }
@@ -306,7 +421,7 @@ hr.style-1 {
     }
     .title{
         font-size: 24px !important;
-        width: 95%;
+        width: 90%;
     }
     .tab div{
         padding: 0px 10px;
@@ -333,12 +448,11 @@ hr.style-1 {
         text-align: left;
     }
     .list-bar-mobile h1{
-        width: 280px;
+        width: 290px;
     }
     .s{
         width: 314px;
         height: 52px;
-        font-weight: 649;
         font-size: 16px !important;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -354,7 +468,6 @@ hr.style-1 {
         display: none;
     }
     .s2 ul {
-        padding-left: 10px;
         text-align: left;
     }
     .s2 h1 {
