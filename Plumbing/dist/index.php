@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     </script>
-    <title>Plumping</title>
+    <title>Plumbing</title>
     <link href="/Plumbing/dist/output.css" rel="stylesheet">
 </head>
 
@@ -32,7 +32,7 @@
         <div class="text-center text-white font-bold flex justify-center items-center gap-2" style="padding-bottom: 0px"><span class=" icon w-8 flex justify-center items-center"><img src="/Plumbing/dist/img/check.png" style="display: inline"></span><h1 class="flex justify-start items-center">Gas Safe registered engineers</h1></div>
     </div>
     <div style="background-image: radial-gradient(ellipse at center,#1e5799 0,#013652 63%,#002031 100%);padding-bottom: 400px">
-        <div  class="grid lg:grid-cols-12 md:grid-cols-1  sm:grid-cols-1 justify-center items-center lg:pb-44">
+        <div  class="grid lg:grid-cols-12 md:grid-cols-1  sm:grid-cols-1 justify-center items-center lg:pb-44" id="grid">
             <div class="lg:text-start sm:text-center pt-2 lg:col-span-5 mobile-d" style="height: -webkit-fill-available">
                 <div class="rate">
                     <div class="description flex justify-center">
@@ -42,33 +42,33 @@
                     </div>
                 </div>
             </div>
-            <div class="lg:pt-10 pt-10 lg:pb-10  flex justify-center lg:col-span-7 sm:col-span-1 border lg:pl-20 lg:pr-5 f-form" style="border: none;">
+            <div class="lg:pt-10 lg:pt-10 lg:pb-10  flex justify-center lg:col-span-7 sm:col-span-1 border lg:pl-20 lg:pr-5 f-form" style="border: none;">
                 <form class="bg-white lg:p-10 md:p-0 sm:p-0 lg:w-10/12 rounded shadow-2xl pt-5" id="regForm" action="/Plumbing/dist/submit-page.php">
                     <div class="tab text-white text-3xl font-bodyFont">
                         <div class="text- text-3xl font-semibold pt-16 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600">What service do you need?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
-                            <input onclick="radioClick(1)" type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Pumps
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(2)" type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(2)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input  type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(2)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Sewage
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(3)" type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Water Heaters
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(4)" type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(4)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(4)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Other
                             </button>
                         </label>
@@ -78,20 +78,20 @@
                             <h1 class="pb-3 text-4xl text-gray-600">What pumps service do you need?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
-                            <input onclick="radioClick(10)" type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(10)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(10)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Sump Pump Repair
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-3">
-                            <input onclick="radioClick(10)" type="radio" class="card-input-element hidden" >
-                            <button  type="button" onclick="radioClick(10)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden" >
+                            <button  type="button" onclick="radioClick(10)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Well Pumps Install
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-3">
-                            <input onclick="radioClick(10)" type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(10)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(10)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Well Pumps Repair
                             </button>
                         </label>
@@ -102,20 +102,20 @@
                             <h1 class="pb-3 text-4xl text-gray-600">What sewage service do you need?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
-                            <input onclick="radioClick(3)" type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Drain Lines
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-3">
-                            <input onclick="radioClick(4)" type="radio" class="card-input-element hidden" >
-                            <button  type="button" onclick="radioClick(4)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden" >
+                            <button  type="button" onclick="radioClick(4)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Sewer
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-3">
-                            <input onclick="radioClick(5)" type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(5)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(5)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Septic
                             </button>
                         </label>
@@ -126,14 +126,14 @@
                             <h1 class="pb-3 text-4xl text-gray-600">What water heater service do you need?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
-                            <input onclick="radioClick(5)" type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(5)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(5)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Install
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(6)" type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(6)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(6)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Repair
                             </button>
                         </label>
@@ -143,32 +143,32 @@
                             <h1 class="pb-3 text-4xl text-gray-600">What task is needed?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
-                            <input onclick="radioClick(7)" type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(7)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(7)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Bathtub Shower Install
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(7)" type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(7)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(7)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Faucets Fixtures & Pipes Repair
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(7)" type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(7)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(7)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Fire Sprinkler System
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(7)" type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(7)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(7)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Leak Detection Repair
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(6)" type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(6)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(6)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Water / Gas lines
                             </button>
                         </label>
@@ -178,14 +178,14 @@
                             <h1 class="pb-3 text-4xl text-gray-600">What drain lines service do you need?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
-                            <input onclick="radioClick(6)" type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(6)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input  type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(6)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Drain Clog Blockage Clear
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(6)" type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(6)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(6)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Drain Line Breakage Camera Locate
                             </button>
                         </label>
@@ -196,20 +196,20 @@
                             <h1 class="pb-3 text-4xl text-gray-600">What sewer service do you need?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
-                            <input onclick="radioClick(5)" type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(5)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input  type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(5)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Pump Out A Septic Tank
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(5)" type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(5)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input  type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(5)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Sewer Main Clear
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(5)" type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(5)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(5)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Sewer Main Replace
                             </button>
                         </label>
@@ -219,14 +219,14 @@
                             <h1 class="pb-3 text-4xl text-gray-600">What septic service do you need?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
-                            <input onclick="radioClick(4)" type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(4)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(4)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Septic System Repair
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-3">
-                            <input onclick="radioClick(4)" type="radio" class="card-input-element hidden" >
-                            <button  type="button" onclick="radioClick(4)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden" >
+                            <button  type="button" onclick="radioClick(4)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Septic System Install
                             </button>
                         </label>
@@ -236,14 +236,14 @@
                             <h1 class="pb-3 text-4xl text-gray-600">What do you want to install?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
-                            <input onclick="radioClick(3)" type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Tankless Water Heater Install
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(3)" type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Water Heater Install
                             </button>
                         </label>
@@ -253,14 +253,14 @@
                             <h1 class="pb-3 text-4xl text-gray-600">What do you want to install?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
-                            <input onclick="radioClick(2)" type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(2)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(2)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Tankless Water Heater Repair
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(2)" type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(2)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(2)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Water Heater Repair
                             </button>
                         </label>
@@ -270,32 +270,32 @@
                             <h1 class="pb-3 text-4xl text-gray-600">What water / gas lines service do you need?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
-                            <input onclick="radioClick(1)" type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Gas Piping
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(1)" type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Plumbing For A New Home Or Remodel
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(1)" type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Water Line
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(1)" type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Water Main Install
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(1)" type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Water Main Repair
                             </button>
                         </label>
@@ -305,14 +305,14 @@
                             <h1 class="pb-3 text-4xl text-gray-600">What type of property do you want a quote for?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
-                            <input onclick="nextPrev(1)" type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="nextPrev(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="nextPrev(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Home
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(1)" type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 Business
                             </button>
                         </label>
@@ -323,14 +323,14 @@
                             <h1 class="pb-3 text-4xl text-gray-600">Do you own or rent this home?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
-                            <input onclick="radioClick(1)" type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 I own
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input onclick="radioClick(1)" type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
+                            <input type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
                                 I rent
                             </button>
                         </label>
@@ -341,14 +341,14 @@
                             </h1>
                         </div>
                         <div class="pt-10 flex justify-center">
-                            <input type="text" id="address" class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="Address" required />
+                            <input type="text" id="address" class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white  rounded-full block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Address" required />
                         </div>
                         <div id="address-error" class="text-center" style="font-size: 14px">
 
 
                         </div>
                         <div class="flex justify-center pt-5 items-center text-center">
-                            <button type="button" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-full sm:w-full py-3 mb-2 mt-3  text-center items-center">
+                            <button type="button" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 mt-3  text-center items-center">
                                 Next
                             </button>
                         </div>
@@ -359,13 +359,13 @@
                             </h1>
                         </div>
                         <div class="pt-10 flex justify-center">
-                            <input type="text" id="zip" class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="e.g. 12345" required />
+                            <input type="number" pattern="[0-9]*" id="zip" class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white  rounded-full block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="e.g. 12345" required />
                         </div>
                         <div id="zip-error" class="text-center" style="font-size: 14px">
 
                         </div>
                         <div class="flex justify-center pt-5 items-center text-center">
-                            <button type="button" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-full sm:w-full py-3 mb-2 mt-3  text-center items-center">
+                            <button type="button" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 mt-3  text-center items-center">
                                 Next
                             </button>
                         </div>
@@ -376,16 +376,16 @@
                             <h1 class="pb-3 text-4xl text-gray-600">What is your name?</h1>
                         </div>
                         <div class="pt-10 flex justify-center ">
-                            <input type="text" id="name" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="Enter first Name" required />
+                            <input type="text" id="name" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter first Name" required />
                         </div>
                         <div class="pt-5 flex justify-center">
-                            <input id="lname" type="text" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5 " placeholder="Enter last Name" required />
+                            <input id="lname" type="text" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-7/12 sm:w-full p-3.5 " placeholder="Enter last Name" required />
                         </div>
                         <div id="name-error" class="text-center" style="font-size: 14px">
 
                         </div>
                         <div class="pt-10 flex justify-center items-center">
-                            <button style="margin-top: 20px" type="button" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-full sm:w-full py-3 mb-2  text-center items-center">
+                            <button style="margin-top: 20px" type="button" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2  text-center items-center">
                                 Next
                             </button>
                         </div>
@@ -397,13 +397,13 @@
                             <h1 class="pb-3 text-4xl text-gray-600 ">Great! What is your email?</h1>
                         </div>
                         <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
-                            <input type="tel" id="email" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="Enter email address" required />
+                            <input type="tel" id="email" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter email address" required />
                         </div>
                         <div id="email-error" class="text-center" style="font-size: 14px">
 
                         </div>
                         <div class="flex justify-center pt-5 items-center">
-                            <button type="button" onclick="nextPrev(1)" class="  bg s text-xl mt-3 gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-full sm:w-full py-3 mb-2  text-center items-center">
+                            <button type="button" onclick="nextPrev(1)" class="  bg s text-xl mt-3 gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2  text-center items-center">
                                 Next
                             </button>
                         </div>
@@ -415,13 +415,13 @@
                                 Please enter your phone number</h1>
                         </div>
                         <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
-                            <input type="tel" id="phone" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="Enter phone number" required />
+                            <input type="tel" id="phone" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter phone number" required />
                         </div>
                         <div id="phone-error" class="text-center" style="font-size: 14px">
 
                         </div>
                         <div class="flex justify-center pt-5 items-center">
-                            <button type="button" onclick="nextPrev(1)" class=" mt-3 bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-full sm:w-full py-3 mb-2  text-center items-center">
+                            <button type="button" onclick="nextPrev(1)" class=" mt-3 bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2  text-center items-center">
                                 Submit
                             </button>
                         </div>
@@ -468,12 +468,14 @@
                             <li>1.9 million quotes in 10 years</li>
                             <li>Save up to £500 on installation</li>
                         </ul>
-                        <div class="lg:mt-10 lg:w-9/12 sm:w-full flex justify-center py-5 eng-div" style="background: #005a87;border-radius: 10px">
-                            <div>
-                                <h1 class="text-white font-semibold ">
-                                    The smarter way to find approved heating engineers
-                                </h1>
-                                <h4 class="text-white font-semibold">
+                        <div class="lg:mt-10 lg:w-9/12 md:w-full sm:w-full flex justify-center py-5 eng-div">
+                            <div class="lg:w-full md:w-9/12 py-3" style="background: #005a87;border-radius: 10px;">
+                                <div class="md:flex justify-center ">
+                                    <h1 class="text-white font-semibold ">
+                                        The smarter way to find approved heating engineers
+                                    </h1>
+                                </div>
+                                <h4 class="text-center text-white font-semibold">
                                     Excellent 4.8 out of 5
                                 </h4>
                             </div>
