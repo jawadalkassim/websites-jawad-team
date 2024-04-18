@@ -32,7 +32,7 @@
         <div class="text-center text-white font-bold flex justify-center items-center gap-2" style="padding-bottom: 0px"><span class=" icon w-8 flex justify-center items-center"><img src="/HVAC/dist/img/check.png" style="display: inline"></span><h1 class="flex justify-start items-center">Gas Safe registered engineers</h1></div>
     </div>
     <div style="background-image: radial-gradient(ellipse at center,#1e5799 0,#013652 63%,#002031 100%);padding-bottom: 400px">
-        <div  class="grid lg:grid-cols-12 md:grid-cols-1  sm:grid-cols-1 justify-center items-center lg:pb-44">
+        <div  class="grid lg:grid-cols-12 md:grid-cols-1  sm:grid-cols-1 justify-center items-center lg:pb-44" id="grid">
             <div class="lg:text-start sm:text-center pt-2 lg:col-span-5 mobile-d" style="height: -webkit-fill-available">
                 <div class="rate">
                     <div class="description flex justify-center">
@@ -42,287 +42,287 @@
                     </div>
                 </div>
             </div>
-            <div class="lg:pt-10 pt-10 lg:pb-10  flex justify-center lg:col-span-7 sm:col-span-1 border lg:pl-20 lg:pr-5 f-form" style="border: none;">
-                <form class="bg-white lg:p-10 md:p-0 sm:p-0 lg:w-10/12 rounded shadow-2xl pt-5" id="regForm" action="/HVAC/dist/submit-page.php">
-                <div class="tab text-white text-3xl font-bodyFont">
-                    <div class="text- text-3xl font-semibold pt-16 text-center p-5">
-                        <h1 class="pb-3 text-4xl text-gray-600">What service do you need?</h1>
-                    </div>
-                    <label class="flex justify-center items-center pt-8">
-                        <input onclick="radioClick(1)" type="radio" class="card-input-element hidden">
-                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Ducts
-                        </button>
-                    </label>
-                    <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(2)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(2)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Installation
-                        </button>
-                    </label>
-                    <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(3)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Repair
-                        </button>
-                    </label>
-                </div>
-                <div class="tab text-white text-3xl font-bodyFont">
-                    <div class="text- text-3xl font-semibold pt-16 text-center p-5">
-                        <h1 class="pb-3 text-4xl text-gray-600">What ducts service do you need?</h1>
-                    </div>
-                    <label class="flex justify-center items-center pt-8">
-                        <input onclick="radioClick(3)" type="radio" class="card-input-element hidden">
-                        <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Ducts & Vents Clean
-                        </button>
-                    </label>
-                    <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(3)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Ducts & Vents Clean
-                        </button>
-                    </label>
-                </div>
-                <div class="tab text-white text-3xl font-bodyFont">
-                    <div class="text- text-3xl font-semibold pt-16 text-center p-5">
-                        <h1 class="pb-3 text-4xl text-gray-600">What installation service do you need?</h1>
-                    </div>
-                    <div class="grid lg:grid-cols-2">
-                    <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(2)" type="radio" class="card-input-element hidden">
-                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Boiler Install
-                        </button>
-                    </label>
-                    <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(2)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Central AC Install
-                        </button>
-                    </label>
-                    </div>
-                    <div class="grid lg:grid-cols-2">
-                    <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(2)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Ductless (Mini Split) AC Install
-                        </button>
-                    </label>
-                    <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(2)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Electrical Baseboard/Wall Heater Install
-                        </button>
-                    </label>
-                    </div>
-                        <div class="grid lg:grid-cols-2">
-                    <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(2)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Furnace Heating System Install
-                        </button>
-                    </label>
-                    <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(2)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Heat Pump Install
-                        </button>
-                    </label>
+            <div class="lg:pt-10 lg:pt-10 lg:pb-10  flex justify-center lg:col-span-7 sm:col-span-1 border lg:pl-20 lg:pr-5 f-form" style="border: none;">
+                <form class="bg-white lg:p-10 md:p-0 sm:p-0 lg:w-10/12 rounded shadow-2xl pt-5" id="regForm" action="/HVAC/dist/submit-page.html">
+                    <div class="tab text-white text-3xl font-bodyFont">
+                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                            <h1 class="pb-3 text-4xl text-gray-600">What service do you need?</h1>
                         </div>
-                    <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(2)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Thermostat Install
-                        </button>
-                    </label>
-                </div>
-                <div class="tab text-white text-3xl font-bodyFont">
-                    <div class="text- text-3xl font-semibold pt-16 text-center p-5">
-                        <h1 class="pb-3 text-4xl text-gray-600">What repair service do you need?</h1>
+                        <label class="flex justify-center items-center pt-8">
+                            <input  type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                Ducts
+                            </button>
+                        </label>
+                        <label class="flex justify-center items-center pt-2">
+                            <input  type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(2)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                Installation
+                            </button>
+                        </label>
+                        <label class="flex justify-center items-center pt-2">
+                            <input  type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                Repair
+                            </button>
+                        </label>
                     </div>
-                    <div class="grid lg:grid-cols-2">
-                    <label class="flex justify-center items-center pt-3">
-                        <input onclick="radioClick(1)" type="radio" class="card-input-element hidden">
-                        <button type="button" onclick="radioClick(1)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Boiler Repair
-                        </button>
-                    </label>
-                    <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(1)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(1)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Central AC Repair
-                        </button>
-                    </label>
+                    <div class="tab text-white text-3xl font-bodyFont">
+                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                            <h1 class="pb-3 text-4xl text-gray-600">What ducts service do you need?</h1>
+                        </div>
+                        <label class="flex justify-center items-center pt-8">
+                            <input type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                Ducts & Vents Clean
+                            </button>
+                        </label>
+                        <label class="flex justify-center items-center pt-2">
+                            <input  type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(3)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                Ducts & Vents Clean
+                            </button>
+                        </label>
                     </div>
-                    <div class="grid lg:grid-cols-2">
-                    <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(1)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(1)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Ductless (Mini Split) AC Repair
-                        </button>
-                    </label>
-                    <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(1)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(1)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Electrical Baseboard/Wall Heater Repair
-                        </button>
-                    </label>
+                    <div class="tab text-white text-3xl font-bodyFont">
+                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                            <h1 class="pb-3 text-4xl text-gray-600">What installation service do you need?</h1>
+                        </div>
+                        <div class="grid lg:grid-cols-2">
+                            <label class="flex justify-center items-center pt-2">
+                                <input  type="radio" class="card-input-element hidden">
+                                <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                    Boiler Install
+                                </button>
+                            </label>
+                            <label class="flex justify-center items-center pt-2">
+                                <input  type="radio" class="card-input-element hidden" >
+                                <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                    Central AC Install
+                                </button>
+                            </label>
+                        </div>
+                        <div class="grid lg:grid-cols-2">
+                            <label class="flex justify-center items-center pt-2">
+                                <input type="radio" class="card-input-element hidden" >
+                                <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                    Ductless (Mini Split) AC Install
+                                </button>
+                            </label>
+                            <label class="flex justify-center items-center pt-2">
+                                <input  type="radio" class="card-input-element hidden" >
+                                <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                    Electrical Baseboard/Wall Heater Install
+                                </button>
+                            </label>
+                        </div>
+                        <div class="grid lg:grid-cols-2">
+                            <label class="flex justify-center items-center pt-2">
+                                <input  type="radio" class="card-input-element hidden" >
+                                <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                    Furnace Heating System Install
+                                </button>
+                            </label>
+                            <label class="flex justify-center items-center pt-2">
+                                <input  type="radio" class="card-input-element hidden" >
+                                <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                    Heat Pump Install
+                                </button>
+                            </label>
+                        </div>
+                        <label class="flex justify-center items-center pt-2">
+                            <input  type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(2)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                Thermostat Install
+                            </button>
+                        </label>
                     </div>
-                    <div class="grid lg:grid-cols-2">
-                    <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(1)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(1)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Furnace Heating System Repair
-                        </button>
-                    </label>
-                    <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(1)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(1)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Heat Pump Repair
-                        </button>
-                    </label>
+                    <div class="tab text-white text-3xl font-bodyFont">
+                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                            <h1 class="pb-3 text-4xl text-gray-600">What repair service do you need?</h1>
+                        </div>
+                        <div class="grid lg:grid-cols-2">
+                            <label class="flex justify-center items-center pt-3">
+                                <input  type="radio" class="card-input-element hidden">
+                                <button type="button" onclick="radioClick(1)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                    Boiler Repair
+                                </button>
+                            </label>
+                            <label class="flex justify-center items-center pt-2">
+                                <input  type="radio" class="card-input-element hidden" >
+                                <button type="button" onclick="radioClick(1)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                    Central AC Repair
+                                </button>
+                            </label>
+                        </div>
+                        <div class="grid lg:grid-cols-2">
+                            <label class="flex justify-center items-center pt-2">
+                                <input  type="radio" class="card-input-element hidden" >
+                                <button type="button" onclick="radioClick(1)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                    Ductless (Mini Split) AC Repair
+                                </button>
+                            </label>
+                            <label class="flex justify-center items-center pt-2">
+                                <input type="radio" class="card-input-element hidden" >
+                                <button type="button" onclick="radioClick(1)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                    Electrical Baseboard/Wall Heater Repair
+                                </button>
+                            </label>
+                        </div>
+                        <div class="grid lg:grid-cols-2">
+                            <label class="flex justify-center items-center pt-2">
+                                <input  type="radio" class="card-input-element hidden" >
+                                <button type="button" onclick="radioClick(1)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                    Furnace Heating System Repair
+                                </button>
+                            </label>
+                            <label class="flex justify-center items-center pt-2">
+                                <input type="radio" class="card-input-element hidden" >
+                                <button type="button" onclick="radioClick(1)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                    Heat Pump Repair
+                                </button>
+                            </label>
+                        </div>
+                        <label class="flex justify-center items-center pt-2">
+                            <input  type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(1)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                Window AC Unit Repair
+                            </button>
+                        </label>
                     </div>
-                    <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(1)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(1)" class="bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Window AC Unit Repair
-                        </button>
-                    </label>
-                </div>
-                <div class="tab text-white text-3xl font-bodyFont">
-                    <div class="text- text-3xl font-semibold pt-16 text-center p-5">
-                        <h1 class="pb-3 text-4xl text-gray-600">What type of property do you want a quote for?</h1>
+                    <div class="tab text-white text-3xl font-bodyFont">
+                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                            <h1 class="pb-3 text-4xl text-gray-600">What type of property do you want a quote for?</h1>
+                        </div>
+                        <label class="flex justify-center items-center pt-8">
+                            <input  type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                Home
+                            </button>
+                        </label>
+                        <label class="flex justify-center items-center pt-2">
+                            <input  type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                Business
+                            </button>
+                        </label>
                     </div>
-                    <label class="flex justify-center items-center pt-8">
-                        <input onclick="radioClick(1)" type="radio" class="card-input-element hidden">
-                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Home
-                        </button>
-                    </label>
-                    <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(1)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            Business
-                        </button>
-                    </label>
-                </div>
-                <div class="tab text-white text-3xl font-bodyFont">
-                    <div class="text- text-3xl font-semibold pt-16 text-center p-5">
-                        <h1 class="pb-3 text-4xl text-gray-600">Do you own or rent this home?</h1>
+                    <div class="tab text-white text-3xl font-bodyFont">
+                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                            <h1 class="pb-3 text-4xl text-gray-600">Do you own or rent this home?</h1>
+                        </div>
+                        <label class="flex justify-center items-center pt-8">
+                            <input type="radio" class="card-input-element hidden">
+                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                I own
+                            </button>
+                        </label>
+                        <label class="flex justify-center items-center pt-2">
+                            <input  type="radio" class="card-input-element hidden" >
+                            <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2  text-center items-center">
+                                I rent
+                            </button>
+                        </label>
                     </div>
-                    <label class="flex justify-center items-center pt-8">
-                        <input onclick="radioClick(1)" type="radio" class="card-input-element hidden">
-                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            I own
-                        </button>
-                    </label>
-                    <label class="flex justify-center items-center pt-2">
-                        <input onclick="radioClick(1)" type="radio" class="card-input-element hidden" >
-                        <button type="button" onclick="radioClick(1)" class="bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-9/12 md:w-full sm:w-full py-3 me-2 mb-2  text-center items-center">
-                            I rent
-                        </button>
-                    </label>
-                </div>
-                <div class="tab text-white text-3xl font-bodyFont">
-                    <div class="text- text-3xl font-semibold pt-16 text-center p-5">
-                        <h1 class="pb-3 text-4xl text-gray-600">Okay… Can you specify your address, please?
-                        </h1>
-                    </div>
-                    <div class="pt-10 flex justify-center">
-                        <input type="text" id="address" class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="e.g. 123 West Main Road" required />
-                    </div>
-                    <div id="address-error" class="text-center" style="font-size: 14px">
+                    <div class="tab text-white text-3xl font-bodyFont">
+                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                            <h1 class="pb-3 text-4xl text-gray-600">Okay… Can you specify your address, please?
+                            </h1>
+                        </div>
+                        <div class="pt-10 flex justify-center">
+                            <input type="text" id="address" class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white  rounded-full block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="e.g. 123 West Main Road" required />
+                        </div>
+                        <div id="address-error" class="text-center" style="font-size: 14px">
 
+                        </div>
+                        <div class="flex justify-center pt-5 items-center text-center">
+                            <button type="button" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 mt-3  text-center items-center">
+                                Next
+                            </button>
+                        </div>
                     </div>
-                    <div class="flex justify-center pt-5 items-center text-center">
-                        <button type="button" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-full sm:w-full py-3 mb-2 mt-3  text-center items-center">
-                            Next
-                        </button>
-                    </div>
-                </div>
-                <div class="tab text-white text-3xl font-bodyFont">
-                    <div class="text- text-3xl font-semibold pt-16 text-center p-5">
-                        <h1 class="pb-3 text-4xl text-gray-600">Can you add your Zip code, please?
-                        </h1>
-                    </div>
-                    <div class="pt-10 flex justify-center">
-                        <input type="number" pattern="[0-9]*" inputmode="numeric" id="zip" class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="e.g. 12345" required />
-                    </div>
-                    <div id="zip-error" class="text-center" style="font-size: 14px">
+                    <div class="tab text-white text-3xl font-bodyFont">
+                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                            <h1 class="pb-3 text-4xl text-gray-600">Can you add your Zip code, please?
+                            </h1>
+                        </div>
+                        <div class="pt-10 flex justify-center">
+                            <input type="number" pattern="[0-9]*" inputmode="numeric" id="zip" class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white  rounded-full block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="e.g. 12345" required />
+                        </div>
+                        <div id="zip-error" class="text-center" style="font-size: 14px">
 
+                        </div>
+                        <div class="flex justify-center pt-5 items-center text-center">
+                            <button type="button" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 mt-3  text-center items-center">
+                                Next
+                            </button>
+                        </div>
                     </div>
-                    <div class="flex justify-center pt-5 items-center text-center">
-                        <button type="button" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-full sm:w-full py-3 mb-2 mt-3  text-center items-center">
-                            Next
-                        </button>
-                    </div>
-                </div>
-                <div class="tab tab tab text-white text-3xl">
-                    <div class="text- text-4xl font-semibold pt-16 text-center p-5">
-                        <h1 class="pb-3 text-4xl text-gray-600 ">Great! What is your email?</h1>
-                    </div>
-                    <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
-                        <input type="tel" id="email" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="Enter email address" required />
-                    </div>
-                    <div id="email-error" class="text-center" style="font-size: 14px">
+                    <div class="tab tab tab text-white text-3xl">
+                        <div class="text- text-4xl font-semibold pt-16 text-center p-5">
+                            <h1 class="pb-3 text-4xl text-gray-600 ">Great! What is your email?</h1>
+                        </div>
+                        <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
+                            <input type="tel" id="email" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter email address" required />
+                        </div>
+                        <div id="email-error" class="text-center" style="font-size: 14px">
 
+                        </div>
+                        <div class="flex justify-center pt-5 items-center">
+                            <button type="button" onclick="nextPrev(1)" class="  bg s text-xl mt-3 gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2  text-center items-center">
+                                Next
+                            </button>
+                        </div>
                     </div>
-                    <div class="flex justify-center pt-5 items-center">
-                        <button type="button" onclick="nextPrev(1)" class="  bg s text-xl mt-3 gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-full sm:w-full py-3 mb-2  text-center items-center">
-                            Next
-                        </button>
-                    </div>
-                </div>
-                <div class="tab text-white text-4xl font-bodyFont">
-                    <div class="text- text-3xl font-semibold pt-16 text-center p-5">
-                        <h1 class="pb-3 text-4xl text-gray-600">How would you like the pros to refer to you?</h1>
-                    </div>
-                    <div class="pt-10 flex justify-center ">
-                        <input type="text" id="name" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="Enter first Name" required />
-                    </div>
-                    <div class="pt-5 flex justify-center">
-                        <input id="lname" type="text" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5 " placeholder="Enter last Name" required />
-                    </div>
-                    <div id="name-error" class="text-center" style="font-size: 14px">
+                    <div class="tab text-white text-4xl font-bodyFont">
+                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                            <h1 class="pb-3 text-4xl text-gray-600">How would you like the pros to refer to you?</h1>
+                        </div>
+                        <div class="pt-10 flex justify-center ">
+                            <input type="text" id="name" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter first Name" required />
+                        </div>
+                        <div class="pt-5 flex justify-center">
+                            <input id="lname" type="text" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-7/12 sm:w-full p-3.5 " placeholder="Enter last Name" required />
+                        </div>
+                        <div id="name-error" class="text-center" style="font-size: 14px">
 
+                        </div>
+                        <div class="pt-10 flex justify-center items-center">
+                            <button style="margin-top: 20px;" type="button" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2  text-center items-center">
+                                Next
+                            </button>
+                        </div>
                     </div>
-                    <div class="pt-10 flex justify-center items-center">
-                        <button style="margin-top: 20px;" type="button" onclick="nextPrev(1)" class="  bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-full sm:w-full py-3 mb-2  text-center items-center">
-                            Next
-                        </button>
-                    </div>
-                </div>
-                <div class="tab tab tab text-white text-3xl">
-                    <div class="text- text-3xl font-semibold pt-16 text-center p-5">
-                        <h1 class="pb-3 text-4xl text-gray-600 ">Wonderful! We are ready to connect you with a contractor
-                            Please enter your phone number</h1>
-                    </div>
-                    <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
-                        <input type="tel" id="phone" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-full sm:w-full p-3.5" placeholder="Enter phone number" required />
-                    </div>
-                    <div id="phone-error" class="text-center" style="font-size: 14px">
+                    <div class="tab tab tab text-white text-3xl">
+                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                            <h1 class="pb-3 text-4xl text-gray-600 ">Wonderful! We are ready to connect you with a contractor
+                                Please enter your phone number</h1>
+                        </div>
+                        <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
+                            <input type="tel" id="phone" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white  rounded-full block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter phone number" required />
+                        </div>
+                        <div id="phone-error" class="text-center" style="font-size: 14px">
 
+                        </div>
+                        <div class="flex justify-center pt-5 items-center">
+                            <button type="button" onclick="nextPrev(1)" class=" mt-3 bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2  text-center items-center">
+                                Submit
+                            </button>
+                        </div>
                     </div>
-                    <div class="flex justify-center pt-5 items-center">
-                        <button type="button" onclick="nextPrev(1)" class=" mt-3 bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90  rounded-full p-4 lg:w-1/3 md:w-full sm:w-full py-3 mb-2  text-center items-center">
-                            Submit
-                        </button>
+                    <div style="text-align:center;margin-top:40px;">
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
                     </div>
-                </div>
-                <div style="text-align:center;margin-top:40px;">
-                    <span class="step"></span>
-                    <span class="step"></span>
-                    <span class="step"></span>
-                    <span class="step"></span>
-                    <span class="step"></span>
-                    <span class="step"></span>
-                    <span class="step"></span>
-                    <span class="step"></span>
-                    <span class="step"></span>
-                    <span class="step"></span>
-                    <span class="step"></span>
-                </div>
                     <div style="overflow:auto" class="flex justify-center" >
                         <div style="float:right;">
                             <button class="text-xl text-gray-600 font-bold" type="button" id="prevBtn" onclick="back()">← Back</button>
@@ -346,12 +346,14 @@
                             <li>1.9 million quotes in 10 years</li>
                             <li>Save up to £500 on installation</li>
                         </ul>
-                        <div class="lg:mt-10 lg:w-9/12 sm:w-full flex justify-center py-5 eng-div" style="background: #005a87;border-radius: 10px">
-                            <div>
-                                <h1 class="text-white font-semibold ">
-                                    The smarter way to find approved heating engineers
-                                </h1>
-                                <h4 class="text-white font-semibold">
+                        <div class="lg:mt-10 lg:w-9/12 md:w-full sm:w-full flex justify-center py-5 eng-div">
+                            <div class="lg:w-full md:w-9/12 py-3" style="background: #005a87;border-radius: 10px;">
+                                <div class="md:flex justify-center ">
+                                    <h1 class="text-white font-semibold ">
+                                        The smarter way to find approved heating engineers
+                                    </h1>
+                                </div>
+                                <h4 class="text-center text-white font-semibold">
                                     Excellent 4.8 out of 5
                                 </h4>
                             </div>
@@ -359,9 +361,9 @@
                     </div>
                 </div>
             </div>
+        </div>
     </div>
-</div>
-<script src="/HVAC/dist/script.js"></script>
+    <script src="/HVAC/dist/script.js"></script>
 </body>
 
 </html>
