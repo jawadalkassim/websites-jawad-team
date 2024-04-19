@@ -41,7 +41,7 @@
                     </div>
                 </div>
             </div>
-            <div class=" lg:pt-10 lg:pt-10 lg:pb-10  flex justify-center lg:col-span-7 sm:col-span-1 border lg:pl-20 lg:pr-5 f-form" style="border: none;">
+            <div class=" lg:pt-10 lg:pt-10 lg:pb-10  flex justify-center lg:col-span-7 sm:col-span-1 border f-form" style="border: none;">
                 <form class="bg-white lg:p-10 md:p-0 sm:p-0 lg:w-10/12 rounded shadow-2xl pt-5" id="regForm" action="/Landscaping/dist/submit-page.php">
                 <div class="tab text-white text-3xl font-bodyFont">
                     <div class="text- text-3xl font-semibold pt-16 text-center p-5">
