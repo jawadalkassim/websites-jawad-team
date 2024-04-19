@@ -271,6 +271,12 @@ hr.style-1 {
     }
 }
 @media (min-width:1020px) and (max-width:1025px) {
+    .s2{
+        padding-top: 0px !important;
+    }
+    .f-form{
+        padding: 0px !important;
+    }
     .eng-div div{
         width: 70%;
     }
