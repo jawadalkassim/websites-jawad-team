@@ -1060,6 +1060,14 @@ hr.style-1 {
 }
 
 @media (min-width:1020px) and (max-width:1025px) {
+  .s2{
+    padding-top: 0px !important;
+  }
+
+  .f-form{
+    padding: 0px !important;
+  }
+
   .eng-div div{
     width: 70%;
   }
@@ -1507,14 +1515,6 @@ hr.style-1 {
 
   .lg\:pb-44{
     padding-bottom: 11rem;
-  }
-
-  .lg\:pl-20{
-    padding-left: 5rem;
-  }
-
-  .lg\:pr-5{
-    padding-right: 1.25rem;
   }
 
   .lg\:pt-10{
