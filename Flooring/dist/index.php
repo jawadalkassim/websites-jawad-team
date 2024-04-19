@@ -42,7 +42,7 @@
                     </div>
                 </div>
             </div>
-            <div class="lg:pt-10 lg:pt-10 lg:pb-10  flex justify-center lg:col-span-7 sm:col-span-1 border lg:pl-20 lg:pr-5 f-form" style="border: none;">
+            <div class="lg:pt-10 lg:pt-10 lg:pb-10  flex justify-center lg:col-span-7 sm:col-span-1 border f-form" style="border: none;">
                 <form class="bg-white lg:p-10 md:p-0 sm:p-0 lg:w-10/12 rounded shadow-2xl pt-5" id="regForm" action="/Flooring/dist/submit-page.php">
                     <div class="tab text-white text-3xl font-bodyFont">
                         <div class="text- text-3xl font-semibold pt-16 text-center p-5">
@@ -307,7 +307,7 @@
                             <li>1.9 million quotes in 10 years</li>
                             <li>Save up to £500 on installation</li>
                         </ul>
-                        <div class="lg:mt-10 lg:w-9/12 md:w-7/12 sm:w-full flex justify-center py-5 eng-div">
+                        <div class="lg:mt-10 lg:w-9/12 md:w-full sm:w-full flex justify-center py-5 eng-div">
                             <div class="lg:w-full md:w-9/12 py-3" style="background: #005a87;border-radius: 10px;">
                                 <div class="md:flex justify-center ">
                                     <h1 class="text-white font-semibold ">
