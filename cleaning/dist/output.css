@@ -1055,11 +1055,20 @@ hr.style-1 {
 
   .brand{
     padding-top: 10px;
-    width: 20%;
+    width: 13%;
   }
 }
 
 @media (min-width:1020px) and (max-width:1025px) {
+  .brand{
+    width: 12%;
+  }
+
+  ul li {
+    text-align: left;
+    padding-left: 31% !important;
+  }
+
   .s2{
     padding-top: 0px !important;
   }

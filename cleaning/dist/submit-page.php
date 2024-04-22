@@ -7,12 +7,12 @@
     <title>Submit</title>
     <link rel="stylesheet" href="/Cleaning/dist/output.css">
 </head>
-<body>
+<body style="background-image: radial-gradient(ellipse at center,#1e5799 0,#013652 63%,#002031 100%)">
 
 <nav class="text-center " style="background: white">
     <div class="grid lg:grid-cols-2 md:grid-cols-1 items-center ">
         <div class="flex justify-center items-center p-2 ">
-            <img src="/Cleaning/dist/img/logo.png" class="w-10 brand">
+            <img src="/Cleaning/dist/img/logo.svg" class="w-10 brand">
         </div>
         <a href="" class="nav-link pt-3 text-primaryColor decoration-primaryColor font-bold text-xl block lg:text-end sm:text-center md:text-center lg:mx-40 md:mx-0 sm:mx-0 pb-3 lg:w-1/2 sm:w-full">Get Free Quotes</a>
     </div>
@@ -28,7 +28,7 @@
         <div class="text-center text-white font-bold flex justify-center items-center gap-2" style="padding-bottom: 0px"><span class=" icon w-8 flex justify-center items-center"><img src="/Cleaning/dist/img/check.png" style="display: inline"></span><h1 class="flex justify-start items-center">Gas Safe registered engineers</h1></div>
     </div>
 
-<div style="background-image: radial-gradient(ellipse at center,#1e5799 0,#013652 63%,#002031 100%)">
+<div>
     <div class="text-center text-white text-4xl font-bold lg:py-80 thank">Thank you for taking the time to complete our survey.</div>
 </div>
 
