@@ -170,7 +170,7 @@ hr.style-1 {
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .brand{
-    width: 13%;
+    width: 7%;
 }
 
 @-webkit-keyframes fadeInCheckbox {
@@ -215,7 +215,7 @@ hr.style-1 {
 }
 .title{
     margin-top: 25px;
-    width: 85%;
+    width: 75%;
     border-radius: 10px;
     padding: 10px !important;
 }
@@ -267,10 +267,17 @@ hr.style-1 {
     }
     .brand{
         padding-top: 10px;
-        width: 30%;
+        width: 15%;
     }
 }
 @media (min-width:1020px) and (max-width:1025px) {
+    .brand{
+        width: 10%;
+    }
+    ul li {
+        text-align: left;
+        padding-left: 31% !important;
+    }
     .s2{
         padding-top: 0px !important;
     }
@@ -412,7 +419,7 @@ hr.style-1 {
     }
     .brand{
         width: 20% !important;
-        max-width: 120px;
+        max-width: 80px;
 
     }
 
