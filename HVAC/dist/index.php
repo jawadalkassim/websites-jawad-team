@@ -15,7 +15,7 @@
 <nav class="text-center " style="background: white">
     <div class="grid lg:grid-cols-2 md:grid-cols-1 items-center ">
         <div class="flex justify-center items-center p-2 ">
-            <img src="/HVAC/dist/img/logo.png" class="w-1/12 brand">
+            <img src="/HVAC/dist/img/logo.svg" class="w-12 brand">
         </div>
         <a href="" class="nav-link pt-3 text-primaryColor decoration-primaryColor font-bold text-xl block lg:text-end sm:text-center md:text-center lg:mx-40 md:mx-0 sm:mx-0 pb-3 lg:w-1/2 sm:w-full">Get Free Quotes</a>
     </div>
@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="lg:pt-10 lg:pt-10 lg:pb-10  flex justify-center lg:col-span-7 sm:col-span-1 border f-form" style="border: none;">
-                <form class="bg-white lg:p-10 md:p-0 sm:p-0 lg:w-10/12 rounded shadow-2xl pt-5" id="regForm" action="/HVAC/dist/submit-page.html">
+                <form class="bg-white lg:p-10 md:p-0 sm:p-0 lg:w-10/12 rounded shadow-2xl pt-5" id="regForm" action="/HVAC/dist/submit-page.php">
                     <div class="tab text-white text-3xl font-bodyFont">
                         <div class="text- text-3xl font-semibold pt-16 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600">What service do you need?</h1>
@@ -243,7 +243,7 @@
                     </div>
                     <div class="tab text-white text-3xl font-bodyFont">
                         <div class="text- text-3xl font-semibold pt-16 text-center p-5">
-                            <h1 class="pb-3 text-4xl text-gray-600">Can you add your Zip code, please?
+                            <h1 class="pb-3 text-4xl text-gray-600">Can you add your zip code, please?
                             </h1>
                         </div>
                         <div class="pt-10 flex justify-center">

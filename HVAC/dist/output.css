@@ -594,6 +594,18 @@ video {
   width: 100%;
 }
 
+.w-1{
+  width: 0.25rem;
+}
+
+.w-10{
+  width: 2.5rem;
+}
+
+.w-12{
+  width: 3rem;
+}
+
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -1065,6 +1077,11 @@ hr.style-1 {
 }
 
 @media (min-width:1020px) and (max-width:1025px) {
+  ul li {
+    text-align: left;
+    padding-left: 31% !important;
+  }
+
   .s2{
     padding-top: 0px !important;
   }
@@ -1240,7 +1257,7 @@ hr.style-1 {
 
   .brand{
     width: 20% !important;
-    max-width: 110px;
+    max-width: 75px;
   }
 }
 
