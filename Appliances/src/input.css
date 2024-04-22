@@ -264,10 +264,17 @@ hr.style-1 {
     }
     .brand{
         padding-top: 10px;
-        width: 40%;
+        width: 20%;
     }
 }
 @media (min-width:1020px) and (max-width:1025px) {
+    .brand{
+        width: 14%;
+    }
+    ul li {
+        text-align: left;
+        padding-left: 31% !important;
+    }
     .f-form{
         padding-top: 0px !important;
         padding-bottom: 0px !important;
@@ -410,7 +417,7 @@ hr.style-1 {
     }
     .brand{
         width:30% !important;
-        max-width: 150px;
+        max-width: 90px;
     }
 
 }
