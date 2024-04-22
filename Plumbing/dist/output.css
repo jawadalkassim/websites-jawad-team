@@ -582,6 +582,10 @@ video {
   display: none;
 }
 
+.w-14{
+  width: 3.5rem;
+}
+
 .w-2\/12{
   width: 16.666667%;
 }
@@ -1055,11 +1059,20 @@ hr.style-1 {
 
   .brand{
     padding-top: 10px;
-    width: 30%;
+    width: 15%;
   }
 }
 
 @media (min-width:1020px) and (max-width:1025px) {
+  .brand{
+    width: 10%;
+  }
+
+  ul li {
+    text-align: left;
+    padding-left: 31% !important;
+  }
+
   .s2{
     padding-top: 0px !important;
   }
@@ -1235,7 +1248,7 @@ hr.style-1 {
 
   .brand{
     width: 30% !important;
-    max-width: 150px;
+    max-width: 70px;
   }
 }
 
