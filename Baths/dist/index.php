@@ -47,7 +47,7 @@
                 <form class="bg-white lg:p-10 md:p-0 sm:p-0 lg:w-10/12 rounded shadow-2xl pt-5" id="regForm" action="/Baths/dist/submit-page.php">
                 <div class="tab text-white text-3xl font-bodyFont">
                     <div class="text- text-3xl font-semibold pt-16 text-center p-5">
-                        <h1 class="pb-3 text-4xl text-gray-600">Can you add your Zip code, please?
+                        <h1 class="pb-3 text-4xl text-gray-600">Can you add your zip code, please?
                         </h1>
                     </div>
                     <div class="pt-10 flex justify-center">
@@ -67,32 +67,32 @@
                         <h1 class="pb-3 text-4xl text-gray-600">What are your bathroom renovation plans?</h1>
                     </div>
                     <div class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 flex mx-0 justify-evenly mt-2">
-                        <label class="card-radio-btn flex justify-center" onclick="nextPrev(1)">
+                        <label class="card-radio-btn flex justify-center" >
                             <input type="radio" class="card-input-element hidden">
-                            <div class="card card-body mx-0">
+                            <div class="card card-body mx-0" onclick="nextPrev(1)">
                                 <div type="button"  class="content_head flex justify-center"><img src="/Baths/dist/img/tubToshowe.png"></div>
                                 <div id="replacement" class="content_sub font-bold text-4xl" style="color: #444 !important;">Tub to Shower Conversion</div>
                             </div>
                         </label>
-                        <label class="card-radio-btn flex justify-center" onclick="nextPrev(1)">
+                        <label class="card-radio-btn flex justify-center" >
                             <input  type="radio" class="card-input-element hidden">
-                            <div class="card card-body mx-0">
+                            <div class="card card-body mx-0" onclick="nextPrev(1)">
                                 <div type="button"  class="content_head flex justify-center"><img src="/Baths/dist/img/shower_installation.png"></div>
                                 <div id="repair" class="content_sub font-bold text-4xl" style="color: #444 !important;">Shower Installation</div>
                             </div>
                         </label>
                     </div>
                     <div class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 flex mx-0 justify-evenly mt-1">
-                        <label class="card-radio-btn flex justify-center" onclick="nextPrev(1)">
+                        <label class="card-radio-btn flex justify-center" >
                             <input type="radio" class="card-input-element hidden">
-                            <div class="card card-body mx-0">
+                            <div class="card card-body mx-0" onclick="nextPrev(1)">
                                 <div type="button" class="content_head flex justify-center"><img src="/Baths/dist/img/bathroom_remodeling.png"></div>
                                 <div id="j" class="content_sub font-bold text-4xl" style="color: #444 !important;">Bathroom Remodeling</div>
                             </div>
                         </label>
-                        <label class="card-radio-btn flex justify-center" onclick="nextPrev(1)">
+                        <label class="card-radio-btn flex justify-center" >
                             <input  type="radio" class="card-input-element hidden">
-                            <div class="card card-body mx-0">
+                            <div class="card card-body mx-0" onclick="nextPrev(1)">
                                 <div type="button" class="content_head flex justify-center"><img src="/Baths/dist/img/fixtures_upgrades.png"></div>
                                 <div id="installation" class="content_sub font-bold text-4xl" style="color: #444 !important;">Fixtures Upgrades</div>
                             </div>

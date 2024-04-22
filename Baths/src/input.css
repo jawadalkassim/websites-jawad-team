@@ -270,6 +270,16 @@ hr.style-1 {
     }
 }
 @media (min-width:1020px) and (max-width:1025px) {
+    .brand{
+        width: 20%;
+    }
+    .s2{
+        padding-top: 0px !important;
+    }
+    ul li {
+        text-align: left;
+        padding-left: 31% !important;
+    }
     .f-form{
         padding: 0px !important;
     }
