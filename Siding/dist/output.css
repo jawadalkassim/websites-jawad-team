@@ -884,7 +884,7 @@ hr.style-1 {
 }
 
 .brand{
-  width: 12%;
+  width: 8%;
 }
 
 .mt_2 {
@@ -1059,11 +1059,16 @@ hr.style-1 {
 
   .brand{
     padding-top: 10px;
-    width: 30%;
+    width: 20%;
   }
 }
 
 @media (min-width:1020px) and (max-width:1025px) {
+  ul li {
+    text-align: left;
+    padding-left: 31% !important;
+  }
+
   .s2{
     padding-top: 0px !important;
   }
@@ -1073,7 +1078,7 @@ hr.style-1 {
   }
 
   .brand{
-    width: 20%;
+    width: 10%;
   }
 
   .eng-div div{
@@ -1243,7 +1248,7 @@ hr.style-1 {
 
   .brand{
     width: 30% !important;
-    max-width: 130px;
+    max-width: 80px;
   }
 }
 
