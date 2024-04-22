@@ -591,10 +591,6 @@ video {
   display: none;
 }
 
-.w-1\/12{
-  width: 8.333333%;
-}
-
 .w-8{
   width: 2rem;
 }
@@ -970,7 +966,7 @@ hr.style-1 {
 }
 
 .brand{
-  width: 10%;
+  width: 6%;
 }
 
 @keyframes fadeInCheckbox {
@@ -1072,13 +1068,18 @@ hr.style-1 {
 
   .brand{
     padding-top: 10px;
-    width: 30%;
+    width: 14%;
   }
 }
 
 @media (min-width:1020px) and (max-width:1025px) {
+  ul li {
+    text-align: left;
+    padding-left: 31% !important;
+  }
+
   .brand{
-    width: 20%;
+    width: 10%;
   }
 
   .s2{
@@ -1260,8 +1261,8 @@ hr.style-1 {
   }
 
   .brand{
-    width: 30% !important;
-    max-width: 120px;
+    width: 20% !important;
+    max-width: 80px;
   }
 }
 
