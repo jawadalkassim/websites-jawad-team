@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Solar</title>
-    <link href="/Solar/dist/output.css" rel="stylesheet" />
+    <link href="/Solar_2/dist/output.css" rel="stylesheet" />
   </head>
 
   <body class="font-bodyFont">
     <nav class="text-center" style="background: white">
       <div class="grid lg:grid-cols-2 md:grid-cols-1 items-center">
         <div class="flex justify-center items-center p-2">
-          <img src="/Solar/dist/img/logo.png" class="w-1/12 brand" />
+          <img src="/Solar_2/dist/img/logo.png" class="w-1/12 brand" />
         </div>
         <a
           href=""
@@ -30,7 +30,7 @@
         class="text-center text-white font-bold flex justify-center items-center"
       >
         <span class="pr-2 icon w-8 flex justify-center items-center"
-          ><img src="/Solar/dist/img/chat.png" style="display: inline"
+          ><img src="/Solar_2/dist/img/chat.png" style="display: inline"
         /></span>
         <h1 class="flex justify-center items-center">
           Get the best quotes, fast!
@@ -40,7 +40,7 @@
         class="text-center text-white font-bold flex justify-center items-center"
       >
         <span class="pr-2 icon w-8 flex justify-center items-center"
-          ><img src="/Solar/dist/img/location.png" style="display: inline" />
+          ><img src="/Solar_2/dist/img/location.png" style="display: inline" />
         </span>
         <h1 class="flex justify-center items-center">
           Over 5,000 engineers across the UK
@@ -50,7 +50,7 @@
         class="text-center text-white font-bold flex justify-center items-center"
       >
         <span class="pr-2 icon w-8 flex justify-center items-center"
-          ><img src="/Solar/dist/img/check.png" style="display: inline"
+          ><img src="/Solar_2/dist/img/check.png" style="display: inline"
         /></span>
         <h1 class="flex justify-center items-center">
           Gas Safe registered engineers
@@ -66,7 +66,7 @@
           class="text-center text-white font-bold flex justify-center items-center gap-2"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="/Solar/dist/img/chat.png" style="display: inline"
+            ><img src="/Solar_2/dist/img/chat.png" style="display: inline"
           /></span>
           <h1 class="flex justify-start items-center">
             Get the best quotes, fast!
@@ -76,7 +76,7 @@
           class="text-center text-white font-bold flex justify-center items-center gap-2"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="/Solar/dist/img/location.png" style="display: inline" />
+            ><img src="/Solar_2/dist/img/location.png" style="display: inline" />
           </span>
           <h1 class="flex justify-start items-center">
             Over 5,000 engineers across the US
@@ -87,7 +87,7 @@
           style="padding-bottom: 0px"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="/Solar/dist/img/check.png" style="display: inline"
+            ><img src="/Solar_2/dist/img/check.png" style="display: inline"
           /></span>
           <h1 class="flex justify-start items-center">
             Gas Safe registered engineers
@@ -127,7 +127,7 @@
           <form
             class="bg-white lg:p-10 md:p-0 sm:p-0 lg:w-10/12 rounded shadow-2xl pt-5"
             id="regForm"
-            action="/Solar/dist/submit-page.php"
+            action="/Solar_2/dist/submit-page.php"
           >
             <div class="tab text-white text-3xl font-bodyFont">
               <div class="text- text-3xl font-semibold pt-16 text-center p-5">
@@ -611,6 +611,6 @@
         </div>
       </div>
     </div>
-    <script src="/Solar/dist/script.js"></script>
+    <script src="/Solar_2/dist/script.js"></script>
   </body>
 </html>
