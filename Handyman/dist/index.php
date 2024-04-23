@@ -15,7 +15,7 @@
 <nav class="text-center " style="background: white">
     <div class="grid lg:grid-cols-2 md:grid-cols-1 items-center ">
         <div class="flex justify-center items-center p-2 ">
-            <img src="/Handyman/dist/img/logo.png" class="w-1/12 brand">
+            <img src="/Handyman/dist/img/logo.svg" class="w-14 brand">
         </div>
         <a href="" class="nav-link pt-3 text-primaryColor decoration-primaryColor font-bold text-xl block lg:text-end sm:text-center md:text-center lg:mx-40 md:mx-0 sm:mx-0 pb-3 lg:w-1/2 sm:w-full">Get Free Quotes</a>
     </div>
@@ -138,7 +138,7 @@
                 </div>
                 <div class="tab text-white text-3xl font-bodyFont">
                     <div class="text- text-3xl font-semibold pt-16 text-center p-5">
-                        <h1 class="pb-3 text-4xl text-gray-600">Can you add your Zip code, please?
+                        <h1 class="pb-3 text-4xl text-gray-600">Can you add your zip code, please?
                         </h1>
                     </div>
                     <div class="pt-10 flex justify-center">
