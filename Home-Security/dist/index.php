@@ -204,29 +204,48 @@
                     </div>
                 </form>
             </div>
-            <div class="lg:text-start lg:hidden md:hidden sm:text-center lg:pt-10 lg:col-span-12 s2 flex justify-center" style="height: -webkit-fill-available">
+            <div class="lg:text-start sm:text-center lg:col-span-12 s2 flex justify-center" style="height: -webkit-fill-available">
                 <div class="rate">
                     <div class="description pb-14 w-full" >
-
-                        <h3 class=" text-xl font-bold pb-3 pt-1 text-[#4c4b4b]">
-                            by quickly comparing 3 FREE quotes
-                        </h3>
-                        <ul class="mt-8 text-[#4c4b4b]  text-xl font-semibold" style="list-style: circle;list-style-position: inside">
+                        <ul class="mt-8 text-[#4c4b4b]  text-xl font-semibold flex justify-between gap-8" style="list-style: circle;list-style-position: inside">
+                            <li>Next day installation</li>
+                            <li>Quotes from local engineers</li>
+                        </ul>
+                        <ul class="mt-8 text-[#4c4b4b]  text-xl font-semibold flex justify-between gap-8" style="list-style: circle;list-style-position: inside">
+                            <li>1.9 million quotes in 10 years</li>
+                            <li>Save up to £500 on installation</li>
+                        </ul>
+                        <div class="lg:mt-10 md:w-full sm:w-full flex justify-center py-5 eng-div ">
+                            <div class=" md:w-9/12 py-3" style="background:#6ab06d;border-radius: 10px;">
+                                <div class="md:flex justify-center ">
+                                    <h1 class="text-white font-semibold text-xl">
+                                        The smarter way to find approved heating engineers
+                                    </h1>
+                                </div>
+                                <h4 class="text-center text-xl text-white font-semibold">
+                                    Excellent 4.8 out of 5
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:text-start sm:text-center lg:pt-10 lg:col-span-5 s3" style="height: -webkit-fill-available">
+                <div class="rate-mobile">
+                    <div class="description-mobile pb-14">
+                        <ul class="mt-8 text-white text-xl font-semibold" style="list-style: circle;list-style-position: inside">
                             <li>Next day installation</li>
                             <li>Quotes from local engineers</li>
                             <li>1.9 million quotes in 10 years</li>
                             <li>Save up to £500 on installation</li>
                         </ul>
-                        <div class="lg:mt-10 lg:w-9/12 md:w-full sm:w-full flex justify-center py-5 eng-div">
-                            <div class="lg:w-full md:w-9/12 py-3" style="background:#0d8155;border-radius: 10px;">
+                        <div class="lg:mt-10 lg:w-9/12 md:w-full sm:w-full flex justify-center py-5 eng-div-mobile">
+                            <div class="lg:w-full md:w-9/12 py-3" style="background: #6ab06d;border-radius: 10px;">
                                 <div class="md:flex justify-center ">
                                     <h1 class="text-white font-semibold ">
                                         The smarter way to find approved heating engineers
                                     </h1>
                                 </div>
-                                <h4 class="text-center text-white font-semibold">
-                                    Excellent 4.8 out of 5
-                                </h4>
                             </div>
                         </div>
                     </div>
