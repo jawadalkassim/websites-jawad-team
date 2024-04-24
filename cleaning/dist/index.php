@@ -15,37 +15,34 @@
 <nav class="text-center " style="background: white">
     <div class="grid lg:grid-cols-2 md:grid-cols-1 items-center ">
         <div class="flex justify-center items-center p-2 ">
-            <img src="/Cleaning/dist/img/logo.svg" class="w-10 brand">
+            <img src="/Cleaning/dist/img/logo.svg" class="w-12 brand">
         </div>
         <a href="" class="nav-link pt-3 text-primaryColor decoration-primaryColor font-bold text-xl block lg:text-end sm:text-center md:text-center lg:mx-40 md:mx-0 sm:mx-0 pb-3 lg:w-1/2 sm:w-full">Get Free Quotes</a>
     </div>
 </nav>
-<div class=" w-full grid grid-cols-3 p-3 justify-center shadow list-bar" style="background: #065c8b">
+<div class=" w-full grid grid-cols-3 p-3 justify-center shadow list-bar" style="background: #6ab06d">
     <div class="text-center text-white font-bold flex justify-center items-center"><span class="pr-2 icon w-8 flex justify-center items-center"><img src="/Cleaning/dist/img/chat.png" style="display: inline"></span><h1 class="flex justify-center items-center">Get the best quotes, fast!</h1></div>
     <div class="text-center text-white font-bold flex justify-center items-center"><span class="pr-2 icon w-8 flex justify-center items-center"><img src="/Cleaning/dist/img/location.png" style="display: inline"> </span><h1 class="flex justify-center items-center">Over 5,000 engineers across the UK</h1></div>
     <div class="text-center text-white font-bold flex justify-center items-center"><span class="pr-2 icon w-8 flex justify-center items-center"><img src="/Cleaning/dist/img/check.png" style="display: inline"></span><h1 class="flex justify-center items-center">Gas Safe registered engineers</h1></div>
 </div>
 <div>
-    <div class=" w-full grid grid-cols-3 p-3 justify-center shadow list-bar-mobile" style="background: #065c8b">
+    <div class=" w-full grid grid-cols-3 p-3 justify-center shadow list-bar-mobile" style="background: #6ab06d">
         <div class="text-center text-white font-bold flex justify-center items-center gap-2"><span class=" icon w-8 flex justify-center items-center"><img src="/Cleaning/dist/img/chat.png" style="display: inline"></span><h1 class="flex justify-start items-center">Get the best quotes, fast!</h1></div>
         <div class="text-center text-white font-bold flex justify-center items-center gap-2 "><span class=" icon w-8 flex justify-center items-center"><img src="/Cleaning/dist/img/location.png" style="display: inline"> </span><h1 class="flex justify-start items-center" >Over 5,000 engineers across the US</h1></div>
         <div class="text-center text-white font-bold flex justify-center items-center gap-2" style="padding-bottom: 0px"><span class=" icon w-8 flex justify-center items-center"><img src="/Cleaning/dist/img/check.png" style="display: inline"></span><h1 class="flex justify-start items-center">Gas Safe registered engineers</h1></div>
     </div>
-    <div style="background-image: radial-gradient(ellipse at center,#1e5799 0,#013652 63%,#002031 100%);padding-bottom: 400px">
-        <div  class="grid lg:grid-cols-12 md:grid-cols-1  sm:grid-cols-1 justify-center items-center lg:pb-44" id="grid">
-            <div class="lg:text-start sm:text-center pt-2 lg:col-span-5 mobile-d" style="height: -webkit-fill-available">
-                <div class="rate">
-                    <div class="description flex justify-center">
-                        <h2 class="text-5xl text-white font-bold bg-secondaryColor title"  style="line-height: 1.2;padding: 10px;font-size: 25px; border-radius: 10px;" >
-                            Get your cleaning deal
-                        </h2>
-                    </div>
-                </div>
-            </div>
-            <div class="lg:pt-10 lg:pt-10 lg:pb-10  flex justify-center lg:col-span-7 sm:col-span-1 border f-form" style="border: none;">
-                <form class="bg-white lg:p-10 md:p-0 sm:p-0 lg:w-10/12 rounded shadow-2xl pt-5" id="regForm" action="/Cleaning/dist/submit-page.php">
+    <h3 style="background-color: #038b570f; " class="text-center text-[55px] max-[360px]:text-[25px] max-[480px]:text-[30px] font-bold text-secondaryColor pt-3 px-3 max-[480px]:pt-4 w-full">
+        Get your cleaning deal
+    </h3>
+    <h3 style="background-color: #038b570f; " class="text-gray-600 text-center text-[22px] max-[240px]:text-[15px] max-[480px]:text-[15px] font-bold pt-2 px-3 max-[480px]:py-4 w-full">
+        by quickly comparing 3 FREE quotes
+    </h3>
+    <div  style="background-color: #038b570f;padding-bottom: 400px">
+        <div  class="grid md:grid-cols-1  sm:grid-cols-1 justify-center items-center lg:pb-44" id="grid">
+            <div class="lg:pb-10  flex justify-center lg:col-span-7 sm:col-span-1 border f-form" style="border: none;">
+                <form class="bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-2xl pt-2" id="regForm" action="/Cleaning/dist/submit-page.php">
                     <div class="tab text-white text-3xl font-bodyFont">
-                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                        <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600">What service do you need?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
@@ -72,7 +69,7 @@
 
                     </div>
                     <div class="tab text-white text-3xl font-bodyFont">
-                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                        <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600">What maid service do you need?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
@@ -115,7 +112,7 @@
                     </div>
 
                     <div class="tab text-white text-3xl font-bodyFont">
-                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                        <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600">What type of property do you want a quote for?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
@@ -133,7 +130,7 @@
                     </div>
 
                     <div class="tab text-white text-3xl font-bodyFont">
-                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                        <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600">Do you own or rent this home?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
@@ -150,7 +147,7 @@
                         </label>
                     </div>
                     <div class="tab text-white text-3xl font-bodyFont">
-                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                        <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600">Okay… Can you specify your address, please?
                             </h1>
                         </div>
@@ -168,7 +165,7 @@
                         </div>
                     </div>
                     <div class="tab text-white text-3xl font-bodyFont">
-                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                        <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600">Can you add your zip code, please?
                             </h1>
                         </div>
@@ -189,7 +186,7 @@
 
 
                     <div class="tab tab tab text-white text-3xl">
-                        <div class="text- text-4xl font-semibold pt-16 text-center p-5">
+                        <div class="text- text-4xl font-semibold pt-5 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600 ">Great! What is your email?</h1>
                         </div>
                         <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
@@ -206,7 +203,7 @@
                     </div>
 
                     <div class="tab text-white text-4xl font-bodyFont">
-                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                        <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600">What is your name?</h1>
                         </div>
                         <div class="pt-10 flex justify-center ">
@@ -226,7 +223,7 @@
                     </div>
 
                     <div class="tab tab tab text-white text-3xl">
-                        <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                        <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600 ">Wonderful! We are ready to connect you with a contractor
                                 Please enter your phone number</h1>
                         </div>
@@ -262,30 +259,25 @@
                     </div>
                 </form>
             </div>
-            <div class="lg:text-start sm:text-center lg:pt-10 lg:col-span-5 s2" style="height: -webkit-fill-available">
+            <div class="lg:text-start sm:text-center lg:col-span-12 s2 flex justify-center" style="height: -webkit-fill-available">
                 <div class="rate">
-                    <div class="description pb-14">
-                        <h2 class="text-5xl text-white font-bold bg-secondaryColor title"  style="line-height: 1.2;padding: 5px" >
-                            Get your cleaning deal
-                        </h2>
-
-                        <h3 class="text-xl text-white font-bold pb-3 pt-1">
-                            by quickly comparing 3 FREE quotes
-                        </h3>
-                        <ul class="mt-8 text-white text-xl font-semibold" style="list-style: circle;list-style-position: inside">
+                    <div class="description pb-14 w-full" >
+                        <ul class="mt-8 text-[#4c4b4b]  text-xl font-semibold flex justify-between gap-8" style="list-style: circle;list-style-position: inside">
                             <li>Next day installation</li>
                             <li>Quotes from local engineers</li>
+                        </ul>
+                        <ul class="mt-8 text-[#4c4b4b]  text-xl font-semibold flex justify-between gap-8" style="list-style: circle;list-style-position: inside">
                             <li>1.9 million quotes in 10 years</li>
                             <li>Save up to £500 on installation</li>
                         </ul>
-                        <div class="lg:mt-10 lg:w-9/12 md:w-full sm:w-full flex justify-center py-5 eng-div">
-                            <div class="lg:w-full md:w-9/12 py-3" style="background: #005a87;border-radius: 10px;">
+                        <div class="lg:mt-10 md:w-full sm:w-full flex justify-center py-5 eng-div ">
+                            <div class=" md:w-9/12 py-3" style="background:#6ab06d;border-radius: 10px;">
                                 <div class="md:flex justify-center ">
-                                    <h1 class="text-white font-semibold ">
+                                    <h1 class="text-white font-semibold text-xl">
                                         The smarter way to find approved heating engineers
                                     </h1>
                                 </div>
-                                <h4 class="text-center text-white font-semibold">
+                                <h4 class="text-center text-xl text-white font-semibold">
                                     Excellent 4.8 out of 5
                                 </h4>
                             </div>
@@ -293,9 +285,30 @@
                     </div>
                 </div>
             </div>
-           </div>
+            <div class="lg:text-start sm:text-center lg:pt-10 lg:col-span-5 s3" style="height: -webkit-fill-available">
+                <div class="rate-mobile">
+                    <div class="description-mobile pb-14">
+                        <ul class="mt-8 text-white text-xl font-semibold" style="list-style: circle;list-style-position: inside">
+                            <li>Next day installation</li>
+                            <li>Quotes from local engineers</li>
+                            <li>1.9 million quotes in 10 years</li>
+                            <li>Save up to £500 on installation</li>
+                        </ul>
+                        <div class="lg:mt-10 lg:w-9/12 md:w-full sm:w-full flex justify-center py-5 eng-div-mobile">
+                            <div class="lg:w-full md:w-9/12 py-3" style="background: #6ab06d;border-radius: 10px;">
+                                <div class="md:flex justify-center ">
+                                    <h1 class="text-white font-semibold ">
+                                        The smarter way to find approved heating engineers
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-       <script src="/Cleaning/dist/script.js"></script>
-       </body>
+    </div>
+    <script src="/Cleaning/dist/script.js"></script>
+</body>
 
-       </html>
+</html>
