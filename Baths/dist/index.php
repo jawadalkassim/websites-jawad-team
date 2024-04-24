@@ -32,7 +32,7 @@
         <div class="text-center text-white font-bold flex justify-center items-center gap-2" style="padding-bottom: 0px"><span class=" icon w-8 flex justify-center items-center"><img src="/Baths/dist/img/check.png" style="display: inline"></span><h1 class="flex justify-start items-center">Gas Safe registered engineers</h1></div>
     </div>
     <h3 style="background-color: #038b570f; " class="text-center text-[55px] max-[360px]:text-[25px] max-[480px]:text-[30px] font-bold text-secondaryColor pt-3 px-3 max-[480px]:pt-4 w-full">
-        Get your Baths deal
+        Get your baths deal
     </h3>
     <h3 style="background-color: #038b570f; " class="text-gray-600 text-center text-[22px] max-[240px]:text-[15px] max-[480px]:text-[15px] font-bold pt-2 px-3 max-[480px]:py-4 w-full">
         by quickly comparing 3 FREE quotes
