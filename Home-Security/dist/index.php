@@ -15,7 +15,7 @@
 <nav class="text-center " style="background: white">
     <div class="grid lg:grid-cols-2 md:grid-cols-1 items-center ">
         <div class="flex justify-center items-center p-2 ">
-            <img src="/Home-Security/dist/img/logo.svg" class="w-14 brand">
+            <img src="/Home-Security/dist/img/logo.svg" class="w-12 brand">
         </div>
         <a href="" class="nav-link pt-3 text-primaryColor decoration-primaryColor font-bold text-xl block lg:text-end sm:text-center md:text-center lg:mx-40 md:mx-0 sm:mx-0 pb-3 lg:w-1/2 sm:w-full">Get Free Quotes</a>
     </div>
@@ -31,15 +31,18 @@
         <div class="text-center text-white font-bold flex justify-center items-center gap-2 "><span class=" icon w-8 flex justify-center items-center"><img src="/Home-Security/dist/img/location.png" style="display: inline"> </span><h1 class="flex justify-start items-center" >Over 5,000 engineers across the US</h1></div>
         <div class="text-center text-white font-bold flex justify-center items-center gap-2" style="padding-bottom: 0px"><span class=" icon w-8 flex justify-center items-center"><img src="/Home-Security/dist/img/check.png" style="display: inline"></span><h1 class="flex justify-start items-center">Gas Safe registered engineers</h1></div>
     </div>
-    <h3 style="background-color: #038b570f; " class="text-center text-[55px] max-[360px]:text-[25px] max-[480px]:text-[35px] font-bold text-secondaryColor pt-8 px-3 max-[480px]:py-4 w-full">
+    <h3 style="background-color: #038b570f; " class="text-center text-[55px] max-[360px]:text-[25px] max-[480px]:text-[30px] font-bold text-secondaryColor pt-3 px-3 max-[480px]:pt-4 w-full">
         Get your security deal
+    </h3>
+    <h3 style="background-color: #038b570f; " class="text-gray-600 text-center text-[25px] max-[240px]:text-[15px] max-[480px]:text-[15px] font-bold pt-2 px-3 max-[480px]:py-4 w-full">
+        by quickly comparing 3 FREE quotes
     </h3>
     <div style="background-color: #038b570f;padding-bottom: 400px">
         <div  class="grid md:grid-cols-1  sm:grid-cols-1 justify-center items-center lg:pb-44" id="grid">
             <div class=" lg:pb-10  flex justify-center lg:col-span-7 sm:col-span-1 border f-form" style="border: none;">
                 <form class="bg-white lg:p-10 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-2xl pt-2" id="regForm" action="/Home-Security/dist/submit-page.php">
                 <div class="tab text-white text-3xl font-bodyFont">
-                    <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                    <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                         <h1 class="pb-3 text-4xl text-gray-600">What type of property do you want a quote for?</h1>
                     </div>
                     <label class="flex justify-center items-center pt-8">
@@ -56,7 +59,7 @@
                     </label>
                 </div>
                 <div class="tab text-white text-3xl font-bodyFont">
-                    <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                    <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                         <h1 class="pb-3 text-4xl text-gray-600">What service do you need?</h1>
                     </div>
                     <label class="flex justify-center items-center pt-8">
@@ -81,7 +84,7 @@
                     </label>
                 </div>
                 <div class="tab text-white text-3xl font-bodyFont">
-                    <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                    <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                         <h1 class="pb-3 text-4xl text-gray-600">Do you own or rent this home?</h1>
                     </div>
                     <label class="flex justify-center items-center pt-8">
@@ -98,7 +101,7 @@
                     </label>
                 </div>
                 <div class="tab text-white text-3xl font-bodyFont">
-                    <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                    <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                         <h1 class="pb-3 text-4xl text-gray-600">Okay… Can you specify your address, please?
                         </h1>
                     </div>
@@ -116,7 +119,7 @@
                     </div>
                 </div>
                 <div class="tab text-white text-3xl font-bodyFont">
-                    <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                    <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                         <h1 class="pb-3 text-4xl text-gray-600">Can you add your zip code, please?
                         </h1>
                     </div>
@@ -134,7 +137,7 @@
                 </div>
 
                 <div class="tab tab tab text-white text-3xl">
-                    <div class="text- text-4xl font-semibold pt-16 text-center p-5">
+                    <div class="text- text-4xl font-semibold pt-5 text-center p-5">
                         <h1 class="pb-3 text-4xl text-gray-600 ">Great! What is your email?</h1>
                     </div>
                     <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
@@ -151,7 +154,7 @@
                 </div>
 
                 <div class="tab text-white text-4xl font-bodyFont">
-                    <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                    <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                         <h1 class="pb-3 text-4xl text-gray-600">What is your name?</h1>
                     </div>
                     <div class="pt-10 flex justify-center ">
@@ -171,7 +174,7 @@
                 </div>
 
                 <div class="tab tab tab text-white text-3xl">
-                    <div class="text- text-3xl font-semibold pt-16 text-center p-5">
+                    <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                         <h1 class="pb-3 text-4xl text-gray-600 ">Wonderful! We are ready to connect you with a contractor
                             Please enter your phone number</h1>
                     </div>

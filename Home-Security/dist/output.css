@@ -594,6 +594,14 @@ video {
   width: 100%;
 }
 
+.w-1{
+  width: 0.25rem;
+}
+
+.w-12{
+  width: 3rem;
+}
+
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -724,6 +732,10 @@ video {
   padding-top: 2rem;
 }
 
+.pt-1{
+  padding-top: 0.25rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -750,6 +762,38 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[4px\]{
+  font-size: 4px;
+}
+
+.text-\[40px\]{
+  font-size: 40px;
+}
+
+.text-\[30px\]{
+  font-size: 30px;
+}
+
+.text-\[3px\]{
+  font-size: 3px;
+}
+
+.text-\[24px\]{
+  font-size: 24px;
+}
+
+.text-\[2px\]{
+  font-size: 2px;
+}
+
+.text-\[27px\]{
+  font-size: 27px;
+}
+
+.text-\[25px\]{
+  font-size: 25px;
 }
 
 .font-bold{
@@ -787,6 +831,10 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[px\]{
+  color: px;
 }
 
 .decoration-primaryColor{
@@ -1434,14 +1482,91 @@ ul li{
     padding-bottom: 1rem;
   }
 
+  .max-\[480px\]\:pt-4{
+    padding-top: 1rem;
+  }
+
   .max-\[480px\]\:text-\[35px\]{
     font-size: 35px;
+  }
+
+  .max-\[480px\]\:text-\[3px\]{
+    font-size: 3px;
+  }
+
+  .max-\[480px\]\:text-\[1px\]{
+    font-size: 1px;
+  }
+
+  .max-\[480px\]\:text-\[15px\]{
+    font-size: 15px;
+  }
+
+  .max-\[480px\]\:text-\[30px\]{
+    font-size: 30px;
   }
 }
 
 @media (max-width: 360px){
   .max-\[360px\]\:text-\[25px\]{
     font-size: 25px;
+  }
+}
+
+@media (max-width: 240px){
+  .max-\[240px\]\:text-\[25px\]{
+    font-size: 25px;
+  }
+
+  .max-\[240px\]\:text-\[2px\]{
+    font-size: 2px;
+  }
+
+  .max-\[240px\]\:text-\[1px\]{
+    font-size: 1px;
+  }
+
+  .max-\[240px\]\:text-\[15px\]{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 48px){
+  .max-\[48px\]\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 30px){
+  .max-\[30px\]\:text-\[25px\]{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 20px){
+  .max-\[20px\]\:text-\[25px\]{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 4px){
+  .max-\[4px\]\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 0px){
+  .max-\[0px\]\:text-\[25px\]{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: px){
+  .max-\[px\]\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
