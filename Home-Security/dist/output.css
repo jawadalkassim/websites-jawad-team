@@ -582,6 +582,10 @@ video {
   display: none;
 }
 
+.w-12{
+  width: 3rem;
+}
+
 .w-14{
   width: 3.5rem;
 }
@@ -592,14 +596,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-1{
-  width: 0.25rem;
-}
-
-.w-12{
-  width: 3rem;
 }
 
 .grid-cols-3{
@@ -712,10 +708,6 @@ video {
   padding-top: 2.5rem;
 }
 
-.pt-16{
-  padding-top: 4rem;
-}
-
 .pt-2{
   padding-top: 0.5rem;
 }
@@ -730,10 +722,6 @@ video {
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pt-1{
-  padding-top: 0.25rem;
 }
 
 .text-center{
@@ -755,6 +743,10 @@ video {
   line-height: 1;
 }
 
+.text-\[25px\]{
+  font-size: 25px;
+}
+
 .text-\[55px\]{
   font-size: 55px;
 }
@@ -764,36 +756,12 @@ video {
   line-height: 1.75rem;
 }
 
-.text-\[4px\]{
-  font-size: 4px;
-}
-
-.text-\[40px\]{
-  font-size: 40px;
-}
-
-.text-\[30px\]{
-  font-size: 30px;
-}
-
-.text-\[3px\]{
-  font-size: 3px;
-}
-
-.text-\[24px\]{
-  font-size: 24px;
-}
-
 .text-\[2px\]{
   font-size: 2px;
 }
 
-.text-\[27px\]{
-  font-size: 27px;
-}
-
-.text-\[25px\]{
-  font-size: 25px;
+.text-\[22px\]{
+  font-size: 22px;
 }
 
 .font-bold{
@@ -831,10 +799,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[px\]{
-  color: px;
 }
 
 .decoration-primaryColor{
@@ -1388,7 +1352,9 @@ ul li{
   }
 
   #regForm{
-    width: 347px !important;
+    width: 364px !important;
+    margin-top: 0px !important;
+    padding: 15px 0px;
   }
 
   .f-form{
@@ -1486,18 +1452,6 @@ ul li{
     padding-top: 1rem;
   }
 
-  .max-\[480px\]\:text-\[35px\]{
-    font-size: 35px;
-  }
-
-  .max-\[480px\]\:text-\[3px\]{
-    font-size: 3px;
-  }
-
-  .max-\[480px\]\:text-\[1px\]{
-    font-size: 1px;
-  }
-
   .max-\[480px\]\:text-\[15px\]{
     font-size: 15px;
   }
@@ -1514,59 +1468,8 @@ ul li{
 }
 
 @media (max-width: 240px){
-  .max-\[240px\]\:text-\[25px\]{
-    font-size: 25px;
-  }
-
-  .max-\[240px\]\:text-\[2px\]{
-    font-size: 2px;
-  }
-
-  .max-\[240px\]\:text-\[1px\]{
-    font-size: 1px;
-  }
-
   .max-\[240px\]\:text-\[15px\]{
     font-size: 15px;
-  }
-}
-
-@media (max-width: 48px){
-  .max-\[48px\]\:py-4{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
-
-@media (max-width: 30px){
-  .max-\[30px\]\:text-\[25px\]{
-    font-size: 25px;
-  }
-}
-
-@media (max-width: 20px){
-  .max-\[20px\]\:text-\[25px\]{
-    font-size: 25px;
-  }
-}
-
-@media (max-width: 4px){
-  .max-\[4px\]\:py-4{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-}
-
-@media (max-width: 0px){
-  .max-\[0px\]\:text-\[25px\]{
-    font-size: 25px;
-  }
-}
-
-@media (max-width: px){
-  .max-\[px\]\:py-4{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
 }
 
@@ -1690,6 +1593,10 @@ ul li{
 
   .lg\:p-10{
     padding: 2.5rem;
+  }
+
+  .lg\:p-6{
+    padding: 1.5rem;
   }
 
   .lg\:px-0{

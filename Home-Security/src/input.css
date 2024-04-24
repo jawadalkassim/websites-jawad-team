@@ -459,7 +459,7 @@ ul li{
         font-size: 1.4rem;
         width: 100%;
         padding-left: 0px !important;
-   color:  rgb(76 75 75 / var(--tw-text-opacity));
+        color:  rgb(76 75 75 / var(--tw-text-opacity));
     }
     .nav-link{
         display: none;
@@ -475,7 +475,9 @@ ul li{
         margin: 0px;
     }
     #regForm{
-        width: 347px !important;
+        width: 364px !important;
+        margin-top: 0px !important;
+        padding: 15px 0px;
     }
     .f-form{
         padding-top: 10px;
