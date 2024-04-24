@@ -582,8 +582,8 @@ video {
   display: none;
 }
 
-.w-10{
-  width: 2.5rem;
+.w-12{
+  width: 3rem;
 }
 
 .w-8{
@@ -610,8 +610,16 @@ video {
   justify-content: center;
 }
 
+.justify-between{
+  justify-content: space-between;
+}
+
 .gap-2{
   gap: 0.5rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .rounded{
@@ -633,7 +641,7 @@ video {
 
 .bg-secondaryColor{
   --tw-bg-opacity: 1;
-  background-color: rgb(232 95 60 / var(--tw-bg-opacity));
+  background-color: rgb(13 129 85 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -665,6 +673,11 @@ video {
   padding: 1.25rem;
 }
 
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -687,16 +700,8 @@ video {
   padding-right: 0.5rem;
 }
 
-.pt-1{
-  padding-top: 0.25rem;
-}
-
 .pt-10{
   padding-top: 2.5rem;
-}
-
-.pt-16{
-  padding-top: 4rem;
 }
 
 .pt-2{
@@ -734,6 +739,14 @@ video {
   line-height: 1;
 }
 
+.text-\[22px\]{
+  font-size: 22px;
+}
+
+.text-\[55px\]{
+  font-size: 55px;
+}
+
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -756,6 +769,11 @@ video {
   font-weight: 600;
 }
 
+.text-\[\#4c4b4b\]{
+  --tw-text-opacity: 1;
+  color: rgb(76 75 75 / var(--tw-text-opacity));
+}
+
 .text-gray-600{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
@@ -764,6 +782,11 @@ video {
 .text-primaryColor{
   --tw-text-opacity: 1;
   color: rgb(1 49 74 / var(--tw-text-opacity));
+}
+
+.text-secondaryColor{
+  --tw-text-opacity: 1;
+  color: rgb(13 129 85 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -898,6 +921,10 @@ hr.style-1 {
   cursor: pointer;
 }
 
+.s3{
+  display: none !important;
+}
+
 .cap-opt-1 {
   display: inline-block;
   min-width: 50px;
@@ -973,6 +1000,12 @@ hr.style-1 {
   }
 }
 
+ul li{
+  padding-left: 50px;
+  font-size: 1.5rem;
+  width: 420px;
+}
+
 #regForm{
   margin-top: 25px;
   border-radius: 15px;
@@ -987,7 +1020,10 @@ hr.style-1 {
 }
 
 .s2{
-  margin-top: 40px;
+  display: grid;
+}
+
+.s3{
   display: grid;
 }
 
@@ -1047,7 +1083,6 @@ hr.style-1 {
 
   .description{
     line-height: 2;
-    margin: 0px 20px;
   }
 
   #row{
@@ -1060,14 +1095,13 @@ hr.style-1 {
 
   .brand{
     padding-top: 10px;
-    width: 15%;
+    width: 15% !important;
   }
 }
 
 @media (min-width:1020px) and (max-width:1025px) {
-  ul li {
-    text-align: left;
-    padding-left: 31% !important;
+  button{
+    font-size: 1.2rem !important;
   }
 
   .s2{
@@ -1078,27 +1112,23 @@ hr.style-1 {
     padding: 0px !important;
   }
 
-  .brand{
-    width: 30% !important;
-    max-width: 50px;
-  }
-
-  .eng-div div{
-    width: 70%;
-  }
-
   .title{
     width: 50% !important;
     text-align: center;
   }
 
   #grid{
-    grid-template-columns: repeat(1, minmax(0, 1fr))
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .rate{
+    padding-top: 20px;
   }
 
   ul li{
     text-align: left;
-    padding-left: 27%;
+    font-size: 1.5rem;
+    width: 470px;
   }
 
   .list-bar{
@@ -1123,7 +1153,7 @@ hr.style-1 {
   .s{
     width: 314px;
     height: 52px;
-    font-size: 16px !important;
+    font-size: 21px !important;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1147,12 +1177,13 @@ hr.style-1 {
   }
 
   .s2 h1 {
+    font-size: 1.5rem;
     padding-left: 17px;
     text-align: left;
   }
 
   .eng-div{
-    margin-top: 25px;
+    margin-top: 40px;
     width: 100%!important;
   }
 
@@ -1167,8 +1198,10 @@ hr.style-1 {
   }
 
   ul li{
+    font-size: 1.2rem;
+    width: 340px;
     text-align: left;
-    padding-left: 27%;
+    padding-left: 5%;
   }
 
   .list-bar{
@@ -1222,7 +1255,8 @@ hr.style-1 {
   }
 
   .eng-div{
-    margin-top: 25px;
+    font-size: 1.2rem;
+    margin-top: 40px;
   }
 
   .mobile-d{
@@ -1249,8 +1283,8 @@ hr.style-1 {
   }
 
   .brand{
-    width: 30% !important;
-    max-width: 65px;
+    width:10% !important;
+    max-width: 100px;
   }
 }
 
@@ -1261,8 +1295,36 @@ hr.style-1 {
 }
 
 @media (max-width: 650px) {
+  .rate-mobile {
+    width: 347px !important;
+    text-align: center !important;
+  }
+
+  .description-mobile {
+    margin: 0px;
+  }
+
+  .s3 ul {
+    text-align: left;
+  }
+
+  .s3{
+    display: grid !important;
+  }
+
+  .eng-div-mobile {
+    margin-top: 25px;
+  }
+
   input{
     margin: 10px 20px;
+  }
+
+  ul li{
+    font-size: 1.4rem;
+    width: 100%;
+    padding-left: 0px !important;
+    color:  rgb(76 75 75 / var(--tw-text-opacity));
   }
 
   .nav-link{
@@ -1283,7 +1345,9 @@ hr.style-1 {
   }
 
   #regForm{
-    width: 347px !important;
+    width: 364px !important;
+    margin-top: 0px !important;
+    padding: 15px 0px;
   }
 
   .f-form{
@@ -1318,25 +1382,8 @@ hr.style-1 {
     white-space: nowrap;
   }
 
-  .s2 h3{
+  .s2 {
     display: none;
-  }
-
-  .s2 h2{
-    display: none;
-  }
-
-  .s2 h4{
-    display: none;
-  }
-
-  .s2 ul {
-    text-align: left;
-  }
-
-  .s2 h1 {
-    padding-left: 17px;
-    text-align: left;
   }
 
   .eng-div{
@@ -1386,6 +1433,37 @@ hr.style-1 {
 
 .hover\:bg-opacity-90:hover{
   --tw-bg-opacity: 0.9;
+}
+
+@media (max-width: 480px){
+  .max-\[480px\]\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .max-\[480px\]\:pt-4{
+    padding-top: 1rem;
+  }
+
+  .max-\[480px\]\:text-\[15px\]{
+    font-size: 15px;
+  }
+
+  .max-\[480px\]\:text-\[30px\]{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 360px){
+  .max-\[360px\]\:text-\[25px\]{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 240px){
+  .max-\[240px\]\:text-\[15px\]{
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 640px){
@@ -1461,6 +1539,10 @@ hr.style-1 {
 }
 
 @media (min-width: 1024px){
+  .lg\:col-span-12{
+    grid-column: span 12 / span 12;
+  }
+
   .lg\:col-span-5{
     grid-column: span 5 / span 5;
   }
@@ -1486,10 +1568,6 @@ hr.style-1 {
     width: 33.333333%;
   }
 
-  .lg\:w-10\/12{
-    width: 83.333333%;
-  }
-
   .lg\:w-8\/12{
     width: 66.666667%;
   }
@@ -1502,16 +1580,12 @@ hr.style-1 {
     width: 100%;
   }
 
-  .lg\:grid-cols-12{
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .lg\:p-10{
-    padding: 2.5rem;
+  .lg\:p-6{
+    padding: 1.5rem;
   }
 
   .lg\:px-0{
@@ -1519,9 +1593,9 @@ hr.style-1 {
     padding-right: 0px;
   }
 
-  .lg\:py-80{
-    padding-top: 20rem;
-    padding-bottom: 20rem;
+  .lg\:py-44{
+    padding-top: 11rem;
+    padding-bottom: 11rem;
   }
 
   .lg\:pb-10{
