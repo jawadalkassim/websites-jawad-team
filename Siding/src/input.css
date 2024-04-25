@@ -90,9 +90,7 @@ hr.style-1 {
 .fw-600 {
     font-weight: 500;
 }
-.brand{
-    width: 8%;
-}
+
 .mt_2 {
     margin-top: 2rem !important;
 }
@@ -100,6 +98,9 @@ hr.style-1 {
 /*Simple radio btn input CSS*/
 .custom-control-label {
     cursor: pointer;
+}
+.s3{
+    display: none !important;
 }
 
 .cap-opt-1 {
@@ -195,6 +196,11 @@ hr.style-1 {
         transform: rotateZ(0deg);
     }
 }
+ul li{
+    padding-left: 50px;
+    font-size: 1.5rem;
+    width: 420px;
+}
 #regForm{
     margin-top: 25px;
     border-radius: 15px;
@@ -206,7 +212,9 @@ hr.style-1 {
     line-height: 1.8;
 }
 .s2{
-    margin-top: 40px;
+    display: grid;
+}
+.s3{
     display: grid;
 }
 .mobile-d{
@@ -256,7 +264,6 @@ hr.style-1 {
     }
     .description{
         line-height: 2;
-        margin: 0px 20px;
     }
     #row{
         padding-top: 0px;
@@ -266,25 +273,18 @@ hr.style-1 {
     }
     .brand{
         padding-top: 10px;
-        width: 20%;
+        width: 15% !important;
     }
 }
 @media (min-width:1020px) and (max-width:1025px) {
-    ul li {
-        text-align: left;
-        padding-left: 31% !important;
+    button{
+        font-size: 1.2rem !important;
     }
     .s2{
         padding-top: 0px !important;
     }
     .f-form{
         padding: 0px !important;
-    }
-    .brand{
-        width: 10%;
-    }
-    .eng-div div{
-        width: 70%;
     }
     .title{
         width: 50% !important;
@@ -293,9 +293,13 @@ hr.style-1 {
     #grid{
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
+    .rate{
+        padding-top: 20px;
+    }
     ul li{
         text-align: left;
-        padding-left: 27%;
+        font-size: 1.5rem;
+        width: 470px;
     }
     .list-bar{
         display: none;
@@ -315,7 +319,7 @@ hr.style-1 {
     .s{
         width: 314px;
         height: 52px;
-        font-size: 16px !important;
+        font-size: 21px !important;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -334,11 +338,12 @@ hr.style-1 {
         text-align: left;
     }
     .s2 h1 {
+        font-size: 1.5rem;
         padding-left: 17px;
         text-align: left;
     }
     .eng-div{
-        margin-top: 25px;
+        margin-top: 40px;
         width: 100%!important;
     }
 
@@ -351,8 +356,10 @@ hr.style-1 {
         text-align: center;
     }
     ul li{
+        font-size: 1.2rem;
+        width: 340px;
         text-align: left;
-        padding-left: 27%;
+        padding-left: 5%;
     }
     .list-bar{
         display: none;
@@ -395,7 +402,8 @@ hr.style-1 {
         text-align: left;
     }
     .eng-div{
-        margin-top: 25px;
+        font-size: 1.2rem;
+        margin-top: 40px;
     }
 
     .mobile-d{
@@ -417,8 +425,8 @@ hr.style-1 {
         width: 50%;
     }
     .brand{
-        width: 30% !important;
-        max-width: 80px;
+        width:10% !important;
+        max-width: 100px;
     }
 
 }
@@ -428,8 +436,30 @@ hr.style-1 {
     }
 }
 @media (max-width: 650px) {
+    .rate-mobile {
+        width: 347px !important;
+        text-align: center !important;
+    }
+    .description-mobile {
+        margin: 0px;
+    }
+    .s3 ul {
+        text-align: left;
+    }
+    .s3{
+        display: grid !important;
+    }
+    .eng-div-mobile {
+        margin-top: 25px;
+    }
     input{
         margin: 10px 20px;
+    }
+    ul li{
+        font-size: 1.4rem;
+        width: 100%;
+        padding-left: 0px !important;
+        color:  rgb(76 75 75 / var(--tw-text-opacity));
     }
     .nav-link{
         display: none;
@@ -445,7 +475,9 @@ hr.style-1 {
         margin: 0px;
     }
     #regForm{
-        width: 347px !important;
+        width: 364px !important;
+        margin-top: 0px !important;
+        padding: 15px 0px;
     }
     .f-form{
         padding-top: 10px;
@@ -473,21 +505,8 @@ hr.style-1 {
         text-overflow: ellipsis;
         white-space: nowrap;
     }
-    .s2 h3{
+    .s2 {
         display: none;
-    }
-    .s2 h2{
-        display: none;
-    }
-    .s2 h4{
-        display: none;
-    }
-    .s2 ul {
-        text-align: left;
-    }
-    .s2 h1 {
-        padding-left: 17px;
-        text-align: left;
     }
     .eng-div{
         margin-top: 25px;
