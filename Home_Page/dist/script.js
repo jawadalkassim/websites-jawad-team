@@ -58,6 +58,10 @@ function search() {
     searchGrid.style.display = "flex";
     searchGrid.innerHTML =
       "<h1 class='text-2xl text-center flex justify-center'>No Result To Show </h1>";
+    c1.style.display="none"
+    c2.style.display="none"
+    c3.style.display="none"
+    y.style.display="none"
   }
   if (input === "") {
     searchGrid.style.display = "none";

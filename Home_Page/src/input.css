@@ -7,6 +7,10 @@
   display: inline-block;
   padding-left: 40px;
 }
+.photo{
+  width: 100px !important;
+  height: 40px !important;
+}
 .nav-links li a {
   text-align: end !important;
   color: #545965;
@@ -129,6 +133,9 @@ hr.style-1 {
 .card-input-element + .card:hover {
   cursor: pointer;
 }
+.list-bar-mobile{
+  display: none;
+}
 
 .card-input-element:checked + .card {
   border: 2px solid #719eca;
@@ -243,6 +250,21 @@ hr.style-1 {
   }
 }
 @media (min-width: 630px) and (max-width: 1025px) {
+  .list-bar{
+    display: none;
+  }
+  .list-bar-mobile{
+    display: block;
+  }
+  .list-bar-mobile div{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+  }
+  .list-bar-mobile h1{
+    width: 290px;
+  }
   .s2 {
     display: none;
   }
@@ -284,9 +306,6 @@ hr.style-1 {
   }
 }
 @media (max-width: 768px) {
-  .icon {
-    display: none;
-  }
   .thank {
     padding-top: 100px;
     padding-bottom: 500px;
@@ -356,8 +375,12 @@ hr.style-1 {
     margin: 20px;
   }
 }
-
-@media (min-width: 480px) and (max-width: 1025px) {
+@media (min-width:1020px) and (max-width:1025px) {
+  .brand{
+    width: 13% !important;
+  }
+}
+@media (min-width: 480px) and (max-width: 1020px) {
   .card {
     width: 400px;
     height: 200px;
@@ -367,10 +390,13 @@ hr.style-1 {
 
 @media (max-width: 480px) {
   .card {
-    width: 100%;
+    width: 300px;
     max-width: 280px;
     height: 170px;
     padding: 30px;
+  }
+  .photo{
+    height: 50px !important;
   }
 }
 
@@ -410,4 +436,21 @@ hr.style-1 {
     object-fit: cover;
     max-width: 40% !important;
   } */
+}
+@media (max-width: 650px) {
+  .list-bar{
+    display: none;
+  }
+  .list-bar-mobile{
+    display: block;
+  }
+  .list-bar-mobile div{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+  }
+  .list-bar-mobile h1{
+    width: 290px;
+  }
 }

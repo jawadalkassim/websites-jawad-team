@@ -14,6 +14,9 @@
 
     <link href=" /Home_Page/dist/output.css" rel="stylesheet" />
     <style>
+      a{
+        font-weight: 400 !important;
+      }
       .toCenter {
         justify-content: center;
         display: flex;
@@ -144,7 +147,8 @@
         font-size: 18px;
         padding: 17px 20px;
         padding-right: 31px;
-        background-image: linear-gradient(45deg, #e85f3c, transparent);
+        background: linear-gradient(46deg, rgb(79, 192, 232), rgba(232, 95, 60, 0));
+        background-color: #0d8155;
       }
       .accordeon-itm-header::after {
         content: "\002B";
@@ -163,7 +167,7 @@
       .accordeon-itm-content-inner {
         padding: 20px;
         border-top: 3px solid;
-        border-image: linear-gradient(to left, #cc674b, #0f120fbd, #22eaff) 1;
+        border-image: linear-gradient(to left, #6ab06d, #fff, #22eaff) 1;
       }
     </style>
   </head>
@@ -185,79 +189,20 @@
         >
       </div>
     </nav>
-    <div
-      class="w-full grid grid-cols-3 p-3 justify-center shadow"
-      style="background: #065c8b"
-    >
-      <div class="text-center text-white font-bold">
-        <span class="pr-2 icon"
-          ><svg
-            style="display: inline; width: 5%"
-            class="w-1/12 vg-inline--fa fa-comments"
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="far"
-            data-icon="comments"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 576 512"
-            data-fa-i2svg=""
-          >
-            <path
-              fill="currentColor"
-              d="M532 386.2c27.5-27.1 44-61.1 44-98.2 0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32 93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2-15.3 30.7-37.3 54.5-37.7 54.9-6.3 6.7-8.1 16.5-4.4 25 3.6 8.5 12 14 21.2 14 53.5 0 96.7-20.2 125.2-38.8 9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14 3.6-8.5 1.9-18.3-4.4-25-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4 2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4 15.5 31.1c2.6 5.1 5.3 10.1 8 14.8-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1-19.9 4.6c-16 3.7-32.5 5.6-49 5.6-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z"
-            ></path></svg></span
-        >Get the best quotes, fast!
-      </div>
-      <div class="text-center text-white font-bold">
-        <span class="pr-2 icon"
-          ><svg
-            style="display: inline; width: 5%"
-            class="w-1/12 svg-inline--fa fa-map-marker-alt"
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fas"
-            data-icon="map-marker-alt"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 384 512"
-            data-fa-i2svg=""
-          >
-            <path
-              fill="currentColor"
-              d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
-            ></path></svg></span
-        >Over 5,000 engineers across the UK
-      </div>
-      <div class="text-center text-white font-bold">
-        <span class="pr-2 icon"
-          ><svg
-            style="display: inline; width: 5%"
-            class="svg-inline--fa fa-check-square"
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="far"
-            data-icon="check-square"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"
-            data-fa-i2svg=""
-          >
-            <path
-              fill="currentColor"
-              d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zm0 400H48V80h352v352zm-35.864-241.724L191.547 361.48c-4.705 4.667-12.303 4.637-16.97-.068l-90.781-91.516c-4.667-4.705-4.637-12.303.069-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l59.792 60.277 141.352-140.216c4.705-4.667 12.303-4.637 16.97.068l22.536 22.718c4.667 4.706 4.637 12.304-.068 16.971z"
-            ></path></svg></span
-        >Gas Safe registered engineers
-      </div>
+    <div class=" w-full grid grid-cols-3 p-3 justify-center shadow list-bar" style="background: #6ab06d">
+      <div class="text-center text-white font-bold flex justify-center items-center"><span class="pr-2 icon w-8 flex justify-center items-center"><img src="/Home_Page/dist/img/chat.png" style="display: inline"></span><h1 class="flex justify-center items-center">Get the best quotes, fast!</h1></div>
+      <div class="text-center text-white font-bold flex justify-center items-center"><span class="pr-2 icon w-8 flex justify-center items-center"><img src="/Home_Page/dist/img/location.png" style="display: inline"> </span><h1 class="flex justify-center items-center">Over 5,000 engineers across the UK</h1></div>
+      <div class="text-center text-white font-bold flex justify-center items-center"><span class="pr-2 icon w-8 flex justify-center items-center"><img src="/Home_Page/dist/img/check.png" style="display: inline"></span><h1 class="flex justify-center items-center">Gas Safe registered engineers</h1></div>
     </div>
+    <div>
+      <div class=" w-full grid grid-cols-3 p-3 justify-center shadow list-bar-mobile" style="background: #6ab06d">
+        <div class="text-center text-white font-bold flex justify-center items-center gap-2"><span class=" icon w-8 flex justify-center items-center"><img src="/Home_Page/dist/img/chat.png" style="display: inline"></span><h1 class="flex justify-start items-center">Get the best quotes, fast!</h1></div>
+        <div class="text-center text-white font-bold flex justify-center items-center gap-2 "><span class=" icon w-8 flex justify-center items-center"><img src="/Home_Page/dist/img/location.png" style="display: inline"> </span><h1 class="flex justify-start items-center" >Over 5,000 engineers across the US</h1></div>
+        <div class="text-center text-white font-bold flex justify-center items-center gap-2" style="padding-bottom: 0px"><span class=" icon w-8 flex justify-center items-center"><img src="/Home_Page/dist/img/check.png" style="display: inline"></span><h1 class="flex justify-start items-center">Gas Safe registered engineers</h1></div>
+      </div>
     <div
       style="
-        background-image: radial-gradient(
-          ellipse at center,
-          #1e5799 0,
-          #013652 63%,
-          #002031 100%
-        );
+        background: #038b570f;
         padding-top: 40px;
         padding-bottom: 200px;
       "
@@ -275,7 +220,7 @@
         </div>
         <div class="header-para w-4/5 text-center max-[769px]:w-11/12">
           <p
-            class="text-white text-[19px] max-[480px]:text-[16px] leading-8 max-[769px]:leading-6"
+            class="text-gray-600 text-[19px] max-[480px]:text-[16px] leading-8 max-[769px]:leading-6"
           >
             If you need to hire a home improvement professional that can replace
             your roof, install new windows or even repair your dishwasher, can
@@ -286,7 +231,7 @@
       </div>
       <!-- //end home improvement -->
 
-      <div class="pt-10">
+      <div class="py-10">
         <form class="mx-0">
           <div class="flex justify-center">
             <input
@@ -303,13 +248,13 @@
       </div>
       <div class="flex justify-center pt-1">
         <div
-          class="grid lg:grid-cols-12 pt-8 text-secondaryColor mt-4 font-bold"
+          class="grid lg:grid-cols-12 text-secondaryColor font-bold"
           id="c_search"
         >
           <div class="col-span-1"></div>
         </div>
       </div>
-      <div class="flex justify-center pt-1" id="c1">
+      <div class="flex justify-center" id="c1">
         <div class="grid lg:grid-cols-12">
           <div class="col-span-1"></div>
 
@@ -368,14 +313,14 @@
             <div class="card adaptive bg-white lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="pt-3 flex justify-center">
                     <img
-                      class="w-1/3 sm:px-0 py-3 photo"
+                      class="w-1/3 sm:px-0 photo"
                       src="/Home_Page/dist/img/carpenter2.svg"
                       alt="Carpenters"
                     />
                   </div>
-                  <h1 class="card-title text-center">Carpenters</h1>
+                  <h1 class="pt-3 card-title text-center">Carpenters</h1>
                 </div>
               </a>
             </div>
@@ -407,14 +352,14 @@
             <div class="col-span-1 card adaptive bg-white lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/4 sm:px-0 py-3 photo"
+                      class="w-1/4 sm:px-0 photo"
                       src="/Home_Page/dist/img/floor.svg"
                       alt="Flooring"
                     />
                   </div>
-                  <h1 class="pt-2 card-title text-center">Flooring</h1>
+                  <h1 class="pt-3 card-title text-center">Flooring</h1>
                 </div>
               </a>
             </div>
@@ -424,14 +369,14 @@
             <div class="col-span-1 card adaptive bg-white lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-3 py-4 photo"
+                      class="w-1/3 sm:px-3 photo"
                       src="/Home_Page/dist/img/hvac.svg"
                       alt="HVAC Pros"
                     />
                   </div>
-                  <h1 class="card-title text-center">HVAC Pros</h1>
+                  <h1 class="pt-3 card-title text-center">HVAC Pros</h1>
                 </div>
               </a>
             </div>
@@ -440,14 +385,14 @@
             <div class="col-span-1 card adaptive bg-white lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 py-[18px] px-[4px] photo"
+                      class="w-1/3 px-[4px] photo"
                       src="/Home_Page/dist/img/roofing.svg"
                       alt="Roofing"
                     />
                   </div>
-                  <h1 class="card-title text-center">Roofing</h1>
+                  <h1 class=" pt-3 card-title text-center">Roofing</h1>
                 </div>
               </a>
             </div>
@@ -456,14 +401,14 @@
             <div class="card adaptive bg-white lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-2 py-3 photo"
+                      class="w-1/3 sm:px-2 photo"
                       src="/Home_Page/dist/img/bath.svg"
                       alt="Bath"
                     />
                   </div>
-                  <h1 class="pt-2 card-title text-center">Bath</h1>
+                  <h1 class=" pt-3 card-title text-center">Bath</h1>
                 </div>
               </a>
             </div>
@@ -472,14 +417,14 @@
             <div class="col-span-1 card adaptive bg-white lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-3 py-4 photo"
+                      class="w-1/3 sm:px-3 photo"
                       src="/Home_Page/dist/img/painter.svg"
                       alt="painters"
                     />
                   </div>
-                  <h1 class="card-title text-center">painters</h1>
+                  <h1 class="pt-3 card-title text-center">painters</h1>
                 </div>
               </a>
             </div>
@@ -501,9 +446,9 @@
             <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0 py-2 photo"
+                      class="w-1/3 sm:px-0 photo"
                       src="/Home_Page/dist/img/electrical.svg"
                       alt="Electricians"
                     />
@@ -517,9 +462,9 @@
             <div class="card adaptive bg-white lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0 py-2 photo"
+                      class="w-1/3 sm:px-0 photo"
                       src="/Home_Page/dist/img/cleaning.svg"
                       alt="Cleaning"
                     />
@@ -533,9 +478,9 @@
             <div class="card adaptive bg- lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0 py-2 photo"
+                      class="w-1/3 sm:px-0 photo"
                       src="/Home_Page/dist/img/Concrete-Contractors.svg"
                       alt="Concrete Contractors"
                     />
@@ -551,9 +496,9 @@
             <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0 py-2 photo"
+                      class="w-1/3 sm:px-0 photo"
                       src="/Home_Page/dist/img/fence.svg"
                       alt="Fence Pros"
                     />
@@ -567,9 +512,9 @@
             <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0 py-2 photo"
+                      class="w-1/3 sm:px-0 photo"
                       src="/Home_Page/dist/img/car-garage.svg"
                       alt="Garage Door Pros"
                     />
@@ -587,9 +532,9 @@
             <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0 py-2 photo"
+                      class="w-1/3 sm:px-0  photo"
                       src="/Home_Page/dist/img/handyman.svg"
                       alt="Handyman Services"
                     />
@@ -603,9 +548,9 @@
             <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0 py-2 photo"
+                      class="w-1/3 sm:px-0  photo"
                       src="/Home_Page/dist/img/home-security.svg"
                       alt="Home Security"
                     />
@@ -619,9 +564,9 @@
             <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0 py-2 photo"
+                      class="w-1/3 sm:px-0  photo"
                       src="/Home_Page/dist/img/Landscapers.svg"
                       alt="Landscapers"
                     />
@@ -635,9 +580,9 @@
             <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0 py-2 photo"
+                      class="w-1/3 sm:px-0  photo"
                       src="/Home_Page/dist/img/Pest-Control.svg"
                       alt="Pest Control"
                     />
@@ -651,9 +596,9 @@
             <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0 py-2 photo"
+                      class="w-1/3 sm:px-0  photo"
                       src="/Home_Page/dist/img/Remodeling_Contractors.svg"
                       alt="Remodeling Contractors"
                     />
@@ -673,9 +618,9 @@
             <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0 py-2 photo"
+                      class="w-1/3 sm:px-0  photo"
                       src="/Home_Page/dist/img/Restoration-Contractors.svg"
                       alt=" Restoration Contractors"
                     />
@@ -691,9 +636,9 @@
             <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0 py-2 photo"
+                      class="w-1/3 sm:px-0  photo"
                       src="/Home_Page/dist/img/Solar.svg"
                       alt="Solar"
                     />
@@ -707,9 +652,9 @@
             <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0 py-2 photo"
+                      class="w-1/3 sm:px-0  photo"
                       src="/Home_Page/dist/img/Tile_Contractors.svg"
                       alt="Tile Contractors"
                     />
@@ -723,9 +668,9 @@
             <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
-                  <div class="flex justify-center">
+                  <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0 py-2 photo"
+                      class="w-1/3 sm:px-0  photo"
                       src="/Home_Page/dist/img/Window-Pros.svg"
                       alt="Window Pros"
                     />
@@ -753,7 +698,7 @@
           </div>
           <div class="header-para w-4/5 text-center max-[769px]:w-11/12">
             <p
-              class="text-threedColor text-[19px] max-[480px]:text-[16px] leading-8 max-[769px]:leading-6"
+              class="text-gray-600 text-[19px] max-[480px]:text-[16px] leading-8 max-[769px]:leading-6"
             >
               Our job is to find you the professional you need that will save
               you time & money in the long run. And the best part, our services
@@ -774,7 +719,7 @@
                 class="content w-[42%] max-[1200px]:w-[60%] max-[769px]:w-[90%]"
               >
                 <p
-                  class="header flex justify-start items-start gap-2 pb-3 leading-[1.4] text-threedColor text-[25px] max-[769px]:block"
+                  class="header flex justify-start items-start gap-2 pb-3 leading-[1.4] text-gray-600 text-[25px] max-[769px]:block"
                 >
                   <span
                     class="flex justify-center items-center text-[22px] mt-3 text-threedColor shadow-spanNum bg-secondaryColor p-[18px] rounded-full w-10 h-10 max-[769px]:inline-block max-[769px]:p-[6px] max-[769px]:w-9 max-[769px]:h-9 max-[769px]:text-[17px]"
@@ -782,7 +727,7 @@
                   >
                   Choose the type of service you need
                 </p>
-                <p class="header-content text-[19px] text-[#ffe3af]">
+                <p class="header-content text-[19px] text-gray-600">
                   Choose the type of professional service you need and the date
                   you need it done by, and we will connect you with the right
                   professional suited for your specific job.
@@ -793,7 +738,7 @@
                   class="w-36 rounded-full shadow-imgeShadow max-[769px]:max-w-36 max-[769px]:max-h-36"
                 >
                   <img
-                    src="/Home_Page/dist/img/services.png"
+                    src="/Home_Page/dist/img/services2.png"
                     alt="services"
                     class="w-full"
                   />
@@ -805,7 +750,7 @@
                 class="content w-[42%] max-[1200px]:w-[60%] max-[769px]:w-[90%]"
               >
                 <p
-                  class="header flex justify-start items-start gap-2 pb-3 leading-[1.4] text-threedColor text-[25px] max-[769px]:block"
+                  class="header flex justify-start items-start gap-2 pb-3 leading-[1.4] text-gray-600 text-[25px] max-[769px]:block"
                 >
                   <span
                     class="flex justify-center items-center text-[22px] mt-3 text-threedColor shadow-spanNum bg-secondaryColor p-[18px] rounded-full w-10 h-10 max-[769px]:inline-block max-[769px]:p-[6px] max-[769px]:w-9 max-[769px]:h-9 max-[769px]:text-[17px]"
@@ -813,7 +758,7 @@
                   >
                   Let instant renovatedeals find a local pro near you
                 </p>
-                <p class="header-content text-[19px] text-[#ffe3af]">
+                <p class="header-content text-[19px] text-gray-600">
                   We’ll do the legwork so you don’t have to! Our team will reach
                   out to professionals in your area who are a good match and are
                   well-equipped for the job at hand.
@@ -824,7 +769,7 @@
                   class="w-36 rounded-full shadow-imgeShadowMiddle max-[769px]:max-w-36 max-[769px]:max-h-36"
                 >
                   <img
-                    src="/Home_Page/dist/img/search-location2.png"
+                    src="/Home_Page/dist/img/search-location3.png"
                     alt="search"
                     class="w-full"
                   />
@@ -836,7 +781,7 @@
                 class="content w-[42%] max-[1200px]:w-[60%] max-[769px]:w-[90%]"
               >
                 <p
-                  class="header flex justify-start items-center gap-2 pb-3 leading-[1.4] text-threedColor text-[25px] max-[769px]:block"
+                  class="header flex justify-start items-center gap-2 pb-3 leading-[1.4] text-gray-600 text-[25px] max-[769px]:block"
                 >
                   <span
                     class="flex justify-center items-center text-[22px] text-threedColor shadow-spanNum bg-secondaryColor p-[18px] rounded-full w-10 h-10 max-[769px]:inline-block max-[769px]:p-[6px] max-[769px]:w-9 max-[769px]:h-9 max-[769px]:text-[17px]"
@@ -844,7 +789,7 @@
                   >
                   Hire a trusted professional
                 </p>
-                <p class="header-content text-[19px] text-[#ffe3af]">
+                <p class="header-content text-[19px] text-gray-600">
                   Our team will connect you with a number of local professionals
                   so you can compare and hire the one that best suits your
                   needs. No obligations and Risk-Free.
@@ -855,7 +800,7 @@
                   class="w-36 rounded-full shadow-imgeShadow max-[769px]:max-w-36 max-[769px]:max-h-36"
                 >
                   <img
-                    src="/Home_Page/dist/img/trust4.png"
+                    src="/Home_Page/dist/img/trust.jpg"
                     alt="trust"
                     class="w-full rounded-full"
                   />
@@ -885,11 +830,11 @@
             class="container-inner grid grid-cols-3 max-[1200px]:grid-cols-2 max-[769px]:grid-cols-1 max-[769px]:w-[95%] max-[769px]:mx-auto gap-x-12 max-[1200px]:gap-y-12"
           >
             <div
-              class="card-house-one rounded-[37px] overflow-hidden bg-[#234658] shadow-cardImgeShadow"
+              class="card-house-one rounded-[37px] overflow-hidden bg-[#6ab06d] shadow-cardImgeShadow"
             >
               <div class="card-img">
                 <div
-                  class="group cursor-pointer relative border-b-[4px] border-[#745737] overflow-hidden"
+                  class="group cursor-pointer relative border-b-[4px] border-[#0d8155] overflow-hidden"
                 >
                   <img
                     src="/Home_Page/dist/img/home-img-1.jpg"
@@ -915,11 +860,11 @@
             </div>
 
             <div
-              class="card-house-one rounded-[37px] overflow-hidden bg-[#234658] shadow-cardImgeShadow"
+              class="card-house-one rounded-[37px] overflow-hidden bg-[#6ab06d] shadow-cardImgeShadow"
             >
               <div class="card-img">
                 <div
-                  class="group cursor-pointer relative border-b-[4px] border-[#745737] overflow-hidden"
+                  class="group cursor-pointer relative border-b-[4px] border-[#0d8155] overflow-hidden"
                 >
                   <img
                     src="/Home_Page/dist/img/home-img-2.jpg"
@@ -944,11 +889,11 @@
               </div>
             </div>
             <div
-              class="card-house-one rounded-[37px] overflow-hidden bg-[#234658] shadow-cardImgeShadow"
+              class="card-house-one rounded-[37px] overflow-hidden bg-[#6ab06d] shadow-cardImgeShadow"
             >
               <div class="card-img">
                 <div
-                  class="group cursor-pointer relative border-b-[4px] border-[#745737] overflow-hidden"
+                  class="group cursor-pointer relative border-b-[4px] border-[#0d8155] overflow-hidden"
                 >
                   <img
                     src="/Home_Page/dist/img/home-img-3.jpg"
