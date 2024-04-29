@@ -719,10 +719,10 @@
                 class="content w-[42%] max-[1200px]:w-[60%] max-[769px]:w-[90%]"
               >
                 <p
-                  class="header flex justify-start items-start gap-2 pb-3 leading-[1.4] text-gray-600 text-[25px] max-[769px]:block"
+                  class="header flex justify-start items-start gap-2 pb-3 leading-[1.4] text-gray-600 text-[25px] max-[769px]:block max-[769px]:font-semibold"
                 >
                   <span
-                    class="flex justify-center items-center text-[22px] mt-3 text-threedColor shadow-spanNum bg-secondaryColor p-[18px] rounded-full w-10 h-10 max-[769px]:inline-block max-[769px]:p-[6px] max-[769px]:w-9 max-[769px]:h-9 max-[769px]:text-[17px]"
+                    class="flex justify-center items-center text-[22px] mt-3 text-threedColor shadow-spanNum bg-secondaryColor p-[18px] rounded-full w-10 h-10 max-[769px]:hidden max-[769px]:p-[6px] max-[769px]:w-9 max-[769px]:h-9 max-[769px]:text-[17px]"
                     >1</span
                   >
                   Choose the type of service you need
@@ -750,10 +750,10 @@
                 class="content w-[42%] max-[1200px]:w-[60%] max-[769px]:w-[90%]"
               >
                 <p
-                  class="header flex justify-start items-start gap-2 pb-3 leading-[1.4] text-gray-600 text-[25px] max-[769px]:block"
+                  class="header flex justify-start items-start gap-2 pb-3 leading-[1.4] text-gray-600 text-[25px] max-[769px]:block max-[769px]:font-semibold"
                 >
                   <span
-                    class="flex justify-center items-center text-[22px] mt-3 text-threedColor shadow-spanNum bg-secondaryColor p-[18px] rounded-full w-10 h-10 max-[769px]:inline-block max-[769px]:p-[6px] max-[769px]:w-9 max-[769px]:h-9 max-[769px]:text-[17px]"
+                    class="flex justify-center items-center text-[22px] mt-3 text-threedColor shadow-spanNum bg-secondaryColor p-[18px] rounded-full w-10 h-10 max-[769px]:hidden max-[769px]:p-[6px] max-[769px]:w-9 max-[769px]:h-9 max-[769px]:text-[17px]"
                     >2</span
                   >
                   Let instant renovatedeals find a local pro near you
@@ -781,10 +781,10 @@
                 class="content w-[42%] max-[1200px]:w-[60%] max-[769px]:w-[90%]"
               >
                 <p
-                  class="header flex justify-start items-center gap-2 pb-3 leading-[1.4] text-gray-600 text-[25px] max-[769px]:block"
+                  class="header flex justify-start items-center gap-2 pb-3 leading-[1.4] text-gray-600 text-[25px] max-[769px]:block max-[769px]:font-semibold"
                 >
                   <span
-                    class="flex justify-center items-center text-[22px] text-threedColor shadow-spanNum bg-secondaryColor p-[18px] rounded-full w-10 h-10 max-[769px]:inline-block max-[769px]:p-[6px] max-[769px]:w-9 max-[769px]:h-9 max-[769px]:text-[17px]"
+                    class="flex justify-center items-center text-[22px] text-threedColor shadow-spanNum bg-secondaryColor p-[18px] rounded-full w-10 h-10 max-[769px]:hidden max-[769px]:p-[6px] max-[769px]:w-9 max-[769px]:h-9 max-[769px]:text-[17px]"
                     >3</span
                   >
                   Hire a trusted professional
@@ -800,7 +800,7 @@
                   class="w-36 rounded-full shadow-imgeShadow max-[769px]:max-w-36 max-[769px]:max-h-36"
                 >
                   <img
-                    src="/Home_Page/dist/img/trust.jpg"
+                    src="/Home_Page/dist/img/trust.png"
                     alt="trust"
                     class="w-full rounded-full"
                   />
@@ -837,7 +837,8 @@
                   class="group cursor-pointer relative border-b-[4px] border-[#0d8155] overflow-hidden"
                 >
                   <img
-                    src="/Home_Page/dist/img/home-img-1.jpg"
+                          style="width: 100%;height: 230px"
+                    src="/Home_Page/dist/img/home-img-4.jpg"
                     alt="home-img"
                     class="rounded-tl-[32px] rounded-tr-[32px] group-hover:rotate-3 group-hover:scale-110 duration-300"
                   />
@@ -867,12 +868,13 @@
                   class="group cursor-pointer relative border-b-[4px] border-[#0d8155] overflow-hidden"
                 >
                   <img
-                    src="/Home_Page/dist/img/home-img-2.jpg"
+                          style="width: 100%;height: 230px"
+                    src="/Home_Page/dist/img/home-img-6.jpg"
                     alt=""
                     class="rounded-tl-[32px] rounded-tr-[32px] group-hover:rotate-3 group-hover:scale-110 duration-300"
                   />
                   <div
-                    class="absolute w-full h-full top-0 left-0 bg-[#e5481738]"
+                    class="absolute w-full h-full top-0 left-0 bg-[#0091ff17]"
                   ></div>
                 </div>
               </div>
@@ -895,8 +897,8 @@
                 <div
                   class="group cursor-pointer relative border-b-[4px] border-[#0d8155] overflow-hidden"
                 >
-                  <img
-                    src="/Home_Page/dist/img/home-img-3.jpg"
+                  <img style="width: 100%;height: 230px"
+                    src="/Home_Page/dist/img/home-img-7.jpg"
                     alt="home-img"
                     class="rounded-tl-[32px] rounded-tr-[32px] group-hover:rotate-3 group-hover:scale-110 duration-300"
                   />
