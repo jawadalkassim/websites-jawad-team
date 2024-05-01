@@ -27,7 +27,6 @@
         >
       </div>
     </nav>
-
     <div
       class="w-full grid grid-cols-3 p-3 justify-center shadow list-bar"
       style="background: #379c3bcc"

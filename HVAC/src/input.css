@@ -459,6 +459,9 @@ ul li {
   .nav-link {
     display: none;
   }
+  #grid{
+    display: block;
+  }
   .title {
     font-size: 24px !important;
     width: 90%;
@@ -470,7 +473,6 @@ ul li {
     margin: 0px;
   }
   #regForm {
-    width: 364px !important;
     margin-top: 0px !important;
     padding: 15px 0px;
   }
@@ -493,7 +495,7 @@ ul li {
     width: 290px;
   }
   .s {
-    width: 314px;
+    width: 75%;
     height: 52px;
     font-size: 16px !important;
     overflow: hidden;

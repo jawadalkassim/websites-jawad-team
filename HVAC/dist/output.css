@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -213,8 +213,6 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
-  letter-spacing: inherit;
-  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -238,9 +236,9 @@ select {
 */
 
 button,
-input:where([type='button']),
-input:where([type='reset']),
-input:where([type='submit']) {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -496,10 +494,6 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
-  --tw-contain-size:  ;
-  --tw-contain-layout:  ;
-  --tw-contain-paint:  ;
-  --tw-contain-style:  ;
 }
 
 ::backdrop{
@@ -550,10 +544,6 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
-  --tw-contain-size:  ;
-  --tw-contain-layout:  ;
-  --tw-contain-paint:  ;
-  --tw-contain-style:  ;
 }
 
 .container{
@@ -1416,6 +1406,10 @@ ul li {
     display: none;
   }
 
+  #grid{
+    display: block;
+  }
+
   .title {
     font-size: 24px !important;
     width: 90%;
@@ -1430,7 +1424,6 @@ ul li {
   }
 
   #regForm {
-    width: 364px !important;
     margin-top: 0px !important;
     padding: 15px 0px;
   }
@@ -1459,7 +1452,7 @@ ul li {
   }
 
   .s {
-    width: 314px;
+    width: 75%;
     height: 52px;
     font-size: 16px !important;
     overflow: hidden;
@@ -1521,16 +1514,8 @@ ul li {
 }
 
 @media (max-width: 650px){
-  .max-\[650px\]\:w-\[28\%\]{
-    width: 28%;
-  }
-
   .max-\[650px\]\:w-\[60\%\]{
     width: 60%;
-  }
-
-  .max-\[650px\]\:pt-\[50pxx\]{
-    padding-top: 50pxx;
   }
 }
 
@@ -1562,6 +1547,12 @@ ul li {
 @media (max-width: 240px){
   .max-\[240px\]\:text-\[15px\]{
     font-size: 15px;
+  }
+}
+
+@media (min-width: 100px){
+  .min-\[100px\]\:min-h-screen{
+    min-height: 100vh;
   }
 }
 
@@ -1734,6 +1725,12 @@ ul li {
 
 @media (min-width: 1500px){
   .min-\[1500px\]\:min-h-screen{
+    min-height: 100vh;
+  }
+}
+
+@media (min-width: 2000px){
+  .min-\[2000px\]\:min-h-screen{
     min-height: 100vh;
   }
 }
