@@ -591,14 +591,14 @@
               </div>
               <div style="overflow: auto" class="flex justify-center">
                 <div
-                  class="w-[28%] max-[650px]:w-[60%] flex justify-center items-center pb-[20px]"
-                  style="float: right"
+                        class="w-[28%] max-[650px]:w-[60%] flex justify-center items-center pb-[20px]"
+                        style="float: right"
                 >
                   <button
-                    class="text-xl font-bold rounded-[4px] text-white bg-backBtnBg w-full"
-                    type="button"
-                    id="prevBtn"
-                    onclick="back()"
+                          class="text-xl font-bold rounded-[4px] text-white bg-backBtnBg w-full"
+                          type="button"
+                          id="prevBtn"
+                          onclick="back()"
                   >
                     ← Back
                   </button>
@@ -606,83 +606,69 @@
               </div>
             </form>
           </div>
-          <div
-            class="lg:text-start sm:text-center lg:col-span-12 s2 flex justify-center"
-            style="height: -webkit-fill-available"
+
+          <!-- add style  container -->
+          <section
+                  class="container xl:w-contanerxl pl-4 pr-4 py-[40px] mx-auto flex justify-center mb-[20px]"
           >
-            <!-- add style  container -->
-            <div class="rate container py-[40px]">
-              <div class="description w-full flex flex-col gap-y-[28px]">
-                <ul
-                  class="text-[#4c4b4b] text-xl font-semibold flex justify-between gap-8"
-                  style="list-style: circle; list-style-position: inside"
-                >
-                  <li>Next day installation</li>
-                  <li>Quotes from local engineers</li>
-                </ul>
-                <ul
-                  class="text-[#4c4b4b] text-xl font-semibold flex justify-between gap-8"
-                  style="list-style: circle; list-style-position: inside"
-                >
-                  <li>1.9 million quotes in 10 years</li>
-                  <li>Save up to £500 on installation</li>
-                </ul>
-                <div
-                  class="lg:mt-10 md:w-full sm:w-full flex justify-center py-5 eng-div"
-                >
-                  <!-- background: #6ab06d; -->
-                  <div
-                    class="md:w-9/12 py-3"
-                    style="background: #339037; border-radius: 10px"
-                  >
-                    <div class="md:flex justify-center">
-                      <h1 class="text-white font-semibold text-xl">
-                        The smarter way to find approved heating engineers
-                      </h1>
-                    </div>
-                    <h4 class="text-center text-xl text-white font-semibold">
-                      Excellent 4.8 out of 5
-                    </h4>
-                  </div>
-                </div>
+            <div
+                    class="ads grid grid-cols-2 max-[769px]:grid-cols-1 gap-x-[70px] gap-y-[20px] [&>*]:flex [&>*]:gap-1 [&>*]:items-center [&>*]:text-[24px] max-[1024px]:[&>*]:text-[22px] max-[769px]:[&>*]:text-[20px] max-[360px]:[&>*]:text-[19px]"
+            >
+              <div>
+                <span
+                        class="flex justify-center items-center pt-1 text-[#257628]"
+                ><ion-icon name="checkmark-circle"></ion-icon
+                ></span>
+                <p class="text-[#2d2e2d]">Next day installation</p>
+              </div>
+              <div>
+                <span
+                        class="flex justify-center items-center pt-1 text-[#257628]"
+                ><ion-icon name="checkmark-circle"></ion-icon
+                ></span>
+                <p class="text-[#2d2e2d]">Quotes from local engineers</p>
+              </div>
+              <div>
+                <span
+                        class="flex justify-center items-center pt-1 text-[#257628]"
+                ><ion-icon name="checkmark-circle"></ion-icon
+                ></span>
+                <p class="text-[#2d2e2d]">1.9 million quotes in 10 years</p>
+              </div>
+              <div>
+                <span
+                        class="flex justify-center items-center pt-1 text-[#257628]"
+                ><ion-icon name="checkmark-circle"></ion-icon
+                ></span>
+                <p class="text-[#2d2e2d]">Save up to £500 on installation</p>
               </div>
             </div>
-          </div>
-          <div
-            class="lg:text-start sm:text-center lg:pt-10 lg:col-span-5 s3"
-            style="height: -webkit-fill-available"
-          >
-            <div class="rate-mobile">
-              <div class="description-mobile pb-14">
-                <ul
-                  class="mt-8 text-white text-xl font-semibold"
-                  style="list-style: circle; list-style-position: inside"
-                >
-                  <li>Next day installation</li>
-                  <li>Quotes from local engineers</li>
-                  <li>1.9 million quotes in 10 years</li>
-                  <li>Save up to £500 on installation</li>
-                </ul>
-                <div
-                  class="lg:mt-10 lg:w-9/12 md:w-full sm:w-full flex justify-center py-5 eng-div-mobile"
-                >
-                  <div
-                    class="lg:w-full md:w-9/12 py-3"
-                    style="background: #6ab06d; border-radius: 10px"
-                  >
-                    <div class="md:flex justify-center">
-                      <h1 class="text-white font-semibold">
-                        The smarter way to find approved heating engineers
-                      </h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </section>
         </div>
       </div>
-      <script src="/HVAC/dist/script.js"></script>
     </div>
+
+    <footer class="py-[50px] px-[40px] bg-[#4CAF50]">
+      <div
+              class="container xl:w-contanerxl pl-4 pr-4 mx-auto flex justify-center"
+      >
+        <p
+                class="text-[25px] max-[769px]:text-[22px] font-bold [word-spacing:3px] text-white text-center"
+        >
+          The smarter way to find approved heating engineers
+        </p>
+      </div>
+    </footer>
+
+    <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
+
