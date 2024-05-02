@@ -265,16 +265,18 @@
                     </button>
                   </label>
                 </div>
+                <div class="grid lg:grid-cols-1">
                 <label class="flex justify-center items-center pt-2">
                   <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
                     onclick="radioClick(2)"
-                    class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                    class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
                   >
                     Thermostat Install
                   </button>
                 </label>
+              </div>
               </div>
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
@@ -348,6 +350,7 @@
                     </button>
                   </label>
                 </div>
+                <div class="grid lg:grid-cols-1">
                 <label class="flex justify-center items-center pt-2">
                   <input type="radio" class="card-input-element hidden" />
                   <button
@@ -358,6 +361,7 @@
                     Window AC Unit Repair
                   </button>
                 </label>
+                </div>
               </div>
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
@@ -591,7 +595,7 @@
               </div>
               <div style="overflow: auto" class="flex justify-center">
                 <div
-                        class="w-[28%] max-[650px]:w-[60%] flex justify-center items-center pb-[20px]"
+                        class="w-[15%] max-[650px]:w-[40%] flex justify-center items-center pb-[20px]"
                         style="float: right"
                 >
                   <button

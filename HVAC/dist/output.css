@@ -637,6 +637,22 @@ video {
   width: 100%;
 }
 
+.w-\[2\%\]{
+  width: 2%;
+}
+
+.w-\[25\%\]{
+  width: 25%;
+}
+
+.w-\[\%\]{
+  width: %;
+}
+
+.w-\[15\%\]{
+  width: 15%;
+}
+
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -715,7 +731,7 @@ video {
 }
 
 .bg-backBtnBg{
-  background-image: linear-gradient(45deg, #4CAF50, #2E7D32);
+  background-image: linear-gradient(45deg, #272727c2, #767676);
 }
 
 .bg-pageBg{
@@ -1561,8 +1577,8 @@ ul li {
 }
 
 @media (max-width: 650px){
-  .max-\[650px\]\:w-\[60\%\]{
-    width: 60%;
+  .max-\[650px\]\:w-\[40\%\]{
+    width: 40%;
   }
 }
 
@@ -1699,6 +1715,10 @@ ul li {
 
   .lg\:w-full{
     width: 100%;
+  }
+
+  .lg\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-2{
