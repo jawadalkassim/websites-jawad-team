@@ -629,28 +629,44 @@ video {
   width: 2rem;
 }
 
-.w-\[28\%\]{
-  width: 28%;
+.w-\[15\%\]{
+  width: 15%;
 }
 
 .w-full{
   width: 100%;
 }
 
-.w-\[2\%\]{
-  width: 2%;
+@keyframes slide-next{
+  0%{
+    transform: translateX(200%);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-.w-\[25\%\]{
-  width: 25%;
+.animate-slide-next{
+  animation: slide-next 500ms  ease-in-out;
 }
 
-.w-\[\%\]{
-  width: %;
+@keyframes slide-prev{
+  0%{
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-.w-\[15\%\]{
-  width: 15%;
+.animate-slide-prev{
+  animation: slide-prev 500ms  ease-in-out;
 }
 
 .grid-cols-2{

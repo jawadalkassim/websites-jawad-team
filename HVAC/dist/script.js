@@ -7,40 +7,51 @@ var email =""
 var phone =""
 showTab(currentTab);
 
-function showTab(n) {
+function showTab(n, direction) {
     var tab = document.getElementsByClassName("tab");
+    for (var i = 0; i < tab.length; i++) {
+        tab[i].style.display = "none";
+    }
     tab[n].style.display = "block";
+    if (direction>0) {
+        tab[n].classList.add("animate-slide-prev");
+    } else {
+        tab[n].classList.add("animate-slide-next");
+    }
+    setTimeout(() => {
+        tab[n].classList.remove("animate-slide-prev", "animate-slide-next");
+    }, 500);
     if (n === 0) {
         document.getElementById("prevBtn").style.display = "none";
     } else {
         document.getElementById("prevBtn").style.display = "inline";
     }
 
-    fixStepIndicator(n)
+    fixStepIndicator(n);
 }
 
 function nextPrev(n) {
     var x = document.getElementsByClassName("tab");
-    let fName = document.getElementById('name')
-    let lName = document.getElementById('lname')
-    let a = document.getElementById('address')
-    let e = document.getElementById('email')
-    let phoneNumber = document.getElementById('phone')
-    if (n === 1&&!validateForm()) return false;
+    let fName = document.getElementById('name');
+    let lName = document.getElementById('lname');
+    let a = document.getElementById('address');
+    let e = document.getElementById('email');
+    let phoneNumber = document.getElementById('phone');
+    if (n === 1 && !validateForm()) return false;
     x[currentTab].style.display = "none";
 
     currentTab = currentTab + n;
     if (currentTab >= x.length) {
-        firstName = fName.value
-        lastName = lName.value
-        phone = phoneNumber.value
-        address = a.value
-        email = e.value
+        firstName = fName.value;
+        lastName = lName.value;
+        phone = phoneNumber.value;
+        address = a.value;
+        email = e.value;
         document.getElementById("regForm").submit();
-        document.body.innerHTML=""
+        document.body.innerHTML = "";
         return false;
     }
-    showTab(currentTab);
+    showTab(currentTab,n);
 }
 
 function validateForm() {
@@ -105,7 +116,7 @@ function validateForm() {
 }
 function back(){
    if(currentTab===1){
-       nextPrev(-1)
+       nextPrev(-1);
    }
    else if(currentTab===2){
         nextPrev(-2)

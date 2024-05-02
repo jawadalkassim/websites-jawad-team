@@ -11,7 +11,74 @@ module.exports = {
         backBtnBg: "linear-gradient(45deg, #272727c2, #767676)",
         pageBg: "linear-gradient(1deg, #5ee96380, #8dff930d)",
       },
+      keyframes: {
+        "slide-next": {
+          "0%": {
+            transform: "translateX(200%)",
+            opacity: 0,
+          },
+          "100%": {
+            transform: "translateX(0)",
+            opacity: 1,
+          },
+        },
+
+        "slide-prev": {
+          "0%": {
+            transform: "translateX(-200%)",
+            opacity: 0,
+          },
+          "100%": {
+            transform: "translateX(0)",
+            opacity: 1,
+          },
+        },
+
+        arrowAnimateBack: {
+          " 0%": {
+            transform: "translateX(0) rotate(180deg)",
+          },
+          "25%": {
+            transform: "translateX(4px) rotate(180deg) ",
+          },
+          "50%": {
+            transform: "translateX(0px) rotate(180deg) ",
+          },
+          "75%": {
+            transform: "translateX(-4px) rotate(180deg) ",
+          },
+          "100%": {
+            transform: " translateX(0) rotate(180deg)",
+          },
+        },
+
+        arrowAnimateNext: {
+          " 0%": {
+            transform: "translateX(0) ",
+          },
+          "25%": {
+            transform: "translateX(4px)  ",
+          },
+          "50%": {
+            transform: "translateX(0px)  ",
+          },
+          "75%": {
+            transform: "translateX(-4px)  ",
+          },
+          "100%": {
+            transform: " translateX(0) ",
+          },
+        },
+      },
+
+      animation: {
+        "slide-next": "slide-next 500ms  ease-in-out ",
+        "slide-prev": "slide-prev 500ms  ease-in-out ",
+        arrowAnimateBack: "arrowAnimateBack 1000ms linear infinite ",
+        arrowAnimateNext: "arrowAnimateNext 1000ms linear infinite ",
+      },
     },
   },
+
   plugins: [],
 };
