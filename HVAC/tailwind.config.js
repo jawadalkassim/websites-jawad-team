@@ -9,24 +9,24 @@ module.exports = {
       },
       backgroundImage: {
         backBtnBg: "linear-gradient(45deg, #272727c2, #767676)",
-        pageBg: "linear-gradient(1deg, #5ee96380, #8dff930d)",
+        pageBg: "linear-gradient(1deg, #5ee96329, #8dff930d)",
       },
       keyframes: {
         "slide-next": {
           "0%": {
-            transform: "translateX(200%)",
-            opacity: 0,
+            transform: "translateX(-5%);",
+            opacity: 0.5,
           },
           "100%": {
-            transform: "translateX(0)",
+            transform: "translateX(0);",
             opacity: 1,
           },
         },
 
         "slide-prev": {
           "0%": {
-            transform: "translateX(-200%)",
-            opacity: 0,
+            transform: "translateX(5%);",
+            opacity: 0.5,
           },
           "100%": {
             transform: "translateX(0)",
@@ -72,8 +72,8 @@ module.exports = {
       },
 
       animation: {
-        "slide-next": "slide-next 500ms  ease-in-out ",
-        "slide-prev": "slide-prev 500ms  ease-in-out ",
+        "slide-next": "slide-next 300ms  linear ",
+        "slide-prev": "slide-prev 300ms  linear ",
         arrowAnimateBack: "arrowAnimateBack 1000ms linear infinite ",
         arrowAnimateNext: "arrowAnimateNext 1000ms linear infinite ",
       },

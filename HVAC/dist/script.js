@@ -9,18 +9,18 @@ showTab(currentTab);
 
 function showTab(n, direction) {
     var tab = document.getElementsByClassName("tab");
-    for (var i = 0; i < tab.length; i++) {
-        tab[i].style.display = "none";
-    }
     tab[n].style.display = "block";
-    if (direction>0) {
-        tab[n].classList.add("animate-slide-prev");
-    } else {
-        tab[n].classList.add("animate-slide-next");
-    }
-    setTimeout(() => {
-        tab[n].classList.remove("animate-slide-prev", "animate-slide-next");
-    }, 500);
+        if (direction > 0) {
+            tab[n].classList.add("animate-slide-next");
+            setTimeout(() => {
+                tab[n].classList.remove("animate-slide-next");
+            }, 300);
+        } else if(direction < 0){
+            tab[n].classList.add("animate-slide-prev");
+            setTimeout(() => {
+                tab[n].classList.remove("animate-slide-prev");
+            }, 300);
+        }
     if (n === 0) {
         document.getElementById("prevBtn").style.display = "none";
     } else {
