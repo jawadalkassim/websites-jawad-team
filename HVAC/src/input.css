@@ -272,6 +272,9 @@ ul li {
   }
 }
 @media (min-width: 1020px) and (max-width: 1025px) {
+  footer{
+    padding: 120px 40px !important;
+  }
   button {
     font-size: 1.2rem !important;
   }

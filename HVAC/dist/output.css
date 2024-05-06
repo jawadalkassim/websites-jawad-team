@@ -593,10 +593,6 @@ video {
   margin-bottom: 20px;
 }
 
-.me-2{
-  margin-inline-end: 0.5rem;
-}
-
 .mt-3{
   margin-top: 0.75rem;
 }
@@ -794,9 +790,9 @@ video {
   padding-bottom: 40px;
 }
 
-.py-\[50px\]{
-  padding-top: 50px;
-  padding-bottom: 50px;
+.py-\[80px\]{
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .pb-3{
@@ -1244,6 +1240,10 @@ ul li {
 }
 
 @media (min-width: 1020px) and (max-width: 1025px) {
+  footer{
+    padding: 120px 40px !important;
+  }
+
   button {
     font-size: 1.2rem !important;
   }
@@ -1738,6 +1738,10 @@ ul li {
 
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:gap-2{
+    gap: 0.5rem;
   }
 
   .lg\:p-6{

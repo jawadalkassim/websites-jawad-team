@@ -140,7 +140,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1)"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                   >
                     Ducts
                   </button>
@@ -150,7 +150,7 @@
                   <button
                     type="button"
                     onclick="radioClick(2)"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                   >
                     Installation
                   </button>
@@ -160,7 +160,7 @@
                   <button
                     type="button"
                     onclick="radioClick(3)"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                   >
                     Repair
                   </button>
@@ -177,7 +177,7 @@
                   <button
                     type="button"
                     onclick="radioClick(3)"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                   >
                     Ducts & Vents Clean
                   </button>
@@ -187,7 +187,7 @@
                   <button
                     type="button"
                     onclick="radioClick(3)"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                   >
                     Ducts & Vents Clean
                   </button>
@@ -199,13 +199,13 @@
                     What installation service do you need?
                   </h1>
                 </div>
-                <div class="grid lg:grid-cols-2">
+                <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-2">
                     <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
                       onclick="radioClick(2)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                     >
                       Boiler Install
                     </button>
@@ -215,19 +215,19 @@
                     <button
                       type="button"
                       onclick="radioClick(2)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                     >
                       Central AC Install
                     </button>
                   </label>
                 </div>
-                <div class="grid lg:grid-cols-2">
+                <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-2">
                     <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
                       onclick="radioClick(2)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                     >
                       Ductless (Mini Split) AC Install
                     </button>
@@ -237,19 +237,19 @@
                     <button
                       type="button"
                       onclick="radioClick(2)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                     >
                       Electrical Baseboard/Wall Heater Install
                     </button>
                   </label>
                 </div>
-                <div class="grid lg:grid-cols-2">
+                <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-2">
                     <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
                       onclick="radioClick(2)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                     >
                       Furnace Heating System Install
                     </button>
@@ -259,19 +259,19 @@
                     <button
                       type="button"
                       onclick="radioClick(2)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                     >
                       Heat Pump Install
                     </button>
                   </label>
                 </div>
-                <div class="grid lg:grid-cols-1">
+                <div class="grid lg:grid-cols-1 lg:gap-2">
                 <label class="flex justify-center items-center pt-2">
                   <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
                     onclick="radioClick(2)"
-                    class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                    class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/2 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                   >
                     Thermostat Install
                   </button>
@@ -284,13 +284,13 @@
                     What repair service do you need?
                   </h1>
                 </div>
-                <div class="grid lg:grid-cols-2">
-                  <label class="flex justify-center items-center pt-3">
+                <div class="grid lg:grid-cols-2 lg:gap-2">
+                  <label class="flex justify-center items-center pt-2">
                     <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
                       onclick="radioClick(1)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                     >
                       Boiler Repair
                     </button>
@@ -300,19 +300,19 @@
                     <button
                       type="button"
                       onclick="radioClick(1)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                     >
                       Central AC Repair
                     </button>
                   </label>
                 </div>
-                <div class="grid lg:grid-cols-2">
+                <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-2">
                     <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
                       onclick="radioClick(1)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                     >
                       Ductless (Mini Split) AC Repair
                     </button>
@@ -322,19 +322,19 @@
                     <button
                       type="button"
                       onclick="radioClick(1)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                     >
                       Electrical Baseboard/Wall Heater Repair
                     </button>
                   </label>
                 </div>
-                <div class="grid lg:grid-cols-2">
+                <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-2">
                     <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
                       onclick="radioClick(1)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                     >
                       Furnace Heating System Repair
                     </button>
@@ -344,19 +344,19 @@
                     <button
                       type="button"
                       onclick="radioClick(1)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                     >
                       Heat Pump Repair
                     </button>
                   </label>
                 </div>
-                <div class="grid lg:grid-cols-1">
+                <div class="grid lg:grid-cols-1 ">
                 <label class="flex justify-center items-center pt-2">
                   <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
                     onclick="radioClick(1)"
-                    class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                    class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/2 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                   >
                     Window AC Unit Repair
                   </button>
@@ -374,7 +374,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1)"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                   >
                     Home
                   </button>
@@ -384,7 +384,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1)"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                   >
                     Business
                   </button>
@@ -401,7 +401,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1)"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                   >
                     I own
                   </button>
@@ -411,7 +411,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1)"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 me-2 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
                   >
                     I rent
                   </button>
@@ -652,7 +652,7 @@
       </div>
     </div>
 
-    <footer class="py-[50px] px-[40px] bg-[#4CAF50]">
+    <footer class="py-[80px] px-[40px]  bg-[#4CAF50]">
       <div
               class="container xl:w-contanerxl pl-4 pr-4 mx-auto flex justify-center"
       >
