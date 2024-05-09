@@ -7,9 +7,20 @@ var email =""
 var phone =""
 showTab(currentTab);
 
-function showTab(n) {
+function showTab(n,direction) {
     var tab = document.getElementsByClassName("tab");
     tab[n].style.display = "block";
+    if (direction > 0) {
+        tab[n].classList.add("animate-slide-next");
+        setTimeout(() => {
+            tab[n].classList.remove("animate-slide-next");
+        }, 300);
+    } else if (direction < 0) {
+        tab[n].classList.add("animate-slide-prev");
+        setTimeout(() => {
+            tab[n].classList.remove("animate-slide-prev");
+        }, 300);
+    }
     if (n === 0) {
         document.getElementById("prevBtn").style.display = "none";
     } else {
@@ -40,7 +51,7 @@ function nextPrev(n) {
         document.body.innerHTML=""
         return false;
     }
-    showTab(currentTab);
+    showTab(currentTab,n);
 }
 function back(){
      if(currentTab===2){
