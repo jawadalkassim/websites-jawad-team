@@ -36,7 +36,6 @@ input.invalid {
 }
 
 button {
-  background-color: #04aa6d;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -272,9 +271,6 @@ ul li {
   }
 }
 @media (min-width: 1020px) and (max-width: 1025px) {
-  footer{
-    padding: 120px 40px !important;
-  }
   button {
     font-size: 1.2rem !important;
   }
@@ -462,7 +458,7 @@ ul li {
   .nav-link {
     display: none;
   }
-  #grid{
+  #grid {
     display: block;
   }
   .title {
@@ -538,7 +534,7 @@ ul li {
     padding-top: 5px !important;
   }
   img {
-    max-width: 80% !important;
+    max-width: 65% !important;
   }
   .card-input-element + .card {
     padding: 10px 0px;

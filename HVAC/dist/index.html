@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>HVAC</title>
-    <link href="/HVAC/dist/output.css" rel="stylesheet" />
+    <link href="output.css" rel="stylesheet" />
     <style>
       .duration-btn {
         transition: 0.2s;
@@ -16,54 +16,57 @@
 
   <body class="font-bodyFont">
     <nav class="text-center" style="background: white">
-      <div class="grid lg:grid-cols-2 md:grid-cols-1 items-center">
+      <div
+        class="grid lg:grid-cols-2 md:grid-cols-1 items-center 2xl:w-contanerxl 2xl:ml-auto 2xl:mr-auto"
+      >
         <div class="flex justify-center items-center p-2">
-          <img src="/HVAC/dist/img/logo.svg" class="w-12 brand" />
+          <img src="img/logo.svg" class="w-12 brand" />
         </div>
         <a
           href=""
-          class="nav-link pt-3 text-primaryColor decoration-primaryColor font-bold text-xl block lg:text-end sm:text-center md:text-center lg:mx-40 md:mx-0 sm:mx-0 pb-3 lg:w-1/2 sm:w-full"
+          class="nav-link pt-3 text-[#275329] decoration-primaryColor font-bold text-xl block lg:text-end sm:text-center md:text-center lg:mx-40 md:mx-0 sm:mx-0 pb-3 lg:w-1/2 sm:w-full"
           >Get Free Quotes</a
         >
       </div>
     </nav>
-    <div
-      class="w-full grid grid-cols-3 p-3 justify-center shadow list-bar"
-      style="background: #379c3bcc"
-    >
+    <div class="w-full shadow list-bar" style="background: #379c3bcc">
       <div
-        class="text-center text-white font-bold flex justify-center items-center"
+        class="grid grid-cols-3 p-3 justify-center xl:w-contanerxl ml-auto mr-auto"
       >
-        <span class="pr-2 icon w-8 flex justify-center items-center"
-          ><img src="/HVAC/dist/img/chat.png" style="display: inline"
-        /></span>
-        <h1 class="flex justify-center items-center">
-          Get the best quotes, fast!
-        </h1>
-      </div>
-      <div
-        class="text-center text-white font-bold flex justify-center items-center"
-      >
-        <span class="pr-2 icon w-8 flex justify-center items-center"
-          ><img src="/HVAC/dist/img/location.png" style="display: inline" />
-        </span>
-        <h1 class="flex justify-center items-center">
-          Over 5,000 engineers across the UK
-        </h1>
-      </div>
-      <div
-        class="text-center text-white font-bold flex justify-center items-center"
-      >
-        <span class="pr-2 icon w-8 flex justify-center items-center"
-          ><img src="/HVAC/dist/img/check.png" style="display: inline"
-        /></span>
-        <h1 class="flex justify-center items-center">
-          Gas Safe registered engineers
-        </h1>
+        <div
+          class="text-center text-white font-bold flex justify-center items-center"
+        >
+          <span class="pr-2 icon w-8 flex justify-center items-center"
+            ><img src="img/chat.png" style="display: inline"
+          /></span>
+          <h1 class="flex justify-center items-center">
+            Get the best quotes, fast!
+          </h1>
+        </div>
+        <div
+          class="text-center text-white font-bold flex justify-center items-center"
+        >
+          <span class="pr-2 icon w-8 flex justify-center items-center"
+            ><img src="img/location.png" style="display: inline" />
+          </span>
+          <h1 class="flex justify-center items-center">
+            Over 5,000 engineers across the UK
+          </h1>
+        </div>
+        <div
+          class="text-center text-white font-bold flex justify-center items-center"
+        >
+          <span class="pr-2 icon w-8 flex justify-center items-center"
+            ><img src="img/check.png" style="display: inline"
+          /></span>
+          <h1 class="flex justify-center items-center">
+            Gas Safe registered engineers
+          </h1>
+        </div>
       </div>
     </div>
     <div
-      class="bg-pageBg min-[1500px]:min-h-screen flex flex-col justify-center"
+      class="bg-white min-[1500px]:min-h-screen flex flex-col justify-center"
     >
       <div
         class="w-full grid grid-cols-3 p-3 justify-center shadow list-bar-mobile"
@@ -73,7 +76,7 @@
           class="text-center text-white font-bold flex justify-center items-center gap-2"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="/HVAC/dist/img/chat.png" style="display: inline"
+            ><img src="img/chat.png" style="display: inline"
           /></span>
           <h1 class="flex justify-start items-center">
             Get the best quotes, fast!
@@ -83,7 +86,7 @@
           class="text-center text-white font-bold flex justify-center items-center gap-2"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="/HVAC/dist/img/location.png" style="display: inline" />
+            ><img src="img/location.png" style="display: inline" />
           </span>
           <h1 class="flex justify-start items-center">
             Over 5,000 engineers across the US
@@ -94,7 +97,7 @@
           style="padding-bottom: 0px"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="/HVAC/dist/img/check.png" style="display: inline"
+            ><img src="img/check.png" style="display: inline"
           /></span>
           <h1 class="flex justify-start items-center">
             Gas Safe registered engineers
@@ -127,7 +130,7 @@
             <form
               class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-2xl pt-2"
               id="regForm"
-              action="/HVAC/dist/submit-page.php"
+              action="submit-page.php"
             >
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
@@ -140,7 +143,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1)"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Ducts
                   </button>
@@ -150,7 +153,7 @@
                   <button
                     type="button"
                     onclick="radioClick(2)"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Installation
                   </button>
@@ -160,7 +163,7 @@
                   <button
                     type="button"
                     onclick="radioClick(3)"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Repair
                   </button>
@@ -177,7 +180,7 @@
                   <button
                     type="button"
                     onclick="radioClick(3)"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Ducts & Vents Clean
                   </button>
@@ -187,7 +190,7 @@
                   <button
                     type="button"
                     onclick="radioClick(3)"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Ducts & Vents Clean
                   </button>
@@ -205,7 +208,7 @@
                     <button
                       type="button"
                       onclick="radioClick(2)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Boiler Install
                     </button>
@@ -215,7 +218,7 @@
                     <button
                       type="button"
                       onclick="radioClick(2)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Central AC Install
                     </button>
@@ -227,7 +230,7 @@
                     <button
                       type="button"
                       onclick="radioClick(2)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Ductless (Mini Split) AC Install
                     </button>
@@ -237,7 +240,7 @@
                     <button
                       type="button"
                       onclick="radioClick(2)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Electrical Baseboard/Wall Heater Install
                     </button>
@@ -249,7 +252,7 @@
                     <button
                       type="button"
                       onclick="radioClick(2)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Furnace Heating System Install
                     </button>
@@ -259,24 +262,24 @@
                     <button
                       type="button"
                       onclick="radioClick(2)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Heat Pump Install
                     </button>
                   </label>
                 </div>
                 <div class="grid lg:grid-cols-1 lg:gap-2">
-                <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
-                  <button
-                    type="button"
-                    onclick="radioClick(2)"
-                    class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/2 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
-                  >
-                    Thermostat Install
-                  </button>
-                </label>
-              </div>
+                  <label class="flex justify-center items-center pt-2">
+                    <input type="radio" class="card-input-element hidden" />
+                    <button
+                      type="button"
+                      onclick="radioClick(2)"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/2 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    >
+                      Thermostat Install
+                    </button>
+                  </label>
+                </div>
               </div>
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
@@ -290,7 +293,7 @@
                     <button
                       type="button"
                       onclick="radioClick(1)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Boiler Repair
                     </button>
@@ -300,7 +303,7 @@
                     <button
                       type="button"
                       onclick="radioClick(1)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Central AC Repair
                     </button>
@@ -312,7 +315,7 @@
                     <button
                       type="button"
                       onclick="radioClick(1)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Ductless (Mini Split) AC Repair
                     </button>
@@ -322,7 +325,7 @@
                     <button
                       type="button"
                       onclick="radioClick(1)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Electrical Baseboard/Wall Heater Repair
                     </button>
@@ -334,7 +337,7 @@
                     <button
                       type="button"
                       onclick="radioClick(1)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Furnace Heating System Repair
                     </button>
@@ -344,23 +347,23 @@
                     <button
                       type="button"
                       onclick="radioClick(1)"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Heat Pump Repair
                     </button>
                   </label>
                 </div>
-                <div class="grid lg:grid-cols-1 ">
-                <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
-                  <button
-                    type="button"
-                    onclick="radioClick(1)"
-                    class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/2 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
-                  >
-                    Window AC Unit Repair
-                  </button>
-                </label>
+                <div class="grid lg:grid-cols-1">
+                  <label class="flex justify-center items-center pt-2">
+                    <input type="radio" class="card-input-element hidden" />
+                    <button
+                      type="button"
+                      onclick="radioClick(1)"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/2 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    >
+                      Window AC Unit Repair
+                    </button>
+                  </label>
                 </div>
               </div>
               <div class="tab text-white text-3xl font-bodyFont">
@@ -374,7 +377,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1)"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Home
                   </button>
@@ -384,7 +387,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1)"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Business
                   </button>
@@ -401,7 +404,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1)"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I own
                   </button>
@@ -411,7 +414,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1)"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I rent
                   </button>
@@ -595,14 +598,14 @@
               </div>
               <div style="overflow: auto" class="flex justify-center">
                 <div
-                        class="w-[15%] max-[650px]:w-[40%] flex justify-center items-center pb-[20px]"
-                        style="float: right"
+                  class="w-[15%] max-[650px]:w-[40%] flex justify-center items-center pb-[20px]"
+                  style="float: right"
                 >
                   <button
-                          class="text-xl font-bold rounded-[4px] text-white bg-backBtnBg w-full"
-                          type="button"
-                          id="prevBtn"
-                          onclick="back()"
+                    class="text-xl font-bold rounded-[4px] text-white bg-backBtnBg w-full"
+                    type="button"
+                    id="prevBtn"
+                    onclick="back()"
                   >
                     ← Back
                   </button>
@@ -613,36 +616,36 @@
 
           <!-- add style  container -->
           <section
-                  class="container xl:w-contanerxl pl-4 pr-4 py-[40px] mx-auto flex justify-center mb-[20px]"
+            class="container xl:w-contanerxl pl-4 pr-4 py-[40px] mx-auto flex justify-center mb-[20px]"
           >
             <div
-                    class="ads grid grid-cols-2 max-[769px]:grid-cols-1 gap-x-[70px] gap-y-[20px] [&>*]:flex [&>*]:gap-1 [&>*]:items-center [&>*]:text-[24px] max-[1024px]:[&>*]:text-[22px] max-[769px]:[&>*]:text-[20px] max-[360px]:[&>*]:text-[19px]"
+              class="ads grid grid-cols-2 max-[769px]:grid-cols-1 gap-x-[70px] gap-y-[20px] [&>*]:flex [&>*]:gap-1 [&>*]:items-center [&>*]:text-[24px] max-[1024px]:[&>*]:text-[22px] max-[769px]:[&>*]:text-[20px] max-[360px]:[&>*]:text-[19px]"
             >
               <div>
                 <span
-                        class="flex justify-center items-center pt-1 text-[#257628]"
-                ><ion-icon name="checkmark-circle"></ion-icon
+                  class="flex justify-center items-center pt-1 text-[#257628]"
+                  ><ion-icon name="checkmark-circle"></ion-icon
                 ></span>
                 <p class="text-[#2d2e2d]">Next day installation</p>
               </div>
               <div>
                 <span
-                        class="flex justify-center items-center pt-1 text-[#257628]"
-                ><ion-icon name="checkmark-circle"></ion-icon
+                  class="flex justify-center items-center pt-1 text-[#257628]"
+                  ><ion-icon name="checkmark-circle"></ion-icon
                 ></span>
                 <p class="text-[#2d2e2d]">Quotes from local engineers</p>
               </div>
               <div>
                 <span
-                        class="flex justify-center items-center pt-1 text-[#257628]"
-                ><ion-icon name="checkmark-circle"></ion-icon
+                  class="flex justify-center items-center pt-1 text-[#257628]"
+                  ><ion-icon name="checkmark-circle"></ion-icon
                 ></span>
                 <p class="text-[#2d2e2d]">1.9 million quotes in 10 years</p>
               </div>
               <div>
                 <span
-                        class="flex justify-center items-center pt-1 text-[#257628]"
-                ><ion-icon name="checkmark-circle"></ion-icon
+                  class="flex justify-center items-center pt-1 text-[#257628]"
+                  ><ion-icon name="checkmark-circle"></ion-icon
                 ></span>
                 <p class="text-[#2d2e2d]">Save up to £500 on installation</p>
               </div>
@@ -652,12 +655,12 @@
       </div>
     </div>
 
-    <footer class="py-[80px] px-[40px]  bg-[#4CAF50]">
+    <footer class="py-[80px] px-[40px] bg-[#4CAF50]">
       <div
-              class="container xl:w-contanerxl pl-4 pr-4 mx-auto flex justify-center"
+        class="container xl:w-contanerxl pl-4 pr-4 mx-auto flex justify-center"
       >
         <p
-                class="text-[25px] max-[769px]:text-[22px] font-bold [word-spacing:3px] text-white text-center"
+          class="text-[25px] max-[769px]:text-[22px] font-bold [word-spacing:3px] text-white text-center"
         >
           The smarter way to find approved heating engineers
         </p>
@@ -665,14 +668,13 @@
     </footer>
 
     <script
-            type="module"
-            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
     <script
-            nomodule
-            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="script.js"></script>
   </body>
 </html>
-
