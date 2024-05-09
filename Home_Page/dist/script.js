@@ -42,7 +42,7 @@ function search() {
       let cardLink = card.querySelector("a").getAttribute("href");
       let linkElement = document.createElement("a");
       linkElement.setAttribute("href", cardLink);
-      linkElement.classList.add("col-span-3");
+      // linkElement.classList.add("col-span-3");
       linkElement.style.display = "grid";
       linkElement.appendChild(cloneCard);
       searchGrid.appendChild(linkElement);
@@ -58,10 +58,10 @@ function search() {
     searchGrid.style.display = "flex";
     searchGrid.innerHTML =
       "<h1 class='text-2xl text-center flex justify-center'>No Result To Show </h1>";
-    c1.style.display="none"
-    c2.style.display="none"
-    c3.style.display="none"
-    y.style.display="none"
+    c1.style.display = "none";
+    c2.style.display = "none";
+    c3.style.display = "none";
+    y.style.display = "none";
   }
   if (input === "") {
     searchGrid.style.display = "none";
