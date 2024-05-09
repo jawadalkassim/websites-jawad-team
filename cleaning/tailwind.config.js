@@ -3,6 +3,10 @@ module.exports = {
   content: ["./dist/**/*.{html,js,php}"],
   theme: {
     extend: {
+      width: {
+        contanerxl: "1170px",
+        contanerlg: "832px",
+      },
       colors: {
         primaryColor: "#01314A",
         secondaryColor: "#0d8155",
@@ -10,6 +14,9 @@ module.exports = {
       backgroundImage: {
         backBtnBg: "linear-gradient(45deg, #272727c2, #767676)",
         pageBg: "linear-gradient(1deg, #5ee96329, #8dff930d)",
+      },
+      boxShadow: {
+        '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
       },
       keyframes: {
         "slide-next": {
