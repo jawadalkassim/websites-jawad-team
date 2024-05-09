@@ -12,10 +12,10 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link href=" /Home_Page/dist/output.css" rel="stylesheet" />
+    <link href="/Home_Page/dist/output.css" rel="stylesheet" />
     <style>
-      a{
-        font-weight: 400 !important;
+      a {
+        font-weight: 400;
       }
       .toCenter {
         justify-content: center;
@@ -113,6 +113,13 @@
         align-items: center;
         padding: 55px 0;
       }
+
+      @media (max-width: 480px) {
+        .accordeon-container {
+          padding: 30px 0 55px 0;
+        }
+      }
+
       .accordeon-itm {
         width: 65%;
         color: white;
@@ -121,7 +128,7 @@
         overflow: hidden;
         margin: 29px;
         text-align: left;
-        background: #079db0;
+        background: #48ac50;
       }
       @media (max-width: 1200px) {
         .accordeon-itm {
@@ -143,13 +150,21 @@
         display: flex;
         align-items: center;
         cursor: pointer;
+        height: 75px;
         font-weight: bold;
         font-size: 18px;
         padding: 17px 20px;
         padding-right: 31px;
-        background: linear-gradient(46deg, rgb(79, 192, 232), rgba(232, 95, 60, 0));
+        background: linear-gradient(46deg, #4caf50, rgba(232, 95, 60, 0));
         background-color: #0d8155;
       }
+
+      @media (max-width: 640px) {
+        .accordeon-itm-header {
+          height: 100px;
+        }
+      }
+
       .accordeon-itm-header::after {
         content: "\002B";
         position: absolute;
@@ -167,71 +182,128 @@
       .accordeon-itm-content-inner {
         padding: 20px;
         border-top: 3px solid;
-        border-image: linear-gradient(to left, #6ab06d, #fff, #22eaff) 1;
+        /* border-image: linear-gradient(to left, #6ab06d, #fff, #22eaff) 1; */
+        border-image: linear-gradient(to left, #9e9e9e, #fff, #cddc39) 1;
       }
     </style>
   </head>
 
   <body class="font-bodyFont">
-    <nav class="text-center bg-white">
-      <div class="grid lg:grid-cols-2 md:grid-cols-1 items-center">
-        <div class="flex justify-center items-center p-2">
-          <img
-            src="/Home_Page/dist/img/brand.png"
-            class="w-1/12 brand"
-            alt="brand"
-          />
+    <nav class="text-center bg-white xl:w-contanerxl py-[4px] ml-auto mr-auto">
+      <div class="flex justify-between items-center max-[480px]:px-[16px]">
+        <div
+          class="w-2/4 max-[480px]:w-[30%] flex justify-center max-[480px]:justify-start items-center p-2"
+        >
+          <div class="w-[52px]">
+            <img
+              src="/Home_Page/dist/img/logo4.svg"
+              class="w-full"
+              alt="brand"
+            />
+          </div>
         </div>
         <a
           href=""
-          class="pt-3 text-primaryColor decoration-primaryColor font-bold text-xl block lg:text-end sm:text-center md:text-center lg:mx-40 md:mx-0 sm:mx-0 pb-3 lg:w-1/2 sm:w-full"
+          class="pt-3 max w-2/4 max-[480px]:w-[70%] max-[480px]:text-end text-[#275329] decoration-primaryColor font-bold text-xl block pb-3"
           >Get Free Quotes</a
         >
       </div>
     </nav>
-    <div class=" w-full grid grid-cols-3 p-3 justify-center shadow list-bar" style="background: #6ab06d">
-      <div class="text-center text-white font-bold flex justify-center items-center"><span class="pr-2 icon w-8 flex justify-center items-center"><img src="/Home_Page/dist/img/chat.png" style="display: inline"></span><h1 class="flex justify-center items-center">Get the best quotes, fast!</h1></div>
-      <div class="text-center text-white font-bold flex justify-center items-center"><span class="pr-2 icon w-8 flex justify-center items-center"><img src="/Home_Page/dist/img/location.png" style="display: inline"> </span><h1 class="flex justify-center items-center">Over 5,000 engineers across the UK</h1></div>
-      <div class="text-center text-white font-bold flex justify-center items-center"><span class="pr-2 icon w-8 flex justify-center items-center"><img src="/Home_Page/dist/img/check.png" style="display: inline"></span><h1 class="flex justify-center items-center">Gas Safe registered engineers</h1></div>
+    <div class="w-full shadow list-bar" style="background: #379c3bcc">
+      <div
+        class="grid grid-cols-3 p-3 justify-center xl:w-contanerxl ml-auto mr-auto"
+      >
+        <div
+          class="text-center text-white font-bold flex justify-center items-center"
+        >
+          <span class="pr-2 icon w-8 flex justify-center items-center"
+            ><img src="/Home_Page/dist/img/chat.png" style="display: inline"
+          /></span>
+          <h1 class="flex justify-center items-center">
+            Get the best quotes, fast!
+          </h1>
+        </div>
+        <div
+          class="text-center text-white font-bold flex justify-center items-center"
+        >
+          <span class="pr-2 icon w-8 flex justify-center items-center"
+            ><img
+              src="/Home_Page/dist/img/location.png"
+              style="display: inline"
+            />
+          </span>
+          <h1 class="flex justify-center items-center">
+            Over 5,000 engineers across the UK
+          </h1>
+        </div>
+        <div
+          class="text-center text-white font-bold flex justify-center items-center"
+        >
+          <span class="pr-2 icon w-8 flex justify-center items-center"
+            ><img src="/Home_Page/dist/img/check.png" style="display: inline"
+          /></span>
+          <h1 class="flex justify-center items-center">
+            Gas Safe registered engineers
+          </h1>
+        </div>
+      </div>
     </div>
     <div>
-      <div class=" w-full grid grid-cols-3 p-3 justify-center shadow list-bar-mobile" style="background: #6ab06d">
-        <div class="text-center text-white font-bold flex justify-center items-center gap-2"><span class=" icon w-8 flex justify-center items-center"><img src="/Home_Page/dist/img/chat.png" style="display: inline"></span><h1 class="flex justify-start items-center">Get the best quotes, fast!</h1></div>
-        <div class="text-center text-white font-bold flex justify-center items-center gap-2 "><span class=" icon w-8 flex justify-center items-center"><img src="/Home_Page/dist/img/location.png" style="display: inline"> </span><h1 class="flex justify-start items-center" >Over 5,000 engineers across the US</h1></div>
-        <div class="text-center text-white font-bold flex justify-center items-center gap-2" style="padding-bottom: 0px"><span class=" icon w-8 flex justify-center items-center"><img src="/Home_Page/dist/img/check.png" style="display: inline"></span><h1 class="flex justify-start items-center">Gas Safe registered engineers</h1></div>
-      </div>
-    <div
-      style="
-        background: #038b570f;
-        padding-top: 40px;
-        padding-bottom: 200px;
-      "
-    >
-      <!-- //start home improvement -->
       <div
-        class="header container xl:w-contanerxl pl-4 pr-4 flex flex-col justify-center items-center py-8 text-center"
+        class="w-full grid grid-cols-3 p-3 justify-center shadow list-bar-mobile"
+        style="background: #379c3bcc"
+      >
+        <div
+          class="text-center text-white font-bold flex justify-center items-center gap-2"
+        >
+          <span class="icon w-[24px] flex justify-center items-center"
+            ><img src="/Home_Page/dist/img/chat.png" style="display: inline"
+          /></span>
+          <h1 class="flex justify-start items-center">
+            Get the best quotes, fast!
+          </h1>
+        </div>
+        <div
+          class="text-center text-white font-bold flex justify-center items-center gap-2"
+        >
+          <span class="icon w-[24px] flex justify-center items-center"
+            ><img
+              src="/Home_Page/dist/img/location.png"
+              style="display: inline"
+            />
+          </span>
+          <h1 class="flex justify-start items-center">
+            Over 5,000 engineers across the US
+          </h1>
+        </div>
+        <div
+          class="text-center text-white font-bold flex justify-center items-center gap-2"
+          style="padding-bottom: 0px"
+        >
+          <span class="icon w-[24px] flex justify-center items-center"
+            ><img src="/Home_Page/dist/img/check.png" style="display: inline"
+          /></span>
+          <h1 class="flex justify-start items-center">
+            Gas Safe registered engineers
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div style="background: #fff; padding-top: 20px">
+      <div
+        class="header container xl:w-contanerxl pl-4 pr-4 flex flex-col justify-center items-center text-center"
       >
         <div class="header-text w-full">
           <h3
-            class="text-[55px] max-[360px]:text-[25px] max-[480px]:text-[35px] font-bold text-secondaryColor py-8 px-3 max-[480px]:py-4 w-full"
+            class="text-[55px] max-[769px]:text-[36px] max-[360px]:text-[25px] max-[480px]:text-[27px] font-bold text-secondaryColor py-8 px-3 max-[480px]:py-4 w-full"
           >
             Home Improvement
           </h3>
         </div>
-        <div class="header-para w-4/5 text-center max-[769px]:w-11/12">
-          <p
-            class="text-gray-600 text-[19px] max-[480px]:text-[16px] leading-8 max-[769px]:leading-6"
-          >
-            If you need to hire a home improvement professional that can replace
-            your roof, install new windows or even repair your dishwasher, can
-            save you time and money by connecting you to a service provider.
-            Just click on the tile below for the professional you need to hire.
-          </p>
-        </div>
       </div>
-      <!-- //end home improvement -->
 
-      <div class="py-10">
+      <div class="pb-[30px] pt-[18px]">
         <form class="mx-0">
           <div class="flex justify-center">
             <input
@@ -239,7 +311,7 @@
               id="searchbar"
               type="search"
               id="default-search"
-              class="block w-1/4 p-3 ps-10 text-sm border border-gray-300 rounded-lg bg-white dark:border-gray-600 dark:placeholder-gray-400 text-black focus:ring-blue-500 focus:border-blue-500 lg:w-96"
+              class="block w-1/4 p-3 ps-10 text-sm border-2 border-[#0d8155] rounded-lg focus-visible:outline-none focus:shadow-searchInpShadow focus:border-[#4CAF50] bg-white dark:border-gray-600 dark:placeholder-gray-400 text-black lg:w-96"
               placeholder="Search Mockups, Logos..."
               required
             />
@@ -248,18 +320,20 @@
       </div>
       <div class="flex justify-center pt-1">
         <div
-          class="grid lg:grid-cols-12 text-secondaryColor font-bold"
+          class="grid lg:grid-cols-4 text-secondaryColor font-bold"
           id="c_search"
         >
           <div class="col-span-1"></div>
         </div>
       </div>
       <div class="flex justify-center" id="c1">
-        <div class="grid lg:grid-cols-12">
-          <div class="col-span-1"></div>
-
-          <div class="col-span-2 toCenter">
-            <div class="col-span-1 card adaptive bg-white lg:h-50 lg:p-3 m-3">
+        <div class="grid lg:grid-cols-4">
+          <div
+            class="col-span-1 lg:col-start-1 toCenter hover:scale-105 duration-200"
+          >
+            <div
+              class="col-span-1 card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3"
+            >
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
@@ -275,8 +349,12 @@
             </div>
           </div>
 
-          <div class="col-span-2 toCenter">
-            <div class="col-span-1 card adaptive bg-white lg:h-50 lg:p-3 m-3">
+          <div
+            class="col-span-1 lg:col-start-2 toCenter hover:scale-105 duration-200"
+          >
+            <div
+              class="col-span-1 card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3"
+            >
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
@@ -292,8 +370,12 @@
             </div>
           </div>
 
-          <div class="col-span-2 toCenter">
-            <div class="col-span-1 card adaptive bg-white lg:h-50 lg:p-3 m-3">
+          <div
+            class="col-span-1 lg:col-start-3 toCenter hover:scale-105 duration-200"
+          >
+            <div
+              class="col-span-1 card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3"
+            >
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
@@ -309,8 +391,10 @@
             </div>
           </div>
 
-          <div class="col-span-2 toCenter">
-            <div class="card adaptive bg-white lg:p-3 m-3">
+          <div
+            class="col-span-1 lg:col-start-4 toCenter hover:scale-105 duration-200"
+          >
+            <div class="card adaptive bg-[#2da09d29] lg:p-3 m-3">
               <a href="google.com">
                 <div>
                   <div class="pt-3 flex justify-center">
@@ -325,9 +409,17 @@
               </a>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col-span-2 toCenter">
-            <div class="col-span-1 card adaptive bg-white lg:h-50 lg:p-3 m-3">
+      <div class="flex justify-center" id="c2">
+        <div class="grid lg:grid-cols-4">
+          <div
+            class="col-span-1 lg:col-start-1 toCenter hover:scale-105 duration-200"
+          >
+            <div
+              class="col-span-1 card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3"
+            >
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
@@ -342,14 +434,12 @@
               </a>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="flex justify-center" id="c2">
-        <div class="grid lg:grid-cols-12">
-          <div class="col-span-1"></div>
-          <div class="col-span-2 toCenter">
-            <div class="col-span-1 card adaptive bg-white lg:h-50 lg:p-3 m-3">
+          <div
+            class="col-span-1 lg:col-start-2 toCenter hover:scale-105 duration-200"
+          >
+            <div
+              class="col-span-1 card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3"
+            >
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
@@ -364,9 +454,12 @@
               </a>
             </div>
           </div>
-
-          <div class="col-span-2 toCenter">
-            <div class="col-span-1 card adaptive bg-white lg:h-50 lg:p-3 m-3">
+          <div
+            class="col-span-1 lg:col-start-3 toCenter hover:scale-105 duration-200"
+          >
+            <div
+              class="col-span-1 card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3"
+            >
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
@@ -381,8 +474,12 @@
               </a>
             </div>
           </div>
-          <div class="col-span-2 toCenter">
-            <div class="col-span-1 card adaptive bg-white lg:h-50 lg:p-3 m-3">
+          <div
+            class="col-span-1 lg:col-start-4 toCenter hover:scale-105 duration-200"
+          >
+            <div
+              class="col-span-1 card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3"
+            >
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
@@ -392,13 +489,29 @@
                       alt="Roofing"
                     />
                   </div>
-                  <h1 class=" pt-3 card-title text-center">Roofing</h1>
+                  <h1 class="pt-3 card-title text-center">Roofing</h1>
                 </div>
               </a>
             </div>
           </div>
-          <div class="col-span-2 toCenter">
-            <div class="card adaptive bg-white lg:p-3 m-3">
+        </div>
+      </div>
+
+      <div class="flex justify-center pt-6">
+        <button
+          id="bu"
+          class="bg-secondaryColor hover:bg-primaryColor max-[769px]:mt-3 text-white rounded-md bg-showMore px-[45px] py-[13px] w-fit font-bold"
+        >
+          Show more
+        </button>
+      </div>
+
+      <div class="flex justify-center flex-col items-center" id="more">
+        <div class="grid lg:grid-cols-4">
+          <div
+            class="col-span-1 lg:col-start-1 toCenter hover:scale-105 duration-200"
+          >
+            <div class="card adaptive bg-[#2da09d29] lg:p-3 m-3">
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
@@ -408,13 +521,17 @@
                       alt="Bath"
                     />
                   </div>
-                  <h1 class=" pt-3 card-title text-center">Bath</h1>
+                  <h1 class="pt-3 card-title text-center">Bath</h1>
                 </div>
               </a>
             </div>
           </div>
-          <div class="col-span-2 toCenter">
-            <div class="col-span-1 card adaptive bg-white lg:h-50 lg:p-3 m-3">
+          <div
+            class="col-span-1 lg:col-start-2 toCenter hover:scale-105 duration-200"
+          >
+            <div
+              class="col-span-1 card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3"
+            >
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
@@ -429,21 +546,10 @@
               </a>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="flex justify-center pt-6">
-        <button
-          id="bu"
-          class="bg-secondaryColor hover:bg-primaryColor max-[769px]:mt-3 text-white rounded-md bg-showMore px-[45px] py-[13px] w-fit font-bold"
-        >
-          Show more
-        </button>
-      </div>
-      <div class="flex justify-center flex-col items-center" id="more">
-        <div class="grid lg:grid-cols-12">
-          <div class="col-span-1"></div>
-          <div class="col-span-2 toCenter">
-            <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
+          <div
+            class="col-span-1 lg:col-start-3 toCenter hover:scale-105 duration-200"
+          >
+            <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
@@ -458,8 +564,10 @@
               </a>
             </div>
           </div>
-          <div class="col-span-2 toCenter">
-            <div class="card adaptive bg-white lg:h-50 lg:p-3 m-3">
+          <div
+            class="col-span-1 lg:col-start-4 toCenter hover:scale-105 duration-200"
+          >
+            <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
@@ -474,8 +582,13 @@
               </a>
             </div>
           </div>
-          <div class="col-span-2 toCenter">
-            <div class="card adaptive bg- lg:h-50 lg:p-3 m-3">
+        </div>
+        <!-- // -->
+        <div class="grid lg:grid-cols-4">
+          <div
+            class="col-span-1 lg:col-start-1 toCenter hover:scale-105 duration-200"
+          >
+            <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
@@ -492,8 +605,10 @@
               </a>
             </div>
           </div>
-          <div class="col-span-2 toCenter">
-            <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
+          <div
+            class="col-span-1 lg:col-start-2 toCenter hover:scale-105 duration-200"
+          >
+            <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
@@ -508,8 +623,10 @@
               </a>
             </div>
           </div>
-          <div class="col-span-2 toCenter">
-            <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
+          <div
+            class="col-span-1 lg:col-start-3 toCenter hover:scale-105 duration-200"
+          >
+            <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
@@ -524,17 +641,15 @@
               </a>
             </div>
           </div>
-        </div>
-        <!-- // -->
-        <div class="grid lg:grid-cols-12">
-          <div class="col-span-1"></div>
-          <div class="col-span-2 toCenter">
-            <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
+          <div
+            class="col-span-1 lg:col-start-4 toCenter hover:scale-105 duration-200"
+          >
+            <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0  photo"
+                      class="w-1/3 sm:px-0 photo"
                       src="/Home_Page/dist/img/handyman.svg"
                       alt="Handyman Services"
                     />
@@ -544,13 +659,18 @@
               </a>
             </div>
           </div>
-          <div class="col-span-2 toCenter">
-            <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
+        </div>
+
+        <div class="grid lg:grid-cols-4">
+          <div
+            class="col-span-1 lg:col-start-1 toCenter hover:scale-105 duration-200"
+          >
+            <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0  photo"
+                      class="w-1/3 sm:px-0 photo"
                       src="/Home_Page/dist/img/home-security.svg"
                       alt="Home Security"
                     />
@@ -560,13 +680,15 @@
               </a>
             </div>
           </div>
-          <div class="col-span-2 toCenter">
-            <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
+          <div
+            class="col-span-1 lg:col-start-2 toCenter hover:scale-105 duration-200"
+          >
+            <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0  photo"
+                      class="w-1/3 sm:px-0 photo"
                       src="/Home_Page/dist/img/Landscapers.svg"
                       alt="Landscapers"
                     />
@@ -576,13 +698,15 @@
               </a>
             </div>
           </div>
-          <div class="col-span-2 toCenter">
-            <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
+          <div
+            class="col-span-1 lg:col-start-3 toCenter hover:scale-105 duration-200"
+          >
+            <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0  photo"
+                      class="w-1/3 sm:px-0 photo"
                       src="/Home_Page/dist/img/Pest-Control.svg"
                       alt="Pest Control"
                     />
@@ -592,13 +716,15 @@
               </a>
             </div>
           </div>
-          <div class="col-span-2 toCenter">
-            <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
+          <div
+            class="col-span-1 lg:col-start-4 toCenter hover:scale-105 duration-200"
+          >
+            <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0  photo"
+                      class="w-1/3 sm:px-0 photo"
                       src="/Home_Page/dist/img/Remodeling_Contractors.svg"
                       alt="Remodeling Contractors"
                     />
@@ -611,16 +737,17 @@
             </div>
           </div>
         </div>
-        <!-- /// -->
-        <div class="grid lg:grid-cols-12">
-          <div class="col-span-1"></div>
-          <div class="col-span-2 toCenter">
-            <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
+
+        <div class="grid lg:grid-cols-4">
+          <div
+            class="col-span-1 lg:col-start-1 toCenter hover:scale-105 duration-200"
+          >
+            <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0  photo"
+                      class="w-1/3 sm:px-0 photo"
                       src="/Home_Page/dist/img/Restoration-Contractors.svg"
                       alt=" Restoration Contractors"
                     />
@@ -632,13 +759,15 @@
               </a>
             </div>
           </div>
-          <div class="col-span-2 toCenter">
-            <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
+          <div
+            class="col-span-1 lg:col-start-2 toCenter hover:scale-105 duration-200"
+          >
+            <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0  photo"
+                      class="w-1/3 sm:px-0 photo"
                       src="/Home_Page/dist/img/Solar.svg"
                       alt="Solar"
                     />
@@ -648,13 +777,15 @@
               </a>
             </div>
           </div>
-          <div class="col-span-2 toCenter">
-            <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
+          <div
+            class="col-span-1 lg:col-start-3 toCenter hover:scale-105 duration-200"
+          >
+            <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0  photo"
+                      class="w-1/3 sm:px-0 photo"
                       src="/Home_Page/dist/img/Tile_Contractors.svg"
                       alt="Tile Contractors"
                     />
@@ -664,13 +795,15 @@
               </a>
             </div>
           </div>
-          <div class="col-span-2 toCenter">
-            <div class="card adaptive bg-threedColor lg:h-50 lg:p-3 m-3">
+          <div
+            class="col-span-1 lg:col-start-4 toCenter hover:scale-105 duration-200"
+          >
+            <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
               <a href="google.com">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
-                      class="w-1/3 sm:px-0  photo"
+                      class="w-1/3 sm:px-0 photo"
                       src="/Home_Page/dist/img/Window-Pros.svg"
                       alt="Window Pros"
                     />
@@ -683,17 +816,15 @@
         </div>
       </div>
 
-      <!-- start how instant  -->
-
-      <section class="How instant bg-[#ffffff0a] mt-24">
+      <section class="How instant bg-[#2da09d29] mt-24">
         <div
           class="header container xl:w-contanerxl pl-4 pr-4 flex flex-col justify-center items-center py-8 text-center"
         >
           <div class="header-text w-full">
             <h3
-              class="text-[55px] max-[360px]:text-[25px] max-[480px]:text-[35px] font-bold text-secondaryColor py-8 px-3 max-[480px]:py-4 w-full"
+              class="text-[55px] max-[360px]:text-[25px] max-[480px]:text-[26px] font-bold text-secondaryColor py-8 px-3 max-[480px]:py-4 w-full"
             >
-              How instant renovatedeals Helps You Find Trusted Local Services
+              How instant renovate deals Helps You Find Trusted Local Services
             </h3>
           </div>
           <div class="header-para w-4/5 text-center max-[769px]:w-11/12">
@@ -710,7 +841,9 @@
           </div>
         </div>
 
-        <div class="Choose_the_type container xl:w-contanerxl pl-4 pr-4 py-28">
+        <div
+          class="Choose_the_type container xl:w-contanerxl pl-4 pr-4 py-28 max-[480px]:pt-8 max-[480px]:pb-12"
+        >
           <div
             class="container-inner [&>*]:flex [&>*]:items-center [&>*]:gap-x-6 [&>*]:justify-center [&>*]:max-[1200px]:gap-x-14 [&>*]:max-[769px]:flex-col-reverse [&>*]:max-[769px]:text-center [&>*]:max-[769px]:gap-y-6"
           >
@@ -756,7 +889,7 @@
                     class="flex justify-center items-center text-[22px] mt-3 text-threedColor shadow-spanNum bg-secondaryColor p-[18px] rounded-full w-10 h-10 max-[769px]:hidden max-[769px]:p-[6px] max-[769px]:w-9 max-[769px]:h-9 max-[769px]:text-[17px]"
                     >2</span
                   >
-                  Let instant renovatedeals find a local pro near you
+                  Let instant renovate deals find a local pro near you
                 </p>
                 <p class="header-content text-[19px] text-gray-600">
                   We’ll do the legwork so you don’t have to! Our team will reach
@@ -810,22 +943,22 @@
           </div>
         </div>
       </section>
-      <!-- end how instant  -->
 
-      <!-- start  Hire Pros  -->
       <section class="Hire_Pros mt-12">
         <div
           class="header container xl:w-contanerxl pl-4 pr-4 flex flex-col justify-center items-center py-8 text-center"
         >
           <div class="header-text w-full">
             <h3
-              class="text-[55px] max-[360px]:text-[25px] max-[480px]:text-[35px] font-bold text-secondaryColor py-8 px-3 max-[480px]:py-4 w-full"
+              class="text-[55px] max-[360px]:text-[25px] max-[480px]:text-[30px] font-bold text-secondaryColor py-8 px-3 max-[480px]:py-4 w-full"
             >
-              Hire Pros the Easy Way with instant renovatedeals
+              Hire Pros the Easy Way with instant renovate deals
             </h3>
           </div>
         </div>
-        <div class="Hire_Pros_type container xl:w-contanerxl pl-4 pr-4 py-14">
+        <div
+          class="Hire_Pros_type container xl:w-contanerxl pl-4 pr-4 py-14 max-[480px]:pt-10"
+        >
           <div
             class="container-inner grid grid-cols-3 max-[1200px]:grid-cols-2 max-[769px]:grid-cols-1 max-[769px]:w-[95%] max-[769px]:mx-auto gap-x-12 max-[1200px]:gap-y-12"
           >
@@ -834,16 +967,16 @@
             >
               <div class="card-img">
                 <div
-                  class="group cursor-pointer relative border-b-[4px] border-[#0d8155] overflow-hidden"
+                  class="group cursor-pointer relative border-b-[4px] border-[#fff] overflow-hidden"
                 >
                   <img
-                          style="width: 100%;height: 230px"
+                    style="width: 100%; height: 230px"
                     src="/Home_Page/dist/img/home-img-4.jpg"
                     alt="home-img"
                     class="rounded-tl-[32px] rounded-tr-[32px] group-hover:rotate-3 group-hover:scale-110 duration-300"
                   />
                   <div
-                    class="absolute w-full h-full top-0 left-0 bg-[#c4c4c41f]"
+                    class="absolute w-full h-full top-0 left-0 bg-[#6ab06d5c]"
                   ></div>
                 </div>
               </div>
@@ -865,16 +998,16 @@
             >
               <div class="card-img">
                 <div
-                  class="group cursor-pointer relative border-b-[4px] border-[#0d8155] overflow-hidden"
+                  class="group cursor-pointer relative border-b-[4px] border-[#fff] overflow-hidden"
                 >
                   <img
-                          style="width: 100%;height: 230px"
+                    style="width: 100%; height: 230px"
                     src="/Home_Page/dist/img/home-img-6.jpg"
                     alt=""
                     class="rounded-tl-[32px] rounded-tr-[32px] group-hover:rotate-3 group-hover:scale-110 duration-300"
                   />
                   <div
-                    class="absolute w-full h-full top-0 left-0 bg-[#0091ff17]"
+                    class="absolute w-full h-full top-0 left-0 bg-[#6ab06d5c]"
                   ></div>
                 </div>
               </div>
@@ -895,15 +1028,16 @@
             >
               <div class="card-img">
                 <div
-                  class="group cursor-pointer relative border-b-[4px] border-[#0d8155] overflow-hidden"
+                  class="group cursor-pointer relative border-b-[4px] border-[#fff] overflow-hidden"
                 >
-                  <img style="width: 100%;height: 230px"
+                  <img
+                    style="width: 100%; height: 230px"
                     src="/Home_Page/dist/img/home-img-7.jpg"
                     alt="home-img"
                     class="rounded-tl-[32px] rounded-tr-[32px] group-hover:rotate-3 group-hover:scale-110 duration-300"
                   />
                   <div
-                    class="absolute w-full h-full top-0 left-0 bg-[#c4c4c41f]"
+                    class="absolute w-full h-full top-0 left-0 bg-[#6ab06d5c]"
                   ></div>
                 </div>
               </div>
@@ -921,18 +1055,16 @@
           </div>
         </div>
       </section>
-      <!-- end  Hire Pros  -->
 
-      <!-- start accordeon  -->
-      <section class="accordeonele mt-12 bg-[#ffffff0a] min-h-[150vh]">
+      <section class="accordeonele mt-12 bg-[#2da09d29]">
         <div
           class="header container xl:w-contanerxl pl-4 pr-4 flex flex-col justify-center items-center py-8 text-center"
         >
           <div class="header-text w-full">
             <h3
-              class="text-[55px] max-[360px]:text-[25px] max-[480px]:text-[40px] max-[480px]:px-1 font-bold text-secondaryColor py-8 px-3 max-[480px]:py-4 w-full"
+              class="text-[55px] max-[360px]:text-[25px] max-[480px]:text-[26px] max-[480px]:px-1 font-bold text-secondaryColor py-8 px-3 max-[480px]:py-4 w-full"
             >
-              How instant renovatedeals Helps You Find Trusted Local Services
+              How instant renovate deals Helps You Find Trusted Local Services
             </h3>
           </div>
 
@@ -951,7 +1083,7 @@
             </div>
             <div class="accordeon-itm">
               <div class="accordeon-itm-header">
-                Let instant renovatedeals find a local pro near you
+                Let instant renovate deals find a local pro near you
               </div>
               <div class="accordeon-itm-content">
                 <p class="accordeon-itm-content-inner">
@@ -977,7 +1109,6 @@
         </div>
       </section>
     </div>
-    <!-- end accordeon  -->
 
     <script src="/Home_Page/dist/script.js"></script>
   </body>
