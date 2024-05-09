@@ -16,54 +16,57 @@
 
 <body class="font-bodyFont">
 <nav class="text-center" style="background: white">
-    <div class="grid lg:grid-cols-2 md:grid-cols-1 items-center">
+    <div
+            class="grid lg:grid-cols-2 md:grid-cols-1 items-center 2xl:w-contanerxl 2xl:ml-auto 2xl:mr-auto"
+    >
         <div class="flex justify-center items-center p-2">
             <img src="/Garage/dist/img/logo.svg" class="w-12 brand" />
         </div>
         <a
                 href=""
-                class="nav-link pt-3 text-primaryColor decoration-primaryColor font-bold text-xl block lg:text-end sm:text-center md:text-center lg:mx-40 md:mx-0 sm:mx-0 pb-3 lg:w-1/2 sm:w-full"
+                class="nav-link pt-3 text-[#275329] decoration-primaryColor font-bold text-xl block lg:text-end sm:text-center md:text-center lg:mx-40 md:mx-0 sm:mx-0 pb-3 lg:w-1/2 sm:w-full"
         >Get Free Quotes</a
         >
     </div>
 </nav>
-<div
-        class="w-full grid grid-cols-3 p-3 justify-center shadow list-bar"
-        style="background: #379c3bcc"
->
+<div class="w-full shadow list-bar" style="background: #379c3bcc">
     <div
-            class="text-center text-white font-bold flex justify-center items-center"
+            class="grid grid-cols-3 p-3 justify-center xl:w-contanerxl ml-auto mr-auto"
     >
-        <span class="pr-2 icon w-8 flex justify-center items-center"
-        ><img src="/Garage/dist/img/chat.png" style="display: inline"
-        /></span>
-        <h1 class="flex justify-center items-center">
-            Get the best quotes, fast!
-        </h1>
-    </div>
-    <div
-            class="text-center text-white font-bold flex justify-center items-center"
-    >
-        <span class="pr-2 icon w-8 flex justify-center items-center"
-        ><img src="/Garage/dist/img/location.png" style="display: inline" />
-        </span>
-        <h1 class="flex justify-center items-center">
-            Over 5,000 engineers across the UK
-        </h1>
-    </div>
-    <div
-            class="text-center text-white font-bold flex justify-center items-center"
-    >
-        <span class="pr-2 icon w-8 flex justify-center items-center"
-        ><img src="/Garage/dist/img/check.png" style="display: inline"
-        /></span>
-        <h1 class="flex justify-center items-center">
-            Gas Safe registered engineers
-        </h1>
+        <div
+                class="text-center text-white font-bold flex justify-center items-center"
+        >
+          <span class="pr-2 icon w-8 flex justify-center items-center"
+          ><img src="/Garage/dist/img/chat.png" style="display: inline"
+          /></span>
+            <h1 class="flex justify-center items-center">
+                Get the best quotes, fast!
+            </h1>
+        </div>
+        <div
+                class="text-center text-white font-bold flex justify-center items-center"
+        >
+          <span class="pr-2 icon w-8 flex justify-center items-center"
+          ><img src="/Garage/dist/img/location.png" style="display: inline" />
+          </span>
+            <h1 class="flex justify-center items-center">
+                Over 5,000 engineers across the UK
+            </h1>
+        </div>
+        <div
+                class="text-center text-white font-bold flex justify-center items-center"
+        >
+          <span class="pr-2 icon w-8 flex justify-center items-center"
+          ><img src="/Garage/dist/img/check.png" style="display: inline"
+          /></span>
+            <h1 class="flex justify-center items-center">
+                Gas Safe registered engineers
+            </h1>
+        </div>
     </div>
 </div>
 <div
-        class="bg-pageBg min-[1500px]:min-h-screen flex flex-col justify-center"
+        class="bg-white min-[1500px]:min-h-screen flex flex-col justify-center"
 >
     <div
             class="w-full grid grid-cols-3 p-3 justify-center shadow list-bar-mobile"
@@ -458,6 +461,6 @@
         nomodule
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
 ></script>
-<script src="script.js"></script>
+<script src="/Garage/dist/script.js"></script>
 </body>
 </html>
