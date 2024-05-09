@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,127 +8,130 @@
     <title>Landscaping</title>
     <link href="/Landscaping/dist/output.css" rel="stylesheet" />
     <style>
-        .duration-btn {
-            transition: 0.2s;
-        }
+      .duration-btn {
+        transition: 0.2s;
+      }
     </style>
-</head>
+  </head>
 
-<body class="font-bodyFont">
-<nav class="text-center" style="background: white">
-    <div class="grid lg:grid-cols-2 lg:gap-2 md:grid-cols-1 items-center">
+  <body class="font-bodyFont">
+    <nav class="text-center" style="background: white">
+      <div
+        class="grid lg:grid-cols-2 md:grid-cols-1 items-center 2xl:w-contanerxl 2xl:ml-auto 2xl:mr-auto"
+      >
         <div class="flex justify-center items-center p-2">
-            <img src="/Landscaping/dist/img/logo.svg" class="w-12 brand" />
+          <img src="/Landscaping/dist/img/logo.svg" class="w-12 brand" />
         </div>
         <a
-                href=""
-                class="nav-link pt-3 text-primaryColor decoration-primaryColor font-bold text-xl block lg:text-end sm:text-center md:text-center lg:mx-40 md:mx-0 sm:mx-0 pb-3 lg:w-1/2 sm:w-full"
-        >Get Free Quotes</a
+          href=""
+          class="nav-link pt-3 text-[#275329] decoration-primaryColor font-bold text-xl block lg:text-end sm:text-center md:text-center lg:mx-40 md:mx-0 sm:mx-0 pb-3 lg:w-1/2 sm:w-full"
+          >Get Free Quotes</a
         >
-    </div>
-</nav>
-<div
-        class="w-full grid grid-cols-3 p-3 justify-center shadow list-bar"
-        style="background: #379c3bcc"
->
-    <div
-            class="text-center text-white font-bold flex justify-center items-center"
-    >
-        <span class="pr-2 icon w-8 flex justify-center items-center"
-        ><img src="/Landscaping/dist/img/chat.png" style="display: inline"
-        /></span>
-        <h1 class="flex justify-center items-center">
+      </div>
+    </nav>
+    <div class="w-full shadow list-bar" style="background: #379c3bcc">
+      <div
+        class="grid grid-cols-3 p-3 justify-center xl:w-contanerxl ml-auto mr-auto"
+      >
+        <div
+          class="text-center text-white font-bold flex justify-center items-center"
+        >
+          <span class="pr-2 icon w-8 flex justify-center items-center"
+            ><img src="/Landscaping/dist/img/chat.png" style="display: inline"
+          /></span>
+          <h1 class="flex justify-center items-center">
             Get the best quotes, fast!
-        </h1>
-    </div>
-    <div
-            class="text-center text-white font-bold flex justify-center items-center"
-    >
-        <span class="pr-2 icon w-8 flex justify-center items-center"
-        ><img src="/Landscaping/dist/img/location.png" style="display: inline" />
-        </span>
-        <h1 class="flex justify-center items-center">
-            Over 5,000 engineers across the UK
-        </h1>
-    </div>
-    <div
-            class="text-center text-white font-bold flex justify-center items-center"
-    >
-        <span class="pr-2 icon w-8 flex justify-center items-center"
-        ><img src="/Landscaping/dist/img/check.png" style="display: inline"
-        /></span>
-        <h1 class="flex justify-center items-center">
-            Gas Safe registered engineers
-        </h1>
-    </div>
-</div>
-<div
-        class="bg-pageBg min-[1500px]:min-h-screen flex flex-col justify-center"
->
-    <div
-            class="w-full grid grid-cols-3 p-3 justify-center shadow list-bar-mobile"
-            style="background: #379c3bcc"
-    >
-        <div
-                class="text-center text-white font-bold flex justify-center items-center gap-2"
-        >
-          <span class="icon w-8 flex justify-center items-center"
-          ><img src="/Landscaping/dist/img/chat.png" style="display: inline"
-          /></span>
-            <h1 class="flex justify-start items-center">
-                Get the best quotes, fast!
-            </h1>
+          </h1>
         </div>
         <div
-                class="text-center text-white font-bold flex justify-center items-center gap-2"
+          class="text-center text-white font-bold flex justify-center items-center"
         >
-          <span class="icon w-8 flex justify-center items-center"
-          ><img src="/Landscaping/dist/img/location.png" style="display: inline" />
+          <span class="pr-2 icon w-8 flex justify-center items-center"
+            ><img src="/Landscaping/dist/img/location.png" style="display: inline" />
           </span>
-            <h1 class="flex justify-start items-center">
-                Over 5,000 engineers across the US
-            </h1>
+          <h1 class="flex justify-center items-center">
+            Over 5,000 engineers across the UK
+          </h1>
         </div>
         <div
-                class="text-center text-white font-bold flex justify-center items-center gap-2"
-                style="padding-bottom: 0px"
+          class="text-center text-white font-bold flex justify-center items-center"
+        >
+          <span class="pr-2 icon w-8 flex justify-center items-center"
+            ><img src="/Landscaping/dist/img/check.png" style="display: inline"
+          /></span>
+          <h1 class="flex justify-center items-center">
+            Gas Safe registered engineers
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-white min-[1500px]:min-h-screen flex flex-col justify-center"
+    >
+      <div
+        class="w-full grid grid-cols-3 p-3 justify-center shadow list-bar-mobile"
+        style="background: #379c3bcc"
+      >
+        <div
+          class="text-center text-white font-bold flex justify-center items-center gap-2"
         >
           <span class="icon w-8 flex justify-center items-center"
-          ><img src="/Landscaping/dist/img/check.png" style="display: inline"
+            ><img src="/Landscaping/dist/img/chat.png" style="display: inline"
           /></span>
-            <h1 class="flex justify-start items-center">
-                Gas Safe registered engineers
-            </h1>
+          <h1 class="flex justify-start items-center">
+            Get the best quotes, fast!
+          </h1>
         </div>
-    </div>
-    <!-- delete style="background-color: #038b570f  min-[992px]:pt-[100px]" -->
-    <h3
-            class="min-[992px]:pt-[80px] text-center text-[55px] max-[360px]:text-[25px] max-[480px]:text-[30px] font-bold text-secondaryColor pt-3 px-3 max-[480px]:pt-4 w-full lg"
-    >
+        <div
+          class="text-center text-white font-bold flex justify-center items-center gap-2"
+        >
+          <span class="icon w-8 flex justify-center items-center"
+            ><img src="/Landscaping/dist/img/location.png" style="display: inline" />
+          </span>
+          <h1 class="flex justify-start items-center">
+            Over 5,000 engineers across the US
+          </h1>
+        </div>
+        <div
+          class="text-center text-white font-bold flex justify-center items-center gap-2"
+          style="padding-bottom: 0px"
+        >
+          <span class="icon w-8 flex justify-center items-center"
+            ><img src="/Landscaping/dist/img/check.png" style="display: inline"
+          /></span>
+          <h1 class="flex justify-start items-center">
+            Gas Safe registered engineers
+          </h1>
+        </div>
+      </div>
+      <!-- delete style="background-color: #038b570f  min-[992px]:pt-[100px]" -->
+      <h3
+        class="min-[992px]:pt-[80px] text-center text-[55px] max-[360px]:text-[25px] max-[480px]:text-[30px] font-bold text-secondaryColor pt-3 px-3 max-[480px]:pt-4 w-full lg"
+      >
         Get your landscaping deal
-    </h3>
-    <!-- delete style="background-color: #038b570f" -->
-    <h3
-            class="min-[992px]:pb-[40px] text-gray-600 text-center text-[22px] max-[240px]:text-[15px] max-[480px]:text-[15px] font-bold pt-2 px-3 max-[480px]:py-4 w-full"
-    >
+      </h3>
+      <!-- delete style="background-color: #038b570f" -->
+      <h3
+        class="min-[992px]:pb-[40px] text-gray-600 text-center text-[22px] max-[240px]:text-[15px] max-[480px]:text-[15px] font-bold pt-2 px-3 max-[480px]:py-4 w-full"
+      >
         by quickly comparing 3 FREE quotes
-    </h3>
-    <!-- i edit the padding button her : delete padding-bottom: 400px  delete style="background-color: #038b570f"  -->
-    <div>
+      </h3>
+      <!-- i edit the padding button her : delete padding-bottom: 400px  delete style="background-color: #038b570f"  -->
+      <div>
         <!-- i edit the padding button her : delete  lg:pb-44 -->
         <div
-                class="grid md:grid-cols-1 sm:grid-cols-1 justify-center items-center"
-                id="grid"
+          class="grid md:grid-cols-1 sm:grid-cols-1 justify-center items-center"
+          id="grid"
         >
-            <div
-                    class="lg:pb-10 flex justify-center lg:col-span-7 sm:col-span-1 border f-form"
-                    style="border: none"
+          <div
+            class="lg:pb-10 flex justify-center lg:col-span-7 sm:col-span-1 border f-form"
+            style="border: none"
+          >
+            <form
+              class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-3xl pt-2"
+              id="regForm"
+              action="/Landscaping/dist/submit-page.php"
             >
-                <form
-                        class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-3xl pt-2"
-                        id="regForm"
-                        action="/Landscaping/dist/submit-page.php"
-                >
                     <div class="tab text-white text-3xl font-bodyFont">
                         <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600">What service do you need?</h1>
@@ -503,6 +506,6 @@
         nomodule
         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
 ></script>
-<script src="script.js"></script>
+<script src="/Landscaping/dist/script.js"></script>
 </body>
 </html>
