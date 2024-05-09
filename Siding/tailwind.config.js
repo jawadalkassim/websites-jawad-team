@@ -15,6 +15,9 @@ module.exports = {
         backBtnBg: "linear-gradient(45deg, #272727c2, #767676)",
         pageBg: "linear-gradient(1deg, #5ee96329, #8dff930d)",
       },
+      boxShadow: {
+        '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+      },
       keyframes: {
         "slide-next": {
           "0%": {

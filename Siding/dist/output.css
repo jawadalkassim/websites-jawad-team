@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -213,8 +213,6 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
-  letter-spacing: inherit;
-  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -238,9 +236,9 @@ select {
 */
 
 button,
-input:where([type='button']),
-input:where([type='reset']),
-input:where([type='submit']) {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -496,10 +494,6 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
-  --tw-contain-size:  ;
-  --tw-contain-layout:  ;
-  --tw-contain-paint:  ;
-  --tw-contain-style:  ;
 }
 
 ::backdrop{
@@ -550,10 +544,6 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
-  --tw-contain-size:  ;
-  --tw-contain-layout:  ;
-  --tw-contain-paint:  ;
-  --tw-contain-style:  ;
 }
 
 .container{
@@ -603,20 +593,16 @@ video {
   margin-bottom: 20px;
 }
 
-.me-2{
-  margin-inline-end: 0.5rem;
-}
-
-.mt-3{
-  margin-top: 0.75rem;
-}
-
 .ml-auto{
   margin-left: auto;
 }
 
 .mr-auto{
   margin-right: auto;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
 }
 
 .block{
@@ -647,12 +633,12 @@ video {
   width: 2rem;
 }
 
-.w-full{
-  width: 100%;
-}
-
 .w-\[15\%\]{
   width: 15%;
+}
+
+.w-full{
+  width: 100%;
 }
 
 @keyframes slide-next{
@@ -728,16 +714,12 @@ video {
   border-radius: 0.25rem;
 }
 
-.rounded-full{
-  border-radius: 9999px;
+.rounded-\[4px\]{
+  border-radius: 4px;
 }
 
 .rounded-\[7px\]{
   border-radius: 7px;
-}
-
-.rounded-\[4px\]{
-  border-radius: 4px;
 }
 
 .border{
@@ -821,6 +803,10 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.pb-\[20px\]{
+  padding-bottom: 20px;
+}
+
 .pl-4{
   padding-left: 1rem;
 }
@@ -855,10 +841,6 @@ video {
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pb-\[20px\]{
-  padding-bottom: 20px;
 }
 
 .text-center{
@@ -914,6 +896,11 @@ video {
   color: rgb(37 118 40 / var(--tw-text-opacity));
 }
 
+.text-\[\#275329\]{
+  --tw-text-opacity: 1;
+  color: rgb(39 83 41 / var(--tw-text-opacity));
+}
+
 .text-\[\#2d2e2d\]{
   --tw-text-opacity: 1;
   color: rgb(45 46 45 / var(--tw-text-opacity));
@@ -939,11 +926,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\#275329\]{
-  --tw-text-opacity: 1;
-  color: rgb(39 83 41 / var(--tw-text-opacity));
-}
-
 .decoration-primaryColor{
   text-decoration-color: #01314A;
 }
@@ -964,9 +946,9 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-2xl{
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+.shadow-3xl{
+  --tw-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
+  --tw-shadow-colored: 0 35px 60px -15px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1765,10 +1747,6 @@ ul li {
 
   .lg\:pb-10{
     padding-bottom: 2.5rem;
-  }
-
-  .lg\:pb-44{
-    padding-bottom: 11rem;
   }
 
   .lg\:text-end{
