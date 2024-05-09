@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Solar</title>
-    <link href="output.css" rel="stylesheet" />
+    <link href="/Solar/dist/output.css" rel="stylesheet" />
 
     <style>
       .duration-btn {
@@ -21,7 +21,7 @@
         class="grid lg:grid-cols-2 md:grid-cols-1 items-center 2xl:w-contanerxl 2xl:ml-auto 2xl:mr-auto"
       >
         <div class="flex justify-center items-center p-2">
-          <img src="img/logo.svg" class="w-12 brand" />
+          <img src="/Solar/dist/img/logo.svg" class="w-12 brand" />
         </div>
         <a
           href=""
@@ -38,7 +38,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="img/chat.png" style="display: inline"
+            ><img src="/Solar/dist/img/chat.png" style="display: inline"
           /></span>
           <h1 class="flex justify-center items-center">
             Get the best quotes, fast!
@@ -48,7 +48,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="img/location.png" style="display: inline" />
+            ><img src="/Solar/dist/img/location.png" style="display: inline" />
           </span>
           <h1 class="flex justify-center items-center">
             Over 5,000 engineers across the UK
@@ -58,7 +58,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="img/check.png" style="display: inline"
+            ><img src="/Solar/dist/img/check.png" style="display: inline"
           /></span>
           <h1 class="flex justify-center items-center">
             Gas Safe registered engineers
@@ -77,7 +77,7 @@
           class="text-center text-white font-bold flex justify-center items-center gap-2"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="img/chat.png" style="display: inline"
+            ><img src="/Solar/dist/img/chat.png" style="display: inline"
           /></span>
           <h1 class="flex justify-start items-center">
             Get the best quotes, fast!
@@ -87,7 +87,7 @@
           class="text-center text-white font-bold flex justify-center items-center gap-2"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="img/location.png" style="display: inline" />
+            ><img src="/Solar/dist/img/location.png" style="display: inline" />
           </span>
           <h1 class="flex justify-start items-center">
             Over 5,000 engineers across the US
@@ -98,7 +98,7 @@
           style="padding-bottom: 0px"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="img/check.png" style="display: inline"
+            ><img src="/Solar/dist/img/check.png" style="display: inline"
           /></span>
           <h1 class="flex justify-start items-center">
             Gas Safe registered engineers
@@ -127,9 +127,9 @@
             style="border: none"
           >
             <form
-              class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-2xl pt-2"
+              class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-3xl pt-2"
               id="regForm"
-              action="submit-page.php"
+              action="/Solar/dist/submit-page.php"
             >
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
@@ -633,6 +633,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="script.js"></script>
+    <script src="/Solar/dist/script.js"></script>
   </body>
 </html>
