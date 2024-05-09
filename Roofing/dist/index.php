@@ -694,6 +694,6 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
-    <script src="script.js"></script>
+    <script src="/Roofing/dist/script.js"></script>
   </body>
 </html>
