@@ -593,6 +593,14 @@ video {
   margin-bottom: 20px;
 }
 
+.ml-auto{
+  margin-left: auto;
+}
+
+.mr-auto{
+  margin-right: auto;
+}
+
 .mt-3{
   margin-top: 0.75rem;
 }
@@ -671,6 +679,10 @@ video {
 
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.flex-col{
+  flex-direction: column;
 }
 
 .items-center{
@@ -884,6 +896,11 @@ video {
   color: rgb(37 118 40 / var(--tw-text-opacity));
 }
 
+.text-\[\#275329\]{
+  --tw-text-opacity: 1;
+  color: rgb(39 83 41 / var(--tw-text-opacity));
+}
+
 .text-\[\#2d2e2d\]{
   --tw-text-opacity: 1;
   color: rgb(45 46 45 / var(--tw-text-opacity));
@@ -929,10 +946,18 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-2xl{
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+.shadow-3xl{
+  --tw-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
+  --tw-shadow-colored: 0 35px 60px -15px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .\[word-spacing\:3px\]{
@@ -1672,6 +1697,10 @@ ul li {
     padding-bottom: 40px;
   }
 
+  .min-\[992px\]\:pt-\[100px\]{
+    padding-top: 100px;
+  }
+
   .min-\[992px\]\:pt-\[80px\]{
     padding-top: 80px;
   }
@@ -1731,6 +1760,32 @@ ul li {
 
   .lg\:text-end{
     text-align: end;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:w-contanerxl{
+    width: 1170px;
+  }
+}
+
+@media (min-width: 1500px){
+  .min-\[1500px\]\:min-h-screen{
+    min-height: 100vh;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:ml-auto{
+    margin-left: auto;
+  }
+
+  .\32xl\:mr-auto{
+    margin-right: auto;
+  }
+
+  .\32xl\:w-contanerxl{
+    width: 1170px;
   }
 }
 
