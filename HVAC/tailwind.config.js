@@ -3,6 +3,10 @@ module.exports = {
   content: ["./dist/**/*.{html,js,php}"],
   theme: {
     extend: {
+      width: {
+        contanerxl: "1170px",
+        contanerlg: "832px",
+      },
       colors: {
         primaryColor: "#01314A",
         secondaryColor: "#0d8155",

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /*
-! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -213,6 +213,8 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -236,9 +238,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -494,6 +496,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 ::backdrop{
@@ -544,6 +550,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 .container{
@@ -591,6 +601,14 @@ video {
 
 .mb-\[20px\]{
   margin-bottom: 20px;
+}
+
+.ml-auto{
+  margin-left: auto;
+}
+
+.mr-auto{
+  margin-right: auto;
 }
 
 .mt-3{
@@ -746,10 +764,6 @@ video {
   background-image: linear-gradient(45deg, #272727c2, #767676);
 }
 
-.bg-pageBg{
-  background-image: linear-gradient(1deg, #5ee96329, #8dff930d);
-}
-
 .p-2{
   padding: 0.5rem;
 }
@@ -897,6 +911,11 @@ video {
   color: rgb(37 118 40 / var(--tw-text-opacity));
 }
 
+.text-\[\#275329\]{
+  --tw-text-opacity: 1;
+  color: rgb(39 83 41 / var(--tw-text-opacity));
+}
+
 .text-\[\#2d2e2d\]{
   --tw-text-opacity: 1;
   color: rgb(45 46 45 / var(--tw-text-opacity));
@@ -998,7 +1017,6 @@ input.invalid {
 }
 
 button {
-  background-color: #04aa6d;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -1240,10 +1258,6 @@ ul li {
 }
 
 @media (min-width: 1020px) and (max-width: 1025px) {
-  footer{
-    padding: 120px 40px !important;
-  }
-
   button {
     font-size: 1.2rem !important;
   }
@@ -1475,7 +1489,7 @@ ul li {
     display: none;
   }
 
-  #grid{
+  #grid {
     display: block;
   }
 
@@ -1569,7 +1583,7 @@ ul li {
   }
 
   img {
-    max-width: 80% !important;
+    max-width: 65% !important;
   }
 
   .card-input-element + .card {
@@ -1771,9 +1785,29 @@ ul li {
   }
 }
 
+@media (min-width: 1280px){
+  .xl\:w-contanerxl{
+    width: 1170px;
+  }
+}
+
 @media (min-width: 1500px){
   .min-\[1500px\]\:min-h-screen{
     min-height: 100vh;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:ml-auto{
+    margin-left: auto;
+  }
+
+  .\32xl\:mr-auto{
+    margin-right: auto;
+  }
+
+  .\32xl\:w-contanerxl{
+    width: 1170px;
   }
 }
 
