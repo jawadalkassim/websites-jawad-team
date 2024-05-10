@@ -13,6 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <link href="/Home_Page/dist/output.css" rel="stylesheet" />
+    <!-- /Home_Page/dist/ -->
     <style>
       a {
         font-weight: 400;
@@ -334,7 +335,7 @@
             <div
               class="col-span-1 card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3"
             >
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/appliances">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -355,7 +356,7 @@
             <div
               class="col-span-1 card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3"
             >
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/siding">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -376,7 +377,7 @@
             <div
               class="col-span-1 card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3"
             >
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/plumbing">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -395,7 +396,7 @@
             class="col-span-1 lg:col-start-4 toCenter hover:scale-105 duration-200"
           >
             <div class="card adaptive bg-[#2da09d29] lg:p-3 m-3">
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/carpenters">
                 <div>
                   <div class="pt-3 flex justify-center">
                     <img
@@ -420,7 +421,7 @@
             <div
               class="col-span-1 card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3"
             >
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/gutter">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -440,7 +441,7 @@
             <div
               class="col-span-1 card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3"
             >
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/flooring">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -460,7 +461,7 @@
             <div
               class="col-span-1 card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3"
             >
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/hvac">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -480,7 +481,7 @@
             <div
               class="col-span-1 card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3"
             >
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/roofing">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -500,7 +501,7 @@
       <div class="flex justify-center pt-6">
         <button
           id="bu"
-          class="bg-secondaryColor hover:bg-primaryColor max-[769px]:mt-3 text-white rounded-md bg-showMore px-[45px] py-[13px] w-fit font-bold"
+          class="bg-secondaryColor hover:bg-primaryColor max-[769px]:mt-3 text-white rounded-md bg-showMore text-[22px] px-[60px] py-[13px] w-fit font-bold"
         >
           Show more
         </button>
@@ -512,7 +513,7 @@
             class="col-span-1 lg:col-start-1 toCenter hover:scale-105 duration-200"
           >
             <div class="card adaptive bg-[#2da09d29] lg:p-3 m-3">
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/bathroom">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -532,7 +533,7 @@
             <div
               class="col-span-1 card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3"
             >
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/painters">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -550,7 +551,7 @@
             class="col-span-1 lg:col-start-3 toCenter hover:scale-105 duration-200"
           >
             <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/electricians">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -568,7 +569,7 @@
             class="col-span-1 lg:col-start-4 toCenter hover:scale-105 duration-200"
           >
             <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/cleaning">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -589,7 +590,7 @@
             class="col-span-1 lg:col-start-1 toCenter hover:scale-105 duration-200"
           >
             <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/concrete-contractors">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -609,7 +610,7 @@
             class="col-span-1 lg:col-start-2 toCenter hover:scale-105 duration-200"
           >
             <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/fence-pros">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -627,7 +628,7 @@
             class="col-span-1 lg:col-start-3 toCenter hover:scale-105 duration-200"
           >
             <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/garage">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -645,7 +646,7 @@
             class="col-span-1 lg:col-start-4 toCenter hover:scale-105 duration-200"
           >
             <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/handyman">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -666,7 +667,7 @@
             class="col-span-1 lg:col-start-1 toCenter hover:scale-105 duration-200"
           >
             <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/home-security">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -684,7 +685,7 @@
             class="col-span-1 lg:col-start-2 toCenter hover:scale-105 duration-200"
           >
             <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/landscaping">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -702,7 +703,7 @@
             class="col-span-1 lg:col-start-3 toCenter hover:scale-105 duration-200"
           >
             <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/pest-control">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -720,7 +721,7 @@
             class="col-span-1 lg:col-start-4 toCenter hover:scale-105 duration-200"
           >
             <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/remodeling">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -743,7 +744,7 @@
             class="col-span-1 lg:col-start-1 toCenter hover:scale-105 duration-200"
           >
             <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/restoration">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -763,7 +764,7 @@
             class="col-span-1 lg:col-start-2 toCenter hover:scale-105 duration-200"
           >
             <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/solar">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -781,7 +782,7 @@
             class="col-span-1 lg:col-start-3 toCenter hover:scale-105 duration-200"
           >
             <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/tile-installation">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img
@@ -799,7 +800,7 @@
             class="col-span-1 lg:col-start-4 toCenter hover:scale-105 duration-200"
           >
             <div class="card adaptive bg-[#2da09d29] lg:h-50 lg:p-3 m-3">
-              <a href="google.com">
+              <a href="https://instant.renovatedeals.com/windows">
                 <div>
                   <div class="flex justify-center pt-3">
                     <img

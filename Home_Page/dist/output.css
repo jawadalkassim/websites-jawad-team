@@ -905,6 +905,11 @@ video {
   padding-bottom: 4px;
 }
 
+.px-\[60px\]{
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
 .pb-3{
   padding-bottom: 0.75rem;
 }
@@ -1092,6 +1097,13 @@ video {
 .photo {
   width: 100px !important;
   height: 50px !important;
+}
+
+@media (min-width: 1200px) {
+  .photo {
+    width: 100px !important;
+    height: 70px !important;
+  }
 }
 
 .nav-links li a {
@@ -1510,7 +1522,7 @@ hr.style-1 {
   }
 
   .photo {
-    height: 55px !important;
+    height: 70px !important;
   }
 }
 
@@ -1868,16 +1880,6 @@ hr.style-1 {
 .\[\&\>\*\]\:gap-x-6>*{
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
-}
-
-.\[\&\>\*\]\:duration-200>*{
-  transition-duration: 200ms;
-}
-
-.\[\&\>\*\]\:hover\:scale-105:hover>*{
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (max-width: 1200px){
