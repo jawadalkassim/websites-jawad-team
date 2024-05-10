@@ -106,13 +106,13 @@
     </div>
     <!-- delete style="background-color: #038b570f  min-[992px]:pt-[100px]" -->
     <h3
-            class="min-[992px]:pt-[80px] text-center text-[55px] max-[360px]:text-[25px] max-[480px]:text-[30px] font-bold text-secondaryColor pt-3 px-3 max-[480px]:pt-4 w-full lg"
+            class="min-[992px]:pt-[30px] text-center text-[55px] max-[360px]:text-[25px] max-[480px]:text-[30px] font-bold text-secondaryColor pt-3 px-3 max-[480px]:pt-4 w-full lg"
     >
         Get your garage deal
     </h3>
     <!-- delete style="background-color: #038b570f" -->
     <h3
-            class="min-[992px]:pb-[40px] text-gray-600 text-center text-[22px] max-[240px]:text-[15px] max-[480px]:text-[15px] font-bold pt-2 px-3 max-[480px]:py-4 w-full"
+            class="min-[992px]:pb-[10px] text-gray-600 text-center text-[22px] max-[240px]:text-[15px] max-[480px]:text-[15px] font-bold pt-2 px-3 max-[480px]:py-4 w-full"
     >
         by quickly comparing 3 FREE quotes
     </h3>
