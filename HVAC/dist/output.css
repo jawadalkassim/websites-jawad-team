@@ -951,12 +951,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-2xl{
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-3xl{
   --tw-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
   --tw-shadow-colored: 0 35px 60px -15px var(--tw-shadow-color);
@@ -1161,7 +1155,6 @@ ul li {
 }
 
 #regForm {
-  margin-top: 25px;
   border-radius: 15px;
 }
 
@@ -1699,16 +1692,16 @@ ul li {
 }
 
 @media (min-width: 992px){
-  .min-\[992px\]\:pb-\[40px\]{
-    padding-bottom: 40px;
+  .min-\[992px\]\:pb-\[10px\]{
+    padding-bottom: 10px;
   }
 
   .min-\[992px\]\:pt-\[100px\]{
     padding-top: 100px;
   }
 
-  .min-\[992px\]\:pt-\[80px\]{
-    padding-top: 80px;
+  .min-\[992px\]\:pt-\[30px\]{
+    padding-top: 30px;
   }
 }
 
