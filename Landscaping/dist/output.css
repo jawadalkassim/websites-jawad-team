@@ -1156,7 +1156,6 @@ ul li {
 }
 
 #regForm {
-  margin-top: 25px;
   border-radius: 15px;
 }
 
@@ -1698,16 +1697,16 @@ ul li {
 }
 
 @media (min-width: 992px){
-  .min-\[992px\]\:pb-\[40px\]{
-    padding-bottom: 40px;
+  .min-\[992px\]\:pb-\[10px\]{
+    padding-bottom: 10px;
   }
 
   .min-\[992px\]\:pt-\[100px\]{
     padding-top: 100px;
   }
 
-  .min-\[992px\]\:pt-\[80px\]{
-    padding-top: 80px;
+  .min-\[992px\]\:pt-\[30px\]{
+    padding-top: 30px;
   }
 }
 
