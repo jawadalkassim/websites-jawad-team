@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Cleaning</title>
-    <link href="/cleaning/dist/output.css" rel="stylesheet" />
+    <link href="/Cleaning/dist/output.css" rel="stylesheet" />
     <style>
       .duration-btn {
         transition: 0.2s;
@@ -20,7 +20,7 @@
         class="grid lg:grid-cols-2 md:grid-cols-1 items-center 2xl:w-contanerxl 2xl:ml-auto 2xl:mr-auto"
       >
         <div class="flex justify-center items-center p-2">
-          <img src="/cleaning/dist/img/logo.svg" class="w-12 brand" />
+          <img src="/Cleaning/dist/img/logo.svg" class="w-12 brand" />
         </div>
         <a
           href=""
@@ -37,7 +37,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="/cleaning/dist/img/chat.png" style="display: inline"
+            ><img src="/Cleaning/dist/img/chat.png" style="display: inline"
           /></span>
           <h1 class="flex justify-center items-center">
             Get the best quotes, fast!
@@ -47,7 +47,10 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="/cleaning/dist/img/location.png" style="display: inline" />
+            ><img
+              src="/Cleaning/dist/img/location.png"
+              style="display: inline"
+            />
           </span>
           <h1 class="flex justify-center items-center">
             Over 5,000 engineers across the UK
@@ -57,7 +60,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="/cleaning/dist/img/check.png" style="display: inline"
+            ><img src="/Cleaning/dist/img/check.png" style="display: inline"
           /></span>
           <h1 class="flex justify-center items-center">
             Gas Safe registered engineers
@@ -76,7 +79,7 @@
           class="text-center text-white font-bold flex justify-center items-center gap-2"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="/cleaning/dist/img/chat.png" style="display: inline"
+            ><img src="/Cleaning/dist/img/chat.png" style="display: inline"
           /></span>
           <h1 class="flex justify-start items-center">
             Get the best quotes, fast!
@@ -86,7 +89,10 @@
           class="text-center text-white font-bold flex justify-center items-center gap-2"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="/cleaning/dist/img/location.png" style="display: inline" />
+            ><img
+              src="/Cleaning/dist/img/location.png"
+              style="display: inline"
+            />
           </span>
           <h1 class="flex justify-start items-center">
             Over 5,000 engineers across the US
@@ -97,7 +103,7 @@
           style="padding-bottom: 0px"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="/cleaning/dist/img/check.png" style="display: inline"
+            ><img src="/Cleaning/dist/img/check.png" style="display: inline"
           /></span>
           <h1 class="flex justify-start items-center">
             Gas Safe registered engineers
@@ -130,298 +136,427 @@
             <form
               class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-3xl pt-2"
               id="regForm"
-              action="/cleaning/dist/submit-page.php"
+              action="/Cleaning/dist/submit-page.php"
             >
-                    <div class="tab text-white text-3xl font-bodyFont">
-                        <div class="text- text-3xl font-semibold pt-5 text-center p-5">
-                            <h1 class="pb-3 text-4xl text-gray-600">What service do you need?</h1>
-                        </div>
-                        <label class="flex justify-center items-center pt-8">
-                            <input  type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(2)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center">
-                                Carpet Cleaning
-                            </button>
-                        </label>
-
-                        <label class="flex justify-center items-center pt-2">
-                            <input  type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center">
-                                Maid Services
-                            </button>
-                        </label>
-
-                        <label class="flex justify-center items-center pt-2">
-                            <input  type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(2)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center">
-                                Office/Industrial Cleaning
-                            </button>
-                        </label>
-
-
-                    </div>
-                    <div class="tab text-white text-3xl font-bodyFont">
-                        <div class="text- text-3xl font-semibold pt-5 text-center p-5">
-                            <h1 class="pb-3 text-4xl text-gray-600">What maid service do you need?</h1>
-                        </div>
-                        <label class="flex justify-center items-center pt-8">
-                            <input type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center">
-                                Cleaning Maid Service
-                            </button>
-                        </label>
-                        <label class="flex justify-center items-center pt-3">
-                            <input  type="radio" class="card-input-element hidden" >
-                            <button  type="button" onclick="radioClick(1)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center">
-                                Move In/Out Cleaning
-                            </button>
-                        </label>
-                        <label class="flex justify-center items-center pt-3">
-                            <input type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center">
-                                New Construction Cleaning
-                            </button>
-                        </label>
-
-                        <label class="flex justify-center items-center pt-3">
-                            <input  type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center">
-                                Organizing Declutter
-                            </button>
-                        </label>
-                        <label class="flex justify-center items-center pt-3">
-                            <input  type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center">
-                                Post Construction Cleaning
-                            </button>
-                        </label>
-                        <label class="flex justify-center items-center pt-3">
-                            <input  type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center">
-                                Window Cleaning
-                            </button>
-                        </label>
-                    </div>
-
-                    <div class="tab text-white text-3xl font-bodyFont">
-                        <div class="text- text-3xl font-semibold pt-5 text-center p-5">
-                            <h1 class="pb-3 text-4xl text-gray-600">What type of property do you want a quote for?</h1>
-                        </div>
-                        <label class="flex justify-center items-center pt-8">
-                            <input  type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(1 )" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center">
-                                Home
-                            </button>
-                        </label>
-                        <label class="flex justify-center items-center pt-2">
-                            <input  type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center">
-                                Business
-                            </button>
-                        </label>
-                    </div>
-
-                    <div class="tab text-white text-3xl font-bodyFont">
-                        <div class="text- text-3xl font-semibold pt-5 text-center p-5">
-                            <h1 class="pb-3 text-4xl text-gray-600">Do you own or rent this home?</h1>
-                        </div>
-                        <label class="flex justify-center items-center pt-8">
-                            <input  type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center">
-                                I own
-                            </button>
-                        </label>
-                        <label class="flex justify-center items-center pt-2">
-                            <input  type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3  mb-2 text-center items-center">
-                                I rent
-                            </button>
-                        </label>
-                    </div>
-                    <div class="tab text-white text-3xl font-bodyFont">
-                        <div class="text- text-3xl font-semibold pt-5 text-center p-5">
-                            <h1 class="pb-3 text-4xl text-gray-600">Okay… Can you specify your address, please?
-                            </h1>
-                        </div>
-                        <div class="pt-10 flex justify-center">
-                            <input type="text" id="address" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Address" required />
-                        </div>
-                        <div id="address-error" class="text-center" style="font-size: 14px">
-
-
-                        </div>
-                        <div class="flex justify-center pt-5 items-center text-center">
-                            <button type="button" onclick="nextPrev(1)" class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
-                                Next
-                            </button>
-                        </div>
-                    </div>
-                    <div class="tab text-white text-3xl font-bodyFont">
-                        <div class="text- text-3xl font-semibold pt-5 text-center p-5">
-                            <h1 class="pb-3 text-4xl text-gray-600">Can you add your zip code, please?
-                            </h1>
-                        </div>
-                        <div class="pt-10 flex justify-center">
-                            <input type="number" pattern="[0-9]*" id="zip" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="e.g. 12345" required />
-                        </div>
-                        <div id="zip-error" class="text-center" style="font-size: 14px">
-
-                        </div>
-                        <div class="flex justify-center pt-5 items-center text-center">
-                            <button type="button" onclick="nextPrev(1)" class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
-                                Next
-                            </button>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="tab tab tab text-white text-3xl">
-                        <div class="text- text-4xl font-semibold pt-5 text-center p-5">
-                            <h1 class="pb-3 text-4xl text-gray-600 ">Great! What is your email?</h1>
-                        </div>
-                        <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
-                            <input type="tel" id="email" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter email address" required />
-                        </div>
-                        <div id="email-error" class="text-center" style="font-size: 14px">
-
-                        </div>
-                        <div class="flex justify-center pt-5 items-center">
-                            <button type="button" onclick="nextPrev(1)" class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
-                                Next
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="tab text-white text-4xl font-bodyFont">
-                        <div class="text- text-3xl font-semibold pt-5 text-center p-5">
-                            <h1 class="pb-3 text-4xl text-gray-600">What is your name?</h1>
-                        </div>
-                        <div class="pt-10 flex justify-center ">
-                            <input type="text" id="name" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter first Name" required />
-                        </div>
-                        <div class="pt-5 flex justify-center">
-                            <input id="lname" type="text" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter last Name" required />
-                        </div>
-                        <div id="name-error" class="text-center" style="font-size: 14px">
-
-                        </div>
-                        <div class="pt-10 flex justify-center items-center">
-                            <button style="margin-top: 20px;" type="button" style="margin-top: 20px;" onclick="nextPrev(1)" class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
-                                Next
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="tab tab tab text-white text-3xl">
-                        <div class="text- text-3xl font-semibold pt-5 text-center p-5">
-                            <h1 class="pb-3 text-4xl text-gray-600 ">Wonderful! We are ready to connect you with a contractor
-                                Please enter your phone number</h1>
-                        </div>
-                        <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
-                            <input type="tel" id="phone" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter phone number" required />
-                        </div>
-                        <div id="phone-error" class="text-center" style="font-size: 14px">
-
-                        </div>
-                        <div class="flex justify-center pt-5 items-center">
-                            <button type="button" onclick="nextPrev(1)" class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
-                                Submit
-                            </button>
-                        </div>
-                    </div>
-                    <div style="text-align:center;margin-top:40px;">
-                        <span class="step"></span>
-                        <span class="step"></span>
-                        <span class="step"></span>
-                        <span class="step"></span>
-                        <span class="step"></span>
-                        <span class="step"></span>
-                        <span class="step"></span>
-                        <span class="step"></span>
-                        <span class="step"></span>
-
-
-                    </div>
-                    <div style="overflow: auto" class="flex justify-center">
-                        <div
-                                class="w-[15%] max-[650px]:w-[40%] flex justify-center items-center pb-[20px]"
-                                style="float: right"
-                        >
-                            <button
-                                    class="text-xl font-bold rounded-[4px] text-white bg-backBtnBg w-full"
-                                    type="button"
-                                    id="prevBtn"
-                                    onclick="back()"
-                            >
-                                ← Back
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <!-- add style  container -->
-            <section
-                    class="container xl:w-contanerxl pl-4 pr-4 py-[40px] mx-auto flex justify-center mb-[20px]"
-            >
-                <div
-                        class="ads grid grid-cols-2 max-[769px]:grid-cols-1 gap-x-[70px] gap-y-[20px] [&>*]:flex [&>*]:gap-1 [&>*]:items-center [&>*]:text-[24px] max-[1024px]:[&>*]:text-[22px] max-[769px]:[&>*]:text-[20px] max-[360px]:[&>*]:text-[19px]"
-                >
-                    <div>
-                <span
-                        class="flex justify-center items-center pt-1 text-[#257628]"
-                ><ion-icon name="checkmark-circle"></ion-icon
-                ></span>
-                        <p class="text-[#2d2e2d]">Next day installation</p>
-                    </div>
-                    <div>
-                <span
-                        class="flex justify-center items-center pt-1 text-[#257628]"
-                ><ion-icon name="checkmark-circle"></ion-icon
-                ></span>
-                        <p class="text-[#2d2e2d]">Quotes from local engineers</p>
-                    </div>
-                    <div>
-                <span
-                        class="flex justify-center items-center pt-1 text-[#257628]"
-                ><ion-icon name="checkmark-circle"></ion-icon
-                ></span>
-                        <p class="text-[#2d2e2d]">1.9 million quotes in 10 years</p>
-                    </div>
-                    <div>
-                <span
-                        class="flex justify-center items-center pt-1 text-[#257628]"
-                ><ion-icon name="checkmark-circle"></ion-icon
-                ></span>
-                        <p class="text-[#2d2e2d]">Save up to £500 on installation</p>
-                    </div>
+              <div class="tab text-white text-3xl font-bodyFont">
+                <div class="text- text-3xl font-semibold pt-5 text-center p-5">
+                  <h1 class="pb-3 text-4xl text-gray-600">
+                    What service do you need?
+                  </h1>
                 </div>
-            </section>
+                <label class="flex justify-center items-center pt-8">
+                  <input type="radio" class="card-input-element hidden" />
+                  <button
+                    type="button"
+                    onclick="radioClick(2)"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                  >
+                    Carpet Cleaning
+                  </button>
+                </label>
+
+                <label class="flex justify-center items-center pt-2">
+                  <input type="radio" class="card-input-element hidden" />
+                  <button
+                    type="button"
+                    onclick="radioClick(1)"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                  >
+                    Maid Services
+                  </button>
+                </label>
+
+                <label class="flex justify-center items-center pt-2">
+                  <input type="radio" class="card-input-element hidden" />
+                  <button
+                    type="button"
+                    onclick="radioClick(2)"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                  >
+                    Office/Industrial Cleaning
+                  </button>
+                </label>
+              </div>
+              <div class="tab text-white text-3xl font-bodyFont">
+                <div class="text- text-3xl font-semibold pt-5 text-center p-5">
+                  <h1 class="pb-3 text-4xl text-gray-600">
+                    What maid service do you need?
+                  </h1>
+                </div>
+                <label class="flex justify-center items-center pt-8">
+                  <input type="radio" class="card-input-element hidden" />
+                  <button
+                    type="button"
+                    onclick="radioClick(1)"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                  >
+                    Cleaning Maid Service
+                  </button>
+                </label>
+                <label class="flex justify-center items-center pt-3">
+                  <input type="radio" class="card-input-element hidden" />
+                  <button
+                    type="button"
+                    onclick="radioClick(1)"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                  >
+                    Move In/Out Cleaning
+                  </button>
+                </label>
+                <label class="flex justify-center items-center pt-3">
+                  <input type="radio" class="card-input-element hidden" />
+                  <button
+                    type="button"
+                    onclick="radioClick(1)"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                  >
+                    New Construction Cleaning
+                  </button>
+                </label>
+
+                <label class="flex justify-center items-center pt-3">
+                  <input type="radio" class="card-input-element hidden" />
+                  <button
+                    type="button"
+                    onclick="radioClick(1)"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                  >
+                    Organizing Declutter
+                  </button>
+                </label>
+                <label class="flex justify-center items-center pt-3">
+                  <input type="radio" class="card-input-element hidden" />
+                  <button
+                    type="button"
+                    onclick="radioClick(1)"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                  >
+                    Post Construction Cleaning
+                  </button>
+                </label>
+                <label class="flex justify-center items-center pt-3">
+                  <input type="radio" class="card-input-element hidden" />
+                  <button
+                    type="button"
+                    onclick="radioClick(1)"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                  >
+                    Window Cleaning
+                  </button>
+                </label>
+              </div>
+
+              <div class="tab text-white text-3xl font-bodyFont">
+                <div class="text- text-3xl font-semibold pt-5 text-center p-5">
+                  <h1 class="pb-3 text-4xl text-gray-600">
+                    What type of property do you want a quote for?
+                  </h1>
+                </div>
+                <label class="flex justify-center items-center pt-8">
+                  <input type="radio" class="card-input-element hidden" />
+                  <button
+                    type="button"
+                    onclick="radioClick(1 )"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                  >
+                    Home
+                  </button>
+                </label>
+                <label class="flex justify-center items-center pt-2">
+                  <input type="radio" class="card-input-element hidden" />
+                  <button
+                    type="button"
+                    onclick="radioClick(1)"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                  >
+                    Business
+                  </button>
+                </label>
+              </div>
+
+              <div class="tab text-white text-3xl font-bodyFont">
+                <div class="text- text-3xl font-semibold pt-5 text-center p-5">
+                  <h1 class="pb-3 text-4xl text-gray-600">
+                    Do you own or rent this home?
+                  </h1>
+                </div>
+                <label class="flex justify-center items-center pt-8">
+                  <input type="radio" class="card-input-element hidden" />
+                  <button
+                    type="button"
+                    onclick="radioClick(1)"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                  >
+                    I own
+                  </button>
+                </label>
+                <label class="flex justify-center items-center pt-2">
+                  <input type="radio" class="card-input-element hidden" />
+                  <button
+                    type="button"
+                    onclick="radioClick(1)"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                  >
+                    I rent
+                  </button>
+                </label>
+              </div>
+              <div class="tab text-white text-3xl font-bodyFont">
+                <div class="text- text-3xl font-semibold pt-5 text-center p-5">
+                  <h1 class="pb-3 text-4xl text-gray-600">
+                    Okay… Can you specify your address, please?
+                  </h1>
+                </div>
+                <div class="pt-10 flex justify-center">
+                  <input
+                    type="text"
+                    id="address"
+                    class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
+                    placeholder="Address"
+                    required
+                  />
+                </div>
+                <div
+                  id="address-error"
+                  class="text-center"
+                  style="font-size: 14px"
+                ></div>
+                <div class="flex justify-center pt-5 items-center text-center">
+                  <button
+                    type="button"
+                    onclick="nextPrev(1)"
+                    class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+              <div class="tab text-white text-3xl font-bodyFont">
+                <div class="text- text-3xl font-semibold pt-5 text-center p-5">
+                  <h1 class="pb-3 text-4xl text-gray-600">
+                    Can you add your zip code, please?
+                  </h1>
+                </div>
+                <div class="pt-10 flex justify-center">
+                  <input
+                    type="number"
+                    pattern="[0-9]*"
+                    id="zip"
+                    class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
+                    placeholder="e.g. 12345"
+                    required
+                  />
+                </div>
+                <div
+                  id="zip-error"
+                  class="text-center"
+                  style="font-size: 14px"
+                ></div>
+                <div class="flex justify-center pt-5 items-center text-center">
+                  <button
+                    type="button"
+                    onclick="nextPrev(1)"
+                    class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+
+              <div class="tab tab tab text-white text-3xl">
+                <div class="text- text-4xl font-semibold pt-5 text-center p-5">
+                  <h1 class="pb-3 text-4xl text-gray-600">
+                    Great! What is your email?
+                  </h1>
+                </div>
+                <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
+                  <input
+                    type="tel"
+                    id="email"
+                    class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
+                    placeholder="Enter email address"
+                    required
+                  />
+                </div>
+                <div
+                  id="email-error"
+                  class="text-center"
+                  style="font-size: 14px"
+                ></div>
+                <div class="flex justify-center pt-5 items-center">
+                  <button
+                    type="button"
+                    onclick="nextPrev(1)"
+                    class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+
+              <div class="tab text-white text-4xl font-bodyFont">
+                <div class="text- text-3xl font-semibold pt-5 text-center p-5">
+                  <h1 class="pb-3 text-4xl text-gray-600">
+                    What is your name?
+                  </h1>
+                </div>
+                <div class="pt-10 flex justify-center">
+                  <input
+                    type="text"
+                    id="name"
+                    class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
+                    placeholder="Enter first Name"
+                    required
+                  />
+                </div>
+                <div class="pt-5 flex justify-center">
+                  <input
+                    id="lname"
+                    type="text"
+                    class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
+                    placeholder="Enter last Name"
+                    required
+                  />
+                </div>
+                <div
+                  id="name-error"
+                  class="text-center"
+                  style="font-size: 14px"
+                ></div>
+                <div class="pt-10 flex justify-center items-center">
+                  <button
+                    style="margin-top: 20px"
+                    type="button"
+                    style="margin-top: 20px"
+                    onclick="nextPrev(1)"
+                    class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+
+              <div class="tab tab tab text-white text-3xl">
+                <div class="text- text-3xl font-semibold pt-5 text-center p-5">
+                  <h1 class="pb-3 text-4xl text-gray-600">
+                    Wonderful! We are ready to connect you with a contractor
+                    Please enter your phone number
+                  </h1>
+                </div>
+                <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
+                    placeholder="Enter phone number"
+                    required
+                  />
+                </div>
+                <div
+                  id="phone-error"
+                  class="text-center"
+                  style="font-size: 14px"
+                ></div>
+                <div class="flex justify-center pt-5 items-center">
+                  <button
+                    type="button"
+                    onclick="nextPrev(1)"
+                    class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+              <div style="text-align: center; margin-top: 40px">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+              </div>
+              <div style="overflow: auto" class="flex justify-center">
+                <div
+                  class="w-[15%] max-[650px]:w-[40%] flex justify-center items-center pb-[20px]"
+                  style="float: right"
+                >
+                  <button
+                    class="text-xl font-bold rounded-[4px] text-white bg-backBtnBg w-full"
+                    type="button"
+                    id="prevBtn"
+                    onclick="back()"
+                  >
+                    ← Back
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- add style  container -->
+          <section
+            class="container xl:w-contanerxl pl-4 pr-4 py-[40px] mx-auto flex justify-center mb-[20px]"
+          >
+            <div
+              class="ads grid grid-cols-2 max-[769px]:grid-cols-1 gap-x-[70px] gap-y-[20px] [&>*]:flex [&>*]:gap-1 [&>*]:items-center [&>*]:text-[24px] max-[1024px]:[&>*]:text-[22px] max-[769px]:[&>*]:text-[20px] max-[360px]:[&>*]:text-[19px]"
+            >
+              <div>
+                <span
+                  class="flex justify-center items-center pt-1 text-[#257628]"
+                  ><ion-icon name="checkmark-circle"></ion-icon
+                ></span>
+                <p class="text-[#2d2e2d]">Next day installation</p>
+              </div>
+              <div>
+                <span
+                  class="flex justify-center items-center pt-1 text-[#257628]"
+                  ><ion-icon name="checkmark-circle"></ion-icon
+                ></span>
+                <p class="text-[#2d2e2d]">Quotes from local engineers</p>
+              </div>
+              <div>
+                <span
+                  class="flex justify-center items-center pt-1 text-[#257628]"
+                  ><ion-icon name="checkmark-circle"></ion-icon
+                ></span>
+                <p class="text-[#2d2e2d]">1.9 million quotes in 10 years</p>
+              </div>
+              <div>
+                <span
+                  class="flex justify-center items-center pt-1 text-[#257628]"
+                  ><ion-icon name="checkmark-circle"></ion-icon
+                ></span>
+                <p class="text-[#2d2e2d]">Save up to £500 on installation</p>
+              </div>
+            </div>
+          </section>
         </div>
+      </div>
     </div>
-</div>
 
-<footer class="py-[80px] px-[40px]  bg-[#4CAF50]">
-    <div
-            class="container xl:w-contanerxl pl-4 pr-4 mx-auto flex justify-center"
-    >
+    <footer class="py-[80px] px-[40px] bg-[#4CAF50]">
+      <div
+        class="container xl:w-contanerxl pl-4 pr-4 mx-auto flex justify-center"
+      >
         <p
-                class="text-[25px] max-[769px]:text-[22px] font-bold [word-spacing:3px] text-white text-center"
+          class="text-[25px] max-[769px]:text-[22px] font-bold [word-spacing:3px] text-white text-center"
         >
-            The smarter way to find approved heating engineers
+          The smarter way to find approved heating engineers
         </p>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<script
-        type="module"
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-></script>
-<script
-        nomodule
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-></script>
-<script src="/cleaning/dist/script.js"></script>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/Cleaning/dist/script.js"></script>
+  </body>
 </html>
