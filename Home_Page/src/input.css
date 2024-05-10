@@ -11,6 +11,14 @@
   width: 100px !important;
   height: 50px !important;
 }
+
+@media (min-width: 1200px) {
+  .photo {
+    width: 100px !important;
+    height: 70px !important;
+  }
+}
+
 .nav-links li a {
   text-align: end !important;
   color: #545965;
@@ -399,7 +407,7 @@ hr.style-1 {
     padding: 30px;
   }
   .photo {
-    height: 55px !important;
+    height: 70px !important;
   }
 }
 
