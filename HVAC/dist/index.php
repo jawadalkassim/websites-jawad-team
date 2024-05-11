@@ -104,21 +104,20 @@
           </h1>
         </div>
       </div>
-      <!-- delete style="background-color: #038b570f  min-[992px]:pt-[100px]" -->
+
       <h3
         class="min-[992px]:pt-[30px] text-center text-[55px] max-[360px]:text-[25px] max-[480px]:text-[30px] font-bold text-secondaryColor pt-3 px-3 max-[480px]:pt-4 w-full lg"
       >
         Get your hvac deal
       </h3>
-      <!-- delete style="background-color: #038b570f" -->
+
       <h3
         class="min-[992px]:pb-[10px] text-gray-600 text-center text-[22px] max-[240px]:text-[15px] max-[480px]:text-[15px] font-bold pt-2 px-3 max-[480px]:py-4 w-full"
       >
         by quickly comparing 3 FREE quotes
       </h3>
-      <!-- i edit the padding button her : delete padding-bottom: 400px  delete style="background-color: #038b570f"  -->
+
       <div>
-        <!-- i edit the padding button her : delete  lg:pb-44 -->
         <div
           class="grid md:grid-cols-1 sm:grid-cols-1 justify-center items-center"
           id="grid"
@@ -130,73 +129,89 @@
             <form
               class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-3xl pt-2"
               id="regForm"
-              action="/HVAC/dist/submit-page.php"
+             
             >
               <div class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store="serviceNeed"
+                  type="text"
+                  name="service-need"
+                  class="hidden"
+                />
+
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What service do you need?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(1)"
+                    onclick="radioClick(1);handelBtnClick('Ducts','serviceNeed')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Ducts
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(2)"
+                    onclick="radioClick(2);handelBtnClick('Installation','serviceNeed')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Installation
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(3)"
+                    onclick="radioClick(3);handelBtnClick('Repair','serviceNeed')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Repair
                   </button>
                 </label>
               </div>
+
               <div class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store="ductsServiceNeed"
+                  type="text"
+                  name="ducts-service-need"
+                  class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What ducts service do you need?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(3)"
+                    onclick="radioClick(3);handelBtnClick('Ducts&Vents','ductsServiceNeed')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Ducts & Vents Clean
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(3)"
+                    onclick="radioClick(3);handelBtnClick('Clean','ductsServiceNeed')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Ducts & Vents Clean
                   </button>
                 </label>
               </div>
+
               <div class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store="installationServiceNeed"
+                  type="text"
+                  name="installation-service-need"
+                  class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What installation service do you need?
@@ -204,20 +219,18 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-2">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
-                      onclick="radioClick(2)"
+                      onclick="radioClick(2);handelBtnClick('boiler','installationServiceNeed')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Boiler Install
                     </button>
                   </label>
                   <label class="flex justify-center items-center pt-2">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
-                      onclick="radioClick(2)"
+                      onclick="radioClick(2);handelBtnClick('central','installationServiceNeed')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Central AC Install
@@ -226,20 +239,18 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-2">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
-                      onclick="radioClick(2)"
+                      onclick="radioClick(2);handelBtnClick('ductless','installationServiceNeed')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Ductless (Mini Split) AC Install
                     </button>
                   </label>
                   <label class="flex justify-center items-center pt-2">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
-                      onclick="radioClick(2)"
+                      onclick="radioClick(2);handelBtnClick('electrical','installationServiceNeed')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Electrical Baseboard/Wall Heater Install
@@ -248,20 +259,18 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-2">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
-                      onclick="radioClick(2)"
+                      onclick="radioClick(2);handelBtnClick('furnace','installationServiceNeed')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Furnace Heating System Install
                     </button>
                   </label>
                   <label class="flex justify-center items-center pt-2">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
-                      onclick="radioClick(2)"
+                      onclick="radioClick(2);handelBtnClick('heat','installationServiceNeed')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Heat Pump Install
@@ -270,10 +279,9 @@
                 </div>
                 <div class="grid lg:grid-cols-1 lg:gap-2">
                   <label class="flex justify-center items-center pt-2">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
-                      onclick="radioClick(2)"
+                      onclick="radioClick(2);handelBtnClick('thermostat','installationServiceNeed')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/2 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Thermostat Install
@@ -281,7 +289,14 @@
                   </label>
                 </div>
               </div>
+
               <div class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store="repairService"
+                  type="text"
+                  name="repair-service"
+                  class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What repair service do you need?
@@ -289,20 +304,18 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-2">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
-                      onclick="radioClick(1)"
+                      onclick="radioClick(1);handelBtnClick('boiler','repairService')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Boiler Repair
                     </button>
                   </label>
                   <label class="flex justify-center items-center pt-2">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
-                      onclick="radioClick(1)"
+                      onclick="radioClick(1);handelBtnClick('central','repairService')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Central AC Repair
@@ -311,20 +324,18 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-2">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
-                      onclick="radioClick(1)"
+                      onclick="radioClick(1);handelBtnClick('ductless','repairService')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Ductless (Mini Split) AC Repair
                     </button>
                   </label>
                   <label class="flex justify-center items-center pt-2">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
-                      onclick="radioClick(1)"
+                      onclick="radioClick(1);handelBtnClick('electrical','repairService')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Electrical Baseboard/Wall Heater Repair
@@ -333,20 +344,18 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-2">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
-                      onclick="radioClick(1)"
+                      onclick="radioClick(1);handelBtnClick('furnace','repairService')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Furnace Heating System Repair
                     </button>
                   </label>
                   <label class="flex justify-center items-center pt-2">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
-                      onclick="radioClick(1)"
+                      onclick="radioClick(1);handelBtnClick('heat','repairService')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Heat Pump Repair
@@ -355,10 +364,9 @@
                 </div>
                 <div class="grid lg:grid-cols-1">
                   <label class="flex justify-center items-center pt-2">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
-                      onclick="radioClick(1)"
+                      onclick="radioClick(1);handelBtnClick('window','repairService')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/2 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Window AC Unit Repair
@@ -366,60 +374,71 @@
                   </label>
                 </div>
               </div>
+
               <div class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store="typeProperty"
+                  type="text"
+                  name="type-property"
+                  class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What type of property do you want a quote for?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(1)"
+                    onclick="radioClick(1);handelBtnClick('home','typeProperty')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Home
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(1)"
+                    onclick="radioClick(1);handelBtnClick('business','typeProperty')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Business
                   </button>
                 </label>
               </div>
+
               <div class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store="ownOrRent"
+                  type="text"
+                  name="own-or-rent"
+                  class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     Do you own or rent this home?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(1)"
+                    onclick="radioClick(1);handelBtnClick('own','ownOrRent')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I own
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(1)"
+                    onclick="radioClick(1);handelBtnClick('rent','ownOrRent')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I rent
                   </button>
                 </label>
               </div>
+
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -450,6 +469,7 @@
                   </button>
                 </div>
               </div>
+
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -459,6 +479,7 @@
                 <div class="pt-10 flex justify-center">
                   <input
                     type="number"
+                    name="zip"
                     pattern="[0-9]*"
                     inputmode="numeric"
                     id="zip"
@@ -482,6 +503,7 @@
                   </button>
                 </div>
               </div>
+
               <div class="tab tab tab text-white text-3xl">
                 <div class="text- text-4xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -490,8 +512,9 @@
                 </div>
                 <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
                   <input
-                    type="tel"
                     id="email"
+                    type="tel"
+                    name="email"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter email address"
                     required
@@ -512,6 +535,7 @@
                   </button>
                 </div>
               </div>
+
               <div class="tab text-white text-4xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -520,8 +544,9 @@
                 </div>
                 <div class="pt-10 flex justify-center">
                   <input
-                    type="text"
                     id="name"
+                    type="text"
+                    name="firstName"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter first Name"
                     required
@@ -531,6 +556,7 @@
                   <input
                     id="lname"
                     type="text"
+                    name="lastName"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter last Name"
                     required
@@ -552,6 +578,7 @@
                   </button>
                 </div>
               </div>
+
               <div class="tab tab tab text-white text-3xl">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -561,8 +588,9 @@
                 </div>
                 <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
                   <input
-                    type="tel"
                     id="phone"
+                    type="tel"
+                    name="phone"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter phone number"
                     required
@@ -575,7 +603,7 @@
                 ></div>
                 <div class="flex justify-center pt-5 items-center">
                   <button
-                    type="button"
+                    type="submit"
                     onclick="nextPrev(1)"
                     class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -583,6 +611,7 @@
                   </button>
                 </div>
               </div>
+
               <div style="text-align: center; margin-top: 40px">
                 <span class="step"></span>
                 <span class="step"></span>
@@ -614,7 +643,6 @@
             </form>
           </div>
 
-          <!-- add style  container -->
           <section
             class="container xl:w-contanerxl pl-4 pr-4 py-[40px] mx-auto flex justify-center mb-[20px]"
           >

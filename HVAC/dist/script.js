@@ -46,8 +46,8 @@ function nextPrev(n) {
     phone = phoneNumber.value;
     address = a.value;
     email = e.value;
-    document.getElementById("regForm").submit();
-    document.body.innerHTML = "";
+    // document.getElementById("regForm").submit();
+    // document.body.innerHTML = "";
     return false;
   }
   showTab(currentTab, n);
@@ -64,7 +64,7 @@ function validateForm() {
   y = x[currentTab].getElementsByTagName("input");
 
   for (i = 0; i < y.length; i++) {
-    if (y[i].value === "") {
+    if (!y[i].hasAttribute("data-store") && y[i].value === "") {
       y[i].className += " invalid";
 
       valid = false;
@@ -134,4 +134,23 @@ function fixStepIndicator(n) {
   }
 
   x[n].className += " active";
+}
+
+const form = document.getElementById("regForm");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const fomData = new FormData(form);
+
+  const data = Object.fromEntries(fomData);
+
+  console.log(data);
+  const jsonData = JSON.stringify(data);
+  window.location.href = "submit-page.php";
+});
+
+function handelBtnClick(btn_value, target) {
+  let inp = document.querySelector(`[data-store= ${target}]`);
+  inp.value = btn_value;
 }

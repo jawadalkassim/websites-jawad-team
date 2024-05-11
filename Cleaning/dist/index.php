@@ -110,21 +110,20 @@
           </h1>
         </div>
       </div>
-      <!-- delete style="background-color: #038b570f  min-[992px]:pt-[100px]" -->
+
       <h3
         class="min-[992px]:pt-[30px] text-center text-[55px] max-[360px]:text-[25px] max-[480px]:text-[30px] font-bold text-secondaryColor pt-3 px-3 max-[480px]:pt-4 w-full lg"
       >
         Get your cleaning deal
       </h3>
-      <!-- delete style="background-color: #038b570f" -->
+
       <h3
         class="min-[992px]:pb-[10px] text-gray-600 text-center text-[22px] max-[240px]:text-[15px] max-[480px]:text-[15px] font-bold pt-2 px-3 max-[480px]:py-4 w-full"
       >
         by quickly comparing 3 FREE quotes
       </h3>
-      <!-- i edit the padding button her : delete padding-bottom: 400px  delete style="background-color: #038b570f"  -->
+
       <div>
-        <!-- i edit the padding button her : delete  lg:pb-44 -->
         <div
           class="grid md:grid-cols-1 sm:grid-cols-1 justify-center items-center"
           id="grid"
@@ -136,19 +135,23 @@
             <form
               class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-3xl pt-2"
               id="regForm"
-              action="/Cleaning/dist/submit-page.php"
             >
               <div class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store="serviceNeed"
+                  type="text"
+                  name="service-need"
+                  class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What service do you need?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(2)"
+                    onclick="radioClick(2);handelBtnClick('carpet','serviceNeed')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Carpet Cleaning
@@ -156,10 +159,9 @@
                 </label>
 
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(1)"
+                    onclick="radioClick(1);handelBtnClick('maid','serviceNeed')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Maid Services
@@ -167,10 +169,9 @@
                 </label>
 
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(2)"
+                    onclick="radioClick(2);handelBtnClick('office','serviceNeed')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Office/Industrial Cleaning
@@ -178,36 +179,39 @@
                 </label>
               </div>
               <div class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store="maidService"
+                  type="text"
+                  name="maid-service"
+                  class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What maid service do you need?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(1)"
+                    onclick="radioClick(1);handelBtnClick('cleaning','maidService')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Cleaning Maid Service
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-3">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(1)"
+                    onclick="radioClick(1);handelBtnClick('moveIn','maidService')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Move In/Out Cleaning
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-3">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(1)"
+                    onclick="radioClick(1);handelBtnClick('newConstruction','maidService')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     New Construction Cleaning
@@ -215,30 +219,27 @@
                 </label>
 
                 <label class="flex justify-center items-center pt-3">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(1)"
+                    onclick="radioClick(1);handelBtnClick('organizing','maidService')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Organizing Declutter
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-3">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(1)"
+                    onclick="radioClick(1);handelBtnClick('post','maidService')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Post Construction Cleaning
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-3">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(1)"
+                    onclick="radioClick(1);handelBtnClick('window','maidService')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Window Cleaning
@@ -247,26 +248,30 @@
               </div>
 
               <div class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store="typeProperty"
+                  type="text"
+                  name="type-property"
+                  class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What type of property do you want a quote for?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(1 )"
+                    onclick="radioClick(1);handelBtnClick('Home','typeProperty')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Home
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(1)"
+                    onclick="radioClick(1);handelBtnClick('business','typeProperty')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Business
@@ -275,32 +280,37 @@
               </div>
 
               <div class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store="ownOrRent"
+                  type="text"
+                  name="own-or-rent"
+                  class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     Do you own or rent this home?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(1)"
+                    onclick="radioClick(1);handelBtnClick('own','ownOrRent')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I own
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(1)"
+                    onclick="radioClick(1);handelBtnClick('rent','ownOrRent')"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I rent
                   </button>
                 </label>
               </div>
+
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -309,8 +319,9 @@
                 </div>
                 <div class="pt-10 flex justify-center">
                   <input
-                    type="text"
                     id="address"
+                    type="text"
+                    name="address"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Address"
                     required
@@ -331,6 +342,7 @@
                   </button>
                 </div>
               </div>
+
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -339,9 +351,10 @@
                 </div>
                 <div class="pt-10 flex justify-center">
                   <input
-                    type="number"
-                    pattern="[0-9]*"
                     id="zip"
+                    type="number"
+                    name="zip"
+                    pattern="[0-9]*"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="e.g. 12345"
                     required
@@ -371,8 +384,9 @@
                 </div>
                 <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
                   <input
-                    type="tel"
                     id="email"
+                    type="tel"
+                    name="email"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter email address"
                     required
@@ -402,8 +416,9 @@
                 </div>
                 <div class="pt-10 flex justify-center">
                   <input
-                    type="text"
                     id="name"
+                    type="text"
+                    name="firstName"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter first Name"
                     required
@@ -413,6 +428,7 @@
                   <input
                     id="lname"
                     type="text"
+                    name="lastName"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter last Name"
                     required
@@ -445,8 +461,9 @@
                 </div>
                 <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
                   <input
-                    type="tel"
                     id="phone"
+                    name="phone"
+                    type="tel"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter phone number"
                     required
@@ -459,7 +476,7 @@
                 ></div>
                 <div class="flex justify-center pt-5 items-center">
                   <button
-                    type="button"
+                    type="submit"
                     onclick="nextPrev(1)"
                     class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -467,6 +484,7 @@
                   </button>
                 </div>
               </div>
+
               <div style="text-align: center; margin-top: 40px">
                 <span class="step"></span>
                 <span class="step"></span>
@@ -496,7 +514,6 @@
             </form>
           </div>
 
-          <!-- add style  container -->
           <section
             class="container xl:w-contanerxl pl-4 pr-4 py-[40px] mx-auto flex justify-center mb-[20px]"
           >

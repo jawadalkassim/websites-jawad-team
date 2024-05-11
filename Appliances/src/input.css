@@ -272,7 +272,7 @@ ul li {
   }
 }
 @media (min-width: 1020px) and (max-width: 1025px) {
-  footer{
+  footer {
     padding: 120px 40px !important;
   }
   button {
@@ -414,7 +414,7 @@ ul li {
     width: 50%;
   }
   .thank {
-    padding-bottom: 350px;
+    padding-bottom: 50px;
     padding-top: 100px;
     padding-left: 20px;
     padding-right: 20px;
@@ -462,7 +462,7 @@ ul li {
   .nav-link {
     display: none;
   }
-  #grid{
+  #grid {
     display: block;
   }
   .title {
@@ -520,7 +520,7 @@ ul li {
   }
   .thank {
     padding-top: 100px;
-    padding-bottom: 500px;
+    padding-bottom: 50px;
     padding-right: 20px;
     padding-left: 20px;
   }
