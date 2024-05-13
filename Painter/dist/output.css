@@ -843,6 +843,10 @@ video {
   padding-top: 2rem;
 }
 
+.pt-\[50px\]{
+  padding-top: 50px;
+}
+
 .text-center{
   text-align: center;
 }
@@ -889,6 +893,10 @@ video {
 
 .font-semibold{
   font-weight: 600;
+}
+
+.leading-\[60px\]{
+  line-height: 60px;
 }
 
 .text-\[\#257628\]{
@@ -1611,12 +1619,20 @@ ul li {
     padding-top: 1rem;
   }
 
+  .max-\[480px\]\:pt-\[30px\]{
+    padding-top: 30px;
+  }
+
   .max-\[480px\]\:text-\[15px\]{
     font-size: 15px;
   }
 
   .max-\[480px\]\:text-\[30px\]{
     font-size: 30px;
+  }
+
+  .max-\[480px\]\:text-\[43px\]{
+    font-size: 43px;
   }
 }
 
