@@ -4,6 +4,7 @@ var lastName = "";
 var address = "";
 var email = "";
 var phone = "";
+let userSelections = '';
 showTab(currentTab);
 
 function showTab(n, direction) {
@@ -47,7 +48,8 @@ function nextPrev(n) {
     phone = phoneNumber.value;
     address = a.value;
     email = e.value;
-    document.getElementById("regForm").submit();
+    console.log(userSelections);
+      document.getElementById("regForm").submit();
     document.body.innerHTML = "";
     return false;
   }
@@ -131,6 +133,14 @@ function fixStepIndicator(n) {
     x[i].className = x[i].className.replace(" active", "");
     x[i].style.display = "none";
   }
-
   x[n].className += " active";
 }
+document.querySelectorAll('.tab button').forEach(button => {
+  button.addEventListener('click', function() {
+    let value = this.innerText.replace(/([a-z])([A-Z])/g, '$1 $2');
+    if(value !== 'Next'){
+      value = value.trim();
+      userSelections += value + " ";
+    }
+  });
+});
