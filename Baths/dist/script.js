@@ -134,7 +134,7 @@ form.addEventListener("submit", function (e) {
 
   console.log(data);
   const jsonData = JSON.stringify(data);
-  window.location.href = "submit-page.php";
+  window.location.href = "thankYou-page.php";
 });
 
 function handelBtnClick(btn_value, target) {

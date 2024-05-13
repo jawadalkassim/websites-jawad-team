@@ -7,7 +7,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Carpenters</title>
 
-    <!-- /Carpenters/dist/ -->
     <link href="/Carpenters/dist/output.css" rel="stylesheet" />
     <style>
       .duration-btn {
@@ -31,7 +30,7 @@
         >
       </div>
     </nav>
-    <div class="w-full shadow list-bar" style="background: #379c3bcc">
+    <div class="w-full shadow list-bar bg-secondaryColor">
       <div
         class="grid grid-cols-3 p-3 justify-center xl:w-contanerxl ml-auto mr-auto"
       >
@@ -49,10 +48,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img
-              src="/Carpenters/dist/img/location.png"
-              style="display: inline"
-            />
+            ><img src="/Carpenters/dist/img/location.png" style="display: inline" />
           </span>
           <h1 class="flex justify-center items-center">
             Over 5,000 engineers across the UK
@@ -74,8 +70,7 @@
       class="bg-white min-[1500px]:min-h-screen flex flex-col justify-center"
     >
       <div
-        class="w-full grid grid-cols-3 p-3 justify-center shadow list-bar-mobile"
-        style="background: #379c3bcc"
+        class="w-full grid grid-cols-3 p-3 justify-center shadow list-bar-mobile bg-secondaryColor"
       >
         <div
           class="text-center text-white font-bold flex justify-center items-center gap-2"
@@ -91,10 +86,7 @@
           class="text-center text-white font-bold flex justify-center items-center gap-2"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img
-              src="/Carpenters/dist/img/location.png"
-              style="display: inline"
-            />
+            ><img src="/Carpenters/dist/img/location.png" style="display: inline" />
           </span>
           <h1 class="flex justify-start items-center">
             Over 5,000 engineers across the US
@@ -114,7 +106,7 @@
       </div>
 
       <h3
-        class="min-[992px]:pt-[30px] text-center text-[55px] max-[360px]:text-[25px] max-[480px]:text-[30px] font-bold text-secondaryColor pt-3 px-3 max-[480px]:pt-4 w-full lg"
+        class="pt-[50px] text-center text-[55px] max-[360px]:text-[25px] max-[480px]:text-[30px] font-bold text-secondaryColor px-3 max-[480px]:pt-[30px] w-full lg"
       >
         Get your carpenters deal
       </h3>
@@ -155,7 +147,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1);handelBtnClick('cabinets','serviceNeed')"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Cabinets
                   </button>
@@ -164,7 +156,7 @@
                   <button
                     type="button"
                     onclick="radioClick(2);handelBtnClick('carpentry','serviceNeed')"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Carpentry
                   </button>
@@ -173,7 +165,7 @@
                   <button
                     type="button"
                     onclick="radioClick(3);handelBtnClick('decks&sheds','serviceNeed')"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Decks & Sheds
                   </button>
@@ -195,7 +187,7 @@
                   <button
                     type="button"
                     onclick="radioClick(3);handelBtnClick('reface','NeedToDo')"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Cabinets Reface Existing Cabinets
                   </button>
@@ -204,7 +196,7 @@
                   <button
                     type="button"
                     onclick="radioClick(3);handelBtnClick('repair','NeedToDo')"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Cabinets Repair
                   </button>
@@ -213,7 +205,7 @@
                   <button
                     type="button"
                     onclick="radioClick(3);handelBtnClick('custom','NeedToDo')"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Cabinets Custom Install
                   </button>
@@ -222,7 +214,7 @@
                   <button
                     type="button"
                     onclick="radioClick(3);handelBtnClick('pre','NeedToDo')"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Cabinets Pre Made Install
                   </button>
@@ -245,7 +237,7 @@
                     <button
                       type="button"
                       onclick="radioClick(2);handelBtnClick('closets','NeedToDotwo')"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Closets Built In Furniture
                     </button>
@@ -254,7 +246,7 @@
                     <button
                       type="button"
                       onclick="radioClick(2);handelBtnClick('windowInstall','NeedToDotwo')"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Door Window Install
                     </button>
@@ -265,7 +257,7 @@
                     <button
                       type="button"
                       onclick="radioClick(2);handelBtnClick('windowRepair','NeedToDotwo')"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Door Window Repair
                     </button>
@@ -274,7 +266,7 @@
                     <button
                       type="button"
                       onclick="radioClick(2);handelBtnClick('finish','NeedToDotwo')"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Finish Carpentry Trim & Molding
                     </button>
@@ -285,7 +277,7 @@
                     <button
                       type="button"
                       onclick="radioClick(2);handelBtnClick('framing','NeedToDotwo')"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Framing
                     </button>
@@ -294,7 +286,7 @@
                     <button
                       type="button"
                       onclick="radioClick(2);handelBtnClick('woodStairs','NeedToDotwo')"
-                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                      class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Wood Stairs & Railings Install
                     </button>
@@ -317,7 +309,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1);handelBtnClick('decksInstall','NeedToDothree')"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Decks Porchs Ramps Install
                   </button>
@@ -326,7 +318,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1);handelBtnClick('decksRepair','NeedToDothree')"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Decks Porchs Ramps Repair
                   </button>
@@ -335,7 +327,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1);handelBtnClick('pergola','NeedToDothree')"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Pergola Arbor Or Trellis Build
                   </button>
@@ -344,7 +336,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1);handelBtnClick('shedBuild','NeedToDothree')"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Shed Barn Or Gazebo Build
                   </button>
@@ -353,7 +345,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1);handelBtnClick('shedRepair','NeedToDothree')"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Shed Barn Or Gazebo Repair
                   </button>
@@ -375,7 +367,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1);handelBtnClick('home','propertyType')"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Home
                   </button>
@@ -384,7 +376,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1);handelBtnClick('business','propertyType')"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Business
                   </button>
@@ -406,7 +398,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1);handelBtnClick('own','ownOrRent')"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I own
                   </button>
@@ -415,7 +407,7 @@
                   <button
                     type="button"
                     onclick="radioClick(1);handelBtnClick('rent','ownOrRent')"
-                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I rent
                   </button>
@@ -446,7 +438,7 @@
                   <button
                     type="button"
                     onclick="nextPrev(1)"
-                    class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Next
                   </button>
@@ -620,7 +612,6 @@
             </form>
           </div>
 
-          <!-- add style  container -->
           <section
             class="container xl:w-contanerxl pl-4 pr-4 py-[40px] mx-auto flex justify-center mb-[20px]"
           >
@@ -661,7 +652,7 @@
       </div>
     </div>
 
-    <footer class="py-[80px] px-[40px] bg-[#4CAF50]">
+    <footer class="py-[80px] px-[40px] bg-secondaryColor">
       <div
         class="container xl:w-contanerxl pl-4 pr-4 mx-auto flex justify-center"
       >

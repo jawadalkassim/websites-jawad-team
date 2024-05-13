@@ -16,7 +16,7 @@ module.exports = {
         pageBg: "linear-gradient(1deg, #5ee96329, #8dff930d)",
       },
       boxShadow: {
-        '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+        "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
       },
       keyframes: {
         "slide-next": {
