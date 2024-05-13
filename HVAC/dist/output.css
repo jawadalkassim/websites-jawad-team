@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /*
-! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -213,8 +213,6 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
-  letter-spacing: inherit;
-  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -238,9 +236,9 @@ select {
 */
 
 button,
-input:where([type='button']),
-input:where([type='reset']),
-input:where([type='submit']) {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -496,10 +494,6 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
-  --tw-contain-size:  ;
-  --tw-contain-layout:  ;
-  --tw-contain-paint:  ;
-  --tw-contain-style:  ;
 }
 
 ::backdrop{
@@ -550,10 +544,6 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
-  --tw-contain-size:  ;
-  --tw-contain-layout:  ;
-  --tw-contain-paint:  ;
-  --tw-contain-style:  ;
 }
 
 .container{
@@ -736,11 +726,6 @@ video {
   border-width: 1px;
 }
 
-.bg-\[\#4CAF50\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(76 175 80 / var(--tw-bg-opacity));
-}
-
 .bg-blue-950{
   --tw-bg-opacity: 1;
   background-color: rgb(23 37 84 / var(--tw-bg-opacity));
@@ -853,6 +838,10 @@ video {
   padding-top: 2rem;
 }
 
+.pt-\[50px\]{
+  padding-top: 50px;
+}
+
 .text-center{
   text-align: center;
 }
@@ -904,6 +893,10 @@ video {
 
 .font-semibold{
   font-weight: 600;
+}
+
+.leading-\[60px\]{
+  line-height: 60px;
 }
 
 .text-\[\#257628\]{
@@ -1610,8 +1603,8 @@ ul li {
     padding-bottom: 1rem;
   }
 
-  .max-\[480px\]\:pt-4{
-    padding-top: 1rem;
+  .max-\[480px\]\:pt-\[30px\]{
+    padding-top: 30px;
   }
 
   .max-\[480px\]\:text-\[15px\]{
@@ -1702,10 +1695,6 @@ ul li {
 @media (min-width: 992px){
   .min-\[992px\]\:pb-\[10px\]{
     padding-bottom: 10px;
-  }
-
-  .min-\[992px\]\:pt-\[30px\]{
-    padding-top: 30px;
   }
 }
 

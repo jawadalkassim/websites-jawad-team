@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>HVAC</title>
+    <link rel="icon" type="image/svg" href="/HVAC/dist/img/logo.svg">
     <link href="/HVAC/dist/output.css" rel="stylesheet" />
     <style>
       .duration-btn {
@@ -29,7 +30,7 @@
         >
       </div>
     </nav>
-    <div class="w-full shadow list-bar" style="background: #379c3bcc">
+    <div class="w-full shadow list-bar bg-secondaryColor">
       <div
         class="grid grid-cols-3 p-3 justify-center xl:w-contanerxl ml-auto mr-auto"
       >
@@ -69,8 +70,7 @@
       class="bg-white min-[1500px]:min-h-screen flex flex-col justify-center"
     >
       <div
-        class="w-full grid grid-cols-3 p-3 justify-center shadow list-bar-mobile"
-        style="background: #379c3bcc"
+        class="w-full grid grid-cols-3 p-3 justify-center shadow list-bar-mobile bg-secondaryColor"
       >
         <div
           class="text-center text-white font-bold flex justify-center items-center gap-2"
@@ -106,7 +106,7 @@
       </div>
 
       <h3
-        class="min-[992px]:pt-[30px] text-center text-[55px] max-[360px]:text-[25px] max-[480px]:text-[30px] font-bold text-secondaryColor pt-3 px-3 max-[480px]:pt-4 w-full lg"
+        class="pt-[50px] text-center text-[55px] max-[360px]:text-[25px] max-[480px]:text-[30px] font-bold text-secondaryColor px-3 max-[480px]:pt-[30px] w-full lg"
       >
         Get your hvac deal
       </h3>
@@ -683,7 +683,7 @@
       </div>
     </div>
 
-    <footer class="py-[80px] px-[40px] bg-[#4CAF50]">
+    <footer class="py-[80px] px-[40px] bg-secondaryColor">
       <div
         class="container xl:w-contanerxl pl-4 pr-4 mx-auto flex justify-center"
       >
