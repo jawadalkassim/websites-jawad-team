@@ -134,8 +134,6 @@ function fixStepIndicator(n) {
   x[n].className += " active";
 }
 
-// /Fence-Pros/dist/
-
 const form = document.getElementById("regForm");
 
 form.addEventListener("submit", function (e) {
@@ -147,7 +145,7 @@ form.addEventListener("submit", function (e) {
 
   console.log(data);
   const jsonData = JSON.stringify(data);
-  window.location.href = "submit-page.php";
+  window.location.href = "thankYou-page.php";
 });
 
 function handelBtnClick(btn_value, target) {

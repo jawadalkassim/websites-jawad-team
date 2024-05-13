@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /*
-! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -213,6 +213,8 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -236,9 +238,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -494,6 +496,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 ::backdrop{
@@ -544,6 +550,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 .container{
@@ -726,11 +736,6 @@ video {
   border-width: 1px;
 }
 
-.bg-\[\#4CAF50\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(76 175 80 / var(--tw-bg-opacity));
-}
-
 .bg-blue-950{
   --tw-bg-opacity: 1;
   background-color: rgb(23 37 84 / var(--tw-bg-opacity));
@@ -843,6 +848,10 @@ video {
   padding-top: 2rem;
 }
 
+.pt-\[50px\]{
+  padding-top: 50px;
+}
+
 .text-center{
   text-align: center;
 }
@@ -891,6 +900,10 @@ video {
   font-weight: 600;
 }
 
+.leading-\[60px\]{
+  line-height: 60px;
+}
+
 .text-\[\#257628\]{
   --tw-text-opacity: 1;
   color: rgb(37 118 40 / var(--tw-text-opacity));
@@ -909,11 +922,6 @@ video {
 .text-gray-600{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
-.text-primaryColor{
-  --tw-text-opacity: 1;
-  color: rgb(1 49 74 / var(--tw-text-opacity));
 }
 
 .text-secondaryColor{
@@ -989,20 +997,15 @@ input {
   border: 1px solid #aaaaaa;
 }
 
-/* Mark input boxes that gets an error on validation: */
-
 input.invalid {
   background-color: #ffdddd;
 }
-
-/* Hide all steps by default: */
 
 .tab {
   display: none;
 }
 
 button {
-  background-color: #04aa6d;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -1243,7 +1246,7 @@ ul li {
 }
 
 @media (min-width: 1020px) and (max-width: 1025px) {
-  footer{
+  footer {
     padding: 120px 40px !important;
   }
 
@@ -1419,7 +1422,7 @@ ul li {
   }
 
   .thank {
-    padding-bottom: 350px;
+    padding-bottom: 50px;
     padding-top: 100px;
     padding-left: 20px;
     padding-right: 20px;
@@ -1478,7 +1481,7 @@ ul li {
     display: none;
   }
 
-  #grid{
+  #grid {
     display: block;
   }
 
@@ -1549,7 +1552,7 @@ ul li {
 
   .thank {
     padding-top: 100px;
-    padding-bottom: 500px;
+    padding-bottom: 50px;
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -1606,8 +1609,8 @@ ul li {
     padding-bottom: 1rem;
   }
 
-  .max-\[480px\]\:pt-4{
-    padding-top: 1rem;
+  .max-\[480px\]\:pt-\[30px\]{
+    padding-top: 30px;
   }
 
   .max-\[480px\]\:text-\[15px\]{
@@ -1616,6 +1619,10 @@ ul li {
 
   .max-\[480px\]\:text-\[30px\]{
     font-size: 30px;
+  }
+
+  .max-\[480px\]\:text-\[43px\]{
+    font-size: 43px;
   }
 }
 
@@ -1695,14 +1702,6 @@ ul li {
   .min-\[992px\]\:pb-\[10px\]{
     padding-bottom: 10px;
   }
-
-  .min-\[992px\]\:pt-\[100px\]{
-    padding-top: 100px;
-  }
-
-  .min-\[992px\]\:pt-\[30px\]{
-    padding-top: 30px;
-  }
 }
 
 @media (min-width: 1024px){
@@ -1751,10 +1750,6 @@ ul li {
 
   .lg\:pb-10{
     padding-bottom: 2.5rem;
-  }
-
-  .lg\:pb-44{
-    padding-bottom: 11rem;
   }
 
   .lg\:text-end{

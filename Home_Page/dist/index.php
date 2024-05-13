@@ -7,13 +7,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Home Improvement</title>
     <link
+      rel="icon"
+      type="image/x-icon"
+      href="/Home_Page/dist/img/favicon.ico"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <link href="/Home_Page/dist/output.css" rel="stylesheet" />
-    <!-- /Home_Page/dist/ -->
+
     <style>
       a {
         font-weight: 400;

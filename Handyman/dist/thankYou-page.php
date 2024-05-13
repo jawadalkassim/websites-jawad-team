@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Submit</title>
-    <link rel="stylesheet" href="/Electricians/dist/output.css" />
+    <title>thank you</title>
+    <link rel="icon" type="image/x-icon" href="/Handyman/dist/img/favicon.ico" />
+    <link rel="stylesheet" href="/Handyman/dist/output.css" />
   </head>
   <body style="background-color: #fff">
     <nav class="text-center" style="background: white">
@@ -13,7 +14,7 @@
         class="grid lg:grid-cols-2 md:grid-cols-1 items-center 2xl:w-contanerxl 2xl:ml-auto 2xl:mr-auto"
       >
         <div class="flex justify-center items-center p-2">
-          <img src="/Electricians/dist/img/logo.svg" class="w-12 brand" />
+          <img src="/Handyman/dist/img/logo.svg" class="w-12 brand" />
         </div>
         <a
           href=""
@@ -22,7 +23,7 @@
         >
       </div>
     </nav>
-    <div class="w-full shadow list-bar" style="background: #379c3bcc">
+    <div class="w-full shadow list-bar bg-secondaryColor">
       <div
         class="grid grid-cols-3 p-3 justify-center xl:w-contanerxl ml-auto mr-auto"
       >
@@ -30,7 +31,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="/Electricians/dist/img/chat.png" style="display: inline"
+            ><img src="/Handyman/dist/img/chat.png" style="display: inline"
           /></span>
           <h1 class="flex justify-center items-center">
             Get the best quotes, fast!
@@ -40,10 +41,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img
-              src="/Electricians/dist/img/location.png"
-              style="display: inline"
-            />
+            ><img src="/Handyman/dist/img/location.png" style="display: inline" />
           </span>
           <h1 class="flex justify-center items-center">
             Over 5,000 engineers across the UK
@@ -53,9 +51,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img
-              src="/Electricians/dist/img/check.png"
-              style="display: inline"
+            ><img src="/Handyman/dist/img/check.png" style="display: inline"
           /></span>
           <h1 class="flex justify-center items-center">
             Gas Safe registered engineers
@@ -64,14 +60,13 @@
       </div>
     </div>
     <div
-      class="w-full grid grid-cols-3 p-3 justify-center shadow list-bar-mobile"
-      style="background: #379c3bcc"
+      class="w-full grid grid-cols-3 p-3 justify-center shadow list-bar-mobile bg-secondaryColor"
     >
       <div
         class="text-center text-white font-bold flex justify-center items-center gap-2"
       >
         <span class="icon w-8 flex justify-center items-center"
-          ><img src="/Electricians/dist/img/chat.png" style="display: inline"
+          ><img src="/Handyman/dist/img/chat.png" style="display: inline"
         /></span>
         <h1 class="flex justify-start items-center">
           Get the best quotes, fast!
@@ -81,10 +76,7 @@
         class="text-center text-white font-bold flex justify-center items-center gap-2"
       >
         <span class="icon w-8 flex justify-center items-center"
-          ><img
-            src="/Electricians/dist/img/location.png"
-            style="display: inline"
-          />
+          ><img src="/Handyman/dist/img/location.png" style="display: inline" />
         </span>
         <h1 class="flex justify-start items-center">
           Over 5,000 engineers across the US
@@ -95,7 +87,7 @@
         style="padding-bottom: 0px"
       >
         <span class="icon w-8 flex justify-center items-center"
-          ><img src="/Electricians/dist/img/check.png" style="display: inline"
+          ><img src="/Handyman/dist/img/check.png" style="display: inline"
         /></span>
         <h1 class="flex justify-start items-center">
           Gas Safe registered engineers
@@ -105,7 +97,7 @@
 
     <div>
       <div
-        class="text-center text-gray-600 text-5xl max-[480px]:text-[43px] font-bold lg:py-44 thank"
+        class="text-center text-gray-600 text-5xl max-[480px]:text-[43px] font-bold lg:py-44 thank leading-[60px]"
       >
         Thank you for taking the time to complete our survey.
       </div>

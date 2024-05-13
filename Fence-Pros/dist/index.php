@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Fence-Pros</title>
+    <link
+      rel="icon"
+      type="image/ico"
+      href="/Fence-Pros/dist/img/favicon.ico"
+    />
     <link href="output.css" rel="stylesheet" />
     <style>
       .duration-btn {
@@ -29,7 +34,7 @@
         >
       </div>
     </nav>
-    <div class="w-full shadow list-bar" style="background: #379c3bcc">
+    <div class="w-full shadow list-bar bg-secondaryColor">
       <div
         class="grid grid-cols-3 p-3 justify-center xl:w-contanerxl ml-auto mr-auto"
       >
@@ -69,8 +74,7 @@
       class="bg-white min-[1500px]:min-h-screen flex flex-col justify-center"
     >
       <div
-        class="w-full grid grid-cols-3 p-3 justify-center shadow list-bar-mobile"
-        style="background: #379c3bcc"
+        class="w-full grid grid-cols-3 p-3 justify-center shadow list-bar-mobile bg-secondaryColor"
       >
         <div
           class="text-center text-white font-bold flex justify-center items-center gap-2"
@@ -106,7 +110,7 @@
       </div>
 
       <h3
-        class="min-[992px]:pt-[30px] text-center text-[55px] max-[360px]:text-[25px] max-[480px]:text-[30px] font-bold text-secondaryColor pt-3 px-3 max-[480px]:pt-4 w-full lg"
+        class="pt-[50px] text-center text-[55px] max-[360px]:text-[25px] max-[480px]:text-[30px] font-bold text-secondaryColor px-3 max-[480px]:pt-[30px] w-full lg"
       >
         Get your fence deal
       </h3>
@@ -165,6 +169,8 @@
                 </label>
               </div>
 
+              <!-- // -->
+
               <div class="tab text-white text-3xl font-bodyFont">
                 <input
                   data-store="installServiceNeed"
@@ -205,7 +211,7 @@
                     <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(2)"
+                      onclick="radioClick(2);handelBtnClick('chain','installServiceNeed')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Chain Link Fence Install
@@ -215,7 +221,7 @@
                     <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(2)"
+                      onclick="radioClick(2);handelBtnClick('electronic','installServiceNeed')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Electronic Pet Fence Install
@@ -227,7 +233,7 @@
                     <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(2)"
+                      onclick="radioClick(2);handelBtnClick('vinyl','installServiceNeed')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Vinyl Or Linoleum Flooring Install
@@ -237,7 +243,7 @@
                     <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(2)"
+                      onclick="radioClick(2);handelBtnClick('wood','installServiceNeed')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Wood Fence Install
@@ -246,7 +252,15 @@
                 </div>
               </div>
 
+              <!-- // -->
               <div class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store="repairServiceNeed"
+                  type="text"
+                  name="repair-service-need"
+                  class="hidden"
+                />
+
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What repair service do you want?
@@ -254,20 +268,20 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-3">
-                    <input type="radio" class="card-input-element hidden" />
+                    <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(1)"
+                      onclick="radioClick(1);handelBtnClick('aluminum','repairServiceNeed')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Aluminum or steel fence repair
                     </button>
                   </label>
                   <label class="flex justify-center items-center pt-3">
-                    <input type="radio" class="card-input-element hidden" />
+                    <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(1)"
+                      onclick="radioClick(1);handelBtnClick('barbed','repairServiceNeed')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Barbed wire fence repair
@@ -276,20 +290,20 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-3">
-                    <input type="radio" class="card-input-element hidden" />
+                    <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(1)"
+                      onclick="radioClick(1);handelBtnClick('chain','repairServiceNeed')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Chain link fence repair
                     </button>
                   </label>
                   <label class="flex justify-center items-center pt-3">
-                    <input type="radio" class="card-input-element hidden" />
+                    <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(1)"
+                      onclick="radioClick(1);handelBtnClick('vinyl','repairServiceNeed')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Vinyl or pvc fence repair
@@ -298,17 +312,17 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-3">
-                    <input type="radio" class="card-input-element hidden" />
+                    <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(1)"
+                      onclick="radioClick(1);handelBtnClick('wood','repairServiceNeed')"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Wood fence repair
                     </button>
                   </label>
                   <label class="flex justify-center items-center pt-3">
-                    <input type="radio" class="card-input-element hidden" />
+                    <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
                       onclick="radioClick(1)"
@@ -319,6 +333,8 @@
                   </label>
                 </div>
               </div>
+              <!-- // -->
+
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -569,7 +585,6 @@
             </form>
           </div>
 
-          <!-- add style  container -->
           <section
             class="container xl:w-contanerxl pl-4 pr-4 py-[40px] mx-auto flex justify-center mb-[20px]"
           >
@@ -610,7 +625,7 @@
       </div>
     </div>
 
-    <footer class="py-[80px] px-[40px] bg-[#4CAF50]">
+    <footer class="py-[80px] px-[40px] bg-secondaryColor">
       <div
         class="container xl:w-contanerxl pl-4 pr-4 mx-auto flex justify-center"
       >

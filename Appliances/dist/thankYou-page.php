@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>thank you</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/Appliances/dist/img/favicon.ico"
+    />
     <link rel="stylesheet" href="/Appliances/dist/output.css" />
   </head>
   <body style="background-color: #fff">

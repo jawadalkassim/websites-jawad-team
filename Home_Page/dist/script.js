@@ -42,7 +42,6 @@ function search() {
       let cardLink = card.querySelector("a").getAttribute("href");
       let linkElement = document.createElement("a");
       linkElement.setAttribute("href", cardLink);
-      // linkElement.classList.add("col-span-3");
       linkElement.style.display = "grid";
       linkElement.appendChild(cloneCard);
       searchGrid.appendChild(linkElement);

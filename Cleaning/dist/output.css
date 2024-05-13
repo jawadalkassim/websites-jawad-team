@@ -736,11 +736,6 @@ video {
   border-width: 1px;
 }
 
-.bg-\[\#4CAF50\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(76 175 80 / var(--tw-bg-opacity));
-}
-
 .bg-blue-950{
   --tw-bg-opacity: 1;
   background-color: rgb(23 37 84 / var(--tw-bg-opacity));
@@ -853,6 +848,10 @@ video {
   padding-top: 2rem;
 }
 
+.pt-\[50px\]{
+  padding-top: 50px;
+}
+
 .text-center{
   text-align: center;
 }
@@ -899,6 +898,10 @@ video {
 
 .font-semibold{
   font-weight: 600;
+}
+
+.leading-\[60px\]{
+  line-height: 60px;
 }
 
 .text-\[\#257628\]{
@@ -1007,7 +1010,6 @@ input.invalid {
 }
 
 button {
-  background-color: #04aa6d;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -1611,8 +1613,8 @@ ul li {
     padding-bottom: 1rem;
   }
 
-  .max-\[480px\]\:pt-4{
-    padding-top: 1rem;
+  .max-\[480px\]\:pt-\[30px\]{
+    padding-top: 30px;
   }
 
   .max-\[480px\]\:text-\[15px\]{
@@ -1704,14 +1706,6 @@ ul li {
   .min-\[992px\]\:pb-\[10px\]{
     padding-bottom: 10px;
   }
-
-  .min-\[992px\]\:pt-\[100px\]{
-    padding-top: 100px;
-  }
-
-  .min-\[992px\]\:pt-\[30px\]{
-    padding-top: 30px;
-  }
 }
 
 @media (min-width: 1024px){
@@ -1760,10 +1754,6 @@ ul li {
 
   .lg\:pb-10{
     padding-bottom: 2.5rem;
-  }
-
-  .lg\:pb-44{
-    padding-bottom: 11rem;
   }
 
   .lg\:text-end{
