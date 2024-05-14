@@ -135,21 +135,7 @@ function fixStepIndicator(n) {
   x[n].className += " active";
 }
 
-const form = document.getElementById("regForm");
-
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  const fomData = new FormData(form);
-
-  const data = Object.fromEntries(fomData);
-
-  console.log(data);
-  const jsonData = JSON.stringify(data);
-  window.location.href = "thankYou-page.php";
-});
-
-//
+// collect input btns values
 let steps = document.querySelectorAll(`[data-tab]`);
 
 steps.forEach((step) => {
@@ -160,5 +146,35 @@ steps.forEach((step) => {
       let btnValue = btn.innerHTML.trim();
       inp.value = btnValue;
     });
+  });
+});
+
+////
+
+$("#regForm").on("submit", function (e) {
+  e.preventDefault();
+  console.log("Submitted");
+
+  // Append the selected value to the form data
+  var formData = $(this).serialize();
+
+  console.log(formData);
+  $.ajax({
+    url: "/Flooring/dist/process.php?method=Lead",
+    type: "post",
+    data: formData,
+    dataType: "json",
+    success: function (data) {
+      if (data.status_text && data.redirect_url) {
+        window.location = data.redirect_url;
+      } else {
+        alert(data.response_text);
+      }
+    },
+    error: function (data) {
+      alert(
+        "Oops, we have encountered an error processing your application. We are working on resolving this issue. Sorry for any inconvenience."
+      );
+    },
   });
 });

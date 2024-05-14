@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <title>Fence-Pros</title>
     <link rel="icon" type="image/ico" href="/Fence-Pros/dist/img/favicon.ico" />
     <link href="/Fence-Pros/dist/output.css" rel="stylesheet" />
@@ -135,6 +140,7 @@
             <form
               class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-3xl pt-2"
               id="regForm"
+              action="javascript:void(0);"
             >
               <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
