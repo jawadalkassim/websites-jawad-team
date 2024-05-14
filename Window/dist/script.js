@@ -135,12 +135,30 @@ function fixStepIndicator(n) {
   }
   x[n].className += " active";
 }
-document.querySelectorAll('.tab button').forEach(button => {
-  button.addEventListener('click', function() {
-    let value = this.innerText.replace(/([a-z])([A-Z])/g, '$1 $2');
-    if(value !== 'Next'){
-      value = value.trim();
-      userSelections += value + " ";
-    }
+$("#regForm").on("submit", function (e) {
+  e.preventDefault();
+  console.log("Submitted");
+
+  // Append the selected value to the form data
+  var formData = $(this).serialize();
+
+  console.log(formData);
+  $.ajax({
+    url: "/Window/dist/process.php?method=Lead",
+    type: "post",
+    data: formData,
+    dataType: "json",
+    success: function (data) {
+      if (data.status_text && data.redirect_url) {
+        window.location = data.redirect_url;
+      } else {
+        alert(data.response_text);
+      }
+    },
+    error: function (data) {
+      alert(
+          "Oops, we have encountered an error processing your application. We are working on resolving this issue. Sorry for any inconvenience."
+      );
+    },
   });
 });

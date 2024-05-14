@@ -726,11 +726,6 @@ video {
   border-width: 1px;
 }
 
-.bg-\[\#4CAF50\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(76 175 80 / var(--tw-bg-opacity));
-}
-
 .bg-blue-950{
   --tw-bg-opacity: 1;
   background-color: rgb(23 37 84 / var(--tw-bg-opacity));
@@ -801,11 +796,6 @@ video {
 .py-\[40px\]{
   padding-top: 40px;
   padding-bottom: 40px;
-}
-
-.py-\[50px\]{
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .py-\[80px\]{
@@ -923,6 +913,11 @@ video {
   color: rgb(37 118 40 / var(--tw-text-opacity));
 }
 
+.text-\[\#275329\]{
+  --tw-text-opacity: 1;
+  color: rgb(39 83 41 / var(--tw-text-opacity));
+}
+
 .text-\[\#2d2e2d\]{
   --tw-text-opacity: 1;
   color: rgb(45 46 45 / var(--tw-text-opacity));
@@ -946,11 +941,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#275329\]{
-  --tw-text-opacity: 1;
-  color: rgb(39 83 41 / var(--tw-text-opacity));
 }
 
 .decoration-primaryColor{
@@ -1630,10 +1620,6 @@ ul li {
     padding-bottom: 1rem;
   }
 
-  .max-\[480px\]\:pt-4{
-    padding-top: 1rem;
-  }
-
   .max-\[480px\]\:pt-\[30px\]{
     padding-top: 30px;
   }
@@ -1726,10 +1712,6 @@ ul li {
 @media (min-width: 992px){
   .min-\[992px\]\:pb-\[10px\]{
     padding-bottom: 10px;
-  }
-
-  .min-\[992px\]\:pt-\[30px\]{
-    padding-top: 30px;
   }
 }
 

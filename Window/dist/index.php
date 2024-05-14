@@ -123,32 +123,39 @@
           <div
             class="lg:pb-10 flex justify-center lg:col-span-7 sm:col-span-1 border f-form"
             style="border: none"
+
           >
             <form
               class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-3xl pt-2"
               id="regForm"
-              action="/Window/dist/thankYou-page.php"
+              action="javascript:void(0);"
             >
               <div class="tab text-white text-3xl font-bodyFont">
+                <input
+                        data-store
+                        type="text"
+                        name="service-need"
+                        class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What service do you need?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
-                    onclick="radioClick(1 )"
+                    data-btn
+                    onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     New Window(s)
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(2)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -156,9 +163,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(2)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -168,15 +175,21 @@
               </div>
 
               <div class="tab text-white text-3xl font-bodyFont">
+                <input
+                        data-store
+                        type="text"
+                        name="new-window-need"
+                        class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     How many new windows do you need?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -184,9 +197,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -195,15 +208,21 @@
                 </label>
               </div>
               <div class="tab text-white text-3xl font-bodyFont">
+                <input
+                        data-store
+                        type="text"
+                        name="material"
+                        class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What is the material of your windows?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -211,9 +230,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -221,9 +240,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -231,9 +250,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -241,9 +260,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -253,6 +272,12 @@
               </div>
 
               <div class="tab text-white text-3xl font-bodyFont">
+                <input
+                        data-store
+                        type="text"
+                        name="window-type"
+                        class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What is your windows type?
@@ -260,9 +285,9 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-8">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
+                      data-btn
                       onclick="radioClick(1)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
@@ -270,9 +295,9 @@
                     </button>
                   </label>
                   <label class="flex justify-center items-center pt-8">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
+                      data-btn
                       onclick="radioClick(1)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
@@ -282,9 +307,9 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-2">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
+                      data-btn
                       onclick="radioClick(1)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
@@ -292,9 +317,9 @@
                     </button>
                   </label>
                   <label class="flex justify-center items-center pt-2">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
+                      data-btn
                       onclick="radioClick(1)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
@@ -304,9 +329,9 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-2">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
+                      data-btn
                       onclick="radioClick(1)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
@@ -314,9 +339,9 @@
                     </button>
                   </label>
                   <label class="flex justify-center items-center pt-2">
-                    <input type="radio" class="card-input-element hidden" />
                     <button
                       type="button"
+                      data-btn
                       onclick="radioClick(1)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
@@ -325,19 +350,24 @@
                   </label>
                 </div>
                 <label class="flex justify-center items-center pt-2 px-[10px]">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Remodel To Accommodate A Disability
                   </button>
                 </label>
-                <label></label>
               </div>
 
               <div class="tab text-white text-3xl font-bodyFont">
+                <input
+                        data-store
+                        type="text"
+                        name="type-of-property"
+                        class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What type of property do you want a quote for?
@@ -347,6 +377,7 @@
                   <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -354,9 +385,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -366,6 +397,12 @@
               </div>
 
               <div class="tab text-white text-3xl font-bodyFont">
+                <input
+                        data-store
+                        type="text"
+                        name="own-or-rent"
+                        class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     Do you own or rent this home?
@@ -375,6 +412,7 @@
                   <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -382,9 +420,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -401,6 +439,7 @@
                 <div class="pt-10 flex justify-center">
                   <input
                     type="text"
+                    name="address"
                     id="address"
                     class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Address"
@@ -433,6 +472,7 @@
                     type="number"
                     pattern="[0-9]*"
                     inputmode="numeric"
+                    name="zip"
                     id="zip"
                     class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="e.g. 12345"
@@ -464,6 +504,7 @@
                 <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
                   <input
                     type="tel"
+                    name="email"
                     id="email"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter email address"
@@ -495,6 +536,7 @@
                 <div class="pt-10 flex justify-center">
                   <input
                     type="text"
+                    name="firstName"
                     id="name"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter first Name"
@@ -504,6 +546,7 @@
                 <div class="pt-5 flex justify-center">
                   <input
                     id="lname"
+                    name="lastName"
                     type="text"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter last Name"
@@ -536,6 +579,7 @@
                 <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
                   <input
                     type="tel"
+                    name="phone"
                     id="phone"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter phone number"
