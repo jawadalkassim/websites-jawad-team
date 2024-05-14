@@ -38,7 +38,7 @@ function nextPrev(n) {
   let a = document.getElementById("address");
   let e = document.getElementById("email");
   let phoneNumber = document.getElementById("phone");
-  if (n === 1 && !validateForm()) return false;
+  if (n === 0 && !validateForm()) return false;
   x[currentTab].style.display = "none";
 
   currentTab = currentTab + n;
@@ -144,7 +144,7 @@ $("#regForm").on("submit", function (e) {
 
   console.log(formData);
   $.ajax({
-    url: "/Window/dist/process.php?method=Lead",
+    url: "/Flooring/dist/process.php?method=Lead",
     type: "post",
     data: formData,
     dataType: "json",

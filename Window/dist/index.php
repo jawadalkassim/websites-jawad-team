@@ -219,7 +219,7 @@
                     What is the material of your windows?
                   </h1>
                 </div>
-                <label class="flex justify-center items-center pt-8">
+                <label class="flex justify-center items-center lg:pt-8">
                   <button
                     type="button"
                     data-btn
@@ -284,7 +284,7 @@
                   </h1>
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
-                  <label class="flex justify-center items-center pt-8">
+                  <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
                       data-btn
@@ -294,7 +294,7 @@
                       Bay or bow
                     </button>
                   </label>
-                  <label class="flex justify-center items-center pt-8">
+                  <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
                       data-btn

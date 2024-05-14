@@ -1771,6 +1771,10 @@ ul li {
     padding-bottom: 2.5rem;
   }
 
+  .lg\:pt-8{
+    padding-top: 2rem;
+  }
+
   .lg\:text-end{
     text-align: end;
   }
