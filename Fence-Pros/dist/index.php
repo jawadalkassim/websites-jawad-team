@@ -6,12 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Fence-Pros</title>
-    <link
-      rel="icon"
-      type="image/ico"
-      href="/Fence-Pros/dist/img/favicon.ico"
-    />
-    <link href="output.css" rel="stylesheet" />
+    <link rel="icon" type="image/ico" href="/Fence-Pros/dist/img/favicon.ico" />
+    <link href="/Fence-Pros/dist/output.css" rel="stylesheet" />
     <style>
       .duration-btn {
         transition: 0.2s;
@@ -25,7 +21,7 @@
         class="grid lg:grid-cols-2 md:grid-cols-1 items-center 2xl:w-contanerxl 2xl:ml-auto 2xl:mr-auto"
       >
         <div class="flex justify-center items-center p-2">
-          <img src="img/logo.svg" class="w-12 brand" />
+          <img src="/Fence-Pros/dist/img/logo.svg" class="w-12 brand" />
         </div>
         <a
           href=""
@@ -42,7 +38,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="img/chat.png" style="display: inline"
+            ><img src="/Fence-Pros/dist/img/chat.png" style="display: inline"
           /></span>
           <h1 class="flex justify-center items-center">
             Get the best quotes, fast!
@@ -52,7 +48,10 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="img/location.png" style="display: inline" />
+            ><img
+              src="/Fence-Pros/dist/img/location.png"
+              style="display: inline"
+            />
           </span>
           <h1 class="flex justify-center items-center">
             Over 5,000 engineers across the UK
@@ -62,7 +61,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="img/check.png" style="display: inline"
+            ><img src="/Fence-Pros/dist/img/check.png" style="display: inline"
           /></span>
           <h1 class="flex justify-center items-center">
             Gas Safe registered engineers
@@ -80,7 +79,7 @@
           class="text-center text-white font-bold flex justify-center items-center gap-2"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="img/chat.png" style="display: inline"
+            ><img src="/Fence-Pros/dist/img/chat.png" style="display: inline"
           /></span>
           <h1 class="flex justify-start items-center">
             Get the best quotes, fast!
@@ -90,7 +89,10 @@
           class="text-center text-white font-bold flex justify-center items-center gap-2"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="img/location.png" style="display: inline" />
+            ><img
+              src="/Fence-Pros/dist/img/location.png"
+              style="display: inline"
+            />
           </span>
           <h1 class="flex justify-start items-center">
             Over 5,000 engineers across the US
@@ -101,7 +103,7 @@
           style="padding-bottom: 0px"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="img/check.png" style="display: inline"
+            ><img src="/Fence-Pros/dist/img/check.png" style="display: inline"
           /></span>
           <h1 class="flex justify-start items-center">
             Gas Safe registered engineers
@@ -134,9 +136,9 @@
               class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-3xl pt-2"
               id="regForm"
             >
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="serviceNeed"
+                  data-store
                   type="text"
                   name="service-need"
                   class="hidden"
@@ -148,20 +150,20 @@
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('install','serviceNeed')"
+                    data-btn
+                    onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Install
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(2);handelBtnClick('repair','serviceNeed')"
+                    data-btn
+                    onclick="radioClick(2)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Repair
@@ -169,11 +171,9 @@
                 </label>
               </div>
 
-              <!-- // -->
-
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="installServiceNeed"
+                  data-store
                   type="text"
                   name="install-service-need"
                   class="hidden"
@@ -186,20 +186,20 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-2">
-                    <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('aluminum','installServiceNeed')"
+                      data-btn
+                      onclick="radioClick(2)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Aluminum Or Steel Fence Install
                     </button>
                   </label>
                   <label class="flex justify-center items-center pt-2">
-                    <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('barbed','installServiceNeed')"
+                      onclick="radioClick(2)"
+                      data-btn
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Barbed Wire Fence Install
@@ -208,20 +208,20 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-2">
-                    <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('chain','installServiceNeed')"
+                      data-btn
+                      onclick="radioClick(2)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Chain Link Fence Install
                     </button>
                   </label>
                   <label class="flex justify-center items-center pt-2">
-                    <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('electronic','installServiceNeed')"
+                      data-btn
+                      onclick="radioClick(2)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Electronic Pet Fence Install
@@ -230,20 +230,20 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-2">
-                    <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('vinyl','installServiceNeed')"
+                      data-btn
+                      onclick="radioClick(2)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Vinyl Or Linoleum Flooring Install
                     </button>
                   </label>
                   <label class="flex justify-center items-center pt-2">
-                    <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('wood','installServiceNeed')"
+                      data-btn
+                      onclick="radioClick(2)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Wood Fence Install
@@ -252,10 +252,9 @@
                 </div>
               </div>
 
-              <!-- // -->
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="repairServiceNeed"
+                  data-store
                   type="text"
                   name="repair-service-need"
                   class="hidden"
@@ -268,20 +267,20 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-3">
-                    <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(1);handelBtnClick('aluminum','repairServiceNeed')"
+                      data-btn
+                      onclick="radioClick(1)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Aluminum or steel fence repair
                     </button>
                   </label>
                   <label class="flex justify-center items-center pt-3">
-                    <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(1);handelBtnClick('barbed','repairServiceNeed')"
+                      data-btn
+                      onclick="radioClick(1)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Barbed wire fence repair
@@ -290,20 +289,20 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-3">
-                    <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(1);handelBtnClick('chain','repairServiceNeed')"
+                      data-btn
+                      onclick="radioClick(1)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Chain link fence repair
                     </button>
                   </label>
                   <label class="flex justify-center items-center pt-3">
-                    <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(1);handelBtnClick('vinyl','repairServiceNeed')"
+                      data-btn
+                      onclick="radioClick(1)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Vinyl or pvc fence repair
@@ -312,19 +311,19 @@
                 </div>
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-3">
-                    <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
-                      onclick="radioClick(1);handelBtnClick('wood','repairServiceNeed')"
+                      data-btn
+                      onclick="radioClick(1)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Wood fence repair
                     </button>
                   </label>
                   <label class="flex justify-center items-center pt-3">
-                    <!-- <input type="radio" class="card-input-element hidden" /> -->
                     <button
                       type="button"
+                      data-btn
                       onclick="radioClick(1)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
@@ -333,18 +332,23 @@
                   </label>
                 </div>
               </div>
-              <!-- // -->
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store
+                  type="text"
+                  name="type-of-property"
+                  class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What type of property do you want a quote for?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1 )"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -352,9 +356,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -363,16 +367,23 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store
+                  type="text"
+                  name="own-or-rent"
+                  class="hidden"
+                />
+
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     Do you own or rent this home?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -380,9 +391,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -390,6 +401,7 @@
                   </button>
                 </label>
               </div>
+
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -398,8 +410,9 @@
                 </div>
                 <div class="pt-10 flex justify-center">
                   <input
-                    type="text"
                     id="address"
+                    name="address"
+                    type="text"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Address"
                     required
@@ -420,6 +433,7 @@
                   </button>
                 </div>
               </div>
+
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -428,9 +442,10 @@
                 </div>
                 <div class="pt-10 flex justify-center">
                   <input
-                    type="number"
-                    pattern="[0-9]*"
                     id="zip"
+                    type="number"
+                    name="zip"
+                    pattern="[0-9]*"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="e.g. 12345"
                     required
@@ -460,8 +475,9 @@
                 </div>
                 <div class="pt-10 flex justify-center">
                   <input
-                    type="text"
                     id="name"
+                    type="text"
+                    name="firstName"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter first Name"
                     required
@@ -471,6 +487,7 @@
                   <input
                     id="lname"
                     type="text"
+                    name="lastName"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter last Name"
                     required
@@ -501,8 +518,9 @@
                 </div>
                 <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
                   <input
-                    type="tel"
                     id="email"
+                    type="tel"
+                    name="email"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter email address"
                     required
@@ -555,6 +573,7 @@
                   </button>
                 </div>
               </div>
+
               <div style="text-align: center; margin-top: 40px">
                 <span class="step"></span>
                 <span class="step"></span>
@@ -645,6 +664,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="script.js"></script>
+    <script src="/Fence-Pros/dist/script.js"></script>
   </body>
 </html>

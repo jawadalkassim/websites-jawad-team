@@ -75,7 +75,8 @@ function validateForm() {
   y = x[currentTab].getElementsByTagName("input");
 
   for (i = 0; i < y.length; i++) {
-    if (!y[i].hasAttribute("data-store") && y[i].value === "") {
+    let attCheck = !y[i].hasAttribute("data-store");
+    if (attCheck && y[i].value === "") {
       y[i].className += " invalid";
 
       valid = false;
@@ -148,7 +149,16 @@ form.addEventListener("submit", function (e) {
   window.location.href = "thankYou-page.php";
 });
 
-function handelBtnClick(btn_value, target) {
-  let inp = document.querySelector(`[data-store= ${target}]`);
-  inp.value = btn_value;
-}
+//
+let steps = document.querySelectorAll(`[data-tab]`);
+
+steps.forEach((step) => {
+  let inp = step.querySelector("input");
+  let btns = step.querySelectorAll(`[data-btn]`);
+  btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      let btnValue = btn.innerHTML.trim();
+      inp.value = btnValue;
+    });
+  });
+});

@@ -46,8 +46,8 @@ function nextPrev(n) {
     phone = phoneNumber.value;
     address = a.value;
     email = e.value;
-    document.getElementById("regForm").submit();
-    document.body.innerHTML = "";
+    // document.getElementById("regForm").submit();
+    // document.body.innerHTML = "";
     return false;
   }
   showTab(currentTab, n);
@@ -81,7 +81,8 @@ function validateForm() {
   y = x[currentTab].getElementsByTagName("input");
 
   for (i = 0; i < y.length; i++) {
-    if (y[i].value === "") {
+    let attCheck = !y[i].hasAttribute("data-store");
+    if (attCheck && y[i].value === "") {
       y[i].className += " invalid";
 
       valid = false;
@@ -140,4 +141,30 @@ function fixStepIndicator(n) {
   x[n].className += " active";
 }
 
-// /Garage/dist/
+const form = document.getElementById("regForm");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const fomData = new FormData(form);
+
+  const data = Object.fromEntries(fomData);
+
+  console.log(data);
+  const jsonData = JSON.stringify(data);
+  window.location.href = "thankYou-page.php";
+});
+
+//
+let steps = document.querySelectorAll(`[data-tab]`);
+
+steps.forEach((step) => {
+  let inp = step.querySelector("input");
+  let btns = step.querySelectorAll(`[data-btn]`);
+  btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      let btnValue = btn.innerHTML.trim();
+      inp.value = btnValue;
+    });
+  });
+});
