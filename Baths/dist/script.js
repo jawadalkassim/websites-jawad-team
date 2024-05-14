@@ -123,21 +123,38 @@ function back() {
   nextPrev(-1);
 }
 
-const form = document.getElementById("regForm");
-
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  const fomData = new FormData(form);
-
-  const data = Object.fromEntries(fomData);
-
-  console.log(data);
-  const jsonData = JSON.stringify(data);
-  window.location.href = "thankYou-page.php";
-});
-
+//
 function handelBtnClick(btn_value, target) {
   let inp = document.querySelector(`[data-store= ${target}]`);
   inp.value = btn_value;
 }
+
+///////
+
+$("#regForm").on("submit", function (e) {
+  e.preventDefault();
+  console.log("Submitted");
+
+  // Append the selected value to the form data
+  var formData = $(this).serialize();
+
+  console.log(formData);
+  $.ajax({
+    url: "/Baths/dist/process.php?method=Lead",
+    type: "post",
+    data: formData,
+    dataType: "json",
+    success: function (data) {
+      if (data.status_text && data.redirect_url) {
+        window.location = data.redirect_url;
+      } else {
+        alert(data.response_text);
+      }
+    },
+    error: function (data) {
+      alert(
+        "Oops, we have encountered an error processing your application. We are working on resolving this issue. Sorry for any inconvenience."
+      );
+    },
+  });
+});

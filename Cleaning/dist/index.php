@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
     <title>Cleaning</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/Cleaning/dist/img/favicon.ico"
-    />
+    <link rel="icon" type="image/x-icon" href="/Cleaning/dist/img/favicon.ico" />
     <link href="/Cleaning/dist/output.css" rel="stylesheet" />
     <style>
       .duration-btn {
@@ -52,10 +54,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img
-              src="/Cleaning/dist/img/location.png"
-              style="display: inline"
-            />
+            ><img src="/Cleaning/dist/img/location.png" style="display: inline" />
           </span>
           <h1 class="flex justify-center items-center">
             Over 5,000 engineers across the UK
@@ -93,10 +92,7 @@
           class="text-center text-white font-bold flex justify-center items-center gap-2"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img
-              src="/Cleaning/dist/img/location.png"
-              style="display: inline"
-            />
+            ><img src="/Cleaning/dist/img/location.png" style="display: inline" />
           </span>
           <h1 class="flex justify-start items-center">
             Over 5,000 engineers across the US
@@ -139,10 +135,11 @@
             <form
               class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-3xl pt-2"
               id="regForm"
+              action="javascript:void(0);"
             >
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="serviceNeed"
+                  data-store
                   type="text"
                   name="service-need"
                   class="hidden"
@@ -155,7 +152,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(2);handelBtnClick('carpet','serviceNeed')"
+                    onclick="radioClick(2)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Carpet Cleaning
@@ -165,7 +163,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('maid','serviceNeed')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Maid Services
@@ -175,16 +174,18 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(2);handelBtnClick('office','serviceNeed')"
+                    onclick="radioClick(2)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Office/Industrial Cleaning
                   </button>
                 </label>
               </div>
-              <div class="tab text-white text-3xl font-bodyFont">
+
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="maidService"
+                  data-store
                   type="text"
                   name="maid-service"
                   class="hidden"
@@ -197,7 +198,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('cleaning','maidService')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Cleaning Maid Service
@@ -206,7 +208,8 @@
                 <label class="flex justify-center items-center pt-3">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('moveIn','maidService')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Move In/Out Cleaning
@@ -215,7 +218,8 @@
                 <label class="flex justify-center items-center pt-3">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('newConstruction','maidService')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     New Construction Cleaning
@@ -225,7 +229,8 @@
                 <label class="flex justify-center items-center pt-3">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('organizing','maidService')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Organizing Declutter
@@ -234,7 +239,8 @@
                 <label class="flex justify-center items-center pt-3">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('post','maidService')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Post Construction Cleaning
@@ -243,7 +249,8 @@
                 <label class="flex justify-center items-center pt-3">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('window','maidService')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Window Cleaning
@@ -251,9 +258,9 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="typeProperty"
+                  data-store
                   type="text"
                   name="type-property"
                   class="hidden"
@@ -266,7 +273,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('Home','typeProperty')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Home
@@ -275,7 +283,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('business','typeProperty')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Business
@@ -283,9 +292,9 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="ownOrRent"
+                  data-store
                   type="text"
                   name="own-or-rent"
                   class="hidden"
@@ -298,7 +307,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('own','ownOrRent')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I own
@@ -307,13 +317,16 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('rent','ownOrRent')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I rent
                   </button>
                 </label>
               </div>
+
+              <!-- // -->
 
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
@@ -466,8 +479,8 @@
                 <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
                   <input
                     id="phone"
-                    name="phone"
                     type="tel"
+                    name="phone"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter phone number"
                     required

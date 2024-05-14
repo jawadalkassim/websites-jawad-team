@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <title>Baths</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/Baths/dist/img/favicon.ico"
-    />
+    <link rel="icon" type="image/x-icon" href="/Baths/dist/img/favicon.ico" />
 
     <link href="/Baths/dist/output.css" rel="stylesheet" />
     <style>
@@ -134,6 +136,7 @@
             <form
               class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-3xl pt-2"
               id="regForm"
+              action="javascript:void(0);"
             >
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
@@ -167,6 +170,7 @@
                   </button>
                 </div>
               </div>
+
               <div class="tab text-white text-3xl font-bodyFont">
                 <input
                   data-store="bathroomPlans"
@@ -187,7 +191,8 @@
                     <input type="radio" class="card-input-element hidden" />
                     <div
                       class="card card-body mx-0"
-                      onclick="nextPrev(1);handelBtnClick('tub','bathroomPlans')"
+                      onclick="nextPrev(1);handelBtnClick('Tub to Shower Conversion','bathroomPlans')"
+                      data-btn
                     >
                       <div
                         type="button"
@@ -208,7 +213,7 @@
                     <input type="radio" class="card-input-element hidden" />
                     <div
                       class="card card-body mx-0"
-                      onclick="nextPrev(1);handelBtnClick('installation','bathroomPlans')"
+                      onclick="nextPrev(1);handelBtnClick('Shower Installation','bathroomPlans')"
                     >
                       <div
                         type="button"
@@ -233,7 +238,7 @@
                     <input type="radio" class="card-input-element hidden" />
                     <div
                       class="card card-body mx-0"
-                      onclick="nextPrev(1);handelBtnClick('remodeling','bathroomPlans')"
+                      onclick="nextPrev(1);handelBtnClick('Bathroom Remodeling','bathroomPlans')"
                     >
                       <div
                         type="button"
@@ -254,7 +259,7 @@
                     <input type="radio" class="card-input-element hidden" />
                     <div
                       class="card card-body mx-0"
-                      onclick="nextPrev(1);handelBtnClick('fixtures','bathroomPlans')"
+                      onclick="nextPrev(1);handelBtnClick('Fixtures Upgrades','bathroomPlans')"
                     >
                       <div
                         type="button"
@@ -273,6 +278,7 @@
                   </label>
                 </div>
               </div>
+
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -282,8 +288,8 @@
                 <div class="pt-10 flex justify-center">
                   <input
                     id="address"
-                    name="address"
                     type="text"
+                    name="address"
                     class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="e.g. 123 West Main Road"
                     required
@@ -304,6 +310,7 @@
                   </button>
                 </div>
               </div>
+
               <div class="tab text-white text-4xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -313,8 +320,8 @@
                 <div class="pt-10 flex justify-center">
                   <input
                     id="name"
-                    name="firstName"
                     type="text"
+                    name="firstName"
                     class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter first Name"
                     required
@@ -323,8 +330,8 @@
                 <div class="pt-5 flex justify-center">
                   <input
                     id="lname"
-                    name="lastName"
                     type="text"
+                    name="lastName"
                     class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter last Name"
                     required
@@ -346,6 +353,7 @@
                   </button>
                 </div>
               </div>
+
               <div class="tab tab tab text-white text-3xl">
                 <div class="text- text-4xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -355,8 +363,8 @@
                 <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
                   <input
                     id="email"
-                    name="email"
                     type="tel"
+                    name="email"
                     class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter email address"
                     required
@@ -377,6 +385,7 @@
                   </button>
                 </div>
               </div>
+
               <div class="tab tab tab text-white text-3xl">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -387,8 +396,8 @@
                 <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
                   <input
                     id="phone"
-                    name="phone"
                     type="tel"
+                    name="phone"
                     class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter phone number"
                     required
@@ -409,6 +418,7 @@
                   </button>
                 </div>
               </div>
+
               <div style="text-align: center; margin-top: 40px">
                 <span class="step"></span>
                 <span class="step"></span>
@@ -422,6 +432,7 @@
                 <span class="step"></span>
                 <span class="step"></span>
               </div>
+
               <div style="overflow: auto" class="flex justify-center">
                 <div
                   class="w-[15%] max-[650px]:w-[40%] flex justify-center items-center pb-[20px]"

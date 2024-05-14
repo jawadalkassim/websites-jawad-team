@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
     <title>thank you</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/Cleaning/dist/img/favicon.ico"
-    />
-    <link rel="stylesheet" href="/Cleaning/dist/img/output.css" />
+    <link rel="icon" type="image/x-icon" href="/Home-Security/dist/img/favicon.ico" />
+    <link rel="stylesheet" href="/Home-Security/dist/output.css" />
   </head>
   <body style="background-color: #fff">
     <nav class="text-center" style="background: white">
@@ -18,7 +20,7 @@
         class="grid lg:grid-cols-2 md:grid-cols-1 items-center 2xl:w-contanerxl 2xl:ml-auto 2xl:mr-auto"
       >
         <div class="flex justify-center items-center p-2">
-          <img src="/Cleaning/dist/img/logo.svg" class="w-12 brand" />
+          <img src="/Home-Security/dist/img/logo.svg" class="w-12 brand" />
         </div>
         <a
           href=""
@@ -35,7 +37,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="/Cleaning/dist/img/chat.png" style="display: inline"
+            ><img src="/Home-Security/dist/img/chat.png" style="display: inline"
           /></span>
           <h1 class="flex justify-center items-center">
             Get the best quotes, fast!
@@ -45,10 +47,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img
-              src="/Cleaning/dist/img/location.png"
-              style="display: inline"
-            />
+            ><img src="/Home-Security/dist/img/location.png" style="display: inline" />
           </span>
           <h1 class="flex justify-center items-center">
             Over 5,000 engineers across the UK
@@ -58,7 +57,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="/Cleaning/dist/img/check.png" style="display: inline"
+            ><img src="/Home-Security/dist/img/check.png" style="display: inline"
           /></span>
           <h1 class="flex justify-center items-center">
             Gas Safe registered engineers
@@ -73,7 +72,7 @@
         class="text-center text-white font-bold flex justify-center items-center gap-2"
       >
         <span class="icon w-8 flex justify-center items-center"
-          ><img src="/Cleaning/dist/img/chat.png" style="display: inline"
+          ><img src="/Home-Security/dist/img/chat.png" style="display: inline"
         /></span>
         <h1 class="flex justify-start items-center">
           Get the best quotes, fast!
@@ -83,7 +82,7 @@
         class="text-center text-white font-bold flex justify-center items-center gap-2"
       >
         <span class="icon w-8 flex justify-center items-center"
-          ><img src="/Cleaning/dist/img/location.png" style="display: inline" />
+          ><img src="/Home-Security/dist/img/location.png" style="display: inline" />
         </span>
         <h1 class="flex justify-start items-center">
           Over 5,000 engineers across the US
@@ -94,7 +93,7 @@
         style="padding-bottom: 0px"
       >
         <span class="icon w-8 flex justify-center items-center"
-          ><img src="/Cleaning/dist/img/check.png" style="display: inline"
+          ><img src="/Home-Security/dist/img/check.png" style="display: inline"
         /></span>
         <h1 class="flex justify-start items-center">
           Gas Safe registered engineers

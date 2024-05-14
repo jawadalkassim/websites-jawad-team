@@ -36,7 +36,7 @@ input.invalid {
 }
 
 button {
-  background-color: #04aa6d;
+  /* background-color: #04aa6d; */
   color: #ffffff;
   border: none;
   padding: 10px 20px;

@@ -77,7 +77,8 @@ function validateForm() {
   y = x[currentTab].getElementsByTagName("input");
 
   for (i = 0; i < y.length; i++) {
-    if (!y[i].hasAttribute("data-store") && y[i].value === "") {
+    let attCheck = !y[i].hasAttribute("data-store");
+    if (attCheck && y[i].value === "") {
       y[i].className += " invalid";
 
       valid = false;
@@ -136,21 +137,46 @@ function fixStepIndicator(n) {
   x[n].className += " active";
 }
 
-const form = document.getElementById("regForm");
+//
+let steps = document.querySelectorAll(`[data-tab]`);
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  const fomData = new FormData(form);
-
-  const data = Object.fromEntries(fomData);
-
-  console.log(data);
-  const jsonData = JSON.stringify(data);
-  window.location.href = "thankYou-page.php";
+steps.forEach((step) => {
+  let inp = step.querySelector("input");
+  let btns = step.querySelectorAll(`[data-btn]`);
+  btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      let btnValue = btn.innerHTML.trim();
+      inp.value = btnValue;
+    });
+  });
 });
 
-function handelBtnClick(btn_value, target) {
-  let inp = document.querySelector(`[data-store= ${target}]`);
-  inp.value = btn_value;
-}
+///////
+
+$("#regForm").on("submit", function (e) {
+  e.preventDefault();
+  console.log("Submitted");
+
+  // Append the selected value to the form data
+  var formData = $(this).serialize();
+
+  console.log(formData);
+  $.ajax({
+    url: "/Concrete/dist/process.php?method=Lead",
+    type: "post",
+    data: formData,
+    dataType: "json",
+    success: function (data) {
+      if (data.status_text && data.redirect_url) {
+        window.location = data.redirect_url;
+      } else {
+        alert(data.response_text);
+      }
+    },
+    error: function (data) {
+      alert(
+        "Oops, we have encountered an error processing your application. We are working on resolving this issue. Sorry for any inconvenience."
+      );
+    },
+  });
+});

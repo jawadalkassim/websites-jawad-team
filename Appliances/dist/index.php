@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
     <title>Appliances</title>
     <link
       rel="icon"
@@ -139,10 +146,11 @@
             <form
               class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-3xl pt-2"
               id="regForm"
+              action="javascript:void(0);"
             >
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="serviceNeed"
+                  data-store
                   type="text"
                   name="service-need"
                   class="hidden"
@@ -156,7 +164,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('Install','serviceNeed')"
+                    data-btn
+                    onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Appliances Install
@@ -165,7 +174,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('Repair','serviceNeed')"
+                    data-btn
+                    onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Appliances Repair
@@ -173,9 +183,9 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="typeProperty"
+                  data-store
                   type="text"
                   name="type-property"
                   class="hidden"
@@ -188,7 +198,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('home','typeProperty')"
+                    data-btn
+                    onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Home
@@ -197,7 +208,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('business','typeProperty')"
+                    data-btn
+                    onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Business
@@ -205,9 +217,9 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="ownOrRent"
+                  data-store
                   type="text"
                   name="own-or-rent"
                   class="hidden"
@@ -220,7 +232,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('own','ownOrRent')"
+                    data-btn
+                    onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I own
@@ -229,7 +242,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('rent','ownOrRent')"
+                    data-btn
+                    onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I rent
@@ -237,6 +251,7 @@
                 </label>
               </div>
 
+              <!-- // -->
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -311,8 +326,8 @@
                 <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
                   <input
                     id="email"
-                    name="email"
                     type="tel"
+                    name="email"
                     class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter email address"
                     required
@@ -343,8 +358,8 @@
                 <div class="pt-10 flex justify-center">
                   <input
                     id="name"
-                    name="firstName"
                     type="text"
+                    name="firstName"
                     class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter first Name"
                     required
@@ -353,8 +368,8 @@
                 <div class="pt-5 flex justify-center">
                   <input
                     id="lname"
-                    name="lastName"
                     type="text"
+                    name="lastName"
                     class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter last Name"
                     required
@@ -390,8 +405,8 @@
                 <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
                   <input
                     id="phone"
-                    name="phone"
                     type="tel"
+                    name="phone"
                     class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter phone number"
                     required
@@ -412,6 +427,7 @@
                   </button>
                 </div>
               </div>
+
               <div style="text-align: center; margin-top: 40px">
                 <span class="step"></span>
                 <span class="step"></span>

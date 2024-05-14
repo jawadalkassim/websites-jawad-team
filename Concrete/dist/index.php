@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <title>Concrete</title>
     <link
       rel="icon"
@@ -139,10 +144,11 @@
             <form
               class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-3xl pt-2"
               id="regForm"
+              action="javascript:void(0);"
             >
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="serviceNeed"
+                  data-store
                   type="text"
                   name="service-need"
                   class="hidden"
@@ -154,41 +160,40 @@
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
-
                   <button
                     type="button"
-                    onclick="radioClick(4);handelBtnClick('concrete','serviceNeed')"
+                    onclick="radioClick(4)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Concrete Countertops Install
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('driveway','serviceNeed')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Driveway
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(2);handelBtnClick('floors','serviceNeed')"
+                    onclick="radioClick(2)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Floors & Walkways
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(3);handelBtnClick('foundation','serviceNeed')"
+                    onclick="radioClick(3)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Foundation
@@ -196,9 +201,9 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="floorsWork"
+                  data-store
                   type="text"
                   name="floors-work"
                   class="hidden"
@@ -209,20 +214,20 @@
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(3);handelBtnClick('concreteDriveways','floorsWork')"
+                    onclick="radioClick(3)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Concrete Driveways Floors Install
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-3">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(3);handelBtnClick('drivewaysOrFloors ','floorsWork')"
+                    onclick="radioClick(3)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     <div class="btn-wizard-radio-text">
@@ -232,11 +237,11 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="floorsWorkTwo"
+                  data-store
                   type="text"
-                  name="floors-work-two"
+                  name="floors-work"
                   class="hidden"
                 />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
@@ -245,40 +250,40 @@
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(2);handelBtnClick('concreteFlatwork','floorsWorkTwo')"
+                    onclick="radioClick(2)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Concrete Flatwork Repair & Resurface
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-3">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(2);handelBtnClick('garage','floorsWorkTwo')"
+                    onclick="radioClick(2)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Garage
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-3">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(2);handelBtnClick('leveling','floorsWorkTwo')"
+                    onclick="radioClick(2)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Leveling / Sawing
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-3">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(2);handelBtnClick('patios','floorsWorkTwo')"
+                    onclick="radioClick(2)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Patios
@@ -286,9 +291,9 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="foundationWork"
+                  data-store
                   type="text"
                   name="foundation-work"
                   class="hidden"
@@ -299,50 +304,50 @@
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('concreteFoundation','foundationWork')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Concrete Foundation Repair
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-3">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('concreteRetaining','foundationWork')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Concrete Retaining Walls
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-3">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('concreteWalls','foundationWork')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Concrete Walls Gates Fences
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-3">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('foundationInstall','foundationWork')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Foundation Install
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-3">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('foundationOrBasement','foundationWork')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Foundation Or Basement Waterproofing
@@ -350,9 +355,9 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="typeOfProperty"
+                  data-store
                   type="text"
                   name="type-of-property"
                   class="hidden"
@@ -363,20 +368,20 @@
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('home','typeOfProperty')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Home
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('business','typeOfProperty')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Business
@@ -384,9 +389,9 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="ownOrRent"
+                  data-store
                   type="text"
                   name="own-or-rent"
                   class="hidden"
@@ -397,20 +402,20 @@
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('own','ownOrRent')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I own
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <!-- <input type="radio" class="card-input-element hidden" /> -->
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('rent','ownOrRent')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I rent
@@ -418,6 +423,7 @@
                 </label>
               </div>
 
+              <!--  -->
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">

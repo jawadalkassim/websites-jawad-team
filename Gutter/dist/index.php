@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <title>Gutter</title>
     <link rel="icon" type="image/x-icon" href="/Gutter/dist/img/favicon.ico" />
     <link href="/Gutter/dist/output.css" rel="stylesheet" />
@@ -129,18 +134,25 @@
             <form
               class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-3xl pt-2"
               id="regForm"
-              action="submit-page.php"
+              action="javascript:void(0);"
             >
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store
+                  type="text"
+                  name="service-need"
+                  class="hidden"
+                />
+
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What Service Do You Need?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(3)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -148,9 +160,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(3)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -158,9 +170,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -168,9 +180,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(2)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -178,16 +190,24 @@
                   </button>
                 </label>
               </div>
-              <div class="tab text-white text-3xl font-bodyFont">
+
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store
+                  type="text"
+                  name="gutters-to-install"
+                  class="hidden"
+                />
+
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What gutters do you want to install?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(2)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -195,9 +215,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-3">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(2)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -205,9 +225,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-3">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(2)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -215,9 +235,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-3">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(2)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -225,16 +245,23 @@
                   </button>
                 </label>
               </div>
-              <div class="tab text-white text-3xl font-bodyFont">
+
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store
+                  type="text"
+                  name="gutters-to-repair"
+                  class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What gutters do you want to repair?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -242,9 +269,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-3">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -252,9 +279,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-3">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -262,9 +289,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-3">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -272,7 +299,14 @@
                   </button>
                 </label>
               </div>
-              <div class="tab text-white text-3xl font-bodyFont">
+
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store
+                  type="text"
+                  name="type-of-project"
+                  class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What type is your project?
@@ -282,6 +316,7 @@
                   <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -292,6 +327,7 @@
                   <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -302,6 +338,7 @@
                   <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -309,16 +346,23 @@
                   </button>
                 </label>
               </div>
-              <div class="tab text-white text-3xl font-bodyFont">
+
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store
+                  type="text"
+                  name="type-of-property"
+                  class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What type is your property?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -326,9 +370,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -336,16 +380,23 @@
                   </button>
                 </label>
               </div>
-              <div class="tab text-white text-3xl font-bodyFont">
+
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
+                <input
+                  data-store
+                  type="text"
+                  name="own-or-rent"
+                  class="hidden"
+                />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     Do you own or rent the property?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -353,9 +404,9 @@
                   </button>
                 </label>
                 <label class="flex justify-center items-center pt-2">
-                  <input type="radio" class="card-input-element hidden" />
                   <button
                     type="button"
+                    data-btn
                     onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -363,6 +414,8 @@
                   </button>
                 </label>
               </div>
+
+              <!-- //// -->
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -371,8 +424,9 @@
                 </div>
                 <div class="pt-10 flex justify-center">
                   <input
-                    type="text"
                     id="address"
+                    type="text"
+                    name="address"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="e.g. 123 West Main Road"
                     required
@@ -393,6 +447,7 @@
                   </button>
                 </div>
               </div>
+
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -401,9 +456,10 @@
                 </div>
                 <div class="pt-10 flex justify-center">
                   <input
-                    type="number"
-                    pattern="[0-9]*"
                     id="zip"
+                    type="number"
+                    name="zip"
+                    pattern="[0-9]*"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="e.g. 12345"
                     required
@@ -424,6 +480,7 @@
                   </button>
                 </div>
               </div>
+
               <div class="tab tab tab text-white text-3xl">
                 <div class="text- text-4xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -432,8 +489,9 @@
                 </div>
                 <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
                   <input
-                    type="tel"
                     id="email"
+                    type="tel"
+                    name="email"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter email address"
                     required
@@ -454,6 +512,7 @@
                   </button>
                 </div>
               </div>
+
               <div class="tab text-white text-4xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -462,8 +521,9 @@
                 </div>
                 <div class="pt-10 flex justify-center">
                   <input
-                    type="text"
                     id="name"
+                    type="text"
+                    name="firstName"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter first Name"
                     required
@@ -473,6 +533,7 @@
                   <input
                     id="lname"
                     type="text"
+                    name="lastName"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter last Name"
                     required
@@ -494,6 +555,7 @@
                   </button>
                 </div>
               </div>
+
               <div class="tab tab tab text-white text-3xl">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -503,8 +565,9 @@
                 </div>
                 <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
                   <input
-                    type="tel"
                     id="phone"
+                    type="tel"
+                    name="phone"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter phone number"
                     required
@@ -517,7 +580,7 @@
                 ></div>
                 <div class="flex justify-center pt-5 items-center">
                   <button
-                    type="button"
+                    type="submit"
                     onclick="nextPrev(1)"
                     class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
@@ -525,6 +588,7 @@
                   </button>
                 </div>
               </div>
+
               <div style="text-align: center; margin-top: 40px">
                 <span class="step"></span>
                 <span class="step"></span>
@@ -538,6 +602,7 @@
                 <span class="step"></span>
                 <span class="step"></span>
               </div>
+
               <div style="overflow: auto" class="flex justify-center">
                 <div
                   class="w-[15%] max-[650px]:w-[40%] flex justify-center items-center pb-[20px]"
