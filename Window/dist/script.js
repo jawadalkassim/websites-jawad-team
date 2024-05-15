@@ -38,7 +38,7 @@ function nextPrev(n) {
   let a = document.getElementById("address");
   let e = document.getElementById("email");
   let phoneNumber = document.getElementById("phone");
-  if (n === 0 && !validateForm()) return false;
+  if (n === 1 && !validateForm()) return false;
   x[currentTab].style.display = "none";
 
   currentTab = currentTab + n;
