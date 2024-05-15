@@ -76,9 +76,8 @@ function validateForm() {
   var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
-
   for (i = 0; i < y.length; i++) {
-    if (y[i].value === "") {
+    if  (!y[i].hasAttribute("data-store") && y[i].value === "") {
       y[i].className += " invalid";
 
       valid = false;

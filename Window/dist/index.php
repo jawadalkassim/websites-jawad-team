@@ -136,7 +136,7 @@
                         type="text"
                         name="service-need"
                         class="hidden"
-                        value="1"
+                        
 
                 />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
@@ -182,7 +182,7 @@
                         type="text"
                         name="new-window-need"
                         class="hidden"
-                        value="1"
+                        
                 />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -216,7 +216,7 @@
                         type="text"
                         name="material"
                         class="hidden"
-                        value="1"
+                        
                 />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -281,7 +281,7 @@
                         type="text"
                         name="window-type"
                         class="hidden"
-                        value="1"
+                        
                 />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -372,7 +372,7 @@
                         type="text"
                         name="type-of-property"
                         class="hidden"
-                        value="1"
+                        
                 />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -408,7 +408,7 @@
                         type="text"
                         name="own-or-rent"
                         class="hidden"
-                        value="1"
+                        
                 />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
