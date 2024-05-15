@@ -914,11 +914,6 @@ video {
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
-.text-primaryColor{
-  --tw-text-opacity: 1;
-  color: rgb(1 49 74 / var(--tw-text-opacity));
-}
-
 .text-secondaryColor{
   --tw-text-opacity: 1;
   color: rgb(13 129 85 / var(--tw-text-opacity));
