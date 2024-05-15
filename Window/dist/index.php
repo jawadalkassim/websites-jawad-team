@@ -130,7 +130,7 @@
               id="regForm"
               action="javascript:void(0);"
             >
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
                         data-store
                         type="text"
@@ -174,7 +174,7 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
                         data-store
                         type="text"
@@ -207,7 +207,7 @@
                   </button>
                 </label>
               </div>
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
                         data-store
                         type="text"
@@ -271,7 +271,7 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
                         data-store
                         type="text"
@@ -354,14 +354,14 @@
                     type="button"
                     data-btn
                     onclick="radioClick(1)"
-                    class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/2 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Remodel To Accommodate A Disability
                   </button>
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
                         data-store
                         type="text"
@@ -396,7 +396,7 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
                         data-store
                         type="text"
@@ -593,7 +593,7 @@
                 ></div>
                 <div class="flex justify-center pt-5 items-center">
                   <button
-                    type="button"
+                    type="submit"
                     onclick="nextPrev(1)"
                     class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-centers"
                   >

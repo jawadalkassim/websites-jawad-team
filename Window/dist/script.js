@@ -135,6 +135,18 @@ function fixStepIndicator(n) {
   }
   x[n].className += " active";
 }
+let steps = document.querySelectorAll(`[data-tab]`);
+
+steps.forEach((step) => {
+  let inp = step.querySelector("input");
+  let btns = step.querySelectorAll(`[data-btn]`);
+  btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      let btnValue = btn.innerHTML.trim();
+      inp.value = btnValue;
+    });
+  });
+});
 $("#regForm").on("submit", function (e) {
   e.preventDefault();
   console.log("Submitted");
