@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
     <title>Carpenters</title>
     <link
       rel="icon"
@@ -52,7 +58,10 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="/Carpenters/dist/img/location.png" style="display: inline" />
+            ><img
+              src="/Carpenters/dist/img/location.png"
+              style="display: inline"
+            />
           </span>
           <h1 class="flex justify-center items-center">
             Over 5,000 engineers across the UK
@@ -90,7 +99,10 @@
           class="text-center text-white font-bold flex justify-center items-center gap-2"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="/Carpenters/dist/img/location.png" style="display: inline" />
+            ><img
+              src="/Carpenters/dist/img/location.png"
+              style="display: inline"
+            />
           </span>
           <h1 class="flex justify-start items-center">
             Over 5,000 engineers across the US
@@ -133,10 +145,11 @@
             <form
               class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-3xl pt-2"
               id="regForm"
+              action="javascript:void(0);"
             >
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="serviceNeed"
+                  data-store
                   type="text"
                   name="service-need"
                   class="hidden"
@@ -150,7 +163,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('cabinets','serviceNeed')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Cabinets
@@ -159,7 +173,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(2);handelBtnClick('carpentry','serviceNeed')"
+                    onclick="radioClick(2)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Carpentry
@@ -168,16 +183,18 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(3);handelBtnClick('decks&sheds','serviceNeed')"
+                    onclick="radioClick(3)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Decks & Sheds
                   </button>
                 </label>
               </div>
-              <div class="tab text-white text-3xl font-bodyFont">
+
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="NeedToDo"
+                  data-store
                   type="text"
                   name="need-to-do"
                   class="hidden"
@@ -190,7 +207,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(3);handelBtnClick('reface','NeedToDo')"
+                    onclick="radioClick(3)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Cabinets Reface Existing Cabinets
@@ -199,7 +217,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(3);handelBtnClick('repair','NeedToDo')"
+                    onclick="radioClick(3)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Cabinets Repair
@@ -208,7 +227,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(3);handelBtnClick('custom','NeedToDo')"
+                    onclick="radioClick(3)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Cabinets Custom Install
@@ -217,18 +237,20 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(3);handelBtnClick('pre','NeedToDo')"
+                    onclick="radioClick(3)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Cabinets Pre Made Install
                   </button>
                 </label>
               </div>
-              <div class="tab text-white text-3xl font-bodyFont">
+
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="NeedToDotwo"
+                  data-store
                   type="text"
-                  name="need-to-do-two"
+                  name="need-to-do"
                   class="hidden"
                 />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
@@ -240,7 +262,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('closets','NeedToDotwo')"
+                      onclick="radioClick(2)"
+                      data-btn
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Closets Built In Furniture
@@ -249,7 +272,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('windowInstall','NeedToDotwo')"
+                      onclick="radioClick(2)"
+                      data-btn
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Door Window Install
@@ -260,7 +284,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('windowRepair','NeedToDotwo')"
+                      onclick="radioClick(2)"
+                      data-btn
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Door Window Repair
@@ -269,7 +294,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('finish','NeedToDotwo')"
+                      onclick="radioClick(2)"
+                      data-btn
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Finish Carpentry Trim & Molding
@@ -280,7 +306,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('framing','NeedToDotwo')"
+                      onclick="radioClick(2)"
+                      data-btn
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Framing
@@ -289,7 +316,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('woodStairs','NeedToDotwo')"
+                      onclick="radioClick(2)"
+                      data-btn
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Wood Stairs & Railings Install
@@ -297,12 +325,13 @@
                   </label>
                 </div>
               </div>
-              <div class="tab text-white text-3xl font-bodyFont">
+
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <input
-                    data-store="NeedToDothree"
+                    data-store
                     type="text"
-                    name="need-to-do-three"
+                    name="need-to-do"
                     class="hidden"
                   />
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -312,7 +341,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('decksInstall','NeedToDothree')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Decks Porchs Ramps Install
@@ -321,7 +351,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('decksRepair','NeedToDothree')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Decks Porchs Ramps Repair
@@ -330,7 +361,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('pergola','NeedToDothree')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Pergola Arbor Or Trellis Build
@@ -339,7 +371,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('shedBuild','NeedToDothree')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Shed Barn Or Gazebo Build
@@ -348,16 +381,18 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('shedRepair','NeedToDothree')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Shed Barn Or Gazebo Repair
                   </button>
                 </label>
               </div>
-              <div class="tab text-white text-3xl font-bodyFont">
+
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="propertyType"
+                  data-store
                   type="text"
                   name="property-type"
                   class="hidden"
@@ -370,7 +405,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('home','propertyType')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Home
@@ -379,16 +415,18 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('business','propertyType')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Business
                   </button>
                 </label>
               </div>
-              <div class="tab text-white text-3xl font-bodyFont">
+
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="ownOrRent"
+                  data-store
                   type="text"
                   name="own-or-rent"
                   class="hidden"
@@ -401,7 +439,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('own','ownOrRent')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I own
@@ -410,13 +449,16 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('rent','ownOrRent')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-1 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I rent
                   </button>
                 </label>
               </div>
+
+              <!-- /// -->
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -426,8 +468,8 @@
                 <div class="pt-10 flex justify-center">
                   <input
                     id="address"
-                    name="address"
                     type="text"
+                    name="address"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="e.g. 123 West Main Road"
                     required
@@ -448,6 +490,7 @@
                   </button>
                 </div>
               </div>
+
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -457,8 +500,8 @@
                 <div class="pt-10 flex justify-center">
                   <input
                     id="zip"
-                    name="zip"
                     type="number"
+                    name="zip"
                     pattern="[0-9]*"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="e.g. 12345"
@@ -480,6 +523,7 @@
                   </button>
                 </div>
               </div>
+
               <div class="tab tab tab text-white text-3xl">
                 <div class="text- text-4xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -511,6 +555,7 @@
                   </button>
                 </div>
               </div>
+
               <div class="tab text-white text-4xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -520,8 +565,8 @@
                 <div class="pt-10 flex justify-center">
                   <input
                     id="name"
-                    name="firstName"
                     type="text"
+                    name="firstName"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter first Name"
                     required
@@ -530,8 +575,8 @@
                 <div class="pt-5 flex justify-center">
                   <input
                     id="lname"
-                    name="lastName"
                     type="text"
+                    name="lastName"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter last Name"
                     required
@@ -553,6 +598,7 @@
                   </button>
                 </div>
               </div>
+
               <div class="tab tab tab text-white text-3xl">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -563,8 +609,8 @@
                 <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
                   <input
                     id="phone"
-                    name="phone"
                     type="tel"
+                    name="phone"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter phone number"
                     required
@@ -585,6 +631,7 @@
                   </button>
                 </div>
               </div>
+
               <div style="text-align: center; margin-top: 40px">
                 <span class="step"></span>
                 <span class="step"></span>
@@ -598,6 +645,7 @@
                 <span class="step"></span>
                 <span class="step"></span>
               </div>
+
               <div style="overflow: auto" class="flex justify-center">
                 <div
                   class="w-[15%] max-[650px]:w-[40%] flex justify-center items-center pb-[20px]"

@@ -753,11 +753,6 @@ video {
   border-width: 1px;
 }
 
-.bg-\[\#4CAF50\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(76 175 80 / var(--tw-bg-opacity));
-}
-
 .bg-blue-950{
   --tw-bg-opacity: 1;
   background-color: rgb(23 37 84 / var(--tw-bg-opacity));
@@ -1032,7 +1027,7 @@ input.invalid {
 }
 
 button {
-  background-color: #04aa6d;
+  /* background-color: #04aa6d; */
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -1637,10 +1632,6 @@ ul li {
     padding-bottom: 1rem;
   }
 
-  .max-\[480px\]\:pt-4{
-    padding-top: 1rem;
-  }
-
   .max-\[480px\]\:pt-\[30px\]{
     padding-top: 30px;
   }
@@ -1733,10 +1724,6 @@ ul li {
 @media (min-width: 992px){
   .min-\[992px\]\:pb-\[10px\]{
     padding-bottom: 10px;
-  }
-
-  .min-\[992px\]\:pt-\[30px\]{
-    padding-top: 30px;
   }
 }
 

@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <title>Electricians</title>
     <link
       rel="icon"
@@ -143,10 +149,11 @@
             <form
               class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-3xl pt-2"
               id="regForm"
+              action="javascript:void(0);"
             >
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="serviceNeed"
+                  data-store
                   type="text"
                   name="service-need"
                   class="hidden"
@@ -159,7 +166,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('diagnosis','serviceNeed')"
+                    data-btn
+                    onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Diagnosis
@@ -169,7 +177,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(2);handelBtnClick('wiring','serviceNeed')"
+                    data-btn
+                    onclick="radioClick(2)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Wiring
@@ -179,7 +188,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(3);handelBtnClick('install','serviceNeed')"
+                    data-btn
+                    onclick="radioClick(3)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Install
@@ -187,9 +197,9 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="kindOfDiagnosis"
+                  data-store
                   type="text"
                   name="kind-of-diagnosis"
                   class="hidden"
@@ -202,7 +212,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(3);handelBtnClick('electrical','kindOfDiagnosis')"
+                    data-btn
+                    onclick="radioClick(3)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Electrical Inspections
@@ -211,7 +222,8 @@
                 <label class="flex justify-center items-center pt-3">
                   <button
                     type="button"
-                    onclick="radioClick(3);handelBtnClick('home','kindOfDiagnosis')"
+                    data-btn
+                    onclick="radioClick(3)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Home Energy Audit
@@ -220,7 +232,8 @@
                 <label class="flex justify-center items-center pt-3">
                   <button
                     type="button"
-                    onclick="radioClick(3);handelBtnClick('troubleshooting','kindOfDiagnosis')"
+                    data-btn
+                    onclick="radioClick(3)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Troubleshooting
@@ -228,9 +241,9 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="kindOfWiring"
+                  data-store
                   type="text"
                   name="kind-of-wiring"
                   class="hidden"
@@ -243,7 +256,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(2);handelBtnClick('electricalForHome','kindOfWiring')"
+                    onclick="radioClick(2)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Electrical for home addition or remodel
@@ -252,7 +266,8 @@
                 <label class="flex justify-center items-center pt-3">
                   <button
                     type="button"
-                    onclick="radioClick(2);handelBtnClick('electricalPanel','kindOfWiring')"
+                    onclick="radioClick(2)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Electrical panel upgrade
@@ -261,7 +276,8 @@
                 <label class="flex justify-center items-center pt-3">
                   <button
                     type="button"
-                    onclick="radioClick(2);handelBtnClick('electricalWiringRewiring','kindOfWiring')"
+                    onclick="radioClick(2)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Electrical wiring rewiring
@@ -270,7 +286,8 @@
                 <label class="flex justify-center items-center pt-3">
                   <button
                     type="button"
-                    onclick="radioClick(2);handelBtnClick('switchesInstall','kindOfWiring')"
+                    onclick="radioClick(2)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Switches outlets & fixtures install
@@ -279,7 +296,8 @@
                 <label class="flex justify-center items-center pt-3">
                   <button
                     type="button"
-                    onclick="radioClick(2);handelBtnClick('switchesRepair','kindOfWiring')"
+                    onclick="radioClick(2)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Switches outlets & fixtures repair
@@ -287,11 +305,11 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="kindOfDiagnosisTwo"
+                  data-store
                   type="text"
-                  name="kind-of-diagnosis-two"
+                  name="kind-of-diagnosis"
                   class="hidden"
                 />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
@@ -302,7 +320,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('attic','kindOfDiagnosisTwo')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Attic or whole house fan install/repair
@@ -311,7 +330,8 @@
                 <label class="flex justify-center items-center pt-3">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('generatorInstall','kindOfDiagnosisTwo')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Generator install
@@ -320,7 +340,8 @@
                 <label class="flex justify-center items-center pt-3">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('generatorRepair','kindOfDiagnosisTwo')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Generator repair
@@ -329,7 +350,8 @@
                 <label class="flex justify-center items-center pt-3">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('hotTubs','kindOfDiagnosisTwo')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Hot tubs jacuzzi spa install
@@ -337,9 +359,9 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="typeOfProperty"
+                  data-store
                   type="text"
                   name="type-of-property"
                   class="hidden"
@@ -352,7 +374,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('home','typeOfProperty')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Home
@@ -361,7 +384,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('business','typeOfProperty')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Business
@@ -369,9 +393,9 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="ownOrRent"
+                  data-store
                   type="text"
                   name="own-or-rent"
                   class="hidden"
@@ -384,7 +408,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('own','ownOrRent')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I own
@@ -393,7 +418,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('rent','ownOrRent')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I rent
@@ -401,6 +427,7 @@
                 </label>
               </div>
 
+              <!-- // -->
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -587,6 +614,7 @@
                 <span class="step"></span>
                 <span class="step"></span>
               </div>
+
               <div style="overflow: auto" class="flex justify-center">
                 <div
                   class="w-[15%] max-[650px]:w-[40%] flex justify-center items-center pb-[20px]"

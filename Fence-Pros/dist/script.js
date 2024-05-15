@@ -76,6 +76,7 @@ function validateForm() {
 
   for (i = 0; i < y.length; i++) {
     let attCheck = !y[i].hasAttribute("data-store");
+
     if (attCheck && y[i].value === "") {
       y[i].className += " invalid";
 

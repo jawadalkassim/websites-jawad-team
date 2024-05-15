@@ -46,8 +46,8 @@ function nextPrev(n) {
     phone = phoneNumber.value;
     address = a.value;
     email = e.value;
-    document.getElementById("regForm").submit();
-    document.body.innerHTML = "";
+    // document.getElementById("regForm").submit();
+    // document.body.innerHTML = "";
     return false;
   }
   showTab(currentTab, n);
@@ -67,7 +67,9 @@ function validateForm() {
   y = x[currentTab].getElementsByTagName("input");
 
   for (i = 0; i < y.length; i++) {
-    if (y[i].value === "") {
+    let attCheck = !y[i].hasAttribute("data-store");
+
+    if (attCheck && y[i].value === "") {
       y[i].className += " invalid";
 
       valid = false;
@@ -125,3 +127,49 @@ function fixStepIndicator(n) {
 
   x[n].className += " active";
 }
+
+// /Home-Security/
+
+//
+let steps = document.querySelectorAll(`[data-tab]`);
+
+steps.forEach((step) => {
+  let inp = step.querySelector("input");
+  let btns = step.querySelectorAll(`[data-btn]`);
+  btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      let btnValue = btn.innerHTML.trim();
+      inp.value = btnValue;
+    });
+  });
+});
+
+///////
+
+$("#regForm").on("submit", function (e) {
+  e.preventDefault();
+  console.log("Submitted");
+
+  // Append the selected value to the form data
+  var formData = $(this).serialize();
+
+  console.log(formData);
+  $.ajax({
+    url: "/Home-Security/dist/process.php?method=Lead",
+    type: "post",
+    data: formData,
+    dataType: "json",
+    success: function (data) {
+      if (data.status_text && data.redirect_url) {
+        window.location = data.redirect_url;
+      } else {
+        alert(data.response_text);
+      }
+    },
+    error: function (data) {
+      alert(
+        "Oops, we have encountered an error processing your application. We are working on resolving this issue. Sorry for any inconvenience."
+      );
+    },
+  });
+});
