@@ -71,7 +71,7 @@ function validateForm() {
     y,
     i,
     valid = true;
-  var phoneno = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+  var phoneno = /^\(?([0-9]{3})\)?[-.\s]?([0-9]{3})[-.\s]?([0-9]{4})$/;
   var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
