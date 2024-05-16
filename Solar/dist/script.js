@@ -57,19 +57,19 @@ function nextPrev(n) {
 function back() {
   nextPrev(-1);
 }
-
+var isPhoneValid = false;
 function validateForm() {
   var x,
     y,
     i,
     valid = true;
-  var phoneno = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+  var phoneno = /^\(?([0-9]{3})\)?[-.\s]?([0-9]{3})[-.\s]?([0-9]{4})$/;
   var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
 
   for (i = 0; i < y.length; i++) {
-    if (y[i].value === "") {
+    if (!y[i].hasAttribute("data-store") && y[i].value === "") {
       y[i].className += " invalid";
 
       valid = false;
@@ -98,6 +98,7 @@ function validateForm() {
     }
     if (currentTab === 11) {
       if (y[i].value.match(phoneno)) {
+        isPhoneValid = true;
         return true;
       } else {
         document.getElementById("phone-error").innerText =
@@ -127,3 +128,48 @@ function fixStepIndicator(n) {
 
   x[n].className += " active";
 }
+let steps = document.querySelectorAll(`[data-tab]`);
+
+steps.forEach((step) => {
+  let inp = step.querySelector("input");
+  let btns = step.querySelectorAll(`[data-btn]`);
+  btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      let btnValue = btn.innerHTML.trim();
+      inp.value = btnValue;
+    });
+  });
+});
+
+///////
+
+$("#regForm").on("submit", function (e) {
+  e.preventDefault();
+  console.log("Submitted");
+
+  // Validate phone
+  if (!isPhoneValid) return false;
+
+  // Append the selected value to the form data
+  var formData = $(this).serialize();
+
+  console.log(formData);
+  $.ajax({
+    url: "/Solar/dist/process.php?method=Lead",
+    type: "post",
+    data: formData,
+    dataType: "json",
+    success: function (data) {
+      if (data.status_text && data.redirect_url) {
+        window.location = data.redirect_url;
+      } else {
+        alert(data.response_text);
+      }
+    },
+    error: function (data) {
+      alert(
+          "Oops, we have encountered an error processing your application. We are working on resolving this issue. Sorry for any inconvenience."
+      );
+    },
+  });
+});
