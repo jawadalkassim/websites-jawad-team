@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+    ></script>
     <title>Remodeling</title>
     <link href="/Remodeling/dist/output.css" rel="stylesheet" />
     <link rel="icon" type="image/svg" href="/Remodeling/dist/img/logo.svg">
@@ -130,135 +135,142 @@
                 <form
                         class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-3xl pt-2"
                         id="regForm"
-                        action="/Remodeling/dist/thankYou-page.php"
+                        action="javascript:void(0);"
                 >
-                    <div class="tab text-white text-3xl font-bodyFont">
+                    <div data-tab class="tab text-white text-3xl font-bodyFont">
+                        <input
+                                data-store
+                                type="text"
+                                name="service-need"
+                                class="hidden"
+                        />
                         <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600">What service do you need?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
-                            <input type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(1 )" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                            <button data-btn type="button" onclick="radioClick(1 )" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                 Bathroom
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(2)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                            <button data-btn type="button" onclick="radioClick(2)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                 Kitchen
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(3)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                            <button data-btn type="button" onclick="radioClick(3)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                 Other
                             </button>
                         </label>
                     </div>
 
-                    <div class="tab text-white text-3xl font-bodyFont">
+                    <div data-tab class="tab text-white text-3xl font-bodyFont">
+                        <input
+                                data-store
+                                type="text"
+                                name="bathroom-service-need"
+                                class="hidden"
+                        />
                         <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600">What bathroom service do you need?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
-                            <input type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(3)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                            <button data-btn type="button" onclick="radioClick(3)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                 Complete Remodel
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(3)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                            <button data-btn type="button" onclick="radioClick(3)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                 Bathtub To Shower Conversion
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(3)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                            <button data-btn type="button" onclick="radioClick(3)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                 Shower Install Or Upgrade
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(3)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                            <button data-btn type="button" onclick="radioClick(3)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                 Vanity Fixtures Sinks Toilets Other
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(3)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                            <button data-btn type="button" onclick="radioClick(3)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                 Walk In Tub Installation Or Conversion
                             </button>
                         </label>
                     </div>
-                    <div class="tab text-white text-3xl font-bodyFont">
+                    <div data-tab class="tab text-white text-3xl font-bodyFont">
+                        <input
+                                data-store
+                                type="text"
+                                name="kitchen-service-need"
+                                class="hidden"
+                        />
                         <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600">What kitchen service do you need?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
-                            <input  type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(2)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                            <button data-btn type="button" onclick="radioClick(2)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                 Full Remodel
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(4)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                            <button data-btn type="button" onclick="radioClick(4)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                 Partial Remodel
                             </button>
                         </label>
                     </div>
 
-                    <div class="tab text-white text-3xl font-bodyFont">
+                    <div data-tab class="tab text-white text-3xl font-bodyFont">
+                        <input
+                                data-store
+                                type="text"
+                                name="be-done-needs"
+                                class="hidden"
+                        />
                         <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600">What needs to be done?</h1>
                         </div>
                         <div class="grid lg:grid-cols-2 lg:gap-2">
                             <label class="flex justify-center items-center pt-8">
-                                <input type="radio" class="card-input-element hidden">
-                                <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                                <button data-btn type="button" onclick="radioClick(1)" class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                     Garage Build
                                 </button>
                             </label>
                             <label class="flex justify-center items-center pt-8">
-                                <input  type="radio" class="card-input-element hidden" >
-                                <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                                <button data-btn type="button" onclick="radioClick(1)" class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                     Remodel Attic
                                 </button>
                             </label>
                         </div>
                         <div class="grid lg:grid-cols-2 lg:gap-2">
                             <label class="flex justify-center items-center pt-2">
-                                <input  type="radio" class="card-input-element hidden" >
-                                <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                                <button data-btn type="button" onclick="radioClick(1)" class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                     Remodel Basement
                                 </button>
                             </label>
                             <label class="flex justify-center items-center pt-2">
-                                <input type="radio" class="card-input-element hidden" >
-                                <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                                <button data-btn type="button" onclick="radioClick(1)" class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                     Remodel Garage
                                 </button>
                             </label>
                         </div>
                         <div class="grid lg:grid-cols-2 lg:gap-2">
                             <label class="flex justify-center items-center pt-2">
-                                <input  type="radio" class="card-input-element hidden" >
-                                <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                                <button data-btn type="button" onclick="radioClick(1)" class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                     Remodel Multiple Rooms
                                 </button>
                             </label>
                             <label class="flex justify-center items-center pt-2">
-                                <input type="radio" class="card-input-element hidden" >
-                                <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                                <button data-btn type="button" onclick="radioClick(1)" class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                     Remodel Room
                                 </button>
                             </label>
                         </div>
                         <div class="grid lg:grid-cols-1 lg:gap-2">
                         <label class="flex justify-center items-center pt-2">
-                            <input type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/2 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                            <button data-btn type="button" onclick="radioClick(1)" class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/2 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                 Remodel To Accommodate A Disability
                             </button>
                         </label>
@@ -267,38 +279,46 @@
                     </div>
 
 
-                    <div class="tab text-white text-3xl font-bodyFont">
+                    <div data-tab class="tab text-white text-3xl font-bodyFont">
+                        <input
+                                data-store
+                                type="text"
+                                name="type-of-property"
+                                class="hidden"
+                        />
                         <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600">What type of property do you want a quote for?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
-                            <input type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                            <button data-btn type="button" onclick="radioClick(1)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                 Home
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                            <button data-btn type="button" onclick="radioClick(1)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                 Business
                             </button>
                         </label>
                     </div>
 
 
-                    <div class="tab text-white text-3xl font-bodyFont">
+                    <div data-tab class="tab text-white text-3xl font-bodyFont">
+                        <input
+                                data-store
+                                type="text"
+                                name="own-or-rent"
+                                class="hidden"
+                        />
                         <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                             <h1 class="pb-3 text-4xl text-gray-600">Do you own or rent this home?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
-                            <input  type="radio" class="card-input-element hidden">
-                            <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                            <button data-btn type="button" onclick="radioClick(1)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                 I own
                             </button>
                         </label>
                         <label class="flex justify-center items-center pt-2">
-                            <input type="radio" class="card-input-element hidden" >
-                            <button type="button" onclick="radioClick(1)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                            <button data-btn type="button" onclick="radioClick(1)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                 I rent
                             </button>
                         </label>
@@ -309,7 +329,7 @@
                             </h1>
                         </div>
                         <div class="pt-10 flex justify-center">
-                            <input type="text" id="address" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Address" required />
+                            <input name="address" type="text" id="address" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Address" required />
                         </div>
                         <div id="address-error" class="text-center" style="font-size: 14px">
 
@@ -327,7 +347,7 @@
                             </h1>
                         </div>
                         <div class="pt-10 flex justify-center">
-                            <input type="number" pattern="[0-9]*" id="zip" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="e.g. 12345" required />
+                            <input name="zip" type="number" pattern="[0-9]*" id="zip" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="e.g. 12345" required />
                         </div>
                         <div id="zip-error" class="text-center" style="font-size: 14px">
 
@@ -347,7 +367,7 @@
                             <h1 class="pb-3 text-4xl text-gray-600 ">Great! What is your email?</h1>
                         </div>
                         <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
-                            <input type="tel" id="email" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter email address" required />
+                            <input name="email" type="tel" id="email" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter email address" required />
                         </div>
                         <div id="email-error" class="text-center" style="font-size: 14px">
 
@@ -364,10 +384,10 @@
                             <h1 class="pb-3 text-4xl text-gray-600">What is your name?</h1>
                         </div>
                         <div class="pt-10 flex justify-center ">
-                            <input type="text" id="name" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter first Name" required />
+                            <input name="firstName" type="text" id="name" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter first Name" required />
                         </div>
                         <div class="pt-5 flex justify-center">
-                            <input id="lname" type="text" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter last Name" required />
+                            <input name="lastName" id="lname" type="text" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter last Name" required />
                         </div>
                         <div id="name-error" class="text-center" style="font-size: 14px">
 
@@ -385,13 +405,13 @@
                                 Please enter your phone number</h1>
                         </div>
                         <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
-                            <input type="tel" id="phone" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter phone number" required />
+                            <input name="phone" type="tel" id="phone" class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5" placeholder="Enter phone number" required />
                         </div>
                         <div id="phone-error" class="text-center" style="font-size: 14px">
 
                         </div>
                         <div class="flex justify-center pt-5 items-center">
-                            <button type="button" style="margin-top: 20px;" onclick="nextPrev(1)" class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
+                            <button type="submit" style="margin-top: 20px;" onclick="nextPrev(1)" class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
                                 Submit
                             </button>
                         </div>
