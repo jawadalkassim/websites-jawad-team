@@ -38,7 +38,7 @@ function nextPrev(n) {
   let a = document.getElementById("address");
   let e = document.getElementById("email");
   let phoneNumber = document.getElementById("phone");
-  if (n === 0 && !validateForm()) return false;
+  if (n === 1 && !validateForm()) return false;
   x[currentTab].style.display = "none";
 
   currentTab = currentTab + n;
@@ -76,9 +76,8 @@ function validateForm() {
   var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
-
   for (i = 0; i < y.length; i++) {
-    if (y[i].value === "") {
+    if  (!y[i].hasAttribute("data-store") && y[i].value === "") {
       y[i].className += " invalid";
 
       valid = false;
@@ -135,6 +134,18 @@ function fixStepIndicator(n) {
   }
   x[n].className += " active";
 }
+let steps = document.querySelectorAll(`[data-tab]`);
+
+steps.forEach((step) => {
+  let inp = step.querySelector("input");
+  let btns = step.querySelectorAll(`[data-btn]`);
+  btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      let btnValue = btn.innerHTML.trim();
+      inp.value = btnValue;
+    });
+  });
+});
 $("#regForm").on("submit", function (e) {
   e.preventDefault();
   console.log("Submitted");

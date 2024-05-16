@@ -130,12 +130,14 @@
               id="regForm"
               action="javascript:void(0);"
             >
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
                         data-store
                         type="text"
                         name="service-need"
                         class="hidden"
+                        
+
                 />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -174,12 +176,13 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
                         data-store
                         type="text"
                         name="new-window-need"
                         class="hidden"
+                        
                 />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -207,12 +210,13 @@
                   </button>
                 </label>
               </div>
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
                         data-store
                         type="text"
                         name="material"
                         class="hidden"
+                        
                 />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -271,12 +275,13 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
                         data-store
                         type="text"
                         name="window-type"
                         class="hidden"
+                        
                 />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -354,19 +359,20 @@
                     type="button"
                     data-btn
                     onclick="radioClick(1)"
-                    class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/2 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Remodel To Accommodate A Disability
                   </button>
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
                         data-store
                         type="text"
                         name="type-of-property"
                         class="hidden"
+                        
                 />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -396,12 +402,13 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
                         data-store
                         type="text"
                         name="own-or-rent"
                         class="hidden"
+                        
                 />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
@@ -593,7 +600,7 @@
                 ></div>
                 <div class="flex justify-center pt-5 items-center">
                   <button
-                    type="button"
+                    type="submit"
                     onclick="nextPrev(1)"
                     class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-centers"
                   >

@@ -1312,7 +1312,7 @@ ul li {
   }
 
   .s {
-    width: 314px;
+    width: 314px !important;
     height: 52px;
     font-size: 21px !important;
     overflow: hidden;
@@ -1385,7 +1385,7 @@ ul li {
   }
 
   .s {
-    width: 314px;
+    width: 314px !important;
     height: 52px;
     font-size: 16px !important;
     overflow: hidden;
