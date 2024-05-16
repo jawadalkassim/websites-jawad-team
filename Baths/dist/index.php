@@ -177,6 +177,7 @@
                   type="text"
                   name="bathroom-plans"
                   class="hidden"
+                  value="1"
                 />
 
                 <div class="text- text-3xl font-semibold pt-8 text-center p-5">
@@ -231,6 +232,7 @@
                     </div>
                   </label>
                 </div>
+
                 <div
                   class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 mx-0 justify-evenly mt-1"
                 >
