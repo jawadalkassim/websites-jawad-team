@@ -40,6 +40,7 @@ function nextPrev(n) {
   x[currentTab].style.display = "none";
 
   currentTab = currentTab + n;
+
   if (currentTab >= x.length) {
     firstName = fName.value;
     lastName = lName.value;
@@ -52,6 +53,8 @@ function nextPrev(n) {
   }
   showTab(currentTab, n);
 }
+
+var isPhoneValid = false;
 
 function validateForm() {
   var x,
@@ -93,6 +96,7 @@ function validateForm() {
     }
     if (currentTab === 7) {
       if (y[i].value.match(phoneno)) {
+        isPhoneValid = true;
         return true;
       } else {
         document.getElementById("phone-error").innerText =
@@ -149,6 +153,9 @@ steps.forEach((step) => {
 $("#regForm").on("submit", function (e) {
   e.preventDefault();
   console.log("Submitted");
+
+  // Validate phone
+  if (!isPhoneValid) return false;
 
   // Append the selected value to the form data
   var formData = $(this).serialize();

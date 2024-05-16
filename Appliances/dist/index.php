@@ -10,15 +10,10 @@
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
-      
-    ></script>    
+    ></script>
 
     <title>Appliances</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/Appliances/dist/img/favicon.ico"
-    />
+    <link rel="icon" type="image/x-icon" href="/Appliances/dist/img/favicon.ico" />
     <link href="/Appliances/dist/output.css" rel="stylesheet" />
     <style>
       .duration-btn {
@@ -60,10 +55,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img
-              src="/Appliances/dist/img/location.png"
-              style="display: inline"
-            />
+            ><img src="/Appliances/dist/img/location.png" style="display: inline" />
           </span>
           <h1 class="flex justify-center items-center">
             Over 5,000 engineers across the UK
@@ -101,10 +93,7 @@
           class="text-center text-white font-bold flex justify-center items-center gap-2"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img
-              src="/Appliances/dist/img/location.png"
-              style="display: inline"
-            />
+            ><img src="/Appliances/dist/img/location.png" style="display: inline" />
           </span>
           <h1 class="flex justify-start items-center">
             Over 5,000 engineers across the US
