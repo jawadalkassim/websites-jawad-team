@@ -12,11 +12,7 @@
     ></script>
 
     <title>Carpenters</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/Carpenters/dist/img/favicon.ico"
-    />
+    <link rel="icon" type="image/x-icon" href="/Carpenters/dist/img/favicon.ico" />
     <link href="/Carpenters/dist/output.css" rel="stylesheet" />
     <style>
       .duration-btn {
@@ -58,10 +54,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img
-              src="/Carpenters/dist/img/location.png"
-              style="display: inline"
-            />
+            ><img src="/Carpenters/dist/img/location.png" style="display: inline" />
           </span>
           <h1 class="flex justify-center items-center">
             Over 5,000 engineers across the UK
@@ -99,10 +92,7 @@
           class="text-center text-white font-bold flex justify-center items-center gap-2"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img
-              src="/Carpenters/dist/img/location.png"
-              style="display: inline"
-            />
+            ><img src="/Carpenters/dist/img/location.png" style="display: inline" />
           </span>
           <h1 class="flex justify-start items-center">
             Over 5,000 engineers across the US
