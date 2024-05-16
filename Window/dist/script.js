@@ -66,13 +66,13 @@ function back() {
     nextPrev(-1);
   }
 }
-
+var isPhoneValid = false;
 function validateForm() {
   var x,
     y,
     i,
     valid = true;
-  var phoneno = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+  var phoneno = /^\(?([0-9]{3})\)?[-.\s]?([0-9]{3})[-.\s]?([0-9]{4})$/;
   var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
@@ -106,6 +106,7 @@ function validateForm() {
     }
     if (currentTab === 10) {
       if (y[i].value.match(phoneno)) {
+        isPhoneValid = true;
         return true;
       } else {
         document.getElementById("phone-error").innerText =
@@ -146,16 +147,20 @@ steps.forEach((step) => {
     });
   });
 });
+
 $("#regForm").on("submit", function (e) {
   e.preventDefault();
   console.log("Submitted");
+
+  // Validate phone
+  if (!isPhoneValid) return false;
 
   // Append the selected value to the form data
   var formData = $(this).serialize();
 
   console.log(formData);
   $.ajax({
-    url: "/Flooring/dist/process.php?method=Lead",
+    url: "/Appliances/dist/process.php?method=Lead",
     type: "post",
     data: formData,
     dataType: "json",
