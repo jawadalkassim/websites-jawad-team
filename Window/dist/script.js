@@ -160,7 +160,7 @@ $("#regForm").on("submit", function (e) {
 
   console.log(formData);
   $.ajax({
-    url: "/Appliances/dist/process.php?method=Lead",
+    url: "/Window/dist/process.php?method=Lead",
     type: "post",
     data: formData,
     dataType: "json",
