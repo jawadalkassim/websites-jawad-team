@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+    ></script>
     <title>HVAC</title>
     <link rel="icon" type="image/svg" href="/HVAC/dist/img/logo.svg">
     <link href="/HVAC/dist/output.css" rel="stylesheet" />
@@ -129,11 +134,11 @@
             <form
               class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-8/12 rounded shadow-3xl pt-2"
               id="regForm"
-             
+             action="javascript:void(0);"
             >
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="serviceNeed"
+                  data-store
                   type="text"
                   name="service-need"
                   class="hidden"
@@ -147,7 +152,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('Ducts','serviceNeed')"
+                    data-btn
+                    onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Ducts
@@ -156,7 +162,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(2);handelBtnClick('Installation','serviceNeed')"
+                    data-btn
+                    onclick="radioClick(2)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Installation
@@ -165,7 +172,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(3);handelBtnClick('Repair','serviceNeed')"
+                    data-btn
+                    onclick="radioClick(3)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Repair
@@ -173,9 +181,9 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="ductsServiceNeed"
+                  data-store
                   type="text"
                   name="ducts-service-need"
                   class="hidden"
@@ -188,7 +196,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(3);handelBtnClick('Ducts&Vents','ductsServiceNeed')"
+                    data-btn
+                    onclick="radioClick(3)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Ducts & Vents Clean
@@ -197,7 +206,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(3);handelBtnClick('Clean','ductsServiceNeed')"
+                    data-btn
+                    onclick="radioClick(3)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Ducts & Vents Clean
@@ -205,9 +215,9 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="installationServiceNeed"
+                  data-store
                   type="text"
                   name="installation-service-need"
                   class="hidden"
@@ -221,7 +231,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('boiler','installationServiceNeed')"
+                      data-btn
+                      onclick="radioClick(2)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Boiler Install
@@ -230,7 +241,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('central','installationServiceNeed')"
+                      data-btn
+                      onclick="radioClick(2)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Central AC Install
@@ -240,8 +252,9 @@
                 <div class="grid lg:grid-cols-2 lg:gap-2">
                   <label class="flex justify-center items-center pt-2">
                     <button
+                     data-btn
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('ductless','installationServiceNeed')"
+                      onclick="radioClick(2)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Ductless (Mini Split) AC Install
@@ -250,7 +263,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('electrical','installationServiceNeed')"
+                      data-btn
+                      onclick="radioClick(2)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Electrical Baseboard/Wall Heater Install
@@ -261,7 +275,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('furnace','installationServiceNeed')"
+                      data-btn
+                      onclick="radioClick(2)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Furnace Heating System Install
@@ -270,7 +285,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('heat','installationServiceNeed')"
+                      data-btn
+                      onclick="radioClick(2)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Heat Pump Install
@@ -281,7 +297,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(2);handelBtnClick('thermostat','installationServiceNeed')"
+                      data-btn
+                      onclick="radioClick(2)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/2 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Thermostat Install
@@ -290,9 +307,9 @@
                 </div>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="repairService"
+                  data-store
                   type="text"
                   name="repair-service"
                   class="hidden"
@@ -306,7 +323,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(1);handelBtnClick('boiler','repairService')"
+                      data-btn
+                      onclick="radioClick(1)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Boiler Repair
@@ -315,7 +333,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(1);handelBtnClick('central','repairService')"
+                      onclick="radioClick(1)"
+                      data-btn
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Central AC Repair
@@ -326,7 +345,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(1);handelBtnClick('ductless','repairService')"
+                      data-btn
+                      onclick="radioClick(1)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Ductless (Mini Split) AC Repair
@@ -335,7 +355,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(1);handelBtnClick('electrical','repairService')"
+                      data-btn
+                      onclick="radioClick(1)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Electrical Baseboard/Wall Heater Repair
@@ -346,7 +367,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(1);handelBtnClick('furnace','repairService')"
+                      data-btn
+                      onclick="radioClick(1)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Furnace Heating System Repair
@@ -355,7 +377,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(1);handelBtnClick('heat','repairService')"
+                      data-btn
+                      onclick="radioClick(1)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-full md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Heat Pump Repair
@@ -366,7 +389,8 @@
                   <label class="flex justify-center items-center pt-2">
                     <button
                       type="button"
-                      onclick="radioClick(1);handelBtnClick('window','repairService')"
+                      data-btn
+                      onclick="radioClick(1)"
                       class="duration-btn bg s text-sm gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/2 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                     >
                       Window AC Unit Repair
@@ -375,9 +399,9 @@
                 </div>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="typeProperty"
+                  data-store
                   type="text"
                   name="type-property"
                   class="hidden"
@@ -390,7 +414,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('home','typeProperty')"
+                    data-btn
+                    onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Home
@@ -399,7 +424,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('business','typeProperty')"
+                    onclick="radioClick(1)"
+                    data-btn
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Business
@@ -407,9 +433,9 @@
                 </label>
               </div>
 
-              <div class="tab text-white text-3xl font-bodyFont">
+              <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
-                  data-store="ownOrRent"
+                  data-store
                   type="text"
                   name="own-or-rent"
                   class="hidden"
@@ -422,7 +448,8 @@
                 <label class="flex justify-center items-center pt-8">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('own','ownOrRent')"
+                    data-btn
+                    onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I own
@@ -431,7 +458,8 @@
                 <label class="flex justify-center items-center pt-2">
                   <button
                     type="button"
-                    onclick="radioClick(1);handelBtnClick('rent','ownOrRent')"
+                    data-btn
+                    onclick="radioClick(1)"
                     class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     I rent
@@ -448,6 +476,7 @@
                 <div class="pt-10 flex justify-center">
                   <input
                     type="text"
+                    name="address"
                     id="address"
                     class="text-xl bg-blue-950 bg-opacity-60 placeholder-white text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="e.g. 123 West Main Road"

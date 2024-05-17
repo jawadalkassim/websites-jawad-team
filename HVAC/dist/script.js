@@ -52,13 +52,13 @@ function nextPrev(n) {
   }
   showTab(currentTab, n);
 }
-
+var isPhoneValid = false;
 function validateForm() {
   var x,
     y,
     i,
     valid = true;
-  var phoneno = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+  var phoneno = /^\(?([0-9]{3})\)?[-.\s]?([0-9]{3})[-.\s]?([0-9]{4})$/;
   var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
@@ -93,6 +93,7 @@ function validateForm() {
     }
     if (currentTab === 10) {
       if (y[i].value.match(phoneno)) {
+        isPhoneValid = true;
         return true;
       } else {
         document.getElementById("phone-error").innerText =
@@ -136,21 +137,51 @@ function fixStepIndicator(n) {
   x[n].className += " active";
 }
 
-const form = document.getElementById("regForm");
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
+//
+let steps = document.querySelectorAll(`[data-tab]`);
 
-  const fomData = new FormData(form);
-
-  const data = Object.fromEntries(fomData);
-
-  console.log(data);
-  const jsonData = JSON.stringify(data);
-  window.location.href = "thankYou-page.php";
+steps.forEach((step) => {
+  let inp = step.querySelector("input");
+  let btns = step.querySelectorAll(`[data-btn]`);
+  btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      let btnValue = btn.innerHTML.trim();
+      inp.value = btnValue;
+    });
+  });
 });
 
-function handelBtnClick(btn_value, target) {
-  let inp = document.querySelector(`[data-store= ${target}]`);
-  inp.value = btn_value;
-}
+///////
+
+$("#regForm").on("submit", function (e) {
+  e.preventDefault();
+  console.log("Submitted");
+
+  // Validate phone
+  if (!isPhoneValid) return false;
+
+  // Append the selected value to the form data
+  var formData = $(this).serialize();
+
+  console.log(formData);
+  $.ajax({
+    url: "/HVAC/dist/process.php?method=Lead",
+    type: "post",
+    data: formData,
+    dataType: "json",
+    success: function (data) {
+      if (data.status_text && data.redirect_url) {
+        window.location = data.redirect_url;
+      } else {
+        alert(data.response_text);
+      }
+    },
+    error: function (data) {
+      alert(
+          "Oops, we have encountered an error processing your application. We are working on resolving this issue. Sorry for any inconvenience."
+      );
+    },
+  });
+});
+
