@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+          src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+          crossorigin="anonymous"
+        ></script>
     <title>thank you</title>
     <link rel="stylesheet" href="/Landscaping/dist/output.css" />
     <link rel="icon" type="image/svg" href="/Landscaping/dist/img/logo.svg">
