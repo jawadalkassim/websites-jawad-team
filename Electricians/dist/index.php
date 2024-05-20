@@ -12,7 +12,11 @@
       crossorigin="anonymous"
     ></script>
     <title>Electricians</title>
-    <link rel="icon" type="image/x-icon" href="/Electricians/dist/img/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/Electricians/dist/img/favicon.ico"
+    />
     <link href="/Electricians/dist/output.css" rel="stylesheet" />
     <style>
       .duration-btn {
@@ -54,7 +58,10 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="/Electricians/dist/img/location.png" style="display: inline" />
+            ><img
+              src="/Electricians/dist/img/location.png"
+              style="display: inline"
+            />
           </span>
           <h1 class="flex justify-center items-center">
             Over 5,000 engineers across the UK
@@ -64,7 +71,9 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="/Electricians/dist/img/check.png" style="display: inline"
+            ><img
+              src="/Electricians/dist/img/check.png"
+              style="display: inline"
           /></span>
           <h1 class="flex justify-center items-center">
             Gas Safe registered engineers
@@ -92,7 +101,10 @@
           class="text-center text-white font-bold flex justify-center items-center gap-2"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="/Electricians/dist/img/location.png" style="display: inline" />
+            ><img
+              src="/Electricians/dist/img/location.png"
+              style="display: inline"
+            />
           </span>
           <h1 class="flex justify-start items-center">
             Over 5,000 engineers across the US
@@ -103,7 +115,9 @@
           style="padding-bottom: 0px"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="/Electricians/dist/img/check.png" style="display: inline"
+            ><img
+              src="/Electricians/dist/img/check.png"
+              style="display: inline"
           /></span>
           <h1 class="flex justify-start items-center">
             Gas Safe registered engineers
@@ -183,8 +197,9 @@
                 </label>
               </div>
 
-              <div data-tab class="tab text-white text-3xl font-bodyFont">
+              <div data-tab-q class="tab text-white text-3xl font-bodyFont">
                 <input
+                  id="kind-of"
                   data-store
                   type="text"
                   name="kind-of-diagnosis"
@@ -291,13 +306,7 @@
                 </label>
               </div>
 
-              <div data-tab class="tab text-white text-3xl font-bodyFont">
-                <input
-                  data-store
-                  type="text"
-                  name="kind-of-diagnosis"
-                  class="hidden"
-                />
+              <div data-tab-q class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What kind of diagnosis work do you need?
