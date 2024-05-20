@@ -11,7 +11,11 @@
       crossorigin="anonymous"
     ></script>
     <title>Concrete</title>
-    <link rel="icon" type="image/x-icon" href="/Concrete/dist/img/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/Concrete/dist/img/favicon.ico"
+    />
     <link href="/Concrete/dist/output.css" rel="stylesheet" />
     <style>
       .duration-btn {
@@ -53,7 +57,10 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="/Concrete/dist/img/location.png" style="display: inline" />
+            ><img
+              src="/Concrete/dist/img/location.png"
+              style="display: inline"
+            />
           </span>
           <h1 class="flex justify-center items-center">
             Over 5,000 engineers across the UK
@@ -91,7 +98,10 @@
           class="text-center text-white font-bold flex justify-center items-center gap-2"
         >
           <span class="icon w-8 flex justify-center items-center"
-            ><img src="/Concrete/dist/img/location.png" style="display: inline" />
+            ><img
+              src="/Concrete/dist/img/location.png"
+              style="display: inline"
+            />
           </span>
           <h1 class="flex justify-start items-center">
             Over 5,000 engineers across the US
@@ -191,8 +201,9 @@
                 </label>
               </div>
 
-              <div data-tab class="tab text-white text-3xl font-bodyFont">
+              <div data-tab-q class="tab text-white text-3xl font-bodyFont">
                 <input
+                  id="floors-work"
                   data-store
                   type="text"
                   name="floors-work"
@@ -227,13 +238,7 @@
                 </label>
               </div>
 
-              <div data-tab class="tab text-white text-3xl font-bodyFont">
-                <input
-                  data-store
-                  type="text"
-                  name="floors-work"
-                  class="hidden"
-                />
+              <div data-tab-q class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What floors & walkways work do you need?
