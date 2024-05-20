@@ -155,7 +155,22 @@ steps.forEach((step) => {
   });
 });
 
-///////
+// start handel repeating qustions
+
+let stepsOneQ = document.querySelectorAll(`[data-tab-q]`);
+let inp = document.querySelector("#need-to-do");
+
+stepsOneQ.forEach((step) => {
+  let btns = step.querySelectorAll(`[data-btn]`);
+  btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      let btnValue = btn.innerHTML.trim();
+      inp.value = btnValue;
+    });
+  });
+});
+
+//end handel repeating qustions
 
 $("#regForm").on("submit", function (e) {
   e.preventDefault();
