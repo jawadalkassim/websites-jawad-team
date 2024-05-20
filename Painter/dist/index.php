@@ -225,7 +225,7 @@
                         <input
                                 data-store
                                 type="text"
-                                name="service-need"
+                                name="type-of-property"
                                 class="hidden"
                         />
                         <div class="text- text-3xl font-semibold pt-5 text-center p-5">

@@ -249,12 +249,12 @@
                 <input
                         data-store
                         type="text"
-                        name="installed-need"
+                        name="repaired-need"
                         class="hidden"
                 />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
-                    What needs to be installed?
+                    What needs to be repaired?
                   </h1>
                 </div>
                 <label class="flex justify-center items-center pt-8">

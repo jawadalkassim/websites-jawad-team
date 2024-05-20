@@ -154,6 +154,18 @@ steps.forEach((step) => {
     });
   });
 });
+let stepsOneQ = document.querySelectorAll(`[data-tab-q]`);
+let inp = document.querySelector("#need-to-done");
+
+stepsOneQ.forEach((step) => {
+  let btns = step.querySelectorAll(`[data-btn]`);
+  btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      let btnValue = btn.innerHTML.trim();
+      inp.value = btnValue;
+    });
+  });
+});
 
 ///////
 

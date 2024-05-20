@@ -180,11 +180,12 @@
                   </button>
                 </label>
               </div>
-              <div data-tab class="tab text-white text-3xl font-bodyFont">
+              <div data-tab-q class="tab text-white text-3xl font-bodyFont">
                 <input
+                        id="need-to-done"
                         data-store
                         type="text"
-                        name="be-done-need"
+                        name="need-to-done"
                         class="hidden"
                 />
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
@@ -272,13 +273,7 @@
                   </label>
                 </div>
               </div>
-              <div data-tab class="tab text-white text-3xl font-bodyFont">
-                <input
-                        data-store
-                        type="text"
-                        name="be-done-need"
-                        class="hidden"
-                />
+              <div data-tab-q class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What Needs To Be Done?
@@ -363,13 +358,7 @@
                   </label>
                 </div>
               </div>
-              <div data-tab class="tab text-white text-3xl font-bodyFont">
-                <input
-                        data-store
-                        type="text"
-                        name="be-done-need"
-                        class="hidden"
-                />
+              <div data-tab-q class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What needs to be done?
