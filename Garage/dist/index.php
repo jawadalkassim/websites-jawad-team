@@ -171,8 +171,9 @@
                 </label>
               </div>
 
-              <div data-tab class="tab text-white text-3xl font-bodyFont">
+              <div data-tabOne class="tab text-white text-3xl font-bodyFont">
                 <input
+                  id="service-need"
                   data-store
                   type="text"
                   name="service-need"
@@ -205,13 +206,7 @@
                 </label>
               </div>
 
-              <div data-tab class="tab text-white text-3xl font-bodyFont">
-                <input
-                  data-store
-                  type="text"
-                  name="service-need"
-                  class="hidden"
-                />
+              <div data-tabOne class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What service do you need?
@@ -239,8 +234,9 @@
                 </label>
               </div>
 
-              <div data-tab class="tab text-white text-3xl font-bodyFont">
+              <div data-tabTwo class="tab text-white text-3xl font-bodyFont">
                 <input
+                  id="install-service-need"
                   data-store
                   type="text"
                   name="install-service-need"
@@ -275,14 +271,7 @@
                 </label>
               </div>
 
-              <div data-tab class="tab text-white text-3xl font-bodyFont">
-                <input
-                  data-store
-                  type="text"
-                  name="install-service-need"
-                  class="hidden"
-                />
-
+              <div data-tabTwo class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What install service do you need?
@@ -318,6 +307,7 @@
 
               <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <input
+                  id="repair-service-need"
                   data-store
                   type="text"
                   name="Repair-service-need"
@@ -355,12 +345,6 @@
 
               <div data-tab class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
-                  <input
-                    data-store
-                    type="text"
-                    name="Repair-service-need"
-                    class="hidden"
-                  />
                   <h1 class="pb-3 text-4xl text-gray-600">
                     What Repair service do you need?
                   </h1>
