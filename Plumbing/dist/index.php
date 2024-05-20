@@ -367,11 +367,11 @@
                     <div data-tab class="tab text-white text-3xl font-bodyFont"><input
                   data-store
                   type="text"
-                  name="install-need"
+                  name="repair-need"
                   class="hidden"
                 />
                         <div class="text- text-3xl font-semibold pt-5 text-center p-5">
-                            <h1 class="pb-3 text-4xl text-gray-600">What do you want to install?</h1>
+                            <h1 class="pb-3 text-4xl text-gray-600">What do you want to repair?</h1>
                         </div>
                         <label class="flex justify-center items-center pt-8">
                             <button type="button" data-btn onclick="radioClick(2)" class="duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-9/12 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center">
