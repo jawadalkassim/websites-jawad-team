@@ -160,6 +160,33 @@ steps.forEach((step) => {
 
 //////
 
+// start handel repeating qustions
+
+let stepsOneQ = document.querySelectorAll(`[data-tabOne]`);
+let inpOne = document.querySelector("#service-need");
+handelQ(stepsOneQ, inpOne);
+
+let stepsTwoQ = document.querySelectorAll(`[data-tabTwo]`);
+let inpTwo = document.querySelector("#install-service-need");
+handelQ(stepsTwoQ, inpTwo);
+
+let stepsThreeQ = document.querySelectorAll(`[data-tabThree]`);
+let inpThree = document.querySelector("#repair-service-need");
+handelQ(stepsThreeQ, inpThree);
+
+function handelQ(steps, inpTarget) {
+  steps.forEach((step) => {
+    let btns = step.querySelectorAll(`[data-btn]`);
+    btns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        let btnValue = btn.innerHTML.trim();
+        inpTarget.value = btnValue;
+      });
+    });
+  });
+}
+//end handel repeating qustions
+
 $("#regForm").on("submit", function (e) {
   e.preventDefault();
   console.log("Submitted");
