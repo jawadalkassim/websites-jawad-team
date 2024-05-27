@@ -3,9 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>MVA</title>
+
     <link href="src/output.css" rel="stylesheet" />
+
+    <!-- fonts  -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <!-- Fallback for no-JS users -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      />
+    </noscript>
+
     <style>
       .duration-btn {
         transition: 0.2s;
@@ -28,7 +55,7 @@
             class="logo min-[769px]:w-[50%] flex justify-center min-[769px]:block"
           >
             <div class="logo_inner w-[18%] max-[480px]:w-[25%]">
-              <img src="src/imgs/logo.png" alt="logo" />
+              <img src="src/imgs/logo.png" width="500" height="92" alt="logo" />
             </div>
           </div>
           <div class="applay w-[50%] max-[769px]:hidden">
@@ -49,14 +76,14 @@
         <h1
           class="text-center text-secondary font-bold text-[50px] max-[992px]:text-[35px] max-[480px]:text-[19.5px] leading-[65px] max-[480px]:leading-[45px] font-Montserrat"
         >
-          Individuals Affected By Accidents May Be  <br />
-          Eligible For Compensation Exceeding $130,000
-          in 2024 At No Cost.
+          Individuals Affected By Accidents May Be <br />
+          Eligible For Compensation Exceeding $130,000 in 2024 At No Cost.
         </h1>
         <p
           class="text-center text-secondary text-[20px] max-[480px]:text-[16px] font-Lato font-[400] pl-4 pr-4"
         >
-          Nationwide Car Accident Compensation: Complete the Quick 30-Second Survey Today!
+          Nationwide Car Accident Compensation: Complete the Quick 30-Second
+          Survey Today!
         </p>
         <a
           href="#form_sec"
@@ -207,11 +234,11 @@
                 <div class="lg:w-[50%] date rounded">
                   <div class="dob-container flex items-center">
                     <input
-                            maxlength="2"
-                            type="text"
-                            id="dob-month"
-                            class="dob-input text-gray-500 font-semibold placeholder-gray-500"
-                            placeholder="MM"
+                      maxlength="2"
+                      type="text"
+                      id="dob-month"
+                      class="dob-input text-gray-500 font-semibold placeholder-gray-500"
+                      placeholder="MM"
                     />
                     <div class="bg-white text-primary text-lg font-bold">/</div>
                     <input
@@ -384,7 +411,13 @@
           class="card flex flex-col items-center shadow-cardShadow rounded-[25px] p-[14px] text-center gap-[10px] justify-start w-[33%] max-[1024px]:w-[100%]"
         >
           <div class="card_img w-[21%]">
-            <img src="src/imgs/icon.webp" alt="car protect" />
+            <img
+              src="src/imgs/icon1.webp"
+              width="100"
+              height="100"
+              alt="car protect"
+              loading="lazy"
+            />
           </div>
           <div
             class="card_header text-[25px] max-[1280px]:text-[22px] font-Montserrat"
@@ -407,7 +440,13 @@
           class="card flex flex-col items-center shadow-cardShadow rounded-[25px] p-[14px] text-center gap-[10px] justify-start w-[33%] max-[1024px]:w-[100%]"
         >
           <div class="card_img w-[21%]">
-            <img src="src/imgs/icon.webp" alt="car protect" />
+            <img
+              src="src/imgs/icon1.webp"
+              width="100"
+              height="100"
+              alt="car protect"
+              loading="lazy"
+            />
           </div>
           <div
             class="card_header text-[25px] max-[1280px]:text-[22px] font-Montserrat"
@@ -429,7 +468,13 @@
           class="card flex flex-col items-center shadow-cardShadow rounded-[25px] p-[14px] text-center gap-[10px] justify-start w-[33%] max-[1024px]:w-[100%]"
         >
           <div class="card_img w-[21%]">
-            <img src="src/imgs/icon.webp" alt="car protect" />
+            <img
+              src="src/imgs/icon1.webp"
+              width="100"
+              height="100"
+              alt="car protect"
+              loading="lazy"
+            />
           </div>
           <div
             class="card_header text-[25px] max-[1280px]:text-[22px] font-Montserrat"
@@ -492,14 +537,21 @@
         <p
           class="text-secondary text-center font-Lato text-[14px] leading-[1.3em]"
         >
-          By clicking "Submit", you agree that you are providing your explicit written consent for our network of
-          attorneys and advocates, or ourselves, to contact you via phone, mobile device (including SMS and MMS), even
-          with autodialed, text, and pre-recorded messages for your convenience. Carrier charges may apply; message
-          frequency varies. For assistance, text HELP; to opt out, text STOP. Your number may be listed on any internal,
-          corporate, state, or federal Do Not Call List. We prioritize your privacy and you might receive emails
-          containing news, financial tips, and more, with the option to unsubscribe at any time. All interactions on
-          this website and phone communications are recorded for quality control and compliance purposes.
+          By clicking "Submit", you agree that you are providing your explicit
+          written consent for our network of attorneys and advocates, or
+          ourselves, to contact you via phone, mobile device (including SMS and
+          MMS), even with autodialed, text, and pre-recorded messages for your
+          convenience. Carrier charges may apply; message frequency varies. For
+          assistance, text HELP; to opt out, text STOP. Your number may be
+          listed on any internal, corporate, state, or federal Do Not Call List.
+          We prioritize your privacy and you might receive emails containing
+          news, financial tips, and more, with the option to unsubscribe at any
+          time. All interactions on this website and phone communications are
+          recorded for quality control and compliance purposes.
         </p>
+        <div class="text-center text-white">
+          <a href="./privacy.html"> privacy Policy</a>
+        </div>
       </div>
     </footer>
     <script src="src/script.js"></script>
@@ -540,5 +592,10 @@
       ><img
         src="//create.leadid.com/noscript.gif?lac=F252983F-4BD1-0DD8-CD81-F4700AF60B66&lck=c70f2000-299a-2849-1bc4-3c8c56b003b4&snippet_version=2"
     /></noscript>
+
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+      defer
+    ></script>
   </body>
 </html>
