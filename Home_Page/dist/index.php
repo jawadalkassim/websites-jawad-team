@@ -318,7 +318,7 @@
               type="search"
               id="default-search"
               class="block w-1/4 p-3 ps-10 text-sm border-2 border-[#0d8155] rounded-lg focus-visible:outline-none focus:shadow-searchInpShadow focus:border-[#4CAF50] bg-white dark:border-gray-600 dark:placeholder-gray-400 text-black lg:w-96"
-              placeholder="Search Mockups, Logos..."
+              placeholder="What service are you looking for?"
               required
             />
           </div>
