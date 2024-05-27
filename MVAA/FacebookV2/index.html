@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MVA</title>
+    <link href="src/output.css" rel="stylesheet" />
+
+    <!-- fonts  -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <!-- Fallback for no-JS users -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      />
+    </noscript>
+
+    <style>
+      .duration-btn {
+        transition: 0.2s;
+      }
+    </style>
+    <script>
+      var urlParams = new URLSearchParams(window.location.search);
+      var redtrackClickId = urlParams.get("s2");
+    </script>
+  </head>
+  <body>
+    <header class="bg-primary pb-[75px] rounded-b-[130px]">
+      <nav
+        class="max-[769px]:border-dashed max-[769px]:border-b max-[480px]:py-[10px] py-[15px]"
+      >
+        <div
+          class="container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 flex justify-between items-center"
+        >
+          <div
+            class="logo min-[769px]:w-[50%] flex justify-center min-[769px]:block"
+          >
+            <div class="logo_inner w-[80%] max-[480px]:w-[95%]">
+              <img
+                src="src/imgs/logo1.webp"
+                width="500"
+                height="92"
+                alt="logo"
+              />
+            </div>
+          </div>
+          <div class="applay w-[50%] max-[769px]:hidden">
+            <div class="applay_inner flex justify-end">
+              <a
+                href="#form_sec"
+                class="no-underline cursor-pointer bg-theard text-secondary text-[20px] font-Montserrat font-bold py-[15px] px-[25px] rounded-[10px] shadow-buttonShadow"
+              >
+                Apply Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="header_content flex flex-col items-center pt-[35px] max-[480px]:pt-[30px] pb-[11px] gap-y-[28px] max-[480px]:gap-y-[9px] container xl:w-contanerxl ml-auto mr-auto pl-1 pr-1 min-[480px]:pl-4 min-[480px]:pr-4"
+      >
+        <h1
+          class="text-center text-secondary font-bold text-[50px] max-[992px]:text-[35px] max-[480px]:text-[19.5px] leading-[65px] max-[480px]:leading-[45px] font-Montserrat max-[480px]:h-[140px]"
+        >
+          Victims Of Motor Vehicle Accidents <br />
+          Can Qualify for +$130,000 <br />
+          in Compensations
+        </h1>
+        <p
+          class="text-center text-secondary text-[20px] max-[480px]:text-[16px] font-Lato font-[400] pl-4 pr-4"
+        >
+          Auto Accident Compensation Nationwide Fill Out The 30 Second Survey
+          Now!
+        </p>
+        <a
+          href="#form_sec"
+          class="no-underline cursor-pointer bg-theard text-secondary text-[20px] max-[480px]:mt-[20px] max-[480px]:text-[18px] max-[320px]:text-[70%] font-Montserrat font-bold py-[15px] px-[26px] rounded-[10px] shadow-buttonShadow"
+        >
+          CHECK IF YOU QUALIFY
+        </a>
+      </div>
+    </header>
+
+    <section
+      class="header_text container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 flex py-[50px] justify-center"
+    >
+      <div class="text-content text-center font-Montserrat">
+        <h3 class="text-fourth text-[32px] max-[480px]:text-[25px] font-bold">
+          Free No Commitment Consultation
+        </h3>
+        <h3 class="text-theard text-[32px] max-[480px]:text-[25px] font-bold">
+          CHECK IF YOU QUALIFY
+        </h3>
+      </div>
+    </section>
+    <section id="form_sec" class="form flex justify-center pt-5 m-5">
+      <div class="flex justify-center items-center flex-col">
+        <!-- spinner  -->
+        <div
+          id="spiner"
+          class="justify-center items-center h-[100px] w-[100px] hidden"
+        >
+          <span class="loader block"></span>
+        </div>
+
+        <!-- thanks  -->
+        <div
+          id="thankYouMessage"
+          class="text-[#13384f] text-3xl pb-6 text-center font-semibold hidden"
+        >
+          <h1>Thank you for taking the time to complete this survey.</h1>
+        </div>
+      </div>
+
+      <form
+        class="container bg-white lg:p-6 md:p-0 sm:p-0 lg:w-9/12 md:w-10/12 sm:w-10/12 rounded-3xl shadow-form-shadow pt-2 overflow-hidden"
+        id="regForm"
+        action="javascript:void(0);"
+      >
+        <input type="hidden" id="token" name="token" value="" />
+        <input
+          id="leadid_token"
+          name="universal_leadid"
+          type="hidden"
+          value=""
+        />
+        <div>
+          <div data-tab class="tab text-white text-3xl font-bodyFont">
+            <div class="animation">
+              <input data-store type="text" name="accident" class="hidden" />
+
+              <div class="font-bold pt-5 text-center p-5">
+                <div class="text-five">Question 1/4</div>
+                <h1 class="pb-2 pt-16 text-4xl text-five">
+                  Was the accident your fault?
+                </h1>
+              </div>
+              <div class="flex justify-center items-center pt-4">
+                <button
+                  type="button"
+                  data-btn
+                  onclick="nextPrev(1)"
+                  class="duration-btn bg s text-xl gap-2 font-medium text-white bg-theard hover:bg-opacity-90 rounded-[10px] p-4 lg:w-4/12 md:w-7/12 sm:w-10/12 py-5 mb-2 text-center items-center"
+                >
+                  No, it Wasn't my Fault
+                </button>
+              </div>
+              <div class="flex justify-center items-center pt-6">
+                <button
+                  type="button"
+                  data-btn
+                  onclick="nextPrev(1)"
+                  class="duration-btn bg s text-xl gap-2 font-medium text-white bg-theard hover:bg-opacity-90 rounded-[10px] p-4 lg:w-4/12 md:w-7/12 sm:w-10/12 py-5 mb-2 text-center items-center"
+                >
+                  Yes, it Was my Fault
+                </button>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-content">
+                <div class="progress-bar">
+                  <div class="myProgress">
+                    <div class="myBar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-tab class="tab text-white text-3xl font-bodyFont">
+            <div class="animation">
+              <input data-store type="text" name="lawyer" class="hidden" />
+
+              <div class="font-bold pt-5 text-center p-5">
+                <div class="text-five">Question 2 / 4</div>
+                <h1 class="pb-2 pt-16 text-4xl text-five">
+                  Do You Have a Lawyer Assigned to the Case?
+                </h1>
+              </div>
+              <div class="flex justify-center items-center pt-4">
+                <button
+                  type="button"
+                  data-btn
+                  onclick="nextPrev(1)"
+                  class="duration-btn bg s text-xl gap-2 font-medium text-white bg-theard hover:bg-opacity-90 rounded-[10px] p-4 lg:w-4/12 md:w-7/12 sm:w-10/12 py-5 mb-2 text-center items-center"
+                >
+                  No, I don't Have Anyone
+                </button>
+              </div>
+              <div class="flex justify-center items-center pt-6">
+                <button
+                  type="button"
+                  data-btn
+                  onclick="nextPrev(1)"
+                  class="duration-btn bg s text-xl gap-2 font-medium text-white bg-theard hover:bg-opacity-90 rounded-[10px] p-4 lg:w-4/12 md:w-7/12 sm:w-10/12 py-5 mb-2 text-center items-center"
+                >
+                  Yes, I Already Have One
+                </button>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-content">
+                <div class="progress-bar">
+                  <div class="myProgress">
+                    <div class="myBar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab text-white text-4xl font-bodyFont">
+            <div class="animation">
+              <div class="font-bold pt-5 text-center p-5">
+                <div class="text-five">Question 3 / 4</div>
+                <h1 class="pb-2 pt-16 text-3xl text-center text-five">
+                  Estimated Accident Date
+                </h1>
+              </div>
+              <div class="flex justify-center pt-5">
+                <div class="lg:w-[50%] date rounded">
+                  <div class="dob-container flex items-center">
+                    <input
+                      maxlength="2"
+                      type="text"
+                      id="dob-month"
+                      class="dob-input text-gray-500 font-semibold placeholder-gray-500"
+                      placeholder="MM"
+                    />
+                    <div class="bg-white text-theard text-lg font-bold">/</div>
+                    <input
+                      maxlength="2"
+                      type="text"
+                      id="dob-day"
+                      class="dob-input text-gray-500 font-semibold placeholder-gray-500"
+                      placeholder="DD"
+                    />
+                    <div class="bg-white text-theard text-lg font-bold">/</div>
+                    <input
+                      maxlength="4"
+                      type="text"
+                      id="dob-year"
+                      class="dob-input text-gray-500 font-semibold placeholder-gray-500"
+                      placeholder="YYYY"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="text-lg"
+                id="date-error"
+                style="text-align: center; padding-top: 5px"
+              ></div>
+              <div class="flex justify-center items-center pt-6 pb-6">
+                <button
+                  type="button"
+                  data-btn
+                  onclick="nextPrev(1)"
+                  class="next-btn duration-btn bg s text-xl gap-2 font-medium text-white bg-theard hover:bg-opacity-90 rounded-[10px] p-4 lg:w-3/12 md:w-5/12 sm:w-5/12 py-3 mb-2 text-center items-center"
+                >
+                  Continue
+                </button>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-content">
+                <div class="progress-bar">
+                  <div class="myProgress">
+                    <div class="myBar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab text-white text-3xl font-bodyFont">
+            <div class="animation">
+              <div class="font-bold pt-5 text-center p-5">
+                <div class="text-theard">
+                  You Might Qualify for Monetary Compensation
+                </div>
+                <p
+                  class="pb-2 pt-16 text-xl font-medium text-center text-black"
+                >
+                  Please Tell Us How To Reach Out
+                </p>
+              </div>
+              <div class="font-bold pt-5 text-center p-5">
+                <h1 class="pb-2 pt-2 text-3xl text-left text-primary">
+                  First Name
+                </h1>
+                <input
+                  class="placeholder-gray-400 font-medium text-black border-black rounded py-1"
+                  type="text"
+                  name="firstName"
+                  placeholder="First Name"
+                  id="fName"
+                />
+              </div>
+              <div class="font-bold pt-2 text-center p-5">
+                <h1 class="pb-2 text-3xl text-left text-primary">Last Name</h1>
+                <input
+                  class="placeholder-gray-400 font-medium text-black border-black rounded py-1"
+                  type="text"
+                  id="lName"
+                  name="lastName"
+                  placeholder="Last Name"
+                />
+              </div>
+              <div class="font-bold pt-2 text-center p-5">
+                <h1 class="pb-2 text-3xl text-left text-primary">Phone</h1>
+                <input
+                  class="placeholder-gray-400 font-medium text-black border-black rounded py-1"
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  placeholder="123-456-7890"
+                />
+              </div>
+              <div class="font-bold pt-2 text-center p-5">
+                <h1 class="pb-2 text-3xl text-left text-primary">Email</h1>
+                <input
+                  class="placeholder-gray-400 font-medium text-black border-black rounded py-1"
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="font-bold pt-2 text-center p-5">
+                <h1 class="pb-2 text-3xl text-left text-primary">Zip code</h1>
+                <input
+                  class="placeholder-gray-400 font-medium text-black border-black rounded py-1"
+                  id="zip"
+                  type="number"
+                  name="zip"
+                  pattern="[0-9]*"
+                  placeholder="Postal Code"
+                />
+              </div>
+              <div
+                class="text-lg"
+                id="error"
+                style="text-align: center; padding-top: 5px"
+              ></div>
+              <div class="flex justify-center items-center pt-6 pb-6">
+                <button
+                  type="submit"
+                  data-btn
+                  onclick="nextPrev(1)"
+                  class="next-btn duration-btn bg s text-xl gap-2 font-medium text-white bg-theard hover:bg-opacity-90 rounded-[10px] p-4 lg:w-3/12 md:w-5/12 sm:w-5/12 py-3 mb-2 text-center items-center"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-content">
+                <div class="progress-bar">
+                  <div class="myProgress">
+                    <div class="myBar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:mb-20 sm:mb-12"></div>
+          <div style="text-align: center; display: none">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section
+      class="header_text max-[480px]:h-[137px] container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 flex py-[50px] justify-center"
+    >
+      <div class="text-content text-center font-Montserrat">
+        <h3 class="text-primary text-[32px] max-[480px]:text-[25px] font-bold">
+          What do we have to offer
+        </h3>
+      </div>
+    </section>
+
+    <section
+      class="cards container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 pb-[50px] pt-0"
+    >
+      <div
+        class="cards_inner flex gap-x-[25px] max-[1024px]: gap-y-[25px] max-[1024px]:grid max-[1024px]:grid-cols-2 max-[769px]:grid-cols-1"
+      >
+        <div
+          class="card flex flex-col items-center shadow-cardShadow rounded-[25px] p-[14px] text-center gap-[10px] justify-start w-[33%] max-[1024px]:w-[100%]"
+        >
+          <div class="card_img w-[21%]">
+            <img
+              src="src/imgs/icon1.webp"
+              width="100"
+              height="100"
+              alt="car protect"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="card_header text-[25px] max-[1280px]:text-[22px] font-Montserrat"
+          >
+            <strong class="leading-[1.3rem]"
+              >Personalized Legal Support Tailored to You</strong
+            >
+          </div>
+          <div class="card_text">
+            <p>
+              Receive personalized legal guidance tailored to your unique
+              situation. Our dedicated team works closely with you to understand
+              the specifics of your motor vehicle accident, offering clear
+              advice and advocacy. We're committed to helping you secure the
+              best possible outcome in your case.
+            </p>
+          </div>
+        </div>
+        <div
+          class="card flex flex-col items-center shadow-cardShadow rounded-[25px] p-[14px] text-center gap-[10px] justify-start w-[33%] max-[1024px]:w-[100%]"
+        >
+          <div class="card_img w-[21%]">
+            <img
+              src="src/imgs/icon1.webp"
+              width="100"
+              height="100"
+              alt="car protect"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="card_header text-[25px] max-[1280px]:text-[22px] font-Montserrat"
+          >
+            <strong class="leading-[1.3rem]"
+              >Recovery Solutions After an Accident</strong
+            >
+          </div>
+          <div class="card_text">
+            <p class="lg:leading-[28px]">
+              Beyond legal support, we prioritize your well-being. Our services
+              extend to assisting with recovery and rehabilitation after a motor
+              vehicle accident. We connect you with resources and support
+              networks to aid your physical and emotional recovery.
+            </p>
+          </div>
+        </div>
+        <div
+          class="card flex flex-col items-center shadow-cardShadow rounded-[25px] p-[14px] text-center gap-[10px] justify-start w-[33%] max-[1024px]:w-[100%]"
+        >
+          <div class="card_img w-[21%]">
+            <img
+              src="src/imgs/icon1.webp"
+              width="100"
+              height="100"
+              alt="car protect"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="card_header text-[25px] max-[1280px]:text-[22px] font-Montserrat"
+          >
+            <strong class="leading-[1.3rem]"
+              >Expert Evaluation for Motor Vehicle Accidents</strong
+            >
+          </div>
+          <div class="card_text">
+            <p>
+              Our team of experienced professionals conducts thorough
+              assessments of motor vehicle accidents to provide you with a
+              comprehensive understanding of the incident. We analyze the
+              details, gather evidence, and offer expert insights to help you
+              navigate the aftermath with clarity and confidence.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="py-[50px] max-[1280px]:py-[20px] flex justify-center items-center"
+      >
+        <a
+          href="#form_sec"
+          class="no-underline cursor-pointer bg-theard text-secondary text-[20px] max-[480px]:mt-[20px] max-[480px]:text-[18px] max-[320px]:text-[70%] font-Montserrat font-bold py-[15px] px-[26px] rounded-[10px] shadow-buttonShadow"
+        >
+          CHECK IF YOU QUALIFY
+        </a>
+      </div>
+    </section>
+
+    <footer class="bg-primary pt-[10px] pb-[50px]">
+      <div class="max-[480px]:py-[10px] py-[15px]">
+        <div
+          class="container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 flex justify-between items-center max-[480px]:flex-col"
+        >
+          <div
+            class="logo min-[769px]:w-[50%] flex justify-center min-[769px]:block"
+          >
+            <div class="logo_inner w-[80%] max-[480px]:w-[95%]">
+              <img
+                src="src/imgs/logo1.webp"
+                width="500"
+                height="92"
+                alt="logo"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="w-[50%] max-[480px]:w-[100%] max-[480px]:flex max-[480px]:justify-center max-[480px]:mt-[30px]"
+          >
+            <div class="flex justify-end">
+              <h2 class="text-[23px] font-Montserrat font-[500] text-secondary">
+                Home
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="footer_text container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 pt-[14px]"
+      >
+        <p
+          class="text-secondary text-center font-Lato text-[14px] leading-[1.3em]"
+        >
+          By clicking "Submit", you consent, acknowledge and agree to the
+          following: Our Terms of Service and Privacy Policy. Ihat you are
+          giving your express written consent tor us or our network ot attorneys
+          and advocates to call you (autodialed, text messages, and pre-recorded
+          messages for convenience) by phone, mobile device including SMS and
+          MMS, it is charges may apply depending on your carrier, not us,
+          message frequency varies: text HELP for help: text STOP to cancel,
+          even if your phone number is lIsted currernty on any 1nternal,
+          corporate, state, or tederal Do Not Call List. we take your privacy
+          seriously and you may receive electronic communications, including
+          regular emails with important news. financial tips, tools and more.
+          You can always unsubscribe at any time. All website interactions and
+          phone calls are recorded for compliance and quality control purposes.
+        </p>
+      </div>
+    </footer>
+
+    <script src="src/script.js"></script>
+
+    <script id="LeadiDscript" type="text/javascript">
+      (function () {
+        var s = document.createElement("script");
+        s.id = "LeadiDscript_campaign";
+        s.type = "text/javascript";
+        s.async = true;
+        s.src =
+          "//create.lidstatic.com/campaign/c70f2000-299a-2849-1bc4-3c8c56b003b4.js?snippet_version=2";
+        var LeadiDscript = document.getElementById("LeadiDscript");
+        LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
+      })();
+    </script>
+    <noscript
+      ><img
+        src="//create.leadid.com/noscript.gif?lac=F252983F-4BD1-0DD8-CD81-F4700AF60B66&lck=c70f2000-299a-2849-1bc4-3c8c56b003b4&snippet_version=2"
+    /></noscript>
+
+    <!--TrustedForm-->
+    <script type="text/javascript">
+      (function () {
+        var tf = document.createElement("script");
+        tf.type = "text/javascript";
+        tf.async = true;
+        tf.src =
+          ("https:" == document.location.protocol ? "https" : "http") +
+          "://api.trustedform.com/trustedform.js?field=xxTrustedFormCertUrl&ping_field=xxTrustedFormPingUrl&l=" +
+          new Date().getTime() +
+          Math.random();
+        var s = document.getElementsByTagName("script")[0];
+
+        s.parentNode.insertBefore(tf, s);
+      })();
+    </script>
+
+    <noscript>
+      <img src="https://api.trustedform.com/ns.gif" />
+    </noscript>
+    <!-- End TrustedForm -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+      defer
+    ></script>
+  </body>
+</html>
