@@ -1,5 +1,6 @@
 var currentTab = 0;
 var progress = 0;
+var errorDate = 'values'
 showTab(currentTab);
 
 function showTab(n, direction) {
@@ -127,6 +128,17 @@ function validateDate() {
     ) {
       return true;
     }
+    else {
+      errorDate = 'year'
+    }
+  }
+  else {
+    if(month > 12 || month <= 0){
+      errorDate = 'month'
+    }
+    if(day > 31 || day <= 0){
+      errorDate = 'day'
+    }
   }
   return false;
 }
@@ -181,7 +193,7 @@ function validateForm() {
     if (validateDate()) {
       return true;
     } else {
-      document.getElementById("date-error").innerText = "please input a value";
+      document.getElementById("date-error").innerText = `please input a valid ${errorDate}`;
       document.getElementById("date-error").style.color = "red";
       valid = false;
     }
