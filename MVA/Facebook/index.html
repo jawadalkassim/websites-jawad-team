@@ -3,9 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>MVA</title>
     <link href="src/output.css" rel="stylesheet" />
+
+    <!-- fonts  -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <!-- Fallback for no-JS users -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      />
+    </noscript>
+
     <style>
       .duration-btn {
         transition: 0.2s;
@@ -28,7 +54,7 @@
             class="logo min-[769px]:w-[50%] flex justify-center min-[769px]:block"
           >
             <div class="logo_inner w-[80%] max-[480px]:w-[95%]">
-              <img src="src/imgs/logo.webp" alt="logo" />
+              <img src="src/imgs/logo1.webp" width="500" height="92" alt="logo" />
             </div>
           </div>
           <div class="applay w-[50%] max-[769px]:hidden">
@@ -47,7 +73,7 @@
         class="header_content flex flex-col items-center pt-[35px] max-[480px]:pt-[30px] pb-[11px] gap-y-[28px] max-[480px]:gap-y-[9px] container xl:w-contanerxl ml-auto mr-auto pl-1 pr-1 min-[480px]:pl-4 min-[480px]:pr-4"
       >
         <h1
-          class="text-center text-secondary font-bold text-[50px] max-[992px]:text-[35px] max-[480px]:text-[19.5px] leading-[65px] max-[480px]:leading-[45px] font-Montserrat"
+          class="text-center text-secondary font-bold text-[50px] max-[992px]:text-[35px] max-[480px]:text-[19.5px] leading-[65px] max-[480px]:leading-[45px] font-Montserrat max-[480px]:h-[140px]"
         >
           Victims Of Motor Vehicle Accidents <br />
           Can Qualify for +$130,000 <br />
@@ -208,11 +234,11 @@
                 <div class="lg:w-[50%] date rounded">
                   <div class="dob-container flex items-center">
                     <input
-                            maxlength="2"
-                            type="text"
-                            id="dob-month"
-                            class="dob-input text-gray-500 font-semibold placeholder-gray-500"
-                            placeholder="MM"
+                      maxlength="2"
+                      type="text"
+                      id="dob-month"
+                      class="dob-input text-gray-500 font-semibold placeholder-gray-500"
+                      placeholder="MM"
                     />
                     <div class="bg-white text-theard text-lg font-bold">/</div>
                     <input
@@ -294,15 +320,19 @@
                   placeholder="Last Name"
                 />
               </div>
-              <div class="font-bold pt-2 text-center p-5">
+              <div class="font-bold pt-2 text-center p-5 relative">
                 <h1 class="pb-2 text-3xl text-left text-primary">Phone</h1>
                 <input
-                  class="placeholder-gray-400 font-medium text-black border-black rounded py-1"
+                  class="placeholder-gray-400 font-medium text-black border-black rounded py-1 pl-[30px]"
                   type="text"
                   id="phone"
                   name="phone"
                   placeholder="123-456-7890"
                 />
+                <span
+                  class="absolute top-1/2 left-0 translate-x-[30px] translate-y-[-2px] text-[17px] font-medium text-black "
+                  >+1</span
+                >
               </div>
               <div class="font-bold pt-2 text-center p-5">
                 <h1 class="pb-2 text-3xl text-left text-primary">Email</h1>
@@ -366,7 +396,7 @@
     </section>
 
     <section
-      class="header_text container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 flex py-[50px] justify-center"
+      class="header_text max-[480px]:h-[137px] container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 flex py-[50px] justify-center"
     >
       <div class="text-content text-center font-Montserrat">
         <h3 class="text-primary text-[32px] max-[480px]:text-[25px] font-bold">
@@ -385,7 +415,13 @@
           class="card flex flex-col items-center shadow-cardShadow rounded-[25px] p-[14px] text-center gap-[10px] justify-start w-[33%] max-[1024px]:w-[100%]"
         >
           <div class="card_img w-[21%]">
-            <img src="src/imgs/icon.webp" alt="car protect" />
+            <img
+              src="src/imgs/icon1.webp"
+              width="100"
+              height="100"
+              alt="car protect"
+              loading="lazy"
+            />
           </div>
           <div
             class="card_header text-[25px] max-[1280px]:text-[22px] font-Montserrat"
@@ -408,7 +444,13 @@
           class="card flex flex-col items-center shadow-cardShadow rounded-[25px] p-[14px] text-center gap-[10px] justify-start w-[33%] max-[1024px]:w-[100%]"
         >
           <div class="card_img w-[21%]">
-            <img src="src/imgs/icon.webp" alt="car protect" />
+            <img
+              src="src/imgs/icon1.webp"
+              width="100"
+              height="100"
+              alt="car protect"
+              loading="lazy"
+            />
           </div>
           <div
             class="card_header text-[25px] max-[1280px]:text-[22px] font-Montserrat"
@@ -430,7 +472,13 @@
           class="card flex flex-col items-center shadow-cardShadow rounded-[25px] p-[14px] text-center gap-[10px] justify-start w-[33%] max-[1024px]:w-[100%]"
         >
           <div class="card_img w-[21%]">
-            <img src="src/imgs/icon.webp" alt="car protect" />
+            <img
+              src="src/imgs/icon1.webp"
+              width="100"
+              height="100"
+              alt="car protect"
+              loading="lazy"
+            />
           </div>
           <div
             class="card_header text-[25px] max-[1280px]:text-[22px] font-Montserrat"
@@ -472,7 +520,13 @@
             class="logo min-[769px]:w-[50%] flex justify-center min-[769px]:block"
           >
             <div class="logo_inner w-[80%] max-[480px]:w-[95%]">
-              <img src="src/imgs/logo.webp" alt="logo" />
+              <img
+                src="src/imgs/logo1.webp"
+                width="500"
+                height="92"
+                alt="logo"
+                loading="lazy"
+              />
             </div>
           </div>
           <div
@@ -509,27 +563,8 @@
         </p>
       </div>
     </footer>
-    <script src="src/script.js"></script>
-    <!--TrustedForm-->
-    <script type="text/javascript">
-      (function () {
-        var tf = document.createElement("script");
-        tf.type = "text/javascript";
-        tf.async = true;
-        tf.src =
-          ("https:" == document.location.protocol ? "https" : "http") +
-          "://api.trustedform.com/trustedform.js?field=xxTrustedFormCertUrl&ping_field=xxTrustedFormPingUrl&l=" +
-          new Date().getTime() +
-          Math.random();
-        var s = document.getElementsByTagName("script")[0];
 
-        s.parentNode.insertBefore(tf, s);
-      })();
-    </script>
-    <noscript>
-      <img src="https://api.trustedform.com/ns.gif" />
-    </noscript>
-    <!-- End TrustedForm -->
+    <script src="src/script.js"></script>
 
     <script id="LeadiDscript" type="text/javascript">
       (function () {
@@ -547,5 +582,31 @@
       ><img
         src="//create.leadid.com/noscript.gif?lac=F252983F-4BD1-0DD8-CD81-F4700AF60B66&lck=c70f2000-299a-2849-1bc4-3c8c56b003b4&snippet_version=2"
     /></noscript>
+
+    <!--TrustedForm-->
+    <script type="text/javascript">
+      (function () {
+        var tf = document.createElement("script");
+        tf.type = "text/javascript";
+        tf.async = true;
+        tf.src =
+          ("https:" == document.location.protocol ? "https" : "http") +
+          "://api.trustedform.com/trustedform.js?field=xxTrustedFormCertUrl&ping_field=xxTrustedFormPingUrl&l=" +
+          new Date().getTime() +
+          Math.random();
+        var s = document.getElementsByTagName("script")[0];
+
+        s.parentNode.insertBefore(tf, s);
+      })();
+    </script>
+
+    <noscript>
+      <img src="https://api.trustedform.com/ns.gif" />
+    </noscript>
+    <!-- End TrustedForm -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+      defer
+    ></script>
   </body>
 </html>
