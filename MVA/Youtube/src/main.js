@@ -152,9 +152,9 @@ function validateDate() {
 }
 
 //add phone format
-
 document.addEventListener("DOMContentLoaded", function () {
   const phoneInput = document.getElementById("phone");
+  // const phoneCode = phoneInput.nextElementSibling;
 
   phoneInput.addEventListener("input", function (event) {
     const input = event.target;
@@ -171,6 +171,8 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       input.value = value;
     }
+    //show +1 to phone filed
+    // phoneCode.classList.remove("hidden");
   });
 });
 
@@ -296,9 +298,8 @@ document.getElementById("regForm").addEventListener("submit", function (event) {
     email === "" ||
     phone_home === "" ||
     zip === ""
-  ) {
+  )
     return;
-  }
 
   let GHLData = {
     firstName: first_name,
@@ -323,7 +324,7 @@ document.getElementById("regForm").addEventListener("submit", function (event) {
   };
 
   console.log(GHLData);
-
+  //
   try {
     fetch("https://rest.gohighlevel.com/v1/contacts/", {
       headers: {

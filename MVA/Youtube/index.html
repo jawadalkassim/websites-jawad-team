@@ -320,15 +320,19 @@
                   placeholder="Last Name"
                 />
               </div>
-              <div class="font-bold pt-2 text-center p-5">
+              <div class="font-bold pt-2 text-center p-5 relative">
                 <h1 class="pb-2 text-3xl text-left text-five">Phone</h1>
                 <input
-                  class="placeholder-gray-400 font-medium text-black border-black rounded py-1"
+                  class="placeholder-gray-400 font-medium text-black border-black rounded py-1  pl-[30px]"
                   type="text"
                   id="phone"
                   name="phone"
                   placeholder="123-456-7890"
                 />
+                <span
+                class="absolute top-1/2 left-0 translate-x-[30px] translate-y-[-2px] text-[17px] font-medium text-black "
+                >+1</span
+              >
               </div>
               <div class="font-bold pt-2 text-center p-5">
                 <h1 class="pb-2 text-3xl text-left text-five">Email</h1>
@@ -550,7 +554,7 @@
           recorded for quality control and compliance purposes.
         </p>
         <div class="text-center text-white">
-          <a href="./privacy.html"> privacy Policy</a>
+          <a href="src/privacy.html"> privacy Policy</a>
         </div>
       </div>
     </footer>
