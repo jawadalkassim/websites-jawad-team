@@ -54,12 +54,7 @@
             class="logo min-[769px]:w-[50%] flex justify-center min-[769px]:block"
           >
             <div class="logo_inner w-[80%] max-[480px]:w-[95%]">
-              <img
-                src="src/imgs/logo1.webp"
-                width="500"
-                height="92"
-                alt="logo"
-              />
+              <img src="src/imgs/logo1.webp" width="500" height="92" alt="logo" />
             </div>
           </div>
           <div class="applay w-[50%] max-[769px]:hidden">
@@ -325,15 +320,19 @@
                   placeholder="Last Name"
                 />
               </div>
-              <div class="font-bold pt-2 text-center p-5">
+              <div class="font-bold pt-2 text-center p-5 relative">
                 <h1 class="pb-2 text-3xl text-left text-primary">Phone</h1>
                 <input
-                  class="placeholder-gray-400 font-medium text-black border-black rounded py-1"
+                  class="placeholder-gray-400 font-medium text-black border-black rounded py-1 pl-[30px]"
                   type="text"
                   id="phone"
                   name="phone"
                   placeholder="123-456-7890"
                 />
+                <span
+                  class="absolute top-1/2 left-0 translate-x-[30px] translate-y-[-2px] text-[17px] font-medium text-black "
+                  >+1</span
+                >
               </div>
               <div class="font-bold pt-2 text-center p-5">
                 <h1 class="pb-2 text-3xl text-left text-primary">Email</h1>
