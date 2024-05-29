@@ -307,7 +307,7 @@ document.getElementById("regForm").addEventListener("submit", function (event) {
     email: email,
     phone: phone_home,
     postalCode: zip,
-    tags: ["fb", "walker"],
+    tags: ["yt", "walker"],
     //
     customField: {
       Aar7YhsdWr8QHDhFxgXu: lawyer,
