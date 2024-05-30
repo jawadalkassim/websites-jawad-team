@@ -33,17 +33,23 @@
       />
     </noscript>
 
-
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16565228514"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16565228514"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'AW-16565228514');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-16565228514");
     </script>
-    <script type="text/javascript" src="https://law.afteraccidenthelp.com/track.js?rtkcmpid=66483f741c10c00001a405b0"></script>
+    <script
+      type="text/javascript"
+      src="https://law.afteraccidenthelp.com/track.js?rtkcmpid=66483f741c10c00001a405b0"
+    ></script>
 
     <style>
       .duration-btn {
@@ -249,6 +255,7 @@
                       maxlength="2"
                       type="text"
                       id="dob-month"
+                      inputmode="numeric"
                       class="dob-input text-gray-500 font-semibold placeholder-gray-500"
                       placeholder="MM"
                     />
@@ -257,6 +264,7 @@
                       maxlength="2"
                       type="text"
                       id="dob-day"
+                      inputmode="numeric"
                       class="dob-input text-gray-500 font-semibold placeholder-gray-500"
                       placeholder="DD"
                     />
@@ -265,6 +273,7 @@
                       maxlength="4"
                       type="text"
                       id="dob-year"
+                      inputmode="numeric"
                       class="dob-input text-gray-500 font-semibold placeholder-gray-500"
                       placeholder="YYYY"
                     />
@@ -335,16 +344,17 @@
               <div class="font-bold pt-2 text-center p-5 relative">
                 <h1 class="pb-2 text-3xl text-left text-five">Phone</h1>
                 <input
-                  class="placeholder-gray-400 font-medium text-black border-black rounded py-1  pl-[30px]"
+                  class="placeholder-gray-400 font-medium text-black border-black rounded py-1 pl-[30px]"
                   type="text"
                   id="phone"
                   name="phone"
+                  inputmode="tel"
                   placeholder="123-456-7890"
                 />
                 <span
-                class="absolute top-1/2 left-0 translate-x-[30px] translate-y-[-2px] text-[17px] font-medium text-black "
-                >+1</span
-              >
+                  class="absolute top-1/2 left-0 translate-x-[30px] translate-y-[-2px] text-[17px] font-medium text-black"
+                  >+1</span
+                >
               </div>
               <div class="font-bold pt-2 text-center p-5">
                 <h1 class="pb-2 text-3xl text-left text-five">Email</h1>
@@ -364,6 +374,7 @@
                   type="number"
                   name="zip"
                   pattern="[0-9]*"
+                  inputmode="numeric"
                   placeholder="Postal Code"
                 />
               </div>
