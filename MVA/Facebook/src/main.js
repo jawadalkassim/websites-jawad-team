@@ -326,6 +326,7 @@ document.getElementById("regForm").addEventListener("submit", function (event) {
   console.log(GHLData);
   //
   try {
+    //
     fetch("https://rest.gohighlevel.com/v1/contacts/", {
       headers: {
         Authorization:
