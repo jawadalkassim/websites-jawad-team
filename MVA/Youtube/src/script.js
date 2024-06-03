@@ -312,7 +312,7 @@ document.getElementById("regForm").addEventListener("submit", function (event) {
         'input[name="xxTrustedFormCertUrl"]'
       ).value,
       sO3W2ZWvrDD783qu6y5N: `${year}-${month}-${day}`,
-      Bys6WHtPrPBurzDIwAAY: redtrackClickIdfromCookie,
+      Bys6WHtPrPBurzDIwAAY: redtrackClickId,
       jFxp7hBrEOAeAze971OI: document.querySelector(
         'input[name="universal_leadid"]'
       ).value,
