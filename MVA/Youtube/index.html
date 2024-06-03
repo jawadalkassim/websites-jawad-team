@@ -57,8 +57,15 @@
       }
     </style>
     <script>
-      var urlParams = new URLSearchParams(window.location.search);
-      var redtrackClickId = urlParams.get("s2");
+      function getCookieValue(name) {
+        return document.cookie
+          .split("; ")
+          .find((row) => row.startsWith(name + "="))
+          ?.split("=")[1];
+      }
+
+      // Usage
+      var redtrackClickIdfromCookie = getCookieValue("rtkclickid-store");
     </script>
   </head>
   <body>
@@ -95,7 +102,8 @@
           class="text-center text-secondary font-bold text-[50px] max-[992px]:text-[35px] max-[480px]:text-[19.5px] leading-[65px] max-[480px]:leading-[45px] font-Montserrat"
         >
           Individuals Affected By Accidents Are <br />
-          Eligible For Compensation Exceeding $130,000 in 2024 At No Cost Through New Gov Laws
+          Eligible For Compensation Exceeding $130,000 in 2024 At No Cost
+          Through New Gov Laws
         </h1>
         <p
           class="text-center text-secondary text-[20px] max-[480px]:text-[16px] font-Lato font-[400] pl-4 pr-4"
@@ -581,7 +589,9 @@
         </div>
       </div>
     </footer>
+
     <script src="src/script.js"></script>
+
     <!--TrustedForm-->
     <script type="text/javascript">
       (function () {
