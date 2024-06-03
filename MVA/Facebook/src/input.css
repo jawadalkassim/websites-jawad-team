@@ -312,3 +312,80 @@ hr.style-1 {
     transform: scale(1.2, 1);
   }
 }
+
+/* start phone  */
+
+.phone-parent,
+.phone-child,
+.phone-subChild {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  border-right: 4px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: callring3 2s ease-in-out infinite;
+}
+
+.phone-parent {
+  transform: rotate(-45deg);
+}
+
+.phone-child {
+  width: 80%;
+  height: 80%;
+  animation: callring2 2s ease-in-out infinite;
+}
+
+.phone-subChild {
+  width: 60%;
+  height: 60%;
+  animation: callring1 2s ease-in-out infinite;
+}
+
+#phoneRing {
+  transform: rotate(42deg);
+}
+
+@keyframes callring1 {
+  0%,
+  100% {
+    border-right: 4px solid transparent;
+  }
+  15%,
+  30%,
+  45%,
+  60%,
+  75% {
+    border-right: 4px solid white;
+  }
+}
+@keyframes callring2 {
+  0%,
+  15%,
+  75%,
+  100% {
+    border-right: 4px solid transparent;
+  }
+  30%,
+  45%,
+  60% {
+    border-right: 4px solid white;
+  }
+}
+@keyframes callring3 {
+  0%,
+  15%,
+  30%,
+  60%,
+  75%,
+  100% {
+    border-right: 4px solid transparent;
+  }
+
+  45% {
+    border-right: 4px solid white;
+  }
+}

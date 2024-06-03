@@ -41,6 +41,15 @@
       var urlParams = new URLSearchParams(window.location.search);
       var redtrackClickId = urlParams.get("s2");
     </script>
+
+    <!-- fontawsome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="bg-primary pb-[75px] rounded-b-[130px]">
@@ -51,9 +60,9 @@
           class="container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 flex justify-between items-center"
         >
           <div
-            class="logo min-[769px]:w-[50%] flex justify-center min-[769px]:block"
+            class="logo w-[50%] max-[480px]:w-[40%] flex justify-center min-[769px]:block"
           >
-            <div class="logo_inner w-[80%] max-[480px]:w-[95%]">
+            <div class="logo_inner w-[80%] max-[480px]:w-[100%]">
               <img
                 src="src/imgs/logo1.webp"
                 width="500"
@@ -62,23 +71,40 @@
               />
             </div>
           </div>
-          <div class="applay w-[50%] max-[769px]:hidden">
+
+          <!-- // phone  -->
+          <a
+            href="tel:+18778634126"
+            class="applay w-[50%] max-[480px]:w-[60%] cursor-pointer"
+          >
             <div class="applay_inner flex justify-end">
-              <a
-                href="#form_sec"
-                class="no-underline cursor-pointer bg-theard text-secondary text-[20px] font-Montserrat font-bold py-[15px] px-[25px] rounded-[10px] shadow-buttonShadow"
+              <div
+                class="no-underline bg-theard text-secondary text-[20px] max-[769px]:text-[15px] max-[380px]:text-[14px] max-[360px]:text-[12px] font-Montserrat font-bold py-[15px] max-[769px]:py-[7px] max-[480px]:py-[5px] px-[25px] max-[769px]:px-[15px] rounded-[10px] shadow-buttonShadow flex justify-center items-center gap-x-[10px] max-[769px]:gap-x-[3px]"
               >
-                Apply Now
-              </a>
+                <div
+                  class="phone-container w-[40px] h-[40px] relative flex justify-center items-center rounded-[50%]"
+                >
+                  <div class="phone-parent">
+                    <div class="phone-child">
+                      <div
+                        class="phone-subChild text-[25px] max-[769px]:text-[20px]"
+                      >
+                        <i id="phoneRing" class="fa-solid fa-phone"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span>+1 877-863-4126</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </nav>
       <div
         class="header_content flex flex-col items-center pt-[35px] max-[480px]:pt-[30px] pb-[11px] gap-y-[28px] max-[480px]:gap-y-[9px] container xl:w-contanerxl ml-auto mr-auto pl-1 pr-1 min-[480px]:pl-4 min-[480px]:pr-4"
       >
         <h1
-          class="text-center text-secondary font-bold text-[50px] max-[992px]:text-[35px] max-[480px]:text-[19.5px] leading-[65px] max-[480px]:leading-[45px] font-Montserrat max-[480px]:h-[140px]"
+          class="text-center text-secondary font-bold text-[50px] max-[992px]:text-[35px] max-[480px]:text-[19.5px] leading-[65px] max-[480px]:leading-[45px] font-Montserrat"
         >
           Victims Of Motor Vehicle Accidents <br />
           Can Qualify for +$130,000 <br />
@@ -513,10 +539,36 @@
         class="py-[50px] max-[1280px]:py-[20px] flex justify-center items-center"
       >
         <a
-          href="#form_sec"
-          class="no-underline cursor-pointer bg-theard text-secondary text-[20px] max-[480px]:mt-[20px] max-[480px]:text-[18px] max-[320px]:text-[70%] font-Montserrat font-bold py-[15px] px-[26px] rounded-[10px] shadow-buttonShadow"
+          href="tel:+18778634126"
+          class="no-underline cursor-pointer bg-theard text-secondary text-[20px] max-[480px]:text-[17px] max-[400px]:text-[16px] max-[320px]:text-[70%] max-[480px]:mt-[20px] font-Montserrat font-bold py-[15px] px-[26px] rounded-[10px] shadow-buttonShadow flex flex-col gap-y-[10px] max-[480px]:gap-y-[3px]"
         >
-          CHECK IF YOU QUALIFY
+          <div class="text">
+            <p class="text-center">
+              Get Help Right Now, Call Our Dedicated Lawyers for Free 24/7
+            </p>
+          </div>
+          <div class="iconCall">
+            <div class="applay_inner flex justify-center">
+              <div
+                class="flex justify-center items-center gap-x-[10px] max-[769px]:gap-x-[3px]"
+              >
+                <div
+                  class="phone-container w-[40px] h-[40px] relative flex justify-center items-center rounded-[50%]"
+                >
+                  <div class="phone-parent">
+                    <div class="phone-child">
+                      <div
+                        class="phone-subChild text-[25px] max-[769px]:text-[20px]"
+                      >
+                        <i id="phoneRing" class="fa-solid fa-phone"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span>+1 877-863-4126</span>
+              </div>
+            </div>
+          </div>
         </a>
       </div>
     </section>
