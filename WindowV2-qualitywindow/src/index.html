@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Windows-v2-QualityWindow</title>
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- fonts  -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <!-- Fallback for no-JS users -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      />
+    </noscript>
+  </head>
+  <body class="font-Lato bg-bgCover bg-no-repeat bg-center bg-cover bg-fixed">
+    <div class="flex justify-center">
+      <div class="bg-fourth w-containerLg">
+        <!-- Header -->
+        <header>
+          <div class="bg-third">
+            <h4
+              class="font-bold text-fourth text-center text-[17px] max-[690px]:text-[13px] p-2 pb-2 leading-5"
+              style="font-family: 'Arial'"
+            >
+              Renewal by Andersen is not affiliated with any government grant or
+              free window programs, all projects come at a cost to the consumer
+            </h4>
+          </div>
+        </header>
+        <section class="flex justify-center pt-5">
+          <div class="content">
+            <!-- Logo !-->
+            <div class="brand flex justify-center">
+              <img src="./imgs/logo.webp" class="w-[260px]" />
+            </div>
+            <!-- hero !-->
+            <div class="hero-img pt-3 flex justify-center">
+              <img src="./imgs/hero.webp" class="max-[992px]:w-11/12" />
+            </div>
+          </div>
+        </section>
+        <!--  start survey -->
+        <section class="form-container pb-[25px] pt-8 mx-3 text-center">
+          <div class="form-header">
+            <h2
+              class="text-[32px] max-[480px]:text-[18px] font-medium text-[#000000cc] font-Lato"
+            >
+              Get a Free Window Replacement Quote
+            </h2>
+          </div>
+          <div class="progress pt-[32px] flex justify-center items-center">
+            <div
+              class="progress-inner relative flex justify-between w-[70%] max-[480px]:w-[90%]"
+            >
+              <div
+                class="flex justify-center items-center text-fourth text-[25px] max-[480px]:text-[20px] font-Lato border-[3.5px] max-[480px]:border-[2.5px] bg-secondary border-secondary w-[40px] max-[480px]:w-[35px] h-[40px] max-[480px]:h-[35px] rounded-full z-20"
+              >
+                1
+              </div>
+              <div
+                class="flex justify-center items-center text-secondary text-[25px] max-[480px]:text-[20px] font-Lato border-[3.5px] max-[480px]:border-[2.5px] bg-[white] border-secondary w-[40px] max-[480px]:w-[35px] h-[40px] max-[480px]:h-[35px] rounded-full z-20"
+              >
+                2
+              </div>
+              <div
+                class="flex justify-center items-center text-secondary text-[25px] max-[480px]:text-[20px] font-Lato border-[3.5px] max-[480px]:border-[2.5px] bg-[white] border-secondary w-[40px] max-[480px]:w-[35px] h-[40px] max-[480px]:h-[35px] rounded-full z-20"
+              >
+                3
+              </div>
+              <div
+                class="flex justify-center items-center text-secondary text-[25px] max-[480px]:text-[20px] font-Lato border-[3.5px] max-[480px]:border-[2.5px] bg-[white] border-secondary w-[40px] max-[480px]:w-[35px] h-[40px] max-[480px]:h-[35px] rounded-full z-20"
+              >
+                4
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="overflow-hidden px-[5px] form pt-[10px] w-[70%] max-[480px]:w-[90%] flex justify-center flex-col mx-auto"
+          >
+            <form id="form">
+              <div id="step1" data-step class="tap flex-col flex">
+                <div class="tap-text pb-[20px]">
+                  <h2 class="text-[20px] font-Lato font-[600] text-five">
+                    Where is your window project?
+                  </h2>
+                </div>
+                <div class="inputs-conainer">
+                  <input
+                    id="zip"
+                    name="zip"
+                    type="tel"
+                    inputmode="numeric"
+                    title="Zip Code"
+                    placeholder="Zip Code"
+                    maxlength="5"
+                    class="w-full h-[50px] p-[15px] border border-six rounded-[3px] mb-[2px] font-Montserrat text-seven text-[16px] shadow-inputShadow focus:shadow-inputFocus focus-visible:outline-none"
+                  />
+                  <div
+                    error="error"
+                    class="text-eight mt-[10px] mb-[2px] text-[12px] transition ease-in-out duration-300"
+                  ></div>
+                </div>
+
+                <div class="btns">
+                  <button
+                    type="button"
+                    data-next
+                    class="w-full h-[50px] bg-primary font-bold text-fourth border-0 cursor-pointer px-[10px] py-[15px] font-Montserrat flex justify-center items-center uppercase focus-visible:outline-none hover:animate-fadeOutBtn hover:border hover:border-[#999]"
+                  >
+                    Start Free Quote
+                  </button>
+                </div>
+              </div>
+
+              <div id="step2" data-step class="tap flex-col hidden">
+                <div class="tap-text pb-[20px]">
+                  <h2 class="text-[20px] font-Lato font-[600] text-five">
+                    Who are we speaking with?
+                  </h2>
+                </div>
+                <div class="inputs-conainer">
+                  <input
+                    id="firstName"
+                    name="firstName"
+                    type="text"
+                    title="First Name"
+                    placeholder="First Name"
+                    class="w-full h-[50px] p-[15px] mb-[10px] border border-six rounded-[3px] font-Montserrat text-seven text-[16px] shadow-inputShadow focus:shadow-inputFocus focus-visible:outline-none"
+                  />
+                  <input
+                    id="lastName"
+                    name="lastName"
+                    type="text"
+                    title="Last Name"
+                    placeholder="Last Name"
+                    class="w-full h-[50px] p-[15px] border border-six rounded-[3px] mb-[2px] font-Montserrat text-seven text-[16px] shadow-inputShadow focus:shadow-inputFocus focus-visible:outline-none"
+                  />
+
+                  <div
+                    error="error"
+                    class="text-eight mt-[10px] mb-[8px] text-[12px] transition ease-in-out duration-300"
+                  >
+                    <span class="firstNameErorr"></span>
+                    <span class="lastNameErorr"></span>
+                  </div>
+                </div>
+
+                <div class="btns flex items-center justify-center">
+                  <button
+                    type="button"
+                    data-back
+                    class="w-1/2 h-[50px] bg-fourth font-bold text-seven border border-six cursor-pointer px-[10px] py-[15px] font-Montserrat flex justify-center items-center uppercase hover:bg-[#f9fafb] duration-200 focus-visible:outline-none"
+                  >
+                    back
+                  </button>
+
+                  <button
+                    type="button"
+                    data-next
+                    class="w-1/2 h-[50px] bg-primary font-bold text-fourth border-0 cursor-pointer px-[10px] py-[15px] font-Montserrat flex justify-center items-center uppercase focus-visible:outline-none"
+                  >
+                    next
+                  </button>
+                </div>
+              </div>
+
+              <div id="step3" data-step class="tap flex-col hidden">
+                <div class="tap-text pb-[20px]">
+                  <h2 class="text-[20px] font-Lato font-[600] text-five">
+                    Let us know how we can reach you
+                  </h2>
+                </div>
+                <div class="inputs-conainer">
+                  <input
+                    id="email"
+                    name="email"
+                    type="text"
+                    title="Email"
+                    placeholder="Email"
+                    class="w-full h-[50px] p-[15px] mb-[10px] border border-six rounded-[3px] font-Montserrat text-seven text-[16px] shadow-inputShadow focus:shadow-inputFocus focus-visible:outline-none"
+                  />
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    inputmode="numeric"
+                    title="Phone Number"
+                    placeholder="Phone Number"
+                    class="w-full h-[50px] p-[15px] border border-six rounded-[3px] mb-[2px] font-Montserrat text-seven text-[16px] shadow-inputShadow focus:shadow-inputFocus focus-visible:outline-none"
+                  />
+
+                  <div
+                    error="error"
+                    class="text-eight mt-[10px] mb-[8px] text-[12px] transition ease-in-out duration-300"
+                  >
+                    <span class="emailErorr"></span>
+                    <span class="phoneErorr"></span>
+                  </div>
+                </div>
+
+                <div class="btns flex items-center justify-center">
+                  <button
+                    type="button"
+                    data-back
+                    class="w-1/2 h-[50px] bg-fourth font-bold text-seven border border-six cursor-pointer px-[10px] py-[15px] font-Montserrat flex justify-center items-center uppercase hover:bg-[#f9fafb] duration-200 focus-visible:outline-none"
+                  >
+                    back
+                  </button>
+
+                  <button
+                    type="button"
+                    data-next
+                    class="w-1/2 h-[50px] bg-primary font-bold text-fourth border-0 cursor-pointer px-[10px] py-[15px] font-Montserrat flex justify-center items-center uppercase focus-visible:outline-none"
+                  >
+                    next
+                  </button>
+                </div>
+              </div>
+
+              <div id="step4" data-step class="tap flex-col hidden">
+                <div class="tap-text pb-[20px]">
+                  <h2 class="text-[20px] font-Lato font-[600] text-five">
+                    What is your home address?
+                  </h2>
+                </div>
+
+                <div class="inputs-conainer">
+                  <input
+                    id="address"
+                    name="address"
+                    type="text"
+                    title="Street Address"
+                    placeholder="Street Address"
+                    class="w-full h-[50px] p-[15px] border border-six rounded-[3px] mb-[2px] font-Montserrat text-seven text-[16px] shadow-inputShadow focus:shadow-inputFocus focus-visible:outline-none"
+                  />
+                  <div
+                    error="error"
+                    class="text-eight mt-[10px] mb-[2px] text-[12px] transition ease-in-out duration-300"
+                  ></div>
+                </div>
+
+                <div class="btns">
+                  <button
+                    type="submit"
+                    data-next
+                    class="w-full h-[50px] rounded-[1px] bg-primary font-bold text-fourth border-0 cursor-pointer px-[10px] py-[15px] font-Montserrat flex justify-center items-center uppercase focus-visible:outline-none hover:animate-fadeOutBtn hover:border hover:border-[#999]"
+                  >
+                    get started now
+                  </button>
+                </div>
+
+                <div class="tap-text-content mt-[25px] mb-[10px]">
+                  <p
+                    class="text-[10px] font-normal text-[#8f8f8f] leading-[14px] text-justify"
+                  >
+                    By pressing the Get Started Now button above, you
+                    acknowledge that you’d like to learn more about Renewal by
+                    Andersen windows. You also authorize Renewal by Andersen or
+                    any third-party
+                    <a href="#" target="_blank" class="text-[#0d6efd] underline"
+                      >organization</a
+                    >
+                    to call, SMS and/or email you at the phone number(s)/email
+                    address(es) above, including your wireless number if
+                    provided, with automated technology in order to schedule a
+                    convenient day and time. If you live in a territory where
+                    Renewal by Andersen is not currently working with
+                    <span>example.com</span>
+                    or that is not serviced by Renewal by Andersen, we will send
+                    your information to up to four home improvement companies
+                    that can help with your project. You acknowledge that you
+                    are submitting this form so that you can be contacted via
+                    email, phone or text message and informed about products,
+                    services and sales, as well as third-party offers including,
+                    without limitation, from our affiliates and/or unrelated
+                    third parties. You understand that you do not need to submit
+                    this form to schedule an in-home price quote. If you do not
+                    wish to provide us with this consent, you may contact us
+                    directly at (516) 253-6644
+                  </p>
+                </div>
+
+                <div class="btn-back">
+                  <button
+                    type="button"
+                    data-back
+                    class="w-full h-[50px] bg-fourth font-bold text-seven border border-six cursor-pointer px-[10px] py-[15px] font-Montserrat flex justify-center items-center uppercase hover:bg-[#f9fafb] duration-200 focus-visible:outline-none"
+                  >
+                    back
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!--  end survey -->
+
+        <!-- contact-link !-->
+        <div class="contact max-[992px]:mx-2">
+          <p class="text-center">
+            If you believe you’ve reached this page in error or would like to
+            opt out of future correspondence, please<span
+              ><a href="#" class="text-center text-blue-700 underline">
+                contact us</a
+              > </span
+            >.
+          </p>
+        </div>
+        <hr class="min-[768px]:hidden bg-third" />
+        <!-- footer !-->
+        <footer class="pt-16">
+          <div class="footer-logo flex justify-center">
+            <img src="./imgs/logo-footer.webp" />
+          </div>
+          <div class="footer-content mx-3 pt-4">
+            <p class="text-[10px] text-five text-center">
+              1DETAILS OF OFFER: Offer expires 6/30/2024. Not valid with other
+              offers or prior purchases Buy one (1) window or entry/patio door,
+              get one (1) window or entry/patio door 40% off, and 12 months $0
+              money down, $0 monthly payments, no interest when you purchase
+              four (4) or more windows or entry/patio doors between 3/27/2024
+              and 6/30/2024. 40% off windows and entry/patio doors are less than
+              or equal to lowest cost window or entry/patio door in the order.
+              Additional $200 off your order, taken after initial discount(s),
+              when you purchase by 6/30/2024. Subject to credit approval.
+              Interest is billed during the promotional period, but all interest
+              is waived if the purchase amount is paid before the expiration of
+              the promotional period. Financing for GreenSky® consumer loan
+              programs is provided by federally insured, federal and state
+              chartered financial institutions without regard to age, race,
+              color, religion, national origin, gender, or familial status.
+              Savings comparison based on purchase of a single unit at list
+              price. Available at participating locations and offer applies
+              throughout the service area. See your local Renewal by Andersen
+              location for details. CA License CLSB #1050316. Central CA License
+              #1096271. License #RCE-50303. FL License# CGC1527613. OR License
+              #198571. WA License #RENEWAP877BM. WA License #RENEWAW856K6. All
+              other license numbers are available upon request. Some Renewal by
+              Andersen locations are independently owned and operated. “ENERGY
+              STAR” is a registered trademark of the U.S. Environmental
+              Protection Agency. “Renewal by Andersen” and all other marks where
+              denoted are trademarks of Andersen Corporation. ©2024 Andersen
+              Corporation. All rights reserved. RBA 12222
+            </p>
+          </div>
+          <div class="footer-copyright pt-4 pb-8 max-[992px]:mx-3">
+            <p class="text-[10px] text-five text-center">
+              © 2024 example.com All rights reserved.
+              <span
+                ><a href="#" class="text-[#333] underline"
+                  >| Privacy Policy |</a
+                > </span
+              ><span
+                ><a href="#" class="text-[#333] underline">Terms of Use |</a>
+              </span>
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
