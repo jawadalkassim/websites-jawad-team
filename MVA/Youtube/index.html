@@ -33,14 +33,14 @@
       />
     </noscript>
     <script>
-      var redtrackClickId = ""
+      var redtrackClickId = "";
       function getCookieValue(name) {
         return document.cookie
           .split("; ")
           .find((row) => row.startsWith(name + "="))
           ?.split("=")[1];
       }
-    
+
       function checkCookieValue() {
         redtrackClickId = getCookieValue("rtkclickid-store");
         if (redtrackClickId) {
@@ -50,7 +50,7 @@
           console.log("Cookie Value not found, checking again...");
         }
       }
-            var intervalId = setInterval(checkCookieValue, 3000);
+      var intervalId = setInterval(checkCookieValue, 3000);
     </script>
     <script
       async
@@ -75,7 +75,6 @@
         transition: 0.2s;
       }
     </style>
-
   </head>
   <body>
     <header class="bg-primary pb-[75px] rounded-b-[130px]">
@@ -108,9 +107,9 @@
         class="header_content flex flex-col items-center pt-[35px] max-[480px]:pt-[30px] pb-[11px] gap-y-[28px] max-[480px]:gap-y-[9px] container xl:w-contanerxl ml-auto mr-auto pl-1 pr-1 min-[480px]:pl-4 min-[480px]:pr-4"
       >
         <h1
-          class="text-center text-secondary font-bold text-[50px] max-[992px]:text-[35px] max-[480px]:text-[19.5px] leading-[65px] max-[480px]:leading-[45px] font-Montserrat"
+          class="text-center text-secondary font-bold text-[45px] max-[992px]:text-[35px] max-[480px]:text-[19.5px] max-[430px]:text-[17.5px] leading-[65px] max-[480px]:leading-[45px] font-Montserrat"
         >
-          Individuals Affected By Accidents Are <br />
+          Individuals Who Were on Accidents Are <br />
           Eligible For Compensation Exceeding $130,000 in 2024 At No Cost
           Through New Gov Laws
         </h1>
@@ -188,7 +187,7 @@
                   type="button"
                   data-btn
                   onclick="nextPrev(1)"
-                  class="duration-btn bg s text-xl gap-2 font-medium text-white bg-primary hover:bg-opacity-90 rounded-[10px] p-4 lg:w-4/12 md:w-7/12 sm:w-10/12 py-5 mb-2 text-center items-center"
+                  class="duration-btn bg s text-xl gap-2 font-medium text-white bg-primary hover:bg-opacity-90 rounded-[10px] p-4 w-[80%] lg:w-4/12 md:w-7/12 sm:w-10/12 py-5 mb-2 text-center items-center"
                 >
                   No, it Wasn't my Fault
                 </button>
@@ -198,7 +197,7 @@
                   type="button"
                   data-btn
                   onclick="nextPrev(1)"
-                  class="duration-btn bg s text-xl gap-2 font-medium text-white bg-primary hover:bg-opacity-90 rounded-[10px] p-4 lg:w-4/12 md:w-7/12 sm:w-10/12 py-5 mb-2 text-center items-center"
+                  class="duration-btn bg s text-xl gap-2 font-medium text-white bg-primary hover:bg-opacity-90 rounded-[10px] p-4 w-[80%] lg:w-4/12 md:w-7/12 sm:w-10/12 py-5 mb-2 text-center items-center"
                 >
                   Yes, it Was my Fault
                 </button>
@@ -230,7 +229,7 @@
                   type="button"
                   data-btn
                   onclick="nextPrev(1)"
-                  class="duration-btn bg s text-xl gap-2 font-medium text-white bg-primary hover:bg-opacity-90 rounded-[10px] p-4 lg:w-4/12 md:w-7/12 sm:w-10/12 py-5 mb-2 text-center items-center"
+                  class="duration-btn bg s text-xl gap-2 font-medium text-white bg-primary hover:bg-opacity-90 rounded-[10px] p-4 w-[80%] lg:w-4/12 md:w-7/12 sm:w-10/12 py-5 mb-2 text-center items-center"
                 >
                   No, I don't Have Anyone
                 </button>
@@ -240,7 +239,7 @@
                   type="button"
                   data-btn
                   onclick="nextPrev(1)"
-                  class="duration-btn bg s text-xl gap-2 font-medium text-white bg-primary hover:bg-opacity-90 rounded-[10px] p-4 lg:w-4/12 md:w-7/12 sm:w-10/12 py-5 mb-2 text-center items-center"
+                  class="duration-btn bg s text-xl gap-2 font-medium text-white bg-primary hover:bg-opacity-90 rounded-[10px] p-4 w-[80%] lg:w-4/12 md:w-7/12 sm:w-10/12 py-5 mb-2 text-center items-center"
                 >
                   Yes, I Already Have One
                 </button>
@@ -436,10 +435,40 @@
     </section>
 
     <section
-      class="header_text container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 flex py-[50px] justify-center"
+      class="five-stars flex flex-col justify-center container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 py-[50px]"
     >
       <div class="text-content text-center font-Montserrat">
         <h3 class="text-five text-[32px] max-[480px]:text-[25px] font-bold">
+          Our Expert Lawyers Have Been Rated 5-stars
+        </h3>
+      </div>
+
+      <div
+        class="imgs-container grid grid-cols-3 justify-center items-center gap-x-2 pt-[30px] gap-y-[25px] max-[1024px]:grid-cols-2 max-[769px]:grid-cols-1"
+      >
+        <div class="imge-inner flex justify-center">
+          <div class="imge w-[90%] max-[480px]:w-[100%] flex justify-center">
+            <img src="src/imgs/starTwo.webp" alt="google stars" />
+          </div>
+        </div>
+        <div class="imge-inner flex justify-center">
+          <div class="imge w-[90%] max-[480px]:w-[100%] flex justify-center">
+            <img src="src/imgs/starOne.webp" alt="yelp stars" />
+          </div>
+        </div>
+        <div class="imge-inner flex justify-center">
+          <div class="imge w-[90%] max-[480px]:w-[100%] flex justify-center">
+            <img src="src/imgs/starThree.webp" alt="trustpilot stars" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="header_text container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 flex py-[50px] justify-center"
+    >
+      <div class="text-content text-center font-Montserrat">
+        <h3 class="text-five text-[32px] max-[480px]:text-[30px] font-bold">
           How it works
         </h3>
       </div>
@@ -467,12 +496,14 @@
             class="card_header text-[25px] max-[1280px]:text-[22px] font-Montserrat"
           >
             <strong class="leading-[1.3rem]"
-              >Free Case </br>Assessment</strong
+              >Free Case <br />
+              Assessment</strong
             >
           </div>
           <div class="card_text">
             <p>
-              Provide details about your accident to see if you could get compensation. 
+              Provide details about your accident to see if you could get
+              compensation.
             </p>
           </div>
         </div>
@@ -497,7 +528,8 @@
           </div>
           <div class="card_text">
             <p class="lg:leading-[28px]">
-              Consult with legal experts and gather evidence to make your case stronger.
+              Consult with legal experts and gather evidence to make your case
+              stronger.
             </p>
           </div>
         </div>
@@ -522,7 +554,8 @@
           </div>
           <div class="card_text">
             <p>
-              Let your legal team discuss with the other party to get you the maximum compensation.
+              Let your legal team discuss with the other party to get you the
+              maximum compensation.
             </p>
           </div>
         </div>
@@ -586,7 +619,6 @@
           <a href="./privacy.html"> privacy Policy</a>
         </div>
       </div>
-
     </footer>
 
     <script src="src/script.js"></script>
