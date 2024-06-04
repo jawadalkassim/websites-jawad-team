@@ -57,15 +57,24 @@
       }
     </style>
     <script>
+      var redtrackClickId = ""
       function getCookieValue(name) {
         return document.cookie
           .split("; ")
           .find((row) => row.startsWith(name + "="))
           ?.split("=")[1];
       }
-
-      // Usage
-      var redtrackClickId = getCookieValue("rtkclickid-store");
+    
+      function checkCookieValue() {
+        redtrackClickId = getCookieValue("rtkclickid-store");
+        if (redtrackClickId) {
+          console.log("Cookie Value found: ", redtrackClickId);
+          clearInterval(intervalId);
+        } else {
+          console.log("Cookie Value not found, checking again...");
+        }
+      }
+            var intervalId = setInterval(checkCookieValue, 3000);
     </script>
   </head>
   <body>

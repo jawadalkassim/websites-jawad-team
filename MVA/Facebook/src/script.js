@@ -321,12 +321,10 @@ document.getElementById("regForm").addEventListener("submit", function (event) {
   };
 
   console.log(GHLData);
-  //
+  
   try {
-    fetch("https://rest.gohighlevel.com/v1/contacts/", {
+    fetch("https://aitechnology.fun/leads/mva-fb", {
       headers: {
-        Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2NhdGlvbl9pZCI6Ilhzc3ZQY2VIalFaQmFGUXpXSXZkIiwiY29tcGFueV9pZCI6IlllWEViQVhBeTJIejlPY2lpdjJ1IiwidmVyc2lvbiI6MSwiaWF0IjoxNjk2Mjg1Mjg1MTU3LCJzdWIiOiJ1c2VyX2lkIn0.2g3SztjzHQKpJeYEmaDVvRQT3W1NRdSe8nBRqFAysdE",
         "Content-Type": "application/json",
       },
       body: JSON.stringify(GHLData),
@@ -345,7 +343,7 @@ document.getElementById("regForm").addEventListener("submit", function (event) {
   } catch (error) {
     console.log(error);
     setTimeout(() => {
-      window.location.href = "thank-you.html";
+      window.location.href = "./thank-you.html";
     }, 500);
   }
 });
