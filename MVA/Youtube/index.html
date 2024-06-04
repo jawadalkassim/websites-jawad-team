@@ -32,7 +32,26 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       />
     </noscript>
-
+    <script>
+      var redtrackClickId = ""
+      function getCookieValue(name) {
+        return document.cookie
+          .split("; ")
+          .find((row) => row.startsWith(name + "="))
+          ?.split("=")[1];
+      }
+    
+      function checkCookieValue() {
+        redtrackClickId = getCookieValue("rtkclickid-store");
+        if (redtrackClickId) {
+          console.log("Cookie Value found: ", redtrackClickId);
+          clearInterval(intervalId);
+        } else {
+          console.log("Cookie Value not found, checking again...");
+        }
+      }
+            var intervalId = setInterval(checkCookieValue, 3000);
+    </script>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=AW-16565228514"
@@ -56,26 +75,7 @@
         transition: 0.2s;
       }
     </style>
-    <script>
-      var redtrackClickId = ""
-      function getCookieValue(name) {
-        return document.cookie
-          .split("; ")
-          .find((row) => row.startsWith(name + "="))
-          ?.split("=")[1];
-      }
-    
-      function checkCookieValue() {
-        redtrackClickId = getCookieValue("rtkclickid-store");
-        if (redtrackClickId) {
-          console.log("Cookie Value found: ", redtrackClickId);
-          clearInterval(intervalId);
-        } else {
-          console.log("Cookie Value not found, checking again...");
-        }
-      }
-            var intervalId = setInterval(checkCookieValue, 3000);
-    </script>
+
   </head>
   <body>
     <header class="bg-primary pb-[75px] rounded-b-[130px]">
@@ -440,7 +440,7 @@
     >
       <div class="text-content text-center font-Montserrat">
         <h3 class="text-five text-[32px] max-[480px]:text-[25px] font-bold">
-          What do we have to offer
+          How it works
         </h3>
       </div>
     </section>
@@ -467,16 +467,12 @@
             class="card_header text-[25px] max-[1280px]:text-[22px] font-Montserrat"
           >
             <strong class="leading-[1.3rem]"
-              >Personalized Legal Support Tailored to You</strong
+              >Free Case </br>Assessment</strong
             >
           </div>
           <div class="card_text">
             <p>
-              Receive personalized legal guidance tailored to your unique
-              situation. Our dedicated team works closely with you to understand
-              the specifics of your motor vehicle accident, offering clear
-              advice and advocacy. We're committed to helping you secure the
-              best possible outcome in your case.
+              Provide details about your accident to see if you could get compensation. 
             </p>
           </div>
         </div>
@@ -496,15 +492,12 @@
             class="card_header text-[25px] max-[1280px]:text-[22px] font-Montserrat"
           >
             <strong class="leading-[1.3rem]"
-              >Recovery Solutions After an Accident</strong
+              >In-depth consultation and investigation</strong
             >
           </div>
           <div class="card_text">
             <p class="lg:leading-[28px]">
-              Beyond legal support, we prioritize your well-being. Our services
-              extend to assisting with recovery and rehabilitation after a motor
-              vehicle accident. We connect you with resources and support
-              networks to aid your physical and emotional recovery.
+              Consult with legal experts and gather evidence to make your case stronger.
             </p>
           </div>
         </div>
@@ -524,16 +517,12 @@
             class="card_header text-[25px] max-[1280px]:text-[22px] font-Montserrat"
           >
             <strong class="leading-[1.3rem]"
-              >Expert Evaluation for Motor Vehicle Accidents</strong
+              >Negotiation and Compensation</strong
             >
           </div>
           <div class="card_text">
             <p>
-              Our team of experienced professionals conducts thorough
-              assessments of motor vehicle accidents to provide you with a
-              comprehensive understanding of the incident. We analyze the
-              details, gather evidence, and offer expert insights to help you
-              navigate the aftermath with clarity and confidence.
+              Let your legal team discuss with the other party to get you the maximum compensation.
             </p>
           </div>
         </div>
@@ -597,6 +586,7 @@
           <a href="./privacy.html"> privacy Policy</a>
         </div>
       </div>
+
     </footer>
 
     <script src="src/script.js"></script>

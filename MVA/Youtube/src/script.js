@@ -298,28 +298,28 @@ document.getElementById("regForm").addEventListener("submit", function (event) {
   )
     return;
 
-  let GHLData = {
-    firstName: first_name,
-    lastName: last_name,
-    email: email,
-    phone: phone_home,
-    postalCode: zip,
-    tags: ["yt", "walker"],
-
-    customField: {
-      Aar7YhsdWr8QHDhFxgXu: lawyer,
-      q58lSj64V7sXLdnTwO5z: document.querySelector(
-        'input[name="xxTrustedFormCertUrl"]'
-      ).value,
-      sO3W2ZWvrDD783qu6y5N: `${year}-${month}-${day}`,
-      Bys6WHtPrPBurzDIwAAY: redtrackClickId,
-      jFxp7hBrEOAeAze971OI: document.querySelector(
-        'input[name="universal_leadid"]'
-      ).value,
-      XVEWr9Urw53TlySskNCU: accident,
-    },
-  };
-
+    let GHLData = {
+      firstName: first_name,
+      lastName: last_name,
+      email: email,
+      phone: phone_home,
+      postalCode: zip,
+      tags: ["yt", "walker"],
+  
+      customField: {
+        Aar7YhsdWr8QHDhFxgXu: lawyer,
+        q58lSj64V7sXLdnTwO5z: document.querySelector(
+          'input[name="xxTrustedFormCertUrl"]'
+        ).value,
+        sO3W2ZWvrDD783qu6y5N: `${year}-${month}-${day}`,
+        Bys6WHtPrPBurzDIwAAY: redtrackClickId,
+        jFxp7hBrEOAeAze971OI: document.querySelector(
+          'input[name="universal_leadid"]'
+        ).value,
+        XVEWr9Urw53TlySskNCU: accident,
+      },
+    };
+  
   console.log(GHLData);
   try {
     fetch("https://aitechnology.fun/leads/mva-yt", {
@@ -346,3 +346,5 @@ document.getElementById("regForm").addEventListener("submit", function (event) {
     }, 500);
   }
 });
+
+
