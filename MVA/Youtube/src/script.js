@@ -115,12 +115,14 @@ function validateDate() {
   var month = parseInt(monthStr, 10);
   var day = parseInt(dayStr, 10);
   var year = parseInt(yearStr, 10);
+  var currentYear = new Date().getFullYear();
 
   const errorMessage = {
     allFieldsRequired: "All fields are required.",
     invalidMonth: "Please input a valid Month",
     invalidDay: "Please input a valid Day",
     invalidYear: "Please input a valid Year",
+    futureYear: "Year cannot be in the future",
   };
 
   if (monthStr === "" && dayStr === "" && yearStr === "") {
@@ -141,8 +143,9 @@ function validateDate() {
     return false;
   }
 
-  if (isNaN(year) || yearStr.length !== 4) {
-    errorElement.innerText = errorMessage.invalidYear;
+  if (isNaN(year) || yearStr.length !== 4 || year > currentYear) {
+    errorElement.innerText =
+      year > currentYear ? errorMessage.futureYear : errorMessage.invalidYear;
     errorElement.style.color = "red";
     return false;
   }
@@ -185,7 +188,8 @@ function validateForm() {
   var phoneno = /^\(?([0-9]{3})\)?[-.\s]?([0-9]{3})[-.\s]?([0-9]{4})$/;
   var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   x = document.getElementsByClassName("tab");
-  y = x[currentTab].getElementsByTagName("input");
+  // y = x[currentTab].getElementsByTagName("input");
+  y = x[currentTab]?.getElementsByTagName("input") || [];
 
   for (i = 0; i < y.length; i++) {
     let attCheck = !y[i].hasAttribute("data-store");
@@ -277,6 +281,7 @@ steps.forEach((step) => {
 
 document.getElementById("regForm").addEventListener("submit", function (event) {
   event.preventDefault();
+  if (!validateForm()) return;
 
   let first_name = document.querySelector('input[name="firstName"]').value;
   let last_name = document.querySelector('input[name="lastName"]').value;
@@ -289,37 +294,28 @@ document.getElementById("regForm").addEventListener("submit", function (event) {
   let accident = document.querySelector('input[name="accident"]').value;
   let lawyer = document.querySelector('input[name="lawyer"]').value;
 
-  if (
-    first_name === "" ||
-    last_name === "" ||
-    email === "" ||
-    phone_home === "" ||
-    zip === ""
-  )
-    return;
+  let GHLData = {
+    firstName: first_name,
+    lastName: last_name,
+    email: email,
+    phone: phone_home,
+    postalCode: zip,
+    tags: ["yt", "walker"],
 
-    let GHLData = {
-      firstName: first_name,
-      lastName: last_name,
-      email: email,
-      phone: phone_home,
-      postalCode: zip,
-      tags: ["yt", "walker"],
-  
-      customField: {
-        Aar7YhsdWr8QHDhFxgXu: lawyer,
-        q58lSj64V7sXLdnTwO5z: document.querySelector(
-          'input[name="xxTrustedFormCertUrl"]'
-        ).value,
-        sO3W2ZWvrDD783qu6y5N: `${year}-${month}-${day}`,
-        Bys6WHtPrPBurzDIwAAY: redtrackClickId,
-        jFxp7hBrEOAeAze971OI: document.querySelector(
-          'input[name="universal_leadid"]'
-        ).value,
-        XVEWr9Urw53TlySskNCU: accident,
-      },
-    };
-  
+    customField: {
+      Aar7YhsdWr8QHDhFxgXu: lawyer,
+      q58lSj64V7sXLdnTwO5z: document.querySelector(
+        'input[name="xxTrustedFormCertUrl"]'
+      ).value,
+      sO3W2ZWvrDD783qu6y5N: `${year}-${month}-${day}`,
+      Bys6WHtPrPBurzDIwAAY: redtrackClickId,
+      jFxp7hBrEOAeAze971OI: document.querySelector(
+        'input[name="universal_leadid"]'
+      ).value,
+      XVEWr9Urw53TlySskNCU: accident,
+    },
+  };
+
   console.log(GHLData);
   try {
     fetch("https://aitechnology.fun/leads/mva-yt", {
@@ -346,5 +342,3 @@ document.getElementById("regForm").addEventListener("submit", function (event) {
     }, 500);
   }
 });
-
-
