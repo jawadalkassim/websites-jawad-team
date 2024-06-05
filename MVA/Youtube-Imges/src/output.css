@@ -652,14 +652,6 @@ video {
   width: 20%;
 }
 
-.w-\[21\%\] {
-  width: 21%;
-}
-
-.w-\[33\%\] {
-  width: 33%;
-}
-
 .w-\[50\%\] {
   width: 50%;
 }
@@ -670,6 +662,10 @@ video {
 
 .w-\[90\%\] {
   width: 90%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .translate-x-\[30px\] {
@@ -730,10 +726,6 @@ video {
   align-items: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
-}
-
 .justify-end {
   justify-content: flex-end;
 }
@@ -750,18 +742,9 @@ video {
   gap: 0.5rem;
 }
 
-.gap-\[10px\] {
-  gap: 10px;
-}
-
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
-}
-
-.gap-x-\[25px\] {
-  -moz-column-gap: 25px;
-       column-gap: 25px;
 }
 
 .gap-y-\[25px\] {
@@ -790,10 +773,6 @@ video {
 
 .rounded-\[10px\] {
   border-radius: 10px;
-}
-
-.rounded-\[25px\] {
-  border-radius: 25px;
 }
 
 .rounded-b-\[130px\] {
@@ -827,10 +806,6 @@ video {
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-\[14px\] {
-  padding: 14px;
 }
 
 .px-\[25px\] {
@@ -956,10 +931,6 @@ video {
   text-align: center;
 }
 
-.font-Lato {
-  font-family: Lato, sans-serif;
-}
-
 .font-Montserrat {
   font-family: Montserrat, sans-serif;
 }
@@ -974,10 +945,6 @@ video {
   line-height: 2.5rem;
 }
 
-.text-\[14px\] {
-  font-size: 14px;
-}
-
 .text-\[17px\] {
   font-size: 17px;
 }
@@ -990,16 +957,8 @@ video {
   font-size: 23px;
 }
 
-.text-\[25px\] {
-  font-size: 25px;
-}
-
 .text-\[32px\] {
   font-size: 32px;
-}
-
-.text-\[50px\] {
-  font-size: 50px;
 }
 
 .text-lg {
@@ -1010,14 +969,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[45px\] {
-  font-size: 45px;
-}
-
-.font-\[400\] {
-  font-weight: 400;
 }
 
 .font-\[500\] {
@@ -1036,18 +987,6 @@ video {
   font-weight: 600;
 }
 
-.leading-\[1\.3em\] {
-  line-height: 1.3em;
-}
-
-.leading-\[1\.3rem\] {
-  line-height: 1.3rem;
-}
-
-.leading-\[65px\] {
-  line-height: 65px;
-}
-
 .text-\[\#13384f\] {
   --tw-text-opacity: 1;
   color: rgb(19 56 79 / var(--tw-text-opacity));
@@ -1060,11 +999,6 @@ video {
 
 .text-five {
   color: #13384FFF;
-}
-
-.text-fourth {
-  --tw-text-opacity: 1;
-  color: rgb(0 26 53 / var(--tw-text-opacity));
 }
 
 .text-gray-500 {
@@ -1113,12 +1047,6 @@ video {
 
 .shadow-buttonShadow {
   --tw-shadow: 0 1px 5px rgba(0, 0, 0, .4);;
-  --tw-shadow-colored: 0 1px 5px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-cardShadow {
-  --tw-shadow: 0 1px 5px rgba(0,0,0,.2);;
   --tw-shadow-colored: 0 1px 5px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
@@ -1465,29 +1393,11 @@ hr.style-1 {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
-  .max-\[1280px\]\:text-\[22px\] {
-    font-size: 22px;
-  }
 }
 
 @media (max-width: 1024px) {
-  .max-\[1024px\]\:grid {
-    display: grid;
-  }
-
-  .max-\[1024px\]\:w-\[100\%\] {
-    width: 100%;
-  }
-
   .max-\[1024px\]\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 992px) {
-  .max-\[992px\]\:text-\[35px\] {
-    font-size: 35px;
   }
 }
 
@@ -1498,6 +1408,10 @@ hr.style-1 {
 
   .max-\[769px\]\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .max-\[769px\]\:justify-center {
+    justify-content: center;
   }
 
   .max-\[769px\]\:border-b {
@@ -1555,34 +1469,12 @@ hr.style-1 {
     padding-top: 30px;
   }
 
-  .max-\[480px\]\:text-\[16px\] {
-    font-size: 16px;
-  }
-
   .max-\[480px\]\:text-\[18px\] {
     font-size: 18px;
   }
 
-  .max-\[480px\]\:text-\[19\.5px\] {
-    font-size: 19.5px;
-  }
-
-  .max-\[480px\]\:text-\[25px\] {
-    font-size: 25px;
-  }
-
   .max-\[480px\]\:text-\[30px\] {
     font-size: 30px;
-  }
-
-  .max-\[480px\]\:leading-\[45px\] {
-    line-height: 45px;
-  }
-}
-
-@media (max-width: 430px) {
-  .max-\[430px\]\:text-\[17\.5px\] {
-    font-size: 17.5px;
   }
 }
 
@@ -1671,10 +1563,6 @@ hr.style-1 {
 
   .lg\:p-6 {
     padding: 1.5rem;
-  }
-
-  .lg\:leading-\[28px\] {
-    line-height: 28px;
   }
 }
 

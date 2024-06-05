@@ -82,7 +82,7 @@
         class="max-[769px]:border-dashed max-[769px]:border-b max-[480px]:py-[10px] py-[15px]"
       >
         <div
-          class="container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 flex justify-between items-center"
+          class="container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 flex justify-between max-[769px]:justify-center items-center"
         >
           <div
             class="logo min-[769px]:w-[50%] flex justify-center min-[769px]:block"
@@ -106,19 +106,31 @@
       <div
         class="header_content flex flex-col items-center pt-[35px] max-[480px]:pt-[30px] pb-[11px] gap-y-[28px] max-[480px]:gap-y-[9px] container xl:w-contanerxl ml-auto mr-auto pl-1 pr-1 min-[480px]:pl-4 min-[480px]:pr-4"
       >
-        <h1
-          class="text-center text-secondary font-bold text-[45px] max-[992px]:text-[35px] max-[480px]:text-[19.5px] max-[430px]:text-[17.5px] leading-[65px] max-[480px]:leading-[45px] font-Montserrat"
-        >
-          Individuals Who Were on Accidents Are <br />
-          Eligible For Compensation Exceeding $130,000 in 2024 At No Cost
-          Through New Gov Laws
-        </h1>
-        <p
-          class="text-center text-secondary text-[20px] max-[480px]:text-[16px] font-Lato font-[400] pl-4 pr-4"
-        >
-          Nationwide Car Accident Compensation: Complete the Quick 30-Second
-          Survey Today!
-        </p>
+        <picture>
+          <!-- Image for small devices -->
+          <source srcset="src/imgs/header-sm.png" media="(max-width: 480px)" />
+          <img src="src/imgs/header-lg.png" alt="Header image" class="w-full" />
+        </picture>
+
+        <!-- <picture> -->
+        <!-- Image for small devices -->
+        <!-- <source srcset="src/imgs/header-sm.png" /> -->
+        <!-- Image for medium devices -->
+        <!-- <source
+            srcset="src/imgs/header-medium.png"
+            media="(max-width: 768px)"
+          /> -->
+        <!-- Image for large devices -->
+        <!-- <source
+            srcset="src/imgs/header-large.png"
+            media="(max-width: 1024px)"
+          /> -->
+        <!-- Default image for larger devices -->
+        <!-- <source srcset="src/imgs/header-des.png" media="(min-width: 1025px)" /> -->
+        <!-- Fallback image if none of the above match -->
+        <!-- <img src="src/imgs/header-des.png" alt="Header image" class="w-full" /> -->
+        <!-- </picture> -->
+
         <a
           href="#form_sec"
           class="no-underline cursor-pointer bg-theard text-secondary text-[20px] max-[480px]:mt-[20px] max-[480px]:text-[18px] max-[320px]:text-[70%] font-Montserrat font-bold py-[15px] px-[26px] rounded-[10px] shadow-buttonShadow"
@@ -132,12 +144,29 @@
       class="header_text container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 flex py-[50px] justify-center"
     >
       <div class="text-content text-center font-Montserrat">
-        <h3 class="text-fourth text-[32px] max-[480px]:text-[25px] font-bold">
-          Free Complimentary Consultation Without Any Obligation
-        </h3>
-        <h3 class="text-primary text-[32px] max-[480px]:text-[25px] font-bold">
-          Estimate Your 2024 Compensation
-        </h3>
+        <picture>
+          <!-- Image for small devices -->
+          <source
+            srcset="src/imgs/under-header-sm.png"
+            media="(max-width: 480px)"
+          />
+          <!-- Image for medium devices -->
+          <source
+            srcset="src/imgs/under-header-md.png"
+            media="(max-width: 768px)"
+          />
+
+          <!-- Image for large devices -->
+          <source
+            srcset="src/imgs/under-header-lg.png"
+            media="(max-width: 1024px)"
+          />
+          <img
+            src="src/imgs/under-header-lg.png"
+            alt=" under Header image"
+            class="w-full"
+          />
+        </picture>
       </div>
     </section>
     <section id="form_sec" class="form flex justify-center pt-5 m-5">
@@ -438,9 +467,16 @@
       class="five-stars flex flex-col justify-center container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 py-[50px]"
     >
       <div class="text-content text-center font-Montserrat">
-        <h3 class="text-five text-[32px] max-[480px]:text-[25px] font-bold">
-          Our Expert Lawyers Have Been Rated 5-stars
-        </h3>
+        <picture>
+          <!-- Image for small devices -->
+          <source srcset="src/imgs/expert-sm.png" media="(max-width: 480px)" />
+          <!-- Image for medium devices -->
+          <source srcset="src/imgs/expert-md.png" media="(max-width: 768px)" />
+
+          <!-- Image for large devices -->
+          <source srcset="src/imgs/expert-lg.png" media="(max-width: 1024px)" />
+          <img src="src/imgs/expert-lg.png" alt="expert" class="w-full" />
+        </picture>
       </div>
 
       <div
@@ -477,88 +513,17 @@
     <section
       class="cards container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 pb-[50px] pt-0"
     >
-      <div
-        class="cards_inner flex gap-x-[25px] max-[1024px]: gap-y-[25px] max-[1024px]:grid max-[1024px]:grid-cols-2 max-[769px]:grid-cols-1"
-      >
-        <div
-          class="card flex flex-col items-center shadow-cardShadow rounded-[25px] p-[14px] text-center gap-[10px] justify-start w-[33%] max-[1024px]:w-[100%]"
-        >
-          <div class="card_img w-[21%]">
-            <img
-              src="src/imgs/icon1.webp"
-              width="100"
-              height="100"
-              alt="car protect"
-              loading="lazy"
-            />
-          </div>
-          <div
-            class="card_header text-[25px] max-[1280px]:text-[22px] font-Montserrat"
-          >
-            <strong class="leading-[1.3rem]"
-              >Free Case <br />
-              Assessment</strong
-            >
-          </div>
-          <div class="card_text">
-            <p>
-              Provide details about your accident to see if you could get
-              compensation.
-            </p>
-          </div>
-        </div>
-        <div
-          class="card flex flex-col items-center shadow-cardShadow rounded-[25px] p-[14px] text-center gap-[10px] justify-start w-[33%] max-[1024px]:w-[100%]"
-        >
-          <div class="card_img w-[21%]">
-            <img
-              src="src/imgs/icon1.webp"
-              width="100"
-              height="100"
-              alt="car protect"
-              loading="lazy"
-            />
-          </div>
-          <div
-            class="card_header text-[25px] max-[1280px]:text-[22px] font-Montserrat"
-          >
-            <strong class="leading-[1.3rem]"
-              >In-depth consultation and investigation</strong
-            >
-          </div>
-          <div class="card_text">
-            <p class="lg:leading-[28px]">
-              Consult with legal experts and gather evidence to make your case
-              stronger.
-            </p>
-          </div>
-        </div>
-        <div
-          class="card flex flex-col items-center shadow-cardShadow rounded-[25px] p-[14px] text-center gap-[10px] justify-start w-[33%] max-[1024px]:w-[100%]"
-        >
-          <div class="card_img w-[21%]">
-            <img
-              src="src/imgs/icon1.webp"
-              width="100"
-              height="100"
-              alt="car protect"
-              loading="lazy"
-            />
-          </div>
-          <div
-            class="card_header text-[25px] max-[1280px]:text-[22px] font-Montserrat"
-          >
-            <strong class="leading-[1.3rem]"
-              >Negotiation and Compensation</strong
-            >
-          </div>
-          <div class="card_text">
-            <p>
-              Let your legal team discuss with the other party to get you the
-              maximum compensation.
-            </p>
-          </div>
-        </div>
+      <div class="cards_inner flex justify-center">
+        <picture>
+          <!-- Image for small devices -->
+          <source srcset="src/imgs/cards-sm.png" media="(max-width: 769px)" />
+          <!-- Image for medium devices -->
+          <source srcset="src/imgs/cards-md.png" media="(max-width: 1024px)" />
+
+          <!-- Image for large devices -->
+          <source srcset="src/imgs/cards-lg.png" media="(max-width: 2000px)" />
+          <img src="src/imgs/cards-lg.png" alt="cards" class="w-full" />
+        </picture>
       </div>
 
       <div
@@ -579,7 +544,7 @@
           class="container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 flex justify-between items-center max-[480px]:flex-col"
         >
           <div
-            class="logo min-[769px]:w-[50%] flex justify-center min-[769px]:block"
+            class="logo w-[50%] max-[480px]:w-[100%] flex justify-center min-[769px]:block"
           >
             <div class="logo_inner w-[20%] max-[480px]:w-[23%]">
               <img src="src/imgs/logo.png" alt="logo" />
@@ -600,21 +565,17 @@
       <div
         class="footer_text container xl:w-contanerxl ml-auto mr-auto pl-4 pr-4 pt-[14px]"
       >
-        <p
-          class="text-secondary text-center font-Lato text-[14px] leading-[1.3em]"
-        >
-          By clicking "Submit", you agree that you are providing your explicit
-          written consent for our network of attorneys and advocates, or
-          ourselves, to contact you via phone, mobile device (including SMS and
-          MMS), even with autodialed, text, and pre-recorded messages for your
-          convenience. Carrier charges may apply; message frequency varies. For
-          assistance, text HELP; to opt out, text STOP. Your number may be
-          listed on any internal, corporate, state, or federal Do Not Call List.
-          We prioritize your privacy and you might receive emails containing
-          news, financial tips, and more, with the option to unsubscribe at any
-          time. All interactions on this website and phone communications are
-          recorded for quality control and compliance purposes.
-        </p>
+        <picture>
+          <!-- Image for small devices -->
+          <source srcset="src/imgs/footer-sm.png" media="(max-width: 480px)" />
+          <!-- Image for medium devices -->
+          <source srcset="src/imgs/footer-md.png" media="(max-width: 992px)" />
+
+          <!-- Image for large devices -->
+          <source srcset="src/imgs/footer-lg.png" media="(max-width: 1024px)" />
+          <img src="src/imgs/footer-lg.png" alt="footer" class="w-full" />
+        </picture>
+
         <div class="text-center text-white">
           <a href="./privacy.html"> privacy Policy</a>
         </div>
