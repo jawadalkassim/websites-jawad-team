@@ -1,5 +1,19 @@
 <?php
 
+error_reporting(E_ALL);
+ini_set("display_errors",0);
+// Enable logging of errors to a specified log file
+ini_set("log_errors", 1);
+ini_set("error_log", "C:/Users/VS/Desktop/today/us-auto-insurance/php-error.log");
+
+
+session_start();
+foreach($_GET as $key => $value){
+  $_SESSION[$key] = $value;
+}
+?>
+<?php
+
 session_start();
 foreach($_GET as $key => $value){
 	$_SESSION[$key] = $value;
@@ -83,7 +97,7 @@ global $folder_name;
 		</nav>
 
 		<?php
-		if($folder_name == 'apply' || $folder_name == 'auto-insurance' || $folder_name == 'life-insurance'){
+		if($folder_name == 'apply' || $folder_name == 'auto-insurance' || $folder_name == 'life-insurance' || $folder_name == 'health-insurance'){
 		?>
 
 		<section class="pt-2 sm:pt-4 pb-2 sm:pb-4 transition ease-in-out duration-300 bg-gray-200">
