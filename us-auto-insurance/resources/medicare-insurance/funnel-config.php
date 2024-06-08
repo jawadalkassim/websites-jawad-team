@@ -6,6 +6,10 @@ $funnel_config = array(
     'version' => '1.0',
     'steps' => array(
         array(
+            'id' => 'start-my-quote',
+            'file_name' => $funnel_folder.'/start-my-quote.php',
+        ),
+        array(
             'id' => 'dob',
             'file_name' => $funnel_folder.'/dob.php',
         ),
