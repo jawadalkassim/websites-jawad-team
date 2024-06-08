@@ -728,7 +728,7 @@ function partialSubmit(){
 	//return false;
 
 	$.ajax({
-		url: "/resources/health-insurance/process.php?method=Partial",
+		url: "/resources/medicare-insurance/process.php?method=Partial",
 		type: "post",
 		data: values,
 		dataType: "json",
@@ -760,7 +760,7 @@ $('#lead').submit(function(event) {
 		//return false;
 		
 		$.ajax({
-			url: '/resources/health-insurance/process.php?method=Lead',
+			url: '/resources/medicare-insurance/process.php?method=Lead',
 			type: "post",
 			data: values,
 			dataType: "json",

@@ -30,8 +30,7 @@ switch ($method) {
 			//, 'city' => $_POST['city']
 			//, 'state' => $_POST['state']
 			//
-			, 'house_hold_income' => $_POST['house_hold_income']
-            , 'health_conditions' => $_POST['health_conditions']
+			, 'gender' => $_POST['gender']
 			, 'dob' => $_POST['dob_year'].'-'.$_POST['dob_month'].'-'.$_POST['dob_day']
 			//
 			, 'ip_address' => $_POST['ip_address']

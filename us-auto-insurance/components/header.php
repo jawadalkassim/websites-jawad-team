@@ -97,7 +97,7 @@ global $folder_name;
 		</nav>
 
 		<?php
-		if($folder_name == 'apply' || $folder_name == 'auto-insurance' || $folder_name == 'life-insurance' || $folder_name == 'health-insurance'){
+		if($folder_name == 'apply' || $folder_name == 'auto-insurance' || $folder_name == 'life-insurance' || $folder_name == 'health-insurance' || $folder_name == 'medicare-insurance'){
 		?>
 
 		<section class="pt-2 sm:pt-4 pb-2 sm:pb-4 transition ease-in-out duration-300 bg-gray-200">
