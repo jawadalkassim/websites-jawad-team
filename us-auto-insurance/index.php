@@ -56,15 +56,9 @@ label.error{
           <option value="home-insurance">Home Insurance</option>
           <option value="life-insurance">Life Insurance</option>
           <option value="health-insurance">Health Insurance</option>
-<<<<<<< HEAD
           <option value="condo-insurance">Condo Insurance</option>
           <option value="renters-insurance">Renters Insurance</option>
           <option value="medicare-insurance">Medicare Insurance</option>
-=======
-          <option value="medicare-insurance">Medicare Insurance</option>
-          <option value="condo-insurance">Condo Insurance</option>
-          <option value="renters-insurance">Renters Insurance</option>
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
         </select>
       </span>
       <span>

@@ -1,10 +1,6 @@
 <div class="pt-8 sm:pt-16 pb-8">
 
-<<<<<<< HEAD
 	<h2 class="text-gray-700 text-3xl sm:text-4xl leading-8 font-extrabold text-center transition ease-in-out duration-300">What is Your Household Income?</h2>
-=======
-	<h2 class="text-gray-700 text-3xl sm:text-4xl leading-8 font-extrabold text-center transition ease-in-out duration-300">Are you currently employed?</h2>
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
 	
 	<div class="py-8 px-0 mx-auto max-w-4xl text-center grid grid-cols-1 sm:grid-cols-2 gap-4">
 

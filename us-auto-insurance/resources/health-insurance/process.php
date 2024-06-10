@@ -6,10 +6,6 @@
 
 session_start();
 require_once('config.php');
-<<<<<<< HEAD
-=======
-include_once(__DIR__.'/../../../settings.php');
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
 
 $method = (isset($_POST['method'])) ? $_POST['method'] : $_GET['method'];
 
@@ -32,7 +28,6 @@ switch ($method) {
 			//, 'address' => $_POST['address']
 			//, 'city' => $_POST['city']
 			//, 'state' => $_POST['state']
-<<<<<<< HEAD
 			, 'zip_code' => $_POST['zip']
 			//
 			, 'life_insurance' => $_POST['life_insurance']
@@ -48,12 +43,6 @@ switch ($method) {
 			, 'prescribed_medications' => $_POST['prescribed_medications']
 			, 'employment_status' => $_POST['employment_status']
 			, 'prescribed_meds' => $_POST['prescribed_meds']
-=======
-			//
-			, 'house_hold_income' => $_POST['house_hold_income']
-            , 'health_conditions' => $_POST['health_conditions']
-			, 'dob' => $_POST['dob_year'].'-'.$_POST['dob_month'].'-'.$_POST['dob_day']
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
 			//
 			, 'ip_address' => $_POST['ip_address']
 			, 'user_agent' => $_POST['user_agent']

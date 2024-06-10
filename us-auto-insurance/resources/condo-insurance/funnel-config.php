@@ -36,7 +36,6 @@ $funnel_config = array(
         array(
             'id' => 'current_carrier',
             'file_name' => $funnel_folder.'/current_carrier.php',
-<<<<<<< HEAD
             'requirements' => array(
                 'inclusions' => array(
                     'currently_insured' => array(
@@ -44,8 +43,6 @@ $funnel_config = array(
                     ),
                 ),           
             ),
-=======
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
         ),
         array(
             'id' => 'dob',

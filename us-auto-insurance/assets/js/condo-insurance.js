@@ -16,11 +16,7 @@ $(document).ready(function () {
 
   $("#first_name").on("input", function () {
     var inputValue = $(this).val();
-<<<<<<< HEAD
     $(".first-name-text").text("Last Step, " + inputValue);
-=======
-    $(".first-name-text").text(inputValue);
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
   });
 
   $("#mobile_minimize_call_block").on("click", function () {
@@ -60,7 +56,6 @@ $(document).ready(function () {
 
     var currentPage = $("#hdnPageNumber").val();
     var destinationPage = parseInt(currentPage - 1);
-<<<<<<< HEAD
 
     //check for steps
     var prerequisitesData = $("#prerequisitesData").text();
@@ -151,8 +146,6 @@ $(document).ready(function () {
     }
     //
 
-=======
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
     if (destinationPage <= 1) {
       $(".back-button-container").addClass("hidden");
       $("#ProgressPercent2").fadeOut(50);
@@ -161,25 +154,13 @@ $(document).ready(function () {
     }
     $("#hdnPageNumber").val(destinationPage);
     stepCount = $(".jquery-page .jquery-page-container .page").length;
-<<<<<<< HEAD
     stepProgress = Math.round((destinationPage / stepCount) * 100);
 
-=======
-    stepProgress = Math.round(
-      (parseInt(destinationPage - 1) / stepCount) * 100
-    );
-    //
-    console.log("back-button: " + stepProgress);
-    //
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
     updateProgress(stepProgress);
     $(".jquery-page")
       .page()
       .transition(destinationPage.toString(), "slide-in-from-left");
-<<<<<<< HEAD
     //$('.jquery-page').page().transition(destinationPage.toString(), 'none');
-=======
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
     //addParamsToURL('#Step' + destinationPage);
     //console.log('back: ' + destinationPage);
     addParamsToURL(destinationPage);
@@ -204,7 +185,6 @@ $(document).ready(function () {
         nextStep = i + 1;
         validate = formValidate();
         //console.log(dataTarget + ' - ' + dataValue);
-<<<<<<< HEAD
         //
         $("#" + dataTarget).val(dataValue);
         //$('#' + dataTarget).trigger('change');
@@ -319,59 +299,6 @@ $(document).ready(function () {
 
           goToStep(nextStep);
           $("#hdnPageNumber").val(nextStep);
-=======
-        if (dataTarget == "total_debt_amount") {
-          $(".total-debt-slider-output").html(
-            "$" + Intl.NumberFormat().format(dataValue)
-          );
-        }
-        //
-        if ($(this).attr("button-type") == "icon") {
-          $(this)
-            .parent()
-            .find('button[data-action="next-step"]')
-            .removeClass(
-              "scale-100 md:shadow-blue-500/30 border-blue-400 shadow-md border-2"
-            )
-            .addClass(
-              "scale-95 md:shadow-blue-500/0 border-blue-200 shadow-sm border-1"
-            );
-          $(this)
-            .removeClass(
-              "scale-95 md:shadow-blue-500/0 border-blue-200 shadow-sm border-1"
-            )
-            .addClass(
-              "scale-100 border-blue-400 shadow-md md:shadow-blue-500/30 border-2"
-            );
-        } else if ($(this).attr("button-type") == "icon-custom-color") {
-          $(this)
-            .parent()
-            .find('button[data-action="next-step"]')
-            .removeClass("scale-100 shadow-blue-500/30")
-            .addClass("scale-95 shadow-blue-500/10");
-          $(this)
-            .removeClass("scale-95 shadow-blue-500/10")
-            .addClass("scale-100 shadow-blue-500/30");
-        } else {
-          //$(this).parent().find('button[data-action="next-step"]').removeClass('bg-blue-500 text-white scale-100').addClass('bg-white text-gray-900 scale-95');
-          //$(this).removeClass('bg-white text-gray-900 scale-95').addClass('bg-blue-500 text-white scale-100');
-        }
-        //
-        $("#" + dataTarget).val(dataValue);
-
-        if (validate) {
-          goToStep(i + 1);
-          $("#hdnPageNumber").val(i + 1);
-        }
-
-        //add disabled state on bank fields
-        if (validate) {
-          if ($("#bankName").val() != "Other") {
-            $("#bankAba").attr("disabled", "disabled");
-          } else {
-            $("#bankState").attr("disabled", "disabled");
-          }
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
         }
       }
     );
@@ -379,10 +306,7 @@ $(document).ready(function () {
 
   //set initial step/progress
   //stepNumber = 1;
-<<<<<<< HEAD
   var stepCount = $(".jquery-page .jquery-page-container .page").length;
-=======
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
   stepProgress = Math.round((parseInt(stepNumber - 1) / stepCount) * 100);
   updateProgress(stepProgress);
 
@@ -520,54 +444,6 @@ $(document).ready(function () {
     }
   }
 
-<<<<<<< HEAD
-=======
-  // //weight
-  // $("#weight").on("keyup", function () {
-  //   let inputValue = $(this).val();
-  //   inputValue = inputValue.replace(/\D/g, "");
-  //   inputValue = inputValue.slice(0, 3);
-  //   $(this).val(inputValue);
-  // });
-
-  // //weight
-  // $(".text-field-letters").on("keyup", function () {
-  //   let inputValue = $(this).val();
-  //   inputValue = inputValue.replace(/[^a-zA-Z\s-]/g, "");
-  //   $(this).val(inputValue);
-  // });
-
-  //life_insurance_reasons
-  // $('.life_insurance_reasons input[type="checkbox"]').change(function () {
-  //   var checkedCheckboxes = $(
-  //     '.life_insurance_reasons input[type="checkbox"]:checked'
-  //   );
-  //   var values = checkedCheckboxes
-  //     .map(function () {
-  //       return $(this).val();
-  //     })
-  //     .get()
-  //     .join(",");
-  //   $("#life_insurance_reason").val(values);
-  // });
-
-  // //prescribed_medication_options
-  // $('.prescribed_medication_options input[type="checkbox"]').change(
-  //   function () {
-  //     var checkedCheckboxes = $(
-  //       '.prescribed_medication_options input[type="checkbox"]:checked'
-  //     );
-  //     var values = checkedCheckboxes
-  //       .map(function () {
-  //         return $(this).val();
-  //       })
-  //       .get()
-  //       .join(",");
-  //     $("#prescribed_medications").val(values);
-  //   }
-  // );
-
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
   //fancybox
   $("a.iframe").fancybox({
     width: "90%",
@@ -584,16 +460,12 @@ function stepBack(stepValue) {
   var activePageCount = $(
     ".jquery-page .jquery-page-container .page.jquery-page-active"
   ).length;
-<<<<<<< HEAD
   //console.log(activePageCount);
-=======
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
 
   $("#back-button").attr("disabled", "disabled");
 
   var currentPage = $("#hdnPageNumber").val();
   var destinationPage = parseInt(currentPage - 1);
-<<<<<<< HEAD
 
   //check for steps
   var prerequisitesData = $("#prerequisitesData").text();
@@ -690,12 +562,6 @@ function stepBack(stepValue) {
   //
 
   if (destinationPage <= 1) {
-=======
-  var destinationPage = stepValue;
-  var lastStepNumber = $(".jquery-page .jquery-page-container .page").length;
-  if (destinationPage <= 1) {
-    console.log(destinationPage);
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
     $(".back-button-container").addClass("hidden");
     $("#ProgressPercent2").fadeOut(50);
   } else if (destinationPage <= 3) {
@@ -703,42 +569,15 @@ function stepBack(stepValue) {
   }
   $("#hdnPageNumber").val(destinationPage);
   stepCount = $(".jquery-page .jquery-page-container .page").length;
-<<<<<<< HEAD
   stepProgress = Math.round((destinationPage / stepCount) * 100);
-=======
-  stepProgress = Math.round((parseInt(destinationPage - 1) / stepCount) * 100);
-  //
-  console.log("stepBack:" + stepProgress);
-  //
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
   updateProgress(stepProgress);
   $(".jquery-page")
     .page()
     .transition(destinationPage.toString(), "slide-in-from-left");
-<<<<<<< HEAD
   //$('.jquery-page').page().transition(destinationPage.toString(), 'none');
   //addParamsToURL('#Step' + destinationPage);
   //console.log('back: ' + destinationPage);
   addParamsToURL(destinationPage);
-=======
-  //addParamsToURL('#Step' + destinationPage);
-  console.log("back: " + destinationPage);
-  if (destinationPage != lastStepNumber) {
-    $(".back-button-container").removeClass("hidden");
-    setTimeout(function () {
-      if (destinationPage > 3) {
-        $("#ProgressPercent2").fadeIn(500);
-      }
-    }, 250);
-  } else {
-    $(".back-button-container").addClass("hidden");
-    if (destinationPage <= 3) {
-      $("#ProgressPercent2").fadeOut(50);
-    }
-  }
-  addParamsToURL(destinationPage);
-  localStorage.setItem("loanz-step", destinationPage);
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
 
   setTimeout(function () {
     $("#back-button").removeAttr("disabled");
@@ -763,11 +602,7 @@ function handleStepChange(stepValue) {
   // Update the 'hdnPageNumber' and progress bar
   $("#hdnPageNumber").val(destinationPage);
   //
-<<<<<<< HEAD
   //console.log('handleStepChange: ' + destinationPage);
-=======
-  console.log("handleStepChange: " + destinationPage);
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
   //
   updateProgress(stepProgress);
 
@@ -822,13 +657,8 @@ function goToStep(stepNumber) {
     stepCount = $(".jquery-page .jquery-page-container .page").length,
     lastStepNumber = "" + stepCount,
     stepProgress = Math.round((parseInt(stepNumber - 1) / stepCount) * 100),
-<<<<<<< HEAD
     //validate = formValidate();
     validate = true; //temp
-=======
-    validate = formValidate();
-  //validate = true;//temp
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
 
   if (validate) {
     localStorage.setItem("loanz-step", stepNumber);
@@ -857,11 +687,7 @@ function goToStep(stepNumber) {
     //gtag('event', dataLayerStepName);
 
     //
-<<<<<<< HEAD
     //console.log('goToStep: ' + stepProgress);
-=======
-    console.log("goToStep: " + stepProgress);
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
     //
     updateProgress(stepProgress);
     partialSubmit();
@@ -1027,11 +853,7 @@ $.validator.addClassRules("text-field-letters", {
 
 //progress bar
 function updateProgress(targetNumber) {
-<<<<<<< HEAD
   //console.log(targetNumber);
-=======
-  console.log(targetNumber);
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
 
   var targetNumber = targetNumber; // Set the target number
 
@@ -1072,19 +894,6 @@ function reformatText(input) {
 const firstNameInput = document.getElementById("first_name");
 const firstNameSpans = document.querySelectorAll(".first-name");
 
-<<<<<<< HEAD
-=======
-// Add an input event listener to the input field
-firstNameInput.addEventListener("input", function () {
-  // Update the content of all spans with the input value
-  const inputValue = firstNameInput.value;
-  firstNameSpans.forEach((span) => {
-    span.textContent = inputValue;
-  });
-});
-
-// to down is the same as life auorance
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
 function addParamsToURL(currentStep) {
   var currentUrl = window.location.href;
   var url = new URL(currentUrl);
@@ -1124,11 +933,7 @@ function partialSubmit() {
   //return false;
 
   $.ajax({
-<<<<<<< HEAD
     url: "/resources/condo-insurance/process.php?method=Partial",
-=======
-    url: "/resources/home-insurance/process.php?method=Partial",
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
     type: "post",
     data: values,
     dataType: "json",
@@ -1158,11 +963,7 @@ $("#lead").submit(function (event) {
     //return false;
 
     $.ajax({
-<<<<<<< HEAD
       url: "/resources/condo-insurance/process.php?method=Lead",
-=======
-      url: "/resources/life-insurance/process.php?method=Lead",
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
       type: "post",
       data: values,
       dataType: "json",

@@ -129,19 +129,11 @@ $stories = array(
 
 $currently_insured = array(
 	array(
-<<<<<<< HEAD
 		'value' => 'Yes',
 		'text' => 'Yes',
 	),
 	array(
 		'value' => 'No',
-=======
-		'value' => 'YES',
-		'text' => 'Yes',
-	),
-	array(
-		'value' => 'NO',
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
 		'text' => 'No',
 	),
 	

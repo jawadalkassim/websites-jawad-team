@@ -1,22 +1,4 @@
 <?php
-<<<<<<< HEAD
-=======
-
-error_reporting(E_ALL);
-ini_set("display_errors",0);
-// Enable logging of errors to a specified log file
-ini_set("log_errors", 1);
-ini_set("error_log", "C:/Users/VS/Desktop/today/us-auto-insurance/php-error.log");
-
-
-session_start();
-foreach($_GET as $key => $value){
-  $_SESSION[$key] = $value;
-}
-?>
-<?php
-
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
 session_start();
 foreach($_GET as $key => $value){
 	$_SESSION[$key] = $value;
@@ -105,11 +87,7 @@ global $folder_name;
 		</nav>
 
 		<?php
-<<<<<<< HEAD
 		if($folder_name == 'apply' || $folder_name == 'auto-insurance' || $folder_name == 'life-insurance' || $folder_name == 'home-insurance' || $folder_name == 'condo-insurance' || $folder_name =='health-insurance'  || $folder_name == 'renters-insurance' || $folder_name == 'medicare-insurance'){
-=======
-		if($folder_name == 'apply' || $folder_name == 'auto-insurance' || $folder_name == 'home-insurance' || $folder_name == 'life-insurance' || $folder_name == 'health-insurance' || $folder_name == 'condo-insurance' || $folder_name == 'renters-insurance' || $folder_name == 'medicare-insurance'){
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
 		?>
 
 		<section class="pt-2 sm:pt-4 pb-2 sm:pb-4 transition ease-in-out duration-300 bg-gray-200">	

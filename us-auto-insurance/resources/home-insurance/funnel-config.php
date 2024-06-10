@@ -33,15 +33,6 @@ $funnel_config = array(
             'id' => 'currently-insured',
             'file_name' => $funnel_folder.'/currently-insured.php',
         ),
-<<<<<<< HEAD
-=======
-
-        //  her 
-        // array(
-        //     'id' => 'current_carrier',
-        //     'file_name' => $funnel_folder.'/current_carrier.php',
-        // ),
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
         array(
             'id' => 'current_carrier',
             'file_name' => $funnel_folder.'/current_carrier.php',
@@ -53,10 +44,6 @@ $funnel_config = array(
                 ),           
             ),
         ),
-<<<<<<< HEAD
-=======
-       
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
         array(
             'id' => 'dob',
             'file_name' => $funnel_folder.'/dob.php',

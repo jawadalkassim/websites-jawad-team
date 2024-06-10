@@ -14,14 +14,11 @@ $funnel_config = array(
             'file_name' => $funnel_folder.'/property-type.php',
         ),
         array(
-<<<<<<< HEAD
             'id' => 'currently-insured',
             'file_name' => $funnel_folder.'/currently-insured.php',
         ),
 
         array(
-=======
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
             'id' => 'current_carrier',
             'file_name' => $funnel_folder.'/current_carrier.php',
             'requirements' => array(
@@ -33,28 +30,10 @@ $funnel_config = array(
             ),
         ),
         array(
-<<<<<<< HEAD
             'id' => 'personal-property',
         'file_name' => $funnel_folder.'/personal-property.php',
         ),
 
-=======
-            'id' => 'currently-insured',
-            'file_name' => $funnel_folder.'/currently-insured.php',
-        ),
-        array(
-            'id' => 'personal-property',
-            'file_name' => $funnel_folder.'/personal-property.php',
-        ),
-
-        //  her 
-        // array(
-        //     'id' => 'current_carrier',
-        //     'file_name' => $funnel_folder.'/current_carrier.php',
-        // ),
-        
-       
->>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
         array(
             'id' => 'dob',
             'file_name' => $funnel_folder.'/dob.php',
