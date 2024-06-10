@@ -78,7 +78,7 @@ global $folder_name;
 	
 	<header class="grow-0 ">
 
-		<nav class=" border-b border-b-gray-200">
+		<nav class=" bg-white  border-b border-b-gray-200">
 			<div class="mx-auto max-w-4xl px-4 pt-2 pb-3 sm:pt-3 sm:pb-4">
 				<a href="/" target="_self">
 					<img class="h-9 sm:h-11 w-auto mx-auto ease-in-out duration-300 -translate-x-1.5 sm:-translate-x-2.5" src="/assets/images/speedy-logo.png" alt="">

@@ -933,7 +933,7 @@ function partialSubmit() {
   //return false;
 
   $.ajax({
-    url: "/resources/home-insurance/process.php?method=Partial",
+    url: "/resources/renters-insurance/process.php?method=Partial",
     type: "post",
     data: values,
     dataType: "json",
@@ -963,7 +963,7 @@ $("#lead").submit(function (event) {
     //return false;
 
     $.ajax({
-      url: "/resources/home-insurance/process.php?method=Lead",
+      url: "/resources/renters-insurance/process.php?method=Lead",
       type: "post",
       data: values,
       dataType: "json",
