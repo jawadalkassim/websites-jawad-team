@@ -76,7 +76,7 @@ global $folder_name;
 
 <div class="bg-white min-h-screen flex flex-col">
 	
-	<header class="grow-0 bg-green-400">
+	<header class="grow-0 ">
 
 		<nav class=" border-b border-b-gray-200">
 			<div class="mx-auto max-w-4xl px-4 pt-2 pb-3 sm:pt-3 sm:pb-4">
