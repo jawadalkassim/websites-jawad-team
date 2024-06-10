@@ -108,6 +108,8 @@ $funnel_config = array(
             'id' => 'homeowner',
             'file_name' => $funnel_folder.'/homeowner.php',
         ),
+
+        //her
         array(
             'id' => 'homeowner-insurance',
             'file_name' => $funnel_folder.'/homeowner-insurance.php',

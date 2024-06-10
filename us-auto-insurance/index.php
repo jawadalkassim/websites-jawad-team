@@ -53,12 +53,12 @@ label.error{
       <span>
         <select id="insurance_type" name="insurance_type" class="block w-full rounded-md border-0 pl-5 py-3 text-gray-700 font-semibold shadow-sm text-xl">
           <option value="auto-insurance">Auto Insurance</option>
-          <!--<option>Home Insurance</option>-->
+          <option value="home-insurance">Home Insurance</option>
           <option value="life-insurance">Life Insurance</option>
-          <!--<option>Health Insurance</option>
-          <option>Condo Insurance</option>
-          <option>Renters Insurance</option>
-          <option>Medicare Insurance</option>-->
+          <option value="health-insurance">Health Insurance</option>
+          <option value="condo-insurance">Condo Insurance</option>
+          <option value="renters-insurance">Renters Insurance</option>
+          <option value="medicare-insurance">Medicare Insurance</option>
         </select>
       </span>
       <span>

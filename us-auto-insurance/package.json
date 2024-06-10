@@ -1,5 +1,16 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.4.1"
-  }
+  },
+  "name": "us-auto-insurance",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tailwindcss -i ./assets/css/base.css -o ./assets/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

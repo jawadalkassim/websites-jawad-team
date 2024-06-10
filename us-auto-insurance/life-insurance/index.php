@@ -18,7 +18,7 @@ include_once(__DIR__.'/../resources/life-insurance/funnel-config.php');
 
 ?>
 
-	<main id="MainContainer" class="bg-white pb-6 grow flex items-start">
+	<main id="MainContainer" class=" soso  bg-white pb-6 grow flex items-start">
 
 		<?php
 	

@@ -21,7 +21,7 @@ include_once(__DIR__.'/../resources/auto-insurance/funnel-config.php');
 	<main id="MainContainer" class="bg-white pb-6 grow flex items-start">
 
 		<?php
-	
+	// PHP_EOL: end of line formating the line 
 		echo '<div class="jquery-page pb-6 ease-in-out duration-300 mx-auto">'.PHP_EOL;
 		echo '<div class="jquery-page-container">'.PHP_EOL;
 			

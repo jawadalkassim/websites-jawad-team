@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 foreach($_GET as $key => $value){
 	$_SESSION[$key] = $value;
@@ -20,6 +19,11 @@ global $integration;
 global $vertical;
 global $folder_name;
 
+// error_reporting(E_ALL);
+// ini_set("display_errors",0);
+// // Enable logging of errors to a specified log file
+// ini_set("log_errors", 1);
+// ini_set("error_log", "C:/Users/VS/Desktop/today/us-auto-insurance/php-error.log");
 ?>
 <!doctype html>
 <html lang="en-US" class="h-full min-h-full">
@@ -72,9 +76,9 @@ global $folder_name;
 
 <div class="bg-white min-h-screen flex flex-col">
 	
-	<header class="grow-0">
+	<header class="grow-0 bg-green-400">
 
-		<nav class="bg-white border-b border-b-gray-200">
+		<nav class=" border-b border-b-gray-200">
 			<div class="mx-auto max-w-4xl px-4 pt-2 pb-3 sm:pt-3 sm:pb-4">
 				<a href="/" target="_self">
 					<img class="h-9 sm:h-11 w-auto mx-auto ease-in-out duration-300 -translate-x-1.5 sm:-translate-x-2.5" src="/assets/images/speedy-logo.png" alt="">
@@ -83,10 +87,10 @@ global $folder_name;
 		</nav>
 
 		<?php
-		if($folder_name == 'apply' || $folder_name == 'auto-insurance' || $folder_name == 'life-insurance'){
+		if($folder_name == 'apply' || $folder_name == 'auto-insurance' || $folder_name == 'life-insurance' || $folder_name == 'home-insurance' || $folder_name == 'condo-insurance' || $folder_name =='health-insurance'  || $folder_name == 'renters-insurance' || $folder_name == 'medicare-insurance'){
 		?>
 
-		<section class="pt-2 sm:pt-4 pb-2 sm:pb-4 transition ease-in-out duration-300 bg-gray-200">
+		<section class="pt-2 sm:pt-4 pb-2 sm:pb-4 transition ease-in-out duration-300 bg-gray-200">	
 
 			<div class="pb-0 sm:pb-0"><!--pb-2 sm:pb-1-->
 				<div class="mx-auto max-w-4xl">
