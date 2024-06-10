@@ -1,5 +1,9 @@
 /*
+<<<<<<< HEAD
 ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+=======
+! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
+>>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
 */
 
 /*
@@ -2248,6 +2252,39 @@ select {
   outline-color: #16a34a;
 }
 
+<<<<<<< HEAD
+=======
+@media (max-width: 1200px) {
+  .max-\[1200px\]\:justify-center {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .max-\[992px\]\:justify-center {
+    justify-content: center;
+  }
+}
+
+@media (max-width: px) {
+  .max-\[px\]\:justify-center {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .max-\[768px\]\:justify-center {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .max-\[500px\]\:justify-center {
+    justify-content: center;
+  }
+}
+
+>>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
 @media (max-width: 350px) {
   .max-\[350px\]\:justify-center {
     justify-content: center;

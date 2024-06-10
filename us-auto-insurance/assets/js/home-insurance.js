@@ -16,7 +16,11 @@ $(document).ready(function () {
 
   $("#first_name").on("input", function () {
     var inputValue = $(this).val();
+<<<<<<< HEAD
     $(".first-name-text").text("Last Step, " + inputValue);
+=======
+    $(".first-name-text").text(inputValue);
+>>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
   });
 
   $("#mobile_minimize_call_block").on("click", function () {
@@ -70,6 +74,7 @@ $(document).ready(function () {
     var i = 0;
 
     while (i < loopSteps) {
+<<<<<<< HEAD
       console.log("i = " + i + " : Next Step = " + destinationPage);
 
       var key = destinationPage; //
@@ -143,6 +148,11 @@ $(document).ready(function () {
       } else {
         i++;
       }
+=======
+      //console.log('i = ' + i + ' : Next Step = ' + destinationPage);
+
+      i++;
+>>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
     }
     //
 
@@ -197,6 +207,7 @@ $(document).ready(function () {
         var nextStep = currentStep + 1;
 
         if (validate) {
+<<<<<<< HEAD
           //check for steps
           var prerequisitesData = $("#prerequisitesData").text();
           var jsonStartIndex = prerequisitesData.indexOf("{");
@@ -297,13 +308,18 @@ $(document).ready(function () {
           }
           //
 
+=======
+>>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
           goToStep(nextStep);
           $("#hdnPageNumber").val(nextStep);
         }
       }
     );
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
   //set initial step/progress
   //stepNumber = 1;
   var stepCount = $(".jquery-page .jquery-page-container .page").length;
@@ -933,7 +949,11 @@ function partialSubmit() {
   //return false;
 
   $.ajax({
+<<<<<<< HEAD
     url: "/resources/home-insurance/process.php?method=Partial",
+=======
+    url: "/resources/health-insurance/process.php?method=Partial",
+>>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
     type: "post",
     data: values,
     dataType: "json",
@@ -963,7 +983,11 @@ $("#lead").submit(function (event) {
     //return false;
 
     $.ajax({
+<<<<<<< HEAD
       url: "/resources/home-insurance/process.php?method=Lead",
+=======
+      url: "/resources/health-insurance/process.php?method=Lead",
+>>>>>>> 965bb4900e483e385615fc2f8caa8b5ebdc4e699
       type: "post",
       data: values,
       dataType: "json",
