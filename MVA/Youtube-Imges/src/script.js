@@ -317,8 +317,9 @@ document.getElementById("regForm").addEventListener("submit", function (event) {
   };
 
   console.log(GHLData);
+  // https://aitechnology.fun/leads/mva-yt
   try {
-    fetch("https://aitechnology.fun/leads/mva-yt", {
+    fetch("/", {
       headers: {
         "Content-Type": "application/json",
       },

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MVA</title>
 
-    <link href="src/output.css" rel="stylesheet" />
+    <link href="src./output.css" rel="stylesheet" />
 
     <!-- fonts  -->
     <link
@@ -188,9 +188,27 @@
 
               <div class="font-bold pt-5 text-center p-5">
                 <div class="text-five">Question 1/4</div>
-                <h1 class="pb-2 pt-16 text-4xl text-five">
-                  Was the accident your fault?
-                </h1>
+
+                <picture
+                  class="pt-12 block w-[75%] max-[480px]:w-[85%] min-[1300px]:w-[60%] mx-auto"
+                >
+                  <!-- Image for small devices -->
+                  <source
+                    srcset="src/imgs/q-o-s-lg.png"
+                    media="(max-width: 480px)"
+                  />
+
+                  <!-- Image for large devices -->
+                  <source
+                    srcset="src/imgs/q-o-d-lg.png"
+                    media="(max-width: 1024px)"
+                  />
+                  <img
+                    src="src/imgs/q-o-d-lg.png"
+                    alt=" under question image"
+                    class="w-full"
+                  />
+                </picture>
               </div>
               <div class="flex justify-center items-center pt-4">
                 <button
@@ -270,9 +288,27 @@
             <div class="animation">
               <div class="font-bold pt-5 text-center p-5">
                 <div class="text-five">Question 3 / 4</div>
-                <h1 class="pb-2 pt-16 text-3xl text-center text-five">
-                  Estimated Accident Date
-                </h1>
+
+                <picture
+                  class="pt-12 block w-[75%] max-[480px]:w-[95%] min-[1200px]:w-[58%] min-[1300px]:w-[49%] mx-auto"
+                >
+                  <!-- Image for small devices -->
+                  <source
+                    srcset="src/imgs/qts.png"
+                    media="(max-width: 480px)"
+                  />
+
+                  <!-- Image for large devices -->
+                  <source
+                    srcset="src/imgs/qtd.png"
+                    media="(max-width: 1024px)"
+                  />
+                  <img
+                    src="src/imgs/qtd.png"
+                    alt=" under question image"
+                    class="w-full"
+                  />
+                </picture>
               </div>
               <div class="flex justify-center pt-5">
                 <div class="lg:w-[50%] date rounded">
@@ -336,14 +372,26 @@
           <div class="tab text-white text-3xl font-bodyFont">
             <div class="animation">
               <div class="font-bold pt-5 text-center p-5">
-                <div class="text-primary">
-                  You Might Qualify for Monetary Compensation
-                </div>
-                <p
-                  class="pb-2 pt-16 text-xl font-medium text-center text-black"
+                <picture
+                  class="pt-[5px] block w-[100%] max-[480px]:w-[95%] min-[1200px]:w-[88%] min-[1200px]:w-[80%] mx-auto"
                 >
-                  Please Tell Us How To Reach Out
-                </p>
+                  <!-- Image for small devices -->
+                  <source
+                    srcset="src/imgs/qfm.png"
+                    media="(max-width: 480px)"
+                  />
+
+                  <!-- Image for large devices -->
+                  <source
+                    srcset="src/imgs/qfd.png"
+                    media="(max-width: 1024px)"
+                  />
+                  <img
+                    src="src/imgs/qfd.png"
+                    alt=" question image"
+                    class="w-full"
+                  />
+                </picture>
               </div>
               <div class="font-bold pt-5 text-center p-5">
                 <h1 class="pb-2 pt-2 text-3xl text-left text-five">
@@ -563,7 +611,7 @@
       </div>
     </footer>
 
-    <script src="src/script.js"></script>
+    <script src="src./script.js"></script>
 
     <!--TrustedForm-->
     <script type="text/javascript">
