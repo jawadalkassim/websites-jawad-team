@@ -4,6 +4,18 @@ var lastName = "";
 var address = "";
 var email = "";
 var phone = "";
+const addressInp = document.getElementById("address");
+const addressError = document.getElementById("address-error");
+const zipInp = document.getElementById("zip");
+const zipError = document.getElementById("zip-error");
+const emailInp = document.getElementById("email");
+const emailError = document.getElementById("email-error");
+const firstNameInp = document.querySelector('input[name="firstName"]');
+const lastNameInp = document.querySelector('input[name="lastName"]');
+const firstNameError = document.getElementById("firstNmaeError");
+const lastNameError = document.getElementById("secondNmaeError");
+const phoneInp = document.getElementById("phone");
+const phoneError = document.getElementById("phone-error");
 showTab(currentTab);
 
 function showTab(n, direction) {
@@ -23,7 +35,7 @@ function showTab(n, direction) {
   if (n === 0) {
     document.getElementById("prevBtn").style.display = "none";
   } else {
-    document.getElementById("prevBtn").style.display = "inline";
+    document.getElementById("prevBtn").style.display = "flex";
   }
 
   fixStepIndicator(n);
@@ -66,6 +78,26 @@ function back() {
 
 var isPhoneValid = false;
 
+//Success Input
+function successInp(inpEle, errorEle) {
+  errorEle.innerText = "";
+  inpEle.classList.remove("placeholder-red-800", "text-red-800", "invalid");
+  inpEle.classList.add("placeholder-white", "text-white");
+}
+//Error Input
+function errorInp(inpEle, errorEle, message) {
+  errorEle.innerText = message;
+  inpEle.classList.remove("placeholder-white", "text-white");
+  inpEle.classList.add("placeholder-red-800", "text-red-800", "invalid");
+}
+
+//prevent more then 5 digits
+zipInp.addEventListener("input", () => {
+  if (zipInp.value.length > 5) {
+    zipInp.value = zipInp.value.slice(0, 5);
+  }
+});
+
 function validateForm() {
   var x,
     y,
@@ -85,39 +117,114 @@ function validateForm() {
 
       valid = false;
     }
-    if (currentTab === 6) {
-      if (y[i].value.match(email)) {
+
+    if (currentTab === 4) {
+      if (addressInp.value.length > 0) {
         return true;
       } else {
-        document.getElementById("email-error").innerText =
-          "Enter a valid email";
-        document.getElementById("email-error").style.color = "red";
-        y[i].focus();
+        errorInp(addressInp, addressError, "Address should not be empty");
+        addressInp.focus();
         valid = false;
       }
+
+      addressInp.addEventListener("input", () => {
+        if (addressInp.value.length > 0) {
+          successInp(addressInp, addressError);
+        } else {
+          errorInp(addressInp, addressError, "Address should not be empty");
+        }
+      });
     }
+
     if (currentTab === 5) {
-      if (y[i].value.length === 5) {
+      if (zipInp.value.length === 5) {
         return true;
       } else {
-        document.getElementById("zip-error").innerText =
-          "Enter a valid zip code";
-        document.getElementById("zip-error").style.color = "red";
-        y[i].focus();
+        errorInp(zipInp, zipError, "Enter a valid zip code");
+        zipInp.focus();
         valid = false;
       }
+
+      zipInp.addEventListener("input", () => {
+        if (zipInp.value.length === 5) {
+          successInp(zipInp, zipError);
+        } else {
+          errorInp(zipInp, zipError, "Enter a valid zip code");
+        }
+      });
     }
+
+    if (currentTab === 6) {
+      if (emailInp.value.match(email)) {
+        return true;
+      } else {
+        errorInp(emailInp, emailError, "Enter a valid email");
+        emailInp.focus();
+        valid = false;
+      }
+
+      emailInp.addEventListener("input", () => {
+        if (emailInp.value.match(email)) {
+          successInp(emailInp, emailError);
+        } else {
+          errorInp(emailInp, emailError, "Enter a valid email");
+        }
+      });
+    }
+
+    if (currentTab === 7) {
+      let valid = true;
+
+      if (firstNameInp.value.length > 0) {
+        successInp(firstNameInp, firstNameError);
+      } else {
+        errorInp(firstNameInp, firstNameError, "First name required.");
+        valid = false;
+      }
+
+      if (lastNameInp.value.length > 0) {
+        successInp(lastNameInp, lastNameError);
+      } else {
+        errorInp(lastNameInp, lastNameError, "Last name required.");
+        valid = false;
+      }
+
+      firstNameInp.addEventListener("input", () => {
+        if (firstNameInp.value.length > 0) {
+          successInp(firstNameInp, firstNameError);
+        } else {
+          errorInp(firstNameInp, firstNameError, "First name required.");
+        }
+      });
+
+      lastNameInp.addEventListener("input", () => {
+        if (lastNameInp.value.length > 0) {
+          successInp(lastNameInp, lastNameError);
+        } else {
+          errorInp(lastNameInp, lastNameError, "Last name required.");
+        }
+      });
+
+      return valid;
+    }
+
     if (currentTab === 8) {
-      if (y[i].value.match(phoneno)) {
+      if (phoneInp.value.match(phoneno)) {
         isPhoneValid = true;
         return true;
       } else {
-        document.getElementById("phone-error").innerText =
-          "Enter a valid phone number";
-        document.getElementById("phone-error").style.color = "red";
-        y[i].focus();
+        errorInp(phoneInp, phoneError, "Enter a valid phone number");
+        phoneInp.focus();
         valid = false;
       }
+
+      phoneInp.addEventListener("input", () => {
+        if (phoneInp.value.match(phoneno)) {
+          successInp(phoneInp, phoneError);
+        } else {
+          errorInp(phoneInp, phoneError, "Enter a valid phone number");
+        }
+      });
     }
   }
 
