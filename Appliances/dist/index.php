@@ -49,7 +49,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="img/chat.png" style="display: inline"
+            ><img src="/Appliances/dist/img/chat.png" style="display: inline"
           /></span>
           <h1 class="flex justify-center items-center">
             Get the best quotes, fast!
@@ -59,7 +59,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="img/location.png" style="display: inline" />
+            ><img src="/Appliances/dist/img/location.png" style="display: inline" />
           </span>
           <h1 class="flex justify-center items-center">
             Over 5,000 engineers across the UK
@@ -69,7 +69,7 @@
           class="text-center text-white font-bold flex justify-center items-center"
         >
           <span class="pr-2 icon w-8 flex justify-center items-center"
-            ><img src="img/check.png" style="display: inline"
+            ><img src="/Appliances/dist/img/check.png" style="display: inline"
           /></span>
           <h1 class="flex justify-center items-center">
             Gas Safe registered engineers
