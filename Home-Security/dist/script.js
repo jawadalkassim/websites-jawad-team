@@ -268,7 +268,7 @@ $("#regForm").on("submit", function (e) {
   console.log(formData);
   //
   $.ajax({
-    url: "/Home-Security/dist/process.php?method=Leady",
+    url: "/Home-Security/dist/process.php?method=Lead",
     type: "post",
     data: formData,
     dataType: "json",
