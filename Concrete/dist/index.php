@@ -419,13 +419,16 @@
               </div>
 
               <!--  -->
+
               <div class="tab text-white text-3xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
                     Okay… Can you specify your address, please?
                   </h1>
                 </div>
-                <div class="pt-10 flex justify-center">
+                <div
+                  class="pt-10 flex justify-center flex-col items-center mt-[10px] sm:mb-[2px]"
+                >
                   <input
                     id="address"
                     type="text"
@@ -434,19 +437,36 @@
                     placeholder="e.g. 123 West Main Road"
                     required
                   />
+                  <div
+                    id="address-error"
+                    class="text-center h-[22px] flex items-center pt-[7px]"
+                    style="font-size: 13.5px; color: red"
+                  ></div>
                 </div>
                 <div
-                  id="address-error"
-                  class="text-center"
-                  style="font-size: 14px"
-                ></div>
-                <div class="flex justify-center pt-5 items-center text-center">
+                  class="flex justify-center items-center text-center pt-[5px]"
+                >
                   <button
                     type="button"
                     onclick="nextPrev(1)"
-                    class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="group mt-2 gap-x-[2px] h-[57.6px] max-[480px]:w-full duration-btn flex justify-center bg text-xl font-bold text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 w-[90%] lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
-                    Next
+                    <span>Next</span>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-[20px] h-6 mt-[4px] group-hover:translate-x-[8px] duration-200"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                      ></path>
+                    </svg>
                   </button>
                 </div>
               </div>
@@ -457,7 +477,9 @@
                     Can you add your zip code, please?
                   </h1>
                 </div>
-                <div class="pt-10 flex justify-center">
+                <div
+                  class="pt-10 flex justify-center flex-col items-center mt-[10px] sm:mb-[2px]"
+                >
                   <input
                     id="zip"
                     type="number"
@@ -467,19 +489,38 @@
                     placeholder="e.g. 12345"
                     required
                   />
+
+                  <div
+                    id="zip-error"
+                    class="text-center h-[22px] flex items-center pt-[7px]"
+                    style="font-size: 13.5px; color: red"
+                  ></div>
                 </div>
+
                 <div
-                  id="zip-error"
-                  class="text-center"
-                  style="font-size: 14px"
-                ></div>
-                <div class="flex justify-center pt-5 items-center text-center">
+                  class="flex justify-center items-center text-center pt-[5px]"
+                >
                   <button
                     type="button"
                     onclick="nextPrev(1)"
-                    class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="group mt-2 gap-x-[2px] h-[57.6px] max-[480px]:w-full duration-btn flex justify-center bg text-xl font-bold text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 w-[90%] lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
-                    Next
+                    <span>Next</span>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-[20px] h-6 mt-[4px] group-hover:translate-x-[8px] duration-200"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                      ></path>
+                    </svg>
                   </button>
                 </div>
               </div>
@@ -490,28 +531,49 @@
                     Great! What is your email?
                   </h1>
                 </div>
-                <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
+                <div
+                  class="pt-10 flex justify-center flex-col items-center mt-[10px] sm:mb-[2px]"
+                >
                   <input
                     id="email"
-                    type="tel"
+                    type="text"
                     name="email"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter email address"
                     required
                   />
+
+                  <div
+                    id="email-error"
+                    class="text-center h-[22px] flex items-center pt-[7px]"
+                    style="font-size: 13.5px; color: red"
+                  ></div>
                 </div>
+
                 <div
-                  id="email-error"
-                  class="text-center"
-                  style="font-size: 14px"
-                ></div>
-                <div class="flex justify-center pt-5 items-center">
+                  class="flex justify-center items-center text-center pt-[5px]"
+                >
                   <button
                     type="button"
                     onclick="nextPrev(1)"
-                    class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="group mt-2 gap-x-[2px] h-[57.6px] max-[480px]:w-full duration-btn flex justify-center bg text-xl font-bold text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 w-[90%] lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
-                    Next
+                    <span>Next</span>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-[20px] h-6 mt-[4px] group-hover:translate-x-[8px] duration-200"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                      ></path>
+                    </svg>
                   </button>
                 </div>
               </div>
@@ -522,7 +584,7 @@
                     How would you like the pros to refer to you?
                   </h1>
                 </div>
-                <div class="pt-10 flex justify-center">
+                <div class="pt-10 flex justify-center flex-col items-center">
                   <input
                     id="name"
                     type="text"
@@ -531,8 +593,15 @@
                     placeholder="Enter first Name"
                     required
                   />
+                  <span
+                    id="firstNmaeError"
+                    class="text-[13.5px] flex items-center pt-[7px] h-[22px] lg:w-8/12 md:w-7/12 w-full text-[#ff0000]"
+                  ></span>
                 </div>
-                <div class="pt-5 flex justify-center">
+                <div
+                  class="pt-[10px] flex justify-center flex-col items-center"
+                  style="padding-top: 10px !important"
+                >
                   <input
                     id="lname"
                     type="text"
@@ -541,20 +610,36 @@
                     placeholder="Enter last Name"
                     required
                   />
+                  <span
+                    id="secondNmaeError"
+                    class="text-[13.5px] flex items-center pt-[7px] h-[22px] lg:w-8/12 md:w-7/12 w-full text-[#ff0000]"
+                  ></span>
                 </div>
+
                 <div
-                  id="name-error"
-                  class="text-center"
-                  style="font-size: 14px"
-                ></div>
-                <div class="pt-10 flex justify-center items-center">
+                  class="flex justify-center items-center text-center mt-[3px]"
+                >
                   <button
-                    style="margin-top: 20px"
                     type="button"
                     onclick="nextPrev(1)"
-                    class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="group mt-2 gap-x-[2px] h-[57.6px] max-[480px]:w-full duration-btn flex justify-center bg text-xl font-bold text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 w-[90%] lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
-                    Next
+                    <span>Next</span>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-[20px] h-6 mt-[4px] group-hover:translate-x-[8px] duration-200"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                      ></path>
+                    </svg>
                   </button>
                 </div>
               </div>
@@ -566,33 +651,36 @@
                     Please enter your phone number
                   </h1>
                 </div>
-                <div class="pt-10 flex justify-center lg:px-0 md:px-5 sm:px-5">
+                <div
+                  class="pt-10 flex justify-center flex-col items-center mt-[10px] sm:mb-[2px]"
+                >
                   <input
                     id="phone"
-                    name="phone"
                     type="tel"
+                    name="phone"
                     class="text-xl placeholder-white bg-blue-950 bg-opacity-60 text-white rounded-[7px] block lg:w-8/12 md:w-7/12 sm:w-full p-3.5"
                     placeholder="Enter phone number"
                     required
                   />
+                  <div
+                    id="phone-error"
+                    class="text-center h-[22px] flex items-center pt-[7px]"
+                    style="font-size: 13.5px; color: red"
+                  ></div>
                 </div>
-                <div
-                  id="phone-error"
-                  class="text-center"
-                  style="font-size: 14px"
-                ></div>
-                <div class="flex justify-center pt-5 items-center">
+
+                <div class="flex justify-center pt-[5px] items-center">
                   <button
                     type="submit"
                     onclick="nextPrev(1)"
-                    class="mt-3 duration-btn bg s text-xl gap-2 font-medium text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
+                    class="mt-2 h-[57.6px] max-[480px]:w-full duration-btn flex justify-center bg text-xl font-bold text-white bg-secondaryColor hover:bg-opacity-90 rounded-[7px] p-4 w-[90%] lg:w-1/3 md:w-7/12 sm:w-full py-3 mb-2 text-center items-center"
                   >
                     Submit
                   </button>
                 </div>
               </div>
 
-              <div style="text-align: center; margin-top: 40px">
+              <div style="text-align: center; margin-top: 40px; display: none">
                 <span class="step"></span>
                 <span class="step"></span>
                 <span class="step"></span>
@@ -605,18 +693,37 @@
                 <span class="step"></span>
                 <span class="step"></span>
               </div>
-              <div style="overflow: auto" class="flex justify-center">
+
+              <div
+                style="overflow: auto"
+                class="flex justify-center pt-[28px] max-[480px]:pt-[25px]"
+              >
                 <div
-                  class="w-[15%] max-[650px]:w-[40%] flex justify-center items-center pb-[20px]"
+                  class="w-[15%] max-[769px]:w-[40%] flex justify-center items-center pb-[20px]"
                   style="float: right"
                 >
                   <button
-                    class="text-xl font-bold rounded-[4px] text-white bg-backBtnBg w-full"
+                    class="group flex justify-center items-center text-xl font-bold rounded-[4px] text-white bg-backBtnBg w-full"
                     type="button"
                     id="prevBtn"
                     onclick="back()"
                   >
-                    ← Back
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-[20px] h-6 mt-[4px] group-hover:-translate-x-[8px] duration-200 rotate-180"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                      ></path>
+                    </svg>
+
+                    <span>Back</span>
                   </button>
                 </div>
               </div>
@@ -630,33 +737,57 @@
             <div
               class="ads grid grid-cols-2 max-[769px]:grid-cols-1 gap-x-[70px] gap-y-[20px] [&>*]:flex [&>*]:gap-1 [&>*]:items-center [&>*]:text-[24px] max-[1024px]:[&>*]:text-[22px] max-[769px]:[&>*]:text-[20px] max-[360px]:[&>*]:text-[19px]"
             >
-              <div>
+              <div
+                class="max-[480px]:flex max-[480px]:justify-center max-[480px]:border-b-[2px] max-[480px]:border-[#62b165] max-[480px]:pb-[4px]"
+              >
                 <span
-                  class="flex justify-center items-center pt-1 text-[#257628]"
+                  class="flex justify-center items-center pt-1 text-[#257628] max-[480px]:hidden"
                   ><ion-icon name="checkmark-circle"></ion-icon
                 ></span>
-                <p class="text-[#2d2e2d]">Next day installation</p>
+                <p
+                  class="text-[#2d2e2d] max-[480px]:text-[#0b6a0f] max-[480px]:font-bold"
+                >
+                  Next day installation
+                </p>
               </div>
-              <div>
+              <div
+                class="max-[480px]:flex max-[480px]:justify-center max-[480px]:border-b-[2px] max-[480px]:border-[#62b165] max-[480px]:pb-[4px]"
+              >
                 <span
-                  class="flex justify-center items-center pt-1 text-[#257628]"
+                  class="flex justify-center items-center pt-1 text-[#257628] max-[480px]:hidden"
                   ><ion-icon name="checkmark-circle"></ion-icon
                 ></span>
-                <p class="text-[#2d2e2d]">Quotes from local engineers</p>
+                <p
+                  class="text-[#2d2e2d] max-[480px]:text-[#0b6a0f] max-[480px]:font-bold"
+                >
+                  Quotes from local engineers
+                </p>
               </div>
-              <div>
+              <div
+                class="max-[480px]:flex max-[480px]:justify-center max-[480px]:border-b-[2px] max-[480px]:border-[#62b165] max-[480px]:pb-[4px]"
+              >
                 <span
-                  class="flex justify-center items-center pt-1 text-[#257628]"
+                  class="flex justify-center items-center pt-1 text-[#257628] max-[480px]:hidden"
                   ><ion-icon name="checkmark-circle"></ion-icon
                 ></span>
-                <p class="text-[#2d2e2d]">1.9 million quotes in 10 years</p>
+                <p
+                  class="text-[#2d2e2d] max-[480px]:text-[#0b6a0f] max-[480px]:font-bold"
+                >
+                  1.9 million quotes in 10 years
+                </p>
               </div>
-              <div>
+              <div
+                class="max-[480px]:flex max-[480px]:justify-center max-[480px]:border-b-[2px] max-[480px]:border-[#62b165] max-[480px]:pb-[4px]"
+              >
                 <span
-                  class="flex justify-center items-center pt-1 text-[#257628]"
+                  class="flex justify-center items-center pt-1 text-[#257628] max-[480px]:hidden"
                   ><ion-icon name="checkmark-circle"></ion-icon
                 ></span>
-                <p class="text-[#2d2e2d]">Save up to £500 on installation</p>
+                <p
+                  class="text-[#2d2e2d] max-[480px]:text-[#0b6a0f] max-[480px]:font-bold"
+                >
+                  Save up to £500 on installation
+                </p>
               </div>
             </div>
           </section>
@@ -664,7 +795,8 @@
       </div>
     </div>
 
-    <footer class="py-[80px] px-[40px] bg-secondaryColor">
+    <footer class="py-[80px] px-[40px] bg-secondaryColor relative">
+      <section class="triangle min-[480px]:hidden"></section>
       <div
         class="container xl:w-contanerxl pl-4 pr-4 mx-auto flex justify-center"
       >
