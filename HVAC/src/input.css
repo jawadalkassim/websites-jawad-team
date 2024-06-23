@@ -445,9 +445,7 @@ ul li {
   .eng-div-mobile {
     margin-top: 25px;
   }
-  input {
-    margin: 10px 20px;
-  }
+
   ul li {
     font-size: 1.4rem;
     width: 100%;
@@ -526,9 +524,7 @@ ul li {
     width: 347px !important;
     text-align: center !important;
   }
-  input {
-    margin: 10px 20px;
-  }
+
   label {
     padding-top: 5px !important;
   }
@@ -538,4 +534,21 @@ ul li {
   .card-input-element + .card {
     padding: 10px 0px;
   }
+}
+.triangle {
+  position: relative;
+  transform: translate(0px, -79px);
+}
+
+.triangle::before {
+  content: "";
+  position: absolute;
+  bottom: 29px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 70px 70px 0 70px;
+  border-color: #ffffff transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
 }
