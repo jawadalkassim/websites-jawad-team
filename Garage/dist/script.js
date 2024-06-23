@@ -292,7 +292,7 @@ function handelQ(steps, inpTarget) {
     });
   });
 }
-//end handel repeating qustions
+//end handel repeating qustionss
 
 $("#regForm").on("submit", function (e) {
   e.preventDefault();
