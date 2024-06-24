@@ -577,7 +577,7 @@
               <div class="tab text-white text-4xl font-bodyFont">
                 <div class="text- text-3xl font-semibold pt-5 text-center p-5">
                   <h1 class="pb-3 text-4xl text-gray-600">
-                    What is your name?
+                  How would you like the pros to refer to you?
                   </h1>
                 </div>
                 <div class="pt-10 flex justify-center flex-col items-center">
