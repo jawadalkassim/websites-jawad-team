@@ -886,6 +886,11 @@ video {
   padding-bottom: 50px;
 }
 
+.px-\[1\.5rem\] {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -974,6 +979,10 @@ video {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .font-Lato {
   font-family: Lato, sans-serif;
 }
@@ -1036,6 +1045,10 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[9\.9px\] {
+  font-size: 9.9px;
 }
 
 .font-\[400\] {
@@ -1746,6 +1759,10 @@ hr.style-1 {
 
   .max-\[480px\]\:text-\[25px\] {
     font-size: 25px;
+  }
+
+  .max-\[480px\]\:text-\[9\.9px\] {
+    font-size: 9.9px;
   }
 
   .max-\[480px\]\:leading-\[1\.4em\] {
