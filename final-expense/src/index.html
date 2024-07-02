@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Expense Benefit 2024</title>
+    <link rel="stylesheet" href="./main.css" />
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="mainHeader">
+      <div class="header_inner">
+        <div class="container">
+          <h1>Last Notice For Seniors 2024</h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="date">
+          <span>SAVINGS • June 19th, 2024</span>
+        </div>
+        <div class="main_content">
+          <div class="text_content">
+            <p>
+              <span> Get 100% Of Your Costs (Burial, Debt, Items) </span>
+              <span
+                >Covered Up to $40,000 With The Final Expense Allowance Program
+                And Leave Money For Your Family</span
+              >
+            </p>
+          </div>
+          <div class="img_content">
+            <div class="inner_img">
+              <img src="./imgs/gmoy.avif" alt="money give" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="img_container container">
+      <div class="fb_img"><img src="./imgs/fb.avif" alt="social" /></div>
+      <div class="question_header">
+        <h2>How Do I See If I Am Eligible?</h2>
+      </div>
+    </section>
+
+    <section class="form_section">
+      <form id="form">
+        <div class="steps_container">
+          <div id="step1" data-step class="page shows">
+            <div class="stepConatiner">
+              <div class="step_question">
+                <h2>Are You Over 52?</h2>
+              </div>
+              <div class="step_answers">
+                <button
+                  id="ageyes"
+                  type="button"
+                  data-value="yes"
+                  data-next-skip
+                >
+                  <p>YES</p>
+                </button>
+                <button id="ageno" type="button" data-value="no" data-next-skip>
+                  <p>No</p>
+                </button>
+                <input id="ageOver" name="ageOver" type="hidden" value="" />
+              </div>
+            </div>
+          </div>
+
+          <div id="step2" data-step class="page hidden">
+            <div class="stepConatiner">
+              <div class="step_question">
+                <h2 class="step_tq">Are You A US Citizen/Resident?</h2>
+              </div>
+              <div class="step_answers">
+                <button
+                  id="citizenyes"
+                  type="button"
+                  data-value="yes"
+                  data-next
+                >
+                  <p>YES</p>
+                </button>
+                <button id="citizenno" type="button" data-value="no" data-next>
+                  <p>No</p>
+                </button>
+                <input id="citizen" name="Citizen" type="hidden" value="" />
+              </div>
+            </div>
+          </div>
+
+          <div id="loading1" class="load hidden">Reviewing Your Answers</div>
+          <div id="loading2" class="load hidden">
+            Searching For Spots Available
+          </div>
+          <div id="loading3" class="load hidden">Eligibility Confirmation</div>
+
+          <div id="qualify" class="page qualify hidden">
+            <div class="stepConatiner">
+              <div class="qualify_Headline">Congratulations!</div>
+              <div class="loading">
+                <p>
+                  <span> You Pre-Qualify</span>
+                  <span> Make A Quick Call To Claim Your Burial Benefit!</span>
+                </p>
+              </div>
+              <p class="loading_para_under">
+                <b>
+                  Your spot is being held. To get started click the button below
+                  to speak with an expert.
+                </b>
+              </p>
+
+              <a href="tel:+0000000000" class="call_btn">+0000000000</a>
+
+              <p class="timer">
+                Your spot is being held for:
+                <strong><span id="timer">05:00</span></strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="report">
+      <div class="reportContainer">
+        <div class="hearder_para">
+          <p>
+            A new report showed millions of dollars of benefits go unclaimed
+            every single year, Claim yours today.
+          </p>
+        </div>
+        <div class="text_para">
+          <p>Did you hear about the 2024 new benefit on life insurance?</p>
+          <p>
+            Wanna leave some money for your loved ones before you pass away?
+          </p>
+          <p>Take the quick survey and see if you qualify.</p>
+          <p>
+            Your loved ones are free to use the plan's benefits however they
+            wish and you can cover your unpaid items.
+          </p>
+          <p>3 Out of 5 Americans qualify for this benefit</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <a href="./privacy-policy2.html"> Privacy Policy </a>
+        <p><span>Copyright</span> example.org <span>© 2024</span></p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
