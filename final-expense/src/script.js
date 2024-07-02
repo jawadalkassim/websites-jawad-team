@@ -21,6 +21,7 @@ form.addEventListener("submit", function (e) {
   const data = Object.fromEntries(fomData);
 
   const jsonData = JSON.stringify(data);
+  // console.log(jsonData);
 });
 
 // Insert Data to Input
