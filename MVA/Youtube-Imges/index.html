@@ -452,6 +452,43 @@
                   placeholder="Postal Code"
                 />
               </div>
+              <div class="font-bold pt-2 text-center p-5 pb-[4px]">
+                <h1 class="pb-2 text-3xl text-left text-five">
+                  Case description
+                </h1>
+                <textarea
+                  class="text placeholder-gray-400 font-medium text-black border-black rounded py-1 text-[16px]"
+                  id="description"
+                  type="text"
+                  name="description"
+                  placeholder="Give us a short explanation of your accident to help us get you the best help"
+                ></textarea>
+              </div>
+              <div class="underText px-[1.5rem]">
+                <picture class="block min-[796px]:w-[90%] mx-auto">
+                  <!-- Image for small devices -->
+                  <source
+                    srcset="src/imgs/textarea-sm.png"
+                    media="(max-width: 480px)"
+                  />
+                  <!-- Image for medium devices -->
+                  <source
+                    srcset="src/imgs/textarea-md.png"
+                    media="(max-width: 992px)"
+                  />
+
+                  <!-- Image for large devices -->
+                  <source
+                    srcset="src/imgs/textarea-lg.png"
+                    media="(max-width: 1024px)"
+                  />
+                  <img
+                    src="src/imgs/textarea-lg.png"
+                    alt="text before submit"
+                    class="w-full"
+                  />
+                </picture>
+              </div>
               <div
                 class="text-lg"
                 id="error"

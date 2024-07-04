@@ -5,23 +5,36 @@
 body {
   scroll-behavior: smooth;
 }
-input {
+input,
+.text {
   padding: 10px;
   width: 100%;
   font-size: 17px;
   border: 1px solid #aaaaaa;
 }
+textarea::placeholder {
+  line-height: 1.4;
+}
+
+@media (max-width: 480px) {
+  textarea::placeholder {
+    font-size: 14px;
+  }
+}
+
 textarea:focus,
 input:focus {
   outline: none;
 }
-input:hover {
+input:hover,
+.text:hover {
   box-shadow: 2px 0px 30px rgba(0, 0, 0, 0.323) !important;
   background-color: #e9ecef !important;
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-input.invalid {
+input.invalid,
+.text.invalid {
   background-color: #ffdddd;
 }
 

@@ -188,8 +188,7 @@ function validateForm() {
   var phoneno = /^\(?([0-9]{3})\)?[-.\s]?([0-9]{3})[-.\s]?([0-9]{4})$/;
   var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   x = document.getElementsByClassName("tab");
-  // y = x[currentTab].getElementsByTagName("input");
-  y = x[currentTab]?.getElementsByTagName("input") || [];
+  y = x[currentTab]?.querySelectorAll("input,textarea") || [];
 
   for (i = 0; i < y.length; i++) {
     let attCheck = !y[i].hasAttribute("data-store");
@@ -212,13 +211,15 @@ function validateForm() {
     var lastName = document.getElementById("lName").value;
     var emailI = document.getElementById("email").value;
     var phone = document.getElementById("phone").value;
+    var description = document.getElementById("description").value;
     var zip = document.getElementById("zip").value;
     if (
       phone.match(phoneno) &&
       emailI.match(email) &&
       firstName !== "" &&
       lastName !== "" &&
-      zip.length === 5
+      zip.length === 5 &&
+      description !== ""
     ) {
       return true;
     } else if (firstName === "" && lastName === "") {
@@ -237,6 +238,10 @@ function validateForm() {
     } else if (!phone.match(phoneno)) {
       document.getElementById("error").innerText =
         "please input a valid phone number";
+      document.getElementById("error").style.color = "red";
+      valid = false;
+    } else if (description === "") {
+      document.getElementById("error").innerText = "please input a description";
       document.getElementById("error").style.color = "red";
       valid = false;
     } else {
@@ -293,6 +298,9 @@ document.getElementById("regForm").addEventListener("submit", function (event) {
   let year = document.getElementById("dob-year").value;
   let accident = document.querySelector('input[name="accident"]').value;
   let lawyer = document.querySelector('input[name="lawyer"]').value;
+  let description = document.querySelector(
+    'textarea[name="description"]'
+  ).value;
 
   let GHLData = {
     firstName: first_name,
@@ -313,6 +321,7 @@ document.getElementById("regForm").addEventListener("submit", function (event) {
         'input[name="universal_leadid"]'
       ).value,
       XVEWr9Urw53TlySskNCU: accident,
+      Rc4HwOQZccNctrmEDEG9: description,
     },
   };
 
